@@ -1,0 +1,6 @@
+[build]
+  functions = "netlify/functions"
+
+[[scheduled.functions]]
+  name = "today"
+  cron = "1 5 * * *"
