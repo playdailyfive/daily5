@@ -1,36 +1,34 @@
-// netlify/functions/today.js
-// Node 18+ runtime (Netlify default). Uses Netlify Blobs for a tiny daily cache.
-// Make sure your package.json includes: { "dependencies": { "@netlify/blobs": "^6.0.0" } }
+// CommonJS Netlify Function (classic format) + proper return object
+// Make sure package.json has: { "dependencies": { "@netlify/blobs": "^6.0.0" } }
 
-import { getStore } from '@netlify/blobs';
+const { getStore } = require('@netlify/blobs');
 
-// Helper: get YYYYMMDD in your timezone
 function yyyymmdd(d = new Date(), tz = 'America/New_York') {
-  const p = new Intl.DateTimeFormat('en-CA', {
-    timeZone: tz,
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit'
-  }).formatToParts(d).reduce((a,p)=> (a[p.type]=p.value, a), {});
-  return `${p.year}${p.month}${p.day}`;
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'
+  }).formatToParts(d).reduce((a, p) => (a[p.type] = p.value, a), {});
+  return `${parts.year}${parts.month}${parts.day}`; // YYYYMMDD
 }
 
-export const handler = async () => {
+exports.handler = async () => {
   try {
-    const store = getStore('daily5');   // name of your blob storage bucket
-    const dayStr = yyyymmdd();          // today's date in ET
+    const store = getStore('daily5');
+    const dayStr = yyyymmdd();
     const key = `daily-${dayStr}.json`;
 
-    // 1. Check cache first
+    // 1) Try cache
     const cached = await store.get(key);
     if (cached) {
-      return new Response(cached, { headers: { 'content-type': 'application/json' }});
+      return {
+        statusCode: 200,
+        headers: { 'content-type': 'application/json' },
+        body: cached
+      };
     }
 
-    // 2. Fetch 5 multiple-choice questions from Open Trivia DB
-    const res = await fetch('https://opentdb.com/api.php?amount=5&type=multiple');
-    if (!res.ok) {
-      // fallback set if API fails
+    // 2) Fetch new questions
+    const upstream = await fetch('https://opentdb.com/api.php?amount=5&type=multiple');
+    if (!upstream.ok) {
       const fallback = {
         day: dayStr,
         questions: [
@@ -41,30 +39,38 @@ export const handler = async () => {
           { text: "What is 9 × 9?", options: ["81","72","99","64"], correct: 0 }
         ]
       };
-      return new Response(JSON.stringify(fallback), { headers: { 'content-type': 'application/json' }});
+      return {
+        statusCode: 200,
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(fallback)
+      };
     }
 
-    const data = await res.json();
-
-    // 3. Normalize results
-    const questions = (data.results || []).map(q => {
-      const options = [q.correct_answer, ...q.incorrect_answers];
-      return {
-        text: q.question,
-        options,
-        correct: 0, // correct is always first
-        category: q.category || '',
-        difficulty: q.difficulty || ''
-      };
-    });
+    const data = await upstream.json();
+    const questions = (data.results || []).map(q => ({
+      text: q.question,
+      options: [q.correct_answer, ...q.incorrect_answers],
+      correct: 0, // correct answer is first
+      category: q.category || '',
+      difficulty: q.difficulty || ''
+    }));
 
     const payload = JSON.stringify({ day: dayStr, questions });
 
-    // 4. Store in Netlify Blobs with 3-day TTL
+    // 3) Cache for 3 days
     await store.set(key, payload, { metadata: { day: dayStr }, ttl: 60 * 60 * 24 * 3 });
 
-    return new Response(payload, { headers: { 'content-type': 'application/json' }});
+    return {
+      statusCode: 200,
+      headers: { 'content-type': 'application/json' },
+      body: payload
+    };
   } catch (e) {
-    return new Response(JSON.stringify({ error: 'internal', details: String(e) }), { status: 500 });
+    return {
+      statusCode: 500,
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ error: 'internal', details: String(e) })
+    };
   }
 };
+
