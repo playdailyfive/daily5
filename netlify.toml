@@ -1,6 +1,11 @@
 [build]
   functions = "netlify/functions"
 
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@netlify/blobs"]
+
 [[scheduled.functions]]
   name = "today"
   cron = "1 5 * * *"
+
