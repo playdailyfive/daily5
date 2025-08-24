@@ -1,0 +1,5 @@
+{
+  "name": "daily5",
+  "private": true,
+  "dependencies": { "@netlify/blobs": "^6.0.0" }
+}
