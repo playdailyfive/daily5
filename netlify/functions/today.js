@@ -1,5 +1,8 @@
-// CommonJS Netlify Function (classic format) + proper return object
-// Make sure package.json has: { "dependencies": { "@netlify/blobs": "^6.0.0" } }
+// netlify/functions/today.js
+// CommonJS Netlify Function using Netlify Blobs with explicit credentials.
+// Ensure these env vars are set in Netlify project settings:
+//   NETLIFY_SITE_ID, NETLIFY_AUTH_TOKEN
+// Also ensure package.json has: "@netlify/blobs": "^6.0.0"
 
 const { getStore } = require('@netlify/blobs');
 
@@ -12,7 +15,12 @@ function yyyymmdd(d = new Date(), tz = 'America/New_York') {
 
 exports.handler = async () => {
   try {
-    const store = getStore('daily5');
+    // 👇 Explicit config fixes MissingBlobsEnvironmentError
+    const store = getStore('daily5', {
+      siteID: process.env.NETLIFY_SITE_ID,
+      token: process.env.NETLIFY_AUTH_TOKEN,
+    });
+
     const dayStr = yyyymmdd();
     const key = `daily-${dayStr}.json`;
 
@@ -22,7 +30,7 @@ exports.handler = async () => {
       return {
         statusCode: 200,
         headers: { 'content-type': 'application/json' },
-        body: cached
+        body: cached,
       };
     }
 
@@ -39,20 +47,16 @@ exports.handler = async () => {
           { text: "What is 9 × 9?", options: ["81","72","99","64"], correct: 0 }
         ]
       };
-      return {
-        statusCode: 200,
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(fallback)
-      };
+      return { statusCode: 200, headers: { 'content-type': 'application/json' }, body: JSON.stringify(fallback) };
     }
 
     const data = await upstream.json();
     const questions = (data.results || []).map(q => ({
       text: q.question,
       options: [q.correct_answer, ...q.incorrect_answers],
-      correct: 0, // correct answer is first
+      correct: 0, // correct first; client shuffles per-day but keeps answer
       category: q.category || '',
-      difficulty: q.difficulty || ''
+      difficulty: q.difficulty || '',
     }));
 
     const payload = JSON.stringify({ day: dayStr, questions });
@@ -60,17 +64,8 @@ exports.handler = async () => {
     // 3) Cache for 3 days
     await store.set(key, payload, { metadata: { day: dayStr }, ttl: 60 * 60 * 24 * 3 });
 
-    return {
-      statusCode: 200,
-      headers: { 'content-type': 'application/json' },
-      body: payload
-    };
+    return { statusCode: 200, headers: { 'content-type': 'application/json' }, body: payload };
   } catch (e) {
-    return {
-      statusCode: 500,
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ error: 'internal', details: String(e) })
-    };
+    return { statusCode: 500, headers: { 'content-type': 'application/json' }, body: JSON.stringify({ error: 'internal', details: String(e) }) };
   }
 };
-
