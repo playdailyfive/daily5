@@ -99,14 +99,35 @@
   @keyframes fall{0%{opacity:0;transform:translateY(-20px) rotate(0)}10%{opacity:1}100%{opacity:0;transform:translateY(220px) rotate(360deg)}}
   .pulse{ animation:pulse 850ms ease-out both } @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
 
-  /* Footer logo sizing */
-  .ig-footer{ display:flex; flex-direction:column; align-items:center; gap:4px; margin-top:6px; }
+  /* Footer / end actions */
+  .ig-footer{
+    display:flex; flex-direction:column; align-items:center; gap:6px; margin-top:8px;
+  }
   .ig-footer img{ width:42px; height:auto; max-width:42px; display:block; }
+  .ig-footer a{
+    font-weight:900;
+    color:#111827;          /* black text */
+    text-decoration:none;   /* no underline by default */
+  }
+  .ig-footer a:hover{ text-decoration:underline; }
+
+  /* Feedback pill */
+  .feedback-btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:10px 14px; border:1px solid var(--line); border-radius:12px;
+    font-weight:700; font-size:15px; color:#111827; text-decoration:none;
+    box-shadow:0 2px 8px rgba(17,24,39,.06); background:#fff;
+  }
+  .feedback-btn:hover{ box-shadow:0 4px 12px rgba(17,24,39,.08); }
+  .feedback-btn svg{ width:18px; height:18px; display:block; }
 
   #end > *:not(.confetti){ position:relative; z-index:1; }
 
   .hidden{ display:none!important; }
-  @media (max-width:480px){ .chrono{width:56px;height:56px;right:8px;top:8px} #qtext{padding-right:96px;overflow-wrap:anywhere} }
+  @media (max-width:480px){
+    .chrono{width:56px;height:56px;right:8px;top:8px}
+    #qtext{padding-right:96px;overflow-wrap:anywhere}
+  }
   #fallbackBanner{display:none;width:100%;background:#facc15;color:#111;font-weight:bold;text-align:center;padding:8px;position:fixed;top:0;left:0;z-index:1000;}
   .sr-only{ position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
 </style>
@@ -149,9 +170,8 @@ let BANK=[], i=0, score=0, picks=[];
 let timer=null, tickInterval=null, remain=10, circumference=2*Math.PI*19;
 let dayCounter = 1;
 
-/* ---------- Day counter @ midnight ET ----------
-   Set LAUNCH_DATE to the day you want to be Day 1 (ET). */
-const LAUNCH_DATE = { y: 2025, m: 8, d: 24 }; // Today will be #2 with this baseline
+/* ---------- Day counter @ midnight ET ---------- */
+const LAUNCH_DATE = { y: 2025, m: 8, d: 24 }; // Day 1 baseline (ET)
 function dayIndexFromTZ(start, tz){
   const parts = new Intl.DateTimeFormat('en-US', { timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit' }).formatToParts(new Date());
   const nY = +parts.find(p=>p.type==='year').value;
@@ -164,13 +184,14 @@ function dayIndexFromTZ(start, tz){
 }
 dayCounter = dayIndexFromTZ(LAUNCH_DATE, 'America/New_York');
 
-/* Load today’s questions (kept exactly as your repo logic, with fallback) */
+/* Load today’s questions (with safe fallback) */
 async function loadQuestions(){
   try{
     const res = await fetch('/daily.json', { cache:'no-store' });
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
 
+    // Deterministic option shuffle per-day
     const daySeed = Number(data.day||0);
     function seededShuffle(arr, seed){ let s=seed, out=[...arr];
       for(let i=out.length-1;i>0;i--){ s=(s*9301+49297)%233280; const j=Math.floor((s/233280)*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
@@ -222,7 +243,7 @@ function setRingInstant(offset){
 }
 
 /* Timer */
-function resetChrono(){ const ring=$('ringFg'); setRingInstant(0); remain=10; $('chronoNum').textContent=10; $('chrono').classList.remove('soon'); }
+function resetChrono(){ setRingInstant(0); remain=10; $('chronoNum').textContent=10; $('chrono').classList.remove('soon'); }
 function startChrono(){ const perSec = circumference/10; let elapsed = 0; clearInterval(tickInterval); setRingInstant(0); $('chronoNum').textContent=10;
   tickInterval = setInterval(()=>{ elapsed+=1; remain=10-elapsed; $('chronoNum').textContent=Math.max(remain,0);
     $('ringFg').style.strokeDashoffset=String(perSec*elapsed); if(remain<=3){ $('chrono').classList.add('soon'); } if(elapsed>=10){ clearInterval(tickInterval); } },1000); }
@@ -271,20 +292,27 @@ function finish(){ clearTimeout(timer); stopChrono();
     <div class="ig-footer">
       <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
       <img src="logo_1.png" alt="Daily 5 Footer Logo" />
+      <a class="feedback-btn" href="mailto:playdailyfive@gmail.com" aria-label="Send feedback">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
+          <path d="m22 8-10 6L2 8"/>
+        </svg>
+        Send feedback
+      </a>
     </div>
     <p id="shareText" class="muted hidden"></p>
   `;
 
   if(score>=4){ burstConfetti(); }
 
-  // Wordle-style text: "Daily Five N X/5"
+  /* Wordle-style text: "Daily Five N X/5" + blocks with ONE newline between */
   const shareLine=`Daily Five ${dayCounter} ${score}/5`;
-  $('shareText').textContent=`${shareLine}\n\n${row}`;
+  $('shareText').textContent = `${shareLine}\n${row}`;
 
   $('shareBtn').onclick = async () => { 
     const text=$('shareText').textContent;
     try{
-      if(navigator.share){ await navigator.share({ text }); } // no title to avoid extra "Daily Five"
+      if(navigator.share){ await navigator.share({ text }); }
       else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); }
       else { prompt('Copy to share:', text); }
     }catch(e){}
