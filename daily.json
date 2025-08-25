@@ -1,56 +1,56 @@
 {
-  "day": "20250824",
-  "dayIndex": 1,
+  "day": "20250825",
+  "dayIndex": 2,
   "questions": [
     {
-      "text": "What was the title of the first Bond movie, released in 1962?",
+      "text": "Josh Mansour is part of what NRL team?",
       "options": [
-        "Dr. No",
-        "Goldfinger",
-        "Thunderball",
-        "From Russia with Love"
-      ],
-      "correct": 0
-    },
-    {
-      "text": "Who is the author of Jurassic Park?",
-      "options": [
-        "Michael Crichton",
-        "Irvine Welsh",
-        "Chuck Paluhniuk",
-        "Peter Benchley"
-      ],
-      "correct": 0
-    },
-    {
-      "text": "In what film was the Michael Jackson song &quot;Will You Be There&quot; featured?",
-      "options": [
-        "Free Willy",
-        "Sleepless in Seattle",
-        "Bad Boys",
-        "Men in Black"
-      ],
-      "correct": 0
-    },
-    {
-      "text": "In 1939, Britain and France declared war on Germany after it invaded which country?",
-      "options": [
-        "Austria",
-        "Hungary",
-        "Czechoslovakia",
-        "Poland"
+        "Sydney Roosters",
+        "North Queensland Cowboys",
+        "Melbourne Storm",
+        "Penrith Panthers"
       ],
       "correct": 3
     },
     {
-      "text": "Which of the following is NOT a real song from the band Thousand Foot Krutch?",
+      "text": "In the game series &quot;The Legend of Zelda&quot;, what was the first 3D game?",
       "options": [
-        "Give Up The Ghost",
-        "Let The Sparks Fly",
-        "Limitless Fury",
-        "Down"
+        "A Link to the Past",
+        "Ocarina of Time",
+        "Majora&#039;s Mask",
+        "The Wind Waker"
       ],
-      "correct": 2
+      "correct": 1
+    },
+    {
+      "text": "What is the Finnish word for &quot;Finland&quot;?",
+      "options": [
+        "Eesti",
+        "Suomi",
+        "Magyarorsz&aacute;g",
+        "Sverige"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "What is the highest belt you can get in Taekwondo?",
+      "options": [
+        "Green",
+        "Red",
+        "White",
+        "Black"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "What is the name of the Greek god of blacksmiths?",
+      "options": [
+        "Vulcan",
+        "Hephaestus",
+        "Artagatus",
+        "Dyntos"
+      ],
+      "correct": 1
     }
   ]
 }
