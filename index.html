@@ -75,30 +75,8 @@
 
 <script>
 const $ = id => document.getElementById(id);
-let BANK=[], i=0, score=0, picks=[];
-let dayCounter=1;
+let BANK=[], i=0, score=0, picks=[], dayCounter=1;
 
-/* === Day counter that increments at midnight America/Chicago ===
-   Set LAUNCH_DATE to the calendar day you want to be Day #1. */
-const LAUNCH_DATE = { y: 2025, m: 8, d: 25 }; // <-- change if you want a different Day #1
-function dayIndexFromTZ(start, tz){
-  // Current date parts in the chosen timezone
-  const nowParts = new Intl.DateTimeFormat('en-US', {
-    timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit'
-  }).formatToParts(new Date());
-  const nY = +nowParts.find(p=>p.type==='year').value;
-  const nM = +nowParts.find(p=>p.type==='month').value;
-  const nD = +nowParts.find(p=>p.type==='day').value;
-
-  // Convert both to UTC midnight to avoid DST/timezone drift
-  const nowUTC   = Date.UTC(nY, nM-1, nD);
-  const startUTC = Date.UTC(start.y, start.m-1, start.d);
-  const diffDays = Math.floor((nowUTC - startUTC)/86400000);
-  return diffDays + 1; // Day #1 on launch date
-}
-dayCounter = dayIndexFromTZ(LAUNCH_DATE, 'America/Chicago');
-
-/* === Demo questions (replace with your fetch when ready) === */
 async function loadQuestions(){
   return [
     { text:"What is the capital of France?", options:["Paris","Rome","Madrid","Berlin"], correct:0 },
@@ -119,7 +97,6 @@ function renderQ(){
     b.onclick=()=>lock(idx,b); box.appendChild(b);
   });
 }
-
 function lock(idx,btn){
   const q=BANK[i], all=[...document.querySelectorAll('.answer')];
   all.forEach(b=>b.disabled=true);
@@ -127,41 +104,18 @@ function lock(idx,btn){
   else { picks.push('bad'); btn.classList.add('wrong'); all[q.correct].classList.add('correct'); }
   setTimeout(()=>{ i++; if(i>=5) finish(); else renderQ(); },800);
 }
-
 function finish(){
   $('play').classList.add('hidden'); $('end').classList.remove('hidden');
-
-  // Build squares and share text
   const map={good:'🟩',bad:'🟥',skip:'⬜️'};
   $('shareGrid').innerHTML=''; let row='';
   picks.forEach(p=>{ const d=document.createElement('div'); d.className='sq '+p; $('shareGrid').appendChild(d); row+=map[p]; });
-
-  const witty=(score===5)?"Perfect! 5/5 🎉"
-    :(score===4)?"So close! 4/5 🔥"
-    :(score===3)?"Nice run! 3/5 👏"
-    :(score===2)?"Good try! 2/5 🙂"
-    :(score===1)?"1/5 🤏 Better luck next time."
-    :"0/5 😵";
+  const witty=(score===5)?"Perfect! 5/5 🎉":(score===4)?"So close! 4/5 🔥":(score===3)?"Nice run! 3/5 👏":(score===2)?"Good try! 2/5 🙂":(score===1)?"1/5 🤏 Better luck next time.":"0/5 😵";
   $('endTitle').textContent=witty;
-
-  // Wordle-style first line; NO extra header shown on page
   const shareLine=`Daily Five #${dayCounter} — ${score}/5`;
   $('shareText').textContent=`${shareLine}\n\n${row}`;
 }
-
-$('shareBtn').onclick=()=>{
-  const text=$('shareText').textContent;
-  if(navigator.share){ navigator.share({title:'Daily Five', text}).catch(()=>{}); }
-  else if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>alert("Copied!")).catch(()=>prompt("Copy to share:", text)); }
-  else { prompt("Copy to share:", text); }
-};
-
-$('startBtn').onclick=async()=>{
-  i=0; score=0; picks=[];
-  BANK=await loadQuestions();
-  renderQ();
-  $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden');
-};
+$('shareBtn').onclick=()=>{ navigator.clipboard.writeText($('shareText').textContent); alert("Copied!"); };
+$('startBtn').onclick=async()=>{ i=0;score=0;picks=[]; BANK=await loadQuestions(); renderQ(); $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden'); };
 </script>
 </body>
 </html>
