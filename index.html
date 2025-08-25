@@ -93,43 +93,21 @@
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
   .title{ font-size:clamp(20px,2.2vw,22px); font-weight:900; text-align:center; margin-bottom:2px; }
 
-  @keyframes qOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}} @keyframes qIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-  .anim-out{animation:qOut 180ms ease forwards} .anim-in{animation:qIn 220ms ease both}
-  .confetti{ position:absolute; inset:0; pointer-events:none; overflow:hidden; z-index:0; } .piece{ position:absolute; width:8px; height:14px; opacity:0; transform:translateY(-20px) rotate(0); animation:fall 1200ms ease-out forwards; }
-  @keyframes fall{0%{opacity:0;transform:translateY(-20px) rotate(0)}10%{opacity:1}100%{opacity:0;transform:translateY(220px) rotate(360deg)}}
-  .pulse{ animation:pulse 850ms ease-out both } @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
-
   /* Footer / end actions */
-  .ig-footer{
-    display:flex; flex-direction:column; align-items:center; gap:6px; margin-top:8px;
-  }
+  .ig-footer{ display:flex; flex-direction:column; align-items:center; gap:6px; margin-top:8px; }
   .ig-footer img{ width:42px; height:auto; max-width:42px; display:block; }
-  .ig-footer a{
-    font-weight:900;
-    color:#111827;          /* black text */
-    text-decoration:none;   /* no underline by default */
-  }
+  .ig-footer a{ font-weight:900; color:#111827; text-decoration:none; }
   .ig-footer a:hover{ text-decoration:underline; }
 
   /* Feedback pill */
-  .feedback-btn{
-    display:inline-flex; align-items:center; gap:8px;
-    padding:10px 14px; border:1px solid var(--line); border-radius:12px;
-    font-weight:700; font-size:15px; color:#111827; text-decoration:none;
-    box-shadow:0 2px 8px rgba(17,24,39,.06); background:#fff;
-  }
+  .feedback-btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--line); border-radius:12px;
+    font-weight:700; font-size:15px; color:#111827; text-decoration:none; box-shadow:0 2px 8px rgba(17,24,39,.06); background:#fff; }
   .feedback-btn:hover{ box-shadow:0 4px 12px rgba(17,24,39,.08); }
   .feedback-btn svg{ width:18px; height:18px; display:block; }
 
   #end > *:not(.confetti){ position:relative; z-index:1; }
 
   .hidden{ display:none!important; }
-  @media (max-width:480px){
-    .chrono{width:56px;height:56px;right:8px;top:8px}
-    #qtext{padding-right:96px;overflow-wrap:anywhere}
-  }
-  #fallbackBanner{display:none;width:100%;background:#facc15;color:#111;font-weight:bold;text-align:center;padding:8px;position:fixed;top:0;left:0;z-index:1000;}
-  .sr-only{ position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
 </style>
 </head>
 <body>
@@ -170,8 +148,8 @@ let BANK=[], i=0, score=0, picks=[];
 let timer=null, tickInterval=null, remain=10, circumference=2*Math.PI*19;
 let dayCounter = 1;
 
-/* ---------- Day counter @ midnight ET ---------- */
-const LAUNCH_DATE = { y: 2025, m: 8, d: 24 }; // Day 1 baseline (ET)
+/* Day counter @ midnight ET */
+const LAUNCH_DATE = { y: 2025, m: 8, d: 24 };
 function dayIndexFromTZ(start, tz){
   const parts = new Intl.DateTimeFormat('en-US', { timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit' }).formatToParts(new Date());
   const nY = +parts.find(p=>p.type==='year').value;
@@ -180,111 +158,56 @@ function dayIndexFromTZ(start, tz){
   const nowUTC   = Date.UTC(nY, nM-1, nD);
   const startUTC = Date.UTC(start.y, start.m-1, start.d);
   const diffDays = Math.floor((nowUTC - startUTC) / 86400000);
-  return diffDays + 1; // Day 1 on launch date
+  return diffDays + 1;
 }
 dayCounter = dayIndexFromTZ(LAUNCH_DATE, 'America/New_York');
 
-/* Load today’s questions (with safe fallback) */
-async function loadQuestions(){
-  try{
-    const res = await fetch('/daily.json', { cache:'no-store' });
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const data = await res.json();
-
-    // Deterministic option shuffle per-day
-    const daySeed = Number(data.day||0);
-    function seededShuffle(arr, seed){ let s=seed, out=[...arr];
-      for(let i=out.length-1;i>0;i--){ s=(s*9301+49297)%233280; const j=Math.floor((s/233280)*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
-      return out;
-    }
-    return (data.questions||[]).map((q,idx)=>{
-      const opts=seededShuffle(q.options, daySeed+idx*7);
-      const correctIdx=opts.indexOf(q.options[q.correct]);
-      return {text:q.text, options:opts, correct:correctIdx};
-    });
-  }catch(e){
-    console.warn('Falling back to demo set:', e);
-    $('fallbackBanner').style.display='block';
-    return [
-      { text:"What is the capital of France?", options:["Paris","Rome","Madrid","Berlin"], correct:0 },
-      { text:"Who painted the Mona Lisa?", options:["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], correct:0 },
-      { text:"Which planet is known as the Red Planet?", options:["Mars","Jupiter","Venus","Saturn"], correct:0 },
-      { text:"What is H2O commonly known as?", options:["Water","Hydrogen","Oxygen","Salt"], correct:0 },
-      { text:"What is 9 × 9?", options:["81","72","99","64"], correct:0 }
-    ];
-  }
-}
+/* Load today’s questions */
+async function loadQuestions(){ try{ const res = await fetch('/daily.json', { cache:'no-store' });
+  if(!res.ok) throw new Error('HTTP '+res.status);
+  const data = await res.json(); const daySeed = Number(data.day||0);
+  function seededShuffle(arr, seed){ let s=seed, out=[...arr];
+    for(let i=out.length-1;i>0;i--){ s=(s*9301+49297)%233280; const j=Math.floor((s/233280)*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
+    return out; }
+  return (data.questions||[]).map((q,idx)=>{ const opts=seededShuffle(q.options, daySeed+idx*7); const correctIdx=opts.indexOf(q.options[q.correct]); return {text:q.text, options:opts, correct:correctIdx}; });
+} catch(e){ console.warn('Fallback set', e); $('fallbackBanner').style.display='block';
+  return [
+    { text:"What is the capital of France?", options:["Paris","Rome","Madrid","Berlin"], correct:0 },
+    { text:"Who painted the Mona Lisa?", options:["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], correct:0 },
+    { text:"Which planet is known as the Red Planet?", options:["Mars","Jupiter","Venus","Saturn"], correct:0 },
+    { text:"What is H2O commonly known as?", options:["Water","Hydrogen","Oxygen","Salt"], correct:0 },
+    { text:"What is 9 × 9?", options:["81","72","99","64"], correct:0 }
+  ]; }}
 
 /* Confetti */
-function burstConfetti(){ 
-  const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
+function burstConfetti(){ const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
   const colors=['#16a34a','#111827','#9CA3AF','#34d399','#059669'];
-  for(let n=0;n<24;n++){
-    const el=document.createElement('div'); 
-    el.className='piece';
-    el.style.left=(10+Math.random()*80)+'%'; 
-    el.style.top='-6px';
-    el.style.background=colors[Math.floor(Math.random()*colors.length)];
-    el.style.animationDelay=(Math.random()*0.25)+'s';
-    el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`;
-    layer.appendChild(el);
-  }
-}
+  for(let n=0;n<24;n++){ const el=document.createElement('div'); el.className='piece'; el.style.left=(10+Math.random()*80)+'%'; el.style.top='-6px'; el.style.background=colors[Math.floor(Math.random()*colors.length)]; el.style.animationDelay=(Math.random()*0.25)+'s'; el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`; layer.appendChild(el);}}
 
-/* Ring control */
-function setRingInstant(offset){
-  const ring = $('ringFg');
-  const prev = ring.style.transition;
-  ring.style.transition = 'none';
-  ring.style.strokeDasharray = String(circumference);
-  ring.style.strokeDashoffset = String(offset);
-  void ring.getBoundingClientRect();
-  ring.style.transition = prev || 'stroke-dashoffset 1s linear, stroke .2s';
-}
-
-/* Timer */
+/* Timer helpers */
+function setRingInstant(offset){ const ring=$('ringFg'); const prev=ring.style.transition; ring.style.transition='none'; ring.style.strokeDasharray=String(circumference); ring.style.strokeDashoffset=String(offset); void ring.getBoundingClientRect(); ring.style.transition=prev||'stroke-dashoffset 1s linear, stroke .2s'; }
 function resetChrono(){ setRingInstant(0); remain=10; $('chronoNum').textContent=10; $('chrono').classList.remove('soon'); }
-function startChrono(){ const perSec = circumference/10; let elapsed = 0; clearInterval(tickInterval); setRingInstant(0); $('chronoNum').textContent=10;
-  tickInterval = setInterval(()=>{ elapsed+=1; remain=10-elapsed; $('chronoNum').textContent=Math.max(remain,0);
-    $('ringFg').style.strokeDashoffset=String(perSec*elapsed); if(remain<=3){ $('chrono').classList.add('soon'); } if(elapsed>=10){ clearInterval(tickInterval); } },1000); }
+function startChrono(){ const perSec=circumference/10; let elapsed=0; clearInterval(tickInterval); setRingInstant(0); $('chronoNum').textContent=10;
+  tickInterval=setInterval(()=>{ elapsed+=1; remain=10-elapsed; $('chronoNum').textContent=Math.max(remain,0); $('ringFg').style.strokeDashoffset=String(perSec*elapsed); if(remain<=3){ $('chrono').classList.add('soon'); } if(elapsed>=10){ clearInterval(tickInterval); } },1000); }
 function stopChrono(){ clearInterval(tickInterval); }
 function beginTimer(){ resetChrono(); startChrono(); }
 
-/* Render */
-function renderQ(opts={}){ 
-  const q=BANK[i]; 
-  $('qtext').innerHTML=q.text; 
-  $('progressPill').textContent=`Q${i+1}/5`;
-  const box=$('answers'); box.innerHTML='';
-  q.options.forEach((opt,idx)=>{ 
-    const b=document.createElement('button'); 
-    b.className='answer'; 
-    b.innerHTML=opt; 
-    b.onclick=()=>lock(idx,b); 
-    box.appendChild(b); 
-  });
-  if (!opts.deferTimer) beginTimer();
-  clearTimeout(timer); timer=setTimeout(()=>timeUp(),10000);
-}
+/* Render question */
+function renderQ(opts={}){ const q=BANK[i]; $('qtext').innerHTML=q.text; $('progressPill').textContent=`Q${i+1}/5`; const box=$('answers'); box.innerHTML='';
+  q.options.forEach((opt,idx)=>{ const b=document.createElement('button'); b.className='answer'; b.innerHTML=opt; b.onclick=()=>lock(idx,b); box.appendChild(b); });
+  if (!opts.deferTimer) beginTimer(); clearTimeout(timer); timer=setTimeout(()=>timeUp(),10000); }
 
-/* Lock / Time Up */
+/* Lock + next */
 function lock(idx,btn){ clearTimeout(timer); stopChrono(); const q=BANK[i], all=[...document.querySelectorAll('.answer')]; all.forEach(b=>b.disabled=true); const ok=idx===q.correct;
-  if(ok){ score++; picks.push('good'); btn.classList.add('correct'); } else { picks.push('bad'); btn.classList.add('wrong'); } all[q.correct].classList.add('correct');
-  if(navigator.vibrate){ try{ navigator.vibrate(ok?[30]:[20,40]); }catch(e){} } setTimeout(()=>animateNext(), ok?800:1600);
-}
+  if(ok){ score++; picks.push('good'); btn.classList.add('correct'); } else { picks.push('bad'); btn.classList.add('wrong'); } all[q.correct].classList.add('correct'); if(navigator.vibrate){ try{ navigator.vibrate(ok?[30]:[20,40]); }catch(e){} } setTimeout(()=>animateNext(), ok?800:1600); }
 function timeUp(){ stopChrono(); picks.push('skip'); const q=BANK[i], all=[...document.querySelectorAll('.answer')]; all.forEach(b=>b.disabled=true); all[q.correct].classList.add('correct'); setTimeout(()=>animateNext(),1200); }
 function animateNext(){ const play=$('play'); play.classList.remove('anim-in'); play.classList.add('anim-out'); setTimeout(()=>{ play.classList.remove('anim-out'); i++; if(i>=5){ finish(); return; } renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220); },180); }
 
-/* End – rebuilds the entire end card */
-function finish(){ clearTimeout(timer); stopChrono(); 
-  const map={good:'🟩',bad:'🟥',skip:'⬜️'}; let row=''; picks.forEach(p=>row+=map[p]);
-  const squares = picks.map(p=>`<div class="sq ${p==='good'?'good':p==='bad'?'bad':'skip'}"></div>`).join('');
-  const witty = (score===5) ? "Perfect! 5/5 🎉 You nailed it!" : (score===4) ? "So close! 4/5 🔥 One more next time." :
-                 (score===3) ? "Nice run! 3/5 👏 Solid showing." : (score===2) ? "Good try! 2/5 🙂 Warming up." :
-                 (score===1) ? "Good try! 1/5 🤏 Better luck next time." : "Tough one! 0/5 😵 You'll crush the next set.";
-
-  const end = $('end');
-  end.innerHTML = `
+/* End screen */
+function finish(){ clearTimeout(timer); stopChrono(); const map={good:'🟩',bad:'🟥',skip:'⬜️'}; let row=''; picks.forEach(p=>row+=map[p]);
+  const squares=picks.map(p=>`<div class="sq ${p==='good'?'good':p==='bad'?'bad':'skip'}"></div>`).join('');
+  const witty=(score===5)?"Perfect! 5/5 🎉 You nailed it!":(score===4)?"So close! 4/5 🔥 One more next time.":(score===3)?"Nice run! 3/5 👏 Solid showing.":(score===2)?"Good try! 2/5 🙂 Warming up.":(score===1)?"Good try! 1/5 🤏 Better luck next time.":"Tough one! 0/5 😵 You'll crush the next set.";
+  const end=$('end'); end.innerHTML=`
     <div class="confetti" id="confetti"></div>
     <h2 class="title" id="endTitle">${witty}</h2>
     <div class="grid" id="shareGrid">${squares}</div>
@@ -293,43 +216,17 @@ function finish(){ clearTimeout(timer); stopChrono();
       <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
       <img src="logo_1.png" alt="Daily 5 Footer Logo" />
       <a class="feedback-btn" href="mailto:playdailyfive@gmail.com" aria-label="Send feedback">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
-          <path d="m22 8-10 6L2 8"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="m22 8-10 6L2 8"/></svg>
         Send feedback
       </a>
     </div>
-    <p id="shareText" class="muted hidden"></p>
-  `;
-
-  if(score>=4){ burstConfetti(); }
-
-  /* Wordle-style text: "Daily Five N X/5" + blocks with ONE newline between */
-  const shareLine=`Daily Five ${dayCounter} ${score}/5`;
-  $('shareText').textContent = `${shareLine}\n${row}`;
-
-  $('shareBtn').onclick = async () => { 
-    const text=$('shareText').textContent;
-    try{
-      if(navigator.share){ await navigator.share({ text }); }
-      else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); }
-      else { prompt('Copy to share:', text); }
-    }catch(e){}
-  };
-
-  $('play').classList.add('hidden'); 
-  end.classList.remove('hidden');
-}
+    <p id="shareText" class="muted hidden"></p>`; if(score>=4){ burstConfetti(); }
+  const shareLine=`Daily Five ${dayCounter} ${score}/5`; $('shareText').textContent=`${shareLine}\n\n${row}`;
+  $('shareBtn').onclick=async()=>{ const text=$('shareText').textContent; try{ if(navigator.share){ await navigator.share({ text }); } else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); } else { prompt('Copy to share:', text); } }catch(e){} };
+  $('play').classList.add('hidden'); end.classList.remove('hidden'); }
 
 /* Start game */
-$('startBtn').onclick = async () => { 
-  i=0; score=0; picks=[];
-  BANK = await loadQuestions();
-  renderQ({deferTimer:true});
-  $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden');
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{ beginTimer(); }));
-};
+$('startBtn').onclick=async()=>{ i=0;score=0;picks=[]; BANK=await loadQuestions(); renderQ({deferTimer:true}); $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden'); requestAnimationFrame(()=>requestAnimationFrame(()=>{ beginTimer(); })); };
 </script>
 </body>
 </html>
