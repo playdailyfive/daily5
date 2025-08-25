@@ -27,8 +27,11 @@
   .answer.correct{ background:var(--good); border-color:var(--good); color:#fff; } .answer.wrong{ background:var(--bad); border-color:var(--bad); color:#fff; }
 
   .chrono{ pointer-events:none; position:absolute; right:12px; top:12px; width:64px; height:64px; display:grid; place-items:center; }
-  .chrono svg{ width:100%; height:100%; display:block; } .chrono .ring-bg{ stroke:#e5e7eb; } .chrono .ring-fg{ stroke:#111827; transition:stroke-dashoffset 1s linear, stroke .2s; }
-  .chrono.soon .ring-fg{ stroke:var(--bad);} .chrono .num{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px; }
+  .chrono svg{ width:100%; height:100%; display:block; }
+  .chrono .ring-bg{ stroke:#e5e7eb; }
+  .chrono .ring-fg{ stroke:#111827; transition:stroke-dashoffset 1s linear, stroke .2s; }
+  .chrono.soon .ring-fg{ stroke:var(--bad);}
+  .chrono .num{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px; }
 
   .grid{ display:grid; grid-template-columns:repeat(5,36px); gap:10px; justify-content:center; margin-top:2px; }
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
@@ -58,7 +61,9 @@
       <div class="chrono" id="chrono" aria-hidden="true">
         <svg viewBox="0 0 44 44">
           <circle class="ring-bg" cx="22" cy="22" r="19" fill="none" stroke-width="6"></circle>
-          <g transform="rotate(-90 22 22)"><circle id="ringFg" class="ring-fg" cx="22" cy="22" r="19" fill="none" stroke-width="6" stroke-linecap="round"></circle></g>
+          <g transform="rotate(-90 22 22)">
+            <circle id="ringFg" class="ring-fg" cx="22" cy="22" r="19" fill="none" stroke-width="6" stroke-linecap="round"></circle>
+          </g>
         </svg>
         <div id="chronoNum" class="num">10</div>
       </div>
@@ -108,6 +113,16 @@ async function loadQuestions(){
   }
 }
 
+/* Helper: set ring offset instantly (no transition), then restore transition */
+function setRingOffsetInstant(val){
+  const ring = $('ringFg');
+  const prev = ring.style.transition;
+  ring.style.transition = 'none';
+  ring.style.strokeDashoffset = String(val);
+  void ring.getBoundingClientRect(); // force reflow
+  ring.style.transition = prev || 'stroke-dashoffset 1s linear, stroke .2s';
+}
+
 /* Start & Share */
 $('startBtn').onclick = async () => { 
   i=0; score=0; picks=[];
@@ -123,33 +138,34 @@ $('shareBtn').onclick = async () => {
   }catch(e){}
 };
 
-/* Timer — show 10 immediately at each question start */
+/* Timer — no wind-up: show 10 instantly, then tick down */
 function resetChrono(){
   const ring=$('ringFg');
-  ring.style.strokeDasharray=String(circumference);
-  ring.style.strokeDashoffset="0";       // full circle visible (no wind-up)
-  remain=10;
-  $('chronoNum').textContent=10;         // show 10 instantly
+  const perSec = circumference/10;
+  ring.style.strokeDasharray = String(circumference);
+  setRingOffsetInstant(0);            // full circle visible immediately
+  remain = 10;
+  $('chronoNum').textContent = 10;    // show 10 instantly
   $('chrono').classList.remove('soon');
 }
 function startChrono(){
   const ring=$('ringFg');
-  const step=circumference/10;
-  let elapsed=0;
+  const perSec = circumference/10;
+  let elapsed = 0;
 
   clearInterval(tickInterval);
-  ring.style.strokeDasharray=String(circumference);
-  ring.style.strokeDashoffset="0";       // start at full circle
-  $('chronoNum').textContent=10;
+  ring.style.strokeDasharray = String(circumference);
+  setRingOffsetInstant(0);            // ensure start at full circle (no animation)
+  $('chronoNum').textContent = 10;
 
-  tickInterval=setInterval(()=>{
-    elapsed+=1;
-    remain=10-elapsed;
-    $('chronoNum').textContent=Math.max(remain,0);
-    ring.style.strokeDashoffset=String(step*elapsed); // shrink ring each second
-    if(remain<=3){ $('chrono').classList.add('soon'); }
-    if(elapsed>=10){ clearInterval(tickInterval); }
-  },1000);
+  tickInterval = setInterval(()=>{
+    elapsed += 1;
+    remain = 10 - elapsed;
+    $('chronoNum').textContent = Math.max(remain, 0);
+    ring.style.strokeDashoffset = String(perSec * elapsed); // animate down each second
+    if(remain <= 3){ $('chrono').classList.add('soon'); }
+    if(elapsed >= 10){ clearInterval(tickInterval); }
+  }, 1000);
 }
 function stopChrono(){ clearInterval(tickInterval); }
 
