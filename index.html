@@ -87,7 +87,6 @@
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
   .title{ font-size:clamp(20px,2.2vw,22px); font-weight:900; text-align:center; margin-bottom:2px; }
 
-  /* Confetti + anim */
   @keyframes qOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}} 
   @keyframes qIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
   .anim-out{animation:qOut 180ms ease forwards} 
@@ -98,7 +97,7 @@
   .pulse{ animation:pulse 850ms ease-out both } 
   @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
 
-  /* Footer logo sizing (this was missing and caused the “big 5” takeover) */
+  /* Footer logo sizing (prevents giant “5” takeover) */
   .ig-footer{ display:flex; flex-direction:column; align-items:center; gap:4px; margin-top:6px; }
   .ig-footer img{ width:42px; height:auto; max-width:42px; display:block; }
 
@@ -176,9 +175,11 @@ function burstConfetti(){
   const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
   const colors=['#16a34a','#111827','#9CA3AF','#34d399','#059669'];
   for(let n=0;n<24;n++){
-    const el=document.createElement('div'); el.className='piece';
-    el.style.left=(10+Math.random()*80)+'%'; el.style.top='-6px';
-    el.style.background=colors[(*Math.random()*colors.length)|0];
+    const el=document.createElement('div'); 
+    el.className='piece';
+    el.style.left=(10+Math.random()*80)+'%'; 
+    el.style.top='-6px';
+    el.style.background=colors[Math.floor(Math.random()*colors.length)]; /* <-- FIXED LINE */
     el.style.animationDelay=(Math.random()*0.25)+'s';
     el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`;
     layer.appendChild(el);
