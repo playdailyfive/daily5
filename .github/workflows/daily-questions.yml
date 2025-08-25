@@ -28,7 +28,7 @@ jobs:
           node-version: '20'
 
       - name: Generate today's questions (ET-aware)
-        run: node scripts/generate-daily.js
+        run: node scripts/generate-daily.cjs
 
       - name: Commit & push if changed
         env:
