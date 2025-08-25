@@ -113,13 +113,14 @@ async function loadQuestions(){
   }
 }
 
-/* Helper: set ring offset instantly (no transition), then restore transition */
-function setRingOffsetInstant(val){
-  const ring = $('ringFg');
+/* Helper: set ring instantly without animating, then restore transition smoothly */
+function setRingInstant(ring, offset){
   const prev = ring.style.transition;
   ring.style.transition = 'none';
-  ring.style.strokeDashoffset = String(val);
-  void ring.getBoundingClientRect(); // force reflow
+  ring.style.strokeDashoffset = String(offset);
+  // force reflow so the browser applies the no-transition change
+  // then restore the normal transition for subsequent animation
+  void ring.getBoundingClientRect();
   ring.style.transition = prev || 'stroke-dashoffset 1s linear, stroke .2s';
 }
 
@@ -138,14 +139,13 @@ $('shareBtn').onclick = async () => {
   }catch(e){}
 };
 
-/* Timer — no wind-up: show 10 instantly, then tick down */
+/* Timer — smooth: show 10 + full outline instantly; animate only on ticks */
 function resetChrono(){
   const ring=$('ringFg');
-  const perSec = circumference/10;
   ring.style.strokeDasharray = String(circumference);
-  setRingOffsetInstant(0);            // full circle visible immediately
+  setRingInstant(ring, 0);         // set to full circle without animation
   remain = 10;
-  $('chronoNum').textContent = 10;    // show 10 instantly
+  $('chronoNum').textContent = 10; // show 10 immediately
   $('chrono').classList.remove('soon');
 }
 function startChrono(){
@@ -155,14 +155,15 @@ function startChrono(){
 
   clearInterval(tickInterval);
   ring.style.strokeDasharray = String(circumference);
-  setRingOffsetInstant(0);            // ensure start at full circle (no animation)
+  setRingInstant(ring, 0);         // ensure starting from full, no wind-up
   $('chronoNum').textContent = 10;
 
+  // First change happens at 1s → smooth animation from full to 90%
   tickInterval = setInterval(()=>{
     elapsed += 1;
     remain = 10 - elapsed;
     $('chronoNum').textContent = Math.max(remain, 0);
-    ring.style.strokeDashoffset = String(perSec * elapsed); // animate down each second
+    ring.style.strokeDashoffset = String(perSec * elapsed);
     if(remain <= 3){ $('chrono').classList.add('soon'); }
     if(elapsed >= 10){ clearInterval(tickInterval); }
   }, 1000);
