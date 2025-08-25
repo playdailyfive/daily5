@@ -1,53 +1,54 @@
 {
   "day": "20250824",
+  "dayIndex": 1,
   "questions": [
     {
-      "text": "In the game Destiny, who succeeded Peter Dinklage in voicing the protagonist&#039;s &quot;Ghost&quot;?",
+      "text": "In programming, what do you call functions with the same name but different implementations?",
       "options": [
-        "Nolan North",
-        "Mark Hamill",
-        " Troy Baker",
-        "John DiMaggio"
+        "Overloading",
+        "Abstracting",
+        "Inheriting",
+        "Overriding"
       ],
       "correct": 0
     },
     {
-      "text": "In the game Warframe, what Mastery Rank do you need to have to build the Tigris Prime?",
+      "text": "When was Left 4 Dead 2 released?",
       "options": [
-        "13",
-        "10",
-        "18",
-        "6"
+        "November 17, 2009",
+        "June 30, 2010",
+        "November 30, 2009",
+        "May 3, 2008"
       ],
       "correct": 0
     },
     {
-      "text": "What was the character Kirby originally going to be named?",
+      "text": "The acronym DOTA stands for",
       "options": [
-        "Popopo",
-        "Dedede",
-        "Prince Puff",
-        "Waddle Dee"
+        "Defense of the Ancients",
+        "Defense of the Artifacts",
+        "Defense of the Animated",
+        "Defense of the Antiques"
       ],
       "correct": 0
     },
     {
-      "text": "In &quot;Star Trek&quot;, what sauce is commonly used by Klingons on bregit lung?",
+      "text": "What is the name of the song by Beyonc&eacute; and Alejandro Fern&aacute;ndez released in 2007?",
       "options": [
-        "Sweet chili sauce",
-        "Grapork sauce",
-        "Gazorpazorp pudding",
-        "Grapok sauce"
+        "Rocket",
+        "Hasta Dondes Estes",
+        "La ultima vez",
+        "Amor Gitano"
       ],
       "correct": 3
     },
     {
-      "text": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
+      "text": "How many provinces are in the Netherlands?",
       "options": [
-        "Goat",
-        "Dog",
-        "Moose",
-        "Bear"
+        "13",
+        "14",
+        "12",
+        "10"
       ],
       "correct": 2
     }
