@@ -133,15 +133,7 @@
 
     <section id="end" class="card hidden">
       <div class="confetti" id="confetti"></div>
-      <h2 id="endTitle" class="title">Good try! 👍</h2>
-      <div id="endHeader" class="title" style="margin-top:-6px;">Daily Five — 0/5</div>
-      <div id="shareGrid" class="grid"></div>
-      <button id="shareBtn" class="cta-medium">Share</button>
-      <div class="ig-footer">
-        <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
-        <img src="logo_1.png" alt="Daily 5 Footer Logo"/>
-      </div>
-      <p id="shareText" class="muted hidden"></p>
+      <!-- Content will be rebuilt by JS in finish() -->
     </section>
   </div>
 
@@ -259,47 +251,64 @@ function animateNext(){
   },180);
 }
 
-/* End */
+/* End (rebuilds the whole end card so it cannot “disappear”) */
 function finish(){ 
   clearTimeout(timer); stopChrono(); 
 
   const headerText = `Daily Five ${dayCounter} — ${score}/5`;
-  $('endHeader').textContent = headerText;
-
   const map={good:'🟩',bad:'🟥',skip:'⬜️'};
-  $('shareGrid').innerHTML=''; 
-  let row='';
-  picks.forEach(p=>{
-    const d=document.createElement('div');
-    d.className='sq '+(p==='good'?'good':p==='bad'?'bad':'skip');
-    $('shareGrid').appendChild(d); 
-    row+=map[p];
+  let row=''; picks.forEach(p=>row+=map[p]);
+
+  // Build squares HTML
+  const squares = picks.map(p=>{
+    const cls = p==='good'?'good':p==='bad'?'bad':'skip';
+    return `<div class="sq ${cls}"></div>`;
+  }).join('');
+
+  const witty = (score===5) ? "Perfect! 5/5 🎉 You nailed it!"
+    : (score===4) ? "So close! 4/5 🔥 One more next time."
+    : (score===3) ? "Nice run! 3/5 👏 Solid showing."
+    : (score===2) ? "Good try! 2/5 🙂 Warming up."
+    : (score===1) ? "Good try! 1/5 🤏 Better luck next time."
+    : "Tough one! 0/5 😵 You'll crush the next set.";
+
+  // Rebuild end card content
+  const end = $('end');
+  end.innerHTML = `
+    <div class="confetti" id="confetti"></div>
+    <h2 class="title" id="endTitle">${witty}</h2>
+    <div class="title" id="endHeader" style="margin-top:-6px;">${headerText}</div>
+    <div class="grid" id="shareGrid">${squares}</div>
+    <button id="shareBtn" class="cta-medium">Share</button>
+    <div class="ig-footer">
+      <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
+      <img src="logo_1.png" alt="Daily 5 Footer Logo"/>
+    </div>
+    <p id="shareText" class="muted hidden">${headerText}\n\n${row}</p>
+  `;
+
+  // Ensure end content sits above confetti
+  [...end.children].forEach(ch=>{
+    if(ch.id!=='confetti'){ ch.style.position='relative'; ch.style.zIndex='1'; }
   });
 
-  const title=$('endTitle'); 
-  title.textContent=(score===5)?"Perfect! 5/5 🎉 You nailed it!"
-    :(score===4)?"So close! 4/5 🔥 One more next time."
-    :(score===3)?"Nice run! 3/5 👏 Solid showing."
-    :(score===2)?"Good try! 2/5 🙂 Warming up."
-    :(score===1)?"Good try! 1/5 🤏 Better luck next time."
-    :"Tough one! 0/5 😵 You'll crush the next set.";
-  if(score>=4){ title.classList.add('pulse'); burstConfetti(); }
+  // Confetti for 4+ correct
+  if(score>=4){ burstConfetti(); }
 
-  $('shareText').textContent = `${headerText}\n\n${row}`;
+  // Wire Share (since we rebuilt button)
+  $('shareBtn').onclick = async () => { 
+    const text=$('shareText').textContent;
+    try{
+      if(navigator.share){ await navigator.share({title:'Daily Five', text}); }
+      else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); }
+      else { prompt('Copy to share:', text); }
+    }catch(e){}
+  };
 
+  // Swap screens
   $('play').classList.add('hidden'); 
-  $('end').classList.remove('hidden');
+  end.classList.remove('hidden');
 }
-
-/* Share */
-$('shareBtn').onclick = async () => { 
-  const text=$('shareText').textContent;
-  try{
-    if(navigator.share){ await navigator.share({title:'Daily Five', text}); }
-    else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); }
-    else { prompt('Copy to share:', text); }
-  }catch(e){}
-};
 
 /* Start game */
 $('startBtn').onclick = async () => { 
