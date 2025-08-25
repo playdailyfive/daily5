@@ -3,52 +3,52 @@
   "dayIndex": 1,
   "questions": [
     {
-      "text": "In programming, what do you call functions with the same name but different implementations?",
+      "text": "What was the title of the first Bond movie, released in 1962?",
       "options": [
-        "Overloading",
-        "Abstracting",
-        "Inheriting",
-        "Overriding"
+        "Dr. No",
+        "Goldfinger",
+        "Thunderball",
+        "From Russia with Love"
       ],
       "correct": 0
     },
     {
-      "text": "When was Left 4 Dead 2 released?",
+      "text": "Who is the author of Jurassic Park?",
       "options": [
-        "November 17, 2009",
-        "June 30, 2010",
-        "November 30, 2009",
-        "May 3, 2008"
+        "Michael Crichton",
+        "Irvine Welsh",
+        "Chuck Paluhniuk",
+        "Peter Benchley"
       ],
       "correct": 0
     },
     {
-      "text": "The acronym DOTA stands for",
+      "text": "In what film was the Michael Jackson song &quot;Will You Be There&quot; featured?",
       "options": [
-        "Defense of the Ancients",
-        "Defense of the Artifacts",
-        "Defense of the Animated",
-        "Defense of the Antiques"
+        "Free Willy",
+        "Sleepless in Seattle",
+        "Bad Boys",
+        "Men in Black"
       ],
       "correct": 0
     },
     {
-      "text": "What is the name of the song by Beyonc&eacute; and Alejandro Fern&aacute;ndez released in 2007?",
+      "text": "In 1939, Britain and France declared war on Germany after it invaded which country?",
       "options": [
-        "Rocket",
-        "Hasta Dondes Estes",
-        "La ultima vez",
-        "Amor Gitano"
+        "Austria",
+        "Hungary",
+        "Czechoslovakia",
+        "Poland"
       ],
       "correct": 3
     },
     {
-      "text": "How many provinces are in the Netherlands?",
+      "text": "Which of the following is NOT a real song from the band Thousand Foot Krutch?",
       "options": [
-        "13",
-        "14",
-        "12",
-        "10"
+        "Give Up The Ghost",
+        "Let The Sparks Fly",
+        "Limitless Fury",
+        "Down"
       ],
       "correct": 2
     }
