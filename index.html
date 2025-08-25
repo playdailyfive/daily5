@@ -63,9 +63,15 @@
   .cta:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); } .cta:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
   .cta:active{ transform:translateY(1px) scale(.995); box-shadow:0 6px 16px rgba(17,24,39,.15); }
 
-  /* Share button = same look, slightly slimmer */
-  .cta-share{ padding:18px 30px; font-size:clamp(17px,2vw,19px); border-radius:16px; background:#111827; color:#fff; font-weight:900;
-              box-shadow:0 6px 18px rgba(17,24,39,.16); cursor:pointer; }
+  /* Share button — slimmer than Play */
+  .cta-share{ 
+    padding:14px 28px;
+    font-size:clamp(16px,2vw,18px);
+    border-radius:14px;
+    background:#111827; color:#fff; font-weight:900;
+    box-shadow:0 6px 16px rgba(17,24,39,.16);
+    cursor:pointer;
+  }
   .cta-share:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); }
   .cta-share:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
 
@@ -93,7 +99,7 @@
   @keyframes fall{0%{opacity:0;transform:translateY(-20px) rotate(0)}10%{opacity:1}100%{opacity:0;transform:translateY(220px) rotate(360deg)}}
   .pulse{ animation:pulse 850ms ease-out both } @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
 
-  /* Footer logo sizing (prevents giant “5” takeover) */
+  /* Footer logo sizing */
   .ig-footer{ display:flex; flex-direction:column; align-items:center; gap:4px; margin-top:6px; }
   .ig-footer img{ width:42px; height:auto; max-width:42px; display:block; }
 
@@ -227,7 +233,6 @@ function beginTimer(){ resetChrono(); startChrono(); }
 function renderQ(opts={}){ 
   const q=BANK[i]; 
   $('qtext').innerHTML=q.text; 
-  /* FIXED: use $('progressPill') not $('#progressPill') */
   $('progressPill').textContent=`Q${i+1}/5`;
   const box=$('answers'); box.innerHTML='';
   q.options.forEach((opt,idx)=>{ 
@@ -279,7 +284,7 @@ function finish(){ clearTimeout(timer); stopChrono();
   $('shareBtn').onclick = async () => { 
     const text=$('shareText').textContent;
     try{
-      if(navigator.share){ await navigator.share({title:'Daily Five', text}); }
+      if(navigator.share){ await navigator.share({ text }); } // no title to avoid extra "Daily Five"
       else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); }
       else { prompt('Copy to share:', text); }
     }catch(e){}
