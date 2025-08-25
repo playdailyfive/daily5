@@ -137,7 +137,123 @@
   </div>
 
 <script>
-/* Same JS as before (with ✔/✖ + srStatus updates) */
+const $ = id => document.getElementById(id);
+let BANK=[], i=0, score=0, picks=[], timer=null, tickInterval=null, remain=10, circumference=2*Math.PI*19;
+let dayCounter = 1;           // from /daily.json
+let firstQuestion = true;     // prevents flicker on Q1
+
+/* Load questions */
+async function loadQuestions(){
+  try{
+    const res = await fetch('/daily.json', { cache:'no-store' });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    dayCounter = data.dayIndex || 1;
+    const daySeed = Number(data.day||0);
+    function seededShuffle(arr, seed){ let s=seed, out=[...arr]; for(let i=out.length-1;i>0;i--){ s=(s*9301+49297)%233280; const j=Math.floor((s/233280)*(i+1)); [out[i],out[j]]=[out[j],out[i]]; } return out; }
+    return (data.questions||[]).map((q,idx)=>{ const opts=seededShuffle(q.options, daySeed+idx*7); const correctIdx=opts.indexOf(q.options[q.correct]); return {text:q.text, options:opts, correct:correctIdx}; });
+  }catch(e){
+    console.warn('Falling back to demo set:', e);
+    $('fallbackBanner').style.display='block'; dayCounter = 1;
+    return [
+      { text:"What is the capital of France?", options:["Paris","Rome","Madrid","Berlin"], correct:0 },
+      { text:"Who painted the Mona Lisa?", options:["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], correct:0 },
+      { text:"Which planet is known as the Red Planet?", options:["Mars","Jupiter","Venus","Saturn"], correct:0 },
+      { text:"What is H2O commonly known as?", options:["Water","Hydrogen","Oxygen","Salt"], correct:0 },
+      { text:"What is 9 × 9?", options:["81","72","99","64"], correct:0 }
+    ];
+  }
+}
+
+/* Ring control */
+function setRingInstant(offset){
+  const ring = $('ringFg');
+  const prev = ring.style.transition;
+  ring.style.transition = 'none';
+  ring.style.strokeDasharray = String(circumference);
+  ring.style.strokeDashoffset = String(offset);
+  void ring.getBoundingClientRect();
+  ring.style.transition = prev || 'stroke-dashoffset 1s linear, stroke .2s';
+}
+
+/* Timer */
+function resetChrono(){ setRingInstant(0); remain=10; $('chronoNum').textContent=10; $('chrono').classList.remove('soon'); }
+function startChrono(){
+  const perSec = circumference/10; let elapsed = 0;
+  clearInterval(tickInterval); setRingInstant(0); $('chronoNum').textContent=10;
+  tickInterval = setInterval(()=>{
+    elapsed+=1; remain=10-elapsed;
+    $('chronoNum').textContent=Math.max(remain,0);
+    $('ringFg').style.strokeDashoffset=String(perSec*elapsed);
+    if(remain<=3){ $('chrono').classList.add('soon'); }
+    if(elapsed>=10){ clearInterval(tickInterval); }
+  },1000);
+}
+function stopChrono(){ clearInterval(tickInterval); }
+function beginTimer(){ resetChrono(); startChrono(); }
+
+/* Render */
+function renderQ(opts={}){ 
+  const q=BANK[i];
+  $('qtext').innerHTML=q.text; 
+  $('progressPill').textContent=`Q${i+1}/5`;
+  const box=$('answers'); box.innerHTML='';
+  q.options.forEach((opt,idx)=>{ 
+    const b=document.createElement('button'); 
+    b.className='answer'; 
+    b.innerHTML=opt; 
+    b.onclick=()=>lock(idx,b); 
+    box.appendChild(b); 
+  });
+  if (!opts.deferTimer) beginTimer();
+  clearTimeout(timer); timer=setTimeout(()=>timeUp(),10000);
+}
+
+/* Lock */
+function lock(idx,btn){ 
+  clearTimeout(timer); stopChrono();
+  const q=BANK[i], all=[...document.querySelectorAll('.answer')];
+  all.forEach(b=>b.disabled=true);
+  const ok=idx===q.correct;
+  if(ok){ score++; picks.push('good'); btn.classList.add('correct'); $('srStatus').textContent='Correct.'; } 
+  else { picks.push('bad'); btn.classList.add('wrong'); $('srStatus').textContent='Incorrect. Correct answer highlighted.'; }
+  all[q.correct].classList.add('correct');
+  if(navigator.vibrate){ try{ navigator.vibrate(ok?[30]:[20,40]); }catch(e){} }
+  setTimeout(()=>animateNext(), ok?800:1600);
+}
+function timeUp(){ 
+  stopChrono(); picks.push('skip');
+  const q=BANK[i], all=[...document.querySelectorAll('.answer')];
+  all.forEach(b=>b.disabled=true); all[q.correct].classList.add('correct');
+  $('srStatus').textContent='Time up. Correct answer highlighted.';
+  setTimeout(()=>animateNext(),1200);
+}
+function animateNext(){ 
+  const play=$('play'); play.classList.remove('anim-in'); play.classList.add('anim-out');
+  setTimeout(()=>{ play.classList.remove('anim-out'); i++; if(i>=5){ finish(); return; } renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220); },180);
+}
+
+/* End */
+function burstConfetti(){ 
+  const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
+  const colors=['#16a34a','#111827','#9CA3AF','#34d399','#059669'];
+  for(let n=0;n<24;n++){ const el=document.createElement('div'); el.className='piece'; el.style.left=(10+Math.random()*80)+'%'; el.style.top='-6px'; el.style.background=colors[(Math.random()*colors.length)|0]; el.style.animationDelay=(Math.random()*0.25)+'s'; el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`; layer.appendChild(el);} }
+function finish(){ 
+  clearTimeout(timer); stopChrono(); $('play').classList.add('hidden'); $('end').classList.remove('hidden');
+  const title=$('endTitle'); title.textContent=(score===5)?"Perfect! 5/5 🎉 You nailed it!":(score===4)?"So close! 4/5 🔥 One more next time.":(score===3)?"Nice run! 3/5 👏 Solid showing.":(score===2)?"Good try! 2/5 🙂 Warming up.":(score===1)?"Good try! 1/5 🤏 Better luck next time.":"Tough one! 0/5 😵 You'll crush the next set.";
+  if(score>=4){ title.classList.add('pulse'); burstConfetti(); }
+  const map={good:'🟩',bad:'🟥',skip:'⬜️'}; $('shareGrid').innerHTML=''; let row=''; picks.forEach(p=>{ const d=document.createElement('div'); d.className='sq '+(p==='good'?'good':p==='bad'?'bad':'skip'); $('shareGrid').appendChild(d); row+=map[p]; });
+  const shareHeader = `Daily Five ${dayCounter} — ${score}/5`; $('shareText').textContent = `${shareHeader}\n\n${row}`;
+}
+
+/* Start game */
+$('startBtn').onclick = async () => { 
+  i=0; score=0; picks=[]; firstQuestion = true;
+  BANK = await loadQuestions();
+  renderQ({deferTimer:true});
+  $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden');
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{ beginTimer(); firstQuestion = false; }));
+};
 </script>
 </body>
 </html>
