@@ -87,7 +87,7 @@
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
   .title{ font-size:clamp(20px,2.2vw,22px); font-weight:900; text-align:center; margin-bottom:2px; }
 
-  /* Animations + confetti (used by finish/next) */
+  /* Animations + confetti */
   @keyframes qOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}} 
   @keyframes qIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
   .anim-out{animation:qOut 180ms ease forwards} 
@@ -128,17 +128,19 @@
       <div id="answers" class="answers"></div>
       <span id="progressPill" class="muted" style="font-size:14px;margin-top:6px;">Q1/5</span>
       <div id="srStatus" class="sr-only" aria-live="polite"></div>
-      <div class="confetti" id="confetti"></div>
     </section>
 
     <section id="end" class="card hidden">
-      <h2 id="endTitle" class="title">Good try! 👍</h2>
-      <div id="shareGrid" class="grid" aria-hidden="true"></div>
+      <div class="confetti" id="confetti"></div>
+      <!-- Visible header line on the final page -->
+      <div id="endHeader" class="title">Daily Five — 0/5</div>
+      <div id="shareGrid" class="grid"></div>
       <button id="shareBtn" class="cta-medium">Share</button>
       <div class="ig-footer">
         <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
         <img src="logo_1.png" alt="Daily 5 Footer Logo"/>
       </div>
+      <!-- Hidden text used for system share / copy -->
       <p id="shareText" class="muted hidden"></p>
     </section>
   </div>
@@ -169,6 +171,20 @@ async function loadQuestions(){
       { text:"What is H2O commonly known as?", options:["Water","Hydrogen","Oxygen","Salt"], correct:0 },
       { text:"What is 9 × 9?", options:["81","72","99","64"], correct:0 }
     ];
+  }
+}
+
+/* Confetti */
+function burstConfetti(){ 
+  const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
+  const colors=['#16a34a','#111827','#9CA3AF','#34d399','#059669'];
+  for(let n=0;n<24;n++){
+    const el=document.createElement('div'); el.className='piece';
+    el.style.left=(10+Math.random()*80)+'%'; el.style.top='-6px';
+    el.style.background=colors[(Math.random()*colors.length)|0];
+    el.style.animationDelay=(Math.random()*0.25)+'s';
+    el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`;
+    layer.appendChild(el);
   }
 }
 
@@ -237,21 +253,57 @@ function timeUp(){
 }
 function animateNext(){ 
   const play=$('play'); play.classList.remove('anim-in'); play.classList.add('anim-out');
-  setTimeout(()=>{ play.classList.remove('anim-out'); i++; if(i>=5){ finish(); return; } renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220); },180);
+  setTimeout(()=>{ 
+    play.classList.remove('anim-out'); i++; 
+    if(i>=5){ finish(); return; } 
+    renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220); 
+  },180);
 }
 
 /* End */
-function burstConfetti(){ 
-  const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
-  const colors=['#16a34a','#111827','#9CA3AF','#34d399','#059669'];
-  for(let n=0;n<24;n++){ const el=document.createElement('div'); el.className='piece'; el.style.left=(10+Math.random()*80)+'%'; el.style.top='-6px'; el.style.background=colors[(Math.random()*colors.length)|0]; el.style.animationDelay=(Math.random()*0.25)+'s'; el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`; layer.appendChild(el);} }
 function finish(){ 
-  clearTimeout(timer); stopChrono(); $('play').classList.add('hidden'); $('end').classList.remove('hidden');
-  const title=$('endTitle'); title.textContent=(score===5)?"Perfect! 5/5 🎉 You nailed it!":(score===4)?"So close! 4/5 🔥 One more next time.":(score===3)?"Nice run! 3/5 👏 Solid showing.":(score===2)?"Good try! 2/5 🙂 Warming up.":(score===1)?"Good try! 1/5 🤏 Better luck next time.":"Tough one! 0/5 😵 You'll crush the next set.";
+  clearTimeout(timer); stopChrono(); 
+  $('play').classList.add('hidden'); 
+  $('end').classList.remove('hidden');
+
+  // Title line (kept for the witty message)
+  const title=$('endTitle'); 
+  title.textContent=(score===5)?"Perfect! 5/5 🎉 You nailed it!"
+    :(score===4)?"So close! 4/5 🔥 One more next time."
+    :(score===3)?"Nice run! 3/5 👏 Solid showing."
+    :(score===2)?"Good try! 2/5 🙂 Warming up."
+    :(score===1)?"Good try! 1/5 🤏 Better luck next time."
+    :"Tough one! 0/5 😵 You'll crush the next set.";
   if(score>=4){ title.classList.add('pulse'); burstConfetti(); }
-  const map={good:'🟩',bad:'🟥',skip:'⬜️'}; $('shareGrid').innerHTML=''; let row=''; picks.forEach(p=>{ const d=document.createElement('div'); d.className='sq '+(p==='good'?'good':p==='bad'?'bad':'skip'); $('shareGrid').appendChild(d); row+=map[p]; });
-  const shareHeader = `Daily Five ${dayCounter} — ${score}/5`; $('shareText').textContent = `${shareHeader}\n\n${row}`;
+
+  // Visible header line required on final page
+  const headerText = `Daily Five ${dayCounter} — ${score}/5`;
+  $('endHeader').textContent = headerText;
+
+  // Squares + share text
+  const map={good:'🟩',bad:'🟥',skip:'⬜️'};
+  $('shareGrid').innerHTML=''; 
+  let row='';
+  picks.forEach(p=>{
+    const d=document.createElement('div');
+    d.className='sq '+(p==='good'?'good':p==='bad'?'bad':'skip');
+    $('shareGrid').appendChild(d); 
+    row+=map[p];
+  });
+
+  // Share payload uses Wordle-style (header, blank line, blocks)
+  $('shareText').textContent = `${headerText}\n\n${row}`;
 }
+
+/* Share */
+$('shareBtn').onclick = async () => { 
+  const text=$('shareText').textContent;
+  try{
+    if(navigator.share){ await navigator.share({title:'Daily Five', text}); }
+    else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); }
+    else { prompt('Copy to share:', text); }
+  }catch(e){}
+};
 
 /* Start game */
 $('startBtn').onclick = async () => { 
