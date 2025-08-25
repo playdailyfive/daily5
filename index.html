@@ -4,6 +4,27 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Daily 5 — Trivia</title>
+
+<!-- Favicon: .ico preferred; PNG fallback -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/logo_main.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/logo_main.png">
+
+<!-- Social share meta (Open Graph & Twitter) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://playdailyfive.com/">
+<meta property="og:title" content="Daily Five — 5 questions. 10 seconds each.">
+<meta property="og:description" content="A crisp daily trivia challenge: 5 questions, 10 seconds each. Share your score and come back tomorrow.">
+<meta property="og:image" content="https://playdailyfive.com/logo_main.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Daily Five — 5 questions. 10 seconds each.">
+<meta name="twitter:description" content="A crisp daily trivia challenge: 5 questions, 10 seconds each. Share your score and come back tomorrow.">
+<meta name="twitter:image" content="https://playdailyfive.com/logo_main.png">
+
+<!-- Plausible analytics (swap domain if needed) -->
+<script defer data-domain="playdailyfive.com" src="https://plausible.io/js/script.js"></script>
+
 <style>
   :root{ --bg:#f9f9f7; --ink:#111827; --muted:#6b7280; --line:#e5e7eb; --bad:#ef4444; --good:#16a34a; }
   *{box-sizing:border-box} html,body{height:100%}
@@ -14,6 +35,7 @@
   .start-wrap{display:flex; flex-direction:column; align-items:center; gap:12px;}
   .logo-top{ max-width:clamp(240px,34vw,520px); height:auto; }
   .tagline{ font-size:clamp(16px,1.8vw,18px); font-weight:600; color:var(--muted); margin-top:4px; margin-bottom:12px; }
+
   .cta{ appearance:none; border:none; border-radius:16px; padding:22px 36px; font-weight:900; letter-spacing:.2px; background:#111827; color:#fff;
         font-size:clamp(18px,2.2vw,20px); box-shadow:0 8px 22px rgba(17,24,39,.18); cursor:pointer; transition:transform .06s, box-shadow .2s, filter .2s; }
   .cta:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); } .cta:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
@@ -22,10 +44,20 @@
   .card{ border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; background:#fff; display:flex; flex-direction:column; gap:12px; position:relative; align-items:center; box-shadow:0 6px 28px rgba(17,24,39,.06); }
   #qtext{ margin-top:4px; font-weight:900; font-size:clamp(20px,2.2vw,22px); line-height:1.35; text-align:center; padding-right:96px; }
   .answers{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:8px; width:100%; }
-  .answer{ border:1px solid var(--line); border-radius:14px; padding:16px; text-align:left; font-weight:800; font-size:clamp(17px,2.2vw,18px);
+  .answer{ position:relative; border:1px solid var(--line); border-radius:14px; padding:16px 48px 16px 16px; text-align:left; font-weight:800; font-size:clamp(17px,2.2vw,18px);
            background:#fff; color:#111827; cursor:pointer; transition:background-color .15s, color .15s, border-color .15s, transform .03s, box-shadow .15s; min-height:48px; }
   .answer:hover{ box-shadow:0 4px 12px rgba(17,24,39,.06); } .answer:active{ transform:translateY(1px); }
-  .answer.correct{ background:var(--good); border-color:var(--good); color:#fff; } .answer.wrong{ background:var(--bad); border-color:var(--bad); color:#fff; }
+  .answer.correct{ background:var(--good); border-color:var(--good); color:#fff; }
+  .answer.wrong{ background:var(--bad); border-color:var(--bad); color:#fff; }
+
+  /* ✔︎ / ✖︎ icons for color-blind accessibility */
+  .answer.correct::after,
+  .answer.wrong::after{
+    position:absolute; right:14px; top:50%; transform:translateY(-50%);
+    font-size:20px; line-height:1;
+  }
+  .answer.correct::after{ content:"✔️"; }
+  .answer.wrong::after{ content:"✖️"; }
 
   .chrono{ pointer-events:none; position:absolute; right:12px; top:12px; width:64px; height:64px; display:grid; place-items:center; }
   .chrono svg{ width:100%; height:100%; display:block; }
@@ -46,6 +78,9 @@
   .hidden{ display:none!important; }
   @media (max-width:480px){ .chrono{width:56px;height:56px;right:8px;top:8px} #qtext{padding-right:96px;overflow-wrap:anywhere} }
   #fallbackBanner{display:none;width:100%;background:#facc15;color:#111;font-weight:bold;text-align:center;padding:8px;position:fixed;top:0;left:0;z-index:1000;}
+
+  /* Visually hidden (for screen readers) */
+  .sr-only{ position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
 </style>
 </head>
 <body>
@@ -71,6 +106,8 @@
       <h2 id="qtext">Question</h2>
       <div id="answers" class="answers"></div>
       <span id="progressPill" class="muted" style="font-size:14px;margin-top:6px;">Q1/5</span>
+      <!-- Screen-reader status updates -->
+      <div id="srStatus" class="sr-only" aria-live="polite"></div>
     </section>
 
     <section id="end" class="card hidden">
@@ -115,7 +152,7 @@ async function loadQuestions(){
   }
 }
 
-/* Instantly set ring offset with no animation, then restore transition */
+/* Instantly set ring offset w/out anim, then restore transition */
 function setRingInstant(offset){
   const ring = $('ringFg');
   const prev = ring.style.transition;
@@ -130,24 +167,17 @@ function setRingInstant(offset){
 $('startBtn').onclick = async () => { 
   i=0; score=0; picks=[]; firstQuestion = true;
 
-  // 1) Load questions
   BANK = await loadQuestions();
-
-  // 2) Prepare first question WHILE play card is still hidden
-  renderQ({deferTimer:true});
-
-  // 3) Swap screens only after content is ready (prevents flicker)
+  renderQ({deferTimer:true});            // prep while hidden
   $('start').classList.add('hidden');
   $('end').classList.add('hidden');
   $('play').classList.remove('hidden');
 
-  // 4) After two RAFs, start the countdown (lets Chrome paint first frame)
   requestAnimationFrame(()=>requestAnimationFrame(()=>{
     beginTimer();
     firstQuestion = false;
   }));
 };
-
 $('shareBtn').onclick = async () => { 
   const text=$('shareText').textContent;
   try{
@@ -159,7 +189,7 @@ $('shareBtn').onclick = async () => {
 
 /* Timer */
 function resetChrono(){
-  setRingInstant(0);                 // full outline, applied instantly
+  setRingInstant(0);                 // full outline instantly
   remain = 10;
   $('chronoNum').textContent = 10;   // show 10 immediately
   $('chrono').classList.remove('soon');
@@ -167,9 +197,8 @@ function resetChrono(){
 function startChrono(){
   const perSec = circumference/10;
   let elapsed = 0;
-
   clearInterval(tickInterval);
-  setRingInstant(0);                 // ensure starting at full
+  setRingInstant(0);
   $('chronoNum').textContent = 10;
 
   tickInterval = setInterval(()=>{
@@ -182,26 +211,19 @@ function startChrono(){
   }, 1000);
 }
 function stopChrono(){ clearInterval(tickInterval); }
-function beginTimer(){
-  resetChrono();
-  startChrono();
-}
+function beginTimer(){ resetChrono(); startChrono(); }
 
 /* Render → Answer → Next */
 function renderQ(opts={}){ 
   const q=BANK[i];
   $('qtext').innerHTML=q.text; 
   $('progressPill').textContent=`Q${i+1}/5`;
-
   const box=$('answers'); box.innerHTML='';
   q.options.forEach((opt,idx)=>{ 
     const b=document.createElement('button'); b.className='answer'; b.innerHTML=opt; b.onclick=()=>lock(idx,b); box.appendChild(b); 
   });
 
-  // For first question, we already handle timer with beginTimer() after RAFs
-  if (!opts.deferTimer) {
-    beginTimer();
-  }
+  if (!opts.deferTimer) beginTimer();
 
   clearTimeout(timer);
   timer = setTimeout(()=>timeUp(), 10000);
@@ -211,8 +233,8 @@ function lock(idx,btn){
   const q=BANK[i], all=[...document.querySelectorAll('.answer')];
   all.forEach(b=>b.disabled=true);
   const ok=idx===q.correct;
-  if(ok){ score++; picks.push('good'); btn.classList.add('correct'); } 
-  else { picks.push('bad'); btn.classList.add('wrong'); }
+  if(ok){ score++; picks.push('good'); btn.classList.add('correct'); $('#srStatus').textContent = 'Correct.'; } 
+  else { picks.push('bad'); btn.classList.add('wrong'); $('#srStatus').textContent = 'Incorrect. Correct answer highlighted.'; }
   all[q.correct].classList.add('correct');
   if(navigator.vibrate){ try{ navigator.vibrate(ok?[30]:[20,40]); }catch(e){} }
   setTimeout(()=>animateNext(), ok?800:1600);
@@ -222,18 +244,15 @@ function timeUp(){
   const q=BANK[i], all=[...document.querySelectorAll('.answer')];
   all.forEach(b=>b.disabled=true);
   all[q.correct].classList.add('correct');
+  $('#srStatus').textContent = 'Time up. Correct answer highlighted.';
   setTimeout(()=>animateNext(),1200);
 }
 function animateNext(){ 
-  const play=$('play');
-  play.classList.remove('anim-in');
-  play.classList.add('anim-out');
+  const play=$('play'); play.classList.remove('anim-in'); play.classList.add('anim-out');
   setTimeout(()=>{ 
     play.classList.remove('anim-out'); i++; 
     if(i>=5){ finish(); return; } 
-    renderQ(); 
-    play.classList.add('anim-in'); 
-    setTimeout(()=>play.classList.remove('anim-in'),220); 
+    renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220); 
   },180);
 }
 
@@ -269,7 +288,6 @@ function finish(){
     d.className='sq '+(p==='good'?'good':p==='bad'?'bad':'skip');
     $('shareGrid').appendChild(d); row+=map[p];
   });
-
   const shareHeader = `Daily Five ${dayCounter} — ${score}/5`;
   $('shareText').textContent = `${shareHeader}\n\n${row}`;
 }
