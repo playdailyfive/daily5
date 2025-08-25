@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Daily 5 — Trivia</title>
 
-<!-- Favicon and App Icons -->
+<!-- Favicons (DuckDuckGo/Safari friendly) -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="192x192" href="/apple-icon-192x192.png">
+
+<!-- Apple/Android icons -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -20,19 +23,22 @@
 <link rel="apple-touch-icon" sizes="192x192" href="/apple-icon-192x192.png">
 <link rel="apple-touch-icon" sizes="512x512" href="/apple-icon-512x512.png">
 
-<!-- Social Meta Tags -->
+<!-- PWA manifest -->
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Daily Five">
+
+<!-- Social Meta -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://playdailyfive.com/">
 <meta property="og:title" content="Daily Five — 5 questions. 10 seconds each.">
 <meta property="og:description" content="A crisp daily trivia challenge: 5 questions, 10 seconds each. Share your score and come back tomorrow.">
 <meta property="og:image" content="https://playdailyfive.com/logo_main.png">
-
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Daily Five — 5 questions. 10 seconds each.">
 <meta name="twitter:description" content="A crisp daily trivia challenge: 5 questions, 10 seconds each. Share your score and come back tomorrow.">
 <meta name="twitter:image" content="https://playdailyfive.com/logo_main.png">
 
-<!-- Theme Color -->
+<!-- Theme -->
 <meta name="theme-color" content="#16a34a">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -64,12 +70,8 @@
   .answer:hover{ box-shadow:0 4px 12px rgba(17,24,39,.06); } .answer:active{ transform:translateY(1px); }
   .answer.correct{ background:var(--good); border-color:var(--good); color:#fff; }
   .answer.wrong{ background:var(--bad); border-color:var(--bad); color:#fff; }
-
-  /* ✔︎ / ✖︎ icons */
-  .answer.correct::after,
-  .answer.wrong::after{
-    position:absolute; right:14px; top:50%; transform:translateY(-50%);
-    font-size:20px; line-height:1;
+  .answer.correct::after, .answer.wrong::after{
+    position:absolute; right:14px; top:50%; transform:translateY(-50%); font-size:20px; line-height:1;
   }
   .answer.correct::after{ content:"✔️"; }
   .answer.wrong::after{ content:"✖️"; }
@@ -85,15 +87,20 @@
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
   .title{ font-size:clamp(20px,2.2vw,22px); font-weight:900; text-align:center; margin-bottom:2px; }
 
-  .ig-footer{ display:flex; flex-direction:column; align-items:center; gap:4px; margin-top:6px; }
-  .ig-footer img{ width:42px; height:auto; } .ig-footer a{ font-size:18px; font-weight:800; color:#111827; text-decoration:none; } .ig-footer a:hover{ text-decoration:underline; }
-  .cta-medium{ padding:14px 24px; font-size:16px; border-radius:14px; background:#111827; color:#fff; font-weight:900; letter-spacing:.2px; box-shadow:0 6px 16px rgba(17,24,39,.18); cursor:pointer; margin-top:6px; transition:filter .2s; }
-  .cta-medium:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); } .cta-medium:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
+  /* Animations + confetti (used by finish/next) */
+  @keyframes qOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}} 
+  @keyframes qIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .anim-out{animation:qOut 180ms ease forwards} 
+  .anim-in{animation:qIn 220ms ease both}
+  .confetti{ position:absolute; inset:0; pointer-events:none; overflow:hidden; } 
+  .piece{ position:absolute; width:8px; height:14px; opacity:0; transform:translateY(-20px) rotate(0); animation:fall 1200ms ease-out forwards; }
+  @keyframes fall{0%{opacity:0;transform:translateY(-20px) rotate(0)}10%{opacity:1}100%{opacity:0;transform:translateY(220px) rotate(360deg)}}
+  .pulse{ animation:pulse 850ms ease-out both } 
+  @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
 
   .hidden{ display:none!important; }
   @media (max-width:480px){ .chrono{width:56px;height:56px;right:8px;top:8px} #qtext{padding-right:96px;overflow-wrap:anywhere} }
   #fallbackBanner{display:none;width:100%;background:#facc15;color:#111;font-weight:bold;text-align:center;padding:8px;position:fixed;top:0;left:0;z-index:1000;}
-
   .sr-only{ position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
 </style>
 </head>
@@ -121,10 +128,10 @@
       <div id="answers" class="answers"></div>
       <span id="progressPill" class="muted" style="font-size:14px;margin-top:6px;">Q1/5</span>
       <div id="srStatus" class="sr-only" aria-live="polite"></div>
+      <div class="confetti" id="confetti"></div>
     </section>
 
     <section id="end" class="card hidden">
-      <div class="confetti" id="confetti"></div>
       <h2 id="endTitle" class="title">Good try! 👍</h2>
       <div id="shareGrid" class="grid" aria-hidden="true"></div>
       <button id="shareBtn" class="cta-medium">Share</button>
