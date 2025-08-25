@@ -3,52 +3,52 @@
   "dayIndex": 2,
   "questions": [
     {
-      "text": "Josh Mansour is part of what NRL team?",
+      "text": "How many bits make up the significand portion of a single precision floating point number?",
       "options": [
-        "Sydney Roosters",
-        "North Queensland Cowboys",
-        "Melbourne Storm",
-        "Penrith Panthers"
+        "53",
+        "15",
+        "8",
+        "23"
       ],
       "correct": 3
     },
     {
-      "text": "In the game series &quot;The Legend of Zelda&quot;, what was the first 3D game?",
+      "text": "Which Italian automobile manufacturer gained majority control of U.S. automobile manufacturer Chrysler in 2011?",
       "options": [
-        "A Link to the Past",
-        "Ocarina of Time",
-        "Majora&#039;s Mask",
-        "The Wind Waker"
+        "Alfa Romeo",
+        "Fiat",
+        "Maserati",
+        "Ferrari"
       ],
       "correct": 1
     },
     {
-      "text": "What is the Finnish word for &quot;Finland&quot;?",
+      "text": "Which WWII tank ace is credited with having destroyed the most tanks?",
       "options": [
-        "Eesti",
-        "Suomi",
-        "Magyarorsz&aacute;g",
-        "Sverige"
+        "Michael Wittmann",
+        "Kurt Knispel",
+        "Walter Kniep",
+        "Otto Carius"
       ],
       "correct": 1
     },
     {
-      "text": "What is the highest belt you can get in Taekwondo?",
+      "text": "Joseph Smith was the founder of what religion?",
       "options": [
-        "Green",
-        "Red",
-        "White",
-        "Black"
+        "Hinduism",
+        "Christianity",
+        "Buddhism",
+        "Mormonism"
       ],
       "correct": 3
     },
     {
-      "text": "What is the name of the Greek god of blacksmiths?",
+      "text": "A statue of Charles Darwin sits in what London museum?",
       "options": [
-        "Vulcan",
-        "Hephaestus",
-        "Artagatus",
-        "Dyntos"
+        "British Museum",
+        "Natural History Museum",
+        "Science Museum",
+        "Tate"
       ],
       "correct": 1
     }
