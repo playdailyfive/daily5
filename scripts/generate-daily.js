@@ -23,6 +23,7 @@ function toUTCDate(yyyyMMdd) {
   return new Date(Date.UTC(y, m - 1, d));
 }
 
+// simple seeded RNG + shuffle
 function mulberry32(seed) {
   return function() {
     let t = seed += 0x6D2B79F5;
@@ -41,6 +42,7 @@ function seededShuffle(arr, seedNum) {
   return out;
 }
 
+// fetch with timeout
 async function fetchWithTimeout(url, { timeoutMs = 8000 } = {}) {
   const ac = new AbortController();
   const id = setTimeout(() => ac.abort(), timeoutMs);
@@ -51,15 +53,23 @@ async function fetchWithTimeout(url, { timeoutMs = 8000 } = {}) {
   }
 }
 
+// OPTIONAL IMPROVEMENT: request url3986, decode strings
+const decode = (s) => decodeURIComponent(s);
+
 async function fetchQuestions(retries = 3) {
-  const url = 'https://opentdb.com/api.php?amount=5&type=multiple';
+  const url = 'https://opentdb.com/api.php?amount=5&type=multiple&encode=url3986';
   for (let a = 1; a <= retries; a++) {
     try {
       const res = await fetchWithTimeout(url, { timeoutMs: 8000 });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
       if (!data?.results?.length) throw new Error('Bad payload');
-      return data.results;
+      return data.results.map(r => {
+        const text = decode(r.question);
+        const correct = decode(r.correct_answer);
+        const incorrect = r.incorrect_answers.map(decode);
+        return { text, correct, incorrect };
+      });
     } catch (e) {
       if (a === retries) throw e;
       await new Promise(r => setTimeout(r, 1200 * a));
@@ -80,10 +90,11 @@ async function fetchQuestions(retries = 3) {
 
   try {
     const results = await fetchQuestions(3);
+
     const questions = results.map((q, idx) => {
-      const opts = seededShuffle([q.correct_answer, ...q.incorrect_answers], seed + idx * 7);
-      const correctIdx = opts.indexOf(q.correct_answer);
-      return { text: q.question, options: opts, correct: correctIdx };
+      const opts = seededShuffle([q.correct, ...q.incorrect], seed + idx * 7);
+      const correctIdx = opts.indexOf(q.correct);
+      return { text: q.text, options: opts, correct: correctIdx };
     });
 
     const payload = { day, dayIndex, questions };
