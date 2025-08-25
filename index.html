@@ -63,7 +63,7 @@
   .cta:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); } .cta:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
   .cta:active{ transform:translateY(1px) scale(.995); box-shadow:0 6px 16px rgba(17,24,39,.15); }
 
-  /* Share button = same look, slightly slimmer so it's not as chunky */
+  /* Share button = same look, slightly slimmer */
   .cta-share{ padding:18px 30px; font-size:clamp(17px,2vw,19px); border-radius:16px; background:#111827; color:#fff; font-weight:900;
               box-shadow:0 6px 18px rgba(17,24,39,.16); cursor:pointer; }
   .cta-share:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); }
@@ -165,7 +165,6 @@ async function loadQuestions(){
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
 
-    // If your backend also returns dayIndex, we'll ignore it now that we compute ET locally.
     const daySeed = Number(data.day||0);
     function seededShuffle(arr, seed){ let s=seed, out=[...arr];
       for(let i=out.length-1;i>0;i--){ s=(s*9301+49297)%233280; const j=Math.floor((s/233280)*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
@@ -225,9 +224,21 @@ function stopChrono(){ clearInterval(tickInterval); }
 function beginTimer(){ resetChrono(); startChrono(); }
 
 /* Render */
-function renderQ(opts={}){ const q=BANK[i]; $('qtext').innerHTML=q.text; $('#progressPill').textContent=`Q${i+1}/5`; const box=$('answers'); box.innerHTML='';
-  q.options.forEach((opt,idx)=>{ const b=document.createElement('button'); b.className='answer'; b.innerHTML=opt; b.onclick=()=>lock(idx,b); box.appendChild(b); });
-  if (!opts.deferTimer) beginTimer(); clearTimeout(timer); timer=setTimeout(()=>timeUp(),10000);
+function renderQ(opts={}){ 
+  const q=BANK[i]; 
+  $('qtext').innerHTML=q.text; 
+  /* FIXED: use $('progressPill') not $('#progressPill') */
+  $('progressPill').textContent=`Q${i+1}/5`;
+  const box=$('answers'); box.innerHTML='';
+  q.options.forEach((opt,idx)=>{ 
+    const b=document.createElement('button'); 
+    b.className='answer'; 
+    b.innerHTML=opt; 
+    b.onclick=()=>lock(idx,b); 
+    box.appendChild(b); 
+  });
+  if (!opts.deferTimer) beginTimer();
+  clearTimeout(timer); timer=setTimeout(()=>timeUp(),10000);
 }
 
 /* Lock / Time Up */
@@ -238,7 +249,7 @@ function lock(idx,btn){ clearTimeout(timer); stopChrono(); const q=BANK[i], all=
 function timeUp(){ stopChrono(); picks.push('skip'); const q=BANK[i], all=[...document.querySelectorAll('.answer')]; all.forEach(b=>b.disabled=true); all[q.correct].classList.add('correct'); setTimeout(()=>animateNext(),1200); }
 function animateNext(){ const play=$('play'); play.classList.remove('anim-in'); play.classList.add('anim-out'); setTimeout(()=>{ play.classList.remove('anim-out'); i++; if(i>=5){ finish(); return; } renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220); },180); }
 
-/* End – rebuilds the entire end card (no header line on page) */
+/* End – rebuilds the entire end card */
 function finish(){ clearTimeout(timer); stopChrono(); 
   const map={good:'🟩',bad:'🟥',skip:'⬜️'}; let row=''; picks.forEach(p=>row+=map[p]);
   const squares = picks.map(p=>`<div class="sq ${p==='good'?'good':p==='bad'?'bad':'skip'}"></div>`).join('');
@@ -261,7 +272,7 @@ function finish(){ clearTimeout(timer); stopChrono();
 
   if(score>=4){ burstConfetti(); }
 
-  // Wordle-format text: "Daily Five 2 4/5" then a blank line, then blocks
+  // Wordle-style text: "Daily Five N X/5"
   const shareLine=`Daily Five ${dayCounter} ${score}/5`;
   $('shareText').textContent=`${shareLine}\n\n${row}`;
 
