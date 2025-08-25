@@ -29,16 +29,22 @@ jobs:
 
       - name: Generate today's questions (ET-aware)
         run: node scripts/generate-daily.cjs
+        shell: bash
 
       - name: Commit & push if changed
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain)" ]]; then
+
+          # Only commit if daily.json changed
+          if ! git diff --quiet --exit-code -- daily.json; then
             git add daily.json
             git commit -m "chore: update daily.json"
             git push
           else
             echo "No changes to commit."
+          fi
