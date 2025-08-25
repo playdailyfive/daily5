@@ -18,6 +18,7 @@
         font-size:clamp(18px,2.2vw,20px); box-shadow:0 8px 22px rgba(17,24,39,.18); cursor:pointer; transition:transform .06s, box-shadow .2s, filter .2s; }
   .cta:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); } .cta:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
   .cta:active{ transform:translateY(1px) scale(.995); box-shadow:0 6px 16px rgba(17,24,39,.15); }
+
   .card{ border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; background:#fff; display:flex; flex-direction:column; gap:12px; position:relative; align-items:center; box-shadow:0 6px 28px rgba(17,24,39,.06); }
   #qtext{ margin-top:4px; font-weight:900; font-size:clamp(20px,2.2vw,22px); line-height:1.35; text-align:center; padding-right:96px; }
   .answers{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:8px; width:100%; }
@@ -89,7 +90,7 @@
 const $ = id => document.getElementById(id);
 let BANK=[], i=0, score=0, picks=[], timer=null, tickInterval=null, remain=10, circumference=2*Math.PI*19;
 let dayCounter = 1; // from daily.json
-let firstQuestion = true; // ← prevents flicker on Q1
+let firstQuestion = true;
 
 /* Load today’s questions from /daily.json */
 async function loadQuestions(){
@@ -114,21 +115,39 @@ async function loadQuestions(){
   }
 }
 
-/* Helper: set ring instantly w/out anim, then restore transition */
-function setRingInstant(ring, offset){
+/* Instantly set ring offset with no animation, then restore transition */
+function setRingInstant(offset){
+  const ring = $('ringFg');
   const prev = ring.style.transition;
   ring.style.transition = 'none';
+  ring.style.strokeDasharray = String(circumference);
   ring.style.strokeDashoffset = String(offset);
-  void ring.getBoundingClientRect(); // reflow to apply instantly
+  void ring.getBoundingClientRect(); // flush
   ring.style.transition = prev || 'stroke-dashoffset 1s linear, stroke .2s';
 }
 
 /* Start & Share */
 $('startBtn').onclick = async () => { 
   i=0; score=0; picks=[]; firstQuestion = true;
-  $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden');
-  BANK = await loadQuestions(); renderQ();
+
+  // 1) Load questions
+  BANK = await loadQuestions();
+
+  // 2) Prepare first question WHILE play card is still hidden
+  renderQ({deferTimer:true});
+
+  // 3) Swap screens only after content is ready (prevents flicker)
+  $('start').classList.add('hidden');
+  $('end').classList.add('hidden');
+  $('play').classList.remove('hidden');
+
+  // 4) After two RAFs, start the countdown (lets Chrome paint first frame)
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    beginTimer();
+    firstQuestion = false;
+  }));
 };
+
 $('shareBtn').onclick = async () => { 
   const text=$('shareText').textContent;
   try{
@@ -138,61 +157,54 @@ $('shareBtn').onclick = async () => {
   }catch(e){}
 };
 
-/* Timer — smooth: show 10 + full outline instantly; animate on ticks */
+/* Timer */
 function resetChrono(){
-  const ring=$('ringFg');
-  ring.style.strokeDasharray = String(circumference);
-  setRingInstant(ring, 0);         // full circle instantly
+  setRingInstant(0);                 // full outline, applied instantly
   remain = 10;
-  $('chronoNum').textContent = 10; // show 10 immediately
+  $('chronoNum').textContent = 10;   // show 10 immediately
   $('chrono').classList.remove('soon');
 }
 function startChrono(){
-  const ring=$('ringFg');
   const perSec = circumference/10;
   let elapsed = 0;
 
   clearInterval(tickInterval);
-  ring.style.strokeDasharray = String(circumference);
-  setRingInstant(ring, 0);
+  setRingInstant(0);                 // ensure starting at full
   $('chronoNum').textContent = 10;
 
-  // For Q1, wait for 2 RAFs so the first paint is stable (no flicker),
-  // then begin ticking. For subsequent questions, start immediately.
-  const begin = () => {
-    tickInterval = setInterval(()=>{
-      elapsed += 1;
-      remain = 10 - elapsed;
-      $('chronoNum').textContent = Math.max(remain, 0);
-      ring.style.strokeDashoffset = String(perSec * elapsed);
-      if(remain <= 3){ $('chrono').classList.add('soon'); }
-      if(elapsed >= 10){ clearInterval(tickInterval); }
-    }, 1000);
-  };
-
-  if (firstQuestion) {
-    requestAnimationFrame(()=>requestAnimationFrame(()=>{
-      firstQuestion = false;
-      begin();
-    }));
-  } else {
-    begin();
-  }
+  tickInterval = setInterval(()=>{
+    elapsed += 1;
+    remain = 10 - elapsed;
+    $('chronoNum').textContent = Math.max(remain, 0);
+    $('ringFg').style.strokeDashoffset = String(perSec * elapsed);
+    if(remain <= 3){ $('chrono').classList.add('soon'); }
+    if(elapsed >= 10){ clearInterval(tickInterval); }
+  }, 1000);
 }
 function stopChrono(){ clearInterval(tickInterval); }
+function beginTimer(){
+  resetChrono();
+  startChrono();
+}
 
 /* Render → Answer → Next */
-function renderQ(){ 
+function renderQ(opts={}){ 
   const q=BANK[i];
   $('qtext').innerHTML=q.text; 
   $('progressPill').textContent=`Q${i+1}/5`;
+
   const box=$('answers'); box.innerHTML='';
   q.options.forEach((opt,idx)=>{ 
     const b=document.createElement('button'); b.className='answer'; b.innerHTML=opt; b.onclick=()=>lock(idx,b); box.appendChild(b); 
   });
-  resetChrono();
-  startChrono();
-  clearTimeout(timer); timer=setTimeout(()=>timeUp(),10000);
+
+  // For first question, we already handle timer with beginTimer() after RAFs
+  if (!opts.deferTimer) {
+    beginTimer();
+  }
+
+  clearTimeout(timer);
+  timer = setTimeout(()=>timeUp(), 10000);
 }
 function lock(idx,btn){ 
   clearTimeout(timer); stopChrono();
@@ -213,11 +225,15 @@ function timeUp(){
   setTimeout(()=>animateNext(),1200);
 }
 function animateNext(){ 
-  const play=$('play'); play.classList.remove('anim-in'); play.classList.add('anim-out');
+  const play=$('play');
+  play.classList.remove('anim-in');
+  play.classList.add('anim-out');
   setTimeout(()=>{ 
     play.classList.remove('anim-out'); i++; 
     if(i>=5){ finish(); return; } 
-    renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220); 
+    renderQ(); 
+    play.classList.add('anim-in'); 
+    setTimeout(()=>play.classList.remove('anim-in'),220); 
   },180);
 }
 
@@ -254,7 +270,6 @@ function finish(){
     $('shareGrid').appendChild(d); row+=map[p];
   });
 
-  // Full share text: header, blank line, blocks
   const shareHeader = `Daily Five ${dayCounter} — ${score}/5`;
   $('shareText').textContent = `${shareHeader}\n\n${row}`;
 }
