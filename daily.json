@@ -1,0 +1,10 @@
+{
+  "day": "20250101",
+  "questions": [
+    { "text": "What is the capital of France?", "options": ["Paris","Rome","Madrid","Berlin"], "correct": 0 },
+    { "text": "Who painted the Mona Lisa?", "options": ["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], "correct": 0 },
+    { "text": "Which planet is known as the Red Planet?", "options": ["Mars","Jupiter","Venus","Saturn"], "correct": 0 },
+    { "text": "What is H2O commonly known as?", "options": ["Water","Hydrogen","Oxygen","Salt"], "correct": 0 },
+    { "text": "What is 9 × 9?", "options": ["81","72","99","64"], "correct": 0 }
+  ]
+}
