@@ -1,10 +1,55 @@
 {
-  "day": "20250101",
+  "day": "20250824",
   "questions": [
-    { "text": "What is the capital of France?", "options": ["Paris","Rome","Madrid","Berlin"], "correct": 0 },
-    { "text": "Who painted the Mona Lisa?", "options": ["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], "correct": 0 },
-    { "text": "Which planet is known as the Red Planet?", "options": ["Mars","Jupiter","Venus","Saturn"], "correct": 0 },
-    { "text": "What is H2O commonly known as?", "options": ["Water","Hydrogen","Oxygen","Salt"], "correct": 0 },
-    { "text": "What is 9 × 9?", "options": ["81","72","99","64"], "correct": 0 }
+    {
+      "text": "In the game Destiny, who succeeded Peter Dinklage in voicing the protagonist&#039;s &quot;Ghost&quot;?",
+      "options": [
+        "Nolan North",
+        "Mark Hamill",
+        " Troy Baker",
+        "John DiMaggio"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "In the game Warframe, what Mastery Rank do you need to have to build the Tigris Prime?",
+      "options": [
+        "13",
+        "10",
+        "18",
+        "6"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "What was the character Kirby originally going to be named?",
+      "options": [
+        "Popopo",
+        "Dedede",
+        "Prince Puff",
+        "Waddle Dee"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "In &quot;Star Trek&quot;, what sauce is commonly used by Klingons on bregit lung?",
+      "options": [
+        "Sweet chili sauce",
+        "Grapork sauce",
+        "Gazorpazorp pudding",
+        "Grapok sauce"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
+      "options": [
+        "Goat",
+        "Dog",
+        "Moose",
+        "Bear"
+      ],
+      "correct": 2
+    }
   ]
 }
