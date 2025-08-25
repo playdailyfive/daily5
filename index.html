@@ -89,6 +89,7 @@
 const $ = id => document.getElementById(id);
 let BANK=[], i=0, score=0, picks=[], timer=null, tickInterval=null, remain=10, circumference=2*Math.PI*19;
 let dayCounter = 1; // from daily.json
+let firstQuestion = true; // ← prevents flicker on Q1
 
 /* Load today’s questions from /daily.json */
 async function loadQuestions(){
@@ -113,20 +114,18 @@ async function loadQuestions(){
   }
 }
 
-/* Helper: set ring instantly without animating, then restore transition smoothly */
+/* Helper: set ring instantly w/out anim, then restore transition */
 function setRingInstant(ring, offset){
   const prev = ring.style.transition;
   ring.style.transition = 'none';
   ring.style.strokeDashoffset = String(offset);
-  // force reflow so the browser applies the no-transition change
-  // then restore the normal transition for subsequent animation
-  void ring.getBoundingClientRect();
+  void ring.getBoundingClientRect(); // reflow to apply instantly
   ring.style.transition = prev || 'stroke-dashoffset 1s linear, stroke .2s';
 }
 
 /* Start & Share */
 $('startBtn').onclick = async () => { 
-  i=0; score=0; picks=[];
+  i=0; score=0; picks=[]; firstQuestion = true;
   $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden');
   BANK = await loadQuestions(); renderQ();
 };
@@ -139,11 +138,11 @@ $('shareBtn').onclick = async () => {
   }catch(e){}
 };
 
-/* Timer — smooth: show 10 + full outline instantly; animate only on ticks */
+/* Timer — smooth: show 10 + full outline instantly; animate on ticks */
 function resetChrono(){
   const ring=$('ringFg');
   ring.style.strokeDasharray = String(circumference);
-  setRingInstant(ring, 0);         // set to full circle without animation
+  setRingInstant(ring, 0);         // full circle instantly
   remain = 10;
   $('chronoNum').textContent = 10; // show 10 immediately
   $('chrono').classList.remove('soon');
@@ -155,18 +154,30 @@ function startChrono(){
 
   clearInterval(tickInterval);
   ring.style.strokeDasharray = String(circumference);
-  setRingInstant(ring, 0);         // ensure starting from full, no wind-up
+  setRingInstant(ring, 0);
   $('chronoNum').textContent = 10;
 
-  // First change happens at 1s → smooth animation from full to 90%
-  tickInterval = setInterval(()=>{
-    elapsed += 1;
-    remain = 10 - elapsed;
-    $('chronoNum').textContent = Math.max(remain, 0);
-    ring.style.strokeDashoffset = String(perSec * elapsed);
-    if(remain <= 3){ $('chrono').classList.add('soon'); }
-    if(elapsed >= 10){ clearInterval(tickInterval); }
-  }, 1000);
+  // For Q1, wait for 2 RAFs so the first paint is stable (no flicker),
+  // then begin ticking. For subsequent questions, start immediately.
+  const begin = () => {
+    tickInterval = setInterval(()=>{
+      elapsed += 1;
+      remain = 10 - elapsed;
+      $('chronoNum').textContent = Math.max(remain, 0);
+      ring.style.strokeDashoffset = String(perSec * elapsed);
+      if(remain <= 3){ $('chrono').classList.add('soon'); }
+      if(elapsed >= 10){ clearInterval(tickInterval); }
+    }, 1000);
+  };
+
+  if (firstQuestion) {
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      firstQuestion = false;
+      begin();
+    }));
+  } else {
+    begin();
+  }
 }
 function stopChrono(){ clearInterval(tickInterval); }
 
@@ -179,7 +190,8 @@ function renderQ(){
   q.options.forEach((opt,idx)=>{ 
     const b=document.createElement('button'); b.className='answer'; b.innerHTML=opt; b.onclick=()=>lock(idx,b); box.appendChild(b); 
   });
-  resetChrono(); startChrono();
+  resetChrono();
+  startChrono();
   clearTimeout(timer); timer=setTimeout(()=>timeUp(),10000);
 }
 function lock(idx,btn){ 
