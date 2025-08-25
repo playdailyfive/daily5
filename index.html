@@ -87,7 +87,6 @@
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
   .title{ font-size:clamp(20px,2.2vw,22px); font-weight:900; text-align:center; margin-bottom:2px; }
 
-  /* Animations + confetti */
   @keyframes qOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}} 
   @keyframes qIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
   .anim-out{animation:qOut 180ms ease forwards} 
@@ -98,7 +97,6 @@
   .pulse{ animation:pulse 850ms ease-out both } 
   @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
 
-  /* Make end-screen content always on top of confetti */
   #end > *:not(.confetti){ position:relative; z-index:1; }
 
   .hidden{ display:none!important; }
@@ -134,35 +132,23 @@
     </section>
 
     <section id="end" class="card hidden">
-      <!-- Confetti sits behind end content -->
       <div class="confetti" id="confetti"></div>
-
-      <!-- Witty title -->
       <h2 id="endTitle" class="title">Good try! 👍</h2>
-
-      <!-- Visible header line (always shown) -->
       <div id="endHeader" class="title" style="margin-top:-6px;">Daily Five — 0/5</div>
-
-      <!-- Squares -->
       <div id="shareGrid" class="grid"></div>
-
-      <!-- Share -->
       <button id="shareBtn" class="cta-medium">Share</button>
-
-      <!-- Footer -->
       <div class="ig-footer">
         <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
         <img src="logo_1.png" alt="Daily 5 Footer Logo"/>
       </div>
-
-      <!-- Hidden text used for system share / copy -->
       <p id="shareText" class="muted hidden"></p>
     </section>
   </div>
 
 <script>
 const $ = id => document.getElementById(id);
-let BANK=[], i=0, score=0, picks=[], timer=null, tickInterval=null, remain=10, circumference=2*Math.PI*19;
+let BANK=[], i=0, score=0, picks=[];
+let timer=null, tickInterval=null, remain=10, circumference=2*Math.PI*19;
 let dayCounter = 1;
 
 /* Load questions */
@@ -214,7 +200,6 @@ function setRingInstant(offset){
 }
 
 /* Timer */
-let tickInterval=null;
 function resetChrono(){ setRingInstant(0); remain=10; $('chronoNum').textContent=10; $('chrono').classList.remove('soon'); }
 function startChrono(){
   const perSec = circumference/10; let elapsed = 0;
@@ -278,7 +263,6 @@ function animateNext(){
 function finish(){ 
   clearTimeout(timer); stopChrono(); 
 
-  // Build header + squares BEFORE showing end, so nothing flashes
   const headerText = `Daily Five ${dayCounter} — ${score}/5`;
   $('endHeader').textContent = headerText;
 
@@ -303,7 +287,6 @@ function finish(){
 
   $('shareText').textContent = `${headerText}\n\n${row}`;
 
-  // Now switch screens
   $('play').classList.add('hidden'); 
   $('end').classList.remove('hidden');
 }
@@ -319,7 +302,6 @@ $('shareBtn').onclick = async () => {
 };
 
 /* Start game */
-let timer=null;
 $('startBtn').onclick = async () => { 
   i=0; score=0; picks=[];
   BANK = await loadQuestions();
