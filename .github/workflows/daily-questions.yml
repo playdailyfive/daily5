@@ -1,26 +1,38 @@
 name: Daily Questions
+
 on:
   schedule:
     - cron: '1 4 * * *'   # ~00:01 EDT (summer)
     - cron: '1 5 * * *'   # ~00:01 EST (winter)
   workflow_dispatch:
+
 permissions:
   contents: write
+
 concurrency:
   group: daily5
   cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
-      - uses: actions/setup-node@v4
-        with: { node-version: '20' }
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Generate today's questions (ET-aware)
         run: node scripts/generate-daily.js
+
       - name: Commit & push if changed
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
