@@ -3,52 +3,52 @@
   "dayIndex": 2,
   "questions": [
     {
-      "text": "How many bits make up the significand portion of a single precision floating point number?",
+      "text": "Bridgetown is the capital of which island country in the Carribean?",
       "options": [
-        "53",
-        "15",
-        "8",
-        "23"
+        "Jamaica‎",
+        "Dominica",
+        "Cuba",
+        "Barbados"
       ],
       "correct": 3
     },
     {
-      "text": "Which Italian automobile manufacturer gained majority control of U.S. automobile manufacturer Chrysler in 2011?",
+      "text": "What's the Team Fortress 2 Scout's city of origin?",
       "options": [
-        "Alfa Romeo",
-        "Fiat",
-        "Maserati",
-        "Ferrari"
+        "Detroit",
+        "Boston",
+        "Sydney",
+        "New York"
       ],
       "correct": 1
     },
     {
-      "text": "Which WWII tank ace is credited with having destroyed the most tanks?",
+      "text": "What year is on the flag of the US state Wisconsin?",
       "options": [
-        "Michael Wittmann",
-        "Kurt Knispel",
-        "Walter Kniep",
-        "Otto Carius"
+        "1634",
+        "1848",
+        "1783",
+        "1901"
       ],
       "correct": 1
     },
     {
-      "text": "Joseph Smith was the founder of what religion?",
+      "text": "The notion of a \"set that contains all sets which do not contain themselves\" is a paradoxical idea attributed to which English philosopher?",
       "options": [
-        "Hinduism",
-        "Christianity",
-        "Buddhism",
-        "Mormonism"
+        "Alfred North Whitehead",
+        "John Locke",
+        "Francis Bacon",
+        "Bertrand Russel"
       ],
       "correct": 3
     },
     {
-      "text": "A statue of Charles Darwin sits in what London museum?",
+      "text": "What was the first video game in the Batman \"Arkham\" series?",
       "options": [
-        "British Museum",
-        "Natural History Museum",
-        "Science Museum",
-        "Tate"
+        "Arkham City",
+        "Arkham Asylum",
+        "Arkham Origins",
+        "Arkham Knight"
       ],
       "correct": 1
     }
