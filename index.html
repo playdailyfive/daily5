@@ -87,6 +87,7 @@
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
   .title{ font-size:clamp(20px,2.2vw,22px); font-weight:900; text-align:center; margin-bottom:2px; }
 
+  /* Confetti + anim */
   @keyframes qOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}} 
   @keyframes qIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
   .anim-out{animation:qOut 180ms ease forwards} 
@@ -96,6 +97,10 @@
   @keyframes fall{0%{opacity:0;transform:translateY(-20px) rotate(0)}10%{opacity:1}100%{opacity:0;transform:translateY(220px) rotate(360deg)}}
   .pulse{ animation:pulse 850ms ease-out both } 
   @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
+
+  /* Footer logo sizing (this was missing and caused the “big 5” takeover) */
+  .ig-footer{ display:flex; flex-direction:column; align-items:center; gap:4px; margin-top:6px; }
+  .ig-footer img{ width:42px; height:auto; max-width:42px; display:block; }
 
   #end > *:not(.confetti){ position:relative; z-index:1; }
 
@@ -133,7 +138,7 @@
 
     <section id="end" class="card hidden">
       <div class="confetti" id="confetti"></div>
-      <!-- Content will be rebuilt by JS in finish() -->
+      <!-- Will be rebuilt by JS on finish() -->
     </section>
   </div>
 
@@ -173,7 +178,7 @@ function burstConfetti(){
   for(let n=0;n<24;n++){
     const el=document.createElement('div'); el.className='piece';
     el.style.left=(10+Math.random()*80)+'%'; el.style.top='-6px';
-    el.style.background=colors[(Math.random()*colors.length)|0];
+    el.style.background=colors[(*Math.random()*colors.length)|0];
     el.style.animationDelay=(Math.random()*0.25)+'s';
     el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`;
     layer.appendChild(el);
@@ -251,20 +256,17 @@ function animateNext(){
   },180);
 }
 
-/* End (rebuilds the whole end card so it cannot “disappear”) */
+/* End – rebuilds the entire end card */
 function finish(){ 
   clearTimeout(timer); stopChrono(); 
 
   const headerText = `Daily Five ${dayCounter} — ${score}/5`;
   const map={good:'🟩',bad:'🟥',skip:'⬜️'};
   let row=''; picks.forEach(p=>row+=map[p]);
-
-  // Build squares HTML
   const squares = picks.map(p=>{
     const cls = p==='good'?'good':p==='bad'?'bad':'skip';
     return `<div class="sq ${cls}"></div>`;
   }).join('');
-
   const witty = (score===5) ? "Perfect! 5/5 🎉 You nailed it!"
     : (score===4) ? "So close! 4/5 🔥 One more next time."
     : (score===3) ? "Nice run! 3/5 👏 Solid showing."
@@ -272,7 +274,6 @@ function finish(){
     : (score===1) ? "Good try! 1/5 🤏 Better luck next time."
     : "Tough one! 0/5 😵 You'll crush the next set.";
 
-  // Rebuild end card content
   const end = $('end');
   end.innerHTML = `
     <div class="confetti" id="confetti"></div>
@@ -282,20 +283,17 @@ function finish(){
     <button id="shareBtn" class="cta-medium">Share</button>
     <div class="ig-footer">
       <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
-      <img src="logo_1.png" alt="Daily 5 Footer Logo"/>
+      <img src="logo_1.png" alt="Daily 5 Footer Logo" />
     </div>
     <p id="shareText" class="muted hidden">${headerText}\n\n${row}</p>
   `;
 
-  // Ensure end content sits above confetti
-  [...end.children].forEach(ch=>{
-    if(ch.id!=='confetti'){ ch.style.position='relative'; ch.style.zIndex='1'; }
-  });
+  // keep content above confetti
+  [...end.children].forEach(ch=>{ if(ch.id!=='confetti'){ ch.style.position='relative'; ch.style.zIndex='1'; } });
 
-  // Confetti for 4+ correct
   if(score>=4){ burstConfetti(); }
 
-  // Wire Share (since we rebuilt button)
+  // share
   $('shareBtn').onclick = async () => { 
     const text=$('shareText').textContent;
     try{
@@ -305,7 +303,6 @@ function finish(){
     }catch(e){}
   };
 
-  // Swap screens
   $('play').classList.add('hidden'); 
   end.classList.remove('hidden');
 }
