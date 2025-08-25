@@ -179,7 +179,7 @@ function burstConfetti(){
     el.className='piece';
     el.style.left=(10+Math.random()*80)+'%'; 
     el.style.top='-6px';
-    el.style.background=colors[Math.floor(Math.random()*colors.length)]; /* <-- FIXED LINE */
+    el.style.background=colors[Math.floor(Math.random()*colors.length)];
     el.style.animationDelay=(Math.random()*0.25)+'s';
     el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`;
     layer.appendChild(el);
@@ -261,7 +261,10 @@ function animateNext(){
 function finish(){ 
   clearTimeout(timer); stopChrono(); 
 
-  const headerText = `Daily Five ${dayCounter} — ${score}/5`;
+  // Header should be just day number + score (no "Daily Five")
+  const headerText = `${dayCounter} — ${score}/5`;
+
+  // Blocks + share payload
   const map={good:'🟩',bad:'🟥',skip:'⬜️'};
   let row=''; picks.forEach(p=>row+=map[p]);
   const squares = picks.map(p=>{
@@ -289,12 +292,12 @@ function finish(){
     <p id="shareText" class="muted hidden">${headerText}\n\n${row}</p>
   `;
 
-  // keep content above confetti
+  // Keep content above confetti
   [...end.children].forEach(ch=>{ if(ch.id!=='confetti'){ ch.style.position='relative'; ch.style.zIndex='1'; } });
 
   if(score>=4){ burstConfetti(); }
 
-  // share
+  // Share
   $('shareBtn').onclick = async () => { 
     const text=$('shareText').textContent;
     try{
