@@ -1,0 +1,34 @@
+name: Daily Questions
+on:
+  schedule:
+    - cron: '1 5 * * *'   # 00:01 ET (05:01 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily5
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Generate today's questions
+        run: node scripts/generate-daily.js
+      - name: Commit & push if changed
+        run: |
+          git config user.name "daily5-bot"
+          git config user.email "daily5-bot@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add daily.json
+            git commit -m "chore: update daily.json"
+            git push
+          else
+            echo "No changes to commit."
+          fi
