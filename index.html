@@ -63,7 +63,7 @@
   .cta:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); } .cta:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
   .cta:active{ transform:translateY(1px) scale(.995); box-shadow:0 6px 16px rgba(17,24,39,.15); }
 
-  /* Share button */
+  /* Share button — slimmer than Play */
   .cta-share{ padding:14px 28px; font-size:clamp(16px,2vw,18px); border-radius:14px; background:#111827; color:#fff; font-weight:900; box-shadow:0 6px 16px rgba(17,24,39,.16); cursor:pointer; }
 
   .card{ border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; background:#fff; display:flex; flex-direction:column; gap:12px; position:relative; align-items:center; box-shadow:0 6px 28px rgba(17,24,39,.06); }
@@ -78,8 +78,11 @@
   .answer.correct::after{ content:"✔️"; } .answer.wrong::after{ content:"✖️"; }
 
   .chrono{ pointer-events:none; position:absolute; right:12px; top:12px; width:64px; height:64px; display:grid; place-items:center; }
-  .chrono svg{ width:100%; height:100%; display:block; } .chrono .ring-bg{ stroke:#e5e7eb; } .chrono .ring-fg{ stroke:#111827; transition:stroke-dashoffset 1s linear, stroke .2s; }
-  .chrono.soon .ring-fg{ stroke:var(--bad);} .chrono .num{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px; }
+  .chrono svg{ width:100%; height:100%; display:block; }
+  .chrono .ring-bg{ stroke:#e5e7eb; }
+  .chrono .ring-fg{ stroke:#111827; transition:stroke .2s; } /* no dashoffset animation now */
+  .chrono.soon .ring-fg{ stroke:var(--bad); }
+  .chrono .num{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px; }
 
   .grid{ display:grid; grid-template-columns:repeat(5,36px); gap:10px; justify-content:center; margin-top:2px; }
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
@@ -136,7 +139,7 @@
 const $ = id => document.getElementById(id);
 
 /* ---------- CONFIG ---------- */
-const TOTAL_SECONDS = 12;                // ⬅️ 12-second timer
+const TOTAL_SECONDS = 12;
 const RADIUS = 19;
 const circumference = 2 * Math.PI * RADIUS;
 
@@ -159,8 +162,8 @@ function dayIndexFromTZ(start, tz){
 const dayCounter = dayIndexFromTZ(LAUNCH_DATE, 'America/New_York');
 
 /* ---------- Fallback banner helpers ---------- */
-function showBanner(){ document.getElementById('fallbackBanner').style.display='block'; }
-function hideBanner(){ document.getElementById('fallbackBanner').style.display='none'; }
+function showBanner(){ $('fallbackBanner').style.display='block'; }
+function hideBanner(){ $('fallbackBanner').style.display='none'; }
 
 /* ---------- Deterministic daily fetch from /daily.json ---------- */
 async function loadQuestions(){
@@ -170,7 +173,6 @@ async function loadQuestions(){
     const data = await res.json();
     hideBanner();
 
-    // Deterministic per-day option shuffle so everyone sees the same order
     const daySeed = Number(data.day || 0);
     function seededShuffle(arr, seed){ let s=seed, out=[...arr];
       for(let i=out.length-1;i>0;i--){ s=(s*9301+49297)%233280; const j=Math.floor((s/233280)*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
@@ -196,7 +198,7 @@ async function loadQuestions(){
 
 /* ---------- Confetti ---------- */
 function burstConfetti(){ 
-  const layer=document.getElementById('confetti'); if(!layer) return; layer.innerHTML='';
+  const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
   const colors=['#16a34a','#111827','#9CA3AF','#34d399','#059669'];
   for(let n=0;n<24;n++){
     const el=document.createElement('div'); 
@@ -211,30 +213,28 @@ function burstConfetti(){
   }
 }
 
-/* ---------- Timer ---------- */
-function setRingInstant(offset){
-  const ring=document.getElementById('ringFg');
-  ring.style.strokeDasharray=String(circumference);
-  ring.style.strokeDashoffset=String(offset);
+/* ---------- Timer (no “fill” animation) ---------- */
+function setRingFull(){
+  const ring = $('ringFg');
+  ring.style.strokeDasharray = String(circumference);
+  ring.style.strokeDashoffset = '0';      // full outline
 }
 function resetChrono(){
-  setRingInstant(0);
+  setRingFull();
   remain = TOTAL_SECONDS;
-  document.getElementById('chronoNum').textContent = TOTAL_SECONDS;
-  document.getElementById('chrono').classList.remove('soon');
+  $('chronoNum').textContent = TOTAL_SECONDS;
+  $('chrono').classList.remove('soon');
 }
 function startChrono(){
-  const perSec = circumference / TOTAL_SECONDS;
-  let elapsed = 0;
   clearInterval(tickInterval);
-  setRingInstant(0);
-  document.getElementById('chronoNum').textContent = TOTAL_SECONDS;
+  setRingFull();                           // stay full; no per-second offset
+  $('chronoNum').textContent = TOTAL_SECONDS;
+  let elapsed = 0;
   tickInterval = setInterval(()=>{
     elapsed += 1;
     remain = TOTAL_SECONDS - elapsed;
-    document.getElementById('chronoNum').textContent = Math.max(remain,0);
-    document.getElementById('ringFg').style.strokeDashoffset = String(perSec*elapsed);
-    if(remain <= 3){ document.getElementById('chrono').classList.add('soon'); }
+    $('chronoNum').textContent = Math.max(remain,0);
+    if(remain <= 3){ $('chrono').classList.add('soon'); }
     if(elapsed >= TOTAL_SECONDS){ clearInterval(tickInterval); }
   }, 1000);
 }
@@ -244,9 +244,9 @@ function beginTimer(){ resetChrono(); startChrono(); }
 /* ---------- Render / Flow ---------- */
 function renderQ(opts={}){
   const q=BANK[i];
-  document.getElementById('qtext').innerHTML=q.text;
-  document.getElementById('progressPill').textContent=`Q${i+1}/5`;
-  const box=document.getElementById('answers'); box.innerHTML='';
+  $('qtext').innerHTML=q.text;
+  $('progressPill').textContent=`Q${i+1}/5`;
+  const box=$('answers'); box.innerHTML='';
   q.options.forEach((opt,idx)=>{
     const b=document.createElement('button');
     b.className='answer';
@@ -256,7 +256,7 @@ function renderQ(opts={}){
   });
   if (!opts.deferTimer) beginTimer();
   clearTimeout(timer);
-  timer = setTimeout(()=>timeUp(), TOTAL_SECONDS * 1000);   // ⬅️ auto-advance at 12s
+  timer = setTimeout(()=>timeUp(), TOTAL_SECONDS * 1000);
 }
 function lock(idx,btn){
   clearTimeout(timer); stopChrono();
@@ -277,7 +277,7 @@ function timeUp(){
   setTimeout(()=>animateNext(),1200);
 }
 function animateNext(){
-  const play=document.getElementById('play');
+  const play=$('play');
   play.classList.remove('anim-in'); play.classList.add('anim-out');
   setTimeout(()=>{
     play.classList.remove('anim-out'); i++;
@@ -295,7 +295,7 @@ function finish(){
   const squares=picks.map(p=>`<div class="sq ${p==='good'?'good':p==='bad'?'bad':'skip'}"></div>`).join('');
   const witty=(score===5)?"Perfect! 5/5 🎉 You nailed it!":(score===4)?"So close! 4/5 🔥 One more next time.":(score===3)?"Nice run! 3/5 👏 Solid showing.":(score===2)?"Good try! 2/5 🙂 Warming up.":(score===1)?"Good try! 1/5 🤏 Better luck next time.":"Tough one! 0/5 😵 You'll crush the next set.";
 
-  const end=document.getElementById('end');
+  const end=$('end');
   end.innerHTML = `
     <div class="confetti" id="confetti"></div>
     <h2 class="title" id="endTitle">${witty}</h2>
@@ -315,10 +315,10 @@ function finish(){
   if(score>=4){ burstConfetti(); }
 
   const shareLine=`Daily Five ${dayCounter} ${score}/5`;
-  document.getElementById('shareText').textContent = `${shareLine}\n\n${row}`;
+  $('shareText').textContent = `${shareLine}\n\n${row}`;
 
-  document.getElementById('shareBtn').onclick = async () => {
-    const text=document.getElementById('shareText').textContent;
+  $('shareBtn').onclick = async () => {
+    const text=$('shareText').textContent;
     try{
       if(navigator.share){ await navigator.share({ text }); }
       else if(navigator.clipboard){ await navigator.clipboard.writeText(text); alert('Copied to clipboard'); }
@@ -326,18 +326,18 @@ function finish(){
     }catch(e){}
   };
 
-  document.getElementById('play').classList.add('hidden');
+  $('play').classList.add('hidden');
   end.classList.remove('hidden');
 }
 
 /* ---------- Start game ---------- */
-document.getElementById('startBtn').onclick = async () => {
+$('startBtn').onclick = async () => {
   i=0; score=0; picks=[];
   BANK = await loadQuestions();
   renderQ({deferTimer:true});
-  document.getElementById('start').classList.add('hidden');
-  document.getElementById('end').classList.add('hidden');
-  document.getElementById('play').classList.remove('hidden');
+  $('start').classList.add('hidden');
+  $('end').classList.add('hidden');
+  $('play').classList.remove('hidden');
   requestAnimationFrame(()=>requestAnimationFrame(()=>{ beginTimer(); }));
 };
 </script>
