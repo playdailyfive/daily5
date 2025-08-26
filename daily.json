@@ -1,56 +1,56 @@
 {
-  "day": "20250825",
-  "dayIndex": 2,
+  "day": "20250826",
+  "dayIndex": 3,
   "questions": [
     {
-      "text": "Bridgetown is the capital of which island country in the Carribean?",
+      "text": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
       "options": [
-        "Jamaica‎",
-        "Dominica",
-        "Cuba",
-        "Barbados"
+        "Runaway",
+        "Westworld",
+        "The Terminators",
+        "Android"
       ],
-      "correct": 3
+      "correct": 1
+    },
+    {
+      "text": "The medical term for the belly button is which of the following?",
+      "options": [
+        "Paxillus",
+        "Umbilicus",
+        "Nevus",
+        "Nares"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "What port does HTTP run on?",
+      "options": [
+        "23",
+        "80",
+        "443",
+        "53"
+      ],
+      "correct": 1
     },
     {
       "text": "What's the Team Fortress 2 Scout's city of origin?",
       "options": [
-        "Detroit",
         "Boston",
-        "Sydney",
-        "New York"
+        "New York",
+        "Detroit",
+        "Sydney"
       ],
-      "correct": 1
+      "correct": 0
     },
     {
-      "text": "What year is on the flag of the US state Wisconsin?",
+      "text": "What ingredient is NOT used to craft a cake in Minecraft?",
       "options": [
-        "1634",
-        "1848",
-        "1783",
-        "1901"
+        "Bread",
+        "Milk",
+        "Egg",
+        "Wheat"
       ],
-      "correct": 1
-    },
-    {
-      "text": "The notion of a \"set that contains all sets which do not contain themselves\" is a paradoxical idea attributed to which English philosopher?",
-      "options": [
-        "Alfred North Whitehead",
-        "John Locke",
-        "Francis Bacon",
-        "Bertrand Russel"
-      ],
-      "correct": 3
-    },
-    {
-      "text": "What was the first video game in the Batman \"Arkham\" series?",
-      "options": [
-        "Arkham City",
-        "Arkham Asylum",
-        "Arkham Origins",
-        "Arkham Knight"
-      ],
-      "correct": 1
+      "correct": 0
     }
   ]
 }
