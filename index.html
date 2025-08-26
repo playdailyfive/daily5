@@ -5,27 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Daily 5 — Trivia</title>
 
-<!-- Favicons -->
+<!-- Favicons (optional if already in repo) -->
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
-
-<!-- Apple/Android icons -->
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="apple-touch-icon" sizes="192x192" href="/apple-icon-192x192.png">
-<link rel="apple-touch-icon" sizes="512x512" href="/apple-icon-512x512.png">
-
-<!-- PWA manifest -->
-<link rel="manifest" href="/site.webmanifest">
-<meta name="apple-mobile-web-app-title" content="Daily Five">
 
 <!-- Social Meta -->
 <meta property="og:type" content="website">
@@ -43,50 +26,78 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<!-- Plausible Analytics -->
+<!-- Plausible Analytics (optional) -->
 <script defer data-domain="playdailyfive.com" src="https://plausible.io/js/script.js"></script>
 
 <style>
   :root{ --bg:#f9f9f7; --ink:#111827; --muted:#6b7280; --line:#e5e7eb; --bad:#ef4444; --good:#16a34a; }
   *{box-sizing:border-box} html,body{height:100%}
-  body{ margin:0; background:var(--bg); color:var(--ink);
-        font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
-        display:flex; align-items:center; justify-content:center; padding:20px; flex-direction:column; gap:16px; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
+    display:flex; align-items:center; justify-content:center; padding:20px; flex-direction:column; gap:16px;
+  }
   .wrap{width:min(720px,100%);} 
   .start-wrap{display:flex; flex-direction:column; align-items:center; gap:12px;}
   .logo-top{ max-width:clamp(240px,34vw,520px); height:auto; }
   .tagline{ font-size:clamp(16px,1.8vw,18px); font-weight:600; color:var(--muted); margin-top:4px; margin-bottom:12px; }
 
   /* Buttons */
-  .cta{ appearance:none; border:none; border-radius:16px; padding:22px 36px; font-weight:900; letter-spacing:.2px; background:#111827; color:#fff;
-        font-size:clamp(18px,2.2vw,20px); box-shadow:0 8px 22px rgba(17,24,39,.18); cursor:pointer; transition:transform .06s, box-shadow .2s, filter .2s; }
-  .cta:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); } .cta:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
+  .cta{
+    appearance:none; border:none; border-radius:16px; padding:22px 36px;
+    font-weight:900; letter-spacing:.2px; background:#111827; color:#fff;
+    font-size:clamp(18px,2.2vw,20px); box-shadow:0 8px 22px rgba(17,24,39,.18);
+    cursor:pointer; transition:transform .06s, box-shadow .2s, filter .2s;
+  }
+  .cta:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); }
+  .cta:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
   .cta:active{ transform:translateY(1px) scale(.995); box-shadow:0 6px 16px rgba(17,24,39,.15); }
 
   /* Share button — slimmer than Play */
-  .cta-share{ padding:14px 28px; font-size:clamp(16px,2vw,18px); border-radius:14px; background:#111827; color:#fff; font-weight:900; box-shadow:0 6px 16px rgba(17,24,39,.16); cursor:pointer; }
+  .cta-share{ 
+    padding:14px 28px; font-size:clamp(16px,2vw,18px);
+    border-radius:14px; background:#111827; color:#fff; font-weight:900;
+    box-shadow:0 6px 16px rgba(17,24,39,.16); cursor:pointer; transition:filter .2s;
+  }
+  .cta-share:hover{ filter:drop-shadow(0 6px 12px rgba(22,163,74,.25)); }
+  .cta-share:focus-visible{ outline:4px solid rgba(22,163,74,.35); outline-offset:3px; }
 
-  .card{ border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; background:#fff; display:flex; flex-direction:column; gap:12px; position:relative; align-items:center; box-shadow:0 6px 28px rgba(17,24,39,.06); }
+  .card{
+    border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; background:#fff;
+    display:flex; flex-direction:column; gap:12px; position:relative; align-items:center;
+    box-shadow:0 6px 28px rgba(17,24,39,.06);
+  }
   #qtext{ margin-top:4px; font-weight:900; font-size:clamp(20px,2.2vw,22px); line-height:1.35; text-align:center; padding-right:96px; }
   .answers{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:8px; width:100%; }
-  .answer{ position:relative; border:1px solid var(--line); border-radius:14px; padding:16px 48px 16px 16px; text-align:left; font-weight:800; font-size:clamp(17px,2.2vw,18px);
-           background:#fff; color:#111827; cursor:pointer; transition:background-color .15s, color .15s, border-color .15s, transform .03s, box-shadow .15s; min-height:48px; }
-  .answer:hover{ box-shadow:0 4px 12px rgba(17,24,39,.06); } .answer:active{ transform:translateY(1px); }
+  .answer{
+    position:relative; border:1px solid var(--line); border-radius:14px; padding:16px 48px 16px 16px;
+    text-align:left; font-weight:800; font-size:clamp(17px,2.2vw,18px);
+    background:#fff; color:#111827; cursor:pointer; transition:background-color .15s, color .15s, border-color .15s, transform .03s, box-shadow .15s; min-height:48px;
+  }
+  .answer:hover{ box-shadow:0 4px 12px rgba(17,24,39,.06); }
+  .answer:active{ transform:translateY(1px); }
   .answer.correct{ background:var(--good); border-color:var(--good); color:#fff; }
   .answer.wrong{ background:var(--bad); border-color:var(--bad); color:#fff; }
-  .answer.correct::after, .answer.wrong::after{ position:absolute; right:14px; top:50%; transform:translateY(-50%); font-size:20px; line-height:1; }
-  .answer.correct::after{ content:"✔️"; } .answer.wrong::after{ content:"✖️"; }
+  .answer.correct::after, .answer.wrong::after{
+    position:absolute; right:14px; top:50%; transform:translateY(-50%); font-size:20px; line-height:1;
+  }
+  .answer.correct::after{ content:"✔️"; }
+  .answer.wrong::after{ content:"✖️"; }
 
+  /* Timer */
   .chrono{ pointer-events:none; position:absolute; right:12px; top:12px; width:64px; height:64px; display:grid; place-items:center; }
   .chrono svg{ width:100%; height:100%; display:block; }
   .chrono .ring-bg{ stroke:#e5e7eb; }
-  .chrono .ring-fg{ stroke:#111827; transition:stroke-dashoffset 1s linear, stroke .2s; } /* progress shrink */
-  .chrono.soon .ring-fg{ stroke:var(--bad); }
+  .chrono .ring-fg{ stroke:#111827; transition:stroke-dashoffset 1s linear; }
   .chrono .num{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px; }
 
   .grid{ display:grid; grid-template-columns:repeat(5,36px); gap:10px; justify-content:center; margin-top:2px; }
   .sq{ width:36px; height:36px; border-radius:8px; background:#e5e7eb; } .sq.good{background:var(--good);} .sq.bad{background:var(--bad);} .sq.skip{background:#9ca3af;}
   .title{ font-size:clamp(20px,2.2vw,22px); font-weight:900; text-align:center; margin-bottom:2px; }
+
+  @keyframes qOut{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(8px)}}
+  @keyframes qIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .anim-out{animation:qOut 180ms ease forwards} .anim-in{animation:qIn 220ms ease both}
 
   /* Footer / end actions */
   .ig-footer{ display:flex; flex-direction:column; align-items:center; gap:6px; margin-top:8px; }
@@ -94,18 +105,31 @@
   .ig-footer a{ font-weight:900; color:#111827; text-decoration:none; }
   .ig-footer a:hover{ text-decoration:underline; }
 
-  .feedback-btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--line); border-radius:12px;
-    font-weight:700; font-size:15px; color:#111827; text-decoration:none; box-shadow:0 2px 8px rgba(17,24,39,.06); background:#fff; }
+  /* Feedback pill */
+  .feedback-btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:10px 14px; border:1px solid var(--line); border-radius:12px;
+    font-weight:700; font-size:15px; color:#111827; text-decoration:none;
+    box-shadow:0 2px 8px rgba(17,24,39,.06); background:#fff;
+  }
   .feedback-btn:hover{ box-shadow:0 4px 12px rgba(17,24,39,.08); }
   .feedback-btn svg{ width:18px; height:18px; display:block; }
 
   #end > *:not(.confetti){ position:relative; z-index:1; }
-
   .hidden{ display:none!important; }
+
+  /* Mobile niceties */
+  @media (max-width:480px){
+    .chrono{width:56px;height:56px;right:8px;top:8px}
+    #qtext{padding-right:96px;overflow-wrap:anywhere}
+  }
+
+  /* Fallback banner (hidden unless fallback is used) */
+  #fallbackBanner{display:none;width:100%;background:#facc15;color:#111;font-weight:bold;text-align:center;padding:8px;position:fixed;top:0;left:0;z-index:1000;}
 </style>
 </head>
 <body>
-  <div id="fallbackBanner" style="display:none">Offline mode — using backup questions</div>
+  <div id="fallbackBanner">Offline mode — using backup questions</div>
 
   <div id="start" class="start-wrap">
     <img src="logo_main.png" alt="Daily 5 Logo" class="logo-top"/>
@@ -137,18 +161,12 @@
 
 <script>
 const $ = id => document.getElementById(id);
-
-/* ---------- CONFIG ---------- */
-const TOTAL_SECONDS = 12;
-const RADIUS = 19;
-const CIRC = 2 * Math.PI * RADIUS;
-
-/* ---------- STATE ---------- */
 let BANK=[], i=0, score=0, picks=[];
-let timer=null, tickInterval=null, remain=TOTAL_SECONDS;
+let timer=null, tickInterval=null, remain=12, circumference=2*Math.PI*19;
+let dayCounter = 1;
 
-/* ---------- Day counter (ET) for share text ---------- */
-const LAUNCH_DATE = { y: 2025, m: 8, d: 24 };
+/* ---------- Day counter @ midnight ET ---------- */
+const LAUNCH_DATE = { y: 2025, m: 8, d: 24 }; // Day 1 baseline (ET)
 function dayIndexFromTZ(start, tz){
   const parts = new Intl.DateTimeFormat('en-US', { timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit' }).formatToParts(new Date());
   const nY = +parts.find(p=>p.type==='year').value;
@@ -157,15 +175,15 @@ function dayIndexFromTZ(start, tz){
   const nowUTC   = Date.UTC(nY, nM-1, nD);
   const startUTC = Date.UTC(start.y, start.m-1, start.d);
   const diffDays = Math.floor((nowUTC - startUTC) / 86400000);
-  return diffDays + 1;
+  return diffDays + 1; // Day 1 on launch date
 }
-const dayCounter = dayIndexFromTZ(LAUNCH_DATE, 'America/New_York');
+dayCounter = dayIndexFromTZ(LAUNCH_DATE, 'America/New_York');
 
-/* ---------- Fallback banner ---------- */
+/* Fallback banner control */
 function showBanner(){ $('fallbackBanner').style.display='block'; }
 function hideBanner(){ $('fallbackBanner').style.display='none'; }
 
-/* ---------- Deterministic daily fetch ---------- */
+/* Load today’s questions (with safe fallback) */
 async function loadQuestions(){
   try{
     const res = await fetch('/daily.json', { cache:'no-store' });
@@ -173,18 +191,19 @@ async function loadQuestions(){
     const data = await res.json();
     hideBanner();
 
-    const daySeed = Number(data.day || 0);
+    // Deterministic option shuffle per-day (matches previous behavior)
+    const daySeed = Number(data.day||0);
     function seededShuffle(arr, seed){ let s=seed, out=[...arr];
       for(let i=out.length-1;i>0;i--){ s=(s*9301+49297)%233280; const j=Math.floor((s/233280)*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
       return out;
     }
     return (data.questions||[]).map((q,idx)=>{
-      const opts=seededShuffle(q.options, daySeed + idx*7);
+      const opts=seededShuffle(q.options, daySeed+idx*7);
       const correctIdx=opts.indexOf(q.options[q.correct]);
-      return { text:q.text, options:opts, correct:correctIdx };
+      return {text:q.text, options:opts, correct:correctIdx};
     });
   }catch(e){
-    console.warn('Fallback set:', e);
+    console.warn('Falling back to demo set:', e);
     showBanner();
     return [
       { text:"What is the capital of France?", options:["Paris","Rome","Madrid","Berlin"], correct:0 },
@@ -196,80 +215,75 @@ async function loadQuestions(){
   }
 }
 
-/* ---------- Confetti ---------- */
-function burstConfetti(){ 
+/* Confetti */
+function burstConfetti(){
   const layer=$('confetti'); if(!layer) return; layer.innerHTML='';
   const colors=['#16a34a','#111827','#9CA3AF','#34d399','#059669'];
   for(let n=0;n<24;n++){
-    const el=document.createElement('div'); 
+    const el=document.createElement('div');
     el.className='piece';
-    el.style.cssText='position:absolute;width:8px;height:14px;opacity:0;transform:translateY(-20px) rotate(0);animation:fall 1200ms ease-out forwards;';
-    el.style.left=(10+Math.random()*80)+'%';
-    el.style.top='-6px';
-    el.style.background=colors[(Math.random()*colors.length)|0];
+    el.style.position='absolute'; el.style.width='8px'; el.style.height='14px';
+    el.style.left=(10+Math.random()*80)+'%'; el.style.top='-6px';
+    el.style.background=colors[Math.floor(Math.random()*colors.length)];
+    el.style.opacity='0'; el.style.transform='translateY(-20px) rotate(0)';
+    el.style.animation='fall 1200ms ease-out forwards';
     el.style.animationDelay=(Math.random()*0.25)+'s';
     el.style.transform=`translateY(-20px) rotate(${(Math.random()*90-45).toFixed(0)}deg)`;
     layer.appendChild(el);
   }
 }
 
-/* ---------- Timer (ring shrinks with time) ---------- */
-function resetChrono(){
+/* ---- Timer helpers (no wind-up) ---- */
+function setRingInstant(offset){
   const ring = $('ringFg');
-  ring.style.strokeDasharray = String(CIRC);
-  ring.style.strokeDashoffset = '0'; // full ring visible
-  remain = TOTAL_SECONDS;
-  $('chronoNum').textContent = TOTAL_SECONDS;
-  $('chrono').classList.remove('soon');
+  const prevTransition = ring.style.transition;
+  ring.style.transition = 'none';                   // disable transition to avoid wind-up
+  ring.style.strokeDasharray = String(circumference);
+  ring.style.strokeDashoffset = String(offset);
+  void ring.getBoundingClientRect();                // force reflow
+  ring.style.transition = prevTransition || 'stroke-dashoffset 1s linear';
+}
+function resetChrono(){
+  remain = 12;
+  $('chronoNum').textContent = 12;
+  setRingInstant(0);                   // full ring immediately
 }
 function startChrono(){
   clearInterval(tickInterval);
-  const ring = $('ringFg');
-  const perSec = CIRC / TOTAL_SECONDS;
+  resetChrono();
+  const perSec = circumference / 12;
   let elapsed = 0;
-  ring.style.strokeDasharray = String(CIRC);
-  ring.style.strokeDashoffset = '0';
-  $('chronoNum').textContent = TOTAL_SECONDS;
-
   tickInterval = setInterval(()=>{
     elapsed += 1;
-    remain = TOTAL_SECONDS - elapsed;
+    remain = 12 - elapsed;
     $('chronoNum').textContent = Math.max(remain,0);
-
-    // Increase dashoffset each second -> visible ring shrinks
-    ring.style.strokeDashoffset = String(perSec * elapsed);
-
-    if(remain <= 3){ $('chrono').classList.add('soon'); }
-    if(elapsed >= TOTAL_SECONDS){ clearInterval(tickInterval); }
+    $('ringFg').style.strokeDashoffset = String(perSec * elapsed);
+    if(elapsed >= 12){ clearInterval(tickInterval); }
   }, 1000);
 }
 function stopChrono(){ clearInterval(tickInterval); }
-function beginTimer(){ resetChrono(); startChrono(); }
 
-/* ---------- Render / Flow ---------- */
+/* Render → Answer → Next */
 function renderQ(opts={}){
   const q=BANK[i];
   $('qtext').innerHTML=q.text;
   $('progressPill').textContent=`Q${i+1}/5`;
   const box=$('answers'); box.innerHTML='';
   q.options.forEach((opt,idx)=>{
-    const b=document.createElement('button');
-    b.className='answer';
-    b.innerHTML=opt;
-    b.onclick=()=>lock(idx,b);
-    box.appendChild(b);
+    const b=document.createElement('button'); b.className='answer'; b.innerHTML=opt;
+    b.onclick=()=>lock(idx,b); box.appendChild(b);
   });
-  if (!opts.deferTimer) beginTimer();
-  clearTimeout(timer);
-  timer = setTimeout(()=>timeUp(), TOTAL_SECONDS * 1000);
+  if(!opts.deferTimer){ startChrono(); }
+  clearTimeout(timer); timer=setTimeout(()=>timeUp(), 12000);  // 12s
 }
+
 function lock(idx,btn){
   clearTimeout(timer); stopChrono();
   const q=BANK[i], all=[...document.querySelectorAll('.answer')];
   all.forEach(b=>b.disabled=true);
   const ok = idx===q.correct;
   if(ok){ score++; picks.push('good'); btn.classList.add('correct'); }
-  else { picks.push('bad'); btn.classList.add('wrong'); }
+  else  { picks.push('bad');  btn.classList.add('wrong'); }
   all[q.correct].classList.add('correct');
   if(navigator.vibrate){ try{ navigator.vibrate(ok?[30]:[20,40]); }catch(e){} }
   setTimeout(()=>animateNext(), ok?800:1600);
@@ -277,9 +291,8 @@ function lock(idx,btn){
 function timeUp(){
   stopChrono(); picks.push('skip');
   const q=BANK[i], all=[...document.querySelectorAll('.answer')];
-  all.forEach(b=>b.disabled=true);
-  all[q.correct].classList.add('correct');
-  setTimeout(()=>animateNext(),1200);
+  all.forEach(b=>b.disabled=true); all[q.correct].classList.add('correct');
+  setTimeout(()=>animateNext(), 1200);
 }
 function animateNext(){
   const play=$('play');
@@ -287,20 +300,26 @@ function animateNext(){
   setTimeout(()=>{
     play.classList.remove('anim-out'); i++;
     if(i>=5){ finish(); return; }
-    renderQ();
-    play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220);
+    renderQ(); play.classList.add('anim-in'); setTimeout(()=>play.classList.remove('anim-in'),220);
   },180);
 }
 
-/* ---------- End screen ---------- */
+/* End – rebuild end card with share, IG, feedback */
 function finish(){
   clearTimeout(timer); stopChrono();
+
   const map={good:'🟩',bad:'🟥',skip:'⬜️'};
   let row=''; picks.forEach(p=>row+=map[p]);
-  const squares=picks.map(p=>`<div class="sq ${p==='good'?'good':p==='bad'?'bad':'skip'}"></div>`).join('');
-  const witty=(score===5)?"Perfect! 5/5 🎉 You nailed it!":(score===4)?"So close! 4/5 🔥 One more next time.":(score===3)?"Nice run! 3/5 👏 Solid showing.":(score===2)?"Good try! 2/5 🙂 Warming up.":(score===1)?"Good try! 1/5 🤏 Better luck next time.":"Tough one! 0/5 😵 You'll crush the next set.";
+  const squares = picks.map(p=>`<div class="sq ${p==='good'?'good':p==='bad'?'bad':'skip'}"></div>`).join('');
 
-  const end=$('end');
+  const witty = (score===5) ? "Perfect! 5/5 🎉 You nailed it!" :
+                 (score===4) ? "So close! 4/5 🔥 One more next time." :
+                 (score===3) ? "Nice run! 3/5 👏 Solid showing." :
+                 (score===2) ? "Good try! 2/5 🙂 Warming up." :
+                 (score===1) ? "Good try! 1/5 🤏 Better luck next time." :
+                               "Tough one! 0/5 😵 You'll crush the next set.";
+
+  const end = $('end');
   end.innerHTML = `
     <div class="confetti" id="confetti"></div>
     <h2 class="title" id="endTitle">${witty}</h2>
@@ -310,7 +329,10 @@ function finish(){
       <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
       <img src="logo_1.png" alt="Daily 5 Footer Logo" />
       <a class="feedback-btn" href="mailto:playdailyfive@gmail.com" aria-label="Send feedback">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="m22 8-10 6L2 8"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
+          <path d="m22 8-10 6L2 8"/>
+        </svg>
         Send feedback
       </a>
     </div>
@@ -319,6 +341,7 @@ function finish(){
 
   if(score>=4){ burstConfetti(); }
 
+  // Wordle-style share text: one blank line between header and blocks
   const shareLine=`Daily Five ${dayCounter} ${score}/5`;
   $('shareText').textContent = `${shareLine}\n\n${row}`;
 
@@ -335,15 +358,13 @@ function finish(){
   end.classList.remove('hidden');
 }
 
-/* ---------- Start game ---------- */
+/* Start game */
 $('startBtn').onclick = async () => {
   i=0; score=0; picks=[];
+  hideBanner();
   BANK = await loadQuestions();
-  renderQ({deferTimer:true});
-  $('start').classList.add('hidden');
-  $('end').classList.add('hidden');
-  $('play').classList.remove('hidden');
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{ beginTimer(); }));
+  renderQ({deferTimer:false});
+  $('start').classList.add('hidden'); $('end').classList.add('hidden'); $('play').classList.remove('hidden');
 };
 </script>
 </body>
