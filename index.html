@@ -80,7 +80,7 @@
   .chrono{ pointer-events:none; position:absolute; right:12px; top:12px; width:64px; height:64px; display:grid; place-items:center; }
   .chrono svg{ width:100%; height:100%; display:block; }
   .chrono .ring-bg{ stroke:#e5e7eb; }
-  .chrono .ring-fg{ stroke:#111827; transition:stroke .2s; } /* no dashoffset animation now */
+  .chrono .ring-fg{ stroke:#111827; transition:stroke-dashoffset 1s linear, stroke .2s; } /* progress shrink */
   .chrono.soon .ring-fg{ stroke:var(--bad); }
   .chrono .num{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px; }
 
@@ -141,13 +141,13 @@ const $ = id => document.getElementById(id);
 /* ---------- CONFIG ---------- */
 const TOTAL_SECONDS = 12;
 const RADIUS = 19;
-const circumference = 2 * Math.PI * RADIUS;
+const CIRC = 2 * Math.PI * RADIUS;
 
 /* ---------- STATE ---------- */
 let BANK=[], i=0, score=0, picks=[];
 let timer=null, tickInterval=null, remain=TOTAL_SECONDS;
 
-/* ---------- Daily counter (ET) for share text ---------- */
+/* ---------- Day counter (ET) for share text ---------- */
 const LAUNCH_DATE = { y: 2025, m: 8, d: 24 };
 function dayIndexFromTZ(start, tz){
   const parts = new Intl.DateTimeFormat('en-US', { timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit' }).formatToParts(new Date());
@@ -161,11 +161,11 @@ function dayIndexFromTZ(start, tz){
 }
 const dayCounter = dayIndexFromTZ(LAUNCH_DATE, 'America/New_York');
 
-/* ---------- Fallback banner helpers ---------- */
+/* ---------- Fallback banner ---------- */
 function showBanner(){ $('fallbackBanner').style.display='block'; }
 function hideBanner(){ $('fallbackBanner').style.display='none'; }
 
-/* ---------- Deterministic daily fetch from /daily.json ---------- */
+/* ---------- Deterministic daily fetch ---------- */
 async function loadQuestions(){
   try{
     const res = await fetch('/daily.json', { cache:'no-store' });
@@ -213,27 +213,32 @@ function burstConfetti(){
   }
 }
 
-/* ---------- Timer (no “fill” animation) ---------- */
-function setRingFull(){
-  const ring = $('ringFg');
-  ring.style.strokeDasharray = String(circumference);
-  ring.style.strokeDashoffset = '0';      // full outline
-}
+/* ---------- Timer (ring shrinks with time) ---------- */
 function resetChrono(){
-  setRingFull();
+  const ring = $('ringFg');
+  ring.style.strokeDasharray = String(CIRC);
+  ring.style.strokeDashoffset = '0'; // full ring visible
   remain = TOTAL_SECONDS;
   $('chronoNum').textContent = TOTAL_SECONDS;
   $('chrono').classList.remove('soon');
 }
 function startChrono(){
   clearInterval(tickInterval);
-  setRingFull();                           // stay full; no per-second offset
-  $('chronoNum').textContent = TOTAL_SECONDS;
+  const ring = $('ringFg');
+  const perSec = CIRC / TOTAL_SECONDS;
   let elapsed = 0;
+  ring.style.strokeDasharray = String(CIRC);
+  ring.style.strokeDashoffset = '0';
+  $('chronoNum').textContent = TOTAL_SECONDS;
+
   tickInterval = setInterval(()=>{
     elapsed += 1;
     remain = TOTAL_SECONDS - elapsed;
     $('chronoNum').textContent = Math.max(remain,0);
+
+    // Increase dashoffset each second -> visible ring shrinks
+    ring.style.strokeDashoffset = String(perSec * elapsed);
+
     if(remain <= 3){ $('chrono').classList.add('soon'); }
     if(elapsed >= TOTAL_SECONDS){ clearInterval(tickInterval); }
   }, 1000);
