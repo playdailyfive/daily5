@@ -31,48 +31,6 @@ jobs:
         run: node scripts/generate-daily.cjs
         shell: bash
 
-      # Append today's questions into used.json (create if missing)
-      - name: Update used.json ledger
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          if [ ! -f used.json ]; then
-            echo '{ "used": [] }' > used.json
-          fi
-
-          node - <<'NODE'
-          const fs = require('fs');
-
-          const daily = JSON.parse(fs.readFileSync('daily.json', 'utf8'));
-          const usedPath = 'used.json';
-          let used;
-          try {
-            used = JSON.parse(fs.readFileSync(usedPath, 'utf8'));
-          } catch {
-            used = { used: [] };
-          }
-
-          // Prevent double-adding for the same day
-          const alreadyLogged = used.used.some(e => e.day === daily.day);
-          if (alreadyLogged) {
-            console.log('used.json already contains entries for day', daily.day);
-            process.exit(0);
-          }
-
-          // Minimal record per question (keep it lightweight)
-          const entries = (daily.questions || []).map(q => ({
-            day: daily.day,
-            dayIndex: daily.dayIndex,
-            text: q.text,
-            correct: q.options[q.correct]
-          }));
-
-          used.used.push(...entries);
-          fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
-          console.log(`Appended ${entries.length} entries to used.json`);
-          NODE
-
       - name: Commit & push if changed
         shell: bash
         env:
@@ -82,9 +40,10 @@ jobs:
           git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
 
+          # Only commit if daily.json or used.json changed
           if ! git diff --quiet --exit-code -- daily.json used.json; then
             git add daily.json used.json
-            git commit -m "chore: update daily.json and used.json"
+            git commit -m "chore: update daily + used ledger"
             git push
           else
             echo "No changes to commit."
