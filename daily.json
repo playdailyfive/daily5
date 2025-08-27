@@ -3,54 +3,59 @@
   "dayIndex": 3,
   "questions": [
     {
-      "text": "How many types of quarks are there in the standard model of physics?",
+      "text": "What does the Prt Sc button do?",
       "options": [
-        "2",
-        "6",
-        "4",
-        "3"
+        "Closes all windows",
+        "Captures what's on the screen and copies it to your clipboard",
+        "Nothing",
+        "Saves a .png file of what's on the screen in your screenshots folder in photos"
       ],
-      "correct": 1
+      "correct": 1,
+      "difficulty": "easy"
     },
     {
-      "text": "Where was the Sniper character in Team Fortress 2 born?",
+      "text": "When someone is inexperienced they are said to be what color?",
       "options": [
-        "Australia",
-        "New Zealand",
-        "South Africa",
-        "Antarctica"
+        "Yellow",
+        "Green",
+        "Blue",
+        "Red"
       ],
-      "correct": 1
+      "correct": 1,
+      "difficulty": "easy"
     },
     {
-      "text": "Who was the first ever actor to play \"The Doctor\" on \"Doctor Who\"?",
+      "text": "In which year did the British television series \"The Bill\" end?",
       "options": [
-        "Tom Baker",
-        "William Hartnell",
-        "Peter Capaldi",
-        "David Tennant"
+        "2001",
+        "2010",
+        "2012",
+        "2007"
       ],
-      "correct": 1
+      "correct": 1,
+      "difficulty": "medium"
     },
     {
-      "text": "In \"ALF\", what was ALF's real name?",
+      "text": "Which major bank's collapse was notable as one of the causes of the Financial Crisis of 2008?",
       "options": [
-        "Gordon Shumway",
-        "Gordon von Gam",
-        "Gordon Foster",
-        "Gordon Milipp"
+        "Lehman Brothers",
+        "Lloyds",
+        "Barclays",
+        "HSBC"
       ],
-      "correct": 0
+      "correct": 0,
+      "difficulty": "medium"
     },
     {
-      "text": "In 1453, which important city fell?",
+      "text": "Of the following months, which has the most amount of days?",
       "options": [
-        "Constantinople",
-        "Hamburg",
-        "Athens",
-        "Rome"
+        "December",
+        "September",
+        "November",
+        "April"
       ],
-      "correct": 0
+      "correct": 0,
+      "difficulty": "hard"
     }
   ]
 }
