@@ -3,52 +3,52 @@
   "dayIndex": 4,
   "questions": [
     {
-      "text": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
+      "text": "In the &quot;S.T.A.L.K.E.R.&quot; series, which of these items can&#039;t be used to lower the player&#039;s accumulated radiation?",
       "options": [
-        "Great Barrier Reef",
-        "Hudson Bay",
-        "Grand Banks",
-        "Mariana Trench"
+        "Anti-rad",
+        "Vodka",
+        "Radioprotectant",
+        "Medkit"
       ],
       "correct": 2
     },
     {
-      "text": "Which punk rock band released hit songs such as &quot;Californication&quot;, &quot;Can&#039;t Stop&quot; and &quot;Under the Bridge&quot;?",
+      "text": "The original Roman alphabet lacked the following letters EXCEPT:",
       "options": [
-        "Green Day",
-        "Foo Fighters",
-        "Linkin Park",
-        "Red Hot Chilli Peppers"
+        "W",
+        "J",
+        "U",
+        "X"
       ],
       "correct": 3
     },
     {
-      "text": "In the 2012 animated film &quot;Wolf Children&quot;, what are the names of the wolf children?",
+      "text": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
       "options": [
-        "Ame &amp; Hana",
-        "Hana &amp; Yuki",
-        "Chuck &amp; Anna",
-        "Ame &amp; Yuki"
+        "Rubber Soul",
+        "Help!",
+        "Abbey Road",
+        "Revolver"
       ],
       "correct": 3
     },
     {
-      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
+      "text": "Which of these is NOT a game under the Worms series?",
       "options": [
-        "John McVie",
-        "Mac McAnally",
-        "David Tennant",
-        "Christine McVie"
+        "Major Malfunction",
+        "Clan Wars",
+        "Ultimate Mayhem",
+        "Crazy Golf"
       ],
       "correct": 0
     },
     {
-      "text": "Which of these is NOT a team available in the game Pok&eacute;mon Go?",
+      "text": "In the 2002 video game &quot;Kingdom Hearts&quot;, how many Keyblades are usable?",
       "options": [
-        "Team Valor",
-        "Team Rocket",
-        "Team Instinct",
-        "Team Mystic"
+        "16",
+        "18",
+        "13",
+        "15"
       ],
       "correct": 1
     }
