@@ -3,59 +3,54 @@
   "dayIndex": 3,
   "questions": [
     {
-      "text": "What does the Prt Sc button do?",
+      "text": "What was the first Android version specifically optimized for tablets?",
       "options": [
-        "Closes all windows",
-        "Captures what's on the screen and copies it to your clipboard",
-        "Nothing",
-        "Saves a .png file of what's on the screen in your screenshots folder in photos"
+        "Eclair",
+        "Honeycomb",
+        "Marshmellow",
+        "Froyo"
       ],
-      "correct": 1,
-      "difficulty": "easy"
+      "correct": 1
     },
     {
-      "text": "When someone is inexperienced they are said to be what color?",
+      "text": "Which coding language was the #1 programming language in terms of usage on GitHub in 2015?",
       "options": [
-        "Yellow",
-        "Green",
-        "Blue",
-        "Red"
+        "PHP",
+        "JavaScript",
+        "C#",
+        "Python"
       ],
-      "correct": 1,
-      "difficulty": "easy"
+      "correct": 1
     },
     {
-      "text": "In which year did the British television series \"The Bill\" end?",
+      "text": "What part of an automobile engine uses lobes to open and close intake and exhaust valves, and allows an air/fuel mixture into the engine?",
       "options": [
-        "2001",
-        "2010",
-        "2012",
-        "2007"
+        "Crankshaft",
+        "Camshaft",
+        "Drive shaft",
+        "Piston"
       ],
-      "correct": 1,
-      "difficulty": "medium"
+      "correct": 1
     },
     {
-      "text": "Which major bank's collapse was notable as one of the causes of the Financial Crisis of 2008?",
+      "text": "Which company developed the free battle royale game Fortnite?",
       "options": [
-        "Lehman Brothers",
-        "Lloyds",
-        "Barclays",
-        "HSBC"
+        "Epic Games",
+        "Square Enix",
+        "Ubisoft",
+        "Valve"
       ],
-      "correct": 0,
-      "difficulty": "medium"
+      "correct": 0
     },
     {
-      "text": "Of the following months, which has the most amount of days?",
+      "text": "How many seasons did &quot;Stargate SG-1&quot; have?",
       "options": [
-        "December",
-        "September",
-        "November",
-        "April"
+        "10",
+        "7",
+        "12",
+        "3"
       ],
-      "correct": 0,
-      "difficulty": "hard"
+      "correct": 0
     }
   ]
 }
