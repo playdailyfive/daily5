@@ -1,145 +1,56 @@
-/**
- * Generate daily.json with 5 questions in fixed order:
- * Q1–2 = easy, Q3–4 = medium, Q5 = hard.
- *
- * - day: YYYYMMDD in America/New_York
- * - dayIndex: global day counter starting from START_DAY (1-based)
- * - questions: [{ text, options, correct }]
- *
- * NOTE: We do NOT shuffle options here. We place the correct answer at index 0
- * and let the client (index.html) do its own deterministic per-day shuffle.
- */
-const fs = require('fs');
-const path = require('path');
-
-const START_DAY = "20250824"; // Day 1 baseline (ET)
-
-/* ---------- Time helpers (ET) ---------- */
-function yyyymmdd(d = new Date(), tz = 'America/New_York') {
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'
-  }).formatToParts(d).reduce((a, p) => (a[p.type] = p.value, a), {});
-  return `${parts.year}${parts.month}${parts.day}`;
-}
-function toUTCDate(yyyyMMdd) {
-  const y = Number(yyyyMMdd.slice(0,4));
-  const m = Number(yyyyMMdd.slice(4,6));
-  const d = Number(yyyyMMdd.slice(6,8));
-  return new Date(Date.UTC(y, m - 1, d));
-}
-
-/* ---------- Fetch helpers ---------- */
-async function fetchWithTimeout(url, { timeoutMs = 9000 } = {}) {
-  const ac = new AbortController();
-  const id = setTimeout(() => ac.abort(), timeoutMs);
-  try {
-    return await fetch(url, { signal: ac.signal });
-  } finally {
-    clearTimeout(id);
-  }
-}
-
-async function fetchOTDB(difficulty, amount, retries = 3) {
-  const url = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}`;
-  for (let attempt = 1; attempt <= retries; attempt++) {
-    try {
-      const res = await fetchWithTimeout(url, { timeoutMs: 9000 });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      if (!data || !Array.isArray(data.results)) throw new Error('Bad payload');
-      return data.results;
-    } catch (e) {
-      if (attempt === retries) throw e;
-      await new Promise(r => setTimeout(r, 1200 * attempt));
+{
+  "day": "20250826",
+  "dayIndex": 3,
+  "questions": [
+    {
+      "text": "How many types of quarks are there in the standard model of physics?",
+      "options": [
+        "2",
+        "6",
+        "4",
+        "3"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Where was the Sniper character in Team Fortress 2 born?",
+      "options": [
+        "Australia",
+        "New Zealand",
+        "South Africa",
+        "Antarctica"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Who was the first ever actor to play \"The Doctor\" on \"Doctor Who\"?",
+      "options": [
+        "Tom Baker",
+        "William Hartnell",
+        "Peter Capaldi",
+        "David Tennant"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "In \"ALF\", what was ALF's real name?",
+      "options": [
+        "Gordon Shumway",
+        "Gordon von Gam",
+        "Gordon Foster",
+        "Gordon Milipp"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "In 1453, which important city fell?",
+      "options": [
+        "Constantinople",
+        "Hamburg",
+        "Athens",
+        "Rome"
+      ],
+      "correct": 0
     }
-  }
+  ]
 }
-
-/* ---------- Normalization ---------- */
-function normalize(result) {
-  // Put correct answer at index 0 (no shuffle here).
-  const options = [result.correct_answer, ...result.incorrect_answers];
-  return {
-    text: result.question,
-    options,
-    correct: 0
-  };
-}
-
-/* ---------- Main ---------- */
-(async () => {
-  const day = yyyymmdd(); // ET
-  const outPath = path.resolve('daily.json');
-
-  // Compute global dayIndex (1-based)
-  const diffDays = Math.max(0, Math.round(
-    (toUTCDate(day) - toUTCDate(START_DAY)) / 86400000
-  ));
-  const dayIndex = 1 + diffDays;
-
-  try {
-    // Fetch in buckets
-    const [easyRaw, medRaw, hardRaw] = await Promise.all([
-      fetchOTDB('easy', 2),
-      fetchOTDB('medium', 2),
-      fetchOTDB('hard', 1),
-    ]);
-
-    const easy = easyRaw.map(normalize);
-    const medium = medRaw.map(normalize);
-    const hard = hardRaw.map(normalize);
-
-    // Assemble in required order; if any bucket is short, we’ll top up below.
-    let ordered = [
-      easy[0], easy[1],
-      medium[0], medium[1],
-      hard[0]
-    ].filter(Boolean);
-
-    // Top-up logic if API returned fewer than needed
-    if (ordered.length < 5) {
-      const pool = [...easy.slice(2), ...medium.slice(2), ...hard.slice(1)];
-      while (ordered.length < 5 && pool.length) ordered.push(pool.shift());
-    }
-
-    // Final fallback if still short (very rare)
-    if (ordered.length < 5) {
-      const fallback = [
-        { text:"What is the capital of France?", options:["Paris","Rome","Madrid","Berlin"], correct:0 },
-        { text:"What is 9 × 9?", options:["81","72","99","64"], correct:0 },
-        { text:"Who painted the Mona Lisa?", options:["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], correct:0 },
-        { text:"Which planet is known as the Red Planet?", options:["Mars","Jupiter","Venus","Saturn"], correct:0 },
-        { text:"What is H2O commonly known as?", options:["Water","Hydrogen","Oxygen","Salt"], correct:0 }
-      ];
-      for (const q of fallback) {
-        if (ordered.length >= 5) break;
-        ordered.push(q);
-      }
-    }
-
-    const payload = { day, dayIndex, questions: ordered.slice(0, 5) };
-    fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-    console.log(`Wrote daily.json for ${day} (dayIndex ${dayIndex}) with ordered difficulty: E,E,M,M,H`);
-
-  } catch (err) {
-    console.warn('Generate failed:', err.message);
-
-    // If generation failed but an existing daily.json is present, preserve it.
-    if (!fs.existsSync(outPath)) {
-      const fallback = {
-        day, dayIndex,
-        questions: [
-          { text:"What is the capital of France?", options:["Paris","Rome","Madrid","Berlin"], correct:0 },
-          { text:"What is 9 × 9?", options:["81","72","99","64"], correct:0 },
-          { text:"Who painted the Mona Lisa?", options:["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], correct:0 },
-          { text:"Which planet is known as the Red Planet?", options:["Mars","Jupiter","Venus","Saturn"], correct:0 },
-          { text:"What is H2O commonly known as?", options:["Water","Hydrogen","Oxygen","Salt"], correct:0 }
-        ]
-      };
-      fs.writeFileSync(outPath, JSON.stringify(fallback, null, 2));
-      console.log('Wrote fallback daily.json (first-run safety).');
-    } else {
-      console.log('Preserved existing daily.json.');
-    }
-  }
-})();
