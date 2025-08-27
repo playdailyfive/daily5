@@ -1,56 +1,56 @@
 {
-  "day": "20250826",
-  "dayIndex": 3,
+  "day": "20250827",
+  "dayIndex": 4,
   "questions": [
     {
-      "text": "What was the first Android version specifically optimized for tablets?",
+      "text": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
       "options": [
-        "Eclair",
-        "Honeycomb",
-        "Marshmellow",
-        "Froyo"
+        "Great Barrier Reef",
+        "Hudson Bay",
+        "Grand Banks",
+        "Mariana Trench"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
-      "text": "Which coding language was the #1 programming language in terms of usage on GitHub in 2015?",
+      "text": "Which punk rock band released hit songs such as &quot;Californication&quot;, &quot;Can&#039;t Stop&quot; and &quot;Under the Bridge&quot;?",
       "options": [
-        "PHP",
-        "JavaScript",
-        "C#",
-        "Python"
+        "Green Day",
+        "Foo Fighters",
+        "Linkin Park",
+        "Red Hot Chilli Peppers"
       ],
-      "correct": 1
+      "correct": 3
     },
     {
-      "text": "What part of an automobile engine uses lobes to open and close intake and exhaust valves, and allows an air/fuel mixture into the engine?",
+      "text": "In the 2012 animated film &quot;Wolf Children&quot;, what are the names of the wolf children?",
       "options": [
-        "Crankshaft",
-        "Camshaft",
-        "Drive shaft",
-        "Piston"
+        "Ame &amp; Hana",
+        "Hana &amp; Yuki",
+        "Chuck &amp; Anna",
+        "Ame &amp; Yuki"
       ],
-      "correct": 1
+      "correct": 3
     },
     {
-      "text": "Which company developed the free battle royale game Fortnite?",
+      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
       "options": [
-        "Epic Games",
-        "Square Enix",
-        "Ubisoft",
-        "Valve"
+        "John McVie",
+        "Mac McAnally",
+        "David Tennant",
+        "Christine McVie"
       ],
       "correct": 0
     },
     {
-      "text": "How many seasons did &quot;Stargate SG-1&quot; have?",
+      "text": "Which of these is NOT a team available in the game Pok&eacute;mon Go?",
       "options": [
-        "10",
-        "7",
-        "12",
-        "3"
+        "Team Valor",
+        "Team Rocket",
+        "Team Instinct",
+        "Team Mystic"
       ],
-      "correct": 0
+      "correct": 1
     }
   ]
 }
