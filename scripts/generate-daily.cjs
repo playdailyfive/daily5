@@ -1,38 +1,16 @@
 /**
- * Daily Five question generator (easier + diverse)
- * - Fetches EASY questions from multiple OpenTDB categories
- * - Scores questions by "simplicity" and prefers easier ones
- * - Ensures diversity across categories (aims 1 per category)
- * - Dedupes against used.json (no repeats)
- * - Deterministically shuffles options per-day (stable for all users)
- * - Writes daily.json with {day, dayIndex, questions}
- *
- * Run locally:  node scripts/generate-daily.cjs
- * GitHub Action: daily-questions.yml already runs this daily on ET midnight
+ * Daily Five generator — resilient & easy-mode
+ * - Tries OpenTDB (easy) first; filters out repeats using used.json.
+ * - Tops up from local easy bank if API returns too few fresh ones.
+ * - Deterministically shuffles options per day for stability.
  */
+
 const fs = require('fs');
 const path = require('path');
 
-// ---- Configure once ----
-const START_DAY = "20250824"; // Day 1 baseline (ET start date)
+const START_DAY = "20250824"; // Day 1 baseline (ET)
 
-// Categories to mix in (OpenTDB IDs)
-const CATS = [
-  9,   // General Knowledge
-  22,  // Geography
-  21,  // Sports
-  17,  // Science & Nature
-  18,  // Science: Computers
-  11,  // Entertainment: Film
-  12,  // Entertainment: Music
-  23,  // History
-  27   // Animals
-];
-
-// How many to pool per category (we’ll fetch more than needed and then pick 5)
-const PULL_PER_CAT = 6; // small and quick, total ~54 questions
-
-// ---------------- Utility ----------------
+// ---------- Time helpers (ET-local day) ----------
 function yyyymmdd(d = new Date(), tz = 'America/New_York') {
   const parts = new Intl.DateTimeFormat('en-CA', {
     timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'
@@ -45,16 +23,24 @@ function toUTCDate(yyyyMMdd) {
   const d = Number(yyyyMMdd.slice(6,8));
   return new Date(Date.UTC(y, m - 1, d));
 }
+function dayIndexFrom(startYmd, todayYmd) {
+  const diffDays = Math.max(0, Math.round(
+    (toUTCDate(todayYmd) - toUTCDate(startYmd)) / 86400000
+  ));
+  return 1 + diffDays;
+}
+
+// ---------- Deterministic shuffle ----------
 function mulberry32(seed) {
   return function() {
-    let t = seed += 0x6D2B79F5;
+    let t = (seed += 0x6D2B79F5) >>> 0;
     t = Math.imul(t ^ (t >>> 15), t | 1);
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
 }
 function seededShuffle(arr, seedNum) {
-  const rand = mulberry32(seedNum);
+  const rand = mulberry32(seedNum >>> 0);
   const out = [...arr];
   for (let i = out.length - 1; i > 0; i--) {
     const j = Math.floor(rand() * (i + 1));
@@ -63,186 +49,132 @@ function seededShuffle(arr, seedNum) {
   return out;
 }
 
-// Minimal HTML entities decode (OpenTDB encodes some)
-function decodeHTMLEntities(str='') {
-  const map = {
-    '&quot;':'"', '&#039;':"'", '&amp;':'&', '&eacute;':'é',
-    '&rsquo;':"’", '&lsquo;':"‘", '&ldquo;':'“', '&rdquo;':'”',
-    '&hellip;':'…', '&lt;':'<', '&gt;':'>', '&uuml;':'ü', '&ouml;':'ö',
-    '&auml;':'ä', '&ntilde;':'ñ', '&deg;':'°'
-  };
-  return str.replace(/&[a-zA-Z#0-9]+;/g, m => map[m] || m);
-}
-
-async function fetchWithTimeout(url, { timeoutMs = 9000 } = {}) {
-  const ac = new AbortController();
-  const id = setTimeout(() => ac.abort(), timeoutMs);
+// ---------- IO helpers ----------
+function readJSON(file, fallback) {
   try {
-    return await fetch(url, { signal: ac.signal });
-  } finally {
-    clearTimeout(id);
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch {
+    return fallback;
   }
 }
+function writeJSON(file, data) {
+  fs.writeFileSync(file, JSON.stringify(data, null, 2));
+}
 
-async function fetchCategory(catId, amount = 10, difficulty = 'easy', retries = 2) {
-  const url = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}&category=${catId}`;
-  for (let a=0; a<=retries; a++) {
+// ---------- Local EASY fallback bank ----------
+const LOCAL_BANK = [
+  { text: "What color is the sky on a clear day?", options: ["Blue","Green","Red","Purple"], correctAnswer: "Blue" },
+  { text: "How many days are in a week?", options: ["7","5","10","6"], correctAnswer: "7" },
+  { text: "Which animal says 'meow'?", options: ["Cat","Dog","Cow","Sheep"], correctAnswer: "Cat" },
+  { text: "What is 2 + 2?", options: ["4","3","5","6"], correctAnswer: "4" },
+  { text: "Which season is the coldest?", options: ["Winter","Summer","Spring","Autumn"], correctAnswer: "Winter" },
+  { text: "What is the first month of the year?", options: ["January","December","March","June"], correctAnswer: "January" },
+  { text: "What do bees make?", options: ["Honey","Milk","Wool","Silk"], correctAnswer: "Honey" },
+  { text: "Which shape has 3 sides?", options: ["Triangle","Square","Circle","Rectangle"], correctAnswer: "Triangle" },
+  { text: "Which planet do we live on?", options: ["Earth","Mars","Jupiter","Venus"], correctAnswer: "Earth" },
+  { text: "What is H2O commonly called?", options: ["Water","Oxygen","Hydrogen","Salt"], correctAnswer: "Water" },
+  { text: "How many letters are in the English alphabet?", options: ["26","24","30","20"], correctAnswer: "26" },
+  { text: "What color are bananas when ripe?", options: ["Yellow","Blue","Red","Purple"], correctAnswer: "Yellow" },
+  { text: "Which animal is known as man’s best friend?", options: ["Dog","Cat","Horse","Rabbit"], correctAnswer: "Dog" },
+  { text: "What do you call baby cats?", options: ["Kittens","Puppies","Cubs","Calves"], correctAnswer: "Kittens" },
+  { text: "How many wheels does a tricycle have?", options: ["3","2","4","1"], correctAnswer: "3" },
+  { text: "Which sport uses a bat and a ball?", options: ["Baseball","Soccer","Tennis","Hockey"], correctAnswer: "Baseball" },
+  { text: "Which ocean is on the U.S. West Coast?", options: ["Pacific","Atlantic","Indian","Arctic"], correctAnswer: "Pacific" },
+  { text: "Which fruit keeps the doctor away?", options: ["Apple","Banana","Orange","Grapes"], correctAnswer: "Apple" },
+  { text: "What is the capital of France?", options: ["Paris","Rome","Berlin","Madrid"], correctAnswer: "Paris" },
+  { text: "What do cows drink?", options: ["Water","Milk","Juice","Soda"], correctAnswer: "Water" },
+  { text: "How many minutes are in an hour?", options: ["60","30","90","45"], correctAnswer: "60" },
+  { text: "Which animal is the largest land animal?", options: ["Elephant","Rhino","Hippo","Giraffe"], correctAnswer: "Elephant" },
+  { text: "What gas do we breathe to live?", options: ["Oxygen","Carbon dioxide","Nitrogen","Helium"], correctAnswer: "Oxygen" },
+  { text: "Which direction does the sun rise?", options: ["East","West","North","South"], correctAnswer: "East" },
+  { text: "Which holiday has a tree and gifts?", options: ["Christmas","Easter","Halloween","Thanksgiving"], correctAnswer: "Christmas" },
+  { text: "What is the opposite of hot?", options: ["Cold","Warm","Boiling","Spicy"], correctAnswer: "Cold" },
+  { text: "Which animal has a long neck?", options: ["Giraffe","Lion","Zebra","Bear"], correctAnswer: "Giraffe" },
+  { text: "What color are strawberries?", options: ["Red","Blue","Green","Black"], correctAnswer: "Red" },
+  { text: "Which device do you use to make a phone call?", options: ["Phone","Camera","Microwave","Keyboard"], correctAnswer: "Phone" },
+  { text: "What currency is used in the USA?", options: ["Dollar","Euro","Pound","Yen"], correctAnswer: "Dollar" }
+];
+
+// ---------- OpenTDB fetch with retry ----------
+async function fetchOpenTDBEasy(count = 5, retries = 3) {
+  const url = `https://opentdb.com/api.php?amount=${count}&type=multiple&difficulty=easy`;
+  let lastErr;
+  for (let a = 1; a <= retries; a++) {
     try {
-      const res = await fetchWithTimeout(url, { timeoutMs: 9000 });
-      if (!res.ok) throw new Error('HTTP '+res.status);
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
-      return data?.results || [];
+      if (!data?.results?.length) throw new Error('Bad payload');
+      return data.results.map(q => ({
+        text: q.question,
+        options: [q.correct_answer, ...q.incorrect_answers],
+        correctAnswer: q.correct_answer
+      }));
     } catch (e) {
-      if (a === retries) throw e;
-      await new Promise(r => setTimeout(r, 700*(a+1)));
+      lastErr = e;
+      await new Promise(r => setTimeout(r, 800 * a));
     }
   }
+  throw lastErr;
 }
 
-// ---------- Simplicity scoring (lower = easier) ----------
-function simplicityScore(qText, options) {
-  const text = qText;
-  const len = text.length;
-
-  // Penalize year-like numbers (often trivia that’s harder)
-  const hasYear = /\b(18|19|20)\d{2}\b/.test(text);
-
-  // Proper-noun weight: count capitalized words of length >= 3 (rough heuristic)
-  const properCount = (text.match(/\b[A-Z][a-z]{2,}\b/g) || []).length;
-
-  // Options average length
-  const avgOptLen = options.reduce((a,b)=>a+b.length,0) / Math.max(1,options.length);
-
-  // Punctuation complexity (quotes/colon/parentheses)
-  const punct = (text.match(/["“”'’:():-]/g) || []).length;
-
-  // Base = length + options length
-  let score = 0.015*len + 0.02*avgOptLen + 0.8*punct + 0.9*properCount;
-  if (hasYear) score += 6;               // push down questions with years
-  if (len > 120) score += 4;             // long questions feel harder
-  if (avgOptLen > 22) score += 2;        // long options can feel harder
-  return score;
+// ---------- Select 5 (preferring fresh), top-up if needed ----------
+function pickFiveFresh(preferredPool, usedSet, fallbackPool) {
+  const fresh = preferredPool.filter(q => !usedSet.has(q.text));
+  const picked = [...fresh];
+  if (picked.length < 5) {
+    const fallbackFresh = fallbackPool.filter(q => !usedSet.has(q.text));
+    // Fill from fallback
+    while (picked.length < 5 && fallbackFresh.length) {
+      picked.push(fallbackFresh.shift());
+    }
+  }
+  // If STILL short (very unlikely), fill from anything left to reach 5
+  const all = [...preferredPool, ...fallbackPool];
+  let idx = 0;
+  while (picked.length < 5 && idx < all.length) {
+    const candidate = all[idx++];
+    if (!picked.some(p => p.text === candidate.text)) picked.push(candidate);
+  }
+  return picked.slice(0,5);
 }
 
 // ---------- Main ----------
 (async () => {
-  const day = yyyymmdd(); // ET
-  const seed = Number(day);
-  const outPath = path.resolve('daily.json');
-
-  // GLOBAL day index (1-based) from START_DAY → today
-  const diffDays = Math.max(0, Math.round((toUTCDate(day) - toUTCDate(START_DAY)) / 86400000));
-  const dayIndex = 1 + diffDays;
-
-  // used.json ledger
+  const day = yyyymmdd();           // ET day
+  const seed = Number(day);         // per-day seed for option shuffle
+  const dayIndex = dayIndexFrom(START_DAY, day);
+  const outDaily = path.resolve('daily.json');
   const usedPath = path.resolve('used.json');
-  let used = [];
-  if (fs.existsSync(usedPath)) {
-    try { used = JSON.parse(fs.readFileSync(usedPath, 'utf-8')) || []; }
-    catch { used = []; }
-  }
+
+  const usedLedger = readJSON(usedPath, {});
+  usedLedger.used = Array.isArray(usedLedger.used) ? usedLedger.used : [];
+  const usedSet = new Set(usedLedger.used);
+
+  let pickedRaw;
 
   try {
-    // 1) Fetch pools from multiple categories (easy only)
-    const pools = await Promise.all(CATS.map(id => fetchCategory(id, PULL_PER_CAT, 'easy')));
-    // Flatten & normalize
-    let all = [];
-    pools.forEach((arr, idxCat) => {
-      const catId = CATS[idxCat];
-      for (const q of arr) {
-        const text = decodeHTMLEntities(q.question);
-        const optsRaw = [q.correct_answer, ...q.incorrect_answers].map(decodeHTMLEntities);
-        all.push({
-          catId,
-          category: q.category,
-          qText: text,
-          correctAnswer: decodeHTMLEntities(q.correct_answer),
-          optionsRaw: optsRaw
-        });
-      }
-    });
-
-    // 2) Filter out repeats and obvious bad payloads
-    all = all.filter(x => x.qText && Array.isArray(x.optionsRaw) && x.optionsRaw.length === 4);
-    all = all.filter(x => !used.includes(x.qText));
-
-    if (all.length < 5) {
-      // As a safety, if too few remain, refetch a bigger general pool (easy)
-      const fallback = await fetchCategory(9, 15, 'easy'); // GK
-      const more = fallback.map(q => ({
-        catId: 9,
-        category: q.category,
-        qText: decodeHTMLEntities(q.question),
-        correctAnswer: decodeHTMLEntities(q.correct_answer),
-        optionsRaw: [q.correct_answer, ...q.incorrect_answers].map(decodeHTMLEntities)
-      }));
-      all = [...all, ...more].filter(x => !used.includes(x.qText));
-    }
-
-    if (all.length === 0) throw new Error("No fresh questions available.");
-
-    // 3) Score by "simplicity"
-    for (const q of all) {
-      q.score = simplicityScore(q.qText, q.optionsRaw);
-    }
-
-    // 4) Prefer lower scores (easier), but keep category diversity
-    all.sort((a,b)=> a.score - b.score);
-
-    const chosen = [];
-    const seenCats = new Set();
-
-    // First pass: pick easiest unique categories
-    for (const q of all) {
-      if (chosen.length >= 5) break;
-      if (!seenCats.has(q.catId)) {
-        chosen.push(q);
-        seenCats.add(q.catId);
-      }
-    }
-    // If still < 5, relax category constraint (still easiest-first)
-    if (chosen.length < 5) {
-      for (const q of all) {
-        if (chosen.length >= 5) break;
-        if (!chosen.find(x => x.qText === q.qText)) {
-          chosen.push(q);
-        }
-      }
-    }
-
-    // 5) Deterministic option shuffle per-day, and build final shape
-    const finalQuestions = chosen.slice(0,5).map((q, idx) => {
-      const opts = seededShuffle(q.optionsRaw, seed + idx * 7);
-      const correctIdx = opts.indexOf(q.correctAnswer);
-      return { text: q.qText, options: opts, correct: correctIdx };
-    });
-
-    // 6) Write daily.json
-    const payload = { day, dayIndex, questions: finalQuestions };
-    fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-
-    // 7) Update used.json ledger
-    used.push(...finalQuestions.map(q => q.text));
-    fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
-
-    console.log(`Wrote daily.json for ${day} (dayIndex ${dayIndex}). Picked ${finalQuestions.length} easy & diverse questions.`);
-  } catch (err) {
-    console.warn('Fetch/Build failed:', err.message, '— preserving previous daily.json if present.');
-    if (!fs.existsSync(outPath)) {
-      const fallback = {
-        day, dayIndex,
-        questions: [
-          { text: "What is the capital of France?", options: ["Paris","Rome","Madrid","Berlin"], correct: 0 },
-          { text: "Which planet is known as the Red Planet?", options: ["Mars","Jupiter","Venus","Saturn"], correct: 0 },
-          { text: "What is H2O commonly known as?", options: ["Water","Hydrogen","Oxygen","Salt"], correct: 0 },
-          { text: "Which animal barks?", options: ["Dog","Cat","Cow","Duck"], correct: 0 },
-          { text: "How many days are in a week?", options: ["7","5","6","8"], correct: 0 }
-        ]
-      };
-      fs.writeFileSync(outPath, JSON.stringify(fallback, null, 2));
-      console.log('Wrote fallback daily.json for', day, 'with dayIndex', dayIndex);
-    }
+    const fromApi = await fetchOpenTDBEasy(10, 3); // ask for more to improve freshness
+    pickedRaw = pickFiveFresh(fromApi, usedSet, LOCAL_BANK);
+  } catch (e) {
+    // API failed → all from local bank (fresh-first)
+    pickedRaw = pickFiveFresh([], usedSet, LOCAL_BANK);
   }
-})();
 
-// touch: force commit
+  // Normalize + deterministic option order
+  const picked = pickedRaw.map(q => {
+    const options = seededShuffle(q.options, seed + q.text.length);
+    const correctIdx = options.indexOf(q.correctAnswer);
+    return { text: q.text, options, correct: correctIdx, difficulty: "easy" };
+  });
+
+  // Update used ledger
+  const todays = picked.map(q => q.text);
+  usedLedger.used = Array.from(new Set([...usedLedger.used, ...todays]));
+
+  // Write outputs
+  writeJSON(outDaily, { day, dayIndex, questions: picked });
+  writeJSON(usedPath, usedLedger);
+
+  console.log('Wrote daily.json for', day, 'dayIndex', dayIndex, '— questions:', picked.length);
+})();
