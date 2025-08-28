@@ -1,37 +1,65 @@
-/* scripts/generate-daily.cjs
- * Daily Five generator: relatable + easier mix, no repeats, ET-based, deterministic option shuffle
+/**
+ * Generate Daily Five:
+ * - Fetch a pool from OpenTDB (by difficulty)
+ * - Filter for readability/ease (length, banned phrases)
+ * - Avoid repeats using used.json (hash ledger)
+ * - Pick 2 easy, 2 medium, 1 hard
+ * - Deterministically shuffle options per day
+ * - Write daily.json (with day/dayIndex/difficulty tags)
+ * - Update used.json ledger
+ *
+ * Node 20+ / CommonJS
  */
+
 const fs = require('fs');
 const path = require('path');
-const fetch = global.fetch || require('node-fetch');
 
-// ----- CONFIG -----
-const START_DAY = "20250824"; // Day 1 (ET). Keep this fixed once launched.
-const LEDGER_MAX = 365 * 2;   // keep ~2 years of hashes
+// ====== TUNABLES ======
+const START_DAY = '20250824';                 // Day 1 (YYYYMMDD, ET baseline)
+const ET_TZ = 'America/New_York';
 
-// OpenTDB categories we’ll use (relatable first)
-const CATS = {
-  GK: 9,   // General Knowledge
-  FILM: 11,
-  MUSIC: 12,
-  TV: 14,
-  COMP: 18,
-  SPORTS: 21,
-  GEO: 22,
-  HIST: 23,
+const EASY_FILTER = {
+  MAX_QUESTION_LEN: 110,
+  MAX_OPTION_LEN: 36,
+  BAN_PATTERNS: [
+    /\b(in|which|what)\s+year\b/i,
+    /\bwhich of (the|these)\b/i,
+    /\bfollowing\b/i,
+    /\bNOT\b/, /\bEXCEPT\b/,
+    /\broman\s+numeral\b/i,
+    /\bchemical\b/i,
+    /\bformula\b/i,
+    /\bequation\b/i,
+    /\bprime\s+number\b/i,
+    /\b(nth|[0-9]{1,4}(st|nd|rd|th))\b.*\bcentury\b/i
+  ],
+  // Nicer/more relatable categories; OpenTDB names
+  ALLOW_CATEGORIES: new Set([
+    'General Knowledge',
+    'Entertainment: Film',
+    'Entertainment: Music',
+    'Entertainment: Television',
+    'Entertainment: Books',
+    'Entertainment: Video Games',
+    'Science & Nature',
+    'Geography',
+    'Sports',
+    'Celebrities'
+  ])
 };
 
-// The exact daily lineup (easier skew)
-const LINEUP = [
-  { difficulty: 'easy',   pools: [CATS.GK, CATS.FILM, CATS.TV, CATS.MUSIC] },           // Q1: gimme/pop
-  { difficulty: 'easy',   pools: [CATS.SPORTS, CATS.GK, CATS.MUSIC, CATS.TV] },         // Q2: easy sports/brand-ish
-  { difficulty: 'medium', pools: [CATS.GEO, CATS.HIST, CATS.GK] },                      // Q3: medium geo/history
-  { difficulty: 'medium', pools: [CATS.FILM, CATS.TV, CATS.MUSIC, CATS.COMP, CATS.GK] },// Q4: medium pop/culture
-  { difficulty: 'hard',   pools: [CATS.GK, CATS.GEO, CATS.HIST, CATS.SPORTS] },         // Q5: “hard” but still relatable
-];
+// How many to fetch per difficulty before filtering
+const FETCH_SIZES = { easy: 25, medium: 22, hard: 18 };
 
-// ----- ET day helpers -----
-function yyyymmdd(d = new Date(), tz = 'America/New_York') {
+// Used ledger: keep everything (tiny file). If you want to trim, set MAX_LEDGER.
+const MAX_LEDGER = null; // or a number, e.g., 2000
+
+// Retry/backoff
+const RETRIES = 3;
+const BASE_TIMEOUT_MS = 9000;
+
+// ====== UTIL ======
+function yyyymmdd(d = new Date(), tz = ET_TZ) {
   const parts = new Intl.DateTimeFormat('en-CA', {
     timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'
   }).formatToParts(d).reduce((a, p) => (a[p.type] = p.value, a), {});
@@ -43,8 +71,48 @@ function toUTCDate(yyyyMMdd) {
   const d = Number(yyyyMMdd.slice(6,8));
   return new Date(Date.UTC(y, m - 1, d));
 }
+function dayIndexFrom(startYmd, todayYmd) {
+  const diffDays = Math.max(0, Math.round(
+    (toUTCDate(todayYmd) - toUTCDate(startYmd)) / 86400000
+  ));
+  return 1 + diffDays;
+}
 
-// ----- small utilities -----
+// Simple FNV-1a 32-bit hash for dedupe/ledger
+function fnv1a(str) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
+  }
+  return ('0000000' + h.toString(16)).slice(-8);
+}
+function normalizeText(s='') {
+  return String(s).replace(/\s+/g,' ').trim().toLowerCase();
+}
+function qKey(q) { // stable key from text + correct answer
+  return fnv1a(normalizeText(q.question || q.text) + '|' + normalizeText(q.correct_answer || ''));
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+async function fetchJson(url, { timeoutMs = BASE_TIMEOUT_MS, retries = RETRIES } = {}) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const ac = new AbortController();
+    const id = setTimeout(() => ac.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, { signal: ac.signal });
+      clearTimeout(id);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return await res.json();
+    } catch (e) {
+      clearTimeout(id);
+      if (attempt === retries) throw e;
+      await sleep(1000 * attempt);
+    }
+  }
+}
+
+// Deterministic per-day option shuffle
 function mulberry32(seed) {
   return function() {
     let t = seed += 0x6D2B79F5;
@@ -62,149 +130,178 @@ function seededShuffle(arr, seedNum) {
   }
   return out;
 }
-// tiny entity decode (enough for OpenTDB payload)
-function decodeEntities(s='') {
-  return s
-    .replace(/&quot;/g,'"')
-    .replace(/&#039;/g,"'")
-    .replace(/&amp;/g,'&')
-    .replace(/&lt;/g,'<')
-    .replace(/&gt;/g,'>')
-    .replace(/&eacute;/g,'é')
-    .replace(/&ldquo;/g,'“')
-    .replace(/&rdquo;/g,'”')
-    .replace(/&lsquo;/g,'‘')
-    .replace(/&rsquo;/g,'’');
+
+// ====== FILTERS ======
+function isRelatableCategory(cat) {
+  if (!cat) return true; // when missing, don’t exclude
+  return EASY_FILTER.ALLOW_CATEGORIES.has(cat);
 }
-// quick stable-ish hash of the question text
-function hashText(s) {
-  let h = 2166136261 >>> 0; // FNV-1a base
-  for (let i = 0; i < s.length; i++) {
-    h ^= s.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return (h >>> 0).toString(16).padStart(8, '0');
+function hasBannedPhrase(text) {
+  return EASY_FILTER.BAN_PATTERNS.some(rx => rx.test(text));
+}
+function withinLength(q) {
+  const qlen = (q.question || q.text || '').trim().length;
+  if (qlen > EASY_FILTER.MAX_QUESTION_LEN) return false;
+  const all = [q.correct_answer, ...(q.incorrect_answers || [])].filter(Boolean);
+  return all.every(opt => String(opt).trim().length <= EASY_FILTER.MAX_OPTION_LEN);
+}
+function basicClean(q) {
+  // decode common HTML entities from OpenTDB
+  const decode = (s='') => s
+    .replace(/&quot;/g, '"').replace(/&#039;/g,"'")
+    .replace(/&amp;/g,'&').replace(/&rsquo;/g,"'")
+    .replace(/&ldquo;/g,'"').replace(/&rdquo;/g,'"')
+    .replace(/&eacute;/g,'é').replace(/&hellip;/g,'…')
+    .replace(/&mdash;/g,'—').replace(/&ndash;/g,'–')
+    .replace(/&nbsp;/g,' ');
+  return {
+    ...q,
+    category: q.category,
+    question: decode(q.question || q.text || ''),
+    correct_answer: decode(q.correct_answer || ''),
+    incorrect_answers: (q.incorrect_answers || []).map(decode)
+  };
+}
+function passEasyFilter(q) {
+  const qt = q.question || '';
+  if (!withinLength(q)) return false;
+  if (hasBannedPhrase(qt)) return false;
+  if (!isRelatableCategory(q.category)) return false;
+  // avoid “trick” capitalization like ALL CAPS
+  if ((qt.match(/[A-Z]/g) || []).length > (qt.match(/[a-z]/g) || []).length * 2) return false;
+  return true;
 }
 
-// ----- I/O helpers -----
-const ROOT = process.cwd();
-const DAILY_PATH = path.resolve(ROOT, 'daily.json');
-const USED_PATH  = path.resolve(ROOT, 'used.json');
-
-function readJSON(p, fallback) {
-  try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return fallback; }
-}
-function writeJSON(p, data) {
-  fs.writeFileSync(p, JSON.stringify(data, null, 2));
+// ====== FETCH POOLS ======
+async function fetchPool(difficulty, amount) {
+  // Pull a broad pool to allow filtering
+  const url = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}`;
+  const data = await fetchJson(url);
+  const list = Array.isArray(data?.results) ? data.results : [];
+  return list.map(basicClean);
 }
 
-// ----- OpenTDB fetch with retries/429 handling -----
-async function fetchWithTimeout(url, { timeoutMs = 8000 } = {}) {
-  const ac = new AbortController();
-  const id = setTimeout(() => ac.abort(), timeoutMs);
-  try { return await fetch(url, { signal: ac.signal }); }
-  finally { clearTimeout(id); }
-}
-async function getFromOTDB({ amount = 10, category, difficulty }, retries = 3) {
-  const url = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}&category=${category}`;
-  for (let a = 1; a <= retries; a++) {
-    try {
-      const res = await fetchWithTimeout(url, { timeoutMs: 9000 });
-      if (res.status === 429) throw new Error('429');
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const data = await res.json();
-      if (!data?.results) throw new Error('bad payload');
-      return data.results.map(r => ({
-        text: decodeEntities(r.question),
-        correct_answer: decodeEntities(r.correct_answer),
-        incorrect_answers: r.incorrect_answers.map(decodeEntities),
-        category,
-        difficulty
-      }));
-    } catch (e) {
-      if (a === retries) throw e;
-      await new Promise(r => setTimeout(r, 1200 * a)); // backoff
-    }
-  }
-}
-
-// Try to pick one question for a slot, avoiding repeats
-async function pickForSlot(slot, usedSet) {
-  // shuffle category pool to spread variety day-to-day
-  const cats = seededShuffle(slot.pools, Number(yyyymmdd()));
-  for (const cat of cats) {
-    // fetch a small batch from this category/difficulty
-    const batch = await getFromOTDB({ amount: 10, category: cat, difficulty: slot.difficulty });
-    // filter out used, prefer broad/short questions
-    const fresh = batch.filter(q => !usedSet.has(hashText(q.text)));
-    // soft sort: shorter, simpler first
-    fresh.sort((a,b) => a.text.length - b.text.length);
-    if (fresh.length) {
-      const q = fresh[0];
-      const options = seededShuffle([q.correct_answer, ...q.incorrect_answers], Number(yyyymmdd()) + cat);
-      return {
-        text: q.text,
-        options,
-        correct: options.indexOf(q.correct_answer),
-        difficulty: slot.difficulty
-      };
-    }
-    // else try next category
-  }
-  return null;
-}
-
+// ====== MAIN ======
 (async () => {
-  const day = yyyymmdd(); // ET today
-  const seed = Number(day);
-  const diffDays = Math.max(0, Math.round((toUTCDate(day) - toUTCDate(START_DAY)) / 86400000));
-  const dayIndex = 1 + diffDays;
+  const today = yyyymmdd(new Date(), ET_TZ);
+  const dayIndex = dayIndexFrom(START_DAY, today);
+  const outPath = path.resolve('daily.json');
+  const usedPath = path.resolve('used.json');
 
-  // read used ledger (array of {h, t, d?})
-  const used = readJSON(USED_PATH, []);
-  const usedSet = new Set(used.map(x => x.h));
+  // Load used ledger
+  let used = {};
+  try {
+    if (fs.existsSync(usedPath)) {
+      used = JSON.parse(fs.readFileSync(usedPath, 'utf8') || '{}');
+    }
+  } catch (_) { used = {}; }
+  used.seen = used.seen || []; // array of hashes
 
   try {
-    const chosen = [];
-    for (let s = 0; s < LINEUP.length; s++) {
-      const slot = LINEUP[s];
-      const pick = await pickForSlot(slot, usedSet);
-      if (!pick) throw new Error(`no fresh question for slot ${s+1}`);
-      chosen.push(pick);
-      // reserve its hash immediately to avoid duplicates inside the same day
-      const h = hashText(pick.text);
-      usedSet.add(h);
-      used.push({ h, t: pick.text, d: day });
+    // 1) Fetch pools
+    const [easyPool, medPool, hardPool] = await Promise.all([
+      fetchPool('easy', FETCH_SIZES.easy),
+      fetchPool('medium', FETCH_SIZES.medium),
+      fetchPool('hard', FETCH_SIZES.hard)
+    ]);
+
+    // 2) Filter & de-duplicate
+    const seen = new Set(used.seen || []);
+    const dedupe = (arr) => {
+      const out = [];
+      const localSeen = new Set();
+      for (const q of arr) {
+        const key = qKey(q);
+        if (seen.has(key) || localSeen.has(key)) continue;
+        localSeen.add(key);
+        out.push(q);
+      }
+      return out;
+    };
+
+    const ef = easyPool.filter(passEasyFilter);
+    const mf = medPool.filter(passEasyFilter);
+    const hf = hardPool.filter(passEasyFilter);
+
+    const easy = dedupe(ef);
+    const medium = dedupe(mf);
+    const hard = dedupe(hf);
+
+    // 3) Pick 2 easy, 2 medium, 1 hard (fallbacks if scarce)
+    const pick = (arr, n) => arr.slice(0, Math.max(0, Math.min(n, arr.length)));
+    let chosen = [
+      ...pick(easy, 2),
+      ...pick(medium, 2),
+      ...pick(hard, 1)
+    ];
+
+    // If we still have <5, top up from remaining filtered pools (easy→medium→hard)
+    if (chosen.length < 5) {
+      const already = new Set(chosen.map(q => qKey(q)));
+      const rest = [...easy, ...medium, ...hard].filter(q => !already.has(qKey(q)));
+      chosen = [...chosen, ...pick(rest, 5 - chosen.length)];
     }
 
-    // cap ledger size
-    if (used.length > LEDGER_MAX) {
-      used.splice(0, used.length - LEDGER_MAX);
+    // Still short? As a last resort, backfill from original raw pools (relaxed)
+    if (chosen.length < 5) {
+      const rawRest = [...easyPool, ...medPool, ...hardPool];
+      const already = new Set(chosen.map(q => qKey(q)));
+      for (const q of rawRest) {
+        const key = qKey(q);
+        if (!already.has(key) && !seen.has(key)) {
+          chosen.push(q);
+          if (chosen.length >= 5) break;
+        }
+      }
     }
 
-    // write outputs
-    writeJSON(DAILY_PATH, { day, dayIndex, questions: chosen });
-    writeJSON(USED_PATH, used);
+    if (chosen.length < 5) throw new Error('Not enough questions after filtering');
 
-    console.log(`Wrote daily.json for ${day} (Day #${dayIndex}) with ${chosen.length} questions.`);
+    // 4) Build output: deterministic shuffle of options per day
+    const seed = Number(today);
+    const final = chosen.slice(0, 5).map((q, idx) => {
+      const rawOpts = [q.correct_answer, ...q.incorrect_answers];
+      const opts = seededShuffle(rawOpts, seed + idx * 7);
+      const correctIdx = opts.indexOf(q.correct_answer);
+      return {
+        text: q.question,
+        options: opts,
+        correct: correctIdx,
+        difficulty: (q.difficulty || '').toLowerCase() || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard')
+      };
+    });
+
+    // 5) Write daily.json
+    const payload = { day: today, dayIndex, questions: final };
+    fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
+    console.log('Wrote daily.json for', today, 'with dayIndex', dayIndex);
+
+    // 6) Update used.json ledger
+    const newKeys = final.map(q => fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct])));
+    const merged = [...(used.seen || []), ...newKeys];
+    used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
+    fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
+    console.log('Updated used.json with', newKeys.length, 'entries');
+
   } catch (err) {
     console.warn('Fetch/Build failed:', err.message, '— preserving previous daily.json if present.');
-    // If daily.json missing entirely, write a simple fallback so site still works
-    if (!fs.existsSync(DAILY_PATH)) {
+    // If no daily.json exists yet, write a simple fallback so the site still works
+    if (!fs.existsSync(outPath)) {
       const fallback = {
-        day, dayIndex,
+        day: today,
+        dayIndex,
         questions: [
-          { text: "Which city is home to the Eiffel Tower?", options: ["Paris","Rome","Madrid","Berlin"], correct: 0, difficulty: "easy" },
-          { text: "What do bees make?", options: ["Honey","Milk","Silk","Oil"], correct: 0, difficulty: "easy" },
-          { text: "Which planet is called the Red Planet?", options: ["Mars","Jupiter","Venus","Saturn"], correct: 0, difficulty: "medium" },
-          { text: "Who painted the Mona Lisa?", options: ["Leonardo da Vinci","Michelangelo","Raphael","Donatello"], correct: 0, difficulty: "medium" },
-          { text: "What is H2O commonly known as?", options: ["Water","Hydrogen","Oxygen","Salt"], correct: 0, difficulty: "hard" }
+          { text: "What is the capital of France?", options: ["Paris","Rome","Madrid","Berlin"], correct: 0, difficulty: "easy" },
+          { text: "Which planet is known as the Red Planet?", options: ["Mars","Jupiter","Venus","Saturn"], correct: 0, difficulty: "easy" },
+          { text: "What is H2O commonly called?", options: ["Water","Hydrogen","Oxygen","Salt"], correct: 0, difficulty: "medium" },
+          { text: "How many minutes are in an hour?", options: ["60","30","90","120"], correct: 0, difficulty: "medium" },
+          { text: "Which number is a prime?", options: ["13","21","27","33"], correct: 0, difficulty: "hard" }
         ]
       };
-      writeJSON(DAILY_PATH, fallback);
-      console.log('Wrote fallback daily.json.');
+      fs.writeFileSync(outPath, JSON.stringify(fallback, null, 2));
+      console.log('Wrote fallback daily.json for', today, 'with dayIndex', dayIndex);
     }
-    process.exitCode = 0; // don’t fail the Action if we still have yesterday’s file
   }
 })();
+
 
