@@ -28,8 +28,8 @@ jobs:
           node-version: '20'
 
       - name: Generate today's questions (ET-aware)
-        run: node scripts/generate-daily.cjs
         shell: bash
+        run: node scripts/generate-daily.cjs
 
       - name: Commit & push if changed
         shell: bash
@@ -43,7 +43,7 @@ jobs:
           # Only commit if daily.json or used.json changed
           if ! git diff --quiet --exit-code -- daily.json used.json; then
             git add daily.json used.json
-            git commit -m "chore: update daily + used ledger"
+            git commit -m "chore: update daily.json + used.json"
             git push
           else
             echo "No changes to commit."
