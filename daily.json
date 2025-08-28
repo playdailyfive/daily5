@@ -1,56 +1,61 @@
 {
-  "day": "20250827",
-  "dayIndex": 4,
+  "day": "20250828",
+  "dayIndex": 5,
   "questions": [
     {
-      "text": "In the &quot;S.T.A.L.K.E.R.&quot; series, which of these items can&#039;t be used to lower the player&#039;s accumulated radiation?",
+      "text": "In Pokemon Red &amp; Blue, what is the name of HM05?",
       "options": [
-        "Anti-rad",
-        "Vodka",
-        "Radioprotectant",
-        "Medkit"
+        "Fly",
+        "Strength",
+        "Cut",
+        "Flash"
       ],
-      "correct": 2
+      "correct": 3,
+      "difficulty": "easy"
     },
     {
-      "text": "The original Roman alphabet lacked the following letters EXCEPT:",
+      "text": "In the show &quot;Foster&#039;s Home For Imaginary Friends&quot;, which character had an obsession with basketball?",
       "options": [
-        "W",
-        "J",
-        "U",
-        "X"
+        "Wilt",
+        "Cheese",
+        "Mac",
+        "Coco"
       ],
-      "correct": 3
+      "correct": 0,
+      "difficulty": "easy"
     },
     {
-      "text": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
+      "text": "In World of Warcraft, What was the name of the spell that caused a plague that famously killed millions of players in 2005?",
       "options": [
-        "Rubber Soul",
-        "Help!",
-        "Abbey Road",
-        "Revolver"
+        "Corrupted Blood",
+        "Necrotic Plague",
+        "Mutated Infection",
+        "Unbound Infestation"
       ],
-      "correct": 3
+      "correct": 0,
+      "difficulty": "easy"
     },
     {
-      "text": "Which of these is NOT a game under the Worms series?",
+      "text": "What is the name of the playable character in the 2018 video game Deltarune: Chapter 1?",
       "options": [
-        "Major Malfunction",
-        "Clan Wars",
-        "Ultimate Mayhem",
-        "Crazy Golf"
+        "Frisk",
+        "Gaster",
+        "Chara",
+        "Kris"
       ],
-      "correct": 0
+      "correct": 3,
+      "difficulty": "easy"
     },
     {
-      "text": "In the 2002 video game &quot;Kingdom Hearts&quot;, how many Keyblades are usable?",
+      "text": "George Orwell wrote this book, which is often considered a statement on government oversight.",
       "options": [
-        "16",
-        "18",
-        "13",
-        "15"
+        "Catcher and the Rye",
+        "The Old Man and the Sea",
+        "To Kill a Mockingbird",
+        "1984"
       ],
-      "correct": 1
+      "correct": 3,
+      "difficulty": "easy"
     }
   ]
 }
