@@ -204,7 +204,6 @@ function hideBanner(){ $('fallbackBanner').style.display='none'; }
 
 /* Seeded option shuffle (deterministic per day) */
 function seededShuffle(arr, seed){
-  // simple LCG based on earlier version to keep determinism stable
   let s = seed >>> 0, out=[...arr];
   for(let i=out.length-1;i>0;i--){
     s = (s*9301 + 49297) % 233280;
@@ -217,7 +216,8 @@ function seededShuffle(arr, seed){
 /* Load today’s questions with difficulty ordering (Option 2) */
 async function loadQuestions(){
   try{
-    const res = await fetch('/daily.json', { cache:'no-store' });
+    // cache-bust per day so we never read a stale daily.json
+    const res = await fetch('/daily.json?v=' + dayCounter, { cache:'no-store' });
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
     hideBanner();
@@ -229,7 +229,6 @@ async function loadQuestions(){
     const hasDiff = Array.isArray(data.questions) && data.questions.some(q => q.difficulty);
 
     let qs = (data.questions || []).map((q, idx) => {
-      // deterministically shuffle options but preserve correct index
       const opts = seededShuffle(q.options, daySeed + idx*7);
       const correctIdx = opts.indexOf(q.options[q.correct]);
       return {
@@ -244,16 +243,14 @@ async function loadQuestions(){
       const buckets = { easy:[], medium:[], hard:[] };
       qs.forEach(q => {
         if(buckets[q.difficulty]) buckets[q.difficulty].push(q);
-        else buckets.medium.push(q); // unknown → treat as medium
+        else buckets.medium.push(q);
       });
-      // pick first 2 easy, 2 medium, 1 hard (or as many as available)
       const pick = (arr, n) => arr.slice(0, Math.max(0, Math.min(arr.length, n)));
       qs = [
         ...pick(buckets.easy, 2),
         ...pick(buckets.medium, 2),
         ...pick(buckets.hard, 1)
       ];
-      // If still <5 (bad data), top up from remaining pool in original order
       if(qs.length < 5){
         const used = new Set(qs);
         const rest = ([
@@ -264,7 +261,6 @@ async function loadQuestions(){
         qs = [...qs, ...rest].slice(0,5);
       }
     } else {
-      // no difficulty tags; keep existing 5 in their file order
       qs = qs.slice(0,5);
     }
 
@@ -307,13 +303,13 @@ function setRingInstant(offset){
   ring.style.transition = 'none';
   ring.style.strokeDasharray = String(circumference);
   ring.style.strokeDashoffset = String(offset);
-  void ring.getBoundingClientRect();                // force reflow
+  void ring.getBoundingClientRect();
   ring.style.transition = prevTransition || 'stroke-dashoffset 1s linear';
 }
 function resetChrono(){
   remain = 12;
   $('chronoNum').textContent = 12;
-  setRingInstant(0);                   // full ring
+  setRingInstant(0);
   $('chrono').classList.remove('soon');
 }
 function startChrono(){
@@ -410,7 +406,6 @@ function finish(){
 
   if(score>=4){ burstConfetti(); }
 
-  // Wordle-style share text
   const shareLine=`Daily Five ${dayCounter} ${score}/5`;
   $('shareText').textContent = `${shareLine}\n\n${row}`;
 
