@@ -3,56 +3,56 @@
   "dayIndex": 5,
   "questions": [
     {
-      "text": "In Pokemon Red &amp; Blue, what is the name of HM05?",
+      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
       "options": [
-        "Fly",
-        "Strength",
-        "Cut",
-        "Flash"
-      ],
-      "correct": 3,
-      "difficulty": "easy"
-    },
-    {
-      "text": "In the show &quot;Foster&#039;s Home For Imaginary Friends&quot;, which character had an obsession with basketball?",
-      "options": [
-        "Wilt",
-        "Cheese",
-        "Mac",
-        "Coco"
+        "Medell&iacute;n",
+        "Quito",
+        "Bogot&aacute;",
+        "Cali"
       ],
       "correct": 0,
       "difficulty": "easy"
     },
     {
-      "text": "In World of Warcraft, What was the name of the spell that caused a plague that famously killed millions of players in 2005?",
+      "text": "What is the first weapon you acquire in Half-Life?",
       "options": [
-        "Corrupted Blood",
-        "Necrotic Plague",
-        "Mutated Infection",
-        "Unbound Infestation"
+        "Your fists",
+        "The H.E.V suit",
+        "A crowbar",
+        "A pistol"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy"
     },
     {
-      "text": "What is the name of the playable character in the 2018 video game Deltarune: Chapter 1?",
+      "text": "In the first game of the Sly Cooper franchise, what family heirloom did Sly Cooper want to steal back?",
       "options": [
-        "Frisk",
-        "Gaster",
-        "Chara",
-        "Kris"
+        "Raccoon Training 101",
+        "Thievius Raccoonus",
+        "The Art of Sneak",
+        "Raccoonus Teachus"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy"
     },
     {
-      "text": "George Orwell wrote this book, which is often considered a statement on government oversight.",
+      "text": "Which American president appears on a one dollar bill?",
       "options": [
-        "Catcher and the Rye",
-        "The Old Man and the Sea",
-        "To Kill a Mockingbird",
-        "1984"
+        "Thomas Jefferson",
+        "George Washington",
+        "Benjamin Franklin",
+        "Abraham Lincoln"
+      ],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "text": "In Rust, how many Timed Explosive Charges does it take to destroy a Ladder Hatch?",
+      "options": [
+        "5",
+        "2",
+        "3",
+        "1"
       ],
       "correct": 3,
       "difficulty": "easy"
