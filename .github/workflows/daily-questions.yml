@@ -2,17 +2,12 @@ name: Daily Questions
 
 on:
   schedule:
-    # Run at ~00:01 US Eastern (EDT/EST covered by two crons)
     - cron: '1 4 * * *'   # ~00:01 EDT (summer)
     - cron: '1 5 * * *'   # ~00:01 EST (winter)
   workflow_dispatch:
 
 permissions:
   contents: write
-
-concurrency:
-  group: daily5
-  cancel-in-progress: false
 
 jobs:
   generate:
@@ -32,18 +27,14 @@ jobs:
         run: node scripts/generate-daily.cjs
         shell: bash
 
-      - name: Commit & push if changed (daily.json + used.json)
+      - name: Commit & push
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
-
-          # Only commit if either file changed
-          if ! git diff --quiet --exit-code -- daily.json used.json; then
-            git add daily.json used.json
-            git commit -m "chore: update daily.json (+ used.json)"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          git add daily.json
+          git commit -m "chore: update daily.json for $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
+          git push
