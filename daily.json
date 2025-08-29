@@ -3,56 +3,56 @@
   "dayIndex": 6,
   "questions": [
     {
-      "text": "What word represents the letter 'T' in the NATO phonetic alphabet?",
+      "text": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
       "options": [
-        "Tango",
-        "Taxi",
-        "Turkey",
-        "Target"
+        "Gorilla",
+        "Panda",
+        "Crocodile",
+        "Tiger"
       ],
       "correct": 0,
       "difficulty": "easy"
     },
     {
-      "text": "Half-Life by Valve uses the GoldSrc game engine, which is a highly modified version of what engine?",
+      "text": "Which Canadian reggae musician had a 1993 hit with the song 'Informer'?",
       "options": [
-        "Quake Engine",
-        "Source Engine",
-        "id Engine",
-        "Doom Engine"
+        "Snow",
+        "Sleet",
+        "Hail",
+        "Rain"
       ],
       "correct": 0,
       "difficulty": "easy"
     },
     {
-      "text": "Which character was played by Dustin Diamond in the sitcom 'Saved by the Bell'?",
+      "text": "What was the release date of \"Grand Theft Auto IV\"?",
       "options": [
-        "A.C. Slater",
-        "Mr. Belding",
-        "Zack",
-        "Screech"
+        "July 28, 2008",
+        "June 22, 2010",
+        "May 21, 2009",
+        "April 29, 2008"
       ],
       "correct": 3,
       "difficulty": "easy"
     },
     {
-      "text": "Who made Garry's Mod?",
+      "text": "What colour is the circle on the Japanese flag?",
       "options": [
-        "Randy Newman",
-        "Gabe Newell",
-        "Garry Newman",
-        "Facepunch Studios"
+        "White",
+        "Black",
+        "Red",
+        "Yellow"
       ],
       "correct": 2,
       "difficulty": "easy"
     },
     {
-      "text": "In \"ALF\", what was ALF's real name?",
+      "text": "What nuts are used in the production of marzipan?",
       "options": [
-        "Gordon Shumway",
-        "Gordon Foster",
-        "Gordon von Gam",
-        "Gordon Milipp"
+        "Almonds",
+        "Walnuts",
+        "Pistachios",
+        "Peanuts"
       ],
       "correct": 0,
       "difficulty": "easy"
