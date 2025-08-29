@@ -58,6 +58,39 @@ const MAX_LEDGER = null; // or a number, e.g., 2000
 const RETRIES = 3;
 const BASE_TIMEOUT_MS = 9000;
 
+// ====== SMALL BUILT-IN FALLBACK BANK ======
+// If OpenTDB fails (rate limit, network), we *still* ship new questions today.
+// 10 easy, 8 medium, 6 hard — all short & friendly.
+const FALLBACK_BANK = [
+  // --- EASY (10) ---
+  {t:"What color are bananas when ripe?",o:["Yellow","Blue","Purple","Black"],c:0,d:"easy"},
+  {t:"How many days are in a week?",o:["7","5","10","8"],c:0,d:"easy"},
+  {t:"Which animal says 'meow'?",o:["Cat","Dog","Cow","Sheep"],c:0,d:"easy"},
+  {t:"What do bees make?",o:["Honey","Cheese","Jam","Butter"],c:0,d:"easy"},
+  {t:"Which is the largest planet?",o:["Jupiter","Mars","Earth","Venus"],c:0,d:"easy"},
+  {t:"What is H2O commonly called?",o:["Water","Oxygen","Salt","Hydrogen"],c:0,d:"easy"},
+  {t:"How many minutes are in an hour?",o:["60","30","90","120"],c:0,d:"easy"},
+  {t:"What is 2 + 2?",o:["4","3","5","6"],c:0,d:"easy"},
+  {t:"Which season is the coldest (in most places)?",o:["Winter","Summer","Spring","Fall"],c:0,d:"easy"},
+  {t:"Which shape has 3 sides?",o:["Triangle","Square","Circle","Pentagon"],c:0,d:"easy"},
+  // --- MEDIUM (8) ---
+  {t:"Which ocean is the largest?",o:["Pacific","Atlantic","Indian","Arctic"],c:0,d:"medium"},
+  {t:"What gas do plants breathe in?",o:["Carbon dioxide","Oxygen","Nitrogen","Helium"],c:0,d:"medium"},
+  {t:"Which country gifted the Statue of Liberty to the USA?",o:["France","Spain","UK","Canada"],c:0,d:"medium"},
+  {t:"How many continents are there?",o:["7","5","6","8"],c:0,d:"medium"},
+  {t:"Which instrument has keys, pedals, and strings?",o:["Piano","Flute","Drum","Violin"],c:0,d:"medium"},
+  {t:"Which sport uses a shuttlecock?",o:["Badminton","Tennis","Cricket","Baseball"],c:0,d:"medium"},
+  {t:"Which metal is liquid at room temperature?",o:["Mercury","Iron","Gold","Aluminum"],c:0,d:"medium"},
+  {t:"Which planet is known as the Red Planet?",o:["Mars","Neptune","Saturn","Mercury"],c:0,d:"medium"},
+  // --- HARD (6) ---
+  {t:"Which country has the most natural lakes?",o:["Canada","USA","Russia","Brazil"],c:0,d:"hard"},
+  {t:"Which vitamin do we mainly get from sunlight?",o:["Vitamin D","Vitamin C","Vitamin A","Vitamin B12"],c:0,d:"hard"},
+  {t:"The Great Barrier Reef is off the coast of which country?",o:["Australia","New Zealand","Fiji","Indonesia"],c:0,d:"hard"},
+  {t:"What is the tallest mammal?",o:["Giraffe","Elephant","Moose","Camel"],c:0,d:"hard"},
+  {t:"Which language has the most native speakers?",o:["Mandarin Chinese","English","Spanish","Hindi"],c:0,d:"hard"},
+  {t:"What is the capital of Canada?",o:["Ottawa","Toronto","Vancouver","Montreal"],c:0,d:"hard"},
+];
+
 // ====== UTIL ======
 function yyyymmdd(d = new Date(), tz = ET_TZ) {
   const parts = new Intl.DateTimeFormat('en-CA', {
@@ -159,7 +192,8 @@ function basicClean(q) {
     category: q.category,
     question: decode(q.question || q.text || ''),
     correct_answer: decode(q.correct_answer || ''),
-    incorrect_answers: (q.incorrect_answers || []).map(decode)
+    incorrect_answers: (q.incorrect_answers || []).map(decode),
+    difficulty: (q.difficulty || q.d || '').toString().toLowerCase()
   };
 }
 function passEasyFilter(q) {
@@ -179,6 +213,40 @@ async function fetchPool(difficulty, amount) {
   const data = await fetchJson(url);
   const list = Array.isArray(data?.results) ? data.results : [];
   return list.map(basicClean);
+}
+
+// ====== FALLBACK BUILDER ======
+function buildFallback(today, dayIndex, used) {
+  // deterministically rotate the fallback bank by dayIndex
+  const start = (dayIndex * 3) % FALLBACK_BANK.length;
+  const rotated = [...FALLBACK_BANK.slice(start), ...FALLBACK_BANK.slice(0, start)];
+
+  const easy = rotated.filter(q => q.d === 'easy').slice(0, 2);
+  const med  = rotated.filter(q => q.d === 'medium').slice(0, 2);
+  const hard = rotated.filter(q => q.d === 'hard').slice(0, 1);
+
+  let chosen = [...easy, ...med, ...hard];
+  if (chosen.length < 5) {
+    const already = new Set(chosen.map(q => q.t + '|' + q.o[q.c]));
+    for (const q of rotated) {
+      const key = q.t + '|' + q.o[q.c];
+      if (!already.has(key)) { chosen.push(q); if (chosen.length >= 5) break; }
+    }
+  }
+
+  const seed = Number(today);
+  const final = chosen.slice(0,5).map((q, idx) => {
+    const opts = seededShuffle(q.o, seed + idx * 7);
+    const correctIdx = opts.indexOf(q.o[q.c]);
+    return { text: q.t, options: opts, correct: correctIdx, difficulty: q.d };
+  });
+
+  // update used ledger keys
+  const newKeys = final.map(q => fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct])));
+  const merged = [...(used.seen || []), ...newKeys];
+  used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
+
+  return { final, used };
 }
 
 // ====== MAIN ======
@@ -235,14 +303,12 @@ async function fetchPool(difficulty, amount) {
       ...pick(hard, 1)
     ];
 
-    // If we still have <5, top up from remaining filtered pools (easy→medium→hard)
     if (chosen.length < 5) {
       const already = new Set(chosen.map(q => qKey(q)));
       const rest = [...easy, ...medium, ...hard].filter(q => !already.has(qKey(q)));
       chosen = [...chosen, ...pick(rest, 5 - chosen.length)];
     }
 
-    // Still short? As a last resort, backfill from original raw pools (relaxed)
     if (chosen.length < 5) {
       const rawRest = [...easyPool, ...medPool, ...hardPool];
       const already = new Set(chosen.map(q => qKey(q)));
@@ -263,11 +329,14 @@ async function fetchPool(difficulty, amount) {
       const rawOpts = [q.correct_answer, ...q.incorrect_answers];
       const opts = seededShuffle(rawOpts, seed + idx * 7);
       const correctIdx = opts.indexOf(q.correct_answer);
+      // carry through difficulty if OpenTDB included it; else label by slot
+      const diff = (q.difficulty || '').toLowerCase();
+      const fallbackDiff = (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard');
       return {
         text: q.question,
         options: opts,
         correct: correctIdx,
-        difficulty: (q.difficulty || '').toLowerCase() || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard')
+        difficulty: diff || fallbackDiff
       };
     });
 
@@ -284,24 +353,14 @@ async function fetchPool(difficulty, amount) {
     console.log('Updated used.json with', newKeys.length, 'entries');
 
   } catch (err) {
-    console.warn('Fetch/Build failed:', err.message, '— preserving previous daily.json if present.');
-    // If no daily.json exists yet, write a simple fallback so the site still works
-    if (!fs.existsSync(outPath)) {
-      const fallback = {
-        day: today,
-        dayIndex,
-        questions: [
-          { text: "What is the capital of France?", options: ["Paris","Rome","Madrid","Berlin"], correct: 0, difficulty: "easy" },
-          { text: "Which planet is known as the Red Planet?", options: ["Mars","Jupiter","Venus","Saturn"], correct: 0, difficulty: "easy" },
-          { text: "What is H2O commonly called?", options: ["Water","Hydrogen","Oxygen","Salt"], correct: 0, difficulty: "medium" },
-          { text: "How many minutes are in an hour?", options: ["60","30","90","120"], correct: 0, difficulty: "medium" },
-          { text: "Which number is a prime?", options: ["13","21","27","33"], correct: 0, difficulty: "hard" }
-        ]
-      };
-      fs.writeFileSync(outPath, JSON.stringify(fallback, null, 2));
-      console.log('Wrote fallback daily.json for', today, 'with dayIndex', dayIndex);
-    }
+    console.warn('Fetch/Build failed:', err.message, '— switching to FALLBACK bank for today.');
+    // NEW: Always write a fresh daily.json even on failure, using fallback bank
+    const { final, used: usedAfter } = buildFallback(today, dayIndex, used);
+
+    const payload = { day: today, dayIndex, questions: final };
+    fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
+    fs.writeFileSync(usedPath, JSON.stringify(usedAfter, null, 2));
+
+    console.log('Wrote fallback daily.json for', today, 'with dayIndex', dayIndex, '(no API).');
   }
 })();
-
-
