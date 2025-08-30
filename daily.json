@@ -1,60 +1,60 @@
 {
-  "day": "20250829",
-  "dayIndex": 6,
+  "day": "20250830",
+  "dayIndex": 7,
   "questions": [
     {
-      "text": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
+      "text": "What is the name of the peninsula containing Spain and Portugal?",
       "options": [
-        "Gorilla",
-        "Panda",
-        "Crocodile",
-        "Tiger"
-      ],
-      "correct": 0,
-      "difficulty": "easy"
-    },
-    {
-      "text": "Which Canadian reggae musician had a 1993 hit with the song 'Informer'?",
-      "options": [
-        "Snow",
-        "Sleet",
-        "Hail",
-        "Rain"
-      ],
-      "correct": 0,
-      "difficulty": "easy"
-    },
-    {
-      "text": "What was the release date of \"Grand Theft Auto IV\"?",
-      "options": [
-        "July 28, 2008",
-        "June 22, 2010",
-        "May 21, 2009",
-        "April 29, 2008"
+        "Scandinavian Peninsula",
+        "European Peninsula",
+        "Peloponnesian Peninsula",
+        "Iberian Peninsula"
       ],
       "correct": 3,
       "difficulty": "easy"
     },
     {
-      "text": "What colour is the circle on the Japanese flag?",
+      "text": "Who is the main character of the game Half-Life: Opposing Force?",
       "options": [
-        "White",
-        "Black",
-        "Red",
-        "Yellow"
+        "Alyx Vance",
+        "Adrian Shephard",
+        "Gordon Freeman",
+        "Barney Calhoun"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy"
     },
     {
-      "text": "What nuts are used in the production of marzipan?",
+      "text": "What is Cynophobia the fear of?",
       "options": [
-        "Almonds",
-        "Walnuts",
-        "Pistachios",
-        "Peanuts"
+        "Birds",
+        "Dogs",
+        "Germs",
+        "Flying"
       ],
-      "correct": 0,
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "text": "In World of Warcraft's Mists of Pandaria expansion, What was the level cap?",
+      "options": [
+        "80",
+        "90",
+        "75",
+        "85"
+      ],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "text": "Which player holds the NHL record of 2,857 points?",
+      "options": [
+        "Gordie Howe",
+        "Wayne Gretzky",
+        "Mario Lemieux ",
+        "Sidney Crosby"
+      ],
+      "correct": 1,
       "difficulty": "easy"
     }
   ]
