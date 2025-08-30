@@ -3,56 +3,56 @@
   "dayIndex": 7,
   "questions": [
     {
-      "text": "What is the name of the peninsula containing Spain and Portugal?",
+      "text": "Which language is most widely spoken in Switzerland?",
       "options": [
-        "Scandinavian Peninsula",
-        "European Peninsula",
-        "Peloponnesian Peninsula",
-        "Iberian Peninsula"
+        "Swiss",
+        "French",
+        "Italian",
+        "German"
       ],
       "correct": 3,
       "difficulty": "easy"
     },
     {
-      "text": "Who is the main character of the game Half-Life: Opposing Force?",
+      "text": "What are Sans and Papyrus named after in \"Undertale\"?",
       "options": [
-        "Alyx Vance",
-        "Adrian Shephard",
-        "Gordon Freeman",
-        "Barney Calhoun"
+        "Companies",
+        "Fonts",
+        "Plants",
+        "Ancient writing paper"
       ],
       "correct": 1,
       "difficulty": "easy"
     },
     {
-      "text": "What is Cynophobia the fear of?",
+      "text": "Earth is located in which galaxy?",
       "options": [
-        "Birds",
-        "Dogs",
-        "Germs",
-        "Flying"
+        "The Mars Galaxy",
+        "The Milky Way Galaxy",
+        "The Black Hole",
+        "The Galaxy Note"
       ],
       "correct": 1,
       "difficulty": "easy"
     },
     {
-      "text": "In World of Warcraft's Mists of Pandaria expansion, What was the level cap?",
+      "text": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
       "options": [
-        "80",
-        "90",
-        "75",
-        "85"
+        "Peach",
+        "Plum",
+        "Pear",
+        "Apple"
       ],
       "correct": 1,
       "difficulty": "easy"
     },
     {
-      "text": "Which player holds the NHL record of 2,857 points?",
+      "text": "Which country, not including Japan, has the most people of Japanese descent?",
       "options": [
-        "Gordie Howe",
-        "Wayne Gretzky",
-        "Mario Lemieux ",
-        "Sidney Crosby"
+        "United States of America",
+        "Brazil",
+        "China",
+        "South Korea"
       ],
       "correct": 1,
       "difficulty": "easy"
