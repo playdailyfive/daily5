@@ -5,9 +5,20 @@ on:
     - cron: '1 4 * * *'   # ~00:01 EDT (summer)
     - cron: '1 5 * * *'   # ~00:01 EST (winter)
   workflow_dispatch:
+    inputs:
+      reroll:
+        description: "Force a new set for today (even if one already exists)"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
 
 permissions:
   contents: write
+
+concurrency:
+  group: daily5
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -24,10 +35,13 @@ jobs:
           node-version: '20'
 
       - name: Generate today's questions (ET-aware)
+        env:
+          # When reroll == true (manual run), feed a nonce so we pick a fresh set.
+          REROLL_NONCE: ${{ github.event.inputs.reroll == 'true' && github.run_id || '' }}
         run: node scripts/generate-daily.cjs
         shell: bash
 
-      - name: Commit & push
+      - name: Commit & push if changed (daily.json or used.json)
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,6 +49,16 @@ jobs:
           set -euo pipefail
           git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
-          git add daily.json
-          git commit -m "chore: update daily.json for $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
-          git push
+
+          if ! git diff --quiet --exit-code -- daily.json used.json; then
+            git add daily.json used.json
+            # If this was a reroll, make that clear in the message
+            if [ "${{ github.event.inputs.reroll }}" = "true" ]; then
+              git commit -m "chore: reroll daily.json (manual)"
+            else
+              git commit -m "chore: update daily.json"
+            fi
+            git push
+          else
+            echo "No changes to commit."
+          fi
