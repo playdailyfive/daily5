@@ -1,14 +1,12 @@
 /**
  * Generate Daily Five:
- * - Fetch a pool from OpenTDB (by difficulty)
- * - Filter for readability/ease (length, banned phrases)
+ * - Fetch pools from OpenTDB (by difficulty)
+ * - Filter for readability/ease
  * - Avoid repeats using used.json (hash ledger)
- * - Pick >=2 from "General Knowledge" (prefer easy→medium→hard), then diversify others
- * - Deterministically shuffle options per day
- * - Write daily.json (with day/dayIndex/difficulty tags)
+ * - Pick 2 easy, 2 medium, 1 hard (fallbacks)
+ * - Deterministically shuffle options per output (seeded)
+ * - Write daily.json (with day/dayIndex/difficulty tags + reroll flag)
  * - Update used.json ledger
- *
- * Node 20+ / CommonJS
  */
 
 const fs = require('fs');
@@ -18,7 +16,6 @@ const path = require('path');
 const START_DAY = '20250824';                 // Day 1 (YYYYMMDD, ET baseline)
 const ET_TZ = 'America/New_York';
 
-// Make questions broadly easier & relatable
 const EASY_FILTER = {
   MAX_QUESTION_LEN: 110,
   MAX_OPTION_LEN: 36,
@@ -34,12 +31,13 @@ const EASY_FILTER = {
     /\bprime\s+number\b/i,
     /\b(nth|[0-9]{1,4}(st|nd|rd|th))\b.*\bcentury\b/i
   ],
-  // Allowed OpenTDB categories (removed Books + Video Games)
   ALLOW_CATEGORIES: new Set([
     'General Knowledge',
     'Entertainment: Film',
     'Entertainment: Music',
     'Entertainment: Television',
+    'Entertainment: Books',
+    'Entertainment: Video Games',
     'Science & Nature',
     'Geography',
     'Sports',
@@ -47,13 +45,8 @@ const EASY_FILTER = {
   ])
 };
 
-// How many to fetch per difficulty before filtering
-const FETCH_SIZES = { easy: 28, medium: 24, hard: 18 };
-
-// Used ledger: keep everything (tiny file). If you want to trim, set MAX_LEDGER.
-const MAX_LEDGER = null; // or a number, e.g., 2000
-
-// Retry/backoff
+const FETCH_SIZES = { easy: 25, medium: 22, hard: 18 };
+const MAX_LEDGER = null;
 const RETRIES = 3;
 const BASE_TIMEOUT_MS = 9000;
 
@@ -77,7 +70,7 @@ function dayIndexFrom(startYmd, todayYmd) {
   return 1 + diffDays;
 }
 
-// Simple FNV-1a 32-bit hash for dedupe/ledger
+// FNV-1a
 function fnv1a(str) {
   let h = 0x811c9dc5;
   for (let i = 0; i < str.length; i++) {
@@ -111,7 +104,7 @@ async function fetchJson(url, { timeoutMs = BASE_TIMEOUT_MS, retries = RETRIES }
   }
 }
 
-// Deterministic per-day option shuffle
+// PRNG + shuffle
 function mulberry32(seed) {
   return function() {
     let t = seed += 0x6D2B79F5;
@@ -132,7 +125,7 @@ function seededShuffle(arr, seedNum) {
 
 // ====== FILTERS ======
 function isRelatableCategory(cat) {
-  if (!cat) return true; // when missing, don’t exclude
+  if (!cat) return true;
   return EASY_FILTER.ALLOW_CATEGORIES.has(cat);
 }
 function hasBannedPhrase(text) {
@@ -145,7 +138,6 @@ function withinLength(q) {
   return all.every(opt => String(opt).trim().length <= EASY_FILTER.MAX_OPTION_LEN);
 }
 function basicClean(q) {
-  // decode common HTML entities from OpenTDB
   const decode = (s='') => s
     .replace(/&quot;/g, '"').replace(/&#039;/g,"'")
     .replace(/&amp;/g,'&').replace(/&rsquo;/g,"'")
@@ -156,7 +148,6 @@ function basicClean(q) {
   return {
     ...q,
     category: q.category,
-    difficulty: (q.difficulty || '').toLowerCase(),
     question: decode(q.question || q.text || ''),
     correct_answer: decode(q.correct_answer || ''),
     incorrect_answers: (q.incorrect_answers || []).map(decode)
@@ -167,125 +158,27 @@ function passEasyFilter(q) {
   if (!withinLength(q)) return false;
   if (hasBannedPhrase(qt)) return false;
   if (!isRelatableCategory(q.category)) return false;
-  // avoid “trick” capitalization like ALL CAPS
   if ((qt.match(/[A-Z]/g) || []).length > (qt.match(/[a-z]/g) || []).length * 2) return false;
   return true;
 }
 
 // ====== FETCH POOLS ======
 async function fetchPool(difficulty, amount) {
-  // Pull a broad pool to allow filtering
   const url = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}`;
   const data = await fetchJson(url);
   const list = Array.isArray(data?.results) ? data.results : [];
   return list.map(basicClean);
 }
 
-// ====== SELECTION HELPERS ======
-function dedupeAgainstSeen(arr, seenGlobal) {
-  const out = [];
-  const localSeen = new Set();
-  for (const q of arr) {
-    const key = qKey(q);
-    if (seenGlobal.has(key) || localSeen.has(key)) continue;
-    localSeen.add(key);
-    out.push(q);
-  }
-  return out;
-}
-
-function takeUpTo(arr, n) {
-  return arr.slice(0, Math.max(0, Math.min(n, arr.length)));
-}
-
-function gradeLabel(d) {
-  // normalize difficulty to one of easy/medium/hard
-  return d === 'easy' || d === 'medium' || d === 'hard' ? d : 'medium';
-}
-
-// Force ≥2 General Knowledge. Prefer easy→medium→hard for GK.
-// Diversify remaining picks across categories (avoid dupes when possible).
-function pickFive(easy, medium, hard) {
-  const all = [...easy, ...medium, ...hard];
-
-  const isGK = q => (q.category || '').trim() === 'General Knowledge';
-
-  const gkEasy = easy.filter(isGK);
-  const gkMed  = medium.filter(isGK);
-  const gkHard = hard.filter(isGK);
-
-  const picks = [];
-
-  // 1) Force 2 General Knowledge
-  const needGK = 2;
-  let gkTaken = 0;
-
-  for (const source of [gkEasy, gkMed, gkHard]) {
-    for (const q of source) {
-      if (gkTaken >= needGK) break;
-      picks.push(q); gkTaken++;
-    }
-    if (gkTaken >= needGK) break;
-  }
-
-  // 2) Fill remaining slots (3) from non-GK with diversity
-  const remainingSlots = Math.max(0, 5 - picks.length);
-  const already = new Set(picks.map(q => qKey(q)));
-
-  // Build a list of non-GK candidates, easy-first bias, then medium, then hard
-  const nonGK = [
-    ...easy.filter(q => !isGK(q)),
-    ...medium.filter(q => !isGK(q)),
-    ...hard.filter(q => !isGK(q))
-  ];
-
-  const usedCats = new Set(picks.map(q => q.category || ''));
-  for (const q of nonGK) {
-    if (picks.length >= 5) break;
-    const key = qKey(q);
-    if (already.has(key)) continue;
-    const cat = q.category || '';
-    // Try to avoid duplicate categories among non-GK picks
-    if (!usedCats.has(cat)) {
-      picks.push(q);
-      already.add(key);
-      usedCats.add(cat);
-    }
-  }
-
-  // If still short, allow same-category fills
-  if (picks.length < 5) {
-    for (const q of nonGK) {
-      if (picks.length >= 5) break;
-      const key = qKey(q);
-      if (!already.has(key)) {
-        picks.push(q);
-        already.add(key);
-      }
-    }
-  }
-
-  // Final guard: still short? Top up from any remaining pool
-  if (picks.length < 5) {
-    for (const q of all) {
-      if (picks.length >= 5) break;
-      const key = qKey(q);
-      if (!already.has(key)) {
-        picks.push(q);
-        already.add(key);
-      }
-    }
-  }
-
-  return picks.slice(0, 5);
-}
-
 // ====== MAIN ======
-;(async () => {
+(async () => {
   const today = yyyymmdd(new Date(), ET_TZ);
   const dayIndex = dayIndexFrom(START_DAY, today);
   const outPath = path.resolve('daily.json');
   const usedPath = path.resolve('used.json');
+
+  // Reroll support (manual dispatch). Any non-empty nonce will force different selection.
+  const REROLL_NONCE = process.env.REROLL_NONCE || '';
 
   // Load used ledger
   let used = {};
@@ -294,7 +187,7 @@ function pickFive(easy, medium, hard) {
       used = JSON.parse(fs.readFileSync(usedPath, 'utf8') || '{}');
     }
   } catch (_) { used = {}; }
-  used.seen = used.seen || []; // array of hashes
+  used.seen = used.seen || [];
 
   try {
     // 1) Fetch pools
@@ -306,43 +199,87 @@ function pickFive(easy, medium, hard) {
 
     // 2) Filter & de-duplicate
     const seen = new Set(used.seen || []);
+    const dedupe = (arr) => {
+      const out = [];
+      const localSeen = new Set();
+      for (const q of arr) {
+        const key = qKey(q);
+        if (seen.has(key) || localSeen.has(key)) continue;
+        localSeen.add(key);
+        out.push(q);
+      }
+      return out;
+    };
+
     const ef = easyPool.filter(passEasyFilter);
     const mf = medPool.filter(passEasyFilter);
     const hf = hardPool.filter(passEasyFilter);
 
-    const easy   = dedupeAgainstSeen(ef, seen);
-    const medium = dedupeAgainstSeen(mf, seen);
-    const hard   = dedupeAgainstSeen(hf, seen);
+    let easy = dedupe(ef);
+    let medium = dedupe(mf);
+    let hard = dedupe(hf);
 
-    // 3) Choose 5 with ≥2 General Knowledge and diversified others
-    let chosen = pickFive(easy, medium, hard);
+    // 2b) If rerolling, randomize the order of each pool with a nonce
+    if (REROLL_NONCE) {
+      const nonceSeed = fnv1a(String(REROLL_NONCE) + today);
+      const ns = parseInt(nonceSeed, 16) >>> 0;
+      const mix = (arr, salt) => seededShuffle(arr, (ns ^ salt) >>> 0);
+      easy = mix(easy, 0x1111);
+      medium = mix(medium, 0x2222);
+      hard = mix(hard, 0x3333);
+    }
+
+    // 3) Pick 2 easy, 2 medium, 1 hard (fallbacks if scarce)
+    const pick = (arr, n) => arr.slice(0, Math.max(0, Math.min(n, arr.length)));
+    let chosen = [
+      ...pick(easy, 2),
+      ...pick(medium, 2),
+      ...pick(hard, 1)
+    ];
+
+    if (chosen.length < 5) {
+      const already = new Set(chosen.map(q => qKey(q)));
+      const rest = [...easy, ...medium, ...hard].filter(q => !already.has(qKey(q)));
+      chosen = [...chosen, ...pick(rest, 5 - chosen.length)];
+    }
+
+    if (chosen.length < 5) {
+      const rawRest = [...easyPool, ...medPool, ...hardPool];
+      const already = new Set(chosen.map(q => qKey(q)));
+      for (const q of rawRest) {
+        const key = qKey(q);
+        if (!already.has(key) && !seen.has(key)) {
+          chosen.push(q);
+          if (chosen.length >= 5) break;
+        }
+      }
+    }
 
     if (chosen.length < 5) throw new Error('Not enough questions after filtering');
 
-    // 4) Build output: deterministic shuffle of options per day
-    const seed = Number(today);
+    // 4) Deterministic per-OUTPUT option shuffle.
+    //    Use today plus an optional nonce so manual rerolls change the options order too.
+    const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
+
     const final = chosen.slice(0, 5).map((q, idx) => {
       const rawOpts = [q.correct_answer, ...q.incorrect_answers];
-      const opts = seededShuffle(rawOpts, seed + idx * 7);
+      const opts = seededShuffle(rawOpts, (seedBase + idx * 7) >>> 0);
       const correctIdx = opts.indexOf(q.correct_answer);
       return {
         text: q.question,
         options: opts,
         correct: correctIdx,
-        // keep original difficulty if present; otherwise infer by position
-        difficulty: gradeLabel(q.difficulty || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard'))
+        difficulty: (q.difficulty || '').toLowerCase() || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard')
       };
     });
 
     // 5) Write daily.json
-    const payload = { day: today, dayIndex, questions: final };
+    const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), questions: final };
     fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-    console.log('Wrote daily.json for', today, 'with dayIndex', dayIndex);
+    console.log('Wrote daily.json for', today, 'dayIndex', dayIndex, 'reroll', Boolean(REROLL_NONCE));
 
     // 6) Update used.json ledger
-    const newKeys = final.map(q =>
-      fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct]))
-    );
+    const newKeys = final.map(q => fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct])));
     const merged = [...(used.seen || []), ...newKeys];
     used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
     fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
@@ -351,6 +288,9 @@ function pickFive(easy, medium, hard) {
   } catch (err) {
     console.warn('Fetch/Build failed:', err.message, '— preserving previous daily.json if present.');
     // If no daily.json exists yet, write a simple fallback so the site still works
+    const outPath = path.resolve('daily.json');
+    const today = yyyymmdd(new Date(), ET_TZ);
+    const dayIndex = dayIndexFrom(START_DAY, today);
     if (!fs.existsSync(outPath)) {
       const fallback = {
         day: today,
