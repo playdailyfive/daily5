@@ -26,7 +26,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<!-- ✅ Plausible (must be in <head>) -->
+<!-- Plausible (analytics) -->
 <script defer data-domain="playdailyfive.com" src="https://plausible.io/js/script.js"></script>
 
 <style>
@@ -216,8 +216,8 @@ function seededShuffle(arr, seed){
 /* Load today’s questions with difficulty ordering (Option 2) */
 async function loadQuestions(){
   try{
-    // cache-bust per day so we never read a stale daily.json
-    const res = await fetch('/daily.json?v=' + dayCounter, { cache:'no-store' });
+    // cache-bust EVERY request so same-day rerolls show immediately
+    const res = await fetch('/daily.json?v=' + Date.now(), { cache:'no-store' });
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
     hideBanner();
@@ -433,3 +433,4 @@ $('startBtn').onclick = async () => {
 </script>
 </body>
 </html>
+
