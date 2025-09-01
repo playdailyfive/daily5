@@ -1,0 +1,12 @@
+[
+  { "category":"Science & Nature","difficulty":"medium","question":"What gas do plants take in from the air?","correct_answer":"Carbon dioxide","incorrect_answers":["Oxygen","Nitrogen","Helium"] },
+  { "category":"Geography","difficulty":"medium","question":"Which ocean is the largest?","correct_answer":"Pacific Ocean","incorrect_answers":["Atlantic Ocean","Indian Ocean","Arctic Ocean"] },
+  { "category":"Entertainment: Art","difficulty":"medium","question":"Who painted the Mona Lisa?","correct_answer":"Leonardo da Vinci","incorrect_answers":["Michelangelo","Raphael","Donatello"] },
+  { "category":"Science & Nature","difficulty":"medium","question":"What is the tallest land animal?","correct_answer":"Giraffe","incorrect_answers":["Elephant","Horse","Camel"] },
+  { "category":"General Knowledge","difficulty":"medium","question":"Which country is famous for sushi?","correct_answer":"Japan","incorrect_answers":["China","Thailand","Korea"] },
+  { "category":"General Knowledge","difficulty":"medium","question":"How many minutes are in an hour?","correct_answer":"60","incorrect_answers":["30","90","120"] },
+  { "category":"General Knowledge","difficulty":"medium","question":"Which instrument has black and white keys?","correct_answer":"Piano","incorrect_answers":["Guitar","Violin","Flute"] },
+  { "category":"Geography","difficulty":"medium","question":"Which continent is Egypt in?","correct_answer":"Africa","incorrect_answers":["Asia","Europe","South America"] },
+  { "category":"Science & Nature","difficulty":"medium","question":"At sea level, water boils at what temperature in Celsius?","correct_answer":"100","incorrect_answers":["90","80","120"] },
+  { "category":"Geography","difficulty":"medium","question":"What is the main language spoken in Brazil?","correct_answer":"Portuguese","incorrect_answers":["Spanish","English","French"] }
+]

@@ -1,0 +1,14 @@
+[
+  { "category":"General Knowledge","difficulty":"easy","question":"What color is the sky on a clear day?","correct_answer":"Blue","incorrect_answers":["Green","Red","Yellow"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"How many days are in a week?","correct_answer":"7","incorrect_answers":["5","6","8"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What is H2O commonly called?","correct_answer":"Water","incorrect_answers":["Hydrogen","Oxygen","Steam"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"Which animal says \"meow\"?","correct_answer":"Cat","incorrect_answers":["Dog","Cow","Sheep"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What do bees make?","correct_answer":"Honey","incorrect_answers":["Butter","Salt","Oil"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What is 10 + 5?","correct_answer":"15","incorrect_answers":["10","12","20"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What planet do we live on?","correct_answer":"Earth","incorrect_answers":["Mars","Venus","Jupiter"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What do you call frozen water?","correct_answer":"Ice","incorrect_answers":["Snow","Fog","Hail"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What device do you use to call someone?","correct_answer":"Phone","incorrect_answers":["Radio","Television","Camera"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What shape has three sides?","correct_answer":"Triangle","incorrect_answers":["Square","Circle","Rectangle"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What color are ripe bananas?","correct_answer":"Yellow","incorrect_answers":["Blue","Purple","Brown"] },
+  { "category":"General Knowledge","difficulty":"easy","question":"What do cows drink?","correct_answer":"Water","incorrect_answers":["Milk","Juice","Soda"] }
+]

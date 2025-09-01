@@ -1,61 +1,62 @@
 {
-  "day": "20250831",
-  "dayIndex": 8,
+  "day": "20250901",
+  "dayIndex": 9,
+  "reroll": false,
   "questions": [
     {
-      "text": "Which rap group released the album \"Straight Outta Compton\"?",
+      "text": "What color is the sky on a clear day?",
       "options": [
-        "N.W.A",
-        "Beastie Boys",
-        "Run-D.M.C.",
-        "Wu-Tang Clan"
-      ],
-      "correct": 0,
-      "difficulty": "easy"
-    },
-    {
-      "text": "Half-Life by Valve uses the GoldSrc game engine, which is a highly modified version of what engine?",
-      "options": [
-        "Quake Engine",
-        "Doom Engine",
-        "Source Engine",
-        "id Engine"
-      ],
-      "correct": 0,
-      "difficulty": "easy"
-    },
-    {
-      "text": "The Touhou Project series of games is often associated with which genre?",
-      "options": [
-        "FPS",
-        "Casual",
-        "Strategy",
-        "Shoot 'em up"
-      ],
-      "correct": 3,
-      "difficulty": "easy"
-    },
-    {
-      "text": "In \"ALF\", what was ALF's real name?",
-      "options": [
-        "Gordon von Gam",
-        "Gordon Milipp",
-        "Gordon Shumway",
-        "Gordon Foster"
+        "Green",
+        "Red",
+        "Blue",
+        "Yellow"
       ],
       "correct": 2,
       "difficulty": "easy"
     },
     {
-      "text": "In the game \"DELTARUNE\", what is Ralsei's special ability?",
+      "text": "How many days are in a week?",
       "options": [
-        "Persuade",
-        "Pacify",
-        "Eliminate",
-        "Hug"
+        "7",
+        "8",
+        "6",
+        "5"
+      ],
+      "correct": 0,
+      "difficulty": "easy"
+    },
+    {
+      "text": "What gas do plants take in from the air?",
+      "options": [
+        "Oxygen",
+        "Helium",
+        "Nitrogen",
+        "Carbon dioxide"
+      ],
+      "correct": 3,
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which ocean is the largest?",
+      "options": [
+        "Pacific Ocean",
+        "Arctic Ocean",
+        "Indian Ocean",
+        "Atlantic Ocean"
+      ],
+      "correct": 0,
+      "difficulty": "medium"
+    },
+    {
+      "text": "Which city is home to the statue called Christ the Redeemer?",
+      "options": [
+        "Lisbon",
+        "Rio de Janeiro",
+        "Buenos Aires",
+        "São Paulo"
       ],
       "correct": 1,
-      "difficulty": "easy"
+      "difficulty": "hard"
     }
   ]
 }

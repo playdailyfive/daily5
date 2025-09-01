@@ -1,0 +1,10 @@
+[
+  { "category":"Geography","difficulty":"hard","question":"Which city is home to the statue called Christ the Redeemer?","correct_answer":"Rio de Janeiro","incorrect_answers":["São Paulo","Lisbon","Buenos Aires"] },
+  { "category":"General Knowledge","difficulty":"hard","question":"In chess, how many squares are on the board?","correct_answer":"64","incorrect_answers":["81","49","72"] },
+  { "category":"Science & Nature","difficulty":"hard","question":"Which metal is liquid at room temperature?","correct_answer":"Mercury","incorrect_answers":["Aluminum","Sodium","Copper"] },
+  { "category":"Geography","difficulty":"hard","question":"What is the largest hot desert in the world?","correct_answer":"Sahara","incorrect_answers":["Gobi","Kalahari","Sonoran"] },
+  { "category":"General Knowledge","difficulty":"hard","question":"What is the currency of Mexico?","correct_answer":"Mexican peso","incorrect_answers":["Real","Dollar","Colón"] },
+  { "category":"Literature","difficulty":"hard","question":"Who wrote the novel \"1984\"?","correct_answer":"George Orwell","incorrect_answers":["Aldous Huxley","Ray Bradbury","J. D. Salinger"] },
+  { "category":"Science & Nature","difficulty":"hard","question":"Which planet has a storm known as the Great Red Spot?","correct_answer":"Jupiter","incorrect_answers":["Saturn","Neptune","Mars"] },
+  { "category":"Geography","difficulty":"hard","question":"Mount Kilimanjaro is in which country?","correct_answer":"Tanzania","incorrect_answers":["Kenya","Ethiopia","Uganda"] }
+]
