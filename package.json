@@ -1,5 +1,30 @@
 {
   "name": "daily5",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": { "@netlify/blobs": "^6.0.0" }
+  "description": "Daily Five Trivia Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node scripts/generate-daily.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playdailyfive/daily5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/playdailyfive/daily5/issues"
+  },
+  "homepage": "https://github.com/playdailyfive/daily5#readme",
+  "dependencies": {
+    "@netlify/blobs": "^6.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0"
+  }
 }
+
