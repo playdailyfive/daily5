@@ -2,6 +2,7 @@
   "day": "20250901",
   "dayIndex": 9,
   "reroll": false,
+  "source": "local-pools",
   "questions": [
     {
       "text": "What color is the sky on a clear day?",
@@ -12,7 +13,8 @@
         "Yellow"
       ],
       "correct": 2,
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "category": "General Knowledge"
     },
     {
       "text": "How many days are in a week?",
@@ -23,40 +25,44 @@
         "5"
       ],
       "correct": 0,
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which country is famous for sushi?",
+      "options": [
+        "China",
+        "Korea",
+        "Thailand",
+        "Japan"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "How many minutes are in an hour?",
+      "options": [
+        "60",
+        "120",
+        "90",
+        "30"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
     },
     {
       "text": "What gas do plants take in from the air?",
       "options": [
-        "Oxygen",
-        "Helium",
         "Nitrogen",
-        "Carbon dioxide"
-      ],
-      "correct": 3,
-      "difficulty": "medium"
-    },
-    {
-      "text": "Which ocean is the largest?",
-      "options": [
-        "Pacific Ocean",
-        "Arctic Ocean",
-        "Indian Ocean",
-        "Atlantic Ocean"
-      ],
-      "correct": 0,
-      "difficulty": "medium"
-    },
-    {
-      "text": "Which city is home to the statue called Christ the Redeemer?",
-      "options": [
-        "Lisbon",
-        "Rio de Janeiro",
-        "Buenos Aires",
-        "São Paulo"
+        "Carbon dioxide",
+        "Helium",
+        "Oxygen"
       ],
       "correct": 1,
-      "difficulty": "hard"
+      "difficulty": "hard",
+      "category": "Science & Nature"
     }
   ]
 }
