@@ -1,0 +1,10 @@
+[
+  {"category":"General Knowledge","question":"Which planet is known as the Red Planet?","correct_answer":"Mars","incorrect_answers":["Venus","Jupiter","Mercury"]},
+  {"category":"General Knowledge","question":"How many minutes are in an hour?","correct_answer":"60","incorrect_answers":["30","90","120"]},
+  {"category":"General Knowledge","question":"What is H2O commonly called?","correct_answer":"Water","incorrect_answers":["Hydrogen","Oxygen","Salt"]},
+  {"category":"General Knowledge","question":"Which ocean is the largest?","correct_answer":"Pacific","incorrect_answers":["Atlantic","Indian","Arctic"]},
+  {"category":"General Knowledge","question":"Which instrument has keys, pedals, and strings?","correct_answer":"Piano","incorrect_answers":["Violin","Flute","Drum"]},
+  {"category":"General Knowledge","question":"What gas do plants take in from the air?","correct_answer":"Carbon dioxide","incorrect_answers":["Oxygen","Nitrogen","Helium"]},
+  {"category":"General Knowledge","question":"What do you call a baby cat?","correct_answer":"Kitten","incorrect_answers":["Puppy","Cub","Calf"]},
+  {"category":"General Knowledge","question":"Which continent is Egypt in?","correct_answer":"Africa","incorrect_answers":["Asia","Europe","South America"]}
+]
