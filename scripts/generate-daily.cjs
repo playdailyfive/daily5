@@ -1,13 +1,9 @@
 /**
- * Daily Five generator (429-resilient)
- * - Sequential fetches (no parallel bursts)
- * - Exponential backoff + jitter on HTTP 429/5xx
- * - Smaller chunked pulls to be nice to OpenTDB
- * - Filters for readability and relatability
- * - Picks 2 easy, 2 medium, 1 hard (fallbacks)
- * - Deterministic option shuffle per output (seeded)
- * - Writes daily.json (+ reroll flag), updates used.json
- *
+ * Daily Five generator with local fallback
+ * - Tries OpenTDB politely (sequential + backoff)
+ * - If SKIP_API=1 or API keeps 429ing, uses local pools in /pools
+ * - Filters/cleans, avoids repeats via used.json, picks 2E/2M/1H
+ * - Deterministic option shuffle; writes daily.json (+reroll flag); updates used.json
  * Requires Node >= 20 (native fetch).
  */
 
@@ -15,13 +11,18 @@ const fs = require('fs');
 const path = require('path');
 
 // ====== TUNABLES ======
-const START_DAY = '20250824';                 // Day 1 (YYYYMMDD, ET baseline)
+const START_DAY = '20250824';
 const ET_TZ = 'America/New_York';
+const MAX_LEDGER = null;            // keep all; or set a number
+const BASE_TIMEOUT_MS = 12000;
+const MAX_RETRIES = 6;
+const BACKOFF_BASE_MS = 1000;
+const LOCAL_POOLS_DIR = path.resolve('pools'); // <-- local fallback
 
-// Keep it light; we’ll fetch in chunks
-const CHUNK_SIZES = { easy: [8, 8, 8], medium: [8, 8], hard: [8] };
-// If you want even fewer calls, reduce the arrays above.
+// Friendly chunk sizes to avoid bursts
+const CHUNK_SIZES = { easy: [8], medium: [8], hard: [8] };
 
+// Category allowlist for approachable content
 const EASY_FILTER = {
   MAX_QUESTION_LEN: 110,
   MAX_OPTION_LEN: 36,
@@ -51,11 +52,6 @@ const EASY_FILTER = {
   ])
 };
 
-const MAX_LEDGER = null;         // keep all seen hashes
-const BASE_TIMEOUT_MS = 12000;   // per request
-const MAX_RETRIES = 6;           // exponential backoff on 429/5xx
-const BACKOFF_BASE_MS = 1000;    // 1s, grows exponentially
-
 // ====== UTIL ======
 function yyyymmdd(d = new Date(), tz = ET_TZ) {
   const parts = new Intl.DateTimeFormat('en-CA', {
@@ -76,7 +72,6 @@ function dayIndexFrom(startYmd, todayYmd) {
   return 1 + diffDays;
 }
 
-// FNV-1a
 function fnv1a(str) {
   let h = 0x811c9dc5;
   for (let i = 0; i < str.length; i++) {
@@ -88,13 +83,15 @@ function fnv1a(str) {
 function normalizeText(s='') {
   return String(s).replace(/\s+/g,' ').trim().toLowerCase();
 }
-function qKey(q) { // stable key from text + correct answer
-  return fnv1a(normalizeText(q.question || q.text) + '|' + normalizeText(q.correct_answer || ''));
+function qKeyFromOTDB(q) { // key from OpenTDB shape
+  return fnv1a(normalizeText(q.question) + '|' + normalizeText(q.correct_answer));
+}
+function qKeyFromFinal(q) { // key from final shape
+  return fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct]));
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-// Fetch with backoff (handles 429 + 5xx)
 async function fetchJsonWithBackoff(url, { timeoutMs = BASE_TIMEOUT_MS } = {}) {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     const ac = new AbortController();
@@ -108,7 +105,7 @@ async function fetchJsonWithBackoff(url, { timeoutMs = BASE_TIMEOUT_MS } = {}) {
         const base = BACKOFF_BASE_MS * Math.pow(2, attempt - 1);
         const jitter = Math.floor(Math.random() * 400);
         const wait = Math.max(base + jitter, retryAfter * 1000);
-        console.warn(`HTTP ${res.status} on ${url} — backing off ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
+        console.warn(`HTTP ${res.status} on ${url} — backoff ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
         if (attempt === MAX_RETRIES) throw new Error('HTTP ' + res.status);
         await sleep(wait);
         continue;
@@ -118,12 +115,9 @@ async function fetchJsonWithBackoff(url, { timeoutMs = BASE_TIMEOUT_MS } = {}) {
       return await res.json();
     } catch (e) {
       clearTimeout(id);
-      if (e.name === 'AbortError') {
-        // timed out
-      }
       if (attempt === MAX_RETRIES) throw e;
       const wait = BACKOFF_BASE_MS * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 400);
-      console.warn(`Fetch error "${e.message}" — retrying in ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
+      console.warn(`Fetch error "${e.message}" — retry in ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
       await sleep(wait);
     }
   }
@@ -148,7 +142,7 @@ function seededShuffle(arr, seedNum) {
   return out;
 }
 
-// ====== FILTERS ======
+// Filters
 function isRelatableCategory(cat) {
   if (!cat) return true;
   return EASY_FILTER.ALLOW_CATEGORIES.has(cat);
@@ -187,132 +181,134 @@ function passEasyFilter(q) {
   return true;
 }
 
-// ====== FETCH POOLS (sequential, chunked) ======
-async function fetchPool(difficulty, chunks) {
+// Fetch OpenTDB (sequential, chunked)
+async function fetchPoolFromAPI(difficulty, chunks) {
   const all = [];
   for (const amt of chunks) {
     const url = `https://opentdb.com/api.php?amount=${amt}&type=multiple&difficulty=${difficulty}`;
     const data = await fetchJsonWithBackoff(url);
     const list = Array.isArray(data?.results) ? data.results : [];
     for (const q of list) all.push(basicClean(q));
-    // small pause between calls to be extra nice
     await sleep(300);
   }
   return all;
 }
 
-// ====== MAIN ======
+// Load local pools
+function loadLocalPool(name) {
+  const file = path.join(LOCAL_POOLS_DIR, `${name}.json`);
+  if (!fs.existsSync(file)) return [];
+  try {
+    const arr = JSON.parse(fs.readFileSync(file, 'utf8'));
+    return Array.isArray(arr) ? arr.map(basicClean) : [];
+  } catch { return []; }
+}
+
 (async () => {
   const today = yyyymmdd(new Date(), ET_TZ);
   const dayIndex = dayIndexFrom(START_DAY, today);
   const outPath = path.resolve('daily.json');
   const usedPath = path.resolve('used.json');
   const REROLL_NONCE = process.env.REROLL_NONCE || '';
+  const SKIP_API = process.env.SKIP_API === '1';
 
   // Load used ledger
   let used = {};
-  try {
-    if (fs.existsSync(usedPath)) {
-      used = JSON.parse(fs.readFileSync(usedPath, 'utf8') || '{}');
-    }
-  } catch (_) { used = {}; }
+  try { if (fs.existsSync(usedPath)) used = JSON.parse(fs.readFileSync(usedPath, 'utf8') || '{}'); }
+  catch { used = {}; }
   used.seen = used.seen || [];
 
+  let easyPool = [], medPool = [], hardPool = [];
+  let apiOk = false;
+
   try {
-    // 1) Fetch pools (sequential + chunked)
-    const easyPool   = await fetchPool('easy',   CHUNK_SIZES.easy);
-    const medPool    = await fetchPool('medium', CHUNK_SIZES.medium);
-    const hardPool   = await fetchPool('hard',   CHUNK_SIZES.hard);
-
-    // 2) Filter & de-duplicate
-    const seen = new Set(used.seen || []);
-    const dedupe = (arr) => {
-      const out = [];
-      const localSeen = new Set();
-      for (const q of arr) {
-        const key = qKey(q);
-        if (seen.has(key) || localSeen.has(key)) continue;
-        localSeen.add(key);
-        out.push(q);
-      }
-      return out;
-    };
-
-    let easy = dedupe(easyPool.filter(passEasyFilter));
-    let medium = dedupe(medPool.filter(passEasyFilter));
-    let hard = dedupe(hardPool.filter(passEasyFilter));
-
-    // Reroll nonce → reshuffle pools before picking
-    if (REROLL_NONCE) {
-      const ns = parseInt(fnv1a(String(REROLL_NONCE) + today), 16) >>> 0;
-      const mix = (arr, salt) => seededShuffle(arr, (ns ^ salt) >>> 0);
-      easy = mix(easy,   0x1111);
-      medium = mix(medium, 0x2222);
-      hard = mix(hard,   0x3333);
+    if (!SKIP_API) {
+      console.log('Trying OpenTDB…');
+      easyPool = await fetchPoolFromAPI('easy', CHUNK_SIZES.easy);
+      medPool  = await fetchPoolFromAPI('medium', CHUNK_SIZES.medium);
+      hardPool = await fetchPoolFromAPI('hard', CHUNK_SIZES.hard);
+      apiOk = true;
     }
-
-    // 3) Pick 2 easy, 2 medium, 1 hard (fallbacks)
-    const pick = (arr, n) => arr.slice(0, Math.max(0, Math.min(n, arr.length)));
-    let chosen = [
-      ...pick(easy, 2),
-      ...pick(medium, 2),
-      ...pick(hard, 1)
-    ];
-
-    if (chosen.length < 5) {
-      const already = new Set(chosen.map(q => qKey(q)));
-      const rest = [...easy, ...medium, ...hard].filter(q => !already.has(qKey(q)));
-      chosen = [...chosen, ...pick(rest, 5 - chosen.length)];
-    }
-
-    if (chosen.length < 5) throw new Error('Not enough questions after filtering');
-
-    // 4) Deterministic per-output option shuffle (today ^ nonce)
-    const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
-
-    const final = chosen.slice(0, 5).map((q, idx) => {
-      const rawOpts = [q.correct_answer, ...q.incorrect_answers];
-      const opts = seededShuffle(rawOpts, (seedBase + idx * 7) >>> 0);
-      const correctIdx = opts.indexOf(q.correct_answer);
-      return {
-        text: q.question,
-        options: opts,
-        correct: correctIdx,
-        difficulty: (q.difficulty || '').toLowerCase() || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard')
-      };
-    });
-
-    // 5) Write daily.json
-    const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), questions: final };
-    fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-    console.log('Wrote daily.json for', today, 'dayIndex', dayIndex, 'reroll', Boolean(REROLL_NONCE));
-
-    // 6) Update used.json ledger
-    const newKeys = final.map(q => fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct])));
-    const merged = [...(used.seen || []), ...newKeys];
-    used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
-    fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
-    console.log('Updated used.json with', newKeys.length, 'entries');
-
-  } catch (err) {
-    console.warn('Fetch/Build failed:', err.message, '— writing an EASY fallback for today.');
-
-    // EASY fallback (guarantees a fresh file for today even if API is unhappy)
-    const today = yyyymmdd(new Date(), ET_TZ);
-    const dayIndex = dayIndexFrom(START_DAY, today);
-    const fallback = {
-      day: today,
-      dayIndex,
-      questions: [
-        { text: "What color are bananas when ripe?", options: ["Yellow","Blue","Purple","Black"], correct: 0, difficulty: "easy" },
-        { text: "Which animal barks?", options: ["Dog","Cat","Cow","Sheep"], correct: 0, difficulty: "easy" },
-        { text: "Which planet is known as the Red Planet?", options: ["Mars","Venus","Jupiter","Mercury"], correct: 0, difficulty: "medium" },
-        { text: "How many minutes are in an hour?", options: ["60","30","90","120"], correct: 0, difficulty: "medium" },
-        { text: "Which number is a prime?", options: ["13","21","27","33"], correct: 0, difficulty: "hard" }
-      ]
-    };
-    fs.writeFileSync(path.resolve('daily.json'), JSON.stringify(fallback, null, 2));
-    console.log('Wrote fallback daily.json for', today, 'with dayIndex', dayIndex);
+  } catch (e) {
+    console.warn('OpenTDB failed:', e.message);
   }
-})();
 
+  if (!apiOk) {
+    console.log('Using LOCAL POOLS from /pools');
+    easyPool = loadLocalPool('easy');
+    medPool  = loadLocalPool('medium');
+    hardPool = loadLocalPool('hard');
+
+    if (easyPool.length + medPool.length + hardPool.length === 0) {
+      console.error('No local pools found. Aborting.');
+      process.exit(1);
+    }
+  }
+
+  const seen = new Set(used.seen || []);
+  const dedupe = (arr) => {
+    const out = [];
+    const localSeen = new Set();
+    for (const q of arr) {
+      const key = qKeyFromOTDB(q);
+      if (seen.has(key) || localSeen.has(key)) continue;
+      localSeen.add(key);
+      out.push(q);
+    }
+    return out;
+  };
+
+  let easy = dedupe(easyPool.filter(passEasyFilter));
+  let medium = dedupe(medPool.filter(passEasyFilter));
+  let hard = dedupe(hardPool.filter(passEasyFilter));
+
+  // Optional reroll reshuffle
+  if (REROLL_NONCE) {
+    const ns = parseInt(fnv1a(String(REROLL_NONCE) + today), 16) >>> 0;
+    const mix = (arr, salt) => seededShuffle(arr, (ns ^ salt) >>> 0);
+    easy = mix(easy, 0x1111);
+    medium = mix(medium, 0x2222);
+    hard = mix(hard, 0x3333);
+  }
+
+  const pick = (arr, n) => arr.slice(0, Math.max(0, Math.min(n, arr.length)));
+  let chosen = [
+    ...pick(easy, 2),
+    ...pick(medium, 2),
+    ...pick(hard, 1)
+  ];
+
+  if (chosen.length < 5) {
+    const already = new Set(chosen.map(qKeyFromOTDB));
+    const rest = [...easy, ...medium, ...hard].filter(q => !already.has(qKeyFromOTDB(q)));
+    chosen = [...chosen, ...pick(rest, 5 - chosen.length)];
+  }
+
+  if (chosen.length < 5) {
+    console.error('Not enough questions after filtering. Add more items to /pools.');
+    process.exit(1);
+  }
+
+  const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
+  const final = chosen.slice(0, 5).map((q, idx) => {
+    const rawOpts = [q.correct_answer, ...(q.incorrect_answers || [])];
+    const opts = seededShuffle(rawOpts, (seedBase + idx * 7) >>> 0);
+    return {
+      text: q.question,
+      options: opts,
+      correct: opts.indexOf(q.correct_answer),
+      difficulty: (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard')
+    };
+  });
+
+  const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), questions: final };
+  fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
+  console.log('Wrote daily.json for', today, 'dayIndex', dayIndex, 'reroll', Boolean(REROLL_NONCE));
+
+  // Update used.json ledger with final Q keys
+  const newKeys = final.map(qKeyFromFinal);
+  const merged = [...(used.seen || []), ...newKeys];
+  used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
+  fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
+  console.log('Updated used.json with', newKeys.length, 'entries');
+})();
