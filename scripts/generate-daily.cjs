@@ -1,28 +1,24 @@
 /**
- * Daily Five generator with local fallback
- * - Tries OpenTDB politely (sequential + backoff)
- * - If SKIP_API=1 or API keeps 429ing, uses local pools in /pools
- * - Filters/cleans, avoids repeats via used.json, picks 2E/2M/1H
- * - Deterministic option shuffle; writes daily.json (+reroll flag); updates used.json
- * Requires Node >= 20 (native fetch).
+ * Daily Five generator
+ * - Try OpenTDB first (primary)
+ * - If API errors / rate-limits / not enough after filtering → fallback to local pools in /pools
+ * - 2 easy, 2 medium, 1 hard
+ * - Prefer ≥2 "General Knowledge" and diversify categories
+ * - Avoid repeats via used.json ledger (hash of Q + correct)
+ * - Deterministic option order per day (and reroll nonce)
  */
 
 const fs = require('fs');
 const path = require('path');
 
-// ====== TUNABLES ======
-const START_DAY = '20250824';
+// Use global fetch if present (Node 18+/20+), otherwise polyfill with undici (if available)
+let _fetch = globalThis.fetch;
+try { if (!_fetch) _fetch = require('undici').fetch; } catch (_) {}
+if (!_fetch) throw new Error('No fetch available. Use Node 20+ or install undici.');
+
 const ET_TZ = 'America/New_York';
-const MAX_LEDGER = null;            // keep all; or set a number
-const BASE_TIMEOUT_MS = 12000;
-const MAX_RETRIES = 6;
-const BACKOFF_BASE_MS = 1000;
-const LOCAL_POOLS_DIR = path.resolve('pools'); // <-- local fallback
+const START_DAY = '20250824'; // ET baseline (YYYYMMDD)
 
-// Friendly chunk sizes to avoid bursts
-const CHUNK_SIZES = { easy: [8], medium: [8], hard: [8] };
-
-// Category allowlist for approachable content
 const EASY_FILTER = {
   MAX_QUESTION_LEN: 110,
   MAX_OPTION_LEN: 36,
@@ -39,7 +35,7 @@ const EASY_FILTER = {
     /\b(nth|[0-9]{1,4}(st|nd|rd|th))\b.*\bcentury\b/i
   ],
   ALLOW_CATEGORIES: new Set([
-    'General Knowledge',
+    'General Knowledge',                 // we prefer this
     'Entertainment: Film',
     'Entertainment: Music',
     'Entertainment: Television',
@@ -52,113 +48,66 @@ const EASY_FILTER = {
   ])
 };
 
-// ====== UTIL ======
+const FETCH_SIZES = { easy: 30, medium: 26, hard: 22 };
+const MAX_LEDGER = null; // keep all
+const RETRIES = 3;
+const BASE_TIMEOUT_MS = 9000;
+
+// ---------- utils ----------
 function yyyymmdd(d = new Date(), tz = ET_TZ) {
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'
-  }).formatToParts(d).reduce((a, p) => (a[p.type] = p.value, a), {});
+  const parts = new Intl.DateTimeFormat('en-CA',{
+    timeZone:tz, year:'numeric', month:'2-digit', day:'2-digit'
+  }).formatToParts(d).reduce((a,p)=>(a[p.type]=p.value,a),{});
   return `${parts.year}${parts.month}${parts.day}`;
 }
-function toUTCDate(yyyyMMdd) {
-  const y = Number(yyyyMMdd.slice(0,4));
-  const m = Number(yyyyMMdd.slice(4,6));
-  const d = Number(yyyyMMdd.slice(6,8));
-  return new Date(Date.UTC(y, m - 1, d));
+function toUTCDate(yyyyMMdd){
+  const y=+yyyyMMdd.slice(0,4), m=+yyyyMMdd.slice(4,6), d=+yyyyMMdd.slice(6,8);
+  return new Date(Date.UTC(y,m-1,d));
 }
-function dayIndexFrom(startYmd, todayYmd) {
-  const diffDays = Math.max(0, Math.round(
-    (toUTCDate(todayYmd) - toUTCDate(startYmd)) / 86400000
-  ));
-  return 1 + diffDays;
+function dayIndexFrom(start,today){
+  const diff = Math.max(0, Math.round((toUTCDate(today)-toUTCDate(start))/86400000));
+  return 1+diff;
 }
+function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
 
-function fnv1a(str) {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < str.length; i++) {
-    h ^= str.charCodeAt(i);
-    h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
-  }
-  return ('0000000' + h.toString(16)).slice(-8);
-}
-function normalizeText(s='') {
-  return String(s).replace(/\s+/g,' ').trim().toLowerCase();
-}
-function qKeyFromOTDB(q) { // key from OpenTDB shape
-  return fnv1a(normalizeText(q.question) + '|' + normalizeText(q.correct_answer));
-}
-function qKeyFromFinal(q) { // key from final shape
-  return fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct]));
-}
-
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-async function fetchJsonWithBackoff(url, { timeoutMs = BASE_TIMEOUT_MS } = {}) {
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    const ac = new AbortController();
-    const id = setTimeout(() => ac.abort(), timeoutMs);
-    try {
-      const res = await fetch(url, { signal: ac.signal });
+async function fetchJson(url, { timeoutMs=BASE_TIMEOUT_MS, retries=RETRIES } = {}){
+  for(let a=1;a<=retries;a++){
+    const ac=new AbortController();
+    const id=setTimeout(()=>ac.abort(), timeoutMs);
+    try{
+      const res=await _fetch(url,{signal:ac.signal});
       clearTimeout(id);
-
-      if (res.status === 429 || (res.status >= 500 && res.status <= 599)) {
-        const retryAfter = Number(res.headers.get('retry-after')) || 0;
-        const base = BACKOFF_BASE_MS * Math.pow(2, attempt - 1);
-        const jitter = Math.floor(Math.random() * 400);
-        const wait = Math.max(base + jitter, retryAfter * 1000);
-        console.warn(`HTTP ${res.status} on ${url} — backoff ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
-        if (attempt === MAX_RETRIES) throw new Error('HTTP ' + res.status);
-        await sleep(wait);
-        continue;
-      }
-
-      if (!res.ok) throw new Error('HTTP ' + res.status);
+      if(!res.ok) throw new Error('HTTP '+res.status);
       return await res.json();
-    } catch (e) {
+    }catch(e){
       clearTimeout(id);
-      if (attempt === MAX_RETRIES) throw e;
-      const wait = BACKOFF_BASE_MS * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 400);
-      console.warn(`Fetch error "${e.message}" — retry in ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
-      await sleep(wait);
+      if(a===retries) throw e;
+      await sleep(1000*a);
     }
   }
 }
 
-// PRNG + shuffle
-function mulberry32(seed) {
-  return function() {
-    let t = seed += 0x6D2B79F5;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-function seededShuffle(arr, seedNum) {
-  const rand = mulberry32(seedNum >>> 0);
-  const out = [...arr];
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
+function fnv1a(str){
+  let h=0x811c9dc5>>>0;
+  for(let i=0;i<str.length;i++){
+    h^=str.charCodeAt(i);
+    h=(h+((h<<1)+(h<<4)+(h<<7)+(h<<8)+(h<<24)))>>>0;
   }
+  return ('0000000'+h.toString(16)).slice(-8);
+}
+function normalizeText(s=''){ return String(s).replace(/\s+/g,' ').trim().toLowerCase(); }
+function qKey(q){ return fnv1a(normalizeText(q.question||q.text)+'|'+normalizeText(q.correct_answer||'')); }
+
+function mulberry32(seed){ return function(){ let t=seed+=0x6D2B79F5; t=Math.imul(t^(t>>>15),t|1); t^=t+Math.imul(t^(t>>>7),t|61); return ((t^(t>>>14))>>>0)/4294967296; }; }
+function seededShuffle(arr,seedNum){
+  const rand=mulberry32(seedNum>>>0), out=[...arr];
+  for(let i=out.length-1;i>0;i--){ const j=Math.floor(rand()*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
   return out;
 }
 
-// Filters
-function isRelatableCategory(cat) {
-  if (!cat) return true;
-  return EASY_FILTER.ALLOW_CATEGORIES.has(cat);
-}
-function hasBannedPhrase(text) {
-  return EASY_FILTER.BAN_PATTERNS.some(rx => rx.test(text));
-}
-function withinLength(q) {
-  const qlen = (q.question || q.text || '').trim().length;
-  if (qlen > EASY_FILTER.MAX_QUESTION_LEN) return false;
-  const all = [q.correct_answer, ...(q.incorrect_answers || [])].filter(Boolean);
-  return all.every(opt => String(opt).trim().length <= EASY_FILTER.MAX_OPTION_LEN);
-}
-function basicClean(q) {
-  const decode = (s='') => s
-    .replace(/&quot;/g, '"').replace(/&#039;/g,"'")
+function basicClean(q){
+  const decode=(s='')=>s
+    .replace(/&quot;/g,'"').replace(/&#039;/g,"'")
     .replace(/&amp;/g,'&').replace(/&rsquo;/g,"'")
     .replace(/&ldquo;/g,'"').replace(/&rdquo;/g,'"')
     .replace(/&eacute;/g,'é').replace(/&hellip;/g,'…')
@@ -167,148 +116,179 @@ function basicClean(q) {
   return {
     ...q,
     category: q.category,
-    question: decode(q.question || q.text || ''),
-    correct_answer: decode(q.correct_answer || ''),
-    incorrect_answers: (q.incorrect_answers || []).map(decode)
+    question: decode(q.question||q.text||''),
+    correct_answer: decode(q.correct_answer||''),
+    incorrect_answers: (q.incorrect_answers||[]).map(decode)
   };
 }
-function passEasyFilter(q) {
-  const qt = q.question || '';
-  if (!withinLength(q)) return false;
-  if (hasBannedPhrase(qt)) return false;
-  if (!isRelatableCategory(q.category)) return false;
-  if ((qt.match(/[A-Z]/g) || []).length > (qt.match(/[a-z]/g) || []).length * 2) return false;
+function withinLength(q){
+  const qlen=(q.question||q.text||'').trim().length;
+  if(qlen>EASY_FILTER.MAX_QUESTION_LEN) return false;
+  const all=[q.correct_answer,...(q.incorrect_answers||[])].filter(Boolean);
+  return all.every(o=>String(o).trim().length<=EASY_FILTER.MAX_OPTION_LEN);
+}
+function hasBannedPhrase(text){ return EASY_FILTER.BAN_PATTERNS.some(rx=>rx.test(text)); }
+function isRelatableCategory(cat){ return !cat || EASY_FILTER.ALLOW_CATEGORIES.has(cat); }
+function passEasyFilter(q){
+  const qt=q.question||'';
+  if(!withinLength(q)) return false;
+  if(hasBannedPhrase(qt)) return false;
+  if(!isRelatableCategory(q.category)) return false;
+  if((qt.match(/[A-Z]/g)||[]).length > (qt.match(/[a-z]/g)||[]).length*2) return false;
   return true;
 }
 
-// Fetch OpenTDB (sequential, chunked)
-async function fetchPoolFromAPI(difficulty, chunks) {
-  const all = [];
-  for (const amt of chunks) {
-    const url = `https://opentdb.com/api.php?amount=${amt}&type=multiple&difficulty=${difficulty}`;
-    const data = await fetchJsonWithBackoff(url);
-    const list = Array.isArray(data?.results) ? data.results : [];
-    for (const q of list) all.push(basicClean(q));
-    await sleep(300);
+// ---------- sources ----------
+async function fetchPoolFromAPI(difficulty, amount){
+  const url=`https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}`;
+  const data=await fetchJson(url);
+  const list=Array.isArray(data?.results)?data.results:[];
+  return list.map(basicClean);
+}
+function readLocalPool(difficulty){
+  const p=path.resolve(`pools/${difficulty}.json`);
+  if(!fs.existsSync(p)) return [];
+  try{ return JSON.parse(fs.readFileSync(p,'utf8')||'[]').map(basicClean); }
+  catch(_){ return []; }
+}
+
+// pick helpers
+function dedupeAgainstLedger(arr, seen){
+  const out=[], local=new Set();
+  for(const q of arr){
+    const key=qKey(q);
+    if(seen.has(key) || local.has(key)) continue;
+    local.add(key); out.push(q);
   }
-  return all;
+  return out;
+}
+function preferGeneralKnowledge(list){
+  // sort so GK floats up, but keep original relative order otherwise
+  return [...list].sort((a,b)=>{
+    const ag = (a.category||'')==='General Knowledge';
+    const bg = (b.category||'')==='General Knowledge';
+    return (ag===bg)?0 : ag? -1 : 1;
+  });
+}
+function ensureDiversity(chosen, pool){
+  // if all 5 are same category (rare), try to swap last with another category
+  const cats=chosen.map(q=>q.category||'');
+  const allSame=cats.every(c=>c===cats[0]);
+  if(!allSame) return chosen;
+  const usedKeys=new Set(chosen.map(q=>qKey(q)));
+  const alt = pool.find(q=>q.category && q.category!==cats[0] && !usedKeys.has(qKey(q)));
+  if(alt){ chosen[chosen.length-1]=alt; }
+  return chosen;
+}
+function ensureAtLeastTwoGK(chosen, pool){
+  const gkCount=chosen.filter(q=> (q.category||'')==='General Knowledge').length;
+  if(gkCount>=2) return chosen;
+  const usedKeys=new Set(chosen.map(q=>qKey(q)));
+  const gkCandidates=pool.filter(q=> (q.category||'')==='General Knowledge' && !usedKeys.has(qKey(q)));
+  let idxToSwap = chosen.findIndex(q=> (q.category||'')!=='General Knowledge');
+  if(idxToSwap>=0 && gkCandidates.length){
+    chosen[idxToSwap]=gkCandidates[0];
+  }
+  return chosen;
 }
 
-// Load local pools
-function loadLocalPool(name) {
-  const file = path.join(LOCAL_POOLS_DIR, `${name}.json`);
-  if (!fs.existsSync(file)) return [];
-  try {
-    const arr = JSON.parse(fs.readFileSync(file, 'utf8'));
-    return Array.isArray(arr) ? arr.map(basicClean) : [];
-  } catch { return []; }
-}
-
-(async () => {
+// ---------- main ----------
+(async ()=>{
   const today = yyyymmdd(new Date(), ET_TZ);
   const dayIndex = dayIndexFrom(START_DAY, today);
   const outPath = path.resolve('daily.json');
   const usedPath = path.resolve('used.json');
   const REROLL_NONCE = process.env.REROLL_NONCE || '';
-  const SKIP_API = process.env.SKIP_API === '1';
 
-  // Load used ledger
-  let used = {};
-  try { if (fs.existsSync(usedPath)) used = JSON.parse(fs.readFileSync(usedPath, 'utf8') || '{}'); }
-  catch { used = {}; }
+  // load ledger
+  let used={};
+  try{ if(fs.existsSync(usedPath)) used=JSON.parse(fs.readFileSync(usedPath,'utf8')||'{}'); } catch(_){ used={}; }
   used.seen = used.seen || [];
+  const seen = new Set(used.seen);
 
-  let easyPool = [], medPool = [], hardPool = [];
-  let apiOk = false;
+  // try API first, then fallback to local pools if needed
+  let easy=[], medium=[], hard=[];
+  let fromAPI = true;
+  try{
+    const [ep, mp, hp] = await Promise.all([
+      fetchPoolFromAPI('easy',   FETCH_SIZES.easy),
+      fetchPoolFromAPI('medium', FETCH_SIZES.medium),
+      fetchPoolFromAPI('hard',   FETCH_SIZES.hard)
+    ]);
+    easy   = dedupeAgainstLedger(ep.filter(passEasyFilter), seen);
+    medium = dedupeAgainstLedger(mp.filter(passEasyFilter), seen);
+    hard   = dedupeAgainstLedger(hp.filter(passEasyFilter), seen);
 
-  try {
-    if (!SKIP_API) {
-      console.log('Trying OpenTDB…');
-      easyPool = await fetchPoolFromAPI('easy', CHUNK_SIZES.easy);
-      medPool  = await fetchPoolFromAPI('medium', CHUNK_SIZES.medium);
-      hardPool = await fetchPoolFromAPI('hard', CHUNK_SIZES.hard);
-      apiOk = true;
+    // if the API gave us too few after filtering, fallback to pools
+    if ([easy.length, medium.length, hard.length].some(n=>n===0)) throw new Error('API produced too few questions after filtering');
+  }catch(err){
+    fromAPI = false;
+    console.warn('OpenTDB failed or insufficient:', err.message, '— using LOCAL POOLS');
+    const ep = readLocalPool('easy');
+    const mp = readLocalPool('medium');
+    const hp = readLocalPool('hard');
+
+    if (!ep.length && !mp.length && !hp.length) {
+      throw new Error('No local pools found. Create pools/easy.json, pools/medium.json, pools/hard.json');
     }
-  } catch (e) {
-    console.warn('OpenTDB failed:', e.message);
+
+    easy   = dedupeAgainstLedger(ep.filter(passEasyFilter), seen);
+    medium = dedupeAgainstLedger(mp.filter(passEasyFilter), seen);
+    hard   = dedupeAgainstLedger(hp.filter(passEasyFilter), seen);
   }
 
-  if (!apiOk) {
-    console.log('Using LOCAL POOLS from /pools');
-    easyPool = loadLocalPool('easy');
-    medPool  = loadLocalPool('medium');
-    hardPool = loadLocalPool('hard');
+  // prefer GK inside each bucket
+  easy   = preferGeneralKnowledge(easy);
+  medium = preferGeneralKnowledge(medium);
+  hard   = preferGeneralKnowledge(hard);
 
-    if (easyPool.length + medPool.length + hardPool.length === 0) {
-      console.error('No local pools found. Aborting.');
-      process.exit(1);
-    }
-  }
-
-  const seen = new Set(used.seen || []);
-  const dedupe = (arr) => {
-    const out = [];
-    const localSeen = new Set();
-    for (const q of arr) {
-      const key = qKeyFromOTDB(q);
-      if (seen.has(key) || localSeen.has(key)) continue;
-      localSeen.add(key);
-      out.push(q);
-    }
-    return out;
-  };
-
-  let easy = dedupe(easyPool.filter(passEasyFilter));
-  let medium = dedupe(medPool.filter(passEasyFilter));
-  let hard = dedupe(hardPool.filter(passEasyFilter));
-
-  // Optional reroll reshuffle
-  if (REROLL_NONCE) {
-    const ns = parseInt(fnv1a(String(REROLL_NONCE) + today), 16) >>> 0;
-    const mix = (arr, salt) => seededShuffle(arr, (ns ^ salt) >>> 0);
-    easy = mix(easy, 0x1111);
-    medium = mix(medium, 0x2222);
-    hard = mix(hard, 0x3333);
-  }
-
-  const pick = (arr, n) => arr.slice(0, Math.max(0, Math.min(n, arr.length)));
+  const pick = (arr,n)=>arr.slice(0, Math.max(0, Math.min(n, arr.length)));
   let chosen = [
-    ...pick(easy, 2),
-    ...pick(medium, 2),
-    ...pick(hard, 1)
+    ...pick(easy,2),
+    ...pick(medium,2),
+    ...pick(hard,1),
   ];
 
+  // top up if needed
   if (chosen.length < 5) {
-    const already = new Set(chosen.map(qKeyFromOTDB));
-    const rest = [...easy, ...medium, ...hard].filter(q => !already.has(qKeyFromOTDB(q)));
-    chosen = [...chosen, ...pick(rest, 5 - chosen.length)];
+    const already=new Set(chosen.map(q=>qKey(q)));
+    const rest=[...easy,...medium,...hard].filter(q=>!already.has(qKey(q)));
+    chosen = [...chosen, ...pick(rest, 5-chosen.length)];
   }
+  if (chosen.length < 5) throw new Error('Not enough questions after filtering/dedupe.');
 
-  if (chosen.length < 5) {
-    console.error('Not enough questions after filtering. Add more items to /pools.');
-    process.exit(1);
-  }
+  // diversity + GK floor
+  const allFilteredPool = [...easy, ...medium, ...hard];
+  chosen = ensureAtLeastTwoGK(chosen, allFilteredPool);
+  chosen = ensureDiversity(chosen, allFilteredPool);
 
-  const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
-  const final = chosen.slice(0, 5).map((q, idx) => {
-    const rawOpts = [q.correct_answer, ...(q.incorrect_answers || [])];
-    const opts = seededShuffle(rawOpts, (seedBase + idx * 7) >>> 0);
+  // seeded option shuffle per day (+ nonce)
+  const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16)>>>0) : 0);
+  const final = chosen.slice(0,5).map((q,idx)=>{
+    const rawOpts=[q.correct_answer, ...(q.incorrect_answers||[])];
+    const opts = seededShuffle(rawOpts, (seedBase + idx*7)>>>0);
+    const correctIdx = opts.indexOf(q.correct_answer);
     return {
       text: q.question,
       options: opts,
-      correct: opts.indexOf(q.correct_answer),
-      difficulty: (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard')
+      correct: correctIdx,
+      difficulty: (idx<2?'easy': idx<4?'medium':'hard'),
+      category: q.category || ''
     };
   });
 
-  const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), questions: final };
-  fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-  console.log('Wrote daily.json for', today, 'dayIndex', dayIndex, 'reroll', Boolean(REROLL_NONCE));
+  // write daily.json
+  const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), source: fromAPI?'opentdb':'local-pools', questions: final };
+  fs.writeFileSync(outPath, JSON.stringify(payload,null,2));
+  console.log('Wrote daily.json', { day: today, dayIndex, source: payload.source });
 
-  // Update used.json ledger with final Q keys
-  const newKeys = final.map(qKeyFromFinal);
-  const merged = [...(used.seen || []), ...newKeys];
+  // update ledger
+  const newKeys = final.map(q=>fnv1a(normalizeText(q.text)+'|'+normalizeText(q.options[q.correct])));
+  const merged = [...(used.seen||[]), ...newKeys];
   used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
-  fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
+  fs.writeFileSync(usedPath, JSON.stringify(used,null,2));
   console.log('Updated used.json with', newKeys.length, 'entries');
-})();
+})().catch(err=>{
+  console.error('Build failed:', err.message);
+  process.exit(1);
+});
