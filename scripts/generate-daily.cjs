@@ -1,34 +1,26 @@
 /**
- * Generate Daily Five:
- * - Fetch pools from OpenTDB (by difficulty)
- * - Filter for readability/ease (length, banned phrases, category allowlist)
- * - Avoid repeats via used.json (stable FNV hash)
- * - Prefer >=2 General Knowledge, then diversify categories
- * - Pick 2 easy, 2 medium, 1 hard (fallbacks)
- * - Deterministically shuffle options per output (seeded; respects REROLL_NONCE)
- * - Write daily.json (with day/dayIndex/difficulty tags + reroll flag)
- * - Update used.json ledger
- * - Optional LLM fallback if OpenTDB is short (requires OPENAI_API_KEY)
+ * Daily Five generator (429-resilient)
+ * - Sequential fetches (no parallel bursts)
+ * - Exponential backoff + jitter on HTTP 429/5xx
+ * - Smaller chunked pulls to be nice to OpenTDB
+ * - Filters for readability and relatability
+ * - Picks 2 easy, 2 medium, 1 hard (fallbacks)
+ * - Deterministic option shuffle per output (seeded)
+ * - Writes daily.json (+ reroll flag), updates used.json
+ *
+ * Requires Node >= 20 (native fetch).
  */
 
 const fs = require('fs');
 const path = require('path');
 
-// --- fetch polyfill (works on any Node) ---
-let fetchRef = globalThis.fetch;
-if (!fetchRef) {
-  try {
-    // undici works with CommonJS require()
-    fetchRef = require('undici').fetch;
-  } catch (e) {
-    console.error('Missing fetch. Run: npm i undici');
-    process.exit(1);
-  }
-}
-
 // ====== TUNABLES ======
 const START_DAY = '20250824';                 // Day 1 (YYYYMMDD, ET baseline)
 const ET_TZ = 'America/New_York';
+
+// Keep it light; we’ll fetch in chunks
+const CHUNK_SIZES = { easy: [8, 8, 8], medium: [8, 8], hard: [8] };
+// If you want even fewer calls, reduce the arrays above.
 
 const EASY_FILTER = {
   MAX_QUESTION_LEN: 110,
@@ -45,29 +37,24 @@ const EASY_FILTER = {
     /\bprime\s+number\b/i,
     /\b(nth|[0-9]{1,4}(st|nd|rd|th))\b.*\bcentury\b/i
   ],
-  // Allowed, friendly categories. We heavily favor "General Knowledge".
   ALLOW_CATEGORIES: new Set([
     'General Knowledge',
-    'Geography',
-    'Science & Nature',
     'Entertainment: Film',
     'Entertainment: Music',
     'Entertainment: Television',
     'Entertainment: Books',
+    'Entertainment: Video Games',
+    'Science & Nature',
+    'Geography',
     'Sports',
     'Celebrities'
   ])
 };
 
-// How many to fetch per difficulty before filtering
-const FETCH_SIZES = { easy: 30, medium: 26, hard: 20 };
-
-// Used ledger: keep everything (tiny file). If you want to trim, set MAX_LEDGER.
-const MAX_LEDGER = null; // or a number, e.g., 2000
-
-// Retry/backoff
-const RETRIES = 3;
-const BASE_TIMEOUT_MS = 9000;
+const MAX_LEDGER = null;         // keep all seen hashes
+const BASE_TIMEOUT_MS = 12000;   // per request
+const MAX_RETRIES = 6;           // exponential backoff on 429/5xx
+const BACKOFF_BASE_MS = 1000;    // 1s, grows exponentially
 
 // ====== UTIL ======
 function yyyymmdd(d = new Date(), tz = ET_TZ) {
@@ -89,7 +76,7 @@ function dayIndexFrom(startYmd, todayYmd) {
   return 1 + diffDays;
 }
 
-// Simple FNV-1a 32-bit hash for dedupe/ledger
+// FNV-1a
 function fnv1a(str) {
   let h = 0x811c9dc5;
   for (let i = 0; i < str.length; i++) {
@@ -101,27 +88,43 @@ function fnv1a(str) {
 function normalizeText(s='') {
   return String(s).replace(/\s+/g,' ').trim().toLowerCase();
 }
-function qKeyFromRaw(question, correct) {
-  return fnv1a(normalizeText(question) + '|' + normalizeText(correct));
-}
-function qKey(q) { // for OpenTDB objects (question + correct)
-  return qKeyFromRaw(q.question || q.text || '', q.correct_answer || '');
+function qKey(q) { // stable key from text + correct answer
+  return fnv1a(normalizeText(q.question || q.text) + '|' + normalizeText(q.correct_answer || ''));
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-async function fetchJson(url, { timeoutMs = BASE_TIMEOUT_MS, retries = RETRIES } = {}) {
-  for (let attempt = 1; attempt <= retries; attempt++) {
+
+// Fetch with backoff (handles 429 + 5xx)
+async function fetchJsonWithBackoff(url, { timeoutMs = BASE_TIMEOUT_MS } = {}) {
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     const ac = new AbortController();
     const id = setTimeout(() => ac.abort(), timeoutMs);
     try {
-      const res = await fetchRef(url, { signal: ac.signal });
+      const res = await fetch(url, { signal: ac.signal });
       clearTimeout(id);
+
+      if (res.status === 429 || (res.status >= 500 && res.status <= 599)) {
+        const retryAfter = Number(res.headers.get('retry-after')) || 0;
+        const base = BACKOFF_BASE_MS * Math.pow(2, attempt - 1);
+        const jitter = Math.floor(Math.random() * 400);
+        const wait = Math.max(base + jitter, retryAfter * 1000);
+        console.warn(`HTTP ${res.status} on ${url} — backing off ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
+        if (attempt === MAX_RETRIES) throw new Error('HTTP ' + res.status);
+        await sleep(wait);
+        continue;
+      }
+
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return await res.json();
     } catch (e) {
       clearTimeout(id);
-      if (attempt === retries) throw e;
-      await sleep(1000 * attempt);
+      if (e.name === 'AbortError') {
+        // timed out
+      }
+      if (attempt === MAX_RETRIES) throw e;
+      const wait = BACKOFF_BASE_MS * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 400);
+      console.warn(`Fetch error "${e.message}" — retrying in ${wait}ms (attempt ${attempt}/${MAX_RETRIES})`);
+      await sleep(wait);
     }
   }
 }
@@ -147,7 +150,7 @@ function seededShuffle(arr, seedNum) {
 
 // ====== FILTERS ======
 function isRelatableCategory(cat) {
-  if (!cat) return true; // when missing, don’t exclude
+  if (!cat) return true;
   return EASY_FILTER.ALLOW_CATEGORIES.has(cat);
 }
 function hasBannedPhrase(text) {
@@ -160,7 +163,6 @@ function withinLength(q) {
   return all.every(opt => String(opt).trim().length <= EASY_FILTER.MAX_OPTION_LEN);
 }
 function basicClean(q) {
-  // decode common HTML entities from OpenTDB
   const decode = (s='') => s
     .replace(/&quot;/g, '"').replace(/&#039;/g,"'")
     .replace(/&amp;/g,'&').replace(/&rsquo;/g,"'")
@@ -181,73 +183,22 @@ function passEasyFilter(q) {
   if (!withinLength(q)) return false;
   if (hasBannedPhrase(qt)) return false;
   if (!isRelatableCategory(q.category)) return false;
-  // avoid “trick” capitalization like ALL CAPS
   if ((qt.match(/[A-Z]/g) || []).length > (qt.match(/[a-z]/g) || []).length * 2) return false;
   return true;
 }
 
-// ====== FETCH POOLS ======
-async function fetchPool(difficulty, amount) {
-  const url = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}`;
-  const data = await fetchJson(url);
-  const list = Array.isArray(data?.results) ? data.results : [];
-  return list.map(basicClean);
-}
-
-// ====== LLM BACKUP (optional) ======
-async function generateWithLLM({ count = 24 } = {}) {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) throw new Error('OPENAI_API_KEY missing');
-
-  const sys = `You generate family-friendly pub-quiz questions.
-Rules:
-- Focus on broad, everyday knowledge. Strongly prefer "General Knowledge".
-- Avoid niche gaming/anime/lore, ultra-specific dates, and trick questions.
-- Keep questions <= 110 chars, options <= 36 chars.
-- 4 options, exactly 1 correct (by index 0..3).
-- Return ONLY JSON array with objects:
-  {"text": "...", "options": ["A","B","C","D"], "correct": 0, "category": "General Knowledge", "difficulty": "easy|medium|hard"}
-Generate at least ${count} items; skew EASY, then some MEDIUM, rare HARD.`;
-
-  const payload = {
-    model: 'gpt-4o-mini',
-    temperature: 0.7,
-    messages: [
-      { role: 'system', content: sys },
-      { role: 'user', content: 'Output JSON array only. Keep it broad and friendly.' }
-    ],
-    response_format: { type: 'json_object' }
-  };
-
-  const res = await fetchRef('https://api.openai.com/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  });
-  if (!res.ok) throw new Error('LLM HTTP ' + res.status);
-  const data = await res.json();
-  const raw = data?.choices?.[0]?.message?.content || '[]';
-  let parsed = [];
-  try { parsed = JSON.parse(raw); } catch {
-    const m = raw.match(/\[[\s\S]*\]/);
-    if (m) parsed = JSON.parse(m[0]);
+// ====== FETCH POOLS (sequential, chunked) ======
+async function fetchPool(difficulty, chunks) {
+  const all = [];
+  for (const amt of chunks) {
+    const url = `https://opentdb.com/api.php?amount=${amt}&type=multiple&difficulty=${difficulty}`;
+    const data = await fetchJsonWithBackoff(url);
+    const list = Array.isArray(data?.results) ? data.results : [];
+    for (const q of list) all.push(basicClean(q));
+    // small pause between calls to be extra nice
+    await sleep(300);
   }
-  if (!Array.isArray(parsed)) parsed = [];
-
-  // Normalize to our internal OpenTDB-like shape
-  return parsed.map(q => ({
-    category: q.category || 'General Knowledge',
-    question: q.text,
-    correct_answer: (q.options || [])[q.correct],
-    incorrect_answers: (q.options || []).filter((_, idx) => idx !== q.correct),
-    difficulty: (q.difficulty || 'easy').toLowerCase()
-  }));
-}
-function validGen(q) {
-  if (!q || !q.question || !q.correct_answer || !Array.isArray(q.incorrect_answers)) return false;
-  if (q.incorrect_answers.length !== 3) return false;
-  if (!isRelatableCategory(q.category)) return false;
-  return passEasyFilter(q);
+  return all;
 }
 
 // ====== MAIN ======
@@ -256,8 +207,6 @@ function validGen(q) {
   const dayIndex = dayIndexFrom(START_DAY, today);
   const outPath = path.resolve('daily.json');
   const usedPath = path.resolve('used.json');
-
-  // Reroll support (manual dispatch). Any non-empty nonce will force different selection.
   const REROLL_NONCE = process.env.REROLL_NONCE || '';
 
   // Load used ledger
@@ -270,14 +219,12 @@ function validGen(q) {
   used.seen = used.seen || [];
 
   try {
-    // 1) Fetch pools
-    const [easyPool, medPool, hardPool] = await Promise.all([
-      fetchPool('easy', FETCH_SIZES.easy),
-      fetchPool('medium', FETCH_SIZES.medium),
-      fetchPool('hard', FETCH_SIZES.hard)
-    ]);
+    // 1) Fetch pools (sequential + chunked)
+    const easyPool   = await fetchPool('easy',   CHUNK_SIZES.easy);
+    const medPool    = await fetchPool('medium', CHUNK_SIZES.medium);
+    const hardPool   = await fetchPool('hard',   CHUNK_SIZES.hard);
 
-    // 2) Filter & de-duplicate against used.json
+    // 2) Filter & de-duplicate
     const seen = new Set(used.seen || []);
     const dedupe = (arr) => {
       const out = [];
@@ -291,133 +238,47 @@ function validGen(q) {
       return out;
     };
 
-    const ef = easyPool.filter(passEasyFilter);
-    const mf = medPool.filter(passEasyFilter);
-    const hf = hardPool.filter(passEasyFilter);
+    let easy = dedupe(easyPool.filter(passEasyFilter));
+    let medium = dedupe(medPool.filter(passEasyFilter));
+    let hard = dedupe(hardPool.filter(passEasyFilter));
 
-    let easy = dedupe(ef);
-    let medium = dedupe(mf);
-    let hard = dedupe(hf);
-
-    // 2b) Prefer "General Knowledge" by moving them to the front of each pool
-    const favorGK = (arr) => {
-      const gk = arr.filter(q => (q.category || '').toLowerCase() === 'general knowledge');
-      const rest = arr.filter(q => (q.category || '').toLowerCase() !== 'general knowledge');
-      return [...gk, ...rest];
-    };
-    easy = favorGK(easy);
-    medium = favorGK(medium);
-
-    // 2c) If rerolling, reshuffle pools with nonce so repeated runs pick different items
+    // Reroll nonce → reshuffle pools before picking
     if (REROLL_NONCE) {
-      const nonceSeed = parseInt(fnv1a(String(REROLL_NONCE) + today), 16) >>> 0;
-      const mix = (arr, salt) => seededShuffle(arr, (nonceSeed ^ salt) >>> 0);
-      easy = mix(easy, 0x1111);
+      const ns = parseInt(fnv1a(String(REROLL_NONCE) + today), 16) >>> 0;
+      const mix = (arr, salt) => seededShuffle(arr, (ns ^ salt) >>> 0);
+      easy = mix(easy,   0x1111);
       medium = mix(medium, 0x2222);
-      hard = mix(hard, 0x3333);
+      hard = mix(hard,   0x3333);
     }
 
-    // 3) Choose with GK guarantee & category diversity
+    // 3) Pick 2 easy, 2 medium, 1 hard (fallbacks)
     const pick = (arr, n) => arr.slice(0, Math.max(0, Math.min(n, arr.length)));
+    let chosen = [
+      ...pick(easy, 2),
+      ...pick(medium, 2),
+      ...pick(hard, 1)
+    ];
 
-    // Ensure >= 2 GK total (draw from easy/medium first)
-    const isGK = (q) => (q.category || '').toLowerCase() === 'general knowledge';
-    const needGK = 2;
-
-    const easyGK = easy.filter(isGK);
-    const medGK  = medium.filter(isGK);
-    const gkPicks = [...pick(easyGK, needGK), ...pick(medGK, Math.max(0, needGK - Math.min(needGK, easyGK.length)))];
-    const uniqueGK = [];
-    const seenKeysGK = new Set();
-    for (const q of gkPicks) {
-      const k = qKey(q);
-      if (!seenKeysGK.has(k) && uniqueGK.length < needGK) {
-        seenKeysGK.add(k);
-        uniqueGK.push(q);
-      }
+    if (chosen.length < 5) {
+      const already = new Set(chosen.map(q => qKey(q)));
+      const rest = [...easy, ...medium, ...hard].filter(q => !already.has(qKey(q)));
+      chosen = [...chosen, ...pick(rest, 5 - chosen.length)];
     }
 
-    // Fill remaining slots respecting difficulty targets: 2 easy, 2 medium, 1 hard
-    const chosen = [];
+    if (chosen.length < 5) throw new Error('Not enough questions after filtering');
 
-    // Place guaranteed GK first (they may be easy or medium)
-    for (const q of uniqueGK) {
-      if (!chosen.find(x => qKey(x) === qKey(q))) chosen.push(q);
-    }
-
-    // Helper to add from a pool while avoiding duplicates and overfilling
-    const addFrom = (pool, howMany) => {
-      for (const q of pool) {
-        if (chosen.length >= 5) break;
-        const k = qKey(q);
-        if (chosen.find(x => qKey(x) === k)) continue;
-        chosen.push(q);
-        if (--howMany <= 0) break;
-      }
-    };
-
-    // Make working copies that exclude already-chosen GK
-    const dropChosen = (arr) => arr.filter(q => !chosen.find(x => qKey(x) === qKey(q)));
-    let easyAvail = dropChosen(easy);
-    let medAvail  = dropChosen(medium);
-    let hardAvail = dropChosen(hard);
-
-    // Top-up to targets
-    addFrom(easyAvail, 2);  // aim for 2 easy total
-    easyAvail = dropChosen(easyAvail);
-
-    addFrom(medAvail, 2);   // aim for 2 medium total
-    medAvail = dropChosen(medAvail);
-
-    addFrom(hardAvail, 1);  // aim for 1 hard
-    hardAvail = dropChosen(hardAvail);
-
-    // If still short, fill from what's left (easy→medium→hard)
-    const remainder = [...easyAvail, ...medAvail, ...hardAvail];
-    addFrom(remainder, 5 - chosen.length);
-
-    // If still short, try LLM fallback
-    if (chosen.length < 5 && process.env.OPENAI_API_KEY) {
-      try {
-        console.log('Attempting LLM fallback…');
-        const gen = await generateWithLLM({ count: 24 });
-        const seenAll = new Set([...(used.seen || [])]);
-        const llmClean = gen
-          .map(basicClean)
-          .filter(validGen)
-          .filter(q => !seenAll.has(qKey(q)));
-
-        // Prefer GK then others
-        const sorted = llmClean.sort((a, b) =>
-          ((b.category||'') === 'General Knowledge') - ((a.category||'') === 'General Knowledge')
-        );
-
-        for (const q of sorted) {
-          if (chosen.length >= 5) break;
-          const k = qKey(q);
-          if (!chosen.find(x => qKey(x) === k)) chosen.push(q);
-        }
-      } catch (e) {
-        console.warn('LLM fallback failed:', e.message);
-      }
-    }
-
-    if (chosen.length < 5) throw new Error('Not enough questions after filtering/fallback');
-
-    // 4) Deterministic per-OUTPUT option shuffle.
+    // 4) Deterministic per-output option shuffle (today ^ nonce)
     const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
 
     const final = chosen.slice(0, 5).map((q, idx) => {
       const rawOpts = [q.correct_answer, ...q.incorrect_answers];
       const opts = seededShuffle(rawOpts, (seedBase + idx * 7) >>> 0);
       const correctIdx = opts.indexOf(q.correct_answer);
-      const posDiff = (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard');
       return {
         text: q.question,
         options: opts,
         correct: correctIdx,
-        difficulty: (q.difficulty || '').toLowerCase() || posDiff,
-        category: q.category || 'General Knowledge'
+        difficulty: (q.difficulty || '').toLowerCase() || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard')
       };
     });
 
@@ -427,32 +288,31 @@ function validGen(q) {
     console.log('Wrote daily.json for', today, 'dayIndex', dayIndex, 'reroll', Boolean(REROLL_NONCE));
 
     // 6) Update used.json ledger
-    const newKeys = final.map(q => qKeyFromRaw(q.text, q.options[q.correct]));
+    const newKeys = final.map(q => fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct])));
     const merged = [...(used.seen || []), ...newKeys];
     used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
     fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
-    console.log('Updated used.json with', newKeys.length, 'entries. Total seen =', used.seen.length);
+    console.log('Updated used.json with', newKeys.length, 'entries');
 
   } catch (err) {
-    console.warn('Fetch/Build failed:', err.message, '— preserving previous daily.json if present.');
-    // If no daily.json exists yet, write a simple fallback so the site still works
-    const outPath = path.resolve('daily.json');
+    console.warn('Fetch/Build failed:', err.message, '— writing an EASY fallback for today.');
+
+    // EASY fallback (guarantees a fresh file for today even if API is unhappy)
     const today = yyyymmdd(new Date(), ET_TZ);
     const dayIndex = dayIndexFrom(START_DAY, today);
-    if (!fs.existsSync(outPath)) {
-      const fallback = {
-        day: today,
-        dayIndex,
-        questions: [
-          { text: "What is the capital of France?", options: ["Paris","Rome","Madrid","Berlin"], correct: 0, difficulty: "easy", category: "General Knowledge" },
-          { text: "Which planet is known as the Red Planet?", options: ["Mars","Jupiter","Venus","Saturn"], correct: 0, difficulty: "easy", category: "Science & Nature" },
-          { text: "What is H2O commonly called?", options: ["Water","Hydrogen","Oxygen","Salt"], correct: 0, difficulty: "medium", category: "Science & Nature" },
-          { text: "How many minutes are in an hour?", options: ["60","30","90","120"], correct: 0, difficulty: "medium", category: "General Knowledge" },
-          { text: "Which number is a prime?", options: ["13","21","27","33"], correct: 0, difficulty: "hard", category: "General Knowledge" }
-        ]
-      };
-      fs.writeFileSync(outPath, JSON.stringify(fallback, null, 2));
-      console.log('Wrote fallback daily.json for', today, 'with dayIndex', dayIndex);
-    }
+    const fallback = {
+      day: today,
+      dayIndex,
+      questions: [
+        { text: "What color are bananas when ripe?", options: ["Yellow","Blue","Purple","Black"], correct: 0, difficulty: "easy" },
+        { text: "Which animal barks?", options: ["Dog","Cat","Cow","Sheep"], correct: 0, difficulty: "easy" },
+        { text: "Which planet is known as the Red Planet?", options: ["Mars","Venus","Jupiter","Mercury"], correct: 0, difficulty: "medium" },
+        { text: "How many minutes are in an hour?", options: ["60","30","90","120"], correct: 0, difficulty: "medium" },
+        { text: "Which number is a prime?", options: ["13","21","27","33"], correct: 0, difficulty: "hard" }
+      ]
+    };
+    fs.writeFileSync(path.resolve('daily.json'), JSON.stringify(fallback, null, 2));
+    console.log('Wrote fallback daily.json for', today, 'with dayIndex', dayIndex);
   }
 })();
+
