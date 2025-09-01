@@ -1,0 +1,7 @@
+[
+  {"category":"General Knowledge","question":"Which number is a prime?","correct_answer":"13","incorrect_answers":["21","27","33"]},
+  {"category":"General Knowledge","question":"Which country has the most people?","correct_answer":"India","incorrect_answers":["United States","Indonesia","Brazil"]},
+  {"category":"General Knowledge","question":"Which metal is liquid at room temperature?","correct_answer":"Mercury","incorrect_answers":["Sodium","Aluminum","Iron"]},
+  {"category":"General Knowledge","question":"How many continents are there?","correct_answer":"7","incorrect_answers":["5","6","8"]},
+  {"category":"General Knowledge","question":"What is the largest internal organ in the human body?","correct_answer":"Liver","incorrect_answers":["Lung","Heart","Kidney"]}
+]
