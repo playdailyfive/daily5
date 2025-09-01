@@ -2,8 +2,8 @@ name: Daily Questions
 
 on:
   schedule:
-    - cron: '1 4 * * *'   # ~00:01 EDT
-    - cron: '1 5 * * *'   # ~00:01 EST
+    - cron: '1 4 * * *'   # ~00:01 EDT (summer)
+    - cron: '1 5 * * *'   # ~00:01 EST (winter)
   workflow_dispatch:
     inputs:
       reroll_nonce:
@@ -24,39 +24,39 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        with: { fetch-depth: 0 }
 
       - name: Setup Node (20)
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      - name: Install deps (optional, for undici fallback locally)
+      - name: Install deps
         run: npm ci || npm install
 
-      - name: Generate today's questions (OpenTDB first; local pools if API fails)
+      - name: Generate (TriviaDB primary, local fallback)
         env:
           REROLL_NONCE: ${{ github.event.inputs.reroll_nonce }}
-        shell: bash
-        run: node scripts/generate-daily.cjs
-
-      - name: Commit & push if changed (OK if unchanged)
-        shell: bash
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          git config user.name "daily5-bot"
+          # Try TriviaDB
+          node scripts/generate-daily.cjs || \
+          (echo "TriviaDB failed — retrying from local pools" && SKIP_API=1 node scripts/generate-daily.cjs)
+
+      - name: Commit & push if changed (fail if unchanged)
+        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+        run: |
+          set -euo pipefail
+          git config user.name  "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
-          if git diff --quiet --exit-code -- daily.json used.json; then
-            echo "No changes today; keeping previous daily. (OK)"
-          else
+          if ! git diff --quiet --exit-code -- daily.json used.json; then
             git add daily.json used.json
             git commit -m "chore: update daily.json (+ ledger)"
-            git pull --rebase || true
             git push
-            echo "Committed new daily + ledger."
+          else
+            echo "No changes. (Probably rate-limited + same-day rerun.)"
+            exit 2
           fi
 
       - name: Upload artifacts (daily + used)
@@ -67,3 +67,4 @@ jobs:
           path: |
             daily.json
             used.json
+
