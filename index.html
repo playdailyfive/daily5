@@ -220,6 +220,22 @@ async function loadQuestions(){
     const res = await fetch('/daily.json?v=' + Date.now(), { cache:'no-store' });
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
+
+    // ✅ Plausible: fire a one-time "DailyReady" event when today's set is loaded
+    try {
+      const todayET = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).format(new Date()).replaceAll('-', '');
+      if (String(data.day) === String(todayET) && window.plausible) {
+        window.plausible('DailyReady', {
+          props: {
+            day: data.day,
+            questions: Array.isArray(data.questions) ? data.questions.length : 0
+          }
+        });
+      }
+    } catch (_) {}
+
     hideBanner();
 
     const daySeed = Number(data.day || 0);
@@ -433,4 +449,5 @@ $('startBtn').onclick = async () => {
 </script>
 </body>
 </html>
+
 
