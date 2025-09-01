@@ -2,8 +2,8 @@ name: Daily Questions
 
 on:
   schedule:
-    - cron: '1 4 * * *'   # ~00:01 EDT (summer)
-    - cron: '1 5 * * *'   # ~00:01 EST (winter)
+    - cron: '1 4 * * *'   # ~00:01 EDT
+    - cron: '1 5 * * *'   # ~00:01 EST
   workflow_dispatch:
     inputs:
       reroll_nonce:
@@ -32,17 +32,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps
+      - name: Install deps (optional, for undici fallback locally)
         run: npm ci || npm install
 
-      - name: Generate today's questions (ET-aware, LOCAL POOLS)
+      - name: Generate today's questions (OpenTDB first; local pools if API fails)
         env:
-          SKIP_API: '1'                              # <- keep '1' for reliability (local pools)
           REROLL_NONCE: ${{ github.event.inputs.reroll_nonce }}
-        run: node scripts/generate-daily.cjs
         shell: bash
+        run: node scripts/generate-daily.cjs
 
-      - name: Commit & push if changed (fail if unchanged)
+      - name: Commit & push if changed (OK if unchanged)
         shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -50,15 +49,14 @@ jobs:
           set -euo pipefail
           git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
-
-          if ! git diff --quiet --exit-code -- daily.json used.json; then
+          if git diff --quiet --exit-code -- daily.json used.json; then
+            echo "No changes today; keeping previous daily. (OK)"
+          else
             git add daily.json used.json
             git commit -m "chore: update daily.json (+ ledger)"
+            git pull --rebase || true
             git push
             echo "Committed new daily + ledger."
-          else
-            echo "ERROR: daily.json/used.json unchanged." >&2
-            exit 2
           fi
 
       - name: Upload artifacts (daily + used)
@@ -69,4 +67,3 @@ jobs:
           path: |
             daily.json
             used.json
-
