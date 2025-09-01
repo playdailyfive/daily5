@@ -14,6 +14,18 @@
 const fs = require('fs');
 const path = require('path');
 
+// --- fetch polyfill (works on any Node) ---
+let fetchRef = globalThis.fetch;
+if (!fetchRef) {
+  try {
+    // undici works with CommonJS require()
+    fetchRef = require('undici').fetch;
+  } catch (e) {
+    console.error('Missing fetch. Run: npm i undici');
+    process.exit(1);
+  }
+}
+
 // ====== TUNABLES ======
 const START_DAY = '20250824';                 // Day 1 (YYYYMMDD, ET baseline)
 const ET_TZ = 'America/New_York';
@@ -102,7 +114,7 @@ async function fetchJson(url, { timeoutMs = BASE_TIMEOUT_MS, retries = RETRIES }
     const ac = new AbortController();
     const id = setTimeout(() => ac.abort(), timeoutMs);
     try {
-      const res = await fetch(url, { signal: ac.signal });
+      const res = await fetchRef(url, { signal: ac.signal });
       clearTimeout(id);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return await res.json();
@@ -204,11 +216,10 @@ Generate at least ${count} items; skew EASY, then some MEDIUM, rare HARD.`;
       { role: 'system', content: sys },
       { role: 'user', content: 'Output JSON array only. Keep it broad and friendly.' }
     ],
-    // Ask for JSON; model returns the JSON in message content.
     response_format: { type: 'json_object' }
   };
 
-  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+  const res = await fetchRef('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
     body: JSON.stringify(payload)
@@ -290,8 +301,8 @@ function validGen(q) {
 
     // 2b) Prefer "General Knowledge" by moving them to the front of each pool
     const favorGK = (arr) => {
-      const gk = arr.filter(q => (q.category || '').toLowerCase() === 'general knowledge'.toLowerCase());
-      const rest = arr.filter(q => (q.category || '').toLowerCase() !== 'general knowledge'.toLowerCase());
+      const gk = arr.filter(q => (q.category || '').toLowerCase() === 'general knowledge');
+      const rest = arr.filter(q => (q.category || '').toLowerCase() !== 'general knowledge');
       return [...gk, ...rest];
     };
     easy = favorGK(easy);
@@ -352,18 +363,14 @@ function validGen(q) {
     let hardAvail = dropChosen(hard);
 
     // Top-up to targets
-    const wantEasy = Math.max(0, 2 - easyAvail.filter(isGK).length); // we already seeded GK; this keeps roughly 2 easy total
-    addFrom(easyAvail, 2);  // aim for 2 easy in total (GK counted already if they were easy)
-
-    // Recompute available after additions
+    addFrom(easyAvail, 2);  // aim for 2 easy total
     easyAvail = dropChosen(easyAvail);
-    medAvail  = dropChosen(medAvail);
-    hardAvail = dropChosen(hardAvail);
 
-    addFrom(medAvail, 2);   // aim for 2 medium
+    addFrom(medAvail, 2);   // aim for 2 medium total
     medAvail = dropChosen(medAvail);
 
     addFrom(hardAvail, 1);  // aim for 1 hard
+    hardAvail = dropChosen(hardAvail);
 
     // If still short, fill from what's left (easy→medium→hard)
     const remainder = [...easyAvail, ...medAvail, ...hardAvail];
@@ -398,14 +405,12 @@ function validGen(q) {
     if (chosen.length < 5) throw new Error('Not enough questions after filtering/fallback');
 
     // 4) Deterministic per-OUTPUT option shuffle.
-    //    Use today plus an optional nonce so manual rerolls change options order too.
     const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
 
     const final = chosen.slice(0, 5).map((q, idx) => {
       const rawOpts = [q.correct_answer, ...q.incorrect_answers];
       const opts = seededShuffle(rawOpts, (seedBase + idx * 7) >>> 0);
       const correctIdx = opts.indexOf(q.correct_answer);
-      // label difficulties by position if not provided
       const posDiff = (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard');
       return {
         text: q.question,
@@ -421,7 +426,7 @@ function validGen(q) {
     fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
     console.log('Wrote daily.json for', today, 'dayIndex', dayIndex, 'reroll', Boolean(REROLL_NONCE));
 
-    // 6) Update used.json ledger (hash of text + final correct option text, which is stable)
+    // 6) Update used.json ledger
     const newKeys = final.map(q => qKeyFromRaw(q.text, q.options[q.correct]));
     const merged = [...(used.seen || []), ...newKeys];
     used.seen = MAX_LEDGER ? merged.slice(-MAX_LEDGER) : merged;
