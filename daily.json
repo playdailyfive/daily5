@@ -1,68 +1,68 @@
 {
-  "day": "20250901",
-  "dayIndex": 9,
-  "reroll": true,
-  "source": "LOCAL_POOLS",
+  "day": "20250902",
+  "dayIndex": 10,
+  "reroll": false,
+  "source": "OPENTDB",
   "questions": [
     {
-      "text": "What color is the sky on a clear day?",
+      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
       "options": [
-        "Yellow",
-        "Blue",
-        "Green",
-        "Red"
+        "Star City",
+        "Central City",
+        "Metropolis",
+        "Gotham City"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the name of Rivers Cuomo's wife?",
+      "options": [
+        "Kyary Pamyu Pamyu",
+        "LiSA",
+        "Yoko Ono",
+        "Kyoko Ito"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "Amsterdam Centraal station is twinned with what station?",
+      "options": [
+        "Brussels Midi",
+        "Frankfurt (Main) Hauptbahnhof",
+        "Paris Gare du Nord",
+        "London Liverpool Street"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In the \"The Hobbit\", who kills Smaug?",
+      "options": [
+        "Frodo",
+        "Bard",
+        "Gandalf the Grey",
+        "Bilbo Baggins"
       ],
       "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many days are in a week?",
-      "options": [
-        "6",
-        "5",
-        "8",
-        "7"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What gas do plants take in from the air?",
-      "options": [
-        "Nitrogen",
-        "Oxygen",
-        "Helium",
-        "Carbon dioxide"
-      ],
-      "correct": 3,
       "difficulty": "medium",
-      "category": "Science & Nature"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Which ocean is the largest?",
+      "text": "How tall is Tom Cruise?",
       "options": [
-        "Pacific Ocean",
-        "Indian Ocean",
-        "Atlantic Ocean",
-        "Arctic Ocean"
+        "5&prime; 4&Prime;",
+        "5&prime; 7&Prime;",
+        "5&prime; 9&Prime;",
+        "5&prime; 5&Prime;"
       ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "Which city is home to the statue called Christ the Redeemer?",
-      "options": [
-        "Rio de Janeiro",
-        "Lisbon",
-        "Buenos Aires",
-        "São Paulo"
-      ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Celebrities"
     }
   ]
 }
