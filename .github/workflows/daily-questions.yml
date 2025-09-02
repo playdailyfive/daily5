@@ -41,14 +41,30 @@ jobs:
       - name: Install deps
         run: npm ci || npm install
 
-      # OpenTDB first; your script already falls back locally on 429
-      - name: Generate today's questions (ET-aware)
+      - name: Show repo state (debug)
+        run: |
+          pwd
+          ls -la
+          echo "------ package.json ------"
+          cat package.json || true
+          echo "------ used.json (before) ------"
+          cat used.json || true
+          echo "------ daily.json (before) ------"
+          cat daily.json || true
+
+      - name: Generate today's questions (ET-aware; OpenTDB first with local fallback)
         env:
           REROLL_NONCE: ${{ github.event.inputs.reroll_nonce }}
         run: node scripts/generate-daily.cjs
         shell: bash
 
-      # Commit if changed; otherwise succeed gracefully
+      - name: Show outputs (debug)
+        run: |
+          echo "------ used.json (after) ------"
+          cat used.json || true
+          echo "------ daily.json (after) ------"
+          cat daily.json || true
+
       - name: Commit & push if changed (succeed if unchanged)
         shell: bash
         env:
@@ -57,7 +73,6 @@ jobs:
           set -euo pipefail
           git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
-
           if ! git diff --quiet --exit-code -- daily.json used.json; then
             git add daily.json used.json
             git commit -m "chore: update daily.json (+ ledger)"
@@ -75,3 +90,4 @@ jobs:
           path: |
             daily.json
             used.json
+
