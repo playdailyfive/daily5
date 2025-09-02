@@ -1,68 +1,68 @@
 {
   "day": "20250901",
   "dayIndex": 9,
-  "reroll": false,
-  "source": "local-pools",
+  "reroll": true,
+  "source": "LOCAL_POOLS",
   "questions": [
     {
       "text": "What color is the sky on a clear day?",
       "options": [
-        "Green",
-        "Red",
+        "Yellow",
         "Blue",
-        "Yellow"
+        "Green",
+        "Red"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
       "text": "How many days are in a week?",
       "options": [
-        "7",
-        "8",
         "6",
-        "5"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which country is famous for sushi?",
-      "options": [
-        "China",
-        "Korea",
-        "Thailand",
-        "Japan"
+        "5",
+        "8",
+        "7"
       ],
       "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many minutes are in an hour?",
-      "options": [
-        "60",
-        "120",
-        "90",
-        "30"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
       "text": "What gas do plants take in from the air?",
       "options": [
         "Nitrogen",
-        "Carbon dioxide",
+        "Oxygen",
         "Helium",
-        "Oxygen"
+        "Carbon dioxide"
       ],
-      "correct": 1,
-      "difficulty": "hard",
+      "correct": 3,
+      "difficulty": "medium",
       "category": "Science & Nature"
+    },
+    {
+      "text": "Which ocean is the largest?",
+      "options": [
+        "Pacific Ocean",
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Arctic Ocean"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "Which city is home to the statue called Christ the Redeemer?",
+      "options": [
+        "Rio de Janeiro",
+        "Lisbon",
+        "Buenos Aires",
+        "São Paulo"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Geography"
     }
   ]
 }
