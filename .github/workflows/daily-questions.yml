@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       reroll_nonce:
-        description: 'Force a new set (any string)'
+        description: 'Force a new set (any string to get a fresh set today)'
         required: false
         default: ''
 
@@ -24,7 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
+        with:
+          fetch-depth: 0
 
       - name: Setup Node (20)
         uses: actions/setup-node@v4
@@ -32,31 +33,38 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - name: Print Node & npm versions
+        run: |
+          node -v
+          npm -v
+
       - name: Install deps
         run: npm ci || npm install
 
-      - name: Generate (TriviaDB primary, local fallback)
+      # OpenTDB first; your script already falls back locally on 429
+      - name: Generate today's questions (ET-aware)
         env:
           REROLL_NONCE: ${{ github.event.inputs.reroll_nonce }}
-        run: |
-          set -euo pipefail
-          # Try TriviaDB
-          node scripts/generate-daily.cjs || \
-          (echo "TriviaDB failed — retrying from local pools" && SKIP_API=1 node scripts/generate-daily.cjs)
+        run: node scripts/generate-daily.cjs
+        shell: bash
 
-      - name: Commit & push if changed (fail if unchanged)
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+      # Commit if changed; otherwise succeed gracefully
+      - name: Commit & push if changed (succeed if unchanged)
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          git config user.name  "daily5-bot"
+          git config user.name "daily5-bot"
           git config user.email "daily5-bot@users.noreply.github.com"
+
           if ! git diff --quiet --exit-code -- daily.json used.json; then
             git add daily.json used.json
             git commit -m "chore: update daily.json (+ ledger)"
             git push
+            echo "Committed new daily + ledger."
           else
-            echo "No changes. (Probably rate-limited + same-day rerun.)"
-            exit 2
+            echo "No changes to daily.json/used.json today. All good."
           fi
 
       - name: Upload artifacts (daily + used)
@@ -67,4 +75,3 @@ jobs:
           path: |
             daily.json
             used.json
-
