@@ -1,36 +1,29 @@
 /**
- * Daily Five generator
- * Priority: OpenTDB → local pools → tiny hardcoded fallback
- * Rules:
- * - 5 questions total: 2 easy, 2 medium, 1 hard
- * - Prefer ≥2 General Knowledge
- * - Max 2 from the same category (soft cap; relax if needed)
- * - No repeats (ledger in used.json)
- * - Deterministic per-day option shuffle; support REROLL_NONCE
- *
- * Node 20+ recommended (fetch is built-in).
+ * Daily Five generator (OpenTDB-first; local fallback)
+ * - Default: OpenTDB (with retries/backoff + light category shaping)
+ * - Fallback: small built-in bank if API fails
+ * - Filters for short/relatable, avoids trick-y formats
+ * - 2 easy + 2 medium + 1 hard
+ * - >=2 "General Knowledge" if possible, diversify categories
+ * - No repeats via used.json hash ledger
+ * - Deterministic options shuffle per day (+ optional reroll)
  */
 
 const fs = require('fs');
 const path = require('path');
 
-/* ===================== TUNABLES ===================== */
+// ---------- Tunables ----------
+const ET_TZ = 'America/New_York';
+const START_DAY = '20250824';       // ET baseline
+const GK_CATEGORY_ID = 9;           // OpenTDB "General Knowledge"
 
-const START_DAY = '20250824';           // YYYYMMDD baseline (ET)
-const ET_TZ     = 'America/New_York';
+const FETCH_SIZES = { easy: 24, medium: 20, hard: 16 }; // modest but enough to filter
+const RETRIES = 6;                  // polite retries
+const BASE_TIMEOUT_MS = 9000;
 
-// Fetch sizes (larger pools give filter room)
-const FETCH_SIZES = { easy: 25, medium: 22, hard: 18 };
-
-// Category controls
-const GK_NAME = 'General Knowledge';
-const GK_MIN  = 2;                      // try to ensure at least 2 GK
-const CATEGORY_CAP = 2;                 // soft cap per category
-
-// Simplicity/ease filters
 const EASY_FILTER = {
-  MAX_QUESTION_LEN: 110,
-  MAX_OPTION_LEN: 36,
+  MAX_Q_LEN: 110,
+  MAX_OPT_LEN: 36,
   BAN_PATTERNS: [
     /\b(in|which|what)\s+year\b/i,
     /\bwhich of (the|these)\b/i,
@@ -41,13 +34,12 @@ const EASY_FILTER = {
     /\bprime\s+number\b/i,
     /\b(nth|[0-9]{1,4}(st|nd|rd|th))\b.*\bcentury\b/i
   ],
-  ALLOW_CATEGORIES: new Set([
+  ALLOW_CATS: new Set([
     'General Knowledge',
     'Entertainment: Film',
     'Entertainment: Music',
     'Entertainment: Television',
     'Entertainment: Books',
-    'Entertainment: Video Games',
     'Science & Nature',
     'Geography',
     'Sports',
@@ -55,12 +47,7 @@ const EASY_FILTER = {
   ])
 };
 
-// Backoff/retries for OpenTDB
-const RETRIES = 3;
-const BASE_TIMEOUT_MS = 9000;
-
-/* ===================== UTIL ===================== */
-
+// ---------- Helpers ----------
 function yyyymmdd(d = new Date(), tz = ET_TZ) {
   const parts = new Intl.DateTimeFormat('en-CA', {
     timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'
@@ -68,98 +55,44 @@ function yyyymmdd(d = new Date(), tz = ET_TZ) {
   return `${parts.year}${parts.month}${parts.day}`;
 }
 function toUTCDate(yyyyMMdd) {
-  const y = Number(yyyyMMdd.slice(0,4));
-  const m = Number(yyyyMMdd.slice(4,6));
-  const d = Number(yyyyMMdd.slice(6,8));
-  return new Date(Date.UTC(y, m - 1, d));
+  const y = +yyyyMMdd.slice(0,4), m = +yyyyMMdd.slice(4,6), d = +yyyyMMdd.slice(6,8);
+  return new Date(Date.UTC(y, m-1, d));
 }
 function dayIndexFrom(startYmd, todayYmd) {
-  const diffDays = Math.max(0, Math.round(
-    (toUTCDate(todayYmd) - toUTCDate(startYmd)) / 86400000
-  ));
+  const diffDays = Math.max(0, Math.round((toUTCDate(todayYmd) - toUTCDate(startYmd)) / 86400000));
   return 1 + diffDays;
 }
+function fnv1a(str){ let h=0x811c9dc5; for(let i=0;i<str.length;i++){ h^=str.charCodeAt(i); h=(h+((h<<1)+(h<<4)+(h<<7)+(h<<8)+(h<<24)))>>>0;} return ('0000000'+h.toString(16)).slice(-8); }
+function norm(s=''){ return String(s).replace(/\s+/g,' ').trim().toLowerCase(); }
+function qKeyFromOTDB(q){ return fnv1a(norm(q.question)+'|'+norm(q.correct_answer||'')); }
+function qKeyFromOut(q){ return fnv1a(norm(q.text)+'|'+norm(q.options[q.correct]||'')); }
 
-// Hash & keys for dedupe
-function fnv1a(str) {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < str.length; i++) {
-    h ^= str.charCodeAt(i);
-    h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
-  }
-  return ('0000000' + h.toString(16)).slice(-8);
-}
-function normalizeText(s='') {
-  return String(s).replace(/\s+/g,' ').trim().toLowerCase();
-}
-function qKeyFromOpenTDB(q) {
-  return fnv1a(normalizeText(q.question) + '|' + normalizeText(q.correct_answer || ''));
-}
-function qKeyFromOutput(q) {
-  return fnv1a(normalizeText(q.text) + '|' + normalizeText(q.options[q.correct]));
-}
-
-// Deterministic PRNG + shuffle
-function mulberry32(seed) {
-  return function() {
-    let t = seed += 0x6D2B79F5;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-function seededShuffle(arr, seedNum) {
-  const rand = mulberry32(seedNum >>> 0);
-  const out = [...arr];
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
+function mulberry32(seed){ return function(){ let t=seed+=0x6D2B79F5; t=Math.imul(t^(t>>>15),t|1); t^=t+Math.imul(t^(t>>>7),t|61); return ((t^(t>>>14))>>>0)/4294967296; }; }
+function seededShuffle(arr, seedNum){
+  const rand = mulberry32(seedNum>>>0); const out=[...arr];
+  for(let i=out.length-1;i>0;i--){ const j=Math.floor(rand()*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
   return out;
 }
 
-/* ===================== FETCH HELPERS ===================== */
-
-function ensureFetch() {
-  if (typeof fetch === 'undefined') {
-    throw new Error('fetch is not defined — please run on Node 20+ or enable fetch');
-  }
+// Node 20 has global fetch; if not, bail early with clear message
+if (typeof fetch !== 'function') {
+  console.error('Node 20+ required: global fetch not found. Use nvm use 20.');
+  process.exit(1);
 }
 
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-async function fetchJson(url, { timeoutMs = BASE_TIMEOUT_MS, retries = RETRIES } = {}) {
-  ensureFetch();
-  for (let attempt = 1; attempt <= retries; attempt++) {
-    const ac = new AbortController();
-    const id = setTimeout(() => ac.abort(), timeoutMs);
-    try {
-      const res = await fetch(url, { signal: ac.signal, headers: { 'accept': 'application/json' } });
-      clearTimeout(id);
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      return await res.json();
-    } catch (e) {
-      clearTimeout(id);
-      if (attempt === retries) throw e;
-      await sleep(900 * attempt);
-    }
-  }
-}
-
-function decodeHTMLEntities(s='') {
+function decodeHTMLEntities(s=''){
   return s
-    .replace(/&quot;/g, '"').replace(/&#039;/g,"'")
-    .replace(/&amp;/g,'&').replace(/&rsquo;/g,"'")
+    .replace(/&quot;/g,'"').replace(/&#039;/g,"'").replace(/&apos;/g,"'")
+    .replace(/&amp;/g,'&').replace(/&rsquo;/g,"'").replace(/&lsquo;/g,"'")
     .replace(/&ldquo;/g,'"').replace(/&rdquo;/g,'"')
     .replace(/&eacute;/g,'é').replace(/&hellip;/g,'…')
     .replace(/&mdash;/g,'—').replace(/&ndash;/g,'–')
     .replace(/&nbsp;/g,' ');
 }
 
-function cleanOpenTDB(q) {
+function tidyFromOTDB(q){
   return {
-    ...q,
-    category: q.category,
+    category: q.category || '',
     question: decodeHTMLEntities(q.question || ''),
     correct_answer: decodeHTMLEntities(q.correct_answer || ''),
     incorrect_answers: (q.incorrect_answers || []).map(decodeHTMLEntities),
@@ -167,256 +100,174 @@ function cleanOpenTDB(q) {
   };
 }
 
-async function fetchPool(difficulty, amount) {
-  const url = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}`;
-  const data = await fetchJson(url);
-  const list = Array.isArray(data?.results) ? data.results : [];
-  return list.map(cleanOpenTDB);
-}
-
-/* ===================== FILTERS ===================== */
-
-function isRelatableCategory(cat) {
-  if (!cat) return true;
-  return EASY_FILTER.ALLOW_CATEGORIES.has(cat);
-}
-function hasBannedPhrase(text) {
-  return EASY_FILTER.BAN_PATTERNS.some(rx => rx.test(text));
-}
-function withinLength(q) {
-  const qlen = (q.question || '').trim().length;
-  if (qlen > EASY_FILTER.MAX_QUESTION_LEN) return false;
-  const all = [q.correct_answer, ...(q.incorrect_answers || [])].filter(Boolean);
-  return all.every(opt => String(opt).trim().length <= EASY_FILTER.MAX_OPTION_LEN);
-}
-function passEasyFilter(q) {
+function passFilter(q){
   const qt = q.question || '';
-  if (!withinLength(q)) return false;
-  if (hasBannedPhrase(qt)) return false;
-  if (!isRelatableCategory(q.category)) return false;
-  // avoid weird SHOUTING questions
-  if ((qt.match(/[A-Z]/g) || []).length > (qt.match(/[a-z]/g) || []).length * 2) return false;
+  if (qt.trim().length === 0) return false;
+  if (qt.length > EASY_FILTER.MAX_Q_LEN) return false;
+  const opts = [q.correct_answer, ...(q.incorrect_answers||[])].filter(Boolean);
+  if (!opts.every(o => String(o).trim().length <= EASY_FILTER.MAX_OPT_LEN)) return false;
+  if (EASY_FILTER.BAN_PATTERNS.some(rx => rx.test(qt))) return false;
+  if (q.category && !EASY_FILTER.ALLOW_CATS.has(q.category)) return false;
+  const uppers = (qt.match(/[A-Z]/g)||[]).length, lowers = (qt.match(/[a-z]/g)||[]).length;
+  if (uppers > lowers * 2) return false;
   return true;
 }
 
-/* ===================== BUILD SELECTION ===================== */
-
-function pickN(arr, n) { return arr.slice(0, Math.max(0, Math.min(n, arr.length))); }
-
-function buildFive({ easy, medium, hard, seenKeys }) {
-  // Deduplicate against used.json and within pools
-  const dedupe = (arr) => {
-    const out = [];
-    const local = new Set();
-    for (const q of arr) {
-      const key = qKeyFromOpenTDB(q);
-      if (seenKeys.has(key) || local.has(key)) continue;
-      local.add(key);
-      out.push(q);
-    }
-    return out;
-  };
-
-  easy   = dedupe(easy);
-  medium = dedupe(medium);
-  hard   = dedupe(hard);
-
-  // Prefer ≥2 General Knowledge (from any difficulty)
-  const isGK = q => (q.category || '').trim() === GK_NAME;
-  const gkPool = [...easy, ...medium, ...hard].filter(isGK);
-
-  // Target counts
-  const target = { easy: 2, medium: 2, hard: 1 };
-
-  // Category cap tracker
-  const catCount = new Map();
-  const incCat = c => catCount.set(c, (catCount.get(c) || 0) + 1);
-  const canTake = (c, cap) => (catCount.get(c) || 0) < cap;
-
-  const taken = [];
-
-  // 1) Take GK first up to GK_MIN, preferring easier ones
-  const gkEasy   = easy.filter(isGK);
-  const gkMedium = medium.filter(isGK);
-  const gkHard   = hard.filter(isGK);
-
-  for (const bucket of [gkEasy, gkMedium, gkHard]) {
-    while (taken.filter(isGK).length < GK_MIN && bucket.length) {
-      const q = bucket.shift();
-      if (canTake(q.category || '', CATEGORY_CAP)) {
-        taken.push(q);
-        incCat(q.category || '');
-        // Reduce target bucket count
-        if (q.difficulty === 'easy'   && target.easy   > 0) target.easy--;
-        else if (q.difficulty === 'medium' && target.medium > 0) target.medium--;
-        else if (q.difficulty === 'hard'   && target.hard   > 0) target.hard--;
+async function fetchJsonWithBackoff(url){
+  for(let attempt=1; attempt<=RETRIES; attempt++){
+    const ac = new AbortController();
+    const t = setTimeout(()=>ac.abort(), BASE_TIMEOUT_MS + attempt*500);
+    try{
+      const res = await fetch(url, { signal: ac.signal });
+      clearTimeout(t);
+      if (res.status === 429) {
+        const back = Math.floor(1000 * (1.9 ** (attempt-1))) + Math.floor(Math.random()*2000);
+        console.warn(`HTTP 429 on ${url} — backoff ${back}ms (attempt ${attempt}/${RETRIES})`);
+        await new Promise(r=>setTimeout(r, back));
+        continue;
       }
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    }catch(e){
+      clearTimeout(t);
+      if (attempt === RETRIES) throw e;
+      await new Promise(r=>setTimeout(r, 600 + attempt*400));
     }
-    if (taken.filter(isGK).length >= GK_MIN) break;
   }
-
-  // 2) Fill remaining by difficulty with category cap
-  function takeFrom(pool, howMany) {
-    while (howMany > 0 && pool.length) {
-      const q = pool.shift();
-      if (canTake(q.category || '', CATEGORY_CAP)) {
-        taken.push(q);
-        incCat(q.category || '');
-        howMany--;
-      }
-    }
-    return howMany;
-  }
-
-  target.easy   = takeFrom(easy,   target.easy);
-  target.medium = takeFrom(medium, target.medium);
-  target.hard   = takeFrom(hard,   target.hard);
-
-  // 3) If still short, relax cap and top up from remaining pools
-  const remaining = [...easy, ...medium, ...hard];
-  while (taken.length < 5 && remaining.length) {
-    taken.push(remaining.shift());
-  }
-
-  if (taken.length < 5) throw new Error('Not enough questions after filtering/deduping');
-
-  // Trim to exactly 5
-  return taken.slice(0, 5);
 }
 
-/* ===================== MAIN ===================== */
+async function fetchPool(difficulty, amount, categoryId=null){
+  const base = `https://opentdb.com/api.php?amount=${amount}&type=multiple&difficulty=${difficulty}`;
+  const url = categoryId ? `${base}&category=${categoryId}` : base;
+  const data = await fetchJsonWithBackoff(url);
+  const list = Array.isArray(data?.results) ? data.results : [];
+  return list.map(tidyFromOTDB);
+}
 
+// Small, friendly built-in fallback if API is down
+const FALLBACK_BANK = {
+  easy: [
+    ["What color is the sky on a clear day?","Blue","Yellow","Green","Red"],
+    ["How many days are in a week?","7","6","5","8"],
+    ["What do bees make?","Honey","Milk","Bread","Wool"],
+  ],
+  medium: [
+    ["Which ocean is the largest?","Pacific Ocean","Atlantic Ocean","Indian Ocean","Arctic Ocean"],
+    ["Which gas do plants take in from the air?","Carbon dioxide","Oxygen","Nitrogen","Helium"],
+  ],
+  hard: [
+    ["Which city is home to Christ the Redeemer?","Rio de Janeiro","São Paulo","Lisbon","Buenos Aires"],
+  ]
+};
+function fromFallback(){
+  const pick = (arr,n)=>arr.slice(0,Math.min(n,arr.length));
+  const e = pick(FALLBACK_BANK.easy,2).map(m=>({text:m[0],options:[m[1],m[2],m[3],m[4]],correct:0,difficulty:"easy",category:"General Knowledge"}));
+  const md = pick(FALLBACK_BANK.medium,2).map(m=>({text:m[0],options:[m[1],m[2],m[3],m[4]],correct:0,difficulty:"medium",category:"Geography"}));
+  const h = pick(FALLBACK_BANK.hard,1).map(m=>({text:m[0],options:[m[1],m[2],m[3],m[4]],correct:0,difficulty:"hard",category:"Geography"}));
+  return [...e,...md,...h];
+}
+
+// ---------- MAIN ----------
 (async () => {
   const today = yyyymmdd(new Date(), ET_TZ);
   const dayIndex = dayIndexFrom(START_DAY, today);
   const outPath = path.resolve('daily.json');
   const usedPath = path.resolve('used.json');
-  const poolsDir = path.resolve('pools');
-
-  // Manual reroll support (changes order & picks when possible)
   const REROLL_NONCE = process.env.REROLL_NONCE || '';
 
-  // Load ledger
+  // load used ledger
   let used = {};
-  try {
-    if (fs.existsSync(usedPath)) used = JSON.parse(fs.readFileSync(usedPath, 'utf8') || '{}');
-  } catch (_) { used = {}; }
+  try { if (fs.existsSync(usedPath)) used = JSON.parse(fs.readFileSync(usedPath,'utf8')||'{}'); } catch {}
   used.seen = used.seen || [];
-  const seenKeys = new Set(used.seen);
+  const seen = new Set(used.seen);
 
-  let source = 'OPENTDB';
-
+  let source = 'OPENTDB', chosen = [];
   try {
-    // Try OpenTDB first unless explicitly skipped
-    let easy = [], medium = [], hard = [];
-    if (!process.env.SKIP_API) {
-      const [ePool, mPool, hPool] = await Promise.all([
-        fetchPool('easy',   FETCH_SIZES.easy),
-        fetchPool('medium', FETCH_SIZES.medium),
-        fetchPool('hard',   FETCH_SIZES.hard)
-      ]);
-      easy   = ePool.filter(passEasyFilter);
-      medium = mPool.filter(passEasyFilter);
-      hard   = hPool.filter(passEasyFilter);
+    console.log('Trying OpenTDB…');
 
-      // If OpenTDB returned too few usable questions, force fallback to local pools
-      if ([...easy, ...medium, ...hard].length < 15) {
-        throw new Error('OpenTDB returned too few usable questions');
+    // pull a mix with GK preference (helps variety + approachability)
+    const [easyA, easyGK, medA, medGK, hardA] = await Promise.all([
+      fetchPool('easy',   Math.ceil(FETCH_SIZES.easy*0.7),  null),
+      fetchPool('easy',   Math.floor(FETCH_SIZES.easy*0.3), GK_CATEGORY_ID),
+      fetchPool('medium', Math.ceil(FETCH_SIZES.medium*0.7),null),
+      fetchPool('medium', Math.floor(FETCH_SIZES.medium*0.3),GK_CATEGORY_ID),
+      fetchPool('hard',   FETCH_SIZES.hard,                 null),
+    ]);
+
+    const allEasy   = [...easyGK, ...easyA].map(tidyFromOTDB);
+    const allMedium = [...medGK,  ...medA].map(tidyFromOTDB);
+    const allHard   = [...hardA].map(tidyFromOTDB);
+
+    const filterMap = (arr)=>arr.filter(passFilter).filter(q=>!seen.has(qKeyFromOTDB(q)));
+
+    let easy = filterMap(allEasy);
+    let medium = filterMap(allMedium);
+    let hard = filterMap(allHard);
+
+    // ensure >=2 GK overall if possible
+    const tagGK = q => (q.category||'').includes('General Knowledge');
+    easy.sort((a,b)=> (tagGK(b)-tagGK(a)));   // GK first
+    medium.sort((a,b)=> (tagGK(b)-tagGK(a)));
+
+    // pick 2/2/1 with diversification
+    const pickN = (arr,n)=>{
+      const out=[], seenCats=new Set();
+      for(const q of arr){
+        const cat = q.category || 'Misc';
+        if (!seenCats.has(cat) || out.length<Math.ceil(n/2)) { // prefer new cats first
+          out.push(q); seenCats.add(cat);
+        }
+        if(out.length===n) break;
       }
-    } else {
-      throw new Error('SKIP_API set — forcing local pools');
-    }
-
-    // Build selection
-    const chosen = buildFive({ easy, medium, hard, seenKeys });
-
-    // Build final output (deterministic option order)
-    const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
-    const final = chosen.map((q, idx) => {
-      const opts = seededShuffle([q.correct_answer, ...q.incorrect_answers], (seedBase + idx * 7) >>> 0);
-      return {
-        text: q.question,
-        options: opts,
-        correct: opts.indexOf(q.correct_answer),
-        difficulty: (q.difficulty || '').toLowerCase() || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard'),
-        category: q.category || ''
-      };
-    });
-
-    const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), source, questions: final };
-    fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-
-    const newKeys = final.map(q => qKeyFromOutput(q));
-    used.seen = [...used.seen, ...newKeys];
-    fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
-
-    console.log(`Wrote daily.json (${source}) for ${today} (dayIndex ${dayIndex}).`);
-    return;
-  } catch (apiErr) {
-    console.warn('OpenTDB path failed:', apiErr.message);
-  }
-
-  // ===== Fallback: local pools =====
-  try {
-    const easyPath   = path.join(poolsDir, 'easy.json');
-    const mediumPath = path.join(poolsDir, 'medium.json');
-    const hardPath   = path.join(poolsDir, 'hard.json');
-
-    if (!fs.existsSync(easyPath) || !fs.existsSync(mediumPath) || !fs.existsSync(hardPath)) {
-      throw new Error('Local pools missing — expected pools/easy.json, pools/medium.json, pools/hard.json');
-    }
-
-    const easy   = JSON.parse(fs.readFileSync(easyPath, 'utf8')   || '[]').map(cleanOpenTDB).filter(passEasyFilter);
-    const medium = JSON.parse(fs.readFileSync(mediumPath, 'utf8') || '[]').map(cleanOpenTDB).filter(passEasyFilter);
-    const hard   = JSON.parse(fs.readFileSync(hardPath, 'utf8')   || '[]').map(cleanOpenTDB).filter(passEasyFilter);
-
-    const chosen = buildFive({ easy, medium, hard, seenKeys });
-
-    const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16) >>> 0) : 0);
-    const final = chosen.map((q, idx) => {
-      const opts = seededShuffle([q.correct_answer, ...q.incorrect_answers], (seedBase + idx * 7) >>> 0);
-      return {
-        text: q.question,
-        options: opts,
-        correct: opts.indexOf(q.correct_answer),
-        difficulty: (q.difficulty || '').toLowerCase() || (idx < 2 ? 'easy' : idx < 4 ? 'medium' : 'hard'),
-        category: q.category || ''
-      };
-    });
-
-    const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), source: 'LOCAL_POOLS', questions: final };
-    fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-
-    const newKeys = final.map(q => qKeyFromOutput(q));
-    used.seen = [...used.seen, ...newKeys];
-    fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
-
-    console.log(`Wrote daily.json (LOCAL_POOLS) for ${today} (dayIndex ${dayIndex}).`);
-    return;
-  } catch (poolErr) {
-    console.warn('Local pools path failed:', poolErr.message);
-  }
-
-  // ===== Last resort: tiny hardcoded demo =====
-  try {
-    const fallback = {
-      day: today,
-      dayIndex,
-      reroll: Boolean(REROLL_NONCE),
-      source: 'HARDCODED',
-      questions: [
-        { text: "What is the capital of France?", options: ["Paris","Rome","Madrid","Berlin"], correct: 0, difficulty: "easy", category: GK_NAME },
-        { text: "Which planet is known as the Red Planet?", options: ["Mars","Jupiter","Venus","Saturn"], correct: 0, difficulty: "easy", category: GK_NAME },
-        { text: "What is H2O commonly called?", options: ["Water","Hydrogen","Oxygen","Salt"], correct: 0, difficulty: "medium", category: GK_NAME },
-        { text: "How many minutes are in an hour?", options: ["60","30","90","120"], correct: 0, difficulty: "medium", category: GK_NAME },
-        { text: "Which number is a prime?", options: ["13","21","27","33"], correct: 0, difficulty: "hard", category: GK_NAME }
-      ]
+      // top-up if short
+      if(out.length<n){
+        for(const q of arr){ if(!out.includes(q)){ out.push(q); if(out.length===n) break; } }
+      }
+      return out.slice(0,n);
     };
-    fs.writeFileSync(outPath, JSON.stringify(fallback, null, 2));
-    console.log(`Wrote fallback daily.json (HARDCODED) for ${today} (dayIndex ${dayIndex}).`);
-  } catch (err) {
-    console.error('Failed to write any daily.json:', err);
-    process.exit(1);
-  }
-})();
 
+    let chosenOTDB = [
+      ...pickN(easy, 2),
+      ...pickN(medium, 2),
+      ...pickN(hard, 1)
+    ];
+
+    // top up from leftovers if needed
+    if (chosenOTDB.length < 5) {
+      const have = new Set(chosenOTDB.map(q=>qKeyFromOTDB(q)));
+      const rest = [...easy, ...medium, ...hard].filter(q=>!have.has(qKeyFromOTDB(q)));
+      chosenOTDB = [...chosenOTDB, ...rest].slice(0,5);
+    }
+    if (chosenOTDB.length < 5) throw new Error('Not enough after filtering');
+
+    // build output + deterministic option order
+    const seedBase = Number(today) ^ (REROLL_NONCE ? (parseInt(fnv1a(REROLL_NONCE),16)>>>0) : 0);
+    chosen = chosenOTDB.map((q, idx) => {
+      const raw = [q.correct_answer, ...q.incorrect_answers];
+      const opts = seededShuffle(raw, (seedBase + idx*7)>>>0);
+      return {
+        text: q.question,
+        options: opts,
+        correct: opts.indexOf(q.correct_answer),
+        difficulty: (q.difficulty || '').toLowerCase() || (idx<2?'easy':idx<4?'medium':'hard'),
+        category: q.category || 'General Knowledge'
+      };
+    });
+
+  } catch (e) {
+    console.warn('OpenTDB failed; using local fallback:', e.message);
+    source = 'LOCAL_FALLBACK';
+    chosen = fromFallback();
+  }
+
+  // write daily.json
+  const payload = { day: today, dayIndex, reroll: Boolean(REROLL_NONCE), source, questions: chosen };
+  fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
+  console.log('Wrote daily.json for', today, 'dayIndex', dayIndex, 'source', source);
+
+  // update used.json (hash on text|correct)
+  const newKeys = chosen.map(q => qKeyFromOut(q));
+  used.seen = [...(used.seen||[]), ...newKeys];
+  fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
+  console.log('Updated used.json with', newKeys.length, 'entries');
+})();
