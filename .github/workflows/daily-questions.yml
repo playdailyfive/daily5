@@ -31,39 +31,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - name: Print Node & npm versions
-        run: |
-          node -v
-          npm -v
+      - name: Install deps (no-op if none)
+        run: npm ci || npm install || true
 
-      - name: Install deps
-        run: npm ci || npm install
-
-      - name: Show repo state (debug)
-        run: |
-          pwd
-          ls -la
-          echo "------ package.json ------"
-          cat package.json || true
-          echo "------ used.json (before) ------"
-          cat used.json || true
-          echo "------ daily.json (before) ------"
-          cat daily.json || true
-
-      - name: Generate today's questions (ET-aware; OpenTDB first with local fallback)
+      - name: Generate today's questions (OpenTDB-first; fallback on failure)
         env:
           REROLL_NONCE: ${{ github.event.inputs.reroll_nonce }}
         run: node scripts/generate-daily.cjs
         shell: bash
-
-      - name: Show outputs (debug)
-        run: |
-          echo "------ used.json (after) ------"
-          cat used.json || true
-          echo "------ daily.json (after) ------"
-          cat daily.json || true
 
       - name: Commit & push if changed (succeed if unchanged)
         shell: bash
@@ -90,4 +66,3 @@ jobs:
           path: |
             daily.json
             used.json
-
