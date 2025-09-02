@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
+      "text": "What nuts are used in the production of marzipan?",
       "options": [
-        "Star City",
-        "Central City",
-        "Metropolis",
-        "Gotham City"
+        "Almonds",
+        "Peanuts",
+        "Pistachios",
+        "Walnuts"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of Rivers Cuomo's wife?",
+      "text": "Which classical composer wrote the \"Moonlight Sonata\"?",
       "options": [
-        "Kyary Pamyu Pamyu",
-        "LiSA",
-        "Yoko Ono",
-        "Kyoko Ito"
+        "Wolfgang Amadeus Mozart",
+        "Johannes Brahms",
+        "Chief Keef",
+        "Ludvig Van Beethoven"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Amsterdam Centraal station is twinned with what station?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Brussels Midi",
-        "Frankfurt (Main) Hauptbahnhof",
-        "Paris Gare du Nord",
-        "London Liverpool Street"
+        "Physical Therapy",
+        "Psychology",
+        "Phrenology",
+        "Philosophy"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the \"The Hobbit\", who kills Smaug?",
+      "text": "Which retired American football quarterback played himself in 'Ace Ventura: Pet Detective' and 'Little Nicky'?",
       "options": [
-        "Frodo",
-        "Bard",
-        "Gandalf the Grey",
-        "Bilbo Baggins"
+        "Joe Montana",
+        "Dan Marino",
+        "Tom Brady",
+        "John Elway"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "How tall is Tom Cruise?",
+      "text": "According to Fair Works Australia, how long do you have to work to get Long Service Leave?",
       "options": [
-        "5&prime; 4&Prime;",
-        "5&prime; 7&Prime;",
-        "5&prime; 9&Prime;",
-        "5&prime; 5&Prime;"
+        "8 years",
+        "7 years",
+        "2 years",
+        "6 months"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "General Knowledge"
     }
   ]
 }
