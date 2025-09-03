@@ -1,68 +1,68 @@
 {
-  "day": "20250902",
-  "dayIndex": 10,
+  "day": "20250903",
+  "dayIndex": 11,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What nuts are used in the production of marzipan?",
+      "text": "Five dollars is worth how many nickels?",
       "options": [
-        "Almonds",
-        "Peanuts",
-        "Pistachios",
-        "Walnuts"
+        "100",
+        "50",
+        "69",
+        "25"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which classical composer wrote the \"Moonlight Sonata\"?",
+      "text": "Which country hosted the 2022 FIFA World Cup?",
       "options": [
-        "Wolfgang Amadeus Mozart",
-        "Johannes Brahms",
-        "Chief Keef",
-        "Ludvig Van Beethoven"
+        "Qatar",
+        "Switzerland",
+        "Japan",
+        "USA"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "What was the original name of the search engine \"Google\"?",
       "options": [
-        "Physical Therapy",
-        "Psychology",
-        "Phrenology",
-        "Philosophy"
+        "CatMassage",
+        "Netscape Navigator",
+        "BackRub",
+        "SearchPro"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which retired American football quarterback played himself in 'Ace Ventura: Pet Detective' and 'Little Nicky'?",
+      "text": "When was Hubba Bubba first introduced?",
       "options": [
-        "Joe Montana",
-        "Dan Marino",
-        "Tom Brady",
-        "John Elway"
+        "1980",
+        "1979",
+        "1972",
+        "1984"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "According to Fair Works Australia, how long do you have to work to get Long Service Leave?",
+      "text": "What is the name of the pirate that sings the intro to \"Spongebob Squarepants\"?",
       "options": [
-        "8 years",
-        "7 years",
-        "2 years",
-        "6 months"
+        "Painty",
+        "Larry",
+        "Patchy",
+        "Lloyd"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Television"
     }
   ]
 }
