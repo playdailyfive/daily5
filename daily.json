@@ -5,28 +5,28 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Five dollars is worth how many nickels?",
+      "text": "What style of beer will typically have a higher than average hop content?",
       "options": [
-        "100",
-        "50",
-        "69",
-        "25"
+        "India Pale Ale",
+        "Stout",
+        "Scotch Ale",
+        "Extra Special Bitter"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country hosted the 2022 FIFA World Cup?",
+      "text": "The \"K\" in \"K-Pop\" stands for which word?",
       "options": [
-        "Qatar",
-        "Switzerland",
-        "Japan",
-        "USA"
+        "Korean",
+        "Kuwaiti",
+        "Kazakhstan",
+        "Kenyan"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
       "text": "What was the original name of the search engine \"Google\"?",
@@ -41,28 +41,28 @@
       "category": "General Knowledge"
     },
     {
-      "text": "When was Hubba Bubba first introduced?",
+      "text": "What is the largest Muslim country in the world?",
       "options": [
-        "1980",
-        "1979",
-        "1972",
-        "1984"
+        "Iran",
+        "Indonesia",
+        "Saudi Arabia",
+        "Pakistan"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Geography"
     },
     {
-      "text": "What is the name of the pirate that sings the intro to \"Spongebob Squarepants\"?",
+      "text": "With which doubles partner did John McEnroe have most success?",
       "options": [
-        "Painty",
-        "Larry",
-        "Patchy",
-        "Lloyd"
+        "Peter Fleming",
+        "Mary Carillo",
+        "Mark Woodforde",
+        "Michael Stich"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Sports"
     }
   ]
 }
