@@ -1,66 +1,66 @@
 {
-  "day": "20250903",
-  "dayIndex": 11,
+  "day": "20250904",
+  "dayIndex": 12,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What style of beer will typically have a higher than average hop content?",
+      "text": "Who is the youngest person to receive a Nobel Prize?",
       "options": [
-        "India Pale Ale",
-        "Stout",
-        "Scotch Ale",
-        "Extra Special Bitter"
+        "Yasser Arafat",
+        "Malala Yousafzai",
+        "Lawrence Bragg",
+        "Werner Heisenberg"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The \"K\" in \"K-Pop\" stands for which word?",
+      "text": "What is the frontman's name of the metal band Megadeth?",
       "options": [
-        "Korean",
-        "Kuwaiti",
-        "Kazakhstan",
-        "Kenyan"
+        "James Hetfield",
+        "Dave Mustaine",
+        "Rob Halford",
+        "Vince Neil"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What was the original name of the search engine \"Google\"?",
+      "text": "What is the last letter of the Greek alphabet?",
       "options": [
-        "CatMassage",
-        "Netscape Navigator",
-        "BackRub",
-        "SearchPro"
+        "Epsilon",
+        "Omega",
+        "Kappa",
+        "Mu"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the largest Muslim country in the world?",
+      "text": "When did The Beatles release the LP \"Please Please Me\"?",
       "options": [
-        "Iran",
-        "Indonesia",
-        "Saudi Arabia",
-        "Pakistan"
+        "1969",
+        "1970",
+        "1960",
+        "1963"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "With which doubles partner did John McEnroe have most success?",
+      "text": "Etihad Stadium is the home stadium for which team?",
       "options": [
-        "Peter Fleming",
-        "Mary Carillo",
-        "Mark Woodforde",
-        "Michael Stich"
+        "Manchester United",
+        "Manchester City",
+        "Blackpool",
+        "Arsenal"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
       "category": "Sports"
     }
