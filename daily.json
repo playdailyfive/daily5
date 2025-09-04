@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is the youngest person to receive a Nobel Prize?",
+      "text": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
       "options": [
-        "Yasser Arafat",
-        "Malala Yousafzai",
-        "Lawrence Bragg",
-        "Werner Heisenberg"
+        "Bill Gates",
+        "Richard Branson",
+        "Alan Sugar",
+        "Donald Trump"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the frontman's name of the metal band Megadeth?",
+      "text": "What is the orange and white bot's name in \"Star Wars: The Force Awakens\"?",
       "options": [
-        "James Hetfield",
-        "Dave Mustaine",
-        "Rob Halford",
-        "Vince Neil"
+        "R2-D2",
+        "BB-8",
+        "BB-3",
+        "AA-A"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the last letter of the Greek alphabet?",
+      "text": "On average, Americans consume 100 pounds of what per second?",
       "options": [
-        "Epsilon",
-        "Omega",
-        "Kappa",
-        "Mu"
+        "Donuts",
+        "Chocolate",
+        "Cocaine",
+        "Potatoes"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "When did The Beatles release the LP \"Please Please Me\"?",
+      "text": "Who had a US and UK number 1 hit in 1962 with the instrumental, 'Telstar'?",
       "options": [
-        "1969",
-        "1970",
-        "1960",
-        "1963"
+        "The Tremeloes",
+        "The Ventures",
+        "The Spotnicks",
+        "The Tornados"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Etihad Stadium is the home stadium for which team?",
+      "text": "In \"Star Trek\", what is the Klingon delicacy of \"gagh\" made from?",
       "options": [
-        "Manchester United",
-        "Manchester City",
-        "Blackpool",
-        "Arsenal"
+        "Earthworms",
+        "Serpent worms",
+        "Klingworms",
+        "Spaghetti noodles"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     }
   ]
 }
