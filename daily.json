@@ -1,64 +1,64 @@
 {
-  "day": "20250904",
-  "dayIndex": 12,
+  "day": "20250905",
+  "dayIndex": 13,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+      "text": "What is the closest planet to our solar system's sun?",
       "options": [
-        "Bill Gates",
-        "Richard Branson",
-        "Alan Sugar",
-        "Donald Trump"
+        "Mars",
+        "Jupiter",
+        "Mercury",
+        "Earth"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the orange and white bot's name in \"Star Wars: The Force Awakens\"?",
+      "text": "The 2016 Disney animated film 'Moana' is based on which culture?",
       "options": [
-        "R2-D2",
-        "BB-8",
-        "BB-3",
-        "AA-A"
+        "Nordic",
+        "Polynesian",
+        "Native American",
+        "Japanese"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "On average, Americans consume 100 pounds of what per second?",
+      "text": "Who is the founder of \"The Lego Group\"?",
       "options": [
-        "Donuts",
-        "Chocolate",
-        "Cocaine",
-        "Potatoes"
+        " Gerhardt Kirk Christiansen",
+        " Jens Niels Christiansen",
+        "Kirstine Christiansen",
+        "Ole Kirk Christiansen"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who had a US and UK number 1 hit in 1962 with the instrumental, 'Telstar'?",
+      "text": "Who provided a majority of the songs and lyrics for \"Spirit: Stallion of the Cimarron\"?",
       "options": [
-        "The Tremeloes",
-        "The Ventures",
-        "The Spotnicks",
-        "The Tornados"
+        "Smash Mouth",
+        "Air Supply",
+        "Oasis",
+        "Bryan Adams"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In \"Star Trek\", what is the Klingon delicacy of \"gagh\" made from?",
+      "text": "In \"Star Trek\", who was the founder of the Klingon Empire and its philosophy?",
       "options": [
-        "Earthworms",
-        "Serpent worms",
-        "Klingworms",
-        "Spaghetti noodles"
+        "Dahar Master Kor",
+        "Kahless the Unforgettable",
+        "Lady Lukara of the Great Hall",
+        "Molor the Unforgiving"
       ],
       "correct": 1,
       "difficulty": "hard",
