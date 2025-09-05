@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the closest planet to our solar system's sun?",
+      "text": "What zodiac sign is represented by a pair of scales?",
       "options": [
-        "Mars",
-        "Jupiter",
-        "Mercury",
-        "Earth"
+        "Aries",
+        "Capricorn",
+        "Libra",
+        "Sagittarius"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The 2016 Disney animated film 'Moana' is based on which culture?",
+      "text": "What is the name of New Zealand's indigenous people?",
       "options": [
-        "Nordic",
-        "Polynesian",
-        "Native American",
-        "Japanese"
+        "Samoans",
+        "Maori",
+        "Vikings",
+        "Polynesians"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "Who is the founder of \"The Lego Group\"?",
+      "text": "When was WhatsApp founded?",
       "options": [
-        " Gerhardt Kirk Christiansen",
-        " Jens Niels Christiansen",
-        "Kirstine Christiansen",
-        "Ole Kirk Christiansen"
+        "2010",
+        "2007",
+        "2012",
+        "2009"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who provided a majority of the songs and lyrics for \"Spirit: Stallion of the Cimarron\"?",
+      "text": "Which movie sequel had improved box office results compared to its original film?",
       "options": [
-        "Smash Mouth",
-        "Air Supply",
-        "Oasis",
-        "Bryan Adams"
+        "Sin City: A Dame to Kill For",
+        "Son of the Mask",
+        "Speed 2: Cruise Control",
+        "Toy Story 2"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "In \"Star Trek\", who was the founder of the Klingon Empire and its philosophy?",
+      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
       "options": [
-        "Dahar Master Kor",
-        "Kahless the Unforgettable",
-        "Lady Lukara of the Great Hall",
-        "Molor the Unforgiving"
+        "Rebecca",
+        "Rope",
+        "Psycho",
+        "Vertigo"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     }
   ]
 }
