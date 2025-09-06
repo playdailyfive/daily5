@@ -1,68 +1,68 @@
 {
-  "day": "20250905",
-  "dayIndex": 13,
+  "day": "20250906",
+  "dayIndex": 14,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What zodiac sign is represented by a pair of scales?",
+      "text": "When someone is inexperienced they are said to be what color?",
       "options": [
-        "Aries",
-        "Capricorn",
-        "Libra",
-        "Sagittarius"
+        "Red",
+        "Green",
+        "Blue",
+        "Yellow"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of New Zealand's indigenous people?",
+      "text": "Where would you find the \"Spanish Steps\"?",
       "options": [
-        "Samoans",
-        "Maori",
-        "Vikings",
-        "Polynesians"
+        "Barcelona, Spain",
+        "Rome, Italy",
+        "Berlin, Germany",
+        "London, England"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "When was WhatsApp founded?",
+      "text": "What is the romanized Russian word for \"winter\"?",
       "options": [
-        "2010",
-        "2007",
-        "2012",
-        "2009"
+        "Osen'",
+        "Leto",
+        "Vesna",
+        "Zima"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which movie sequel had improved box office results compared to its original film?",
+      "text": "How many counties in the Republic of Ireland.",
       "options": [
-        "Sin City: A Dame to Kill For",
-        "Son of the Mask",
-        "Speed 2: Cruise Control",
-        "Toy Story 2"
+        "30",
+        "32",
+        "28",
+        "26"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
+      "text": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
       "options": [
-        "Rebecca",
-        "Rope",
-        "Psycho",
-        "Vertigo"
+        "20%",
+        "7%",
+        "28%",
+        "13%"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
