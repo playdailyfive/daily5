@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When someone is inexperienced they are said to be what color?",
+      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
       "options": [
-        "Red",
-        "Green",
-        "Blue",
-        "Yellow"
+        "Anheuser Busch",
+        "D. G. Yuengling and Son, Inc",
+        "Boston Beer Company",
+        "Miller Coors"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Where would you find the \"Spanish Steps\"?",
+      "text": "The \"K\" in \"K-Pop\" stands for which word?",
       "options": [
-        "Barcelona, Spain",
-        "Rome, Italy",
-        "Berlin, Germany",
-        "London, England"
+        "Kenyan",
+        "Korean",
+        "Kazakhstan",
+        "Kuwaiti"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the romanized Russian word for \"winter\"?",
+      "text": "What are the three starter Pokemon available in Pokemon Black and White?",
       "options": [
-        "Osen'",
-        "Leto",
-        "Vesna",
-        "Zima"
+        "Chespin, Fennekin, Oshawott",
+        "Snivy, Fennekin, Froakie",
+        "Chespin, Tepig, Froakie",
+        "Snivy, Tepig, Oshawott"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "How many counties in the Republic of Ireland.",
+      "text": "Baron Silas Greenback is the arch nemesis of which cartoon hero?",
       "options": [
-        "30",
-        "32",
-        "28",
-        "26"
+        "Captain Star",
+        "Bananaman",
+        "SuperTed",
+        "Danger Mouse"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
+      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
       "options": [
-        "20%",
-        "7%",
-        "28%",
-        "13%"
+        "Ashurism",
+        "Judaism",
+        "Zoroastrianism",
+        "Paganism"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Celebrities"
     }
   ]
 }
