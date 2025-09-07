@@ -1,68 +1,68 @@
 {
-  "day": "20250906",
-  "dayIndex": 14,
+  "day": "20250907",
+  "dayIndex": 15,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
+      "text": "What are Panama hats made out of?",
       "options": [
-        "Anheuser Busch",
-        "D. G. Yuengling and Son, Inc",
-        "Boston Beer Company",
-        "Miller Coors"
+        "Straw",
+        "Flax",
+        "Hemp",
+        "Silk"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The \"K\" in \"K-Pop\" stands for which word?",
+      "text": "Which city did the former NHL team \"The Nordiques\" originiate from?",
       "options": [
-        "Kenyan",
-        "Korean",
-        "Kazakhstan",
-        "Kuwaiti"
+        "Quebec City",
+        "New York",
+        "Montreal",
+        "Houston"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "What are the three starter Pokemon available in Pokemon Black and White?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Chespin, Fennekin, Oshawott",
-        "Snivy, Fennekin, Froakie",
-        "Chespin, Tepig, Froakie",
-        "Snivy, Tepig, Oshawott"
+        "Phrenology",
+        "Psychology",
+        "Physical Therapy",
+        "Philosophy"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Baron Silas Greenback is the arch nemesis of which cartoon hero?",
+      "text": "The Pyrenees mountains are located on the border of which two countries?",
       "options": [
-        "Captain Star",
-        "Bananaman",
-        "SuperTed",
-        "Danger Mouse"
+        "Italy and Switzerland",
+        "France and Spain",
+        "Russia and Ukraine",
+        "Norway and Sweden"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
+      "text": "In order to cut costs, what were most of the extras of Mad Max (1979) paid with?",
       "options": [
-        "Ashurism",
-        "Judaism",
-        "Zoroastrianism",
-        "Paganism"
+        "Fast food",
+        "They weren't paid",
+        "Beer",
+        "Food stamps"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "Entertainment: Film"
     }
   ]
 }
