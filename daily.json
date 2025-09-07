@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What are Panama hats made out of?",
+      "text": "What is on display in the Madame Tussaud's museum in London?",
       "options": [
-        "Straw",
-        "Flax",
-        "Hemp",
-        "Silk"
+        "Wax sculptures",
+        "Vintage cars",
+        "Unreleased film reels",
+        "Designer clothing"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which city did the former NHL team \"The Nordiques\" originiate from?",
+      "text": "Harvard University is located in which city?",
       "options": [
-        "Quebec City",
+        "Cambridge",
+        "Washington D.C.",
         "New York",
-        "Montreal",
-        "Houston"
+        "Providence"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Geography"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
       "options": [
-        "Phrenology",
-        "Psychology",
-        "Physical Therapy",
-        "Philosophy"
+        "Baroque",
+        "Neoclassical",
+        "Gothic Revival",
+        "Modernism"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The Pyrenees mountains are located on the border of which two countries?",
+      "text": "In Game of Thrones what is the name of Jon Snow's sword?",
       "options": [
-        "Italy and Switzerland",
-        "France and Spain",
-        "Russia and Ukraine",
-        "Norway and Sweden"
+        "Oathkeeper",
+        "Longclaw",
+        "Needle",
+        "Widow's Wail"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "In order to cut costs, what were most of the extras of Mad Max (1979) paid with?",
+      "text": "If someone said \"you are olid\", what would they mean?",
       "options": [
-        "Fast food",
-        "They weren't paid",
-        "Beer",
-        "Food stamps"
+        "You are out of shape/weak.",
+        "You are incomprehensible/an idiot.",
+        "You smell extremely unpleasant.",
+        "Your appearance is repulsive."
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
