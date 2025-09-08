@@ -1,64 +1,64 @@
 {
-  "day": "20250907",
-  "dayIndex": 15,
+  "day": "20250908",
+  "dayIndex": 16,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is on display in the Madame Tussaud's museum in London?",
+      "text": "What do the letters of the fast food chain KFC stand for?",
       "options": [
-        "Wax sculptures",
-        "Vintage cars",
-        "Unreleased film reels",
-        "Designer clothing"
+        "Kentucky Fried Chicken",
+        "Kiwi Food Cut",
+        "Kibbled Freaky Cow",
+        "Kentucky Fresh Cheese"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Harvard University is located in which city?",
+      "text": "Where would you find the \"Spanish Steps\"?",
       "options": [
-        "Cambridge",
-        "Washington D.C.",
-        "New York",
-        "Providence"
+        "Barcelona, Spain",
+        "London, England",
+        "Berlin, Germany",
+        "Rome, Italy"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
+      "text": "In the Morse code, which letter is indicated by 3 dots? ",
       "options": [
-        "Baroque",
-        "Neoclassical",
-        "Gothic Revival",
-        "Modernism"
+        "S",
+        "C",
+        "A",
+        "O"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In Game of Thrones what is the name of Jon Snow's sword?",
+      "text": "On a London Underground map, what colour is the Circle Line?",
       "options": [
-        "Oathkeeper",
-        "Longclaw",
-        "Needle",
-        "Widow's Wail"
+        "Blue",
+        "Yellow",
+        "Green",
+        "Red"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "If someone said \"you are olid\", what would they mean?",
+      "text": "What was the third country to have a McDonald's restaurant?",
       "options": [
-        "You are out of shape/weak.",
-        "You are incomprehensible/an idiot.",
-        "You smell extremely unpleasant.",
-        "Your appearance is repulsive."
+        "Australia",
+        "Japan",
+        "Costa Rica",
+        "France"
       ],
       "correct": 2,
       "difficulty": "hard",
