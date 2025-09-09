@@ -1,68 +1,68 @@
 {
-  "day": "20250908",
-  "dayIndex": 16,
+  "day": "20250909",
+  "dayIndex": 17,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
+      "text": "Which American president appears on a one dollar bill?",
       "options": [
-        "Gorilla",
-        "Crocodile",
-        "Panda",
-        "Tiger"
+        "Abraham Lincoln",
+        "Benjamin Franklin",
+        "Thomas Jefferson",
+        "George Washington"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of the US State of New York?",
+      "text": "What is the name of New Zealand's indigenous people?",
       "options": [
-        "Buffalo",
-        "Rochester",
-        "New York",
-        "Albany"
+        "Samoans",
+        "Vikings",
+        "Polynesians",
+        "Maori"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "What are the three starter Pokemon available in Pokemon Black and White?",
+      "text": "What is the world's most expensive spice by weight?",
       "options": [
-        "Snivy, Tepig, Oshawott",
-        "Chespin, Fennekin, Oshawott",
-        "Chespin, Tepig, Froakie",
-        "Snivy, Fennekin, Froakie"
+        "Vanilla",
+        "Saffron",
+        "Cardamom",
+        "Cinnamon"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Where is Hadrian's Wall located?",
+      "text": "In the 1979 British film \"Quadrophenia\" what is the name of the seaside city the mods are visiting?",
       "options": [
-        "Alexandria, Egypt",
-        "Carlisle, England",
-        "Dublin, Ireland",
-        "Rome, Italy"
+        "Mousehole",
+        "Brighton",
+        "Eastbourne",
+        "Bridlington"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which country does the YouTuber \"SinowBeats\" originate from?",
+      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
       "options": [
-        "Germany",
-        "England",
-        "Scotland",
-        "Sweden"
+        "William Wordsworth",
+        "Rudyard Kipling",
+        "Edgar Allan Poe",
+        "William Shakespeare"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Books"
     }
   ]
 }
