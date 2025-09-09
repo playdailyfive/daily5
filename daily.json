@@ -5,28 +5,28 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American president appears on a one dollar bill?",
+      "text": "What are Panama hats made out of?",
       "options": [
-        "Abraham Lincoln",
-        "Benjamin Franklin",
-        "Thomas Jefferson",
-        "George Washington"
+        "Hemp",
+        "Flax",
+        "Silk",
+        "Straw"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of New Zealand's indigenous people?",
+      "text": "Who plays protagonist Ethan Hunt in the \"Mission: Impossible\" film-series?",
       "options": [
-        "Samoans",
-        "Vikings",
-        "Polynesians",
-        "Maori"
+        "Pierce Brosnan",
+        "Johnny Depp",
+        "Sean Connery",
+        "Tom Cruise"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
       "text": "What is the world's most expensive spice by weight?",
@@ -41,28 +41,28 @@
       "category": "General Knowledge"
     },
     {
-      "text": "In the 1979 British film \"Quadrophenia\" what is the name of the seaside city the mods are visiting?",
+      "text": "Who played Batman in the 1997 film \"Batman and Robin\"?",
       "options": [
-        "Mousehole",
-        "Brighton",
-        "Eastbourne",
-        "Bridlington"
+        "Val Kilmer",
+        "George Clooney",
+        "Michael Keaton",
+        "Christian Bale"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
+      "text": "Who won the 1998 Daytona 500?",
       "options": [
-        "William Wordsworth",
-        "Rudyard Kipling",
-        "Edgar Allan Poe",
-        "William Shakespeare"
+        "Michael Walltrip",
+        "Dale Earnhardt",
+        "John Anderson",
+        "Jeff Gordon"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Sports"
     }
   ]
 }
