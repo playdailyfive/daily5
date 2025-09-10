@@ -1,68 +1,68 @@
 {
-  "day": "20250909",
-  "dayIndex": 17,
+  "day": "20250910",
+  "dayIndex": 18,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What are Panama hats made out of?",
+      "text": "When was the website reddit founded ?",
       "options": [
-        "Hemp",
-        "Flax",
-        "Silk",
-        "Straw"
+        "2005",
+        "2006",
+        "2004",
+        "2008"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays protagonist Ethan Hunt in the \"Mission: Impossible\" film-series?",
+      "text": "What was Daft Punk's first studio album?",
       "options": [
-        "Pierce Brosnan",
-        "Johnny Depp",
-        "Sean Connery",
-        "Tom Cruise"
+        "Discovery",
+        "Human After All",
+        "Homework",
+        "Random Access Memories"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the world's most expensive spice by weight?",
+      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
       "options": [
-        "Vanilla",
-        "Saffron",
-        "Cardamom",
-        "Cinnamon"
+        "Films",
+        "Board Games",
+        "Video Games",
+        "Television Shows"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who played Batman in the 1997 film \"Batman and Robin\"?",
+      "text": "The title of Adolf Hitler's autobiography \"Mein Kampf\" is what when translated to English?",
       "options": [
-        "Val Kilmer",
-        "George Clooney",
-        "Michael Keaton",
-        "Christian Bale"
+        "My Struggle",
+        "My Desire",
+        "My Hatred",
+        "My Sadness"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Who won the 1998 Daytona 500?",
+      "text": "What is the stage name of New Zealand singer Phillipa \"Pip\" Brown?",
       "options": [
-        "Michael Walltrip",
-        "Dale Earnhardt",
-        "John Anderson",
-        "Jeff Gordon"
+        "Anika Moa",
+        "Ladyhawke",
+        "Kesha",
+        "Lorde"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     }
   ]
 }
