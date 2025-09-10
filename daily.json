@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When was the website reddit founded ?",
+      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
       "options": [
-        "2005",
-        "2006",
-        "2004",
-        "2008"
+        "Key",
+        "Cellphone",
+        "Pen",
+        "Sword"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was Daft Punk's first studio album?",
+      "text": "How many federal states does Germany have?",
       "options": [
-        "Discovery",
-        "Human After All",
-        "Homework",
-        "Random Access Memories"
+        "13",
+        "25",
+        "16",
+        "32"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
+      "text": "What character was once considered to be the 27th letter of the alphabet?",
       "options": [
-        "Films",
-        "Board Games",
-        "Video Games",
-        "Television Shows"
+        "Pilcrow",
+        "Ampersand",
+        "Tilde",
+        "Interrobang"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The title of Adolf Hitler's autobiography \"Mein Kampf\" is what when translated to English?",
+      "text": "Frankenmuth, a US city nicknamed \"Little Bavaria\", is located in what state?",
       "options": [
-        "My Struggle",
-        "My Desire",
-        "My Hatred",
-        "My Sadness"
+        "Michigan",
+        "Virginia",
+        "Pennsylvania",
+        "Kentucky"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     },
     {
-      "text": "What is the stage name of New Zealand singer Phillipa \"Pip\" Brown?",
+      "text": "What is Hermione Granger's middle name?",
       "options": [
-        "Anika Moa",
-        "Ladyhawke",
-        "Kesha",
-        "Lorde"
+        "Jo",
+        "Jean",
+        "Emma",
+        "Jane"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     }
   ]
 }
