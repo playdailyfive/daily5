@@ -1,68 +1,68 @@
 {
-  "day": "20250910",
-  "dayIndex": 18,
+  "day": "20250911",
+  "dayIndex": 19,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+      "text": "What is on display in the Madame Tussaud's museum in London?",
       "options": [
-        "Key",
-        "Cellphone",
-        "Pen",
-        "Sword"
+        "Vintage cars",
+        "Wax sculptures",
+        "Designer clothing",
+        "Unreleased film reels"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "How many federal states does Germany have?",
+      "text": "Which music publication is often abbreviated to NME?",
       "options": [
-        "13",
-        "25",
-        "16",
-        "32"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "Geography"
-    },
-    {
-      "text": "What character was once considered to be the 27th letter of the alphabet?",
-      "options": [
-        "Pilcrow",
-        "Ampersand",
-        "Tilde",
-        "Interrobang"
+        "Next Musical Enterprise",
+        "New Musical Express",
+        "North Manchester Express",
+        "New Metro Entertainment"
       ],
       "correct": 1,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+      "options": [
+        "Tiki masala",
+        "Biryani",
+        "Pani puri",
+        "Tandoori"
+      ],
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Frankenmuth, a US city nicknamed \"Little Bavaria\", is located in what state?",
+      "text": "When was the 3rd album \"Notes from the Underground\" of the band \"Hollywood Undead\" released?",
       "options": [
-        "Michigan",
-        "Virginia",
-        "Pennsylvania",
-        "Kentucky"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "What is Hermione Granger's middle name?",
-      "options": [
-        "Jo",
-        "Jean",
-        "Emma",
-        "Jane"
+        "2011",
+        "2013",
+        "2009",
+        "2014"
       ],
       "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "options": [
+        "India",
+        "Thailand",
+        "Indonesia",
+        "Vietnam"
+      ],
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     }
   ]
 }
