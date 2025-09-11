@@ -5,24 +5,24 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is on display in the Madame Tussaud's museum in London?",
+      "text": "What is the name of Poland in Polish?",
       "options": [
-        "Vintage cars",
-        "Wax sculptures",
-        "Designer clothing",
-        "Unreleased film reels"
+        "P&oacute;land",
+        "Polska",
+        "Pupcia",
+        "Polszka"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which music publication is often abbreviated to NME?",
+      "text": "What 1970's American ballad referred to the 1959 plane crash as the \"the day the music died\"?",
       "options": [
-        "Next Musical Enterprise",
-        "New Musical Express",
-        "North Manchester Express",
-        "New Metro Entertainment"
+        "I Will Always Love You",
+        "American Pie",
+        "Rock 'n' Roll Suicide",
+        "Kentucky Rain"
       ],
       "correct": 1,
       "difficulty": "easy",
@@ -41,28 +41,28 @@
       "category": "General Knowledge"
     },
     {
-      "text": "When was the 3rd album \"Notes from the Underground\" of the band \"Hollywood Undead\" released?",
+      "text": "Which NBA player won Most Valuable Player for the 1999-2000 season?",
       "options": [
-        "2011",
-        "2013",
-        "2009",
-        "2014"
+        "Allen Iverson",
+        "Shaquille O'Neal",
+        "Paul Pierce",
+        "Kobe Bryant"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "text": "In the Harry Potter universe, what is Cornelius Fudge's middle name?",
       "options": [
-        "India",
-        "Thailand",
-        "Indonesia",
-        "Vietnam"
+        "Oswald",
+        "Harold",
+        "Christopher",
+        "James"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
