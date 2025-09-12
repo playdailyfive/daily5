@@ -1,68 +1,68 @@
 {
-  "day": "20250911",
-  "dayIndex": 19,
+  "day": "20250912",
+  "dayIndex": 20,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of Poland in Polish?",
+      "text": "In \"Shrek\", what comedic actor voices Donkey?",
       "options": [
-        "P&oacute;land",
-        "Polska",
-        "Pupcia",
-        "Polszka"
+        "Bernie Mac",
+        "Eddie Murphy",
+        "Chris Rock",
+        "Richard Pryor"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What 1970's American ballad referred to the 1959 plane crash as the \"the day the music died\"?",
+      "text": "Which famous rapper is featured in Jack &Uuml; (Skrillex and Diplo)'s 2015 single called \"Febreze\"?",
       "options": [
-        "I Will Always Love You",
-        "American Pie",
-        "Rock 'n' Roll Suicide",
-        "Kentucky Rain"
+        "Fatman Scoop",
+        "Kendrick Lamar",
+        "Future",
+        "2 Chainz"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+      "text": "What is the unit of currency in Laos?",
       "options": [
-        "Tiki masala",
-        "Biryani",
-        "Pani puri",
-        "Tandoori"
+        "Ruble",
+        "Dollar",
+        "Konra",
+        "Kip"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which NBA player won Most Valuable Player for the 1999-2000 season?",
+      "text": "Who was walking like an Egyptian in 1981?",
       "options": [
-        "Allen Iverson",
-        "Shaquille O'Neal",
-        "Paul Pierce",
-        "Kobe Bryant"
+        "The Connells",
+        "The Bangles",
+        "R.E.M.",
+        "The Ocean Blue"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In the Harry Potter universe, what is Cornelius Fudge's middle name?",
+      "text": "In the show 'Doctor Who', what is the name of the time-capsule model stolen by 'the Doctor'?",
       "options": [
-        "Oswald",
-        "Harold",
-        "Christopher",
-        "James"
+        "TT Type 1, Mark 5 (TARDIS)",
+        "TT Type 40, Mark 3 (TARDIS)",
+        "TT Type 1, Mark 3 (TARDIS)",
+        "TT Type 40, Mark 5 (TARDIS)"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     }
   ]
 }
