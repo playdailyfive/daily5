@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In \"Shrek\", what comedic actor voices Donkey?",
+      "text": "When one is \"envious\", they are said to be what color?",
       "options": [
-        "Bernie Mac",
-        "Eddie Murphy",
-        "Chris Rock",
-        "Richard Pryor"
+        "Yellow",
+        "Green",
+        "Red",
+        "Blue"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which famous rapper is featured in Jack &Uuml; (Skrillex and Diplo)'s 2015 single called \"Febreze\"?",
+      "text": "The HBO series \"Game of Thrones\" is based on which series of books?",
       "options": [
-        "Fatman Scoop",
-        "Kendrick Lamar",
-        "Future",
-        "2 Chainz"
+        "The Notebook",
+        "The Wheel of Time",
+        "Harry Potter",
+        "A Song of Ice and Fire"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the unit of currency in Laos?",
+      "text": "Which item of clothing is usually worn by a Scotsman at a wedding?",
       "options": [
-        "Ruble",
-        "Dollar",
-        "Konra",
-        "Kip"
+        "Skirt",
+        "Rhobes",
+        "Dress",
+        "Kilt"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was walking like an Egyptian in 1981?",
+      "text": "What is Fergie's debut album called?",
       "options": [
-        "The Connells",
-        "The Bangles",
-        "R.E.M.",
-        "The Ocean Blue"
+        "Loose",
+        "The Dutchess",
+        "Fergalicious ",
+        "The Sweet Escape"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "In the show 'Doctor Who', what is the name of the time-capsule model stolen by 'the Doctor'?",
+      "text": "Which is not a country in Africa?",
       "options": [
-        "TT Type 1, Mark 5 (TARDIS)",
-        "TT Type 40, Mark 3 (TARDIS)",
-        "TT Type 1, Mark 3 (TARDIS)",
-        "TT Type 40, Mark 5 (TARDIS)"
+        "Somalia",
+        "Guyana",
+        "Senegal",
+        "Liberia"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     }
   ]
 }
