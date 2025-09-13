@@ -1,68 +1,68 @@
 {
-  "day": "20250912",
-  "dayIndex": 20,
+  "day": "20250913",
+  "dayIndex": 21,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When one is \"envious\", they are said to be what color?",
+      "text": "What is the Zodiac symbol for Gemini?",
       "options": [
-        "Yellow",
-        "Green",
-        "Red",
-        "Blue"
+        "Fish",
+        "Twins",
+        "Scales",
+        "Maiden"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The HBO series \"Game of Thrones\" is based on which series of books?",
+      "text": "Which artist released the 2012 single \"Harlem Shake\", which was used in numerous YouTube videos in 2013?",
       "options": [
-        "The Notebook",
-        "The Wheel of Time",
-        "Harry Potter",
-        "A Song of Ice and Fire"
+        "Flosstradamus",
+        "RL Grime",
+        "NGHTMRE",
+        "Baauer"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which item of clothing is usually worn by a Scotsman at a wedding?",
+      "text": "Which famed architect, who died in 2019 aged 102, designed the glass pyramid at the Louvre museum in Paris?",
       "options": [
-        "Skirt",
-        "Rhobes",
-        "Dress",
-        "Kilt"
+        "Wang Shu",
+        "Pascale Guédot",
+        "Frank Gehry",
+        "I. M. Pei"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Fergie's debut album called?",
+      "text": "Which band had hits in 1975 with the songs, 'One Of These Nights' & 'Lyin Eyes'?",
       "options": [
-        "Loose",
-        "The Dutchess",
-        "Fergalicious ",
-        "The Sweet Escape"
+        "The Doobie Brothers",
+        "Fleetwood Mac",
+        "The Eagles",
+        "Fools Gold"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which is not a country in Africa?",
+      "text": "Which city features all of their professional sports teams' jersey's with the same color scheme?",
       "options": [
-        "Somalia",
-        "Guyana",
-        "Senegal",
-        "Liberia"
+        "Seattle",
+        "Tampa Bay",
+        "Pittsburgh",
+        "New York"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Sports"
     }
   ]
 }
