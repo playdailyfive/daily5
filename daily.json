@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the Zodiac symbol for Gemini?",
+      "text": "Which restaurant's mascot is a clown?",
       "options": [
-        "Fish",
-        "Twins",
-        "Scales",
-        "Maiden"
+        "Whataburger",
+        "McDonald's",
+        "Burger King",
+        "Sonic"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which artist released the 2012 single \"Harlem Shake\", which was used in numerous YouTube videos in 2013?",
+      "text": "How many members are there in the band Nirvana?",
       "options": [
-        "Flosstradamus",
-        "RL Grime",
-        "NGHTMRE",
-        "Baauer"
+        "Five",
+        "Two",
+        "Four",
+        "Three"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which famed architect, who died in 2019 aged 102, designed the glass pyramid at the Louvre museum in Paris?",
+      "text": "The Mexican Beer \"Corona\" is what type of beer?",
       "options": [
-        "Wang Shu",
-        "Pascale Guédot",
-        "Frank Gehry",
-        "I. M. Pei"
+        "Baltic Porter",
+        "India Pale Ale",
+        "Pilfsner",
+        "Pale Lager"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which band had hits in 1975 with the songs, 'One Of These Nights' & 'Lyin Eyes'?",
+      "text": "The Who's eponymous line, \"Teenage Wasteland\", appears in which of their songs?",
       "options": [
-        "The Doobie Brothers",
-        "Fleetwood Mac",
-        "The Eagles",
-        "Fools Gold"
+        "Won't Get Fooled Again",
+        "Pinball Wizard",
+        "Baba O' Riley",
+        "The Seeker"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which city features all of their professional sports teams' jersey's with the same color scheme?",
+      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
       "options": [
-        "Seattle",
-        "Tampa Bay",
-        "Pittsburgh",
-        "New York"
+        "Fulchester",
+        "Ambridge",
+        "Wessex",
+        "Barsetshire"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Books"
     }
   ]
 }
