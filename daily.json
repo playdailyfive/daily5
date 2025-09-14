@@ -1,68 +1,68 @@
 {
-  "day": "20250913",
-  "dayIndex": 21,
+  "day": "20250914",
+  "dayIndex": 22,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which restaurant's mascot is a clown?",
+      "text": "Earth is located in which galaxy?",
       "options": [
-        "Whataburger",
-        "McDonald's",
-        "Burger King",
-        "Sonic"
+        "The Milky Way Galaxy",
+        "The Black Hole",
+        "The Galaxy Note",
+        "The Mars Galaxy"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
+      "options": [
+        "Mordor",
+        "Rivendell",
+        "Moria",
+        "Isengard"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "In a standard set of playing cards, which is the only king without a moustache?",
+      "options": [
+        "Spades",
+        "Hearts",
+        "Clubs",
+        "Diamonds"
       ],
       "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many members are there in the band Nirvana?",
-      "options": [
-        "Five",
-        "Two",
-        "Four",
-        "Three"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
-      "options": [
-        "Baltic Porter",
-        "India Pale Ale",
-        "Pilfsner",
-        "Pale Lager"
-      ],
-      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The Who's eponymous line, \"Teenage Wasteland\", appears in which of their songs?",
+      "text": "Scotch whisky and Drambuie make up which cocktail?",
       "options": [
-        "Won't Get Fooled Again",
-        "Pinball Wizard",
-        "Baba O' Riley",
-        "The Seeker"
+        "Screwdriver",
+        "Manhattan",
+        "Rusty Nail",
+        "Sex on the Beach"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     },
     {
-      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
+      "text": "Who recorded the 1975 album 'Captain Fantastic and the Brown Dirt Cowboy'?",
       "options": [
-        "Fulchester",
-        "Ambridge",
-        "Wessex",
-        "Barsetshire"
+        "Elton John",
+        "John Denver",
+        "Billy Joel",
+        "Joe Cocker"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     }
   ]
 }
