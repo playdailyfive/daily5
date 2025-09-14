@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Earth is located in which galaxy?",
+      "text": "What is the nickname of the US state of California?",
       "options": [
-        "The Milky Way Galaxy",
-        "The Black Hole",
-        "The Galaxy Note",
-        "The Mars Galaxy"
+        "Golden State",
+        "Treasure State",
+        "Bay State",
+        "Sunshine State"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
+      "text": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
       "options": [
-        "Mordor",
-        "Rivendell",
-        "Moria",
-        "Isengard"
+        "Ferris Bueller's Day Off",
+        "Three Men and a Baby",
+        "Pretty in Pink",
+        "Dirty Dancing"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "In a standard set of playing cards, which is the only king without a moustache?",
+      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
       "options": [
-        "Spades",
-        "Hearts",
-        "Clubs",
-        "Diamonds"
+        "Why Pay More!?",
+        "We Love to See You Smile",
+        "Making People Happy Through Food",
+        "Have It Your Way"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Scotch whisky and Drambuie make up which cocktail?",
+      "text": "What Queen song plays during the final fight scene of the film \"Hardcore Henry\"?",
       "options": [
-        "Screwdriver",
-        "Manhattan",
-        "Rusty Nail",
-        "Sex on the Beach"
+        "Brighton Rock",
+        "We Will Rock You",
+        "Don't Stop Me Now",
+        "Another Bites the Dust"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Who recorded the 1975 album 'Captain Fantastic and the Brown Dirt Cowboy'?",
+      "text": "Panic! At the Disco's sixth album \"Pray For The Wicked\" was released on which date?",
       "options": [
-        "Elton John",
-        "John Denver",
-        "Billy Joel",
-        "Joe Cocker"
+        "June 22, 2018",
+        "May 9, 2018",
+        "March 13, 2018",
+        "February 21, 2018"
       ],
       "correct": 0,
       "difficulty": "hard",
