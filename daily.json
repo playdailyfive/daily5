@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does VR stand for?",
+      "text": "What is the nickname of the US state of California?",
       "options": [
-        "Very Real",
-        "Voice Recognition",
-        "Visual Recognition",
-        "Virtual Reality"
+        "Sunshine State",
+        "Treasure State",
+        "Bay State",
+        "Golden State"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which classical composer wrote the \"Moonlight Sonata\"?",
+      "text": "\"Green Eggs And Ham\" is a book by which author?",
       "options": [
-        "Ludvig Van Beethoven",
-        "Johannes Brahms",
-        "Wolfgang Amadeus Mozart",
-        "Chief Keef"
+        "Dr. Seuss",
+        "A.A. Milne",
+        "Roald Dahl",
+        "Beatrix Potter"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "What character was once considered to be the 27th letter of the alphabet?",
+      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
       "options": [
-        "Tilde",
-        "Ampersand",
-        "Pilcrow",
-        "Interrobang"
+        "Asus",
+        "Hewlett-Packard",
+        "Dell",
+        "Toshiba"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which rock band released the album \"The Bends\" in March 1995?",
+      "text": "The letters in the name of the band \"TWRP\" stand for what?",
       "options": [
-        "U2",
-        "Nirvana",
-        "Radiohead",
-        "Coldplay"
+        "Taiwan Roleplay",
+        "Totally Wicked Robot Performers",
+        "Tupperware Remix Party",
+        "Team Wild and the Radio Pirates"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What was the name of the hip hop group Kanye West was a member of in the late 90s?",
+      "text": "How tall is Tom Cruise?",
       "options": [
-        "The Go-Getters",
-        "The Beat-Busters",
-        "The Kickstarters",
-        "The Jumpers"
+        "5&prime; 7&Prime;",
+        "5&prime; 5&Prime;",
+        "5&prime; 4&Prime;",
+        "5&prime; 9&Prime;"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Celebrities"
     }
   ]
 }
