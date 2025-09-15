@@ -1,64 +1,64 @@
 {
-  "day": "20250914",
-  "dayIndex": 22,
+  "day": "20250915",
+  "dayIndex": 23,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the nickname of the US state of California?",
+      "text": "What does VR stand for?",
       "options": [
-        "Golden State",
-        "Treasure State",
-        "Bay State",
-        "Sunshine State"
+        "Very Real",
+        "Voice Recognition",
+        "Visual Recognition",
+        "Virtual Reality"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
+      "text": "Which classical composer wrote the \"Moonlight Sonata\"?",
       "options": [
-        "Ferris Bueller's Day Off",
-        "Three Men and a Baby",
-        "Pretty in Pink",
-        "Dirty Dancing"
+        "Ludvig Van Beethoven",
+        "Johannes Brahms",
+        "Wolfgang Amadeus Mozart",
+        "Chief Keef"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
+      "text": "What character was once considered to be the 27th letter of the alphabet?",
       "options": [
-        "Why Pay More!?",
-        "We Love to See You Smile",
-        "Making People Happy Through Food",
-        "Have It Your Way"
+        "Tilde",
+        "Ampersand",
+        "Pilcrow",
+        "Interrobang"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What Queen song plays during the final fight scene of the film \"Hardcore Henry\"?",
+      "text": "Which rock band released the album \"The Bends\" in March 1995?",
       "options": [
-        "Brighton Rock",
-        "We Will Rock You",
-        "Don't Stop Me Now",
-        "Another Bites the Dust"
+        "U2",
+        "Nirvana",
+        "Radiohead",
+        "Coldplay"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Panic! At the Disco's sixth album \"Pray For The Wicked\" was released on which date?",
+      "text": "What was the name of the hip hop group Kanye West was a member of in the late 90s?",
       "options": [
-        "June 22, 2018",
-        "May 9, 2018",
-        "March 13, 2018",
-        "February 21, 2018"
+        "The Go-Getters",
+        "The Beat-Busters",
+        "The Kickstarters",
+        "The Jumpers"
       ],
       "correct": 0,
       "difficulty": "hard",
