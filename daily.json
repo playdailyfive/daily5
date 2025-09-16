@@ -1,68 +1,68 @@
 {
-  "day": "20250915",
-  "dayIndex": 23,
+  "day": "20250916",
+  "dayIndex": 24,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the nickname of the US state of California?",
+      "text": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
       "options": [
-        "Sunshine State",
-        "Treasure State",
-        "Bay State",
-        "Golden State"
+        "Pear",
+        "Apple",
+        "Peach",
+        "Plum"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Green Eggs And Ham\" is a book by which author?",
+      "text": "Grant Gustin plays which superhero on the CW show of the same name?",
       "options": [
-        "Dr. Seuss",
-        "A.A. Milne",
-        "Roald Dahl",
-        "Beatrix Potter"
+        "Daredevil",
+        "The Flash",
+        "Black Canary",
+        "The Arrow"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
+      "text": "When was Nintendo founded?",
       "options": [
-        "Asus",
-        "Hewlett-Packard",
-        "Dell",
-        "Toshiba"
+        "March 4th, 1887",
+        "September 23rd, 1889",
+        "October 19th, 1891",
+        "December 27th, 1894"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The letters in the name of the band \"TWRP\" stand for what?",
+      "text": "The song \"Caramelldansen\" is commonly mistaken as a Japanese song, what language is the song actually sung in?",
       "options": [
-        "Taiwan Roleplay",
-        "Totally Wicked Robot Performers",
-        "Tupperware Remix Party",
-        "Team Wild and the Radio Pirates"
+        "Chinese",
+        "Swedish",
+        "Hungarian",
+        "Finnish"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "How tall is Tom Cruise?",
+      "text": "In which classic novel is there a character named Homer Simpson?",
       "options": [
-        "5&prime; 7&Prime;",
-        "5&prime; 5&Prime;",
-        "5&prime; 4&Prime;",
-        "5&prime; 9&Prime;"
+        "A Separate Peace",
+        "The Day of the Locust",
+        "Catch-22",
+        "Of Mice and Men"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "Entertainment: Books"
     }
   ]
 }
