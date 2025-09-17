@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the Spanish word for \"donkey\"?",
+      "text": "What is the Zodiac symbol for Gemini?",
       "options": [
-        "Caballo",
-        "Perro",
-        "Burro",
-        "Toro"
+        "Fish",
+        "Maiden",
+        "Twins",
+        "Scales"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "American illustrator and writer Maurice Sendak is most well-known for writing which children's book?",
+      "text": "In the 1986 film \"The Wraith\", what concept car is used for the Turbo Interceptor?",
       "options": [
-        "The Cat in the Hat",
-        "Where The Wild Things Are",
-        "Charlie and the Chocolate Factory",
-        "The Neverending Story"
+        "Dodge Copperhead",
+        "Dodge M4S",
+        "General Motors Firebird",
+        "Pontiac Banshee"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Amsterdam Centraal station is twinned with what station?",
+      "text": "What is the German word for \"spoon\"?",
       "options": [
-        "London Liverpool Street",
-        "Brussels Midi",
-        "Frankfurt (Main) Hauptbahnhof",
-        "Paris Gare du Nord"
+        "L&ouml;ffel",
+        "Essst&auml;bchen",
+        "Gabel",
+        "Messer"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "From which country does the piano originate?",
+      "text": "In which country was the 1992 Summer Olympics Games held?",
       "options": [
-        "France",
-        "Italy",
-        "Austria",
-        "Germany"
+        "USA",
+        "Spain",
+        "Korea",
+        "Russia"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     },
     {
-      "text": "Which English football team is nicknamed 'The Tigers'?",
+      "text": "What is the name of the supercomputer located in the control room in \"Jurassic Park\" (1993)?",
       "options": [
-        "Manchester City",
-        "Bristol City",
-        "Hull City",
-        "Cardiff City"
+        "IBM Blue Gene/Q",
+        "Cray XK7",
+        "Thinking Machines CM-5",
+        "Cray X-MP"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     }
   ]
 }
