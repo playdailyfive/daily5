@@ -1,68 +1,68 @@
 {
-  "day": "20250916",
-  "dayIndex": 24,
+  "day": "20250917",
+  "dayIndex": 25,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which country, not including Japan, has the most people of Japanese descent?",
+      "text": "What is the Spanish word for \"donkey\"?",
       "options": [
-        "United States of America",
-        "China",
-        "South Korea",
-        "Brazil"
+        "Caballo",
+        "Perro",
+        "Burro",
+        "Toro"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Scotland?",
+      "text": "American illustrator and writer Maurice Sendak is most well-known for writing which children's book?",
       "options": [
-        "London",
-        "Edinburgh",
-        "Dundee",
-        "Glasgow"
+        "The Cat in the Hat",
+        "Where The Wild Things Are",
+        "Charlie and the Chocolate Factory",
+        "The Neverending Story"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "text": "Amsterdam Centraal station is twinned with what station?",
       "options": [
-        "5",
-        "4",
-        "3",
-        "6"
+        "London Liverpool Street",
+        "Brussels Midi",
+        "Frankfurt (Main) Hauptbahnhof",
+        "Paris Gare du Nord"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Liam Howlett founded which electronic music group in 1990?",
+      "text": "From which country does the piano originate?",
       "options": [
-        "Infected Mushroom",
-        "The Prodigy",
-        "The Chemical Brothers",
-        "The Crystal Method"
+        "France",
+        "Italy",
+        "Austria",
+        "Germany"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "When was \"YouTube\" founded?",
+      "text": "Which English football team is nicknamed 'The Tigers'?",
       "options": [
-        "July 19, 2009",
-        "February 14, 2005",
-        "May 22, 2004",
-        "September 12, 2005"
+        "Manchester City",
+        "Bristol City",
+        "Hull City",
+        "Cardiff City"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Sports"
     }
   ]
 }
