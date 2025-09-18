@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What company developed the vocaloid Hatsune Miku?",
+      "text": "How many colors are there in a rainbow?",
       "options": [
-        "Sony",
-        "Crypton Future Media",
-        "Yamaha Corporation",
-        "Sega"
+        "9",
+        "7",
+        "10",
+        "8"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
+      "text": "How many seasons did \"Stargate SG-1\" have?",
       "options": [
-        "Moria",
-        "Rivendell",
-        "Mordor",
-        "Isengard"
+        "12",
+        "3",
+        "7",
+        "10"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What does a milliner make and sell?",
+      "text": "Who is a co-founder of music streaming service Spotify?",
       "options": [
-        "Shoes",
-        "Hats",
-        "Shirts",
-        "Belts"
+        "Sean Parker",
+        "Daniel Ek",
+        "Michael Breidenbruecker",
+        "Felix Miller"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1993)?",
+      "text": "In the \"Harry Potter\" novels, what must a Hogwarts student do to enter the Ravenclaw Common Room?",
       "options": [
-        "1992 Ford Explorer XLT",
-        "1992 Jeep Wrangler YJ Sahar",
-        "Mercedes M-Class",
-        "1992 Toyota Land Cruiser"
+        "Answer a riddle",
+        "Speak a password",
+        "Knock in sequence",
+        "Rhythmically tap barrels with a wand"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Which film star has his statue in Leicester Square?",
+      "text": "Electronic artists Boys Noize and Skrillex have collaborated and released tracks under what name?",
       "options": [
-        "Rowan Atkinson ",
-        "Alfred Hitchcock",
-        "Paul Newman",
-        "Charlie Chaplin"
+        "What So Not",
+        "Noisia",
+        "Jack &Uuml;",
+        "Dog Blood"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
