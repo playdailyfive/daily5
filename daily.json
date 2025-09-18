@@ -1,68 +1,68 @@
 {
-  "day": "20250917",
-  "dayIndex": 25,
+  "day": "20250918",
+  "dayIndex": 26,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the Zodiac symbol for Gemini?",
+      "text": "What company developed the vocaloid Hatsune Miku?",
       "options": [
-        "Fish",
-        "Maiden",
-        "Twins",
-        "Scales"
+        "Sony",
+        "Crypton Future Media",
+        "Yamaha Corporation",
+        "Sega"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 1986 film \"The Wraith\", what concept car is used for the Turbo Interceptor?",
+      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
       "options": [
-        "Dodge Copperhead",
-        "Dodge M4S",
-        "General Motors Firebird",
-        "Pontiac Banshee"
+        "Moria",
+        "Rivendell",
+        "Mordor",
+        "Isengard"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is the German word for \"spoon\"?",
+      "text": "What does a milliner make and sell?",
       "options": [
-        "L&ouml;ffel",
-        "Essst&auml;bchen",
-        "Gabel",
-        "Messer"
+        "Shoes",
+        "Hats",
+        "Shirts",
+        "Belts"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1993)?",
+      "options": [
+        "1992 Ford Explorer XLT",
+        "1992 Jeep Wrangler YJ Sahar",
+        "Mercedes M-Class",
+        "1992 Toyota Land Cruiser"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which country was the 1992 Summer Olympics Games held?",
-      "options": [
-        "USA",
-        "Spain",
-        "Korea",
-        "Russia"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the name of the supercomputer located in the control room in \"Jurassic Park\" (1993)?",
-      "options": [
-        "IBM Blue Gene/Q",
-        "Cray XK7",
-        "Thinking Machines CM-5",
-        "Cray X-MP"
-      ],
-      "correct": 2,
-      "difficulty": "hard",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "Which film star has his statue in Leicester Square?",
+      "options": [
+        "Rowan Atkinson ",
+        "Alfred Hitchcock",
+        "Paul Newman",
+        "Charlie Chaplin"
+      ],
+      "correct": 3,
+      "difficulty": "hard",
+      "category": "General Knowledge"
     }
   ]
 }
