@@ -1,66 +1,66 @@
 {
-  "day": "20250918",
-  "dayIndex": 26,
+  "day": "20250919",
+  "dayIndex": 27,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many colors are there in a rainbow?",
+      "text": "What is the first book of the Old Testament?",
       "options": [
-        "9",
-        "7",
-        "10",
-        "8"
+        "Numbers",
+        "Exodus",
+        "Leviticus",
+        "Genesis"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "How many seasons did \"Stargate SG-1\" have?",
+      "text": "\"Some people call me the space cowboy\" is the first line from what song?",
       "options": [
-        "12",
-        "3",
-        "7",
-        "10"
+        "Fandango",
+        "Fly Like an Eagle",
+        "Take The Money and Run",
+        "The Joker"
       ],
       "correct": 3,
       "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "options": [
+        "Baltic Porter",
+        "Pale Lager",
+        "India Pale Ale",
+        "Pilfsner"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the name of the main antagonists in Battlestar Galactica?",
+      "options": [
+        "The Rebels",
+        "The Cylons",
+        "The Collective",
+        "The Federation"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "Who is a co-founder of music streaming service Spotify?",
+      "text": "What album is the song 'New Slang' by The Shins found on?",
       "options": [
-        "Sean Parker",
-        "Daniel Ek",
-        "Michael Breidenbruecker",
-        "Felix Miller"
+        "Wincing The Night Away",
+        "Oh, Inverted World",
+        "Port Of Morrow",
+        "Chutes Too Narrow"
       ],
       "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In the \"Harry Potter\" novels, what must a Hogwarts student do to enter the Ravenclaw Common Room?",
-      "options": [
-        "Answer a riddle",
-        "Speak a password",
-        "Knock in sequence",
-        "Rhythmically tap barrels with a wand"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "Electronic artists Boys Noize and Skrillex have collaborated and released tracks under what name?",
-      "options": [
-        "What So Not",
-        "Noisia",
-        "Jack &Uuml;",
-        "Dog Blood"
-      ],
-      "correct": 3,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
