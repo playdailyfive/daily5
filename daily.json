@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the first book of the Old Testament?",
+      "text": "What do sailors call the right side of a boat?",
       "options": [
-        "Numbers",
-        "Exodus",
-        "Leviticus",
-        "Genesis"
+        "Bow",
+        "Port",
+        "Stern",
+        "Starboard"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Some people call me the space cowboy\" is the first line from what song?",
+      "text": "How many US states start with the letter K?",
       "options": [
-        "Fandango",
-        "Fly Like an Eagle",
-        "Take The Money and Run",
-        "The Joker"
+        "One",
+        "Three",
+        "None",
+        "Two"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "text": "What is the last letter of the Greek alphabet?",
       "options": [
-        "Baltic Porter",
-        "Pale Lager",
-        "India Pale Ale",
-        "Pilfsner"
+        "Kappa",
+        "Omega",
+        "Mu",
+        "Epsilon"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the main antagonists in Battlestar Galactica?",
+      "text": "What is real haggis made of?",
       "options": [
-        "The Rebels",
-        "The Cylons",
-        "The Collective",
-        "The Federation"
+        "Whole Sheep",
+        "Sheep's Heart, Liver and Lungs",
+        "Sheep's Heart, Kidneys and Lungs",
+        "Sheep's Liver, Kidneys and Eyes"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     },
     {
-      "text": "What album is the song 'New Slang' by The Shins found on?",
+      "text": "In \"Star Trek Nemesis\", why was Praetor Shinzon created?",
       "options": [
-        "Wincing The Night Away",
-        "Oh, Inverted World",
-        "Port Of Morrow",
-        "Chutes Too Narrow"
+        "To destroy the Enterprise",
+        "To replace Picard as a Romulan Agent",
+        "To steal the Enterprise",
+        "To become Picard's friend "
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
