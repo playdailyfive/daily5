@@ -1,68 +1,68 @@
 {
-  "day": "20250919",
-  "dayIndex": 27,
+  "day": "20250920",
+  "dayIndex": 28,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the right side of a boat?",
+      "text": "The Canadian $1 coin is colloquially known as a what?",
       "options": [
-        "Bow",
-        "Port",
-        "Stern",
-        "Starboard"
+        "Moodie",
+        "Boolie",
+        "Foolie",
+        "Loonie"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "How many US states start with the letter K?",
+      "text": "Who wrote the Sinead O`Connor hit 'Nothing Compares 2 U'?",
       "options": [
-        "One",
-        "Three",
-        "None",
-        "Two"
+        "Rick James",
+        "Michael Jackson",
+        "Cameo",
+        "Prince"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the last letter of the Greek alphabet?",
+      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
       "options": [
-        "Kappa",
-        "Omega",
-        "Mu",
-        "Epsilon"
+        "Ten",
+        "One hundred",
+        "Five",
+        "Twenty"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "The co-creator of Gorillaz, Damon Albarn, is also the lead singer of what band?",
       "options": [
-        "Whole Sheep",
-        "Sheep's Heart, Liver and Lungs",
-        "Sheep's Heart, Kidneys and Lungs",
-        "Sheep's Liver, Kidneys and Eyes"
+        "Radiohead",
+        "Queens of the Stone Age",
+        "Blur",
+        "Oasis"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In \"Star Trek Nemesis\", why was Praetor Shinzon created?",
+      "text": "Which of Michael Jackson's albums sold the most copies?",
       "options": [
-        "To destroy the Enterprise",
-        "To replace Picard as a Romulan Agent",
-        "To steal the Enterprise",
-        "To become Picard's friend "
+        "Dangerous",
+        "Off the Wall",
+        "Thriller",
+        "Bad"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
