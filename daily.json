@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Canadian $1 coin is colloquially known as a what?",
+      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
       "options": [
-        "Moodie",
-        "Boolie",
-        "Foolie",
-        "Loonie"
+        "Qaraqum Canal",
+        "Panama Canal",
+        "Sinai Canal",
+        "Suez Canal"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote the Sinead O`Connor hit 'Nothing Compares 2 U'?",
+      "text": "Who performed \"I Took A Pill In Ibiza\"?",
       "options": [
-        "Rick James",
-        "Michael Jackson",
-        "Cameo",
-        "Prince"
+        "Harry Styles",
+        "Avicii",
+        "Robbie Williams",
+        "Mike Posner"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "text": "What does the \"G\" mean in \"G-Man\"?",
       "options": [
-        "Ten",
-        "One hundred",
-        "Five",
-        "Twenty"
+        "Ghost",
+        "Geronimo",
+        "Government",
+        "Going"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The co-creator of Gorillaz, Damon Albarn, is also the lead singer of what band?",
+      "text": "Which English county will you find the University of East Anglia?",
       "options": [
-        "Radiohead",
-        "Queens of the Stone Age",
-        "Blur",
-        "Oasis"
+        "Essex",
+        "Cambridgeshire",
+        "Norfolk",
+        "Suffolk"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Which of Michael Jackson's albums sold the most copies?",
+      "text": "What's Dr. Doofenshmirtz first name?",
       "options": [
-        "Dangerous",
-        "Off the Wall",
-        "Thriller",
-        "Bad"
+        "Hans",
+        "Heidi",
+        "Heinz",
+        "Hank"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
