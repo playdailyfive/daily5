@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the shortest month of the year?",
+      "text": "What do the letters in the GMT time zone stand for?",
       "options": [
-        "April",
-        "December",
-        "September",
-        "February"
+        "General Median Time",
+        "Global Meridian Time",
+        "Glasgow Man Time",
+        "Greenwich Mean Time"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the first ever actor to play \"The Doctor\" on \"Doctor Who\"?",
+      "text": "Who directed the 2017 movie \"The Shape of Water\"?",
       "options": [
-        "David Tennant",
-        "William Hartnell",
-        "Tom Baker",
-        "Peter Capaldi"
+        "Steven Spielberg",
+        "Guillermo del Toro",
+        "Martin Scorsese",
+        "James Cameron"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "After how many years would you celebrate your crystal anniversary?",
+      "text": "Amsterdam Centraal station is twinned with what station?",
       "options": [
-        "20",
-        "25",
-        "15",
-        "10"
+        "Frankfurt (Main) Hauptbahnhof",
+        "Brussels Midi",
+        "London Liverpool Street",
+        "Paris Gare du Nord"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the oldest team in the NFL?",
+      "text": "Which team was the 2015-2016 NBA Champions?",
       "options": [
-        "Arizona Cardinals",
-        "Chicago Bears",
-        "Green Bay Packers",
-        "New York Giants"
+        "Cleveland Cavaliers",
+        "Golden State Warriors",
+        "Toronto Raptors",
+        "Oklahoma City Thunders"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Sports"
     },
     {
-      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "text": "What is the area of Vatican City?",
       "options": [
-        "Inspectah Deck",
-        "Method Man",
-        "GZA",
-        "Masta Killa"
+        "0.86km^2",
+        "0.10km^2",
+        "12.00km^2",
+        "0.44km^2"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
