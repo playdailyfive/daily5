@@ -1,68 +1,68 @@
 {
-  "day": "20250920",
-  "dayIndex": 28,
+  "day": "20250921",
+  "dayIndex": 29,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
+      "text": "What is the shortest month of the year?",
       "options": [
-        "Qaraqum Canal",
-        "Panama Canal",
-        "Sinai Canal",
-        "Suez Canal"
+        "April",
+        "December",
+        "September",
+        "February"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who performed \"I Took A Pill In Ibiza\"?",
+      "text": "Who was the first ever actor to play \"The Doctor\" on \"Doctor Who\"?",
       "options": [
-        "Harry Styles",
-        "Avicii",
-        "Robbie Williams",
-        "Mike Posner"
+        "David Tennant",
+        "William Hartnell",
+        "Tom Baker",
+        "Peter Capaldi"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What does the \"G\" mean in \"G-Man\"?",
-      "options": [
-        "Ghost",
-        "Geronimo",
-        "Government",
-        "Going"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which English county will you find the University of East Anglia?",
-      "options": [
-        "Essex",
-        "Cambridgeshire",
-        "Norfolk",
-        "Suffolk"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "What's Dr. Doofenshmirtz first name?",
-      "options": [
-        "Hans",
-        "Heidi",
-        "Heinz",
-        "Hank"
-      ],
-      "correct": 2,
-      "difficulty": "hard",
       "category": "Entertainment: Television"
+    },
+    {
+      "text": "After how many years would you celebrate your crystal anniversary?",
+      "options": [
+        "20",
+        "25",
+        "15",
+        "10"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the oldest team in the NFL?",
+      "options": [
+        "Arizona Cardinals",
+        "Chicago Bears",
+        "Green Bay Packers",
+        "New York Giants"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "options": [
+        "Inspectah Deck",
+        "Method Man",
+        "GZA",
+        "Masta Killa"
+      ],
+      "correct": 3,
+      "difficulty": "hard",
+      "category": "Entertainment: Music"
     }
   ]
 }
