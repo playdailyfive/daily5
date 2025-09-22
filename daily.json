@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is \"dabbing\"?",
+      "text": "Which one of these is not a typical European sword design?",
       "options": [
-        "A dance",
-        "A language",
-        "A sport",
-        "A medical procedure"
+        "Scimitar",
+        "Flamberge",
+        "Ulfberht",
+        "Falchion"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
+      "text": "In the movie \"V for Vendetta,\" what is the date that masked vigilante \"V\" urges people to remember?",
       "options": [
-        "Unthinkable",
-        "Fight Club",
-        "American Pie",
-        "The Island"
+        "November 4th",
+        "November 5th",
+        "September 5th",
+        "November 6th"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is the world's most expensive spice by weight?",
+      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
       "options": [
-        "Vanilla",
-        "Cinnamon",
-        "Saffron",
-        "Cardamom"
+        "One hundred",
+        "Twenty",
+        "Five",
+        "Ten"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+      "text": "What were the Chilled Monkey Brains made from during Indiana Jones and the Temple of Doom?",
       "options": [
-        "Hurt",
-        "Big Man with a Gun",
-        "A Warm Place",
-        "Closer"
+        "Custard and Raspberry Sauce",
+        "Raspberry Sorbet",
+        "Cherry Yogurt",
+        "Strawberry Ice Cream"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which actor from The Young Ones also played Lord Flashheart in one episode of Blackadder II?",
+      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
       "options": [
-        "Christopher Ryan",
-        "Adrian Edmondson",
-        "Nigel Planer",
-        "Rik Mayall"
+        "Chakra",
+        "Peace",
+        "Ancient",
+        "Shambala"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     }
   ]
 }
