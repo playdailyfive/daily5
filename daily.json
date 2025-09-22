@@ -1,68 +1,68 @@
 {
-  "day": "20250921",
-  "dayIndex": 29,
+  "day": "20250922",
+  "dayIndex": 30,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do the letters in the GMT time zone stand for?",
+      "text": "What is \"dabbing\"?",
       "options": [
-        "General Median Time",
-        "Global Meridian Time",
-        "Glasgow Man Time",
-        "Greenwich Mean Time"
+        "A dance",
+        "A language",
+        "A sport",
+        "A medical procedure"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the 2017 movie \"The Shape of Water\"?",
+      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
       "options": [
-        "Steven Spielberg",
-        "Guillermo del Toro",
-        "Martin Scorsese",
-        "James Cameron"
+        "Unthinkable",
+        "Fight Club",
+        "American Pie",
+        "The Island"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Amsterdam Centraal station is twinned with what station?",
+      "text": "What is the world's most expensive spice by weight?",
       "options": [
-        "Frankfurt (Main) Hauptbahnhof",
-        "Brussels Midi",
-        "London Liverpool Street",
-        "Paris Gare du Nord"
+        "Vanilla",
+        "Cinnamon",
+        "Saffron",
+        "Cardamom"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which team was the 2015-2016 NBA Champions?",
+      "text": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
       "options": [
-        "Cleveland Cavaliers",
-        "Golden State Warriors",
-        "Toronto Raptors",
-        "Oklahoma City Thunders"
+        "Hurt",
+        "Big Man with a Gun",
+        "A Warm Place",
+        "Closer"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the area of Vatican City?",
+      "text": "Which actor from The Young Ones also played Lord Flashheart in one episode of Blackadder II?",
       "options": [
-        "0.86km^2",
-        "0.10km^2",
-        "12.00km^2",
-        "0.44km^2"
+        "Christopher Ryan",
+        "Adrian Edmondson",
+        "Nigel Planer",
+        "Rik Mayall"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     }
   ]
 }
