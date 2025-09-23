@@ -1,68 +1,68 @@
 {
-  "day": "20250922",
-  "dayIndex": 30,
+  "day": "20250923",
+  "dayIndex": 31,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which one of these is not a typical European sword design?",
+      "text": "What do sailors call the front of a boat?",
       "options": [
-        "Scimitar",
-        "Flamberge",
-        "Ulfberht",
-        "Falchion"
+        "Starboard",
+        "Bow",
+        "Port",
+        "Stern"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the movie \"V for Vendetta,\" what is the date that masked vigilante \"V\" urges people to remember?",
+      "text": "What was the title of the first Bond movie, released in 1962?",
       "options": [
-        "November 4th",
-        "November 5th",
-        "September 5th",
-        "November 6th"
+        "Goldfinger",
+        "Dr. No",
+        "From Russia with Love",
+        "Thunderball"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "text": "What is the Italian word for \"tomato\"?",
       "options": [
-        "One hundred",
-        "Twenty",
-        "Five",
-        "Ten"
+        "Peperoncino",
+        "Pomodoro",
+        "Aglio",
+        "Cipolla"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What were the Chilled Monkey Brains made from during Indiana Jones and the Temple of Doom?",
+      "text": "The song \"Twin Size Mattress\" was written by which band?",
       "options": [
-        "Custard and Raspberry Sauce",
-        "Raspberry Sorbet",
-        "Cherry Yogurt",
-        "Strawberry Ice Cream"
+        "The Smith Street Band",
+        "The Front Bottoms",
+        "Twenty One Pilots",
+        "The Wonder Years"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
+      "text": "How many countries border Kyrgyzstan?",
       "options": [
-        "Chakra",
-        "Peace",
-        "Ancient",
-        "Shambala"
+        "4",
+        "3",
+        "6",
+        "1"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
