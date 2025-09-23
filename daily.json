@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the front of a boat?",
+      "text": "What is the name of NASA's most famous space telescope?",
       "options": [
-        "Starboard",
-        "Bow",
-        "Port",
-        "Stern"
+        "Millenium Falcon",
+        "Hubble Space Telescope",
+        "Death Star",
+        "Big Eye"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the title of the first Bond movie, released in 1962?",
+      "text": "\"Grande Valse\" is a phrase from the song \"Gran Vals\". What is that song segment known as?",
       "options": [
-        "Goldfinger",
-        "Dr. No",
-        "From Russia with Love",
-        "Thunderball"
+        "Droid Ringtone",
+        "Nokia Tune",
+        "Hello Moto [Motorola Ringtone]",
+        "Microsoft Ringtone"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "What is the Italian word for \"tomato\"?",
-      "options": [
-        "Peperoncino",
-        "Pomodoro",
-        "Aglio",
-        "Cipolla"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "The song \"Twin Size Mattress\" was written by which band?",
-      "options": [
-        "The Smith Street Band",
-        "The Front Bottoms",
-        "Twenty One Pilots",
-        "The Wonder Years"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "How many countries border Kyrgyzstan?",
+      "text": "What are the three starter Pokemon available in Pokemon Black and White?",
       "options": [
-        "4",
-        "3",
-        "6",
-        "1"
+        "Chespin, Fennekin, Oshawott",
+        "Snivy, Tepig, Oshawott",
+        "Snivy, Fennekin, Froakie",
+        "Chespin, Tepig, Froakie"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who won the 2015 College Football Playoff (CFP) National Championship? ",
+      "options": [
+        "Wisconsin Badgers",
+        "Ohio State Buckeyes",
+        "Alabama Crimson Tide",
+        "Clemson Tigers"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "In the \"Jurassic Park\" universe, when did \"Jurassic Park: San Diego\" begin construction?",
+      "options": [
+        "1985",
+        "1988",
+        "1993",
+        "1986"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
