@@ -1,68 +1,68 @@
 {
-  "day": "20250923",
-  "dayIndex": 31,
+  "day": "20250924",
+  "dayIndex": 32,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of NASA's most famous space telescope?",
+      "text": "When was the Playstation 3 released?",
       "options": [
-        "Millenium Falcon",
-        "Hubble Space Telescope",
-        "Death Star",
-        "Big Eye"
+        "July 16, 2006",
+        "November 11, 2006",
+        "December 25, 2007",
+        "January 8, 2007"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Grande Valse\" is a phrase from the song \"Gran Vals\". What is that song segment known as?",
+      "text": "Which company has exclusive rights to air episodes of the \"The Grand Tour\"?",
       "options": [
-        "Droid Ringtone",
-        "Nokia Tune",
-        "Hello Moto [Motorola Ringtone]",
-        "Microsoft Ringtone"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What are the three starter Pokemon available in Pokemon Black and White?",
-      "options": [
-        "Chespin, Fennekin, Oshawott",
-        "Snivy, Tepig, Oshawott",
-        "Snivy, Fennekin, Froakie",
-        "Chespin, Tepig, Froakie"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who won the 2015 College Football Playoff (CFP) National Championship? ",
-      "options": [
-        "Wisconsin Badgers",
-        "Ohio State Buckeyes",
-        "Alabama Crimson Tide",
-        "Clemson Tigers"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Sports"
-    },
-    {
-      "text": "In the \"Jurassic Park\" universe, when did \"Jurassic Park: San Diego\" begin construction?",
-      "options": [
-        "1985",
-        "1988",
-        "1993",
-        "1986"
+        "Amazon",
+        "CCTV",
+        "Netflix",
+        "BBC"
       ],
       "correct": 0,
-      "difficulty": "hard",
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "What is the Italian word for \"tomato\"?",
+      "options": [
+        "Peperoncino",
+        "Pomodoro",
+        "Cipolla",
+        "Aglio"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who directed the 1973 film \"American Graffiti\"?",
+      "options": [
+        "Steven Spielberg",
+        "Francis Ford Coppola",
+        "George Lucas",
+        "Ron Howard"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "What event inspired The Cranberries song \"Zombie\" ?",
+      "options": [
+        "September 11 Attacks",
+        "The Manchester Arena Bombing",
+        "The Warrington Bombings",
+        "The July 7th bombings"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Entertainment: Music"
     }
   ]
 }
