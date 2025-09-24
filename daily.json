@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When was the Playstation 3 released?",
+      "text": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
       "options": [
-        "July 16, 2006",
-        "November 11, 2006",
-        "December 25, 2007",
-        "January 8, 2007"
+        "Intestines",
+        "Liver",
+        "Stomach",
+        "Heart"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which company has exclusive rights to air episodes of the \"The Grand Tour\"?",
+      "text": "Which brass instrument has the lowest pitch in an orchestra?",
       "options": [
-        "Amazon",
-        "CCTV",
-        "Netflix",
-        "BBC"
+        "Tuba",
+        "Trombone",
+        "Trumpet",
+        "Saxophone"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the Italian word for \"tomato\"?",
+      "text": "Where does water from Poland Spring water bottles come from?",
       "options": [
-        "Peperoncino",
-        "Pomodoro",
-        "Cipolla",
-        "Aglio"
+        "Bavaria, Poland",
+        "Maine, United States",
+        "Masovia, Poland",
+        "Hesse, Germany"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the 1973 film \"American Graffiti\"?",
+      "text": "Gibraltar, located just south of the Iberian peninsula, is a territory of which West Europe country?",
       "options": [
-        "Steven Spielberg",
-        "Francis Ford Coppola",
-        "George Lucas",
-        "Ron Howard"
+        "France",
+        "Portugal",
+        "United Kingdom",
+        "Spain"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "What event inspired The Cranberries song \"Zombie\" ?",
+      "text": "Who sings the rap song \"Secret Wars Part 1\"?",
       "options": [
-        "September 11 Attacks",
-        "The Manchester Arena Bombing",
-        "The Warrington Bombings",
-        "The July 7th bombings"
+        "MC Frontalot",
+        "Busdriver",
+        "The Last Emperor",
+        "Masta Killa"
       ],
       "correct": 2,
       "difficulty": "hard",
