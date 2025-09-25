@@ -1,68 +1,68 @@
 {
-  "day": "20250924",
-  "dayIndex": 32,
+  "day": "20250925",
+  "dayIndex": 33,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
+      "text": "Which is the second largest native language spoken in Spain by numbers of speakers?",
       "options": [
-        "Intestines",
-        "Liver",
-        "Stomach",
-        "Heart"
+        "French",
+        "Portuguese",
+        "Spanish",
+        "Catalan"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which brass instrument has the lowest pitch in an orchestra?",
+      "text": "Who played Agent Fox Mulder in the TV sci-fi drama \"The X-Files\"?",
       "options": [
-        "Tuba",
-        "Trombone",
-        "Trumpet",
-        "Saxophone"
+        "Gillian Anderson",
+        "David Duchovny",
+        "Mitch Pileggi",
+        "Robert Patrick"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
       ],
       "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "Where does water from Poland Spring water bottles come from?",
-      "options": [
-        "Bavaria, Poland",
-        "Maine, United States",
-        "Masovia, Poland",
-        "Hesse, Germany"
-      ],
-      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Gibraltar, located just south of the Iberian peninsula, is a territory of which West Europe country?",
+      "text": "Which actor was not a major character in TV Show Freaks and Geeks?",
       "options": [
-        "France",
-        "Portugal",
-        "United Kingdom",
-        "Spain"
+        "Seth Rogen",
+        "James Franco",
+        "Jason Segel",
+        "Jonah Hill"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Who sings the rap song \"Secret Wars Part 1\"?",
+      "text": "Who Voices the Devil on Devil's Flight in Final Destination 3?",
       "options": [
-        "MC Frontalot",
-        "Busdriver",
-        "The Last Emperor",
-        "Masta Killa"
+        "Wendy Christensen",
+        "Ian McKinley",
+        "Kevin Fischer",
+        "Tony Todd"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
