@@ -1,68 +1,68 @@
 {
-  "day": "20250925",
-  "dayIndex": 33,
+  "day": "20250926",
+  "dayIndex": 34,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Area 51 is located in which US state?",
+      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
       "options": [
-        "Utah",
-        "Arizona",
-        "New Mexico",
-        "Nevada"
+        "Sword",
+        "Cellphone",
+        "Pen",
+        "Key"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Nirvana album had a naked baby on the cover?",
+      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
       "options": [
-        "Bleach",
-        "Nevermind",
-        "Incesticide",
-        "In Utero"
+        "David Tennant",
+        "John McVie",
+        "Christine McVie",
+        "Mac McAnally"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is a Burgee?",
+      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
       "options": [
-        "A flag",
-        "A window",
-        "A type of food",
-        "A rope"
+        "Fumihiko Maki",
+        "David Childs",
+        "Bjarke Ingels",
+        "Michael Arad"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote the children's story \"The Little Match Girl\"?",
+      "text": "Montreal is in which Canadian province?",
       "options": [
-        "Lewis Carroll",
-        "Oscar Wilde",
-        "Charles Dickens",
-        "Hans Christian Andersen"
+        "Ontario",
+        "Quebec",
+        "Alberta",
+        "Nova Scotia"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     },
     {
-      "text": "Who was the winner of \"Big Brother\" Season 10?",
+      "text": "What is the stage name of New Zealand singer Phillipa \"Pip\" Brown?",
       "options": [
-        "Bryce Kranyik",
-        "Ryan Sutfin",
-        "Chris Mundorf",
-        "Dan Gheesling"
+        "Anika Moa",
+        "Lorde",
+        "Kesha",
+        "Ladyhawke"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     }
   ]
 }
