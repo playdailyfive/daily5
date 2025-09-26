@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+      "text": "What is the largest organ of the human body?",
       "options": [
-        "Sword",
-        "Cellphone",
-        "Pen",
-        "Key"
+        "Heart",
+        "Liver",
+        "large Intestine",
+        "Skin"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
+      "text": "Where does the original Friday The 13th movie take place?",
       "options": [
-        "David Tennant",
-        "John McVie",
-        "Christine McVie",
-        "Mac McAnally"
+        "Camp Forest Green",
+        "Camp Crystal Lake",
+        "Packanack",
+        "Higgins Haven"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Fumihiko Maki",
-        "David Childs",
-        "Bjarke Ingels",
-        "Michael Arad"
+        "Physical Therapy",
+        "Philosophy",
+        "Psychology",
+        "Phrenology"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Montreal is in which Canadian province?",
+      "text": "At which bridge does the annual Oxford and Cambridge boat race start?",
       "options": [
-        "Ontario",
-        "Quebec",
-        "Alberta",
-        "Nova Scotia"
+        "Hammersmith",
+        "Putney",
+        "Battersea",
+        "Vauxhall "
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Sports"
     },
     {
-      "text": "What is the stage name of New Zealand singer Phillipa \"Pip\" Brown?",
+      "text": "In 2012, which movie won every category in the 32nd \"Golden Raspberry Awards\"?",
       "options": [
-        "Anika Moa",
-        "Lorde",
-        "Kesha",
-        "Ladyhawke"
+        "The King's Speech",
+        "The Girl with the Dragon Tattoo",
+        "Thor",
+        "Jack and Jill"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
