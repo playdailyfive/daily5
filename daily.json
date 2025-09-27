@@ -1,66 +1,66 @@
 {
-  "day": "20250926",
-  "dayIndex": 34,
+  "day": "20250927",
+  "dayIndex": 35,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the largest organ of the human body?",
+      "text": "Which sign of the zodiac is represented by the Crab?",
       "options": [
-        "Heart",
-        "Liver",
-        "large Intestine",
-        "Skin"
+        "Sagittarius",
+        "Libra",
+        "Virgo",
+        "Cancer"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Where does the original Friday The 13th movie take place?",
+      "text": "What is the 15th letter of the Greek alphabet?",
       "options": [
-        "Camp Forest Green",
-        "Camp Crystal Lake",
-        "Packanack",
-        "Higgins Haven"
+        "Pi (&Pi;)",
+        "Nu (&Nu;)",
+        "Omicron (&Omicron;)",
+        "Sigma (&Sigma;)"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "\"Gum arabic\" is a natural gum consisting of the hardened sap of which tree species?",
       "options": [
-        "Physical Therapy",
-        "Philosophy",
-        "Psychology",
-        "Phrenology"
+        "Ficus",
+        "Eucalyptus",
+        "Acacia",
+        "Palm"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "At which bridge does the annual Oxford and Cambridge boat race start?",
+      "text": "Which Iron Maiden album did the song \"Dream of Mirrors\" feature in?",
       "options": [
-        "Hammersmith",
-        "Putney",
-        "Battersea",
-        "Vauxhall "
+        "Dance of Death",
+        "Somewhere in Time",
+        "Brave New World",
+        "A Matter of Life and Death"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In 2012, which movie won every category in the 32nd \"Golden Raspberry Awards\"?",
+      "text": "Who Voices the Devil on Devil's Flight in Final Destination 3?",
       "options": [
-        "The King's Speech",
-        "The Girl with the Dragon Tattoo",
-        "Thor",
-        "Jack and Jill"
+        "Kevin Fischer",
+        "Tony Todd",
+        "Wendy Christensen",
+        "Ian McKinley"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "hard",
       "category": "Entertainment: Film"
     }
