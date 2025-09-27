@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac is represented by the Crab?",
+      "text": "Which one of these is not a typical European sword design?",
       "options": [
-        "Sagittarius",
-        "Libra",
-        "Virgo",
-        "Cancer"
+        "Flamberge",
+        "Falchion",
+        "Ulfberht",
+        "Scimitar"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the 15th letter of the Greek alphabet?",
+      "text": "\"Grande Valse\" is a phrase from the song \"Gran Vals\". What is that song segment known as?",
       "options": [
-        "Pi (&Pi;)",
-        "Nu (&Nu;)",
-        "Omicron (&Omicron;)",
-        "Sigma (&Sigma;)"
+        "Droid Ringtone",
+        "Microsoft Ringtone",
+        "Nokia Tune",
+        "Hello Moto [Motorola Ringtone]"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "\"Gum arabic\" is a natural gum consisting of the hardened sap of which tree species?",
+      "text": "In which country was the 1992 Summer Olympics Games held?",
       "options": [
-        "Ficus",
-        "Eucalyptus",
-        "Acacia",
-        "Palm"
+        "Korea",
+        "USA",
+        "Spain",
+        "Russia"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Iron Maiden album did the song \"Dream of Mirrors\" feature in?",
+      "text": "Which basketball team has attended the most NBA grand finals?",
       "options": [
-        "Dance of Death",
-        "Somewhere in Time",
-        "Brave New World",
-        "A Matter of Life and Death"
+        "Boston Celtics",
+        "Golden State Warriors",
+        "Los Angeles Lakers",
+        "Philadelphia 76ers"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "Who Voices the Devil on Devil's Flight in Final Destination 3?",
+      "text": "Where was Nicki Minaj born?",
       "options": [
-        "Kevin Fischer",
-        "Tony Todd",
-        "Wendy Christensen",
-        "Ian McKinley"
+        "Grenada",
+        "Trinidad and Tobago",
+        "Haiti",
+        "Saint Lucia"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
