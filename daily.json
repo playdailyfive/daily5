@@ -5,52 +5,52 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
+      "text": "What do the letters in the GMT time zone stand for?",
       "options": [
-        "Anheuser Busch",
-        "D. G. Yuengling and Son, Inc",
-        "Miller Coors",
-        "Boston Beer Company"
+        "Global Meridian Time",
+        "Greenwich Mean Time",
+        "Glasgow Man Time",
+        "General Median Time"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In Supernatural, what's is Sam's brothers name?",
+      "text": "Which 80s band is fronted by singer/guitarist Robert Smith?",
       "options": [
-        "Dave",
-        "Mike",
-        "Dean",
-        "Steve"
+        "The Smiths",
+        "New Order",
+        "The Cure",
+        "Echo & the Bunnymen"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What was the destination of the missing flight MH370?",
+      "text": "Where does water from Poland Spring water bottles come from?",
       "options": [
-        "Beijing",
-        "Kuala Lumpur",
-        "Singapore",
-        "Tokyo"
+        "Maine, United States",
+        "Hesse, Germany",
+        "Masovia, Poland",
+        "Bavaria, Poland"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which actor auditioned for the role of Luke Skywalker?",
+      "text": "Which team was the 2015-2016 NBA Champions?",
       "options": [
-        "Laurence Fishburne",
-        "Christopher Lambert",
-        "James Remar",
-        "Kurt Russell"
+        "Toronto Raptors",
+        "Golden State Warriors",
+        "Oklahoma City Thunders",
+        "Cleveland Cavaliers"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
       "text": "Who was not in the band \"The Smiths\"?",
