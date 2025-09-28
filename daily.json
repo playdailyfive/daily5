@@ -1,64 +1,64 @@
 {
-  "day": "20250927",
-  "dayIndex": 35,
+  "day": "20250928",
+  "dayIndex": 36,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which one of these is not a typical European sword design?",
+      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
       "options": [
-        "Flamberge",
-        "Falchion",
-        "Ulfberht",
-        "Scimitar"
+        "Anheuser Busch",
+        "D. G. Yuengling and Son, Inc",
+        "Miller Coors",
+        "Boston Beer Company"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In Supernatural, what's is Sam's brothers name?",
+      "options": [
+        "Dave",
+        "Mike",
+        "Dean",
+        "Steve"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "What was the destination of the missing flight MH370?",
+      "options": [
+        "Beijing",
+        "Kuala Lumpur",
+        "Singapore",
+        "Tokyo"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which actor auditioned for the role of Luke Skywalker?",
+      "options": [
+        "Laurence Fishburne",
+        "Christopher Lambert",
+        "James Remar",
+        "Kurt Russell"
       ],
       "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "\"Grande Valse\" is a phrase from the song \"Gran Vals\". What is that song segment known as?",
-      "options": [
-        "Droid Ringtone",
-        "Microsoft Ringtone",
-        "Nokia Tune",
-        "Hello Moto [Motorola Ringtone]"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "In which country was the 1992 Summer Olympics Games held?",
-      "options": [
-        "Korea",
-        "USA",
-        "Spain",
-        "Russia"
-      ],
-      "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which basketball team has attended the most NBA grand finals?",
+      "text": "Who was not in the band \"The Smiths\"?",
       "options": [
-        "Boston Celtics",
-        "Golden State Warriors",
-        "Los Angeles Lakers",
-        "Philadelphia 76ers"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "Sports"
-    },
-    {
-      "text": "Where was Nicki Minaj born?",
-      "options": [
-        "Grenada",
-        "Trinidad and Tobago",
-        "Haiti",
-        "Saint Lucia"
+        "Mike Joyce",
+        "Martin Chambers",
+        "Morrissey",
+        "Andy Rourke"
       ],
       "correct": 1,
       "difficulty": "hard",
