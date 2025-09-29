@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Earth is located in which galaxy?",
+      "text": "What is \"dabbing\"?",
       "options": [
-        "The Galaxy Note",
-        "The Milky Way Galaxy",
-        "The Black Hole",
-        "The Mars Galaxy"
+        "A sport",
+        "A dance",
+        "A language",
+        "A medical procedure"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote \"The Scarlet Letter\", published in 1850?",
+      "text": "Where would you find the \"Spanish Steps\"?",
       "options": [
-        "Catherine Maria Sedgwick",
-        "Washington Irving",
-        "Nathaniel Hawthorne",
-        "James Fenimore Cooper"
+        "London, England",
+        "Barcelona, Spain",
+        "Rome, Italy",
+        "Berlin, Germany"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
       "options": [
-        "Philosophy",
-        "Physical Therapy",
-        "Phrenology",
-        "Psychology"
+        "We Love to See You Smile",
+        "Making People Happy Through Food",
+        "Have It Your Way",
+        "Why Pay More!?"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1993)?",
+      "text": "What is the largest Muslim country in the world?",
       "options": [
-        "Mercedes M-Class",
-        "1992 Toyota Land Cruiser",
-        "1992 Jeep Wrangler YJ Sahar",
-        "1992 Ford Explorer XLT"
+        "Iran",
+        "Pakistan",
+        "Saudi Arabia",
+        "Indonesia"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "In Star Trek, what is the name of Spock's father?",
+      "text": "Who founded the Khan Academy?",
       "options": [
-        "Surak",
-        "Tuvok",
-        "T'Pal",
-        "Sarek"
+        "Adel Khan",
+        "Ben Khan",
+        "Kitt Khan",
+        "Sal Khan"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     }
   ]
 }
