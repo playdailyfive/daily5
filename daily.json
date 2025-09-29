@@ -1,68 +1,68 @@
 {
-  "day": "20250928",
-  "dayIndex": 36,
+  "day": "20250929",
+  "dayIndex": 37,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do the letters in the GMT time zone stand for?",
+      "text": "Earth is located in which galaxy?",
       "options": [
-        "Global Meridian Time",
-        "Greenwich Mean Time",
-        "Glasgow Man Time",
-        "General Median Time"
+        "The Galaxy Note",
+        "The Milky Way Galaxy",
+        "The Black Hole",
+        "The Mars Galaxy"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which 80s band is fronted by singer/guitarist Robert Smith?",
+      "text": "Who wrote \"The Scarlet Letter\", published in 1850?",
       "options": [
-        "The Smiths",
-        "New Order",
-        "The Cure",
-        "Echo & the Bunnymen"
+        "Catherine Maria Sedgwick",
+        "Washington Irving",
+        "Nathaniel Hawthorne",
+        "James Fenimore Cooper"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Where does water from Poland Spring water bottles come from?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Maine, United States",
-        "Hesse, Germany",
-        "Masovia, Poland",
-        "Bavaria, Poland"
+        "Philosophy",
+        "Physical Therapy",
+        "Phrenology",
+        "Psychology"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which team was the 2015-2016 NBA Champions?",
+      "text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1993)?",
       "options": [
-        "Toronto Raptors",
-        "Golden State Warriors",
-        "Oklahoma City Thunders",
-        "Cleveland Cavaliers"
+        "Mercedes M-Class",
+        "1992 Toyota Land Cruiser",
+        "1992 Jeep Wrangler YJ Sahar",
+        "1992 Ford Explorer XLT"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Who was not in the band \"The Smiths\"?",
+      "text": "In Star Trek, what is the name of Spock's father?",
       "options": [
-        "Mike Joyce",
-        "Martin Chambers",
-        "Morrissey",
-        "Andy Rourke"
+        "Surak",
+        "Tuvok",
+        "T'Pal",
+        "Sarek"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
