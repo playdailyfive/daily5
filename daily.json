@@ -1,68 +1,68 @@
 {
-  "day": "20250929",
-  "dayIndex": 37,
+  "day": "20250930",
+  "dayIndex": 38,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is \"dabbing\"?",
+      "text": "When someone is inexperienced they are said to be what color?",
       "options": [
-        "A sport",
-        "A dance",
-        "A language",
-        "A medical procedure"
+        "Blue",
+        "Green",
+        "Red",
+        "Yellow"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Where would you find the \"Spanish Steps\"?",
+      "text": "What is the capital of Spain?",
       "options": [
-        "London, England",
-        "Barcelona, Spain",
-        "Rome, Italy",
-        "Berlin, Germany"
+        "Toledo",
+        "Madrid",
+        "Barcelona",
+        "Sevilla"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "We Love to See You Smile",
-        "Making People Happy Through Food",
-        "Have It Your Way",
-        "Why Pay More!?"
+        "Physical Therapy",
+        "Philosophy",
+        "Psychology",
+        "Phrenology"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which boxing personality was one of the presenters in the 1999 revival of It's a Knockout?",
+      "options": [
+        "Frank Bruno",
+        "Henry Cooper",
+        "Joe Fraiser",
+        "Muhammad Ali"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the largest Muslim country in the world?",
+      "text": "What national museum will you find in Cooperstown, New York?",
       "options": [
-        "Iran",
-        "Pakistan",
-        "Saudi Arabia",
-        "Indonesia"
+        "Metropolitan Museum of Art",
+        "Museum of Modern Art",
+        "National Baseball Hall of Fame",
+        "National Toy Hall of Fame"
       ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "Who founded the Khan Academy?",
-      "options": [
-        "Adel Khan",
-        "Ben Khan",
-        "Kitt Khan",
-        "Sal Khan"
-      ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
