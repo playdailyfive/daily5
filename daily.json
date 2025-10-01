@@ -1,68 +1,68 @@
 {
-  "day": "20250930",
-  "dayIndex": 38,
+  "day": "20251001",
+  "dayIndex": 39,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cynophobia the fear of?",
+      "text": "According to the Book of Genesis in the Old Testament, how many days did it take God to create the world?",
       "options": [
-        "Flying",
-        "Dogs",
-        "Birds",
-        "Germs"
+        "One",
+        "Twelve",
+        "Seven",
+        "Six"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the cartoon 'SpongeBob SquarePants', what did the acronym E.V.I.L stand for?",
+      "text": "Who won the UEFA Champions League in 2017?",
       "options": [
-        "Each Villain Is Lemonade",
-        "Every Villain Is Lemons",
-        "Every Villain Is Lemonade",
-        "Every Villain Is Limes"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What alcoholic drink is mainly made from juniper berries?",
-      "options": [
-        "Tequila",
-        "Gin",
-        "Vodka",
-        "Rum"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the name of the second studio album released by American rapper Post Malone in 2018?",
-      "options": [
-        "Beerbongs & Bentleys",
-        "Takin' Shots",
-        "Better Now",
-        "Rockstar"
+        "Real Madrid C.F.",
+        "Juventus F.C.",
+        "AS Monaco FC",
+        "Atletico Madrid"
       ],
       "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "difficulty": "easy",
+      "category": "Sports"
     },
     {
-      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
       "options": [
-        "Vietnam",
-        "Indonesia",
-        "India",
-        "Thailand"
+        "Michael Arad",
+        "Fumihiko Maki",
+        "Bjarke Ingels",
+        "David Childs"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "How many states are in Australia?",
+      "options": [
+        "8",
+        "7",
+        "6",
+        "5"
       ],
       "correct": 2,
-      "difficulty": "hard",
+      "difficulty": "medium",
       "category": "Geography"
+    },
+    {
+      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
+      "options": [
+        "Wessex",
+        "Fulchester",
+        "Ambridge",
+        "Barsetshire"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Entertainment: Books"
     }
   ]
 }
