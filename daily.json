@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "According to the Book of Genesis in the Old Testament, how many days did it take God to create the world?",
+      "text": "The file hosting service, \"Google Drive\" was launched on what day?",
       "options": [
-        "One",
-        "Twelve",
-        "Seven",
-        "Six"
+        "November 14, 2008",
+        "January 20, 2010",
+        "January 12, 2014",
+        "April 24, 2012"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who won the UEFA Champions League in 2017?",
+      "text": "Which nation claims ownership of Antarctica?",
       "options": [
-        "Real Madrid C.F.",
-        "Juventus F.C.",
-        "AS Monaco FC",
-        "Atletico Madrid"
+        "No one, but there are claims.",
+        "Australia",
+        "United Nations",
+        "United States of America"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
-    },
-    {
-      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
-      "options": [
-        "Michael Arad",
-        "Fumihiko Maki",
-        "Bjarke Ingels",
-        "David Childs"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many states are in Australia?",
-      "options": [
-        "8",
-        "7",
-        "6",
-        "5"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
+      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
       "options": [
-        "Wessex",
-        "Fulchester",
-        "Ambridge",
-        "Barsetshire"
+        "Ten",
+        "One hundred",
+        "Twenty",
+        "Five"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who provided a majority of the songs and lyrics for \"Spirit: Stallion of the Cimarron\"?",
+      "options": [
+        "Oasis",
+        "Smash Mouth",
+        "Bryan Adams",
+        "Air Supply"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "In the metal band Slipknot, there are 9 members, which member labelled themselves number 6? ",
+      "options": [
+        "Shawn Crahan (Clown)",
+        "Cory Taylor",
+        "Mick Thomson",
+        "Sid Wilson"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     }
   ]
 }
