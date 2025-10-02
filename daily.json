@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which is the second largest native language spoken in Spain by numbers of speakers?",
+      "text": "The New York Times slogan is, \"All the News That's Fit to…\"",
       "options": [
-        "Portuguese",
-        "Spanish",
-        "French",
-        "Catalan"
+        "Digest",
+        "Look",
+        "Read",
+        "Print"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The tuba is a part of which musical family?",
+      "text": "What is the capital of South Korea?",
       "options": [
-        "Strings",
-        "Woodwind",
-        "Brass",
-        "Percussion"
+        "Taegu",
+        "Kitakyushu",
+        "Seoul",
+        "Pyongyang"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What is the unit of currency in Laos?",
+      "text": "What is the defining characteristic of someone who is described as hirsute?",
       "options": [
-        "Konra",
-        "Ruble",
-        "Kip",
-        "Dollar"
+        "Funny",
+        "Rude",
+        "Hairy",
+        "Tall"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The song \"Three Lions\" by the Lightning Seeds was made for which major football event in 1996?",
+      "text": "Who was the director of \"Scott Pilgrim vs. the World (2010)\"?",
       "options": [
-        "European Championships",
-        "World Cup",
-        "Champions League",
-        "Confederations Cup"
+        "Edgar Wright",
+        "Phil Lord",
+        "Chris Miller",
+        "Seth Rogan"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "text": "In the 1976 film 'Taxi Driver', how many guns did Travis buy from the salesman?",
       "options": [
-        "Method Man",
-        "GZA",
-        "Inspectah Deck",
-        "Masta Killa"
+        "2",
+        "1",
+        "6",
+        "4"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
