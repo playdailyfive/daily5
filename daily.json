@@ -1,66 +1,66 @@
 {
-  "day": "20251001",
-  "dayIndex": 39,
+  "day": "20251002",
+  "dayIndex": 40,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The file hosting service, \"Google Drive\" was launched on what day?",
+      "text": "Which is the second largest native language spoken in Spain by numbers of speakers?",
       "options": [
-        "November 14, 2008",
-        "January 20, 2010",
-        "January 12, 2014",
-        "April 24, 2012"
+        "Portuguese",
+        "Spanish",
+        "French",
+        "Catalan"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which nation claims ownership of Antarctica?",
+      "text": "The tuba is a part of which musical family?",
       "options": [
-        "No one, but there are claims.",
-        "Australia",
-        "United Nations",
-        "United States of America"
+        "Strings",
+        "Woodwind",
+        "Brass",
+        "Percussion"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "text": "What is the unit of currency in Laos?",
       "options": [
-        "Ten",
-        "One hundred",
-        "Twenty",
-        "Five"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who provided a majority of the songs and lyrics for \"Spirit: Stallion of the Cimarron\"?",
-      "options": [
-        "Oasis",
-        "Smash Mouth",
-        "Bryan Adams",
-        "Air Supply"
+        "Konra",
+        "Ruble",
+        "Kip",
+        "Dollar"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "In the metal band Slipknot, there are 9 members, which member labelled themselves number 6? ",
+      "text": "The song \"Three Lions\" by the Lightning Seeds was made for which major football event in 1996?",
       "options": [
-        "Shawn Crahan (Clown)",
-        "Cory Taylor",
-        "Mick Thomson",
-        "Sid Wilson"
+        "European Championships",
+        "World Cup",
+        "Champions League",
+        "Confederations Cup"
       ],
       "correct": 0,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "options": [
+        "Method Man",
+        "GZA",
+        "Inspectah Deck",
+        "Masta Killa"
+      ],
+      "correct": 3,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
