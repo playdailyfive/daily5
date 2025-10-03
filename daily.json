@@ -1,68 +1,68 @@
 {
-  "day": "20251002",
-  "dayIndex": 40,
+  "day": "20251003",
+  "dayIndex": 41,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The New York Times slogan is, \"All the News That's Fit to…\"",
+      "text": "Which one of these is not a typical European sword design?",
       "options": [
-        "Digest",
-        "Look",
-        "Read",
-        "Print"
+        "Ulfberht",
+        "Falchion",
+        "Flamberge",
+        "Scimitar"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of South Korea?",
+      "text": "Who directed the Kill Bill movies?",
       "options": [
-        "Taegu",
-        "Kitakyushu",
-        "Seoul",
-        "Pyongyang"
+        "Stanley Kubrick",
+        "Quentin Tarantino",
+        "Arnold Schwarzenegger",
+        "David Lean"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the defining characteristic of someone who is described as hirsute?",
+      "text": "What character was once considered to be the 27th letter of the alphabet?",
       "options": [
-        "Funny",
-        "Rude",
-        "Hairy",
-        "Tall"
+        "Tilde",
+        "Pilcrow",
+        "Ampersand",
+        "Interrobang"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the director of \"Scott Pilgrim vs. the World (2010)\"?",
+      "text": "What is the capital of Estonia?",
       "options": [
-        "Edgar Wright",
-        "Phil Lord",
-        "Chris Miller",
-        "Seth Rogan"
+        "Tallinn",
+        "Helsinki",
+        "Tartu",
+        "Riga"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "In the 1976 film 'Taxi Driver', how many guns did Travis buy from the salesman?",
+      "text": "What national museum will you find in Cooperstown, New York?",
       "options": [
-        "2",
-        "1",
-        "6",
-        "4"
+        "National Toy Hall of Fame",
+        "Metropolitan Museum of Art",
+        "National Baseball Hall of Fame",
+        "Museum of Modern Art"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
