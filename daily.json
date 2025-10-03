@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which one of these is not a typical European sword design?",
+      "text": "When was the website reddit founded ?",
       "options": [
-        "Ulfberht",
-        "Falchion",
-        "Flamberge",
-        "Scimitar"
+        "2004",
+        "2008",
+        "2006",
+        "2005"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the Kill Bill movies?",
+      "text": "What country is the second largest in the world by area?",
       "options": [
-        "Stanley Kubrick",
-        "Quentin Tarantino",
-        "Arnold Schwarzenegger",
-        "David Lean"
+        "United States of America",
+        "Canada",
+        "Russia",
+        "China"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "What character was once considered to be the 27th letter of the alphabet?",
+      "text": "Which country has the most Trappist breweries?",
       "options": [
-        "Tilde",
-        "Pilcrow",
-        "Ampersand",
-        "Interrobang"
+        "France",
+        "USA",
+        "Belgium",
+        "Netherlands"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Estonia?",
+      "text": "In which African country was the 2006 film 'Blood Diamond' mostly set in?",
       "options": [
-        "Tallinn",
-        "Helsinki",
-        "Tartu",
-        "Riga"
+        "Sierra Leone",
+        "Liberia",
+        "Burkina Faso",
+        "Central African Republic"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What national museum will you find in Cooperstown, New York?",
+      "text": "The Swedish word \"Grunka\" means what in English?",
       "options": [
-        "National Toy Hall of Fame",
-        "Metropolitan Museum of Art",
-        "National Baseball Hall of Fame",
-        "Museum of Modern Art"
+        "Place",
+        "People",
+        "Thing",
+        "Pineapple"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
