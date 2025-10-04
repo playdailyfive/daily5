@@ -1,68 +1,68 @@
 {
-  "day": "20251003",
-  "dayIndex": 41,
+  "day": "20251004",
+  "dayIndex": 42,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When was the website reddit founded ?",
+      "text": "The word \"dozen\" usually refers to a group of how many objects?",
       "options": [
-        "2004",
-        "2008",
-        "2006",
-        "2005"
+        "6",
+        "10",
+        "12",
+        "20"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What country is the second largest in the world by area?",
+      "text": "The Alps are a mountain range on which continent?",
       "options": [
-        "United States of America",
-        "Canada",
-        "Russia",
-        "China"
+        "Asia",
+        "Europe",
+        "North America",
+        "Africa"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "Which country has the most Trappist breweries?",
+      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
       "options": [
-        "France",
-        "USA",
-        "Belgium",
-        "Netherlands"
+        "6",
+        "4",
+        "5",
+        "3"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In which African country was the 2006 film 'Blood Diamond' mostly set in?",
+      "text": "Which European capital city gives its name to a 1981 song by Ultravox?",
       "options": [
-        "Sierra Leone",
-        "Liberia",
-        "Burkina Faso",
-        "Central African Republic"
+        "Berlin",
+        "Vienna",
+        "Brussels",
+        "Paris"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The Swedish word \"Grunka\" means what in English?",
+      "text": "Which company did the animation for Peter Gabriel's Video Sledgehammer (1986)?",
       "options": [
-        "Place",
-        "People",
-        "Thing",
-        "Pineapple"
+        "Illumination Entertainment",
+        "HIT Entertainment",
+        "VIZ Media",
+        "Aardman Animations"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
