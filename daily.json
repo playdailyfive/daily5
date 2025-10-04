@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The word \"dozen\" usually refers to a group of how many objects?",
+      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
       "options": [
-        "6",
-        "10",
-        "12",
-        "20"
+        "Riyal",
+        "Dinar",
+        "Rupee",
+        "Peso"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Alps are a mountain range on which continent?",
+      "text": "Which song on Daft Punk's \"Random Access Memories\" features Pharrell Williams?",
       "options": [
-        "Asia",
-        "Europe",
-        "North America",
-        "Africa"
+        "Instant Crush",
+        "Get Lucky",
+        "Doin' It Right",
+        "The Game of Love"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "text": "What is the Portuguese word for \"Brazil\"?",
       "options": [
-        "6",
-        "4",
-        "5",
-        "3"
+        "Bras&iacute;l",
+        "Brasil",
+        "Brasilia",
+        "Brazil"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which European capital city gives its name to a 1981 song by Ultravox?",
+      "text": "The song \"Twin Size Mattress\" was written by which band?",
       "options": [
-        "Berlin",
-        "Vienna",
-        "Brussels",
-        "Paris"
+        "Twenty One Pilots",
+        "The Front Bottoms",
+        "The Smith Street Band",
+        "The Wonder Years"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which company did the animation for Peter Gabriel's Video Sledgehammer (1986)?",
+      "text": "Who wrote the novel \"Moby-Dick\"?",
       "options": [
-        "Illumination Entertainment",
-        "HIT Entertainment",
-        "VIZ Media",
-        "Aardman Animations"
+        "William Shakespeare",
+        "William Golding",
+        "J. R. R. Tolkien",
+        "Herman Melville"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     }
   ]
 }
