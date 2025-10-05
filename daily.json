@@ -5,24 +5,24 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+      "text": "What is the first book of the Old Testament?",
       "options": [
-        "Subscriber",
-        "Solid",
-        "Secure",
-        "Single"
+        "Genesis",
+        "Numbers",
+        "Leviticus",
+        "Exodus"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which music publication is often abbreviated to NME?",
+      "text": "In an orchestra, what is the lowest member of the brass family?",
       "options": [
-        "North Manchester Express",
-        "New Musical Express",
-        "New Metro Entertainment",
-        "Next Musical Enterprise"
+        "Bassoon",
+        "Tuba",
+        "Trombone",
+        "Contrabass"
       ],
       "correct": 1,
       "difficulty": "easy",
@@ -41,27 +41,27 @@
       "category": "General Knowledge"
     },
     {
-      "text": "What is the exact length of one non-curved part in Lane 1 of an Olympic Track?",
+      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
       "options": [
-        "84.39m",
-        "109.36yd",
-        "100yd",
-        "100m"
+        "Gilbert Gottfried",
+        "Jonathan Freeman",
+        "Pauly Shore",
+        "Robin Williams"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
+      "text": "Located in Chile, El Teniente is the world's largest underground mine for what metal?",
       "options": [
-        "The British Bulldogs",
-        "Demolition",
-        "The Bushwhackers",
-        "The Dream Team"
+        "Silver",
+        "Copper",
+        "Nickel",
+        "Iron"
       ],
       "correct": 1,
-      "difficulty": "easy",
+      "difficulty": "hard",
       "category": "General Knowledge"
     }
   ]
