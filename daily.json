@@ -1,68 +1,68 @@
 {
-  "day": "20251004",
-  "dayIndex": 42,
+  "day": "20251005",
+  "dayIndex": 43,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
+      "text": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
       "options": [
-        "Riyal",
-        "Dinar",
-        "Rupee",
-        "Peso"
+        "Subscriber",
+        "Solid",
+        "Secure",
+        "Single"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which music publication is often abbreviated to NME?",
+      "options": [
+        "North Manchester Express",
+        "New Musical Express",
+        "New Metro Entertainment",
+        "Next Musical Enterprise"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "What is the last letter of the Greek alphabet?",
+      "options": [
+        "Epsilon",
+        "Mu",
+        "Omega",
+        "Kappa"
       ],
       "correct": 2,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which song on Daft Punk's \"Random Access Memories\" features Pharrell Williams?",
-      "options": [
-        "Instant Crush",
-        "Get Lucky",
-        "Doin' It Right",
-        "The Game of Love"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What is the Portuguese word for \"Brazil\"?",
-      "options": [
-        "Bras&iacute;l",
-        "Brasil",
-        "Brasilia",
-        "Brazil"
-      ],
-      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The song \"Twin Size Mattress\" was written by which band?",
+      "text": "What is the exact length of one non-curved part in Lane 1 of an Olympic Track?",
       "options": [
-        "Twenty One Pilots",
-        "The Front Bottoms",
-        "The Smith Street Band",
-        "The Wonder Years"
+        "84.39m",
+        "109.36yd",
+        "100yd",
+        "100m"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "Who wrote the novel \"Moby-Dick\"?",
+      "text": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
       "options": [
-        "William Shakespeare",
-        "William Golding",
-        "J. R. R. Tolkien",
-        "Herman Melville"
+        "The British Bulldogs",
+        "Demolition",
+        "The Bushwhackers",
+        "The Dream Team"
       ],
-      "correct": 3,
-      "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General Knowledge"
     }
   ]
 }
