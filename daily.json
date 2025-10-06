@@ -1,68 +1,68 @@
 {
-  "day": "20251005",
-  "dayIndex": 43,
+  "day": "20251006",
+  "dayIndex": 44,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the first book of the Old Testament?",
+      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
       "options": [
-        "Genesis",
-        "Numbers",
-        "Leviticus",
-        "Exodus"
+        "Stealing",
+        "Slacking",
+        "Cheating",
+        "Smoking"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In an orchestra, what is the lowest member of the brass family?",
+      "text": "Which small country is located between the borders of France and Spain?",
       "options": [
-        "Bassoon",
-        "Tuba",
-        "Trombone",
-        "Contrabass"
+        "Vatican City",
+        "San Marino",
+        "Lichtenstein",
+        "Andorra"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What is the last letter of the Greek alphabet?",
+      "text": "When was Hubba Bubba first introduced?",
       "options": [
-        "Epsilon",
-        "Mu",
-        "Omega",
-        "Kappa"
+        "1984",
+        "1979",
+        "1972",
+        "1980"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the capital of Peru?",
+      "options": [
+        "Buenos Aires",
+        "Montevideo",
+        "Lima",
+        "Santiago"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Geography"
     },
     {
-      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
+      "text": "What is the official German name of the Swiss Federal Railways?",
       "options": [
-        "Gilbert Gottfried",
-        "Jonathan Freeman",
-        "Pauly Shore",
-        "Robin Williams"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "Located in Chile, El Teniente is the world's largest underground mine for what metal?",
-      "options": [
-        "Silver",
-        "Copper",
-        "Nickel",
-        "Iron"
+        "Bundesbahnen der Schweiz",
+        "Schweizerische Bundesbahnen",
+        "Schweizerische Nationalbahnen",
+        "Schweizerische Staatsbahnen"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
