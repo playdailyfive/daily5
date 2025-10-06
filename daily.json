@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
+      "text": "What geometric shape is generally used for stop signs?",
       "options": [
-        "Stealing",
-        "Slacking",
-        "Cheating",
-        "Smoking"
+        "Circle",
+        "Octagon",
+        "Triangle",
+        "Hexagon"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which small country is located between the borders of France and Spain?",
+      "text": "In Supernatural, what's is Sam's brothers name?",
       "options": [
-        "Vatican City",
-        "San Marino",
-        "Lichtenstein",
-        "Andorra"
+        "Steve",
+        "Dave",
+        "Mike",
+        "Dean"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "When was Hubba Bubba first introduced?",
+      "text": "Death Valley's Badwater Basin is North America's point of lowest elevation at how many feet below sea level?",
       "options": [
-        "1984",
-        "1979",
-        "1972",
-        "1980"
+        "79 feet",
+        "282 feet",
+        "1,640 feet",
+        "12,092 feet"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Peru?",
+      "text": "The early part of which decade, did the Goth Subculture begin?",
       "options": [
-        "Buenos Aires",
-        "Montevideo",
-        "Lima",
-        "Santiago"
+        "1970s",
+        "2000s",
+        "1980s",
+        "1990s"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "General Knowledge"
     },
     {
-      "text": "What is the official German name of the Swiss Federal Railways?",
+      "text": "Which album was released by Kanye West in 2013?",
       "options": [
-        "Bundesbahnen der Schweiz",
-        "Schweizerische Bundesbahnen",
-        "Schweizerische Nationalbahnen",
-        "Schweizerische Staatsbahnen"
+        "The Life of Pablo",
+        "Yeezus",
+        "My Beautiful Dark Twisted Fantasy",
+        "Watch the Throne"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
