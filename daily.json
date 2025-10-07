@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In \"Shrek\", what comedic actor voices Donkey?",
+      "text": "What is the name of the poker hand containing three of a kind and a pair?",
       "options": [
-        "Chris Rock",
-        "Richard Pryor",
-        "Bernie Mac",
-        "Eddie Murphy"
+        "Flush",
+        "Straight",
+        "High card",
+        "Full House"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Hallelujah\" is a song written by which Canadian recording artist?",
+      "text": "How many US states start with the letter K?",
       "options": [
-        "Justin Bieber ",
-        "Kory Lefkowits",
-        "Leonard Cohen",
-        "Ryan Letourneau "
+        "Three",
+        "One",
+        "Two",
+        "None"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "In which country was the 1992 Summer Olympics Games held?",
+      "text": "What is the world's most expensive spice by weight?",
       "options": [
-        "Spain",
-        "Russia",
-        "Korea",
-        "USA"
+        "Saffron",
+        "Cinnamon",
+        "Cardamom",
+        "Vanilla"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What genre of EDM is the Dutch DJ, musician, and remixer Armin van Buuren most well-known for?",
+      "text": "How many sovereign states are members of the United Nations?",
       "options": [
-        "House",
-        "Trance",
-        "Dubstep",
-        "Drum and Bass"
+        "201",
+        "195",
+        "178",
+        "153"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Which member of the English band \"The xx\" released their solo album \"In Colour\" in 2015?",
+      "text": "The film Mad Max: Fury Road features the Dies Irae  from which composer's requiem?",
       "options": [
-        "Jamie xx",
-        "Baria Qureshi",
-        "Oliver Sim",
-        "Romy Madley Croft"
+        "Verdi",
+        "Brahms",
+        "Berlioz",
+        "Mozart"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
