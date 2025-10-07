@@ -1,66 +1,66 @@
 {
-  "day": "20251006",
-  "dayIndex": 44,
+  "day": "20251007",
+  "dayIndex": 45,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What geometric shape is generally used for stop signs?",
+      "text": "In \"Shrek\", what comedic actor voices Donkey?",
       "options": [
-        "Circle",
-        "Octagon",
-        "Triangle",
-        "Hexagon"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In Supernatural, what's is Sam's brothers name?",
-      "options": [
-        "Steve",
-        "Dave",
-        "Mike",
-        "Dean"
+        "Chris Rock",
+        "Richard Pryor",
+        "Bernie Mac",
+        "Eddie Murphy"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "Death Valley's Badwater Basin is North America's point of lowest elevation at how many feet below sea level?",
-      "options": [
-        "79 feet",
-        "282 feet",
-        "1,640 feet",
-        "12,092 feet"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "\"Hallelujah\" is a song written by which Canadian recording artist?",
       "options": [
-        "1970s",
-        "2000s",
-        "1980s",
-        "1990s"
+        "Justin Bieber ",
+        "Kory Lefkowits",
+        "Leonard Cohen",
+        "Ryan Letourneau "
       ],
       "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "In which country was the 1992 Summer Olympics Games held?",
+      "options": [
+        "Spain",
+        "Russia",
+        "Korea",
+        "USA"
+      ],
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which album was released by Kanye West in 2013?",
+      "text": "What genre of EDM is the Dutch DJ, musician, and remixer Armin van Buuren most well-known for?",
       "options": [
-        "The Life of Pablo",
-        "Yeezus",
-        "My Beautiful Dark Twisted Fantasy",
-        "Watch the Throne"
+        "House",
+        "Trance",
+        "Dubstep",
+        "Drum and Bass"
       ],
       "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "Which member of the English band \"The xx\" released their solo album \"In Colour\" in 2015?",
+      "options": [
+        "Jamie xx",
+        "Baria Qureshi",
+        "Oliver Sim",
+        "Romy Madley Croft"
+      ],
+      "correct": 0,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
