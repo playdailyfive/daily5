@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does VR stand for?",
+      "text": "Waluigi's first appearance was in what game?",
       "options": [
-        "Virtual Reality",
-        "Voice Recognition",
-        "Visual Recognition",
-        "Very Real"
+        "Mario Tennis 64 (N64)",
+        "Super Smash Bros. Ultimate",
+        "Mario Party (N64)",
+        "Wario Land: Super Mario Land 3"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who starred as Bruce Wayne and Batman in Tim Burton's 1989 movie \"Batman\"?",
+      "text": "\"Stadium of Light\" is the home stadium for which soccer team?",
       "options": [
-        "Val Kilmer",
-        "Adam West",
-        "George Clooney",
-        "Michael Keaton"
+        "Paris Saints-Germain",
+        "Manchester United",
+        "Barcelona FC",
+        "Sunderland FC"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "Scotch whisky and Drambuie make up which cocktail?",
+      "text": "What is the Italian word for \"tomato\"?",
       "options": [
-        "Sex on the Beach",
-        "Screwdriver",
-        "Rusty Nail",
-        "Manhattan"
+        "Cipolla",
+        "Aglio",
+        "Pomodoro",
+        "Peperoncino"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In Romance of the Three Kingdoms, who was not a member of the Peach Garden Oath?",
+      "text": "Who was the first white band to play the Apollo Theater?",
       "options": [
-        "Zhao Yun",
-        "Guan Yu",
-        "Zhang Fei",
-        "Liu Bei"
+        "Buddy Holly and The Crickets",
+        "The Beatles",
+        "Elvis",
+        "Chuck Berry"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In \"Battle Cats\", what is Moneko / MISS Moneko's critical percentage rate?",
+      "text": "What song includes the words \"Numa Numa\" which was subject to a Viral Video in 2004?",
       "options": [
-        "20%",
-        "25%",
-        "10%",
-        "15%"
+        "Despacito",
+        "Asereje",
+        "Gangnam Style",
+        "Dragostea Din Tei"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
