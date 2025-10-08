@@ -1,68 +1,68 @@
 {
-  "day": "20251007",
-  "dayIndex": 45,
+  "day": "20251008",
+  "dayIndex": 46,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of the poker hand containing three of a kind and a pair?",
+      "text": "What does VR stand for?",
       "options": [
-        "Flush",
-        "Straight",
-        "High card",
-        "Full House"
+        "Virtual Reality",
+        "Voice Recognition",
+        "Visual Recognition",
+        "Very Real"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who starred as Bruce Wayne and Batman in Tim Burton's 1989 movie \"Batman\"?",
+      "options": [
+        "Val Kilmer",
+        "Adam West",
+        "George Clooney",
+        "Michael Keaton"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "How many US states start with the letter K?",
+      "text": "Scotch whisky and Drambuie make up which cocktail?",
       "options": [
-        "Three",
-        "One",
-        "Two",
-        "None"
+        "Sex on the Beach",
+        "Screwdriver",
+        "Rusty Nail",
+        "Manhattan"
       ],
       "correct": 2,
-      "difficulty": "easy",
-      "category": "Geography"
-    },
-    {
-      "text": "What is the world's most expensive spice by weight?",
-      "options": [
-        "Saffron",
-        "Cinnamon",
-        "Cardamom",
-        "Vanilla"
-      ],
-      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "How many sovereign states are members of the United Nations?",
+      "text": "In Romance of the Three Kingdoms, who was not a member of the Peach Garden Oath?",
       "options": [
-        "201",
-        "195",
-        "178",
-        "153"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "The film Mad Max: Fury Road features the Dies Irae  from which composer's requiem?",
-      "options": [
-        "Verdi",
-        "Brahms",
-        "Berlioz",
-        "Mozart"
+        "Zhao Yun",
+        "Guan Yu",
+        "Zhang Fei",
+        "Liu Bei"
       ],
       "correct": 0,
+      "difficulty": "medium",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "In \"Battle Cats\", what is Moneko / MISS Moneko's critical percentage rate?",
+      "options": [
+        "20%",
+        "25%",
+        "10%",
+        "15%"
+      ],
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
