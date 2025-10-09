@@ -1,66 +1,66 @@
 {
-  "day": "20251008",
-  "dayIndex": 46,
+  "day": "20251009",
+  "dayIndex": 47,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Waluigi's first appearance was in what game?",
+      "text": "In the English language, what is the name of the \"&\" character?",
       "options": [
-        "Mario Tennis 64 (N64)",
-        "Super Smash Bros. Ultimate",
-        "Mario Party (N64)",
-        "Wario Land: Super Mario Land 3"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "\"Stadium of Light\" is the home stadium for which soccer team?",
-      "options": [
-        "Paris Saints-Germain",
-        "Manchester United",
-        "Barcelona FC",
-        "Sunderland FC"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Sports"
-    },
-    {
-      "text": "What is the Italian word for \"tomato\"?",
-      "options": [
-        "Cipolla",
-        "Aglio",
-        "Pomodoro",
-        "Peperoncino"
+        "And Sign",
+        "Obelus ",
+        "Ampersand",
+        "Eightslash"
       ],
       "correct": 2,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which movie includes a giant bunny-like spirit who has magic powers including growing trees?",
+      "options": [
+        "Rise of the Guardians",
+        "Hop",
+        "My Neighbor Totoro",
+        "Alice in Wonderland"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the first white band to play the Apollo Theater?",
+      "text": "Which former Star Trek actor directed Three Men and a Baby (1987)?",
       "options": [
-        "Buddy Holly and The Crickets",
-        "The Beatles",
-        "Elvis",
-        "Chuck Berry"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What song includes the words \"Numa Numa\" which was subject to a Viral Video in 2004?",
-      "options": [
-        "Despacito",
-        "Asereje",
-        "Gangnam Style",
-        "Dragostea Din Tei"
+        "William Shatner",
+        "James Doohan",
+        "George Takei",
+        "Leonard Nimoy"
       ],
       "correct": 3,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "Pamina and Papageno are characters in what Mozart opera?",
+      "options": [
+        "The Impresario",
+        "The Marriage of Figaro",
+        "The Magic Flute",
+        "The Goose of Cairo"
+      ],
+      "correct": 2,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
