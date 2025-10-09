@@ -17,52 +17,52 @@
       "category": "General Knowledge"
     },
     {
-      "text": "Which movie includes a giant bunny-like spirit who has magic powers including growing trees?",
+      "text": "This movie contains the quote, \"Houston, we have a problem.\"",
       "options": [
-        "Rise of the Guardians",
-        "Hop",
-        "My Neighbor Totoro",
-        "Alice in Wonderland"
+        "Capricorn One",
+        "The Right Stuff",
+        "Apollo 13",
+        "Marooned"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "text": "In the Morse code, which letter is indicated by 3 dots? ",
       "options": [
-        "4",
-        "3",
-        "5",
-        "6"
+        "S",
+        "O",
+        "A",
+        "C"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which former Star Trek actor directed Three Men and a Baby (1987)?",
+      "text": "What continent is the country Lesotho in?",
       "options": [
-        "William Shatner",
-        "James Doohan",
-        "George Takei",
-        "Leonard Nimoy"
+        "Asia",
+        "Europe",
+        "South America",
+        "Africa"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "Pamina and Papageno are characters in what Mozart opera?",
+      "text": "Into which basin does the Jordan River flow into?",
       "options": [
-        "The Impresario",
-        "The Marriage of Figaro",
-        "The Magic Flute",
-        "The Goose of Cairo"
+        "Caspian Sea",
+        "Aral Sea",
+        "Dead Sea",
+        "Salton Sea"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
