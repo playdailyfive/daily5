@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cynophobia the fear of?",
+      "text": "In the English language, what is the name of the \"&\" character?",
       "options": [
-        "Germs",
-        "Dogs",
-        "Birds",
-        "Flying"
+        "Obelus ",
+        "Ampersand",
+        "Eightslash",
+        "And Sign"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which wrestler won the 2019 Men's Royal Rumble?",
+      "text": "What is the name of Sherlock Holmes's brother?",
       "options": [
-        "AJ Styles",
-        "Andrade",
-        "Seth Rollins",
-        "Braun Strowman"
+        "Martin Holmes",
+        "Herbie Hancock Holmes",
+        "Mycroft Holmes",
+        "Mederi Holmes"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Which river flows through the Scottish city of Glasgow?",
+      "text": "What is the average life span of a garden ant?",
       "options": [
-        "Clyde",
-        "Tay",
-        "Dee",
-        "Tweed"
+        "15 years",
+        "24 hours",
+        "1 week",
+        "3 years"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was another suggested name for, the 1985 film, Back to the Future?",
+      "text": "What was Britney Spears' debut single?",
       "options": [
-        "The Time Travelers",
-        "Hill Valley Time Travelers",
-        "Spaceman From Pluto",
-        "The Lucky Man"
+        "(You Drive Me) Crazy",
+        "Oops!... I Did It Again",
+        "...Baby One More Time",
+        "Toxic"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "text": "What was Bank of America originally established as?",
       "options": [
-        "Fiji",
-        "Indonesia",
-        "New Zealand",
-        "Chile"
+        "Bank of Charlotte",
+        "Bank of Italy",
+        "Bank of Pennsylvania",
+        "Bank of Long Island"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
