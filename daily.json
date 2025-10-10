@@ -1,66 +1,66 @@
 {
-  "day": "20251009",
-  "dayIndex": 47,
+  "day": "20251010",
+  "dayIndex": 48,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the English language, what is the name of the \"&\" character?",
+      "text": "What is Cynophobia the fear of?",
       "options": [
-        "And Sign",
-        "Obelus ",
-        "Ampersand",
-        "Eightslash"
+        "Germs",
+        "Dogs",
+        "Birds",
+        "Flying"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "This movie contains the quote, \"Houston, we have a problem.\"",
+      "text": "Which wrestler won the 2019 Men's Royal Rumble?",
       "options": [
-        "Capricorn One",
-        "The Right Stuff",
-        "Apollo 13",
-        "Marooned"
+        "AJ Styles",
+        "Andrade",
+        "Seth Rollins",
+        "Braun Strowman"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "In the Morse code, which letter is indicated by 3 dots? ",
+      "text": "Which river flows through the Scottish city of Glasgow?",
       "options": [
-        "S",
-        "O",
-        "A",
-        "C"
+        "Clyde",
+        "Tay",
+        "Dee",
+        "Tweed"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What continent is the country Lesotho in?",
+      "text": "What was another suggested name for, the 1985 film, Back to the Future?",
       "options": [
-        "Asia",
-        "Europe",
-        "South America",
-        "Africa"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "Into which basin does the Jordan River flow into?",
-      "options": [
-        "Caspian Sea",
-        "Aral Sea",
-        "Dead Sea",
-        "Salton Sea"
+        "The Time Travelers",
+        "Hill Valley Time Travelers",
+        "Spaceman From Pluto",
+        "The Lucky Man"
       ],
       "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "options": [
+        "Fiji",
+        "Indonesia",
+        "New Zealand",
+        "Chile"
+      ],
+      "correct": 1,
       "difficulty": "hard",
       "category": "Geography"
     }
