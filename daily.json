@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
+      "text": "In aerodynamics, which force pushes an object upwards?",
       "options": [
-        "Quito",
-        "Medell&iacute;n",
-        "Bogot&aacute;",
-        "Cali"
+        "Weight",
+        "Lift",
+        "Drag",
+        "Thrust"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"Jurassic World\", what is the name of the dinosaur that is a genetic hybrid?",
+      "text": "Which ocean borders the west coast of the United States?",
       "options": [
-        "Tyrannosaurus Rex ",
-        "Indominus Rex",
-        "Pteranodon",
-        "Mosasaurus"
+        "Arctic",
+        "Pacific",
+        "Indian",
+        "Atlantic"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "Which famed architect, who died in 2019 aged 102, designed the glass pyramid at the Louvre museum in Paris?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Pascale Guédot",
-        "I. M. Pei",
-        "Wang Shu",
-        "Frank Gehry"
+        "Psychology",
+        "Philosophy",
+        "Physical Therapy",
+        "Phrenology"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The World Health Organization headquarters is located in which European country?",
+      "text": "What is the capital of Vietnam?",
       "options": [
-        "France",
-        "United Kingdom",
-        "Belgium",
-        "Switzerland"
+        "Hai Phong",
+        "Da Nang",
+        "Ho Chi Minh City",
+        "Hanoi"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "Electronic music producer Kygo's popularity skyrocketed after a certain remix. Which song did he remix?",
+      "text": "The novel \"Jane Eyre\" was written by what author? ",
       "options": [
-        "Ed Sheeran - I See Fire",
-        "Marvin Gaye - Sexual Healing",
-        "Coldplay - Midnight",
-        "a-ha - Take On Me"
+        "Charlotte Bront&euml;",
+        "Emily Bront&euml;",
+        "Jane Austen",
+        "Louisa May Alcott"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Books"
     }
   ]
 }
