@@ -1,66 +1,66 @@
 {
-  "day": "20251010",
-  "dayIndex": 48,
+  "day": "20251011",
+  "dayIndex": 49,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the English language, what is the name of the \"&\" character?",
+      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
       "options": [
-        "Obelus ",
-        "Ampersand",
-        "Eightslash",
-        "And Sign"
+        "Quito",
+        "Medell&iacute;n",
+        "Bogot&aacute;",
+        "Cali"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of Sherlock Holmes's brother?",
+      "text": "In \"Jurassic World\", what is the name of the dinosaur that is a genetic hybrid?",
       "options": [
-        "Martin Holmes",
-        "Herbie Hancock Holmes",
-        "Mycroft Holmes",
-        "Mederi Holmes"
+        "Tyrannosaurus Rex ",
+        "Indominus Rex",
+        "Pteranodon",
+        "Mosasaurus"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the average life span of a garden ant?",
+      "text": "Which famed architect, who died in 2019 aged 102, designed the glass pyramid at the Louvre museum in Paris?",
       "options": [
-        "15 years",
-        "24 hours",
-        "1 week",
-        "3 years"
+        "Pascale Guédot",
+        "I. M. Pei",
+        "Wang Shu",
+        "Frank Gehry"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "The World Health Organization headquarters is located in which European country?",
+      "options": [
+        "France",
+        "United Kingdom",
+        "Belgium",
+        "Switzerland"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "Electronic music producer Kygo's popularity skyrocketed after a certain remix. Which song did he remix?",
+      "options": [
+        "Ed Sheeran - I See Fire",
+        "Marvin Gaye - Sexual Healing",
+        "Coldplay - Midnight",
+        "a-ha - Take On Me"
       ],
       "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What was Britney Spears' debut single?",
-      "options": [
-        "(You Drive Me) Crazy",
-        "Oops!... I Did It Again",
-        "...Baby One More Time",
-        "Toxic"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What was Bank of America originally established as?",
-      "options": [
-        "Bank of Charlotte",
-        "Bank of Italy",
-        "Bank of Pennsylvania",
-        "Bank of Long Island"
-      ],
-      "correct": 1,
       "difficulty": "hard",
       "category": "General Knowledge"
     }
