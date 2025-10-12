@@ -1,64 +1,64 @@
 {
-  "day": "20251011",
-  "dayIndex": 49,
+  "day": "20251012",
+  "dayIndex": 50,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In aerodynamics, which force pushes an object upwards?",
+      "text": "What company developed the vocaloid Hatsune Miku?",
       "options": [
-        "Weight",
-        "Lift",
-        "Drag",
-        "Thrust"
+        "Yamaha Corporation",
+        "Crypton Future Media",
+        "Sega",
+        "Sony"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which ocean borders the west coast of the United States?",
+      "text": "Which area of Eastern Europe is famous for its association with vampires?",
       "options": [
-        "Arctic",
-        "Pacific",
-        "Indian",
-        "Atlantic"
+        "Macedonia",
+        "Silesia",
+        "Transylvania",
+        "Slovakia"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "Who invented Pastafarianism?",
       "options": [
-        "Psychology",
-        "Philosophy",
-        "Physical Therapy",
-        "Phrenology"
+        "Bobby Henderson",
+        "Zach Soldi",
+        "Bill Nye",
+        "Eric Tignor"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Vietnam?",
+      "text": "Which German sportswear company's logo is the 'Formstripe'?",
       "options": [
-        "Hai Phong",
-        "Da Nang",
-        "Ho Chi Minh City",
-        "Hanoi"
+        "Reebok",
+        "Puma",
+        "Adidas",
+        "Nike"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Sports"
     },
     {
-      "text": "The novel \"Jane Eyre\" was written by what author? ",
+      "text": "According to Bram Stoker's novel, in which British coastal town did Dracula come ashore?",
       "options": [
-        "Charlotte Bront&euml;",
-        "Emily Bront&euml;",
-        "Jane Austen",
-        "Louisa May Alcott"
+        "Whitby",
+        "Portsmouth",
+        "Scarborough",
+        "Brighton"
       ],
       "correct": 0,
       "difficulty": "hard",
