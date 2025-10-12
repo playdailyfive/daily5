@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What company developed the vocaloid Hatsune Miku?",
+      "text": "Which country developed the AK-47 assault rifle?",
       "options": [
-        "Yamaha Corporation",
-        "Crypton Future Media",
-        "Sega",
-        "Sony"
+        "Poland",
+        "Soviet Union",
+        "Iran",
+        "Israel"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which area of Eastern Europe is famous for its association with vampires?",
+      "text": "Who wrote \"The Scarlet Letter\", published in 1850?",
       "options": [
-        "Macedonia",
-        "Silesia",
-        "Transylvania",
-        "Slovakia"
+        "James Fenimore Cooper",
+        "Washington Irving",
+        "Nathaniel Hawthorne",
+        "Catherine Maria Sedgwick"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Who invented Pastafarianism?",
+      "text": "Which country has the most Trappist breweries?",
       "options": [
-        "Bobby Henderson",
-        "Zach Soldi",
-        "Bill Nye",
-        "Eric Tignor"
+        "Belgium",
+        "USA",
+        "France",
+        "Netherlands"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which German sportswear company's logo is the 'Formstripe'?",
+      "text": "Which song made by MAN WITH A MISSION was used as the opening for the anime \"Log Horizon\"?",
       "options": [
-        "Reebok",
-        "Puma",
-        "Adidas",
-        "Nike"
+        "\"Out of Control\"",
+        "\"Database\"",
+        "\"Raise Your Flag\"",
+        "\"Dead End in Tokyo\""
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "According to Bram Stoker's novel, in which British coastal town did Dracula come ashore?",
+      "text": "Which country is the Taedong River in?",
       "options": [
-        "Whitby",
-        "Portsmouth",
-        "Scarborough",
-        "Brighton"
+        "North Korea",
+        "China",
+        "South Korea",
+        "Japan"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     }
   ]
 }
