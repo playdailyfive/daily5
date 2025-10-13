@@ -1,68 +1,68 @@
 {
-  "day": "20251012",
-  "dayIndex": 50,
+  "day": "20251013",
+  "dayIndex": 51,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which country developed the AK-47 assault rifle?",
+      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
       "options": [
-        "Poland",
-        "Soviet Union",
-        "Iran",
-        "Israel"
+        "Ulysses Grant",
+        "Martin Van Buren",
+        "John Quincy Adams",
+        "Thomas Jefferson"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote \"The Scarlet Letter\", published in 1850?",
+      "text": "Which Canadian reggae musician had a 1993 hit with the song 'Informer'?",
       "options": [
-        "James Fenimore Cooper",
-        "Washington Irving",
-        "Nathaniel Hawthorne",
-        "Catherine Maria Sedgwick"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "Which country has the most Trappist breweries?",
-      "options": [
-        "Belgium",
-        "USA",
-        "France",
-        "Netherlands"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which song made by MAN WITH A MISSION was used as the opening for the anime \"Log Horizon\"?",
-      "options": [
-        "\"Out of Control\"",
-        "\"Database\"",
-        "\"Raise Your Flag\"",
-        "\"Dead End in Tokyo\""
+        "Rain",
+        "Snow",
+        "Hail",
+        "Sleet"
       ],
       "correct": 1,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which country is the Taedong River in?",
+      "text": "What is the Italian word for \"tomato\"?",
       "options": [
-        "North Korea",
-        "China",
-        "South Korea",
-        "Japan"
+        "Peperoncino",
+        "Cipolla",
+        "Pomodoro",
+        "Aglio"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who was the winner of the 2016 WWE Royal Rumble?",
+      "options": [
+        "AJ Styles",
+        "Triple H",
+        "Roman Reigns",
+        "Dean Ambrose"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "Which artists' version of the song \"The Tide is High\" came first?",
+      "options": [
+        "The Paragons",
+        "Atomic Kitten",
+        "Blondie",
+        "Kardinal Offishall"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
