@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
+      "text": "What is the first book of the Old Testament?",
       "options": [
-        "Ulysses Grant",
-        "Martin Van Buren",
-        "John Quincy Adams",
-        "Thomas Jefferson"
+        "Leviticus",
+        "Exodus",
+        "Numbers",
+        "Genesis"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Canadian reggae musician had a 1993 hit with the song 'Informer'?",
+      "text": "What is the nickname for the US state Delaware?",
       "options": [
-        "Rain",
-        "Snow",
-        "Hail",
-        "Sleet"
+        "The Fiftieth State",
+        "The First State",
+        "The Second State",
+        "The Sixteenth State"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What is the Italian word for \"tomato\"?",
+      "text": "Where did the pineapple plant originate?",
       "options": [
-        "Peperoncino",
-        "Cipolla",
-        "Pomodoro",
-        "Aglio"
+        "Asia",
+        "Europe",
+        "South America",
+        "Hawaii"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the winner of the 2016 WWE Royal Rumble?",
+      "text": "In which African country was the 2006 film 'Blood Diamond' mostly set in?",
       "options": [
-        "AJ Styles",
-        "Triple H",
-        "Roman Reigns",
-        "Dean Ambrose"
+        "Burkina Faso",
+        "Sierra Leone",
+        "Liberia",
+        "Central African Republic"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which artists' version of the song \"The Tide is High\" came first?",
+      "text": "What was the date of original airing of the pilot episode of My Little Pony: Friendship is Magic?",
       "options": [
-        "The Paragons",
-        "Atomic Kitten",
-        "Blondie",
-        "Kardinal Offishall"
+        "October 10th, 2010",
+        "May 18th, 2015",
+        "November 6th, 2010",
+        "April 14th, 1984"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
