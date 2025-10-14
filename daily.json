@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many colors are there in a rainbow?",
+      "text": "On a dartboard, what number is directly opposite No. 1?",
       "options": [
-        "10",
-        "8",
-        "7",
-        "9"
+        "15",
+        "20",
+        "19",
+        "12"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which famous artist featured on Rowdy Rebel's 2015 song \"Computers\"?",
+      "text": "In the TV show \"Cheers\", Sam Malone was a former relief pitcher for which baseball team?",
       "options": [
-        "Bobby Shmurda ",
-        "Lil Wayne",
-        "Will.I.AM",
-        "Kendrick Lamar"
+        "Boston Red Sox",
+        "New York Mets",
+        "Baltimore Orioles",
+        "Milwaukee Brewers"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What was the destination of the missing flight MH370?",
+      "text": "What alcoholic drink is mainly made from juniper berries?",
       "options": [
-        "Kuala Lumpur",
-        "Beijing",
-        "Tokyo",
-        "Singapore"
+        "Vodka",
+        "Gin",
+        "Tequila",
+        "Rum"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Where is Hadrian's Wall located?",
+      "text": "In the 2010 Nightmare on Elm Street reboot, who played Freddy Kruger?",
       "options": [
-        "Carlisle, England",
-        "Dublin, Ireland",
-        "Alexandria, Egypt",
-        "Rome, Italy"
+        "Jackie Earle Haley",
+        "Gunnar Hansen",
+        "Derek Mears",
+        "Tyler Mane"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In the Magic: The Gathering universe, which plane does the Homelands expansion take place in?",
+      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
       "options": [
-        "Tazeem",
-        "Ulgrotha",
-        "Llanowar",
-        "Bant"
+        "The British Grenadiers",
+        "Men of Harlech",
+        "Colonel Bogey March",
+        "Scotland the Brave"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     }
   ]
 }
