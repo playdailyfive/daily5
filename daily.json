@@ -1,68 +1,68 @@
 {
-  "day": "20251013",
-  "dayIndex": 51,
+  "day": "20251014",
+  "dayIndex": 52,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the first book of the Old Testament?",
+      "text": "How many colors are there in a rainbow?",
       "options": [
-        "Leviticus",
-        "Exodus",
-        "Numbers",
-        "Genesis"
+        "10",
+        "8",
+        "7",
+        "9"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the nickname for the US state Delaware?",
+      "text": "Which famous artist featured on Rowdy Rebel's 2015 song \"Computers\"?",
       "options": [
-        "The Fiftieth State",
-        "The First State",
-        "The Second State",
-        "The Sixteenth State"
+        "Bobby Shmurda ",
+        "Lil Wayne",
+        "Will.I.AM",
+        "Kendrick Lamar"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "What was the destination of the missing flight MH370?",
+      "options": [
+        "Kuala Lumpur",
+        "Beijing",
+        "Tokyo",
+        "Singapore"
       ],
       "correct": 1,
-      "difficulty": "easy",
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Where is Hadrian's Wall located?",
+      "options": [
+        "Carlisle, England",
+        "Dublin, Ireland",
+        "Alexandria, Egypt",
+        "Rome, Italy"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "Where did the pineapple plant originate?",
+      "text": "In the Magic: The Gathering universe, which plane does the Homelands expansion take place in?",
       "options": [
-        "Asia",
-        "Europe",
-        "South America",
-        "Hawaii"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which African country was the 2006 film 'Blood Diamond' mostly set in?",
-      "options": [
-        "Burkina Faso",
-        "Sierra Leone",
-        "Liberia",
-        "Central African Republic"
+        "Tazeem",
+        "Ulgrotha",
+        "Llanowar",
+        "Bant"
       ],
       "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "What was the date of original airing of the pilot episode of My Little Pony: Friendship is Magic?",
-      "options": [
-        "October 10th, 2010",
-        "May 18th, 2015",
-        "November 6th, 2010",
-        "April 14th, 1984"
-      ],
-      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Books"
     }
   ]
 }
