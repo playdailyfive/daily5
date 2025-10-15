@@ -1,68 +1,68 @@
 {
-  "day": "20251014",
-  "dayIndex": 52,
+  "day": "20251015",
+  "dayIndex": 53,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "On a dartboard, what number is directly opposite No. 1?",
+      "text": "When someone is inexperienced they are said to be what color?",
       "options": [
-        "15",
-        "20",
-        "19",
-        "12"
+        "Blue",
+        "Yellow",
+        "Red",
+        "Green"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the best selling album of all time from 1976 to 2018?",
+      "options": [
+        "Abbey Road",
+        "Back in Black",
+        "Thriller",
+        "The Dark Side of the Moon"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In the TV show \"Cheers\", Sam Malone was a former relief pitcher for which baseball team?",
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
       "options": [
-        "Boston Red Sox",
-        "New York Mets",
-        "Baltimore Orioles",
-        "Milwaukee Brewers"
+        "July 4, 1776",
+        "June 4, 1776",
+        "July 2, 1776",
+        "May 4, 1776"
       ],
       "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What alcoholic drink is mainly made from juniper berries?",
-      "options": [
-        "Vodka",
-        "Gin",
-        "Tequila",
-        "Rum"
-      ],
-      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 2010 Nightmare on Elm Street reboot, who played Freddy Kruger?",
+      "text": "How many timezones does Russia have?",
       "options": [
-        "Jackie Earle Haley",
-        "Gunnar Hansen",
-        "Derek Mears",
-        "Tyler Mane"
+        "6",
+        "16",
+        "24",
+        "11"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
+      "text": "Who was not in the band \"The Smiths\"?",
       "options": [
-        "The British Grenadiers",
-        "Men of Harlech",
-        "Colonel Bogey March",
-        "Scotland the Brave"
+        "Mike Joyce",
+        "Andy Rourke",
+        "Morrissey",
+        "Martin Chambers"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
