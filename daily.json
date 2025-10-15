@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When someone is inexperienced they are said to be what color?",
+      "text": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
       "options": [
-        "Blue",
-        "Yellow",
-        "Red",
-        "Green"
+        "Jet",
+        "Space Capsule",
+        "Stealth Blimp",
+        "Helicopter"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the best selling album of all time from 1976 to 2018?",
+      "text": "When does \"Rogue One: A Star Wars Story\" take place chronologically in the series?",
       "options": [
-        "Abbey Road",
-        "Back in Black",
-        "Thriller",
-        "The Dark Side of the Moon"
+        "Before Episode 1",
+        "After Episode 6",
+        "Between Episode 3 and 4",
+        "Between Episode 4 and 5"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "text": "What is the highest number of Michelin stars a restaurant can receive?",
       "options": [
-        "July 4, 1776",
-        "June 4, 1776",
-        "July 2, 1776",
-        "May 4, 1776"
+        "Three",
+        "Five",
+        "Six",
+        "Four"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "How many timezones does Russia have?",
+      "text": "The 'In the Flesh' tour was used in support of what Pink Floyd album?",
       "options": [
-        "6",
-        "16",
-        "24",
-        "11"
+        "The Wall",
+        "The Final Cut",
+        "Wish You Were Here",
+        "Animals"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Who was not in the band \"The Smiths\"?",
+      "text": "Who recorded the 1975 album 'Captain Fantastic and the Brown Dirt Cowboy'?",
       "options": [
-        "Mike Joyce",
-        "Andy Rourke",
-        "Morrissey",
-        "Martin Chambers"
+        "Joe Cocker",
+        "Billy Joel",
+        "John Denver",
+        "Elton John"
       ],
       "correct": 3,
       "difficulty": "hard",
