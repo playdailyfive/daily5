@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which cardinal direction does the Sun rise from?",
+      "text": "According to the Book of Genesis in the Old Testament, how many days did it take God to create the world?",
       "options": [
-        "North",
-        "West",
-        "East",
-        "South"
+        "One",
+        "Seven",
+        "Six",
+        "Twelve"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the movie \"V for Vendetta,\" what is the date that masked vigilante \"V\" urges people to remember?",
+      "text": "In the television show Breaking Bad, what is the street name of Walter and Jesse's notorious product?",
       "options": [
-        "November 5th",
-        "November 6th",
-        "November 4th",
-        "September 5th"
+        "Blue Sky",
+        "Baby Blue",
+        "Rock Candy",
+        "Pure Glass"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "When did the website \"Facebook\" launch?",
       "options": [
-        "Sheep's Heart, Kidneys and Lungs",
-        "Whole Sheep",
-        "Sheep's Liver, Kidneys and Eyes",
-        "Sheep's Heart, Liver and Lungs"
+        "2005",
+        "2006",
+        "2003",
+        "2004"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the busiest port in Europe?",
+      "text": "Who wrote the 1967 horror novel \"Rosemary's Baby\"?",
       "options": [
-        "Port of Hamburg",
-        "Port of Antwerp",
-        "Port of Rotterdam",
-        "Port of Amsterdam"
+        "Robert Bloch",
+        "Stephen King",
+        "Ira Levin",
+        "Mary Shelley"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Where is Apple Inc. headquartered?",
+      "text": "In the Harry Potter universe, what is Cornelius Fudge's middle name?",
       "options": [
-        "Cupertino, California",
-        "Redwood City, California",
-        "Redmond, Washington",
-        "Santa Monica, CA"
+        "Oswald",
+        "James",
+        "Harold",
+        "Christopher"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Books"
     }
   ]
 }
