@@ -1,68 +1,68 @@
 {
-  "day": "20251015",
-  "dayIndex": 53,
+  "day": "20251016",
+  "dayIndex": 54,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+      "text": "In which cardinal direction does the Sun rise from?",
       "options": [
-        "Jet",
-        "Space Capsule",
-        "Stealth Blimp",
-        "Helicopter"
+        "North",
+        "West",
+        "East",
+        "South"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "When does \"Rogue One: A Star Wars Story\" take place chronologically in the series?",
+      "text": "In the movie \"V for Vendetta,\" what is the date that masked vigilante \"V\" urges people to remember?",
       "options": [
-        "Before Episode 1",
-        "After Episode 6",
-        "Between Episode 3 and 4",
-        "Between Episode 4 and 5"
+        "November 5th",
+        "November 6th",
+        "November 4th",
+        "September 5th"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is the highest number of Michelin stars a restaurant can receive?",
+      "text": "What is real haggis made of?",
       "options": [
-        "Three",
-        "Five",
-        "Six",
-        "Four"
+        "Sheep's Heart, Kidneys and Lungs",
+        "Whole Sheep",
+        "Sheep's Liver, Kidneys and Eyes",
+        "Sheep's Heart, Liver and Lungs"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The 'In the Flesh' tour was used in support of what Pink Floyd album?",
+      "text": "What is the busiest port in Europe?",
       "options": [
-        "The Wall",
-        "The Final Cut",
-        "Wish You Were Here",
-        "Animals"
+        "Port of Hamburg",
+        "Port of Antwerp",
+        "Port of Rotterdam",
+        "Port of Amsterdam"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Who recorded the 1975 album 'Captain Fantastic and the Brown Dirt Cowboy'?",
+      "text": "Where is Apple Inc. headquartered?",
       "options": [
-        "Joe Cocker",
-        "Billy Joel",
-        "John Denver",
-        "Elton John"
+        "Cupertino, California",
+        "Redwood City, California",
+        "Redmond, Washington",
+        "Santa Monica, CA"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
