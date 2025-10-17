@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do the letters in the GMT time zone stand for?",
+      "text": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
       "options": [
-        "General Median Time",
-        "Glasgow Man Time",
-        "Greenwich Mean Time",
-        "Global Meridian Time"
+        "Jet",
+        "Space Capsule",
+        "Helicopter",
+        "Stealth Blimp"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Daniel Radcliffe became a global star in the film industry due to his performance in which film franchise?",
+      "text": "7-Eleven stores were temporarily converted into Kwik E-marts to promote the release of what movie?",
       "options": [
-        "Harry Potter",
-        "Ted",
-        "Spy Kids",
-        "Pirates of the Caribbean "
+        "The Simpsons Movie",
+        "Spider-Man 3",
+        "Shrek the Third",
+        "Ratatouille"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which essential condiment is also known as Japanese horseradish?",
+      "text": "What does a milliner make and sell?",
       "options": [
-        "Karashi",
-        "Mentsuyu",
-        "Wasabi ",
-        "Ponzu"
+        "Belts",
+        "Shoes",
+        "Hats",
+        "Shirts"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Drink the Sea\" is an album by which electronic music artist?",
+      "text": "\"The Genius\" is the original and secondary name of which Wu-Tang Clan member?",
       "options": [
-        "Flux Pavilion",
-        "The Glitch Mob",
-        "XXYYXX",
-        "Avicii"
+        "Raekwon the Chef",
+        "GZA",
+        "Ol' Dirty Bastard",
+        "Ghostface Killah"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the airspeed velocity of an unladen swallow?",
+      "text": "What is the county seat of King County, Washington?",
       "options": [
-        "24 MPH",
-        "15 MPH",
-        "20 MPH",
-        "200 MPH"
+        "Seattle",
+        "Bellevue",
+        "Enumclaw",
+        "Skykomish"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
