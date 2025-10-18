@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many fingers does a single human hand have?",
+      "text": "What is the French word for \"hat\"?",
       "options": [
-        "Eight",
-        "Four",
-        "Ten",
-        "Five"
+        " Casque",
+        "Chapeau",
+        " &Eacute;charpe",
+        "Bonnet"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which actress married Michael Douglas in 2000?",
+      "text": "Which ocean borders the west coast of the United States?",
       "options": [
-        "Ruth Jones",
-        "Catherine Zeta-Jones",
-        "Sara Sugarman",
-        "Pam Ferris"
+        "Atlantic",
+        "Pacific",
+        "Arctic",
+        "Indian"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Celebrities"
-    },
-    {
-      "text": "When was Hubba Bubba first introduced?",
-      "options": [
-        "1972",
-        "1984",
-        "1980",
-        "1979"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the longest river in Europe?",
-      "options": [
-        "Volga",
-        "Danube",
-        "Rhine",
-        "Thames"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "What is the species of the \"Predator\" in the 1987 movie \"Predator\"?",
+      "text": "What is the unit of currency in Laos?",
       "options": [
-        "Phocrex",
-        "Praetorian",
-        "Xenomorph",
-        "Yautja"
+        "Konra",
+        "Ruble",
+        "Dollar",
+        "Kip"
       ],
       "correct": 3,
-      "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What's the most common time signature for rock songs?",
+      "options": [
+        "4/4",
+        "1/2",
+        "8/12",
+        "2/4"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
+      "options": [
+        "John Quincy Adams",
+        "Ulysses Grant",
+        "Martin Van Buren",
+        "Thomas Jefferson"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
     }
   ]
 }
