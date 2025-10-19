@@ -1,68 +1,68 @@
 {
-  "day": "20251018",
-  "dayIndex": 56,
+  "day": "20251019",
+  "dayIndex": 57,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"hat\"?",
+      "text": "What is the nickname of the US state of California?",
       "options": [
-        " Casque",
-        "Chapeau",
-        " &Eacute;charpe",
-        "Bonnet"
+        "Bay State",
+        "Sunshine State",
+        "Golden State",
+        "Treasure State"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which ocean borders the west coast of the United States?",
+      "text": "What was the name of Captain Nemo's submarine in \"20,000 Leagues Under the Sea\"?",
       "options": [
-        "Atlantic",
-        "Pacific",
-        "Arctic",
-        "Indian"
+        "The Nautilus",
+        "The Atlantis",
+        "The Poseidon  ",
+        "The Neptune"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "What is the unit of currency in Laos?",
+      "text": "Which river flows through the Scottish city of Glasgow?",
       "options": [
-        "Konra",
-        "Ruble",
-        "Dollar",
-        "Kip"
+        "Tweed",
+        "Clyde",
+        "Dee",
+        "Tay"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What's the most common time signature for rock songs?",
+      "text": "Eritrea, which became the 182nd member of the UN in 1993, is in the continent of?",
       "options": [
-        "4/4",
-        "1/2",
-        "8/12",
-        "2/4"
+        "Africa",
+        "South America",
+        "Europe",
+        "Asia"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
+      "text": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
       "options": [
-        "John Quincy Adams",
-        "Ulysses Grant",
-        "Martin Van Buren",
-        "Thomas Jefferson"
+        "Crashdown",
+        "Starbuck",
+        "Apollo",
+        "Husker"
       ],
       "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
+      "difficulty": "hard",
+      "category": "Entertainment: Television"
     }
   ]
 }
