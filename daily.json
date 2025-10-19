@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the nickname of the US state of California?",
+      "text": "How many colors are there in a rainbow?",
       "options": [
-        "Bay State",
-        "Sunshine State",
-        "Golden State",
-        "Treasure State"
+        "9",
+        "8",
+        "7",
+        "10"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the name of Captain Nemo's submarine in \"20,000 Leagues Under the Sea\"?",
+      "text": "What is the Capital of the United States?",
       "options": [
-        "The Nautilus",
-        "The Atlantis",
-        "The Poseidon  ",
-        "The Neptune"
+        "Washington, D.C.",
+        "Houston, TX",
+        "New York City, NY",
+        "Los Angelas, CA"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     },
     {
-      "text": "Which river flows through the Scottish city of Glasgow?",
+      "text": "What is the highest number of Michelin stars a restaurant can receive?",
       "options": [
-        "Tweed",
-        "Clyde",
-        "Dee",
-        "Tay"
+        "Six",
+        "Three",
+        "Five",
+        "Four"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Eritrea, which became the 182nd member of the UN in 1993, is in the continent of?",
+      "text": "This movie contains the quote, \"I love the smell of napalm in the morning!\"",
       "options": [
-        "Africa",
-        "South America",
-        "Europe",
-        "Asia"
+        "Apocalypse Now",
+        "Full Metal Jacket",
+        "Platoon",
+        "The Deer Hunter"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
+      "text": "Which is the largest freshwater lake in the world?",
       "options": [
-        "Crashdown",
-        "Starbuck",
-        "Apollo",
-        "Husker"
+        "Lake Huron",
+        "Caspian Sea",
+        "Lake Michigan",
+        "Lake Superior "
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     }
   ]
 }
