@@ -1,68 +1,68 @@
 {
-  "day": "20251019",
-  "dayIndex": 57,
+  "day": "20251020",
+  "dayIndex": 58,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many colors are there in a rainbow?",
+      "text": "Which country has the Union Jack in its flag?",
       "options": [
-        "9",
-        "8",
-        "7",
-        "10"
+        "South Africa",
+        "New Zealand",
+        "Canada",
+        "Hong Kong"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the Capital of the United States?",
+      "text": "Who won the UEFA Champions League in 2016?",
       "options": [
-        "Washington, D.C.",
-        "Houston, TX",
-        "New York City, NY",
-        "Los Angelas, CA"
+        "Manchester City F.C.",
+        "Atletico Madrid",
+        "Real Madrid C.F.",
+        "FC Bayern Munich"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Sports"
     },
     {
-      "text": "What is the highest number of Michelin stars a restaurant can receive?",
+      "text": "What was the soft drink Pepsi originally introduced as?",
       "options": [
-        "Six",
-        "Three",
-        "Five",
-        "Four"
+        "Carolina Cola",
+        "Brad's Drink",
+        "Pepsin Pop",
+        "Pepsin Syrup"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "This movie contains the quote, \"I love the smell of napalm in the morning!\"",
+      "text": "This trope refers to minor characters that are killed off to show how a monster works.",
       "options": [
-        "Apocalypse Now",
-        "Full Metal Jacket",
-        "Platoon",
-        "The Deer Hunter"
+        "Red Shirt",
+        "Cannon Fodder",
+        "Minions",
+        "Expendables"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which is the largest freshwater lake in the world?",
+      "text": "In \"Star Trek\", what is the Klingon delicacy of \"gagh\" made from?",
       "options": [
-        "Lake Huron",
-        "Caspian Sea",
-        "Lake Michigan",
-        "Lake Superior "
+        "Earthworms",
+        "Serpent worms",
+        "Klingworms",
+        "Spaghetti noodles"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     }
   ]
 }
