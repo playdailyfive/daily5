@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which country has the Union Jack in its flag?",
+      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
       "options": [
-        "South Africa",
-        "New Zealand",
-        "Canada",
-        "Hong Kong"
+        "Panama Canal",
+        "Suez Canal",
+        "Sinai Canal",
+        "Qaraqum Canal"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who won the UEFA Champions League in 2016?",
+      "text": "Which movie includes a giant bunny-like spirit who has magic powers including growing trees?",
       "options": [
-        "Manchester City F.C.",
-        "Atletico Madrid",
-        "Real Madrid C.F.",
-        "FC Bayern Munich"
+        "Alice in Wonderland",
+        "Rise of the Guardians",
+        "My Neighbor Totoro",
+        "Hop"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What was the soft drink Pepsi originally introduced as?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Carolina Cola",
-        "Brad's Drink",
-        "Pepsin Pop",
-        "Pepsin Syrup"
+        "Phrenology",
+        "Philosophy",
+        "Psychology",
+        "Physical Therapy"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "This trope refers to minor characters that are killed off to show how a monster works.",
+      "text": "Which former Star Trek actor directed Three Men and a Baby (1987)?",
       "options": [
-        "Red Shirt",
-        "Cannon Fodder",
-        "Minions",
-        "Expendables"
+        "Leonard Nimoy",
+        "James Doohan",
+        "William Shatner",
+        "George Takei"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "In \"Star Trek\", what is the Klingon delicacy of \"gagh\" made from?",
+      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
       "options": [
-        "Earthworms",
-        "Serpent worms",
-        "Klingworms",
-        "Spaghetti noodles"
+        "Paganism",
+        "Zoroastrianism",
+        "Judaism",
+        "Ashurism"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Celebrities"
     }
   ]
 }
