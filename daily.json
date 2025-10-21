@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the Zodiac symbol for Gemini?",
+      "text": "In which cardinal direction does the Sun rise from?",
       "options": [
-        "Twins",
-        "Fish",
-        "Scales",
-        "Maiden"
+        "East",
+        "West",
+        "North",
+        "South"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the first monster to appear alongside Godzilla?",
+      "text": "Who plays the character of Po in the Kung Fu Panda movies?",
       "options": [
-        "King Kong",
-        "Anguirus",
-        "King Ghidora",
-        "Mothra"
+        "Mirana Jonnes",
+        "Jack Black",
+        "Jim Petersson",
+        "McConahey Ramses"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Who is a co-founder of music streaming service Spotify?",
+      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
       "options": [
-        "Daniel Ek",
-        "Michael Breidenbruecker",
-        "Felix Miller",
-        "Sean Parker"
+        "We Love to See You Smile",
+        "Making People Happy Through Food",
+        "Have It Your Way",
+        "Why Pay More!?"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the frontman of Muse?",
+      "text": "What is generally considered to be William Shakespeare's birth date?",
       "options": [
-        "Jonny Greenwood",
-        "Matt Bellamy",
-        "Thom Yorke",
-        "Dominic Howard"
+        "December 1st, 1750",
+        "April 23rd, 1564",
+        "September 29th, 1699",
+        "July 4th, 1409"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Celebrities"
     },
     {
-      "text": "What is the area of Vatican City?",
+      "text": "What is the most populous Muslim-majority nation in 2010?",
       "options": [
-        "0.44km^2",
-        "12.00km^2",
-        "0.86km^2",
-        "0.10km^2"
+        "Indonesia",
+        "Sudan",
+        "Iran",
+        "Saudi Arabia"
       ],
       "correct": 0,
       "difficulty": "hard",
