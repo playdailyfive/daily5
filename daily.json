@@ -1,68 +1,68 @@
 {
-  "day": "20251020",
-  "dayIndex": 58,
+  "day": "20251021",
+  "dayIndex": 59,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
+      "text": "What is the Zodiac symbol for Gemini?",
       "options": [
-        "Panama Canal",
-        "Suez Canal",
-        "Sinai Canal",
-        "Qaraqum Canal"
+        "Twins",
+        "Fish",
+        "Scales",
+        "Maiden"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which movie includes a giant bunny-like spirit who has magic powers including growing trees?",
+      "text": "What was the first monster to appear alongside Godzilla?",
       "options": [
-        "Alice in Wonderland",
-        "Rise of the Guardians",
-        "My Neighbor Totoro",
-        "Hop"
+        "King Kong",
+        "Anguirus",
+        "King Ghidora",
+        "Mothra"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "Who is a co-founder of music streaming service Spotify?",
       "options": [
-        "Phrenology",
-        "Philosophy",
-        "Psychology",
-        "Physical Therapy"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which former Star Trek actor directed Three Men and a Baby (1987)?",
-      "options": [
-        "Leonard Nimoy",
-        "James Doohan",
-        "William Shatner",
-        "George Takei"
+        "Daniel Ek",
+        "Michael Breidenbruecker",
+        "Felix Miller",
+        "Sean Parker"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
+      "text": "Who is the frontman of Muse?",
       "options": [
-        "Paganism",
-        "Zoroastrianism",
-        "Judaism",
-        "Ashurism"
+        "Jonny Greenwood",
+        "Matt Bellamy",
+        "Thom Yorke",
+        "Dominic Howard"
       ],
       "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "What is the area of Vatican City?",
+      "options": [
+        "0.44km^2",
+        "12.00km^2",
+        "0.86km^2",
+        "0.10km^2"
+      ],
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "Geography"
     }
   ]
 }
