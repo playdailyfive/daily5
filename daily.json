@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
+      "text": "In which fast food chain can you order a Jamocha Shake?",
       "options": [
-        "Stealing",
-        "Smoking",
-        "Slacking",
-        "Cheating"
+        "Burger King",
+        "McDonald's",
+        "Arby's",
+        "Wendy's"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote \"Harry Potter\"?",
+      "text": "Who is the lead singer of the British pop rock band Coldplay?",
       "options": [
-        "J.K. Rowling",
-        "Terry Pratchett",
-        "Daniel Radcliffe",
-        "J.R.R. Tolkien"
+        "Chris Martin",
+        "Guy Berryman",
+        "Will Champion",
+        "Jonny Buckland"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "When was WhatsApp founded?",
+      "text": "Bob and Mike Bryan were well known brothers in which sport?",
       "options": [
-        "2007",
-        "2010",
-        "2012",
-        "2009"
+        "Basketball",
+        "Baseball",
+        "Football",
+        "Tennis"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What caused Jake Lloyd who played Anakin Skywalker in The Phantom Menace to quit acting?",
+      "text": "What is the surname of the character Daryl in AMC's show The Walking Dead?",
       "options": [
-        "Racism",
-        "Nomination for Worst Actor",
-        "Criminal Record",
-        "Bullying"
+        "Dicketson",
+        "Dickinson",
+        "Grimes",
+        "Dixon"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "In the metal band Slipknot, there are 9 members, which member labelled themselves number 6? ",
+      "text": "Which former Coronation Street actress was once a hostess on the British Game Show \"Double Your Money\"?",
       "options": [
-        "Cory Taylor",
-        "Shawn Crahan (Clown)",
-        "Mick Thomson",
-        "Sid Wilson"
+        "Violet Carson",
+        "Amanda Barrie",
+        "Jean Alexander",
+        "Sue Nicholls"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
