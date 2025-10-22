@@ -1,68 +1,68 @@
 {
-  "day": "20251021",
-  "dayIndex": 59,
+  "day": "20251022",
+  "dayIndex": 60,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which cardinal direction does the Sun rise from?",
+      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
       "options": [
-        "East",
-        "West",
-        "North",
-        "South"
+        "Stealing",
+        "Smoking",
+        "Slacking",
+        "Cheating"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays the character of Po in the Kung Fu Panda movies?",
+      "text": "Who wrote \"Harry Potter\"?",
       "options": [
-        "Mirana Jonnes",
-        "Jack Black",
-        "Jim Petersson",
-        "McConahey Ramses"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
-      "options": [
-        "We Love to See You Smile",
-        "Making People Happy Through Food",
-        "Have It Your Way",
-        "Why Pay More!?"
+        "J.K. Rowling",
+        "Terry Pratchett",
+        "Daniel Radcliffe",
+        "J.R.R. Tolkien"
       ],
       "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "When was WhatsApp founded?",
+      "options": [
+        "2007",
+        "2010",
+        "2012",
+        "2009"
+      ],
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is generally considered to be William Shakespeare's birth date?",
+      "text": "What caused Jake Lloyd who played Anakin Skywalker in The Phantom Menace to quit acting?",
       "options": [
-        "December 1st, 1750",
-        "April 23rd, 1564",
-        "September 29th, 1699",
-        "July 4th, 1409"
+        "Racism",
+        "Nomination for Worst Actor",
+        "Criminal Record",
+        "Bullying"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
       "category": "Celebrities"
     },
     {
-      "text": "What is the most populous Muslim-majority nation in 2010?",
+      "text": "In the metal band Slipknot, there are 9 members, which member labelled themselves number 6? ",
       "options": [
-        "Indonesia",
-        "Sudan",
-        "Iran",
-        "Saudi Arabia"
+        "Cory Taylor",
+        "Shawn Crahan (Clown)",
+        "Mick Thomson",
+        "Sid Wilson"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
