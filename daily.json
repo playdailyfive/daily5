@@ -1,66 +1,66 @@
 {
-  "day": "20251022",
-  "dayIndex": 60,
+  "day": "20251023",
+  "dayIndex": 61,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which fast food chain can you order a Jamocha Shake?",
+      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
       "options": [
-        "Burger King",
-        "McDonald's",
-        "Arby's",
-        "Wendy's"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who is the lead singer of the British pop rock band Coldplay?",
-      "options": [
-        "Chris Martin",
-        "Guy Berryman",
-        "Will Champion",
-        "Jonny Buckland"
+        "Libra",
+        "Gemini",
+        "Taurus",
+        "Capricorn"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     },
     {
-      "text": "Bob and Mike Bryan were well known brothers in which sport?",
+      "text": "On the NBC show Community, whose catch-phrase was \"Pop! Pop!\"?",
       "options": [
-        "Basketball",
-        "Baseball",
-        "Football",
-        "Tennis"
+        "Star Burns",
+        "Senoir Chang",
+        "Leonard",
+        "Magnitude"
       ],
       "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "options": [
+        "2000s",
+        "1990s",
+        "1980s",
+        "1970s"
+      ],
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the surname of the character Daryl in AMC's show The Walking Dead?",
+      "text": "According to the BBPA, what is the most common pub name in the UK?",
       "options": [
-        "Dicketson",
-        "Dickinson",
-        "Grimes",
-        "Dixon"
+        "Red Lion",
+        "Royal Oak",
+        "White Hart",
+        "King's Head"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     },
     {
-      "text": "Which former Coronation Street actress was once a hostess on the British Game Show \"Double Your Money\"?",
+      "text": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
       "options": [
-        "Violet Carson",
-        "Amanda Barrie",
-        "Jean Alexander",
-        "Sue Nicholls"
+        "Starbuck",
+        "Crashdown",
+        "Apollo",
+        "Husker"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "hard",
       "category": "Entertainment: Television"
     }
