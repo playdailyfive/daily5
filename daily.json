@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+      "text": "What do sailors call the right side of a boat?",
       "options": [
-        "Libra",
-        "Gemini",
-        "Taurus",
-        "Capricorn"
+        "Starboard",
+        "Port",
+        "Stern",
+        "Bow"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "On the NBC show Community, whose catch-phrase was \"Pop! Pop!\"?",
+      "text": "Who is the frontman of the band 30 Seconds to Mars?",
       "options": [
-        "Star Burns",
-        "Senoir Chang",
-        "Leonard",
-        "Magnitude"
+        "Gerard Way",
+        "Mike Shinoda",
+        "Matthew Bellamy",
+        "Jared Leto"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
       "options": [
-        "2000s",
-        "1990s",
-        "1980s",
-        "1970s"
+        "American Civil War",
+        "Vietnam War",
+        "World War II",
+        "American Revolutionary War"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "According to the BBPA, what is the most common pub name in the UK?",
+      "text": "The formerly East-Prussian city of K&ouml;nigsberg is known as which Russian City today?",
       "options": [
-        "Red Lion",
-        "Royal Oak",
-        "White Hart",
-        "King's Head"
+        "Kaliningrad",
+        "Kazan",
+        "Kursk",
+        "Krasnodar"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Geography"
     },
     {
-      "text": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
+      "text": "What country is not a part of Scandinavia?",
       "options": [
-        "Starbuck",
-        "Crashdown",
-        "Apollo",
-        "Husker"
+        "Norway",
+        "Denmark",
+        "Sweden",
+        "Finland"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     }
   ]
 }
