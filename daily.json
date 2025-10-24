@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does VR stand for?",
+      "text": "Which American president appears on a one dollar bill?",
       "options": [
-        "Virtual Reality",
-        "Very Real",
-        "Visual Recognition",
-        "Voice Recognition"
+        "George Washington",
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "Benjamin Franklin"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What name was historically used for the Turkish city currently known as Istanbul?",
+      "text": "The 2016 song \"Starboy\" by Canadian singer The Weeknd features which prominent electronic artist?",
       "options": [
-        "S&ouml;ğ&uuml;t",
-        "H&uuml;davendigar",
-        "Constantinople",
-        "Adrianople"
+        "Disclosure",
+        "deadmau5",
+        "Daft Punk",
+        "DJ Shadow"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In the Morse code, which letter is indicated by 3 dots? ",
+      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
       "options": [
-        "C",
-        "S",
-        "A",
-        "O"
+        "Films",
+        "Board Games",
+        "Video Games",
+        "Television Shows"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the 2016 studio album by the French electronic music duo Justice?",
+      "text": "Who is the director of the 1991 film \"Silence of the Lambs\"?",
       "options": [
-        "Woman",
-        "Randy",
-        "Safe and Sound",
-        "Pleasure"
+        "Jonathan Demme",
+        "Stanley Kubrick",
+        "Frank Darabont",
+        "Michael Bay"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In the book \"The Martian\", how long was Mark Watney trapped on Mars (in Sols)?",
+      "text": "What is the name of the pirate that sings the intro to \"Spongebob Squarepants\"?",
       "options": [
-        "549 Days",
-        "765 Days",
-        "401 Days",
-        "324 Days"
+        "Painty",
+        "Patchy",
+        "Lloyd",
+        "Larry"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     }
   ]
 }
