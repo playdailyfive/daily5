@@ -1,68 +1,68 @@
 {
-  "day": "20251023",
-  "dayIndex": 61,
+  "day": "20251024",
+  "dayIndex": 62,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the right side of a boat?",
+      "text": "What does VR stand for?",
       "options": [
-        "Starboard",
-        "Port",
-        "Stern",
-        "Bow"
+        "Virtual Reality",
+        "Very Real",
+        "Visual Recognition",
+        "Voice Recognition"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the frontman of the band 30 Seconds to Mars?",
+      "text": "What name was historically used for the Turkish city currently known as Istanbul?",
       "options": [
-        "Gerard Way",
-        "Mike Shinoda",
-        "Matthew Bellamy",
-        "Jared Leto"
+        "S&ouml;ğ&uuml;t",
+        "H&uuml;davendigar",
+        "Constantinople",
+        "Adrianople"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
+      "category": "Geography"
+    },
+    {
+      "text": "In the Morse code, which letter is indicated by 3 dots? ",
+      "options": [
+        "C",
+        "S",
+        "A",
+        "O"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the name of the 2016 studio album by the French electronic music duo Justice?",
+      "options": [
+        "Woman",
+        "Randy",
+        "Safe and Sound",
+        "Pleasure"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
+      "text": "In the book \"The Martian\", how long was Mark Watney trapped on Mars (in Sols)?",
       "options": [
-        "American Civil War",
-        "Vietnam War",
-        "World War II",
-        "American Revolutionary War"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "The formerly East-Prussian city of K&ouml;nigsberg is known as which Russian City today?",
-      "options": [
-        "Kaliningrad",
-        "Kazan",
-        "Kursk",
-        "Krasnodar"
+        "549 Days",
+        "765 Days",
+        "401 Days",
+        "324 Days"
       ],
       "correct": 0,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "What country is not a part of Scandinavia?",
-      "options": [
-        "Norway",
-        "Denmark",
-        "Sweden",
-        "Finland"
-      ],
-      "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
