@@ -1,68 +1,68 @@
 {
-  "day": "20251024",
-  "dayIndex": 62,
+  "day": "20251025",
+  "dayIndex": 63,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American president appears on a one dollar bill?",
+      "text": "What step in cellular respiration forms ATP?",
       "options": [
-        "George Washington",
-        "Thomas Jefferson",
-        "Abraham Lincoln",
-        "Benjamin Franklin"
+        "Glycolysis",
+        "Oxidative Phosphorylation",
+        "Calvin Cycle",
+        "Pyruvate Oxidation"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The 2016 song \"Starboy\" by Canadian singer The Weeknd features which prominent electronic artist?",
+      "text": "Who is the lead singer of the British pop rock band Coldplay?",
       "options": [
-        "Disclosure",
-        "deadmau5",
-        "Daft Punk",
-        "DJ Shadow"
+        "Guy Berryman",
+        "Jonny Buckland",
+        "Will Champion",
+        "Chris Martin"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
+      "text": "What is the Swedish word for \"window\"?",
       "options": [
-        "Films",
-        "Board Games",
-        "Video Games",
-        "Television Shows"
+        "F&ouml;nster",
+        "H&aring;l",
+        "Sk&auml;rm",
+        "Ruta"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the director of the 1991 film \"Silence of the Lambs\"?",
+      "text": "Who was Firestorm's rival during the original run of UK Robot Wars?",
       "options": [
-        "Jonathan Demme",
-        "Stanley Kubrick",
-        "Frank Darabont",
-        "Michael Bay"
+        "Hypno Disc",
+        "Chaos 2",
+        "Razer",
+        "Panic Attack"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the name of the pirate that sings the intro to \"Spongebob Squarepants\"?",
+      "text": "The film Mad Max: Fury Road features the Dies Irae  from which composer's requiem?",
       "options": [
-        "Painty",
-        "Patchy",
-        "Lloyd",
-        "Larry"
+        "Verdi",
+        "Berlioz",
+        "Brahms",
+        "Mozart"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     }
   ]
 }
