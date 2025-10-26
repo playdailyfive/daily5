@@ -1,68 +1,68 @@
 {
-  "day": "20251025",
-  "dayIndex": 63,
+  "day": "20251026",
+  "dayIndex": 64,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When someone is inexperienced they are said to be what color?",
+      "text": "What is the first book of the Old Testament?",
       "options": [
-        "Red",
-        "Green",
-        "Yellow",
-        "Blue"
+        "Genesis",
+        "Numbers",
+        "Leviticus",
+        "Exodus"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which Twitch streamer is the vocalist for Red Vox?",
+      "options": [
+        "Sodapoppin",
+        "Vinesauce",
+        "LIRIK",
+        "The8BitDrummer"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which character was played by Dustin Diamond in the sitcom 'Saved by the Bell'?",
+      "text": "What name represents the letter \"M\" in the NATO phonetic alphabet?",
       "options": [
-        "Mr. Belding",
-        "Zack",
-        "A.C. Slater",
-        "Screech"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "When was WhatsApp founded?",
-      "options": [
-        "2009",
-        "2007",
-        "2012",
-        "2010"
+        "Mike",
+        "Max",
+        "Matthew",
+        "Mark"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "From what show is the character \"James Doakes\"? ",
+      "text": "In the television show \"Lazy Town\", who is the actor of Robbie Rotten?",
       "options": [
-        "The Walking Dead",
-        "Boardwalk Empire",
-        "Marvel's Daredevil",
-        "Dexter"
+        "Stephen Carl",
+        "Adam Sandler",
+        "Magn&uacute;s Scheving",
+        "Stef&aacute;n Stef&aacute;nsson"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "What is the most populous Muslim-majority nation in 2010?",
+      "text": "How many members are there in the idol group \"&micro;'s\"?",
       "options": [
-        "Indonesia",
-        "Iran",
-        "Sudan",
-        "Saudi Arabia"
+        "6",
+        "48",
+        "3",
+        "9"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
