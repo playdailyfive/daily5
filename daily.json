@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the first book of the Old Testament?",
+      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
       "options": [
-        "Genesis",
-        "Numbers",
-        "Leviticus",
-        "Exodus"
+        "Star City",
+        "Metropolis",
+        "Gotham City",
+        "Central City"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Twitch streamer is the vocalist for Red Vox?",
+      "text": "Which city did the former NHL team \"The Nordiques\" originiate from?",
       "options": [
-        "Sodapoppin",
-        "Vinesauce",
-        "LIRIK",
-        "The8BitDrummer"
+        "New York",
+        "Quebec City",
+        "Montreal",
+        "Houston"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "What name represents the letter \"M\" in the NATO phonetic alphabet?",
+      "text": "What is the Portuguese word for \"Brazil\"?",
       "options": [
-        "Mike",
-        "Max",
-        "Matthew",
-        "Mark"
+        "Brasil",
+        "Bras&iacute;l",
+        "Brazil",
+        "Brasilia"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the television show \"Lazy Town\", who is the actor of Robbie Rotten?",
+      "text": "'74–'75 is a 1993 single from the album Ring by what American band?",
       "options": [
-        "Stephen Carl",
-        "Adam Sandler",
-        "Magn&uacute;s Scheving",
-        "Stef&aacute;n Stef&aacute;nsson"
+        "The Bangles",
+        "R.E.M.",
+        "The Ocean Blue",
+        "The Connells"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "How many members are there in the idol group \"&micro;'s\"?",
+      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
       "options": [
-        "6",
-        "48",
-        "3",
-        "9"
+        "Fulchester",
+        "Barsetshire",
+        "Ambridge",
+        "Wessex"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     }
   ]
 }
