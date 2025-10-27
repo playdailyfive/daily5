@@ -1,68 +1,68 @@
 {
-  "day": "20251026",
-  "dayIndex": 64,
+  "day": "20251027",
+  "dayIndex": 65,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
+      "text": "When one is \"envious\", they are said to be what color?",
       "options": [
-        "Star City",
-        "Metropolis",
-        "Gotham City",
-        "Central City"
+        "Yellow",
+        "Blue",
+        "Green",
+        "Red"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which city did the former NHL team \"The Nordiques\" originiate from?",
+      "text": "Who was featured in the song \"Words\" by Feint? ",
       "options": [
-        "New York",
-        "Quebec City",
-        "Montreal",
-        "Houston"
+        "Danyka Nadeau",
+        "Laura Brehm",
+        "Anna Yvette ",
+        "Veela"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the Portuguese word for \"Brazil\"?",
+      "text": "What was the soft drink Pepsi originally introduced as?",
       "options": [
-        "Brasil",
-        "Bras&iacute;l",
-        "Brazil",
-        "Brasilia"
+        "Brad's Drink",
+        "Pepsin Syrup",
+        "Pepsin Pop",
+        "Carolina Cola"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "'74–'75 is a 1993 single from the album Ring by what American band?",
+      "text": "What is the name of the only remaining Grand Duchy in the world ?",
       "options": [
-        "The Bangles",
-        "R.E.M.",
-        "The Ocean Blue",
-        "The Connells"
+        "Montenegro",
+        "Luxembourg",
+        "Andorra",
+        "Liechtenstein"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
+      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
       "options": [
-        "Fulchester",
-        "Barsetshire",
-        "Ambridge",
-        "Wessex"
+        "18",
+        "20",
+        "14",
+        "16"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     }
   ]
 }
