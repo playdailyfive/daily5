@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When one is \"envious\", they are said to be what color?",
+      "text": "What is the famous Papa John's last name?",
       "options": [
-        "Yellow",
-        "Blue",
-        "Green",
-        "Red"
+        "ANDERSON",
+        "Williams",
+        "Schnatter",
+        "Chowder"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was featured in the song \"Words\" by Feint? ",
+      "text": "Who played the female lead in the 1933 film \"King Kong\"?",
       "options": [
-        "Danyka Nadeau",
-        "Laura Brehm",
-        "Anna Yvette ",
-        "Veela"
+        "Vivien Leigh",
+        "Fay Wray",
+        "Jean Harlow",
+        "Mae West"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What was the soft drink Pepsi originally introduced as?",
+      "text": "In the Morse code, which letter is indicated by 3 dots? ",
       "options": [
-        "Brad's Drink",
-        "Pepsin Syrup",
-        "Pepsin Pop",
-        "Carolina Cola"
+        "S",
+        "C",
+        "O",
+        "A"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the only remaining Grand Duchy in the world ?",
+      "text": "Which Beatle led the way across the zebra crossing on the Abbey Road album cover?",
       "options": [
-        "Montenegro",
-        "Luxembourg",
-        "Andorra",
-        "Liechtenstein"
+        "Paul",
+        "John",
+        "Ringo",
+        "George"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
+      "text": "What is the name of rocky region that spans most of eastern Canada?",
       "options": [
-        "18",
-        "20",
-        "14",
-        "16"
+        "Appalachian Mountains",
+        "Himalayas",
+        "Canadian Shield",
+        "Rocky Mountains"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
