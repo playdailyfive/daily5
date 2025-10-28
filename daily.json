@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
+      "text": "What step in cellular respiration forms ATP?",
       "options": [
-        "Smoking",
-        "Slacking",
-        "Cheating",
-        "Stealing"
+        "Glycolysis",
+        "Oxidative Phosphorylation",
+        "Calvin Cycle",
+        "Pyruvate Oxidation"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which artist released the 2012 single \"Harlem Shake\", which was used in numerous YouTube videos in 2013?",
+      "text": "Which NFL team plays for New England?",
       "options": [
-        "Baauer",
-        "Flosstradamus",
-        "NGHTMRE",
-        "RL Grime"
+        "Patriots",
+        "49ers",
+        "Dolphins",
+        "Chiefs"
       ],
       "correct": 0,
       "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "What was the destination of the missing flight MH370?",
+      "options": [
+        "Tokyo",
+        "Beijing",
+        "Singapore",
+        "Kuala Lumpur"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What M83 was featured in Grand Theft Auto V's radio?",
+      "options": [
+        "Midnight City",
+        "Wait",
+        "Reunion",
+        "Outro"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What was the soft drink Pepsi originally introduced as?",
+      "text": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
       "options": [
-        "Pepsin Syrup",
-        "Brad's Drink",
-        "Carolina Cola",
-        "Pepsin Pop"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which Russian author wrote the epic novel War and Peace?",
-      "options": [
-        "Leo Tolstoy",
-        "Vladimir Nabokov",
-        "Alexander Pushkin",
-        "Fyodor Dostoyevsky"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
-      "options": [
-        "Edgar Allan Poe",
-        "William Wordsworth",
-        "William Shakespeare",
-        "Rudyard Kipling"
+        "Japanese",
+        "Indian",
+        "Russian",
+        "Chinese"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     }
   ]
 }
