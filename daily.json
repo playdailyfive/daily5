@@ -1,68 +1,68 @@
 {
-  "day": "20251027",
-  "dayIndex": 65,
+  "day": "20251028",
+  "dayIndex": 66,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the famous Papa John's last name?",
+      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
       "options": [
-        "ANDERSON",
-        "Williams",
-        "Schnatter",
-        "Chowder"
+        "Smoking",
+        "Slacking",
+        "Cheating",
+        "Stealing"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who played the female lead in the 1933 film \"King Kong\"?",
+      "text": "Which artist released the 2012 single \"Harlem Shake\", which was used in numerous YouTube videos in 2013?",
       "options": [
-        "Vivien Leigh",
-        "Fay Wray",
-        "Jean Harlow",
-        "Mae West"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "In the Morse code, which letter is indicated by 3 dots? ",
-      "options": [
-        "S",
-        "C",
-        "O",
-        "A"
+        "Baauer",
+        "Flosstradamus",
+        "NGHTMRE",
+        "RL Grime"
       ],
       "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which Beatle led the way across the zebra crossing on the Abbey Road album cover?",
-      "options": [
-        "Paul",
-        "John",
-        "Ringo",
-        "George"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the name of rocky region that spans most of eastern Canada?",
+      "text": "What was the soft drink Pepsi originally introduced as?",
       "options": [
-        "Appalachian Mountains",
-        "Himalayas",
-        "Canadian Shield",
-        "Rocky Mountains"
+        "Pepsin Syrup",
+        "Brad's Drink",
+        "Carolina Cola",
+        "Pepsin Pop"
       ],
-      "correct": 2,
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which Russian author wrote the epic novel War and Peace?",
+      "options": [
+        "Leo Tolstoy",
+        "Vladimir Nabokov",
+        "Alexander Pushkin",
+        "Fyodor Dostoyevsky"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
+      "options": [
+        "Edgar Allan Poe",
+        "William Wordsworth",
+        "William Shakespeare",
+        "Rudyard Kipling"
+      ],
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
