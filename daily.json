@@ -1,68 +1,68 @@
 {
-  "day": "20251028",
-  "dayIndex": 66,
+  "day": "20251029",
+  "dayIndex": 67,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What step in cellular respiration forms ATP?",
+      "text": "In aerodynamics, which force pushes an object upwards?",
       "options": [
-        "Glycolysis",
-        "Oxidative Phosphorylation",
-        "Calvin Cycle",
-        "Pyruvate Oxidation"
+        "Lift",
+        "Weight",
+        "Thrust",
+        "Drag"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which NFL team plays for New England?",
+      "text": "Whose signature guitar technique is called the \"windmill\"?",
       "options": [
-        "Patriots",
-        "49ers",
-        "Dolphins",
-        "Chiefs"
+        "Jimmy Page",
+        "Jimi Hendrix",
+        "Eddie Van Halen",
+        "Pete Townshend"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Sports"
-    },
-    {
-      "text": "What was the destination of the missing flight MH370?",
-      "options": [
-        "Tokyo",
-        "Beijing",
-        "Singapore",
-        "Kuala Lumpur"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What M83 was featured in Grand Theft Auto V's radio?",
-      "options": [
-        "Midnight City",
-        "Wait",
-        "Reunion",
-        "Outro"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
+      "text": "Who is a co-founder of music streaming service Spotify?",
       "options": [
-        "Japanese",
-        "Indian",
-        "Russian",
-        "Chinese"
+        "Michael Breidenbruecker",
+        "Felix Miller",
+        "Sean Parker",
+        "Daniel Ek"
       ],
       "correct": 3,
-      "difficulty": "hard",
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "The formerly East-Prussian city of K&ouml;nigsberg is known as which Russian City today?",
+      "options": [
+        "Kursk",
+        "Kaliningrad",
+        "Krasnodar",
+        "Kazan"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
       "category": "Geography"
+    },
+    {
+      "text": "In Canadian football, scoring a rouge is worth how many points?",
+      "options": [
+        "4",
+        "2",
+        "1",
+        "3"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Sports"
     }
   ]
 }
