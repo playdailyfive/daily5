@@ -1,68 +1,68 @@
 {
-  "day": "20251029",
-  "dayIndex": 67,
+  "day": "20251030",
+  "dayIndex": 68,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
       "text": "What do the letters of the fast food chain KFC stand for?",
       "options": [
-        "Kentucky Fried Chicken",
-        "Kibbled Freaky Cow",
+        "Kentucky Fresh Cheese",
         "Kiwi Food Cut",
-        "Kentucky Fresh Cheese"
+        "Kibbled Freaky Cow",
+        "Kentucky Fried Chicken"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What TV show featured older women named Blanche, Rose, Dorothy and Sophia?",
+      "options": [
+        "The Wonder Years",
+        "Cheers",
+        "The Golden Girls",
+        "Family Ties"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "A statue of Charles Darwin sits in what London museum?",
+      "options": [
+        "Natural History Museum",
+        "Tate",
+        "British Museum",
+        "Science Museum"
       ],
       "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many soccer players should be on the field at the same time?",
-      "options": [
-        "20",
-        "26",
-        "24",
-        "22"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Sports"
-    },
-    {
-      "text": "Rolex is a company that specializes in what type of product?",
-      "options": [
-        "Sports equipment",
-        "Computers",
-        "Cars",
-        "Watches"
-      ],
-      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which rapper had an album that went double platinum with no features?",
+      "text": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
       "options": [
-        "Drake",
-        "J. Cole",
-        "Big Sean",
-        "Kendrick Lamar"
+        "Tigger",
+        "Rabbit",
+        "Heffalumps",
+        "Gopher"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Who is a pioneer of \"Minimal Music\" in 1960s?",
+      "text": "The emblem on the flag of the Republic of Tajikistan features a sunrise over mountains below what symbol?",
       "options": [
-        "Sigur R&oacute;s",
-        "Wolfgang Amadeus Mozart",
-        "Steve Reich",
-        "Brian Eno"
+        "Sickle",
+        "Tree",
+        "Crown",
+        "Bird"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
