@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do the letters of the fast food chain KFC stand for?",
+      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
       "options": [
-        "Kentucky Fresh Cheese",
-        "Kiwi Food Cut",
-        "Kibbled Freaky Cow",
-        "Kentucky Fried Chicken"
+        "Gemini",
+        "Capricorn",
+        "Taurus",
+        "Libra"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What TV show featured older women named Blanche, Rose, Dorothy and Sophia?",
+      "text": "Which nation claims ownership of Antarctica?",
       "options": [
-        "The Wonder Years",
-        "Cheers",
-        "The Golden Girls",
-        "Family Ties"
+        "United Nations",
+        "United States of America",
+        "No one, but there are claims.",
+        "Australia"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "A statue of Charles Darwin sits in what London museum?",
+      "text": "Earl Grey tea is black tea flavoured with what?",
       "options": [
-        "Natural History Museum",
-        "Tate",
-        "British Museum",
-        "Science Museum"
+        "Bergamot oil",
+        "Lavender",
+        "Vanilla",
+        "Honey"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
+      "text": "The early part of which decade, did the Goth Subculture begin?",
       "options": [
-        "Tigger",
-        "Rabbit",
-        "Heffalumps",
-        "Gopher"
+        "1990s",
+        "1970s",
+        "2000s",
+        "1980s"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "The emblem on the flag of the Republic of Tajikistan features a sunrise over mountains below what symbol?",
+      "text": "In the movie \"Scream\" who is Ghost Face?",
       "options": [
-        "Sickle",
-        "Tree",
-        "Crown",
-        "Bird"
+        "Sidney Prescott",
+        "Archie Prescott and Philip Marv",
+        "Billy Loomis and Stu Macher",
+        "Dewey Riley"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
