@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Five dollars is worth how many nickels?",
+      "text": "What is the first book of the Old Testament?",
       "options": [
-        "25",
-        "50",
-        "100",
-        "69"
+        "Leviticus",
+        "Exodus",
+        "Genesis",
+        "Numbers"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the TV show 'M*A*S*H', what was the nickname of Corporal Walter O'Reilly?",
+      "text": "Which film has been critically regarded as the best film of all time?",
       "options": [
-        "Trapper",
-        "Radar",
-        "Hot Lips",
-        "Hawkeye"
+        "The Room",
+        "Citizen Kane",
+        "The Godfather Part II",
+        "Avatar"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What name represents the letter \"M\" in the NATO phonetic alphabet?",
+      "text": "A statue of Charles Darwin sits in what London museum?",
       "options": [
-        "Mike",
-        "Matthew",
-        "Mark",
-        "Max"
+        "Natural History Museum",
+        "Tate",
+        "British Museum",
+        "Science Museum"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which famous 90's rap album is commonly referred to as \"The Bible of Hip Hop\"?",
+      "text": "In the TV series \"Person of Interest\", who plays the character \"Harold Finch\"?",
       "options": [
-        "Illmatic",
-        "The Low End Theory",
-        "The Chronic",
-        "Enter The Wu-Tang (36 Chambers)"
+        "Michael Emerson",
+        "Jim Caviezel",
+        "Taraji P. Henson",
+        "Kevin Chapman"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Etihad Stadium is the home stadium for which team?",
+      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
       "options": [
-        "Manchester City",
-        "Blackpool",
-        "Manchester United",
-        "Arsenal"
+        "India",
+        "Indonesia",
+        "Vietnam",
+        "Thailand"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Geography"
     }
   ]
 }
