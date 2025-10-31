@@ -1,68 +1,68 @@
 {
-  "day": "20251030",
-  "dayIndex": 68,
+  "day": "20251031",
+  "dayIndex": 69,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+      "text": "Five dollars is worth how many nickels?",
       "options": [
-        "Gemini",
-        "Capricorn",
-        "Taurus",
-        "Libra"
+        "25",
+        "50",
+        "100",
+        "69"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which nation claims ownership of Antarctica?",
+      "text": "In the TV show 'M*A*S*H', what was the nickname of Corporal Walter O'Reilly?",
       "options": [
-        "United Nations",
-        "United States of America",
-        "No one, but there are claims.",
-        "Australia"
+        "Trapper",
+        "Radar",
+        "Hot Lips",
+        "Hawkeye"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Earl Grey tea is black tea flavoured with what?",
+      "text": "What name represents the letter \"M\" in the NATO phonetic alphabet?",
       "options": [
-        "Bergamot oil",
-        "Lavender",
-        "Vanilla",
-        "Honey"
+        "Mike",
+        "Matthew",
+        "Mark",
+        "Max"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "Which famous 90's rap album is commonly referred to as \"The Bible of Hip Hop\"?",
       "options": [
-        "1990s",
-        "1970s",
-        "2000s",
-        "1980s"
+        "Illmatic",
+        "The Low End Theory",
+        "The Chronic",
+        "Enter The Wu-Tang (36 Chambers)"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In the movie \"Scream\" who is Ghost Face?",
+      "text": "Etihad Stadium is the home stadium for which team?",
       "options": [
-        "Sidney Prescott",
-        "Archie Prescott and Philip Marv",
-        "Billy Loomis and Stu Macher",
-        "Dewey Riley"
+        "Manchester City",
+        "Blackpool",
+        "Manchester United",
+        "Arsenal"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     }
   ]
 }
