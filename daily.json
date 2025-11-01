@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which type of cutlery is most suited for eating soup?",
+      "text": "What does the F stand for in the FBI?",
       "options": [
-        "Chopsticks",
-        "Spoon",
-        "Knife",
-        "Fork"
+        "First",
+        "Federal",
+        "Formal",
+        "Foreign"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The 2002 film \"28 Days Later\" is mainly set in which European country?",
+      "text": "When did the TV show Rick and Morty first air on Adult Swim?",
       "options": [
-        "United Kingdom",
-        "France",
-        "Italy",
-        "Germany"
+        "2013",
+        "2014",
+        "2016",
+        "2015"
       ],
       "correct": 0,
       "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "What is the average life span of a garden ant?",
+      "options": [
+        "24 hours",
+        "3 years",
+        "15 years",
+        "1 week"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "options": [
+        "The Terminators",
+        "Runaway",
+        "Westworld",
+        "Android"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "text": "Panic! At the Disco's sixth album \"Pray For The Wicked\" was released on which date?",
       "options": [
-        "3",
-        "6",
-        "4",
-        "5"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In the Morse code, which letter is indicated by 3 dots? ",
-      "options": [
-        "C",
-        "O",
-        "S",
-        "A"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What was the first movie to ever use a Wilhelm Scream?",
-      "options": [
-        "Distant Drums",
-        "Indiana Jones",
-        "Treasure of the Sierra Madre",
-        "The Charge at Feather River"
+        "June 22, 2018",
+        "February 21, 2018",
+        "May 9, 2018",
+        "March 13, 2018"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
