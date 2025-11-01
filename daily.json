@@ -1,68 +1,68 @@
 {
-  "day": "20251031",
-  "dayIndex": 69,
+  "day": "20251101",
+  "dayIndex": 70,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the first book of the Old Testament?",
+      "text": "Which type of cutlery is most suited for eating soup?",
       "options": [
-        "Leviticus",
-        "Exodus",
-        "Genesis",
-        "Numbers"
+        "Chopsticks",
+        "Spoon",
+        "Knife",
+        "Fork"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which film has been critically regarded as the best film of all time?",
+      "text": "The 2002 film \"28 Days Later\" is mainly set in which European country?",
       "options": [
-        "The Room",
-        "Citizen Kane",
-        "The Godfather Part II",
-        "Avatar"
+        "United Kingdom",
+        "France",
+        "Italy",
+        "Germany"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "A statue of Charles Darwin sits in what London museum?",
+      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
       "options": [
-        "Natural History Museum",
-        "Tate",
-        "British Museum",
-        "Science Museum"
+        "3",
+        "6",
+        "4",
+        "5"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the TV series \"Person of Interest\", who plays the character \"Harold Finch\"?",
+      "text": "In the Morse code, which letter is indicated by 3 dots? ",
       "options": [
-        "Michael Emerson",
-        "Jim Caviezel",
-        "Taraji P. Henson",
-        "Kevin Chapman"
+        "C",
+        "O",
+        "S",
+        "A"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     },
     {
-      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "text": "What was the first movie to ever use a Wilhelm Scream?",
       "options": [
-        "India",
-        "Indonesia",
-        "Vietnam",
-        "Thailand"
+        "Distant Drums",
+        "Indiana Jones",
+        "Treasure of the Sierra Madre",
+        "The Charge at Feather River"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
