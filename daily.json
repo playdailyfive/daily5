@@ -1,68 +1,68 @@
 {
-  "day": "20251101",
-  "dayIndex": 70,
+  "day": "20251102",
+  "dayIndex": 71,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does the F stand for in the FBI?",
+      "text": "What does VR stand for?",
       "options": [
-        "First",
-        "Federal",
-        "Formal",
-        "Foreign"
+        "Virtual Reality",
+        "Very Real",
+        "Visual Recognition",
+        "Voice Recognition"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "When did the TV show Rick and Morty first air on Adult Swim?",
+      "text": "In bowling, what is the term used for getting three consecutive strikes?",
       "options": [
-        "2013",
-        "2014",
-        "2016",
-        "2015"
+        "Birdie",
+        "Turkey",
+        "Eagle",
+        "Flamingo"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Sports"
     },
     {
-      "text": "What is the average life span of a garden ant?",
+      "text": "In 2013 how much money was lost by Nigerian scams?",
       "options": [
-        "24 hours",
-        "3 years",
-        "15 years",
-        "1 week"
+        "$12.7 Billion",
+        "$2.7 Billion",
+        "$956 Million",
+        "$95 Million"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "text": "According to the Star Wars lore, what is Han Solo's home planet?",
       "options": [
-        "The Terminators",
-        "Runaway",
-        "Westworld",
-        "Android"
+        "Corellia",
+        "Coruscant",
+        "Tatooine",
+        "Naboo"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Panic! At the Disco's sixth album \"Pray For The Wicked\" was released on which date?",
+      "text": "Which singer is portrayed by Bruce Campbell in the 2002 film 'Bubba Ho-Tep'?",
       "options": [
-        "June 22, 2018",
-        "February 21, 2018",
-        "May 9, 2018",
-        "March 13, 2018"
+        "Elvis Presley",
+        "Hank Williams, Sr.",
+        "Johnny Cash",
+        "Buddy Holly"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
