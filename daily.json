@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In aerodynamics, which force pushes an object upwards?",
+      "text": "How many syllables make up a haiku?",
       "options": [
-        "Lift",
-        "Drag",
-        "Weight",
-        "Thrust"
+        "17",
+        "15",
+        "10",
+        "21"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the show Stranger Things, what is Eleven's favorite breakfast food?",
+      "text": "What is the Spanish word for \"donkey\"?",
       "options": [
-        "Captain Crunch",
-        "Eggo Waffles",
-        "Bacon and Eggs",
-        "Toast"
+        "Toro",
+        "Burro",
+        "Perro",
+        "Caballo"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     },
     {
-      "text": "Which country drives on the left side of the road?",
+      "text": "Which logical fallacy means to attack the character of your opponent rather than their arguments?",
       "options": [
-        "Japan",
-        "China",
-        "Russia",
-        "Germany"
+        "Ad hominem",
+        "Argumentum ad populum",
+        "Tu quoque",
+        "Post hoc ergo propter hoc"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which one of these artists appears in the album Deltron 3030?",
+      "text": "Which song made by MAN WITH A MISSION was used as the opening for the anime \"Log Horizon\"?",
       "options": [
-        "Dan the Automater",
-        "CeeLo Green",
-        "Lamarr Kendrick",
-        "Danger Mouse"
+        "\"Database\"",
+        "\"Out of Control\"",
+        "\"Dead End in Tokyo\"",
+        "\"Raise Your Flag\""
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which author co-wrote \"The Communist Manifesto\" alongside Karl Marx?",
+      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
       "options": [
-        "Friedrich Engels",
-        "Alexander Kerensky",
-        "Robert Owen",
-        "Paul Lafargue"
+        "Men of Harlech",
+        "Colonel Bogey March",
+        "Scotland the Brave",
+        "The British Grenadiers"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     }
   ]
 }
