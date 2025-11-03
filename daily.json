@@ -1,66 +1,66 @@
 {
-  "day": "20251102",
-  "dayIndex": 71,
+  "day": "20251103",
+  "dayIndex": 72,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many syllables make up a haiku?",
+      "text": "What country does sushi & karaoke come from?",
       "options": [
-        "17",
-        "15",
-        "10",
-        "21"
+        "Japan",
+        "China",
+        "South Korea",
+        "Vietnam"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the Spanish word for \"donkey\"?",
+      "text": "\"Green Eggs And Ham\" is a book by which author?",
       "options": [
-        "Toro",
-        "Burro",
-        "Perro",
-        "Caballo"
+        "Beatrix Potter",
+        "A.A. Milne",
+        "Roald Dahl",
+        "Dr. Seuss"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "Whose greyscale face is on the kappa emoticon on Twitch?",
+      "options": [
+        "Justin DeSeno",
+        "John DeSeno",
+        "Jimmy DeSeno",
+        "Josh DeSeno"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "From what show is the character \"James Doakes\"? ",
+      "options": [
+        "The Walking Dead",
+        "Marvel's Daredevil",
+        "Boardwalk Empire",
+        "Dexter"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "In order to cut costs, what were most of the extras of Mad Max (1979) paid with?",
+      "options": [
+        "Food stamps",
+        "Beer",
+        "They weren't paid",
+        "Fast food"
       ],
       "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which logical fallacy means to attack the character of your opponent rather than their arguments?",
-      "options": [
-        "Ad hominem",
-        "Argumentum ad populum",
-        "Tu quoque",
-        "Post hoc ergo propter hoc"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which song made by MAN WITH A MISSION was used as the opening for the anime \"Log Horizon\"?",
-      "options": [
-        "\"Database\"",
-        "\"Out of Control\"",
-        "\"Dead End in Tokyo\"",
-        "\"Raise Your Flag\""
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
-      "options": [
-        "Men of Harlech",
-        "Colonel Bogey March",
-        "Scotland the Brave",
-        "The British Grenadiers"
-      ],
-      "correct": 0,
       "difficulty": "hard",
       "category": "Entertainment: Film"
     }
