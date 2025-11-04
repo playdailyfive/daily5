@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What country does sushi & karaoke come from?",
+      "text": "What is Cynophobia the fear of?",
       "options": [
-        "Japan",
-        "China",
-        "South Korea",
-        "Vietnam"
+        "Dogs",
+        "Birds",
+        "Flying",
+        "Germs"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Green Eggs And Ham\" is a book by which author?",
+      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
       "options": [
-        "Beatrix Potter",
-        "A.A. Milne",
-        "Roald Dahl",
-        "Dr. Seuss"
+        "The Island",
+        "American Pie",
+        "Unthinkable",
+        "Fight Club"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Whose greyscale face is on the kappa emoticon on Twitch?",
+      "text": "Which item of clothing is usually worn by a Scotsman at a wedding?",
       "options": [
-        "Justin DeSeno",
-        "John DeSeno",
-        "Jimmy DeSeno",
-        "Josh DeSeno"
+        "Skirt",
+        "Dress",
+        "Rhobes",
+        "Kilt"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "From what show is the character \"James Doakes\"? ",
+      "text": "What is the name of the main character from the music video of \"Shelter\" by Porter Robinson and A-1 Studios?",
       "options": [
-        "The Walking Dead",
-        "Marvel's Daredevil",
-        "Boardwalk Empire",
-        "Dexter"
+        "Ram",
+        "Rem",
+        "Ren",
+        "Rin"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In order to cut costs, what were most of the extras of Mad Max (1979) paid with?",
+      "text": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
       "options": [
-        "Food stamps",
-        "Beer",
-        "They weren't paid",
-        "Fast food"
+        "Ai FUKUHARA (Japan)",
+        "DING Ning (China)",
+        "Song KIM (North Korea)",
+        "LI Xiaoxia (China)"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     }
   ]
 }
