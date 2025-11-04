@@ -1,68 +1,68 @@
 {
-  "day": "20251103",
-  "dayIndex": 72,
+  "day": "20251104",
+  "dayIndex": 73,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cynophobia the fear of?",
+      "text": "What is the largest living species of penguin?",
       "options": [
-        "Dogs",
-        "Birds",
-        "Flying",
-        "Germs"
+        "Emperor",
+        "King",
+        "Gentoo",
+        "Adele"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
+      "text": "In \"ALF\", what was ALF's real name?",
       "options": [
-        "The Island",
-        "American Pie",
-        "Unthinkable",
-        "Fight Club"
+        "Gordon von Gam",
+        "Gordon Milipp",
+        "Gordon Foster",
+        "Gordon Shumway"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which item of clothing is usually worn by a Scotsman at a wedding?",
+      "text": "Who is the founder of \"The Lego Group\"?",
       "options": [
-        "Skirt",
-        "Dress",
-        "Rhobes",
-        "Kilt"
+        "Ole Kirk Christiansen",
+        "Kirstine Christiansen",
+        " Gerhardt Kirk Christiansen",
+        " Jens Niels Christiansen"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the main character from the music video of \"Shelter\" by Porter Robinson and A-1 Studios?",
+      "text": "Which English county will you find the University of East Anglia?",
       "options": [
-        "Ram",
-        "Rem",
-        "Ren",
-        "Rin"
+        "Suffolk",
+        "Cambridgeshire",
+        "Norfolk",
+        "Essex"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
+      "text": "Where is the fast food chain \"Panda Express\" headquartered?",
       "options": [
-        "Ai FUKUHARA (Japan)",
-        "DING Ning (China)",
-        "Song KIM (North Korea)",
-        "LI Xiaoxia (China)"
+        "San Diego, California",
+        "Sacramento, California",
+        "Rosemead, California",
+        "Fresno, California"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Geography"
     }
   ]
 }
