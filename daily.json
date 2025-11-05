@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the largest living species of penguin?",
+      "text": "\"A3\", \"B1\", and \"Legal\" are typical names of sizes for what object?",
       "options": [
-        "Emperor",
-        "King",
-        "Gentoo",
-        "Adele"
+        "Paper",
+        "Airplanes",
+        "Law books",
+        "Phone screens"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"ALF\", what was ALF's real name?",
+      "text": "Sting, the lead vocalist of The Police, primarily plays what instrument?",
       "options": [
-        "Gordon von Gam",
-        "Gordon Milipp",
-        "Gordon Foster",
-        "Gordon Shumway"
+        "Keyboards",
+        "Drums",
+        "Guitar",
+        "Bass Guitar"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Who is the founder of \"The Lego Group\"?",
+      "text": "What is the world's most expensive spice by weight?",
       "options": [
-        "Ole Kirk Christiansen",
-        "Kirstine Christiansen",
-        " Gerhardt Kirk Christiansen",
-        " Jens Niels Christiansen"
+        "Saffron",
+        "Cardamom",
+        "Vanilla",
+        "Cinnamon"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which English county will you find the University of East Anglia?",
+      "text": "By what name was the author Eric Blair better known?",
       "options": [
-        "Suffolk",
-        "Cambridgeshire",
-        "Norfolk",
-        "Essex"
+        "Aldous Huxley",
+        "Ray Bradbury",
+        "George Orwell",
+        "Ernest Hemingway"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Where is the fast food chain \"Panda Express\" headquartered?",
+      "text": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie \"Avatar\"?",
       "options": [
-        "San Diego, California",
-        "Sacramento, California",
-        "Rosemead, California",
-        "Fresno, California"
+        "Alyssa Monroe ",
+        "Jessica Chastain",
+        "Sigourney Weaver",
+        "Melissa Beckett"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
