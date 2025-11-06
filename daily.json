@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What alcoholic drink is made from molasses?",
+      "text": "What is the French word for \"hat\"?",
       "options": [
-        "Whisky",
-        "Gin",
-        "Rum",
-        "Vodka"
+        " Casque",
+        "Bonnet",
+        "Chapeau",
+        " &Eacute;charpe"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the largest hot desert in the world?",
+      "text": "What is Laos?",
       "options": [
-        "Mojave",
-        "Sahara",
-        "Gobi",
-        "Kalahari"
+        "River",
+        "Country",
+        "Region",
+        "City"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "text": "Which month is Black History Month in the US?",
       "options": [
-        "Ten",
-        "Five",
-        "Twenty",
-        "One hundred"
+        "November",
+        "February",
+        "May",
+        "August"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Where are the Nazca Lines located?",
+      "text": "Who sang the theme song for the TV show 'Rawhide'?",
       "options": [
-        "Ecuador",
-        "Colombia",
-        "Peru",
-        "Brazil"
+        "Slim Whitman",
+        " Tennessee Ernie Ford",
+        "Frankie Laine",
+        "Guy Mitchell"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Who founded the Khan Academy?",
+      "text": "The words \"bungalow\" and \"shampoo\" originate from the languages of which country?",
       "options": [
-        "Sal Khan",
-        "Kitt Khan",
-        "Ben Khan",
-        "Adel Khan"
+        "India",
+        "Ethiopia",
+        "Papua New Guinea",
+        "China"
       ],
       "correct": 0,
       "difficulty": "hard",
