@@ -1,64 +1,64 @@
 {
-  "day": "20251105",
-  "dayIndex": 74,
+  "day": "20251106",
+  "dayIndex": 75,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"hat\"?",
+      "text": "What is the shape of the toy invented by Hungarian professor Ernő Rubik?",
       "options": [
-        " Casque",
-        "Bonnet",
-        "Chapeau",
-        " &Eacute;charpe"
+        "Cube",
+        "Sphere",
+        "Cylinder",
+        "Pyramid"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Laos?",
+      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
       "options": [
-        "River",
-        "Country",
-        "Region",
-        "City"
+        "Bournemouth",
+        "Torquay",
+        "Blackpool",
+        "Great Yarmouth"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
-    },
-    {
-      "text": "Which month is Black History Month in the US?",
-      "options": [
-        "November",
-        "February",
-        "May",
-        "August"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who sang the theme song for the TV show 'Rawhide'?",
-      "options": [
-        "Slim Whitman",
-        " Tennessee Ernie Ford",
-        "Frankie Laine",
-        "Guy Mitchell"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "The words \"bungalow\" and \"shampoo\" originate from the languages of which country?",
+      "text": "When was WhatsApp founded?",
       "options": [
-        "India",
-        "Ethiopia",
-        "Papua New Guinea",
-        "China"
+        "2009",
+        "2007",
+        "2012",
+        "2010"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "How many premier league trophies did Sir Alex Ferguson win during his time at Manchester United?",
+      "options": [
+        "11",
+        "22",
+        "20",
+        "13"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "What is the airspeed velocity of an unladen swallow?",
+      "options": [
+        "24 MPH",
+        "200 MPH",
+        "20 MPH",
+        "15 MPH"
       ],
       "correct": 0,
       "difficulty": "hard",
