@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the shape of the toy invented by Hungarian professor Ernő Rubik?",
+      "text": "The word \"dozen\" usually refers to a group of how many objects?",
       "options": [
-        "Cube",
-        "Sphere",
-        "Cylinder",
-        "Pyramid"
+        "12",
+        "6",
+        "20",
+        "10"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
+      "text": "In \"Mean Girls\", who has breasts that tell when it's raining?",
       "options": [
-        "Bournemouth",
-        "Torquay",
-        "Blackpool",
-        "Great Yarmouth"
+        "Janice Ian",
+        "Karen Smith",
+        "Gretchen Weiners",
+        "Cady Heron"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "When was WhatsApp founded?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "2009",
-        "2007",
-        "2012",
-        "2010"
+        "Philosophy",
+        "Psychology",
+        "Phrenology",
+        "Physical Therapy"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "How many premier league trophies did Sir Alex Ferguson win during his time at Manchester United?",
+      "text": "Who was the lead singer and frontman of rock band R.E.M?",
       "options": [
-        "11",
-        "22",
-        "20",
-        "13"
+        "Chris Martin",
+        "George Michael",
+        "Thom Yorke",
+        "Michael Stipe"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the airspeed velocity of an unladen swallow?",
+      "text": "What was the UK \"Who Wants to be a Millionaire?\" cheating scandal known as?",
       "options": [
-        "24 MPH",
-        "200 MPH",
-        "20 MPH",
-        "15 MPH"
+        "Major Fraud",
+        "Millionaire Crime",
+        "Coughing Major",
+        "Ingram Cheater"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Television"
     }
   ]
 }
