@@ -1,68 +1,68 @@
 {
-  "day": "20251106",
-  "dayIndex": 75,
+  "day": "20251107",
+  "dayIndex": 76,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The word \"dozen\" usually refers to a group of how many objects?",
+      "text": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
       "options": [
-        "12",
-        "6",
-        "20",
-        "10"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In \"Mean Girls\", who has breasts that tell when it's raining?",
-      "options": [
-        "Janice Ian",
-        "Karen Smith",
-        "Gretchen Weiners",
-        "Cady Heron"
+        "Care Bears",
+        "Cabbage Patch Kids",
+        "Transformers",
+        "Rubik's Cube"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
       "options": [
-        "Philosophy",
-        "Psychology",
-        "Phrenology",
-        "Physical Therapy"
+        "John Green",
+        "Stephenie Meyer",
+        "Suzanne Collins",
+        "Stephen Chbosky"
       ],
       "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "What is the German word for \"spoon\"?",
+      "options": [
+        "Gabel",
+        "L&ouml;ffel",
+        "Messer",
+        "Essst&auml;bchen"
+      ],
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the lead singer and frontman of rock band R.E.M?",
+      "text": "The song \"Three Lions\" by the Lightning Seeds was made for which major football event in 1996?",
       "options": [
-        "Chris Martin",
-        "George Michael",
-        "Thom Yorke",
-        "Michael Stipe"
+        "World Cup",
+        "Champions League",
+        "European Championships",
+        "Confederations Cup"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "What was the UK \"Who Wants to be a Millionaire?\" cheating scandal known as?",
+      "text": "Sciophobia is the fear of what?",
       "options": [
-        "Major Fraud",
-        "Millionaire Crime",
-        "Coughing Major",
-        "Ingram Cheater"
+        "Transportation",
+        "Shadows",
+        "Bright lights",
+        "Eating"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     }
   ]
 }
