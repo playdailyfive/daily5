@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+      "text": "Which sign of the zodiac is represented by the Crab?",
       "options": [
-        "Care Bears",
-        "Cabbage Patch Kids",
-        "Transformers",
-        "Rubik's Cube"
+        "Virgo",
+        "Cancer",
+        "Libra",
+        "Sagittarius"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
+      "text": "At the end of the 2001 film \"Rat Race\", whose concert do the contestants crash?",
       "options": [
-        "John Green",
-        "Stephenie Meyer",
-        "Suzanne Collins",
-        "Stephen Chbosky"
+        "Smash Mouth",
+        "Bowling for Soup",
+        "Sum 41",
+        "Linkin Park"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the German word for \"spoon\"?",
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
       "options": [
-        "Gabel",
-        "L&ouml;ffel",
-        "Messer",
-        "Essst&auml;bchen"
+        "May 4, 1776",
+        "July 4, 1776",
+        "June 4, 1776",
+        "July 2, 1776"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The song \"Three Lions\" by the Lightning Seeds was made for which major football event in 1996?",
+      "text": "Who was Firestorm's rival during the original run of UK Robot Wars?",
       "options": [
-        "World Cup",
-        "Champions League",
-        "European Championships",
-        "Confederations Cup"
+        "Razer",
+        "Chaos 2",
+        "Panic Attack",
+        "Hypno Disc"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Sciophobia is the fear of what?",
+      "text": "How many notes are there on a standard grand piano?",
       "options": [
-        "Transportation",
-        "Shadows",
-        "Bright lights",
-        "Eating"
+        "78",
+        "88",
+        "108",
+        "98"
       ],
       "correct": 1,
       "difficulty": "hard",
