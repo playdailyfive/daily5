@@ -1,68 +1,68 @@
 {
-  "day": "20251107",
-  "dayIndex": 76,
+  "day": "20251108",
+  "dayIndex": 77,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac is represented by the Crab?",
+      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
       "options": [
-        "Virgo",
-        "Cancer",
-        "Libra",
-        "Sagittarius"
+        "Slacking",
+        "Smoking",
+        "Stealing",
+        "Cheating"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "At the end of the 2001 film \"Rat Race\", whose concert do the contestants crash?",
+      "text": "What nuts are used in the production of marzipan?",
       "options": [
-        "Smash Mouth",
-        "Bowling for Soup",
-        "Sum 41",
-        "Linkin Park"
+        "Peanuts",
+        "Pistachios",
+        "Almonds",
+        "Walnuts"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "text": "Which river flows through the Scottish city of Glasgow?",
       "options": [
-        "May 4, 1776",
-        "July 4, 1776",
-        "June 4, 1776",
-        "July 2, 1776"
+        "Tweed",
+        "Tay",
+        "Clyde",
+        "Dee"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was Firestorm's rival during the original run of UK Robot Wars?",
+      "text": "Which movie served as the KTMA pilot episode for the show \"Mystery Science Theater 3000\"?",
       "options": [
-        "Razer",
-        "Chaos 2",
-        "Panic Attack",
-        "Hypno Disc"
+        "The Green Slime",
+        "Plan 9 From Outer Space",
+        "The Robot Vs. The Aztec Mummy",
+        "The Crawling Eye"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "How many notes are there on a standard grand piano?",
+      "text": "What is the tallest mountain in Canada?",
       "options": [
-        "78",
-        "88",
-        "108",
-        "98"
+        "Mont Tremblant",
+        "Blue Mountain",
+        "Whistler Mountain",
+        "Mount Logan"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
