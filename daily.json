@@ -1,68 +1,68 @@
 {
-  "day": "20251108",
-  "dayIndex": 77,
+  "day": "20251109",
+  "dayIndex": 78,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The buried remains of which English explorer of Australia were found in London  in January 2019? ",
+      "text": "What is the nickname of the US state of California?",
       "options": [
-        "Matthew Flinders",
-        "William Bourke",
-        "Abel Tasman",
-        "Dirk Hartog"
+        "Bay State",
+        "Golden State",
+        "Treasure State",
+        "Sunshine State"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Denmark?",
+      "text": "What is the capital of South Korea?",
       "options": [
-        "Aarhus",
-        "Aalborg",
-        "Copenhagen",
-        "Odense"
+        "Seoul",
+        "Kitakyushu",
+        "Taegu",
+        "Pyongyang"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
+      "text": "Who is the founder of \"The Lego Group\"?",
       "options": [
-        "Making People Happy Through Food",
-        "Why Pay More!?",
-        "We Love to See You Smile",
-        "Have It Your Way"
+        "Ole Kirk Christiansen",
+        " Gerhardt Kirk Christiansen",
+        " Jens Niels Christiansen",
+        "Kirstine Christiansen"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What date is referenced in the 1971 song \"September\" by Earth, Wind & Fire?",
+      "text": "Which German sportswear company's logo is the 'Formstripe'?",
       "options": [
-        "21st of September",
-        "24th of September",
-        "26th of September",
-        "23rd of September"
+        "Puma",
+        "Adidas",
+        "Nike",
+        "Reebok"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
+      "text": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
       "options": [
-        "Psycho",
-        "Rebecca",
-        "Vertigo",
-        "Rope"
+        "Mariana Trench",
+        "Great Barrier Reef",
+        "Grand Banks",
+        "Hudson Bay"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
