@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
+      "text": "The buried remains of which English explorer of Australia were found in London  in January 2019? ",
       "options": [
-        "Slacking",
-        "Smoking",
-        "Stealing",
-        "Cheating"
+        "Matthew Flinders",
+        "William Bourke",
+        "Abel Tasman",
+        "Dirk Hartog"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What nuts are used in the production of marzipan?",
+      "text": "What is the capital of Denmark?",
       "options": [
-        "Peanuts",
-        "Pistachios",
-        "Almonds",
-        "Walnuts"
+        "Aarhus",
+        "Aalborg",
+        "Copenhagen",
+        "Odense"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "General Knowledge"
+      "category": "Geography"
     },
     {
-      "text": "Which river flows through the Scottish city of Glasgow?",
+      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
       "options": [
-        "Tweed",
-        "Tay",
-        "Clyde",
-        "Dee"
+        "Making People Happy Through Food",
+        "Why Pay More!?",
+        "We Love to See You Smile",
+        "Have It Your Way"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which movie served as the KTMA pilot episode for the show \"Mystery Science Theater 3000\"?",
+      "text": "What date is referenced in the 1971 song \"September\" by Earth, Wind & Fire?",
       "options": [
-        "The Green Slime",
-        "Plan 9 From Outer Space",
-        "The Robot Vs. The Aztec Mummy",
-        "The Crawling Eye"
+        "21st of September",
+        "24th of September",
+        "26th of September",
+        "23rd of September"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the tallest mountain in Canada?",
+      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
       "options": [
-        "Mont Tremblant",
-        "Blue Mountain",
-        "Whistler Mountain",
-        "Mount Logan"
+        "Psycho",
+        "Rebecca",
+        "Vertigo",
+        "Rope"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
