@@ -1,68 +1,68 @@
 {
-  "day": "20251109",
-  "dayIndex": 78,
+  "day": "20251110",
+  "dayIndex": 79,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is the author of Jurassic Park?",
+      "text": "How many colors are there in a rainbow?",
       "options": [
-        "Chuck Paluhniuk",
-        "Michael Crichton",
-        "Irvine Welsh",
-        "Peter Benchley"
+        "8",
+        "10",
+        "9",
+        "7"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Grant Gustin plays which superhero on the CW show of the same name?",
+      "options": [
+        "The Arrow",
+        "Black Canary",
+        "Daredevil",
+        "The Flash"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "On average, Americans consume 100 pounds of what per second?",
+      "options": [
+        "Cocaine",
+        "Potatoes",
+        "Donuts",
+        "Chocolate"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In Rudyard Kipling's \"The Jungle Book\", what type of snake was Kaa?",
+      "options": [
+        "Anaconda",
+        "Python",
+        "Viper",
+        "Cobra"
       ],
       "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who is the main protagonist in, the 1985 film, Back to the Future?",
-      "options": [
-        "Marty McFly",
-        "George McFly",
-        "Biff Tannen",
-        "Emmett \"Doc\" Brown"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "What is real haggis made of?",
-      "options": [
-        "Sheep's Heart, Liver and Lungs",
-        "Whole Sheep",
-        "Sheep's Heart, Kidneys and Lungs",
-        "Sheep's Liver, Kidneys and Eyes"
-      ],
-      "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Which retired American football quarterback played himself in 'Ace Ventura: Pet Detective' and 'Little Nicky'?",
+      "text": "In Star Trek, what is the name of Spock's father?",
       "options": [
-        "Dan Marino",
-        "Tom Brady",
-        "John Elway",
-        "Joe Montana"
+        "Sarek",
+        "Surak",
+        "T'Pal",
+        "Tuvok"
       ],
       "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "What was the last Aphex Twin album released before his decade-long hiatus?",
-      "options": [
-        "Syro",
-        "Windowlicker",
-        "Drukqs",
-        "Collected Ambient Works 85-92"
-      ],
-      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
