@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the nickname of the US state of California?",
+      "text": "Who is the author of Jurassic Park?",
       "options": [
-        "Bay State",
-        "Golden State",
-        "Treasure State",
-        "Sunshine State"
+        "Chuck Paluhniuk",
+        "Michael Crichton",
+        "Irvine Welsh",
+        "Peter Benchley"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of South Korea?",
+      "text": "Who is the main protagonist in, the 1985 film, Back to the Future?",
       "options": [
-        "Seoul",
-        "Kitakyushu",
-        "Taegu",
-        "Pyongyang"
+        "Marty McFly",
+        "George McFly",
+        "Biff Tannen",
+        "Emmett \"Doc\" Brown"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Who is the founder of \"The Lego Group\"?",
+      "text": "What is real haggis made of?",
       "options": [
-        "Ole Kirk Christiansen",
-        " Gerhardt Kirk Christiansen",
-        " Jens Niels Christiansen",
-        "Kirstine Christiansen"
+        "Sheep's Heart, Liver and Lungs",
+        "Whole Sheep",
+        "Sheep's Heart, Kidneys and Lungs",
+        "Sheep's Liver, Kidneys and Eyes"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which German sportswear company's logo is the 'Formstripe'?",
+      "text": "Which retired American football quarterback played himself in 'Ace Ventura: Pet Detective' and 'Little Nicky'?",
       "options": [
-        "Puma",
-        "Adidas",
-        "Nike",
-        "Reebok"
+        "Dan Marino",
+        "Tom Brady",
+        "John Elway",
+        "Joe Montana"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
+      "text": "What was the last Aphex Twin album released before his decade-long hiatus?",
       "options": [
-        "Mariana Trench",
-        "Great Barrier Reef",
-        "Grand Banks",
-        "Hudson Bay"
+        "Syro",
+        "Windowlicker",
+        "Drukqs",
+        "Collected Ambient Works 85-92"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
