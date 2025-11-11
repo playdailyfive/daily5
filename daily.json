@@ -1,68 +1,68 @@
 {
-  "day": "20251110",
-  "dayIndex": 79,
+  "day": "20251111",
+  "dayIndex": 80,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What style of beer will typically have a higher than average hop content?",
+      "text": "Which restaurant's mascot is a clown?",
       "options": [
-        "Stout",
-        "Scotch Ale",
-        "Extra Special Bitter",
-        "India Pale Ale"
+        "Sonic",
+        "Whataburger",
+        "Burger King",
+        "McDonald's"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the lead singer of the British pop rock band Coldplay?",
+      "text": "What is the largest country in the world ?",
       "options": [
-        "Jonny Buckland",
-        "Guy Berryman",
-        "Will Champion",
-        "Chris Martin"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "Who is the founder of \"The Lego Group\"?",
-      "options": [
-        " Gerhardt Kirk Christiansen",
-        " Jens Niels Christiansen",
-        "Kirstine Christiansen",
-        "Ole Kirk Christiansen"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who is the director of the 1991 film \"Silence of the Lambs\"?",
-      "options": [
-        "Frank Darabont",
-        "Jonathan Demme",
-        "Michael Bay",
-        "Stanley Kubrick"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "In 2012, which movie won every category in the 32nd \"Golden Raspberry Awards\"?",
-      "options": [
-        "Jack and Jill",
-        "The King's Speech",
-        "Thor",
-        "The Girl with the Dragon Tattoo"
+        "Russian Federation",
+        "Canada",
+        "Brazil",
+        "China"
       ],
       "correct": 0,
-      "difficulty": "hard",
+      "difficulty": "easy",
+      "category": "Geography"
+    },
+    {
+      "text": "Which is the most popular spoken language in the Southern Hemisphere?",
+      "options": [
+        "English ",
+        "French",
+        "Portuguese",
+        "Spanish"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Before getting the shotgun, what did the titular hobo in 'Hobo with a Shotgun' want to purchase?",
+      "options": [
+        "a suit",
+        "a revolver",
+        "a lawnmower",
+        "a guitar"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "In the Magic: The Gathering universe, the Fallen Empires expansion takes place on which continent?",
+      "options": [
+        "Terisiare",
+        "Shiv",
+        "Otaria",
+        "Sarpadia"
+      ],
+      "correct": 3,
+      "difficulty": "hard",
+      "category": "Entertainment: Books"
     }
   ]
 }
