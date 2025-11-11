@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many colors are there in a rainbow?",
+      "text": "What style of beer will typically have a higher than average hop content?",
       "options": [
-        "8",
-        "10",
-        "9",
-        "7"
+        "Stout",
+        "Scotch Ale",
+        "Extra Special Bitter",
+        "India Pale Ale"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Grant Gustin plays which superhero on the CW show of the same name?",
+      "text": "Who is the lead singer of the British pop rock band Coldplay?",
       "options": [
-        "The Arrow",
-        "Black Canary",
-        "Daredevil",
-        "The Flash"
+        "Jonny Buckland",
+        "Guy Berryman",
+        "Will Champion",
+        "Chris Martin"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "On average, Americans consume 100 pounds of what per second?",
+      "text": "Who is the founder of \"The Lego Group\"?",
       "options": [
-        "Cocaine",
-        "Potatoes",
-        "Donuts",
-        "Chocolate"
+        " Gerhardt Kirk Christiansen",
+        " Jens Niels Christiansen",
+        "Kirstine Christiansen",
+        "Ole Kirk Christiansen"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In Rudyard Kipling's \"The Jungle Book\", what type of snake was Kaa?",
+      "text": "Who is the director of the 1991 film \"Silence of the Lambs\"?",
       "options": [
-        "Anaconda",
-        "Python",
-        "Viper",
-        "Cobra"
+        "Frank Darabont",
+        "Jonathan Demme",
+        "Michael Bay",
+        "Stanley Kubrick"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In Star Trek, what is the name of Spock's father?",
+      "text": "In 2012, which movie won every category in the 32nd \"Golden Raspberry Awards\"?",
       "options": [
-        "Sarek",
-        "Surak",
-        "T'Pal",
-        "Tuvok"
+        "Jack and Jill",
+        "The King's Speech",
+        "Thor",
+        "The Girl with the Dragon Tattoo"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     }
   ]
 }
