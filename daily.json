@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which restaurant's mascot is a clown?",
+      "text": "\"A3\", \"B1\", and \"Legal\" are typical names of sizes for what object?",
       "options": [
-        "Sonic",
-        "Whataburger",
-        "Burger King",
-        "McDonald's"
+        "Phone screens",
+        "Airplanes",
+        "Law books",
+        "Paper"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the largest country in the world ?",
+      "text": "What is the name of Manchester United's home stadium?",
       "options": [
-        "Russian Federation",
-        "Canada",
-        "Brazil",
-        "China"
+        "Old Trafford",
+        "City of Manchester Stadium",
+        "St James Park",
+        "Anfield"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Sports"
     },
     {
-      "text": "Which is the most popular spoken language in the Southern Hemisphere?",
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
       "options": [
-        "English ",
-        "French",
-        "Portuguese",
-        "Spanish"
+        "May 4, 1776",
+        "July 2, 1776",
+        "July 4, 1776",
+        "June 4, 1776"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Before getting the shotgun, what did the titular hobo in 'Hobo with a Shotgun' want to purchase?",
+      "text": "In a game of snooker, what colour ball is worth 3 points?",
       "options": [
-        "a suit",
-        "a revolver",
-        "a lawnmower",
-        "a guitar"
+        "Blue",
+        "Yellow",
+        "Green",
+        "Brown"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "In the Magic: The Gathering universe, the Fallen Empires expansion takes place on which continent?",
+      "text": "In \"Resident Evil 3\", how many inventory slots does Jill have at the start of the game?",
       "options": [
-        "Terisiare",
-        "Shiv",
-        "Otaria",
-        "Sarpadia"
+        "10",
+        "12",
+        "6",
+        "8"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     }
   ]
 }
