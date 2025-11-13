@@ -1,68 +1,68 @@
 {
-  "day": "20251112",
-  "dayIndex": 81,
+  "day": "20251113",
+  "dayIndex": 82,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which country has the Union Jack in its flag?",
+      "text": "What is the profession of Elon Musk's mom, Maye Musk?",
       "options": [
-        "Canada",
-        "New Zealand",
-        "South Africa",
-        "Hong Kong"
+        "Biologist",
+        "Model",
+        "Professor",
+        "Musician"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the peninsula containing Spain and Portugal?",
+      "text": "Which band recorded the album \"Parallel Lines\"?",
       "options": [
-        "Peloponnesian Peninsula",
-        "Iberian Peninsula",
-        "European Peninsula",
-        "Scandinavian Peninsula"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Geography"
-    },
-    {
-      "text": "What is the average life span of a garden ant?",
-      "options": [
-        "3 years",
-        "1 week",
-        "15 years",
-        "24 hours"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who was the first white band to play the Apollo Theater?",
-      "options": [
-        "Buddy Holly and The Crickets",
-        "The Beatles",
-        "Chuck Berry",
-        "Elvis"
+        "Blondie",
+        "Paramore",
+        "Coldplay",
+        "The Police"
       ],
       "correct": 0,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which one of these Swedish companies was founded in 1943?",
+      "text": "Where did the pineapple plant originate?",
       "options": [
-        "Lindex",
-        "IKEA",
-        "H & M",
-        "Clas Ohlson"
+        "Hawaii",
+        "Asia",
+        "Europe",
+        "South America"
       ],
-      "correct": 1,
-      "difficulty": "hard",
+      "correct": 3,
+      "difficulty": "medium",
       "category": "General Knowledge"
+    },
+    {
+      "text": "What is the oldest team in the NFL?",
+      "options": [
+        "Arizona Cardinals",
+        "New York Giants",
+        "Green Bay Packers",
+        "Chicago Bears"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "In which country is Tallinn located?",
+      "options": [
+        "Poland",
+        "Finland",
+        "Sweden",
+        "Estonia"
+      ],
+      "correct": 3,
+      "difficulty": "hard",
+      "category": "Geography"
     }
   ]
 }
