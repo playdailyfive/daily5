@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Foie gras is a French delicacy typically made from what part of a duck or goose?",
+      "text": "Which country has the Union Jack in its flag?",
       "options": [
-        "Stomach",
-        "Liver",
-        "Heart",
-        "Intestines"
+        "Canada",
+        "New Zealand",
+        "South Africa",
+        "Hong Kong"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the planet that the Doctor from television series \"Doctor Who\" comes from?",
+      "text": "What is the name of the peninsula containing Spain and Portugal?",
       "options": [
-        "Skaro",
-        "Gallifrey",
-        "Sontar",
-        "Mondas"
+        "Peloponnesian Peninsula",
+        "Iberian Peninsula",
+        "European Peninsula",
+        "Scandinavian Peninsula"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "Amsterdam Centraal station is twinned with what station?",
+      "text": "What is the average life span of a garden ant?",
       "options": [
-        "Brussels Midi",
-        "Paris Gare du Nord",
-        "London Liverpool Street",
-        "Frankfurt (Main) Hauptbahnhof"
+        "3 years",
+        "1 week",
+        "15 years",
+        "24 hours"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which one of these Pink Floyd albums were also a movie?",
+      "text": "Who was the first white band to play the Apollo Theater?",
       "options": [
-        "The Wall",
-        "Wish You Were Here",
-        "The Dark Side of the Moon",
-        "Animals"
+        "Buddy Holly and The Crickets",
+        "The Beatles",
+        "Chuck Berry",
+        "Elvis"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the romanized Arabic word for \"moon\"?",
+      "text": "Which one of these Swedish companies was founded in 1943?",
       "options": [
-        "Kawkab",
-        "Qamar",
-        "Najma",
-        "Shams"
+        "Lindex",
+        "IKEA",
+        "H & M",
+        "Clas Ohlson"
       ],
       "correct": 1,
       "difficulty": "hard",
