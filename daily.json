@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the profession of Elon Musk's mom, Maye Musk?",
+      "text": "What is the name of the poker hand containing three of a kind and a pair?",
       "options": [
-        "Biologist",
-        "Model",
-        "Professor",
-        "Musician"
+        "Straight",
+        "Full House",
+        "Flush",
+        "High card"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which band recorded the album \"Parallel Lines\"?",
+      "text": "What team did England beat to win in the 1966 World Cup final?",
       "options": [
-        "Blondie",
-        "Paramore",
-        "Coldplay",
-        "The Police"
+        "West Germany",
+        "Soviet Union",
+        "Portugal",
+        "Brazil"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "Where did the pineapple plant originate?",
+      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
       "options": [
-        "Hawaii",
-        "Asia",
-        "Europe",
-        "South America"
+        "Vietnam War",
+        "American Revolutionary War",
+        "American Civil War",
+        "World War II"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the oldest team in the NFL?",
+      "text": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 \"Need You\"?",
       "options": [
-        "Arizona Cardinals",
-        "New York Giants",
-        "Green Bay Packers",
-        "Chicago Bears"
+        "NGHTMRE",
+        "DVBBS",
+        "KRNE",
+        "LOUDPVCK"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In which country is Tallinn located?",
+      "text": "What is the romanized Korean word for \"heart\"?",
       "options": [
-        "Poland",
-        "Finland",
-        "Sweden",
-        "Estonia"
+        "Segseu",
+        "Aejeong",
+        "Jeongsin",
+        "Simjang"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
