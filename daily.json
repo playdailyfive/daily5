@@ -1,68 +1,68 @@
 {
-  "day": "20251113",
-  "dayIndex": 82,
+  "day": "20251114",
+  "dayIndex": 83,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of the poker hand containing three of a kind and a pair?",
+      "text": "What is the French word for \"hat\"?",
       "options": [
-        "Straight",
-        "Full House",
-        "Flush",
-        "High card"
+        "Chapeau",
+        "Bonnet",
+        " &Eacute;charpe",
+        " Casque"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What team did England beat to win in the 1966 World Cup final?",
+      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
       "options": [
-        "West Germany",
-        "Soviet Union",
-        "Portugal",
-        "Brazil"
+        "Angelo",
+        "Figaro",
+        "Fernando",
+        "Dave"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
+      "text": "Who invented Pastafarianism?",
       "options": [
-        "Vietnam War",
-        "American Revolutionary War",
-        "American Civil War",
-        "World War II"
+        "Eric Tignor",
+        "Bill Nye",
+        "Bobby Henderson",
+        "Zach Soldi"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 \"Need You\"?",
+      "text": "According to a Beatles song, who kept her face in a jar by the door?",
       "options": [
-        "NGHTMRE",
-        "DVBBS",
-        "KRNE",
-        "LOUDPVCK"
+        "Lady Madonna",
+        "Eleanor Rigby",
+        "Molly Jones",
+        "Loretta Martin"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the romanized Korean word for \"heart\"?",
+      "text": "What is the official German name of the Swiss Federal Railways?",
       "options": [
-        "Segseu",
-        "Aejeong",
-        "Jeongsin",
-        "Simjang"
+        "Schweizerische Nationalbahnen",
+        "Bundesbahnen der Schweiz",
+        "Schweizerische Staatsbahnen",
+        "Schweizerische Bundesbahnen"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
