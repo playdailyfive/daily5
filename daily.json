@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"hat\"?",
+      "text": "What step in cellular respiration forms ATP?",
       "options": [
-        "Chapeau",
-        "Bonnet",
-        " &Eacute;charpe",
-        " Casque"
+        "Oxidative Phosphorylation",
+        "Glycolysis",
+        "Pyruvate Oxidation",
+        "Calvin Cycle"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
+      "text": "What is the Polish city known to Germans as Danzig?",
       "options": [
-        "Angelo",
-        "Figaro",
-        "Fernando",
-        "Dave"
+        "Warsaw",
+        "Gdańsk",
+        "Zakopane",
+        "Poznań"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Who invented Pastafarianism?",
+      "text": "In a standard set of playing cards, which is the only king without a moustache?",
       "options": [
-        "Eric Tignor",
-        "Bill Nye",
-        "Bobby Henderson",
-        "Zach Soldi"
+        "Spades",
+        "Diamonds",
+        "Hearts",
+        "Clubs"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "According to a Beatles song, who kept her face in a jar by the door?",
+      "text": "Who was walking like an Egyptian in 1981?",
       "options": [
-        "Lady Madonna",
-        "Eleanor Rigby",
-        "Molly Jones",
-        "Loretta Martin"
+        "The Connells",
+        "The Bangles",
+        "The Ocean Blue",
+        "R.E.M."
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the official German name of the Swiss Federal Railways?",
+      "text": "Who founded the Khan Academy?",
       "options": [
-        "Schweizerische Nationalbahnen",
-        "Bundesbahnen der Schweiz",
-        "Schweizerische Staatsbahnen",
-        "Schweizerische Bundesbahnen"
+        "Ben Khan",
+        "Kitt Khan",
+        "Adel Khan",
+        "Sal Khan"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
