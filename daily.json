@@ -1,68 +1,68 @@
 {
-  "day": "20251114",
-  "dayIndex": 83,
+  "day": "20251115",
+  "dayIndex": 84,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What step in cellular respiration forms ATP?",
+      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
       "options": [
-        "Oxidative Phosphorylation",
-        "Glycolysis",
-        "Pyruvate Oxidation",
-        "Calvin Cycle"
+        "Gemini",
+        "Capricorn",
+        "Libra",
+        "Taurus"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the Polish city known to Germans as Danzig?",
+      "text": "In the 2012 film, \"The Lorax\", who is the antagonist?",
       "options": [
-        "Warsaw",
-        "Gdańsk",
-        "Zakopane",
-        "Poznań"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Geography"
-    },
-    {
-      "text": "In a standard set of playing cards, which is the only king without a moustache?",
-      "options": [
-        "Spades",
-        "Diamonds",
-        "Hearts",
-        "Clubs"
+        "Grammy Norma",
+        "Ted Wiggins",
+        "Aloysius O'Hare",
+        "The Once-Ler"
       ],
       "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "This field is sometimes known as \"The Dismal Science.\"",
+      "options": [
+        "Economics",
+        "Physics",
+        "Philosophy",
+        "Politics"
+      ],
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was walking like an Egyptian in 1981?",
+      "text": "The song \"Twin Size Mattress\" was written by which band?",
       "options": [
-        "The Connells",
-        "The Bangles",
-        "The Ocean Blue",
-        "R.E.M."
+        "Twenty One Pilots",
+        "The Smith Street Band",
+        "The Wonder Years",
+        "The Front Bottoms"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Who founded the Khan Academy?",
+      "text": "Which one of these films did David Lynch direct, but not write?",
       "options": [
-        "Ben Khan",
-        "Kitt Khan",
-        "Adel Khan",
-        "Sal Khan"
+        "Inland Empire",
+        "The Straight Story",
+        "Lost Highway",
+        "Twin Peaks Fire Walk With Me"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     }
   ]
 }
