@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+      "text": "When one is \"envious\", they are said to be what color?",
       "options": [
-        "Gemini",
-        "Capricorn",
-        "Libra",
-        "Taurus"
+        "Red",
+        "Yellow",
+        "Green",
+        "Blue"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 2012 film, \"The Lorax\", who is the antagonist?",
+      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
       "options": [
-        "Grammy Norma",
-        "Ted Wiggins",
-        "Aloysius O'Hare",
-        "The Once-Ler"
+        "Great Yarmouth",
+        "Blackpool",
+        "Torquay",
+        "Bournemouth"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "This field is sometimes known as \"The Dismal Science.\"",
+      "text": "What is the full title of the Prime Minister of the UK?",
       "options": [
-        "Economics",
-        "Physics",
-        "Philosophy",
-        "Politics"
+        "First Lord of the Treasury",
+        "Manager of the Crown Estate",
+        "Duke of Cambridge",
+        "Her Majesty's Loyal Opposition"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The song \"Twin Size Mattress\" was written by which band?",
+      "text": "Which iconic character is featured in movies such as \"The Enforcer\", \"Sudden Impact\", and \"The Dead Pool\"?",
       "options": [
-        "Twenty One Pilots",
-        "The Smith Street Band",
-        "The Wonder Years",
-        "The Front Bottoms"
+        "Indiana Jones",
+        "Harry Potter",
+        "James Bond",
+        "Dirty Harry"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which one of these films did David Lynch direct, but not write?",
+      "text": "Who Voices the Devil on Devil's Flight in Final Destination 3?",
       "options": [
-        "Inland Empire",
-        "The Straight Story",
-        "Lost Highway",
-        "Twin Peaks Fire Walk With Me"
+        "Wendy Christensen",
+        "Tony Todd",
+        "Ian McKinley",
+        "Kevin Fischer"
       ],
       "correct": 1,
       "difficulty": "hard",
