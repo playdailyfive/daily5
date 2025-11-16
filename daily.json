@@ -1,68 +1,68 @@
 {
-  "day": "20251115",
-  "dayIndex": 84,
+  "day": "20251116",
+  "dayIndex": 85,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When one is \"envious\", they are said to be what color?",
+      "text": "What is the Spanish word for \"donkey\"?",
       "options": [
-        "Red",
-        "Yellow",
-        "Green",
-        "Blue"
+        "Burro",
+        "Perro",
+        "Toro",
+        "Caballo"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
+      "text": "What is the capital of the US State of New York?",
       "options": [
-        "Great Yarmouth",
-        "Blackpool",
-        "Torquay",
-        "Bournemouth"
+        "Albany",
+        "Rochester",
+        "Buffalo",
+        "New York"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "What is the full title of the Prime Minister of the UK?",
+      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
       "options": [
-        "First Lord of the Treasury",
-        "Manager of the Crown Estate",
-        "Duke of Cambridge",
-        "Her Majesty's Loyal Opposition"
+        "Tandoori",
+        "Pani puri",
+        "Biryani",
+        "Tiki masala"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which iconic character is featured in movies such as \"The Enforcer\", \"Sudden Impact\", and \"The Dead Pool\"?",
+      "text": "In which movie does Robin Williams' character have to disguise themselves into a woman?",
       "options": [
-        "Indiana Jones",
-        "Harry Potter",
-        "James Bond",
-        "Dirty Harry"
+        "Jumanji",
+        "Old Dogs",
+        "Mrs. Doubtfire",
+        "Awakenings"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Who Voices the Devil on Devil's Flight in Final Destination 3?",
+      "text": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song \"Shelter\"?",
       "options": [
-        "Wendy Christensen",
-        "Tony Todd",
-        "Ian McKinley",
-        "Kevin Fischer"
+        "Mat Zo",
+        "Madeon",
+        "deadmau5",
+        "Zedd"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
