@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the Spanish word for \"donkey\"?",
+      "text": "What do the letters of the fast food chain KFC stand for?",
       "options": [
-        "Burro",
-        "Perro",
-        "Toro",
-        "Caballo"
+        "Kentucky Fried Chicken",
+        "Kiwi Food Cut",
+        "Kibbled Freaky Cow",
+        "Kentucky Fresh Cheese"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of the US State of New York?",
+      "text": "The 1996 film 'Fargo' is primarily set in which US state?",
       "options": [
-        "Albany",
-        "Rochester",
-        "Buffalo",
-        "New York"
+        "Minnesota",
+        "Wisconsin",
+        "North Dakota",
+        "South Dakota"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
-    },
-    {
-      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
-      "options": [
-        "Tandoori",
-        "Pani puri",
-        "Biryani",
-        "Tiki masala"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which movie does Robin Williams' character have to disguise themselves into a woman?",
-      "options": [
-        "Jumanji",
-        "Old Dogs",
-        "Mrs. Doubtfire",
-        "Awakenings"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song \"Shelter\"?",
+      "text": "Amsterdam Centraal station is twinned with what station?",
       "options": [
-        "Mat Zo",
-        "Madeon",
-        "deadmau5",
-        "Zedd"
+        "London Liverpool Street",
+        "Paris Gare du Nord",
+        "Frankfurt (Main) Hauptbahnhof",
+        "Brussels Midi"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1990)?",
+      "options": [
+        "1989 Ford Explorer XLT",
+        "1989 Jeep Wrangler YJ Sahar",
+        "1989 Toyota Land Cruiser",
+        "Mercedes M-Class"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "What did the first moving picture depict?",
+      "options": [
+        "A woman in a dress",
+        "A galloping horse",
+        "A man walking",
+        "A crackling fire"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     }
   ]
 }
