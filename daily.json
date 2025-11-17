@@ -1,68 +1,68 @@
 {
-  "day": "20251116",
-  "dayIndex": 85,
+  "day": "20251117",
+  "dayIndex": 86,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do the letters of the fast food chain KFC stand for?",
+      "text": "What is the French word for \"hat\"?",
       "options": [
-        "Kentucky Fried Chicken",
-        "Kiwi Food Cut",
-        "Kibbled Freaky Cow",
-        "Kentucky Fresh Cheese"
+        "Bonnet",
+        " &Eacute;charpe",
+        " Casque",
+        "Chapeau"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The 1996 film 'Fargo' is primarily set in which US state?",
+      "text": "Who is the star of the AMC series Breaking Bad?",
       "options": [
-        "Minnesota",
-        "Wisconsin",
-        "North Dakota",
-        "South Dakota"
+        "Skyler White",
+        "Saul Goodman",
+        "Jesse Pinkman",
+        "Walter White"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Amsterdam Centraal station is twinned with what station?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "London Liverpool Street",
-        "Paris Gare du Nord",
-        "Frankfurt (Main) Hauptbahnhof",
-        "Brussels Midi"
+        "Phrenology",
+        "Philosophy",
+        "Physical Therapy",
+        "Psychology"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1990)?",
+      "text": "What was David Bowie's real surname?",
       "options": [
-        "1989 Ford Explorer XLT",
-        "1989 Jeep Wrangler YJ Sahar",
-        "1989 Toyota Land Cruiser",
-        "Mercedes M-Class"
+        "Jones",
+        "Carter",
+        "Edwards",
+        "Johnson"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What did the first moving picture depict?",
+      "text": "Pete Townshend collaborated with which famous guitarist for an event at Brixton Academy in 1985?",
       "options": [
-        "A woman in a dress",
-        "A galloping horse",
-        "A man walking",
-        "A crackling fire"
+        "Eric Clapton",
+        "David Gilmour",
+        "Jimmy Page",
+        "Mark Knopfler"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
