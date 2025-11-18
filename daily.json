@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"hat\"?",
+      "text": "What was the first ever London Underground line to be built?",
       "options": [
-        "Bonnet",
-        " &Eacute;charpe",
-        " Casque",
-        "Chapeau"
+        "Circle Line",
+        "Bakerloo Line",
+        "Victoria Line",
+        "Metropolitan Line"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the star of the AMC series Breaking Bad?",
+      "text": "How many soccer players should be on the field at the same time?",
       "options": [
-        "Skyler White",
-        "Saul Goodman",
-        "Jesse Pinkman",
-        "Walter White"
+        "26",
+        "20",
+        "24",
+        "22"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Sports"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
       "options": [
-        "Phrenology",
-        "Philosophy",
-        "Physical Therapy",
-        "Psychology"
+        "American Civil War",
+        "World War II",
+        "American Revolutionary War",
+        "Vietnam War"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was David Bowie's real surname?",
+      "text": "What is the romanized Russian word for \"winter\"?",
       "options": [
-        "Jones",
-        "Carter",
-        "Edwards",
-        "Johnson"
+        "Zima",
+        "Osen'",
+        "Vesna",
+        "Leto"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     },
     {
-      "text": "Pete Townshend collaborated with which famous guitarist for an event at Brixton Academy in 1985?",
+      "text": "What does VR stand for?",
       "options": [
-        "Eric Clapton",
-        "David Gilmour",
-        "Jimmy Page",
-        "Mark Knopfler"
+        "Voice Recognition",
+        "Virtual Reality",
+        "Very Real",
+        "Visual Recognition"
       ],
       "correct": 1,
-      "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "difficulty": "easy",
+      "category": "General Knowledge"
     }
   ]
 }
