@@ -1,68 +1,68 @@
 {
-  "day": "20251117",
-  "dayIndex": 86,
+  "day": "20251118",
+  "dayIndex": 87,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What was the first ever London Underground line to be built?",
+      "text": "In past times, what would a gentleman keep in his fob pocket?",
       "options": [
-        "Circle Line",
-        "Bakerloo Line",
-        "Victoria Line",
-        "Metropolitan Line"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many soccer players should be on the field at the same time?",
-      "options": [
-        "26",
-        "20",
-        "24",
-        "22"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Sports"
-    },
-    {
-      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
-      "options": [
-        "American Civil War",
-        "World War II",
-        "American Revolutionary War",
-        "Vietnam War"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the romanized Russian word for \"winter\"?",
-      "options": [
-        "Zima",
-        "Osen'",
-        "Vesna",
-        "Leto"
+        "Watch",
+        "Keys",
+        "Notebook",
+        "Money"
       ],
       "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which ocean borders the west coast of the United States?",
+      "options": [
+        "Atlantic",
+        "Arctic",
+        "Pacific",
+        "Indian"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Geography"
+    },
+    {
+      "text": "What was the original name of the search engine \"Google\"?",
+      "options": [
+        "Netscape Navigator",
+        "CatMassage",
+        "BackRub",
+        "SearchPro"
+      ],
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What does VR stand for?",
+      "text": "Lake Titicaca is located between which two nations?",
       "options": [
-        "Voice Recognition",
-        "Virtual Reality",
-        "Very Real",
-        "Visual Recognition"
+        "Mexico and the United States",
+        "India and Bangladesh",
+        "Kenya and Uganda",
+        "Peru and Bolivia"
       ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "What city is known as the Rose Capital of the World?",
+      "options": [
+        "Miami, Florida",
+        "Anaheim, California",
+        "Tyler, Texas",
+        "San Diego, California"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Geography"
     }
   ]
 }
