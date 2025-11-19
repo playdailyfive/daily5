@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In past times, what would a gentleman keep in his fob pocket?",
+      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
       "options": [
-        "Watch",
-        "Keys",
-        "Notebook",
-        "Money"
+        "Thomas Jefferson",
+        "Ulysses Grant",
+        "John Quincy Adams",
+        "Martin Van Buren"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which ocean borders the west coast of the United States?",
+      "text": "Which music publication is often abbreviated to NME?",
       "options": [
-        "Atlantic",
-        "Arctic",
-        "Pacific",
-        "Indian"
+        "New Metro Entertainment",
+        "North Manchester Express",
+        "New Musical Express",
+        "Next Musical Enterprise"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What was the original name of the search engine \"Google\"?",
+      "text": "What is the Italian word for \"tomato\"?",
       "options": [
-        "Netscape Navigator",
-        "CatMassage",
-        "BackRub",
-        "SearchPro"
+        "Peperoncino",
+        "Aglio",
+        "Pomodoro",
+        "Cipolla"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Lake Titicaca is located between which two nations?",
+      "text": "Which rapper had an album that went double platinum with no features?",
       "options": [
-        "Mexico and the United States",
-        "India and Bangladesh",
-        "Kenya and Uganda",
-        "Peru and Bolivia"
+        "Drake",
+        "Big Sean",
+        "Kendrick Lamar",
+        "J. Cole"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What city is known as the Rose Capital of the World?",
+      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
       "options": [
-        "Miami, Florida",
-        "Anaheim, California",
-        "Tyler, Texas",
-        "San Diego, California"
+        "18",
+        "20",
+        "14",
+        "16"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
