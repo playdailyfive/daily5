@@ -1,68 +1,68 @@
 {
-  "day": "20251118",
-  "dayIndex": 87,
+  "day": "20251119",
+  "dayIndex": 88,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
+      "text": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
       "options": [
-        "Thomas Jefferson",
-        "Ulysses Grant",
-        "John Quincy Adams",
-        "Martin Van Buren"
+        "Jet",
+        "Helicopter",
+        "Stealth Blimp",
+        "Space Capsule"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Where does the original Friday The 13th movie take place?",
+      "options": [
+        "Camp Forest Green",
+        "Higgins Haven",
+        "Camp Crystal Lake",
+        "Packanack"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "What was the original name of the search engine \"Google\"?",
+      "options": [
+        "BackRub",
+        "SearchPro",
+        "CatMassage",
+        "Netscape Navigator"
       ],
       "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which music publication is often abbreviated to NME?",
-      "options": [
-        "New Metro Entertainment",
-        "North Manchester Express",
-        "New Musical Express",
-        "Next Musical Enterprise"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What is the Italian word for \"tomato\"?",
-      "options": [
-        "Peperoncino",
-        "Aglio",
-        "Pomodoro",
-        "Cipolla"
-      ],
-      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which rapper had an album that went double platinum with no features?",
+      "text": "Which Russian author wrote the epic novel War and Peace?",
       "options": [
-        "Drake",
-        "Big Sean",
-        "Kendrick Lamar",
-        "J. Cole"
+        "Alexander Pushkin",
+        "Leo Tolstoy",
+        "Fyodor Dostoyevsky",
+        "Vladimir Nabokov"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "In the metal band Slipknot, there are 9 members, which member labelled themselves number 6? ",
+      "options": [
+        "Sid Wilson",
+        "Cory Taylor",
+        "Mick Thomson",
+        "Shawn Crahan (Clown)"
       ],
       "correct": 3,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
-      "options": [
-        "18",
-        "20",
-        "14",
-        "16"
-      ],
-      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
