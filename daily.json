@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
       "options": [
-        "Jet",
-        "Helicopter",
-        "Stealth Blimp",
-        "Space Capsule"
+        "Extortion",
+        "Accounting Fraud",
+        "Money Laundering",
+        "Blackmail"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Where does the original Friday The 13th movie take place?",
+      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
       "options": [
-        "Camp Forest Green",
-        "Higgins Haven",
-        "Camp Crystal Lake",
-        "Packanack"
+        "American Pie",
+        "Unthinkable",
+        "Fight Club",
+        "The Island"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What was the original name of the search engine \"Google\"?",
+      "text": "What is real haggis made of?",
       "options": [
-        "BackRub",
-        "SearchPro",
-        "CatMassage",
-        "Netscape Navigator"
+        "Sheep's Heart, Liver and Lungs",
+        "Sheep's Liver, Kidneys and Eyes",
+        "Sheep's Heart, Kidneys and Lungs",
+        "Whole Sheep"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Russian author wrote the epic novel War and Peace?",
+      "text": "In the 1979 British film \"Quadrophenia\" what is the name of the seaside city the mods are visiting?",
       "options": [
-        "Alexander Pushkin",
-        "Leo Tolstoy",
-        "Fyodor Dostoyevsky",
-        "Vladimir Nabokov"
+        "Mousehole",
+        "Brighton",
+        "Eastbourne",
+        "Bridlington"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In the metal band Slipknot, there are 9 members, which member labelled themselves number 6? ",
+      "text": "The heavy metal band Black Sabbath hail from which English city?",
       "options": [
-        "Sid Wilson",
-        "Cory Taylor",
-        "Mick Thomson",
-        "Shawn Crahan (Clown)"
+        "Manchester",
+        "London",
+        "Newcastle-Upon-Tyne",
+        "Birmingham"
       ],
       "correct": 3,
       "difficulty": "hard",
