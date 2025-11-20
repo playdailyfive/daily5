@@ -1,68 +1,68 @@
 {
-  "day": "20251119",
-  "dayIndex": 88,
+  "day": "20251120",
+  "dayIndex": 89,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
+      "text": "What is the name of the antagonist group in Danganronpa Another Episode: Ultra Despair Girls?",
       "options": [
-        "Extortion",
-        "Accounting Fraud",
-        "Money Laundering",
-        "Blackmail"
+        "Warriors of Hope",
+        "The Monokubs",
+        "Warriors of Despair",
+        "The Ultimate Despair"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
+      "text": "The Los Angeles Dodgers were originally from what U.S. city?",
       "options": [
-        "American Pie",
-        "Unthinkable",
-        "Fight Club",
-        "The Island"
+        "Las Vegas",
+        "Seattle",
+        "Boston",
+        "Brooklyn"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "What does a milliner make and sell?",
       "options": [
-        "Sheep's Heart, Liver and Lungs",
-        "Sheep's Liver, Kidneys and Eyes",
-        "Sheep's Heart, Kidneys and Lungs",
-        "Whole Sheep"
+        "Hats",
+        "Shirts",
+        "Belts",
+        "Shoes"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 1979 British film \"Quadrophenia\" what is the name of the seaside city the mods are visiting?",
+      "text": "On a London Underground map, what colour is the Circle Line?",
       "options": [
-        "Mousehole",
-        "Brighton",
-        "Eastbourne",
-        "Bridlington"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "The heavy metal band Black Sabbath hail from which English city?",
-      "options": [
-        "Manchester",
-        "London",
-        "Newcastle-Upon-Tyne",
-        "Birmingham"
+        "Green",
+        "Red",
+        "Blue",
+        "Yellow"
       ],
       "correct": 3,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "Virtual reality company Oculus VR lost which of it's co-founders in a freak car accident in 2013?",
+      "options": [
+        "Nate Mitchell",
+        "Andrew Scott Reisse",
+        "Palmer Luckey",
+        "Jack McCauley"
+      ],
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
