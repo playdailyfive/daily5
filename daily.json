@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of the antagonist group in Danganronpa Another Episode: Ultra Despair Girls?",
+      "text": "Waluigi's first appearance was in what game?",
       "options": [
-        "Warriors of Hope",
-        "The Monokubs",
-        "Warriors of Despair",
-        "The Ultimate Despair"
+        "Mario Tennis 64 (N64)",
+        "Wario Land: Super Mario Land 3",
+        "Mario Party (N64)",
+        "Super Smash Bros. Ultimate"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Los Angeles Dodgers were originally from what U.S. city?",
+      "text": "Which movie contains the quote, \"Say hello to my little friend!\"?",
       "options": [
-        "Las Vegas",
-        "Seattle",
-        "Boston",
-        "Brooklyn"
+        "Reservoir Dogs",
+        "Goodfellas",
+        "Heat",
+        "Scarface"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What does a milliner make and sell?",
+      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
       "options": [
-        "Hats",
-        "Shirts",
-        "Belts",
-        "Shoes"
+        "Board Games",
+        "Films",
+        "Video Games",
+        "Television Shows"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "On a London Underground map, what colour is the Circle Line?",
+      "text": "The book \"Fahrenheit 451\" was written by whom?",
       "options": [
-        "Green",
-        "Red",
-        "Blue",
-        "Yellow"
+        "Stephen King",
+        "R. L. Stine",
+        "Wolfgang Amadeus Mozart",
+        "Ray Bradbury"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Virtual reality company Oculus VR lost which of it's co-founders in a freak car accident in 2013?",
+      "text": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
       "options": [
-        "Nate Mitchell",
-        "Andrew Scott Reisse",
-        "Palmer Luckey",
-        "Jack McCauley"
+        "Dog",
+        "Moose",
+        "Goat",
+        "Bear"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Celebrities"
     }
   ]
 }
