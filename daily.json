@@ -1,68 +1,68 @@
 {
-  "day": "20251120",
-  "dayIndex": 89,
+  "day": "20251121",
+  "dayIndex": 90,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Waluigi's first appearance was in what game?",
+      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
       "options": [
-        "Mario Tennis 64 (N64)",
-        "Wario Land: Super Mario Land 3",
-        "Mario Party (N64)",
-        "Super Smash Bros. Ultimate"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which movie contains the quote, \"Say hello to my little friend!\"?",
-      "options": [
-        "Reservoir Dogs",
-        "Goodfellas",
-        "Heat",
-        "Scarface"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
-      "options": [
-        "Board Games",
-        "Films",
-        "Video Games",
-        "Television Shows"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "The book \"Fahrenheit 451\" was written by whom?",
-      "options": [
-        "Stephen King",
-        "R. L. Stine",
-        "Wolfgang Amadeus Mozart",
-        "Ray Bradbury"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
-      "options": [
-        "Dog",
-        "Moose",
-        "Goat",
-        "Bear"
+        "Bogot&aacute;",
+        "Medell&iacute;n",
+        "Quito",
+        "Cali"
       ],
       "correct": 1,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In the 2014 FIFA World Cup, what was the final score in the match Brazil - Germany?",
+      "options": [
+        "1-5",
+        "1-6",
+        "1-7",
+        "2-6"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "Which country drives on the left side of the road?",
+      "options": [
+        "China",
+        "Japan",
+        "Russia",
+        "Germany"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which country did Kabaddi, a contact sport involving tackling, originate from?",
+      "options": [
+        "Australia",
+        "Turkey",
+        "Cambodia",
+        "India"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "The key of sharps does the key of G# minor contain?",
+      "options": [
+        "3",
+        "7",
+        "5",
+        "0"
+      ],
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     }
   ]
 }
