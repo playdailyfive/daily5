@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
+      "text": "What does the F stand for in the FBI?",
       "options": [
-        "Bogot&aacute;",
-        "Medell&iacute;n",
-        "Quito",
-        "Cali"
+        "Foreign",
+        "Federal",
+        "Formal",
+        "First"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 2014 FIFA World Cup, what was the final score in the match Brazil - Germany?",
+      "text": "What is the Polish city known to Germans as Danzig?",
       "options": [
-        "1-5",
-        "1-6",
-        "1-7",
-        "2-6"
+        "Warsaw",
+        "Zakopane",
+        "Gdańsk",
+        "Poznań"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Geography"
     },
     {
-      "text": "Which country drives on the left side of the road?",
+      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
       "options": [
-        "China",
-        "Japan",
-        "Russia",
-        "Germany"
+        "Gothic Revival",
+        "Modernism",
+        "Baroque",
+        "Neoclassical"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country did Kabaddi, a contact sport involving tackling, originate from?",
+      "text": "In the TV series \"Person of Interest\", who plays the character \"Harold Finch\"?",
       "options": [
-        "Australia",
-        "Turkey",
-        "Cambodia",
-        "India"
+        "Jim Caviezel",
+        "Taraji P. Henson",
+        "Kevin Chapman",
+        "Michael Emerson"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The key of sharps does the key of G# minor contain?",
+      "text": "In which country is Tallinn located?",
       "options": [
-        "3",
-        "7",
-        "5",
-        "0"
+        "Finland",
+        "Sweden",
+        "Estonia",
+        "Poland"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
