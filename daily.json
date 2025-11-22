@@ -1,68 +1,68 @@
 {
-  "day": "20251121",
-  "dayIndex": 90,
+  "day": "20251122",
+  "dayIndex": 91,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does the F stand for in the FBI?",
+      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
       "options": [
-        "Foreign",
-        "Federal",
-        "Formal",
-        "First"
+        "Capricorn",
+        "Gemini",
+        "Libra",
+        "Taurus"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the Polish city known to Germans as Danzig?",
+      "text": "In DuckTales, what is the name of the city where all the main characters live?",
       "options": [
-        "Warsaw",
-        "Zakopane",
-        "Gdańsk",
-        "Poznań"
+        "Duckburg",
+        "Wingford",
+        "Duckwing",
+        "Tailspin"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
+      "text": "Who is the founder of \"The Lego Group\"?",
       "options": [
-        "Gothic Revival",
-        "Modernism",
-        "Baroque",
-        "Neoclassical"
+        " Jens Niels Christiansen",
+        " Gerhardt Kirk Christiansen",
+        "Kirstine Christiansen",
+        "Ole Kirk Christiansen"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the TV series \"Person of Interest\", who plays the character \"Harold Finch\"?",
+      "text": "What is Meg's full name in \"Family Guy\"?",
       "options": [
-        "Jim Caviezel",
-        "Taraji P. Henson",
-        "Kevin Chapman",
-        "Michael Emerson"
+        "Who-Cares Griffin",
+        "Megatron Griffin",
+        "Neil Griffin",
+        "Megan Griffin"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "In which country is Tallinn located?",
+      "text": "Who won the 1989 Drum Corps International championships?",
       "options": [
-        "Finland",
-        "Sweden",
-        "Estonia",
-        "Poland"
+        "The Bluecoats",
+        "The Academy",
+        "Santa Clara Vanguard",
+        "Blue Devils"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
