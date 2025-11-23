@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+      "text": "How many letters are in the English alphabet?",
       "options": [
-        "Capricorn",
-        "Gemini",
-        "Libra",
-        "Taurus"
+        "5",
+        "30",
+        "26",
+        "17"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In DuckTales, what is the name of the city where all the main characters live?",
+      "text": "What is the capital of South Korea?",
       "options": [
-        "Duckburg",
-        "Wingford",
-        "Duckwing",
-        "Tailspin"
+        "Seoul",
+        "Kitakyushu",
+        "Pyongyang",
+        "Taegu"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "Who is the founder of \"The Lego Group\"?",
+      "text": "The early part of which decade, did the Goth Subculture begin?",
       "options": [
-        " Jens Niels Christiansen",
-        " Gerhardt Kirk Christiansen",
-        "Kirstine Christiansen",
-        "Ole Kirk Christiansen"
+        "1990s",
+        "1970s",
+        "2000s",
+        "1980s"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Meg's full name in \"Family Guy\"?",
+      "text": "In the film \"Requiem for a Dream\", what drug does Jared Leto's character get addicted to?",
       "options": [
-        "Who-Cares Griffin",
-        "Megatron Griffin",
-        "Neil Griffin",
-        "Megan Griffin"
+        "Cocaine",
+        "Heroin",
+        "Marijuana",
+        "Oxycodone"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Who won the 1989 Drum Corps International championships?",
+      "text": "What song originally performed by The Bee Gees in 1978 had a cover version by Steps 20 years later?",
       "options": [
-        "The Bluecoats",
-        "The Academy",
-        "Santa Clara Vanguard",
-        "Blue Devils"
+        "You Should Be Dancing",
+        "Stayin' Alive",
+        "Tragedy",
+        "Night Fever"
       ],
       "correct": 2,
       "difficulty": "hard",
