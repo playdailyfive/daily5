@@ -1,68 +1,68 @@
 {
-  "day": "20251122",
-  "dayIndex": 91,
+  "day": "20251123",
+  "dayIndex": 92,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
       "text": "How many letters are in the English alphabet?",
       "options": [
+        "26",
         "5",
         "30",
-        "26",
         "17"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the capital of South Korea?",
-      "options": [
-        "Seoul",
-        "Kitakyushu",
-        "Pyongyang",
-        "Taegu"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "General Knowledge"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "Who was the original author of Frankenstein?",
       "options": [
-        "1990s",
-        "1970s",
-        "2000s",
-        "1980s"
+        "Mary Shelley",
+        "Bram Stoker",
+        "Edgar Allan Poe",
+        "H. P. Lovecraft"
       ],
-      "correct": 3,
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "Which country has the most Trappist breweries?",
+      "options": [
+        "France",
+        "Netherlands",
+        "Belgium",
+        "USA"
+      ],
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the film \"Requiem for a Dream\", what drug does Jared Leto's character get addicted to?",
+      "text": "What is the real name of \"moot\", founder of the imageboard 4chan?",
       "options": [
-        "Cocaine",
-        "Heroin",
-        "Marijuana",
-        "Oxycodone"
+        "Mark Zuckerberg",
+        "Christopher Poole",
+        "Allison Harvard",
+        "Catie Wayne"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Celebrities"
     },
     {
-      "text": "What song originally performed by The Bee Gees in 1978 had a cover version by Steps 20 years later?",
+      "text": "In which city is the Big Nickel located in Canada?",
       "options": [
-        "You Should Be Dancing",
-        "Stayin' Alive",
-        "Tragedy",
-        "Night Fever"
+        "Calgary, Alberta",
+        "Sudbury, Ontario",
+        "Halifax, Nova Scotia ",
+        "Victoria, British Columbia"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
