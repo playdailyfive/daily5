@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many letters are in the English alphabet?",
+      "text": "What organ of the body produces bile?",
       "options": [
-        "26",
-        "5",
-        "30",
-        "17"
+        "Liver",
+        "Stomach",
+        "Gallbladder",
+        "Pancreas"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the original author of Frankenstein?",
+      "text": "The 2016 song \"Starboy\" by Canadian singer The Weeknd features which prominent electronic artist?",
       "options": [
-        "Mary Shelley",
-        "Bram Stoker",
-        "Edgar Allan Poe",
-        "H. P. Lovecraft"
+        "Daft Punk",
+        "Disclosure",
+        "deadmau5",
+        "DJ Shadow"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which country has the most Trappist breweries?",
+      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
       "options": [
-        "France",
-        "Netherlands",
-        "Belgium",
-        "USA"
+        "Michael Arad",
+        "Bjarke Ingels",
+        "David Childs",
+        "Fumihiko Maki"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the real name of \"moot\", founder of the imageboard 4chan?",
+      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
       "options": [
-        "Mark Zuckerberg",
-        "Christopher Poole",
-        "Allison Harvard",
-        "Catie Wayne"
+        "Robin Williams",
+        "Gilbert Gottfried",
+        "Pauly Shore",
+        "Jonathan Freeman"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In which city is the Big Nickel located in Canada?",
+      "text": "What is the official name of Prince's backing band?",
       "options": [
-        "Calgary, Alberta",
-        "Sudbury, Ontario",
-        "Halifax, Nova Scotia ",
-        "Victoria, British Columbia"
+        "The Paupers",
+        "The Revolution",
+        "The Wailers",
+        "The Heartbreakers"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
