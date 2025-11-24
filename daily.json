@@ -1,66 +1,66 @@
 {
-  "day": "20251123",
-  "dayIndex": 92,
+  "day": "20251124",
+  "dayIndex": 93,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What organ of the body produces bile?",
+      "text": "What step in cellular respiration forms ATP?",
       "options": [
-        "Liver",
-        "Stomach",
-        "Gallbladder",
-        "Pancreas"
+        "Calvin Cycle",
+        "Glycolysis",
+        "Pyruvate Oxidation",
+        "Oxidative Phosphorylation"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The 2016 song \"Starboy\" by Canadian singer The Weeknd features which prominent electronic artist?",
+      "text": "Who played the Waitress in the Spam sketch of \"Monty Python's Flying Circus\"?",
       "options": [
-        "Daft Punk",
-        "Disclosure",
-        "deadmau5",
-        "DJ Shadow"
+        "Graham Chapman",
+        "Terry Jones",
+        "John Cleese",
+        "Eric Idle"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
+      "text": "What is the Swedish word for \"window\"?",
       "options": [
-        "Michael Arad",
-        "Bjarke Ingels",
-        "David Childs",
-        "Fumihiko Maki"
+        "F&ouml;nster",
+        "Ruta",
+        "Sk&auml;rm",
+        "H&aring;l"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
+      "text": "Who won the \"Champions League\" in 1999?",
       "options": [
-        "Robin Williams",
-        "Gilbert Gottfried",
-        "Pauly Shore",
-        "Jonathan Freeman"
+        "Liverpool",
+        "Manchester United",
+        "Barcelona",
+        "Bayern Munich"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "What is the official name of Prince's backing band?",
+      "text": "The heavy metal band Black Sabbath hail from which English city?",
       "options": [
-        "The Paupers",
-        "The Revolution",
-        "The Wailers",
-        "The Heartbreakers"
+        "Birmingham",
+        "Manchester",
+        "London",
+        "Newcastle-Upon-Tyne"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
