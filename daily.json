@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What step in cellular respiration forms ATP?",
+      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
       "options": [
-        "Calvin Cycle",
-        "Glycolysis",
-        "Pyruvate Oxidation",
-        "Oxidative Phosphorylation"
+        "Cheating",
+        "Smoking",
+        "Stealing",
+        "Slacking"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who played the Waitress in the Spam sketch of \"Monty Python's Flying Circus\"?",
+      "text": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
       "options": [
-        "Graham Chapman",
-        "Terry Jones",
-        "John Cleese",
-        "Eric Idle"
+        "Suzanne Collins",
+        "John Green",
+        "Stephen Chbosky",
+        "Stephenie Meyer"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "What is the Swedish word for \"window\"?",
+      "text": "What is the romanized Japanese word for \"university\"?",
       "options": [
-        "F&ouml;nster",
-        "Ruta",
-        "Sk&auml;rm",
-        "H&aring;l"
+        "Daigaku",
+        "Shokudou",
+        "Jimusho",
+        "Toshokan"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who won the \"Champions League\" in 1999?",
+      "text": "In the television show \"Lazy Town\", who is the actor of Robbie Rotten?",
       "options": [
-        "Liverpool",
-        "Manchester United",
-        "Barcelona",
-        "Bayern Munich"
+        "Stephen Carl",
+        "Stef&aacute;n Stef&aacute;nsson",
+        "Adam Sandler",
+        "Magn&uacute;s Scheving"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The heavy metal band Black Sabbath hail from which English city?",
+      "text": "The Swedish word \"Grunka\" means what in English?",
       "options": [
-        "Birmingham",
-        "Manchester",
-        "London",
-        "Newcastle-Upon-Tyne"
+        "Thing",
+        "People",
+        "Place",
+        "Pineapple"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
