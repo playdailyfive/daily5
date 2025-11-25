@@ -1,68 +1,68 @@
 {
-  "day": "20251124",
-  "dayIndex": 93,
+  "day": "20251125",
+  "dayIndex": 94,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
+      "text": "Which company did Valve cooperate with in the creation of the Vive?",
       "options": [
-        "Cheating",
-        "Smoking",
-        "Stealing",
-        "Slacking"
+        "Oculus",
+        "Razer",
+        "HTC",
+        "Google"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "When was the movie 'Con Air' released?",
+      "options": [
+        "1990",
+        "1985",
+        "1997",
+        "1999"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "What did the Spanish autonomous community of Catalonia ban in 2010, that took effect in 2012?",
+      "options": [
+        "Flamenco",
+        "Mariachi",
+        "Fiestas",
+        "Bullfighting"
       ],
       "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
-      "options": [
-        "Suzanne Collins",
-        "John Green",
-        "Stephen Chbosky",
-        "Stephenie Meyer"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "What is the romanized Japanese word for \"university\"?",
-      "options": [
-        "Daigaku",
-        "Shokudou",
-        "Jimusho",
-        "Toshokan"
-      ],
-      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the television show \"Lazy Town\", who is the actor of Robbie Rotten?",
+      "text": "Who voiced Metalbeard in \"The Lego Movie\"?",
       "options": [
-        "Stephen Carl",
-        "Stef&aacute;n Stef&aacute;nsson",
-        "Adam Sandler",
-        "Magn&uacute;s Scheving"
+        "Morgan Freeman",
+        "Will Arnet",
+        "Nick Offerman",
+        "Liam Neeson"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "The Swedish word \"Grunka\" means what in English?",
+      "text": "What is \"The Sport of Kings\"?",
       "options": [
-        "Thing",
-        "People",
-        "Place",
-        "Pineapple"
+        "Horse Racing",
+        "Chess",
+        "Fencing",
+        "Jousting"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Sports"
     }
   ]
 }
