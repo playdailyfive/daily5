@@ -1,68 +1,68 @@
 {
-  "day": "20251125",
-  "dayIndex": 94,
+  "day": "20251126",
+  "dayIndex": 95,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the Spanish word for \"donkey\"?",
+      "text": "The Hyundai Motor Company was founded in which country?",
       "options": [
-        "Caballo",
-        "Perro",
-        "Burro",
-        "Toro"
+        "China",
+        "Japan",
+        "South Korea",
+        "Russia"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the lead singer of Arctic Monkeys?",
+      "text": "Sting, the lead vocalist of The Police, primarily plays what instrument?",
       "options": [
-        "Nick O'Malley",
-        "Jamie Cook",
-        "Alex Turner",
-        "Matt Helders"
+        "Bass Guitar",
+        "Guitar",
+        "Drums",
+        "Keyboards"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which river flows through the Scottish city of Glasgow?",
+      "text": "What alcoholic drink is mainly made from juniper berries?",
       "options": [
-        "Dee",
-        "Tweed",
-        "Tay",
-        "Clyde"
+        "Rum",
+        "Gin",
+        "Vodka",
+        "Tequila"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which documentary film maker wrote and starred in the film \"My Scientology Movie\" which first debuted in 2015?",
+      "text": "In which African country was the 2006 film 'Blood Diamond' mostly set in?",
       "options": [
-        "Joe Berlinger",
-        "Adam Curtis",
-        "Louis Theroux",
-        "Errol Morris"
+        "Liberia",
+        "Burkina Faso",
+        "Central African Republic",
+        "Sierra Leone"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Who founded the Khan Academy?",
+      "text": "Which M83 album is the song \"Midnight City\" featured in?",
       "options": [
-        "Sal Khan",
-        "Ben Khan",
-        "Adel Khan",
-        "Kitt Khan"
+        "Before the Dawn Heals Us",
+        "Saturdays = Youth",
+        "Junk",
+        "Hurry Up, We're Dreaming"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
