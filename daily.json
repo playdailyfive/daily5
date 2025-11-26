@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which company did Valve cooperate with in the creation of the Vive?",
+      "text": "What is the Spanish word for \"donkey\"?",
       "options": [
-        "Oculus",
-        "Razer",
-        "HTC",
-        "Google"
+        "Caballo",
+        "Perro",
+        "Burro",
+        "Toro"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "When was the movie 'Con Air' released?",
+      "text": "Who is the lead singer of Arctic Monkeys?",
       "options": [
-        "1990",
-        "1985",
-        "1997",
-        "1999"
+        "Nick O'Malley",
+        "Jamie Cook",
+        "Alex Turner",
+        "Matt Helders"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What did the Spanish autonomous community of Catalonia ban in 2010, that took effect in 2012?",
+      "text": "Which river flows through the Scottish city of Glasgow?",
       "options": [
-        "Flamenco",
-        "Mariachi",
-        "Fiestas",
-        "Bullfighting"
+        "Dee",
+        "Tweed",
+        "Tay",
+        "Clyde"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who voiced Metalbeard in \"The Lego Movie\"?",
+      "text": "Which documentary film maker wrote and starred in the film \"My Scientology Movie\" which first debuted in 2015?",
       "options": [
-        "Morgan Freeman",
-        "Will Arnet",
-        "Nick Offerman",
-        "Liam Neeson"
+        "Joe Berlinger",
+        "Adam Curtis",
+        "Louis Theroux",
+        "Errol Morris"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is \"The Sport of Kings\"?",
+      "text": "Who founded the Khan Academy?",
       "options": [
-        "Horse Racing",
-        "Chess",
-        "Fencing",
-        "Jousting"
+        "Sal Khan",
+        "Ben Khan",
+        "Adel Khan",
+        "Kitt Khan"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "General Knowledge"
     }
   ]
 }
