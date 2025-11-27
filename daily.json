@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Hyundai Motor Company was founded in which country?",
+      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
       "options": [
-        "China",
-        "Japan",
-        "South Korea",
-        "Russia"
+        "Capricorn",
+        "Taurus",
+        "Libra",
+        "Gemini"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Sting, the lead vocalist of The Police, primarily plays what instrument?",
+      "text": "What is the most common type of pitch thrown by pitchers in baseball?",
       "options": [
-        "Bass Guitar",
-        "Guitar",
-        "Drums",
-        "Keyboards"
+        "Fastball",
+        "Screwball",
+        "Slowball",
+        "Palmball"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "What alcoholic drink is mainly made from juniper berries?",
+      "text": "Which item of clothing is usually worn by a Scotsman at a wedding?",
       "options": [
-        "Rum",
-        "Gin",
-        "Vodka",
-        "Tequila"
+        "Dress",
+        "Kilt",
+        "Skirt",
+        "Rhobes"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In which African country was the 2006 film 'Blood Diamond' mostly set in?",
+      "text": "What was Bon Iver's debut album released in 2007?",
       "options": [
-        "Liberia",
-        "Burkina Faso",
-        "Central African Republic",
-        "Sierra Leone"
+        "Bon Iver, Bon Iver",
+        "22, A Million",
+        "Blood Bank EP",
+        "For Emma, Forever Ago"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which M83 album is the song \"Midnight City\" featured in?",
+      "text": "Who won the 1989 Drum Corps International championships?",
       "options": [
-        "Before the Dawn Heals Us",
-        "Saturdays = Youth",
-        "Junk",
-        "Hurry Up, We're Dreaming"
+        "The Academy",
+        "Blue Devils",
+        "The Bluecoats",
+        "Santa Clara Vanguard"
       ],
       "correct": 3,
       "difficulty": "hard",
