@@ -1,68 +1,68 @@
 {
-  "day": "20251126",
-  "dayIndex": 95,
+  "day": "20251127",
+  "dayIndex": 96,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
       "options": [
-        "Capricorn",
-        "Taurus",
-        "Libra",
-        "Gemini"
+        "Martin Van Buren",
+        "John Quincy Adams",
+        "Ulysses Grant",
+        "Thomas Jefferson"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the most common type of pitch thrown by pitchers in baseball?",
+      "text": "In golf, what name is given to a hole score of two under par?",
       "options": [
-        "Fastball",
-        "Screwball",
-        "Slowball",
-        "Palmball"
+        "Eagle",
+        "Albatross",
+        "Bogey",
+        "Birdie"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Sports"
     },
     {
-      "text": "Which item of clothing is usually worn by a Scotsman at a wedding?",
+      "text": "What is the world's most expensive spice by weight?",
       "options": [
-        "Dress",
-        "Kilt",
-        "Skirt",
-        "Rhobes"
+        "Vanilla",
+        "Cinnamon",
+        "Cardamom",
+        "Saffron"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was Bon Iver's debut album released in 2007?",
+      "text": "What is the name of the main antagonists in Battlestar Galactica?",
       "options": [
-        "Bon Iver, Bon Iver",
-        "22, A Million",
-        "Blood Bank EP",
-        "For Emma, Forever Ago"
+        "The Collective",
+        "The Cylons",
+        "The Rebels",
+        "The Federation"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Who won the 1989 Drum Corps International championships?",
+      "text": "What was the first movie to ever use a Wilhelm Scream?",
       "options": [
-        "The Academy",
-        "Blue Devils",
-        "The Bluecoats",
-        "Santa Clara Vanguard"
+        "Treasure of the Sierra Madre",
+        "Indiana Jones",
+        "Distant Drums",
+        "The Charge at Feather River"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
