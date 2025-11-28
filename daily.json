@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The likeness of which president is featured on the rare $2 bill of USA currency?",
+      "text": "In aerodynamics, which force pushes an object upwards?",
       "options": [
-        "Martin Van Buren",
-        "John Quincy Adams",
-        "Ulysses Grant",
-        "Thomas Jefferson"
+        "Drag",
+        "Thrust",
+        "Weight",
+        "Lift"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In golf, what name is given to a hole score of two under par?",
+      "text": "Which former boy-band star released hit solo single \"Angels\" in 1997?",
       "options": [
-        "Eagle",
-        "Albatross",
-        "Bogey",
-        "Birdie"
+        "Robbie Williams",
+        "Gary Barlow",
+        "Harry Styles",
+        "Justin Timberlake"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the world's most expensive spice by weight?",
+      "text": "After how many years would you celebrate your crystal anniversary?",
       "options": [
-        "Vanilla",
-        "Cinnamon",
-        "Cardamom",
-        "Saffron"
+        "25",
+        "20",
+        "10",
+        "15"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the main antagonists in Battlestar Galactica?",
+      "text": "Ellie Goulding's earliest album was named?",
       "options": [
-        "The Collective",
-        "The Cylons",
-        "The Rebels",
-        "The Federation"
+        "Halcyon",
+        "Lights",
+        "Halcyon Days",
+        "Bright Lights"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What was the first movie to ever use a Wilhelm Scream?",
+      "text": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
       "options": [
-        "Treasure of the Sierra Madre",
-        "Indiana Jones",
-        "Distant Drums",
-        "The Charge at Feather River"
+        "Snake Pit",
+        "The Puppet Master's Theater",
+        "The Shatter's",
+        "The Tomb of the Acient's"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
