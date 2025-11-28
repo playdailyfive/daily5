@@ -1,64 +1,64 @@
 {
-  "day": "20251127",
-  "dayIndex": 96,
+  "day": "20251128",
+  "dayIndex": 97,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In aerodynamics, which force pushes an object upwards?",
+      "text": "What do the letters in the GMT time zone stand for?",
       "options": [
-        "Drag",
-        "Thrust",
-        "Weight",
-        "Lift"
+        "Global Meridian Time",
+        "General Median Time",
+        "Greenwich Mean Time",
+        "Glasgow Man Time"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which former boy-band star released hit solo single \"Angels\" in 1997?",
+      "text": "What is the name of the album released in 2014 by American band Maroon 5?",
       "options": [
-        "Robbie Williams",
-        "Gary Barlow",
-        "Harry Styles",
-        "Justin Timberlake"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "After how many years would you celebrate your crystal anniversary?",
-      "options": [
-        "25",
-        "20",
-        "10",
-        "15"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Ellie Goulding's earliest album was named?",
-      "options": [
-        "Halcyon",
-        "Lights",
-        "Halcyon Days",
-        "Bright Lights"
+        "IV",
+        "V",
+        "III",
+        "X"
       ],
       "correct": 1,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
+      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
       "options": [
-        "Snake Pit",
-        "The Puppet Master's Theater",
-        "The Shatter's",
-        "The Tomb of the Acient's"
+        "Biryani",
+        "Pani puri",
+        "Tiki masala",
+        "Tandoori"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Where is the world's oldest still operational space launch facility located?",
+      "options": [
+        "Russia",
+        "Iran",
+        "Kazakhstan",
+        "United States"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "If you planted the seeds of Quercus robur, what would grow?",
+      "options": [
+        "Grains",
+        "Flowers",
+        "Trees",
+        "Vegetables"
       ],
       "correct": 2,
       "difficulty": "hard",
