@@ -1,68 +1,68 @@
 {
-  "day": "20251128",
-  "dayIndex": 97,
+  "day": "20251129",
+  "dayIndex": 98,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the English language, what is the name of the \"&\" character?",
+      "text": "When was the Playstation 3 released?",
       "options": [
-        "Eightslash",
-        "And Sign",
-        "Ampersand",
-        "Obelus "
+        "November 11, 2006",
+        "July 16, 2006",
+        "January 8, 2007",
+        "December 25, 2007"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
+      "text": "The Queen song `A Kind Of Magic` is featured in which 1986 film?",
       "options": [
-        "Pretty in Pink",
-        "Dirty Dancing",
-        "Ferris Bueller's Day Off",
-        "Three Men and a Baby"
+        "Flash Gordon",
+        "Howard the Duck",
+        "Labyrinth",
+        "Highlander"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "The Mexican Beer \"Corona\" is what type of beer?",
       "options": [
-        "Psychology",
-        "Phrenology",
-        "Physical Therapy",
-        "Philosophy"
+        "India Pale Ale",
+        "Pale Lager",
+        "Pilfsner",
+        "Baltic Porter"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The towns of Brugelette, Arlon and Ath are located in which country?",
+      "text": "What is the correct phrase for the Latin saying \"Romanes Eunt Domus\" in Monty Python's Life of Brian?",
       "options": [
-        "Andorra",
-        "France",
-        "Belgium",
-        "Luxembourg"
+        "Tomate Ite Domum",
+        "Roxani Ite Domum",
+        "Romani Ite Domum",
+        "Romans Go Home"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "If you planted the seeds of Quercus robur, what would grow?",
+      "text": "Which band is the longest active band in the world with no breaks or line-up changes?",
       "options": [
-        "Grains",
-        "Flowers",
-        "Trees",
-        "Vegetables"
+        "U2",
+        "Rolling Stones",
+        "Rush",
+        "Radiohead"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
