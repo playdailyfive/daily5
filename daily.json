@@ -5,48 +5,48 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do the letters in the GMT time zone stand for?",
+      "text": "In the English language, what is the name of the \"&\" character?",
       "options": [
-        "Global Meridian Time",
-        "General Median Time",
-        "Greenwich Mean Time",
-        "Glasgow Man Time"
+        "Eightslash",
+        "And Sign",
+        "Ampersand",
+        "Obelus "
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the album released in 2014 by American band Maroon 5?",
+      "text": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
       "options": [
-        "IV",
-        "V",
-        "III",
-        "X"
+        "Pretty in Pink",
+        "Dirty Dancing",
+        "Ferris Bueller's Day Off",
+        "Three Men and a Baby"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Biryani",
-        "Pani puri",
-        "Tiki masala",
-        "Tandoori"
+        "Psychology",
+        "Phrenology",
+        "Physical Therapy",
+        "Philosophy"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Where is the world's oldest still operational space launch facility located?",
+      "text": "The towns of Brugelette, Arlon and Ath are located in which country?",
       "options": [
-        "Russia",
-        "Iran",
-        "Kazakhstan",
-        "United States"
+        "Andorra",
+        "France",
+        "Belgium",
+        "Luxembourg"
       ],
       "correct": 2,
       "difficulty": "medium",
