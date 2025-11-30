@@ -1,68 +1,68 @@
 {
-  "day": "20251129",
-  "dayIndex": 98,
+  "day": "20251130",
+  "dayIndex": 99,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When was the Playstation 3 released?",
+      "text": "Which American president appears on a one dollar bill?",
       "options": [
-        "November 11, 2006",
-        "July 16, 2006",
-        "January 8, 2007",
-        "December 25, 2007"
+        "George Washington",
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "Benjamin Franklin"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What album did Bon Iver release in 2016?",
+      "text": "What is the best selling album of all time from 1976 to 2018?",
       "options": [
-        "Bon Iver, Bon Iver",
-        "For Emma, Forever Ago",
-        "Blood Bank EP",
-        "22, A Million"
+        "Abbey Road",
+        "Back in Black",
+        "Thriller",
+        "The Dark Side of the Moon"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the defining characteristic of someone who is described as hirsute?",
+      "text": "After how many years would you celebrate your crystal anniversary?",
       "options": [
-        "Rude",
-        "Hairy",
-        "Funny",
-        "Tall"
+        "20",
+        "15",
+        "10",
+        "25"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 1994 movie \"Speed\", what is the minimum speed the bus must go to prevent to bomb from exploding?",
+      "text": "From which country does the piano originate?",
       "options": [
-        "70 mph",
-        "40 mph",
-        "50 mph",
-        "60 mph"
+        "Germany",
+        "Italy",
+        "Austria",
+        "France"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What was the name of the actor who played Leatherface in the 1974 horror film, The Texas Chainsaw Massacre?",
+      "text": "Billy Herrington is from which US state?",
       "options": [
-        "Gunnar Hansen",
-        "Joe Bill Hogan",
-        "John Dugan",
-        "Edwin Neal"
+        "New York",
+        "Arizona",
+        "California",
+        "Georgia"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Celebrities"
     }
   ]
 }
