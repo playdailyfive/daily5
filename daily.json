@@ -17,52 +17,52 @@
       "category": "General Knowledge"
     },
     {
-      "text": "The Queen song `A Kind Of Magic` is featured in which 1986 film?",
+      "text": "What album did Bon Iver release in 2016?",
       "options": [
-        "Flash Gordon",
-        "Howard the Duck",
-        "Labyrinth",
-        "Highlander"
+        "Bon Iver, Bon Iver",
+        "For Emma, Forever Ago",
+        "Blood Bank EP",
+        "22, A Million"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "text": "What is the defining characteristic of someone who is described as hirsute?",
       "options": [
-        "India Pale Ale",
-        "Pale Lager",
-        "Pilfsner",
-        "Baltic Porter"
+        "Rude",
+        "Hairy",
+        "Funny",
+        "Tall"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the correct phrase for the Latin saying \"Romanes Eunt Domus\" in Monty Python's Life of Brian?",
+      "text": "In the 1994 movie \"Speed\", what is the minimum speed the bus must go to prevent to bomb from exploding?",
       "options": [
-        "Tomate Ite Domum",
-        "Roxani Ite Domum",
-        "Romani Ite Domum",
-        "Romans Go Home"
+        "70 mph",
+        "40 mph",
+        "50 mph",
+        "60 mph"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which band is the longest active band in the world with no breaks or line-up changes?",
+      "text": "What was the name of the actor who played Leatherface in the 1974 horror film, The Texas Chainsaw Massacre?",
       "options": [
-        "U2",
-        "Rolling Stones",
-        "Rush",
-        "Radiohead"
+        "Gunnar Hansen",
+        "Joe Bill Hogan",
+        "John Dugan",
+        "Edwin Neal"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
