@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American president appears on a one dollar bill?",
+      "text": "What is the French word for \"hat\"?",
       "options": [
-        "George Washington",
-        "Abraham Lincoln",
-        "Thomas Jefferson",
-        "Benjamin Franklin"
+        "Chapeau",
+        " &Eacute;charpe",
+        "Bonnet",
+        " Casque"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the best selling album of all time from 1976 to 2018?",
+      "text": "How many players are there in an association football/soccer team?",
       "options": [
-        "Abbey Road",
-        "Back in Black",
-        "Thriller",
-        "The Dark Side of the Moon"
+        "9",
+        "10",
+        "11",
+        "8"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "After how many years would you celebrate your crystal anniversary?",
+      "text": "What is real haggis made of?",
       "options": [
-        "20",
-        "15",
-        "10",
-        "25"
+        "Sheep's Heart, Kidneys and Lungs",
+        "Sheep's Heart, Liver and Lungs",
+        "Sheep's Liver, Kidneys and Eyes",
+        "Whole Sheep"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "From which country does the piano originate?",
+      "text": "According to their 1974 hit, what were Brownsville Station doing \"In The Boys' Room\"?",
       "options": [
-        "Germany",
-        "Italy",
-        "Austria",
-        "France"
+        "Hangin'",
+        "Smokin'",
+        "Lovin'",
+        "Peein'"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Billy Herrington is from which US state?",
+      "text": "\"All the Boys\" by Panic! At the Disco was released as a bonus track on what album?",
       "options": [
-        "New York",
-        "Arizona",
-        "California",
-        "Georgia"
+        "Too Weird To Live, Too Rare To Die!",
+        "A Fever You Can't Sweat Out",
+        "Death Of A Bachelor",
+        "Vices & Virtues"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     }
   ]
 }
