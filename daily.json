@@ -1,68 +1,68 @@
 {
-  "day": "20251130",
-  "dayIndex": 99,
+  "day": "20251201",
+  "dayIndex": 100,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"hat\"?",
+      "text": "What country has had prime ministers named Eden, Major, Peel, Law, Brown and Heath?",
       "options": [
-        "Chapeau",
-        " &Eacute;charpe",
-        "Bonnet",
-        " Casque"
+        "United Kingdom",
+        "Australia",
+        "New Zealand",
+        "Canada"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "How many players are there in an association football/soccer team?",
+      "text": "On the NBC show Community, whose catch-phrase was \"Pop! Pop!\"?",
       "options": [
-        "9",
-        "10",
-        "11",
-        "8"
+        "Star Burns",
+        "Senoir Chang",
+        "Leonard",
+        "Magnitude"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "What is the Portuguese word for \"Brazil\"?",
+      "options": [
+        "Brazil",
+        "Brasilia",
+        "Bras&iacute;l",
+        "Brasil"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the exact length of one non-curved part in Lane 1 of an Olympic Track?",
+      "options": [
+        "84.39m",
+        "100yd",
+        "109.36yd",
+        "100m"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Sports"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "What North American tourist attraction is served by the \"Maid of the Mist\" tour company?",
       "options": [
-        "Sheep's Heart, Kidneys and Lungs",
-        "Sheep's Heart, Liver and Lungs",
-        "Sheep's Liver, Kidneys and Eyes",
-        "Whole Sheep"
+        "Whistler, British Columbia",
+        "Disney World",
+        "Niagara Falls",
+        "Yosemite National Park"
       ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "According to their 1974 hit, what were Brownsville Station doing \"In The Boys' Room\"?",
-      "options": [
-        "Hangin'",
-        "Smokin'",
-        "Lovin'",
-        "Peein'"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "\"All the Boys\" by Panic! At the Disco was released as a bonus track on what album?",
-      "options": [
-        "Too Weird To Live, Too Rare To Die!",
-        "A Fever You Can't Sweat Out",
-        "Death Of A Bachelor",
-        "Vices & Virtues"
-      ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
