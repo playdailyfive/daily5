@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What country has had prime ministers named Eden, Major, Peel, Law, Brown and Heath?",
+      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
       "options": [
-        "United Kingdom",
-        "Australia",
-        "New Zealand",
-        "Canada"
+        "Accounting Fraud",
+        "Money Laundering",
+        "Extortion",
+        "Blackmail"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "On the NBC show Community, whose catch-phrase was \"Pop! Pop!\"?",
+      "text": "Who played Thanos in Avengers: Infinity War and Avengers: End Game?",
       "options": [
-        "Star Burns",
-        "Senoir Chang",
-        "Leonard",
-        "Magnitude"
+        "Tom Hiddleston",
+        "Sean Gunn",
+        "Adam Sandler",
+        "Josh Brolin"
       ],
       "correct": 3,
       "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "options": [
+        "India Pale Ale",
+        "Pilfsner",
+        "Baltic Porter",
+        "Pale Lager"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In Battlestar Galactica (2004), what is the name of the President of the Twelve Colonies?",
+      "options": [
+        "Laura Roslin",
+        "Tricia Helfer",
+        "Harry Stills",
+        "William Adama"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "What is the Portuguese word for \"Brazil\"?",
+      "text": "In the book series \"Odd Thomas\", Danny Jessup has what genetic disease? ",
       "options": [
-        "Brazil",
-        "Brasilia",
-        "Bras&iacute;l",
-        "Brasil"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the exact length of one non-curved part in Lane 1 of an Olympic Track?",
-      "options": [
-        "84.39m",
-        "100yd",
-        "109.36yd",
-        "100m"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Sports"
-    },
-    {
-      "text": "What North American tourist attraction is served by the \"Maid of the Mist\" tour company?",
-      "options": [
-        "Whistler, British Columbia",
-        "Disney World",
-        "Niagara Falls",
-        "Yosemite National Park"
+        "Spinocerebellar ataxia",
+        "Adrenoleukodystrophy",
+        " Osteogenesis Imperfecta",
+        "Cystic Fibrosis"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
