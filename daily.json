@@ -1,68 +1,68 @@
 {
-  "day": "20251201",
-  "dayIndex": 100,
+  "day": "20251202",
+  "dayIndex": 101,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
+      "text": "In past times, what would a gentleman keep in his fob pocket?",
       "options": [
-        "Accounting Fraud",
-        "Money Laundering",
-        "Extortion",
-        "Blackmail"
+        "Notebook",
+        "Keys",
+        "Watch",
+        "Money"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who played Thanos in Avengers: Infinity War and Avengers: End Game?",
+      "text": "In which Indian city can the Taj Mahal be found?",
       "options": [
-        "Tom Hiddleston",
-        "Sean Gunn",
-        "Adam Sandler",
-        "Josh Brolin"
+        "Thane",
+        "Faridabad",
+        "Mumbai",
+        "Agra"
       ],
       "correct": 3,
       "difficulty": "easy",
+      "category": "Geography"
+    },
+    {
+      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
+      "options": [
+        "Dell",
+        "Toshiba",
+        "Asus",
+        "Hewlett-Packard"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who voices the main character Blu in the 2011 animated film \"Rio\"?",
+      "options": [
+        "Zach Galifianakis",
+        "Jesse Eisenberg",
+        "Michael Cera",
+        "Jonah Hill"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "text": "What North American tourist attraction is served by the \"Maid of the Mist\" tour company?",
       "options": [
-        "India Pale Ale",
-        "Pilfsner",
-        "Baltic Porter",
-        "Pale Lager"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In Battlestar Galactica (2004), what is the name of the President of the Twelve Colonies?",
-      "options": [
-        "Laura Roslin",
-        "Tricia Helfer",
-        "Harry Stills",
-        "William Adama"
+        "Niagara Falls",
+        "Whistler, British Columbia",
+        "Yosemite National Park",
+        "Disney World"
       ],
       "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "In the book series \"Odd Thomas\", Danny Jessup has what genetic disease? ",
-      "options": [
-        "Spinocerebellar ataxia",
-        "Adrenoleukodystrophy",
-        " Osteogenesis Imperfecta",
-        "Cystic Fibrosis"
-      ],
-      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     }
   ]
 }
