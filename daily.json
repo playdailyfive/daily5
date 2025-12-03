@@ -1,68 +1,68 @@
 {
-  "day": "20251202",
-  "dayIndex": 101,
+  "day": "20251203",
+  "dayIndex": 102,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the largest organ of the human body?",
+      "text": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
       "options": [
-        "Liver",
-        "large Intestine",
-        "Skin",
-        "Heart"
+        "Panda",
+        "Tiger",
+        "Gorilla",
+        "Crocodile"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Aubrey Graham is better known as",
+      "text": "Which punk rock band released hit songs such as \"Californication\", \"Can't Stop\" and \"Under the Bridge\"?",
       "options": [
-        "2 Chainz",
-        "Lil Wayne",
-        "Travis Scott",
-        "Drake"
+        "Red Hot Chilli Peppers",
+        "Green Day",
+        "Linkin Park",
+        "Foo Fighters"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "text": "Scotch whisky and Drambuie make up which cocktail?",
       "options": [
-        "One hundred",
-        "Twenty",
-        "Ten",
-        "Five"
+        "Manhattan",
+        "Rusty Nail",
+        "Sex on the Beach",
+        "Screwdriver"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Australia?",
+      "text": "In Mulan (1998), who is the leader of the Huns?",
       "options": [
-        "Brisbane",
-        "Canberra",
-        "Sydney",
-        "Melbourne"
+        "Chien-Po",
+        "Li Shang",
+        "Fa Zhou",
+        "Shan Yu"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In \"Star Trek\", what is the Klingon delicacy of \"gagh\" made from?",
+      "text": "What is the most common climbing route for the second highest mountain in the world, K2?",
       "options": [
-        "Serpent worms",
-        "Earthworms",
-        "Klingworms",
-        "Spaghetti noodles"
+        "Abruzzi Spur",
+        "Polish Line",
+        "Cesen Route",
+        "Magic Line"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     }
   ]
 }
