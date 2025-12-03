@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In past times, what would a gentleman keep in his fob pocket?",
+      "text": "What is the largest organ of the human body?",
       "options": [
-        "Notebook",
-        "Keys",
-        "Watch",
-        "Money"
+        "Liver",
+        "large Intestine",
+        "Skin",
+        "Heart"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which Indian city can the Taj Mahal be found?",
+      "text": "Aubrey Graham is better known as",
       "options": [
-        "Thane",
-        "Faridabad",
-        "Mumbai",
-        "Agra"
+        "2 Chainz",
+        "Lil Wayne",
+        "Travis Scott",
+        "Drake"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Celebrities"
     },
     {
-      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
+      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
       "options": [
-        "Dell",
-        "Toshiba",
-        "Asus",
-        "Hewlett-Packard"
+        "One hundred",
+        "Twenty",
+        "Ten",
+        "Five"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who voices the main character Blu in the 2011 animated film \"Rio\"?",
+      "text": "What is the capital of Australia?",
       "options": [
-        "Zach Galifianakis",
-        "Jesse Eisenberg",
-        "Michael Cera",
-        "Jonah Hill"
+        "Brisbane",
+        "Canberra",
+        "Sydney",
+        "Melbourne"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "What North American tourist attraction is served by the \"Maid of the Mist\" tour company?",
+      "text": "In \"Star Trek\", what is the Klingon delicacy of \"gagh\" made from?",
       "options": [
-        "Niagara Falls",
-        "Whistler, British Columbia",
-        "Yosemite National Park",
-        "Disney World"
+        "Serpent worms",
+        "Earthworms",
+        "Klingworms",
+        "Spaghetti noodles"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     }
   ]
 }
