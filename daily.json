@@ -1,68 +1,68 @@
 {
-  "day": "20251204",
-  "dayIndex": 103,
+  "day": "20251205",
+  "dayIndex": 104,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What was the first ever London Underground line to be built?",
+      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
       "options": [
-        "Victoria Line",
-        "Circle Line",
-        "Bakerloo Line",
-        "Metropolitan Line"
+        "Smoking",
+        "Slacking",
+        "Cheating",
+        "Stealing"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Guy's Grocery Games is hosted by which presenter?",
+      "text": "In the Super Mario Bros. Movie (2023), who plays Toad?",
       "options": [
-        "Guy Martin",
-        "Guy Ritchie",
-        "Guy Fieri",
-        "Ainsley Harriott"
+        "Seth Rogan",
+        "Keegan-Michael Key",
+        "Charlie Day",
+        "Jack Black"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "Which essential condiment is also known as Japanese horseradish?",
+      "options": [
+        "Karashi",
+        "Ponzu",
+        "Wasabi ",
+        "Mentsuyu"
       ],
       "correct": 2,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "Which month is Black History Month in the US?",
-      "options": [
-        "February",
-        "May",
-        "November",
-        "August"
-      ],
-      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What cricketing term denotes a batsman being dismissed with a score of zero?",
+      "text": "Who had hits in the 70s with the songs \"Lonely Boy\" and \"Never Let Her Slip Away\"?",
       "options": [
-        "Duck",
-        "Beamer",
-        "Carry",
-        "Bye"
+        "Elton John",
+        "Andrew Gold",
+        "Leo Sayer",
+        "Barry White "
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "text": "What was the third country to have a McDonald's restaurant?",
       "options": [
-        "Vietnam",
-        "Thailand",
-        "Indonesia",
-        "India"
+        "France",
+        "Japan",
+        "Costa Rica",
+        "Australia"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
