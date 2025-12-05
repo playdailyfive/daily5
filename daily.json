@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
+      "text": "What was the first ever London Underground line to be built?",
       "options": [
-        "Qaraqum Canal",
-        "Panama Canal",
-        "Sinai Canal",
-        "Suez Canal"
+        "Victoria Line",
+        "Circle Line",
+        "Bakerloo Line",
+        "Metropolitan Line"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
+      "text": "Guy's Grocery Games is hosted by which presenter?",
       "options": [
-        "Stephenie Meyer",
-        "Suzanne Collins",
-        "John Green",
-        "Stephen Chbosky"
+        "Guy Martin",
+        "Guy Ritchie",
+        "Guy Fieri",
+        "Ainsley Harriott"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the Italian word for \"tomato\"?",
+      "text": "Which month is Black History Month in the US?",
       "options": [
-        "Pomodoro",
-        "Aglio",
-        "Cipolla",
-        "Peperoncino"
+        "February",
+        "May",
+        "November",
+        "August"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the movie \"The Iron Giant,\" this character is the protagonist.",
+      "text": "What cricketing term denotes a batsman being dismissed with a score of zero?",
       "options": [
-        "Hogarth Hughes",
-        "Dean McCoppin",
-        "Annie Hughes",
-        "Kent Mansley"
+        "Duck",
+        "Beamer",
+        "Carry",
+        "Bye"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
+      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
       "options": [
-        "Japanese",
-        "Russian",
-        "Indian",
-        "Chinese"
+        "Vietnam",
+        "Thailand",
+        "Indonesia",
+        "India"
       ],
       "correct": 3,
       "difficulty": "hard",
