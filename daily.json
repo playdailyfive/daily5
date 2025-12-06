@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
+      "text": "What step in cellular respiration forms ATP?",
       "options": [
-        "Smoking",
-        "Slacking",
-        "Cheating",
-        "Stealing"
+        "Glycolysis",
+        "Oxidative Phosphorylation",
+        "Calvin Cycle",
+        "Pyruvate Oxidation"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Super Mario Bros. Movie (2023), who plays Toad?",
+      "text": "What was Daft Punk's first studio album?",
       "options": [
-        "Seth Rogan",
-        "Keegan-Michael Key",
-        "Charlie Day",
-        "Jack Black"
+        "Discovery",
+        "Homework",
+        "Random Access Memories",
+        "Human After All"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which essential condiment is also known as Japanese horseradish?",
+      "text": "Apple co-founder Steve Jobs died from complications of which form of cancer?",
       "options": [
-        "Karashi",
-        "Ponzu",
-        "Wasabi ",
-        "Mentsuyu"
+        "Liver",
+        "Stomach",
+        "Pancreatic",
+        "Bone"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who had hits in the 70s with the songs \"Lonely Boy\" and \"Never Let Her Slip Away\"?",
+      "text": "The Who's eponymous line, \"Teenage Wasteland\", appears in which of their songs?",
       "options": [
-        "Elton John",
-        "Andrew Gold",
-        "Leo Sayer",
-        "Barry White "
+        "The Seeker",
+        "Baba O' Riley",
+        "Won't Get Fooled Again",
+        "Pinball Wizard"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What was the third country to have a McDonald's restaurant?",
+      "text": "What is the most commonly used noun in the English language?",
       "options": [
-        "France",
-        "Japan",
-        "Costa Rica",
-        "Australia"
+        "Water",
+        "Home",
+        "Time",
+        "Man"
       ],
       "correct": 2,
       "difficulty": "hard",
