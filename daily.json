@@ -1,66 +1,66 @@
 {
-  "day": "20251205",
-  "dayIndex": 104,
+  "day": "20251206",
+  "dayIndex": 105,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What step in cellular respiration forms ATP?",
+      "text": "What do sailors call the right side of a boat?",
       "options": [
-        "Glycolysis",
-        "Oxidative Phosphorylation",
-        "Calvin Cycle",
-        "Pyruvate Oxidation"
+        "Stern",
+        "Starboard",
+        "Bow",
+        "Port"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was Daft Punk's first studio album?",
+      "text": "Which animated movie was first to feature a celebrity as a voice actor?",
       "options": [
-        "Discovery",
-        "Homework",
-        "Random Access Memories",
-        "Human After All"
+        "Aladdin",
+        "Toy Story",
+        "James and the Giant Peach",
+        "The Hunchback of Notre Dame"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Apple co-founder Steve Jobs died from complications of which form of cancer?",
+      "text": "The early part of which decade, did the Goth Subculture begin?",
       "options": [
-        "Liver",
-        "Stomach",
-        "Pancreatic",
-        "Bone"
+        "1980s",
+        "1990s",
+        "2000s",
+        "1970s"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The Who's eponymous line, \"Teenage Wasteland\", appears in which of their songs?",
+      "text": "The co-creator of Gorillaz, Damon Albarn, is also the lead singer of what band?",
       "options": [
-        "The Seeker",
-        "Baba O' Riley",
-        "Won't Get Fooled Again",
-        "Pinball Wizard"
+        "Blur",
+        "Queens of the Stone Age",
+        "Oasis",
+        "Radiohead"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the most commonly used noun in the English language?",
+      "text": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
       "options": [
-        "Water",
-        "Home",
-        "Time",
-        "Man"
+        "Bulldog",
+        "Yorkshire Terrier",
+        "Pug",
+        "Boxer"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
       "category": "General Knowledge"
     }
