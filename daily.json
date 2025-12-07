@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the right side of a boat?",
+      "text": "In Half-Life, what is the name of the alien that attaches to heads?",
       "options": [
-        "Stern",
-        "Starboard",
-        "Bow",
-        "Port"
+        "Vortigaunt",
+        "Headcrab",
+        "Facehugger",
+        "Bullsquid"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which animated movie was first to feature a celebrity as a voice actor?",
+      "text": "Neil Hamburger is played by which comedian?",
       "options": [
-        "Aladdin",
-        "Toy Story",
-        "James and the Giant Peach",
-        "The Hunchback of Notre Dame"
+        "Gregg Turkington",
+        "Nathan Fielder",
+        "Tim Heidecker",
+        "Todd Glass"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Celebrities"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "What is the German word for \"spoon\"?",
       "options": [
-        "1980s",
-        "1990s",
-        "2000s",
-        "1970s"
+        "L&ouml;ffel",
+        "Gabel",
+        "Messer",
+        "Essst&auml;bchen"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The co-creator of Gorillaz, Damon Albarn, is also the lead singer of what band?",
+      "text": "In the TV series \"Person of Interest\", who plays the character \"Harold Finch\"?",
       "options": [
-        "Blur",
-        "Queens of the Stone Age",
-        "Oasis",
-        "Radiohead"
+        "Michael Emerson",
+        "Kevin Chapman",
+        "Jim Caviezel",
+        "Taraji P. Henson"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
+      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
       "options": [
-        "Bulldog",
-        "Yorkshire Terrier",
-        "Pug",
-        "Boxer"
+        "Zoroastrianism",
+        "Paganism",
+        "Judaism",
+        "Ashurism"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Celebrities"
     }
   ]
 }
