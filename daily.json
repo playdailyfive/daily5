@@ -1,68 +1,68 @@
 {
-  "day": "20251206",
-  "dayIndex": 105,
+  "day": "20251207",
+  "dayIndex": 106,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In Half-Life, what is the name of the alien that attaches to heads?",
+      "text": "What zodiac sign is represented by a pair of scales?",
       "options": [
-        "Vortigaunt",
-        "Headcrab",
-        "Facehugger",
-        "Bullsquid"
+        "Aries",
+        "Libra",
+        "Capricorn",
+        "Sagittarius"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Neil Hamburger is played by which comedian?",
+      "text": "Who plays Jack Burton in the movie \"Big Trouble in Little China?\"",
       "options": [
-        "Gregg Turkington",
-        "Nathan Fielder",
-        "Tim Heidecker",
-        "Todd Glass"
+        "Kurt Russell",
+        "Harrison Ford",
+        "John Cusack",
+        "Patrick Swayze"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Celebrities"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the German word for \"spoon\"?",
+      "text": "What is the romanized Russian word for \"winter\"?",
       "options": [
-        "L&ouml;ffel",
-        "Gabel",
-        "Messer",
-        "Essst&auml;bchen"
+        "Vesna",
+        "Zima",
+        "Osen'",
+        "Leto"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the TV series \"Person of Interest\", who plays the character \"Harold Finch\"?",
+      "text": "Which popular rock band has a one-armed drummer?",
       "options": [
-        "Michael Emerson",
-        "Kevin Chapman",
-        "Jim Caviezel",
-        "Taraji P. Henson"
+        "Lynyrd Skynyrd",
+        "Def Leppard",
+        "Foreigner",
+        "The Beatles"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
+      "text": "What is the weight of a Gold Bar in Fallout: New Vegas?",
       "options": [
-        "Zoroastrianism",
-        "Paganism",
-        "Judaism",
-        "Ashurism"
+        "30 Pounds",
+        "32.50 Pounds",
+        "40 Pounds",
+        "35 Pounds"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "General Knowledge"
     }
   ]
 }
