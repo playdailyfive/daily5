@@ -1,68 +1,68 @@
 {
-  "day": "20251207",
-  "dayIndex": 106,
+  "day": "20251208",
+  "dayIndex": 107,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
+      "text": "Which company did Valve cooperate with in the creation of the Vive?",
       "options": [
-        "Money Laundering",
-        "Accounting Fraud",
-        "Extortion",
-        "Blackmail"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the orange and white bot's name in \"Star Wars: The Force Awakens\"?",
-      "options": [
-        "BB-8",
-        "R2-D2",
-        "AA-A",
-        "BB-3"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "What is the Swedish word for \"window\"?",
-      "options": [
-        "Sk&auml;rm",
-        "F&ouml;nster",
-        "Ruta",
-        "H&aring;l"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "\"The Day the Music Died\" was a tragic plane crash that killed three musicians in which decade?",
-      "options": [
-        "70's",
-        "50's",
-        "40's",
-        "60's"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "Which 1994 film did Roger Ebert famously despise, saying \"I hated hated hated hated hated this movie\".",
-      "options": [
-        "3 Ninjas Kick Back",
-        "Richie Rich",
-        "The Santa Clause",
-        "North"
+        "Oculus",
+        "Razer",
+        "Google",
+        "HTC"
       ],
       "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "When did the TV show Rick and Morty first air on Adult Swim?",
+      "options": [
+        "2014",
+        "2016",
+        "2015",
+        "2013"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "What is the unit of currency in Laos?",
+      "options": [
+        "Kip",
+        "Konra",
+        "Dollar",
+        "Ruble"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "The land of Gotland is located in which European country?",
+      "options": [
+        "Denmark",
+        "Norway",
+        "Sweden",
+        "Germany"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "Which English football team is nicknamed 'The Tigers'?",
+      "options": [
+        "Hull City",
+        "Cardiff City",
+        "Manchester City",
+        "Bristol City"
+      ],
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     }
   ]
 }
