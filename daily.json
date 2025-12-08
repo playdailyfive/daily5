@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What zodiac sign is represented by a pair of scales?",
+      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
       "options": [
-        "Aries",
-        "Libra",
-        "Capricorn",
-        "Sagittarius"
+        "Money Laundering",
+        "Accounting Fraud",
+        "Extortion",
+        "Blackmail"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays Jack Burton in the movie \"Big Trouble in Little China?\"",
+      "text": "What is the orange and white bot's name in \"Star Wars: The Force Awakens\"?",
       "options": [
-        "Kurt Russell",
-        "Harrison Ford",
-        "John Cusack",
-        "Patrick Swayze"
+        "BB-8",
+        "R2-D2",
+        "AA-A",
+        "BB-3"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is the romanized Russian word for \"winter\"?",
+      "text": "What is the Swedish word for \"window\"?",
       "options": [
-        "Vesna",
-        "Zima",
-        "Osen'",
-        "Leto"
+        "Sk&auml;rm",
+        "F&ouml;nster",
+        "Ruta",
+        "H&aring;l"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which popular rock band has a one-armed drummer?",
+      "text": "\"The Day the Music Died\" was a tragic plane crash that killed three musicians in which decade?",
       "options": [
-        "Lynyrd Skynyrd",
-        "Def Leppard",
-        "Foreigner",
-        "The Beatles"
+        "70's",
+        "50's",
+        "40's",
+        "60's"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the weight of a Gold Bar in Fallout: New Vegas?",
+      "text": "Which 1994 film did Roger Ebert famously despise, saying \"I hated hated hated hated hated this movie\".",
       "options": [
-        "30 Pounds",
-        "32.50 Pounds",
-        "40 Pounds",
-        "35 Pounds"
+        "3 Ninjas Kick Back",
+        "Richie Rich",
+        "The Santa Clause",
+        "North"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     }
   ]
 }
