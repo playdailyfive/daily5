@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which company did Valve cooperate with in the creation of the Vive?",
+      "text": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
       "options": [
-        "Oculus",
-        "Razer",
-        "Google",
-        "HTC"
+        "Apple",
+        "Pear",
+        "Peach",
+        "Plum"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "When did the TV show Rick and Morty first air on Adult Swim?",
+      "text": "Which brass instrument has the lowest pitch in an orchestra?",
       "options": [
-        "2014",
-        "2016",
-        "2015",
-        "2013"
+        "Trumpet",
+        "Saxophone",
+        "Trombone",
+        "Tuba"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the unit of currency in Laos?",
+      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
       "options": [
-        "Kip",
-        "Konra",
-        "Dollar",
-        "Ruble"
+        "Modernism",
+        "Baroque",
+        "Gothic Revival",
+        "Neoclassical"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The land of Gotland is located in which European country?",
+      "text": "What is Meg's full name in \"Family Guy\"?",
       "options": [
-        "Denmark",
-        "Norway",
-        "Sweden",
-        "Germany"
+        "Who-Cares Griffin",
+        "Neil Griffin",
+        "Megatron Griffin",
+        "Megan Griffin"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Which English football team is nicknamed 'The Tigers'?",
+      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
       "options": [
-        "Hull City",
-        "Cardiff City",
-        "Manchester City",
-        "Bristol City"
+        "Rudyard Kipling",
+        "Edgar Allan Poe",
+        "William Wordsworth",
+        "William Shakespeare"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Books"
     }
   ]
 }
