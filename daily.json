@@ -1,68 +1,68 @@
 {
-  "day": "20251208",
-  "dayIndex": 107,
+  "day": "20251209",
+  "dayIndex": 108,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?",
+      "text": "What is Cynophobia the fear of?",
       "options": [
-        "Apple",
-        "Pear",
-        "Peach",
-        "Plum"
+        "Germs",
+        "Flying",
+        "Birds",
+        "Dogs"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which brass instrument has the lowest pitch in an orchestra?",
+      "text": "In the movie \"Cast Away\" the main protagonist's best friend while on the island is named",
       "options": [
-        "Trumpet",
-        "Saxophone",
-        "Trombone",
-        "Tuba"
+        "Willy",
+        "Carson",
+        "Jackson",
+        "Wilson"
       ],
       "correct": 3,
       "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "Who invented Pastafarianism?",
+      "options": [
+        "Zach Soldi",
+        "Bobby Henderson",
+        "Eric Tignor",
+        "Bill Nye"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "The letters in the name of the band \"TWRP\" stand for what?",
+      "options": [
+        "Tupperware Remix Party",
+        "Totally Wicked Robot Performers",
+        "Taiwan Roleplay",
+        "Team Wild and the Radio Pirates"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
+      "text": "Who played the sun baby in the original run of Teletubbies?",
       "options": [
-        "Modernism",
-        "Baroque",
-        "Gothic Revival",
-        "Neoclassical"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is Meg's full name in \"Family Guy\"?",
-      "options": [
-        "Who-Cares Griffin",
-        "Neil Griffin",
-        "Megatron Griffin",
-        "Megan Griffin"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
-      "options": [
-        "Rudyard Kipling",
-        "Edgar Allan Poe",
-        "William Wordsworth",
-        "William Shakespeare"
+        "Jessica Smith",
+        "Lisa Brockwell",
+        "Pui Fan Lee",
+        "Sue Monroe"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     }
   ]
 }
