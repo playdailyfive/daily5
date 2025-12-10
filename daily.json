@@ -1,68 +1,68 @@
 {
-  "day": "20251209",
-  "dayIndex": 108,
+  "day": "20251210",
+  "dayIndex": 109,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
       "options": [
-        "Solid",
-        "Secure",
-        "Single",
-        "Subscriber"
+        "D. G. Yuengling and Son, Inc",
+        "Anheuser Busch",
+        "Boston Beer Company",
+        "Miller Coors"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "How many federal states does Germany have?",
+      "text": "What is the only state in the United States that does not have a flag in a shape with 4 edges?",
       "options": [
-        "25",
-        "13",
-        "32",
-        "16"
+        "New Mexico",
+        "Ohio",
+        "Idaho",
+        "Florida"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "What is the Swedish word for \"window\"?",
       "options": [
-        "Physical Therapy",
-        "Philosophy",
-        "Psychology",
-        "Phrenology"
+        "H&aring;l",
+        "Sk&auml;rm",
+        "Ruta",
+        "F&ouml;nster"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the lead singer and frontman of rock band R.E.M?",
+      "text": "Where are the Nazca Lines located?",
       "options": [
-        "Michael Stipe",
-        "Chris Martin",
-        "George Michael",
-        "Thom Yorke"
+        "Peru",
+        "Ecuador",
+        "Colombia",
+        "Brazil"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Where was Nicki Minaj born?",
+      "text": "In what Disney movie can you spot the character \"Pac-Man\" in if you look closely enough in some scenes?",
       "options": [
-        "Trinidad and Tobago",
-        "Grenada",
-        "Haiti",
-        "Saint Lucia"
+        "Fantasia",
+        "Big Hero 6",
+        "Monsters, Inc.",
+        "Tron"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
