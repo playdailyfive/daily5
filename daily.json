@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cynophobia the fear of?",
+      "text": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
       "options": [
-        "Germs",
-        "Flying",
-        "Birds",
-        "Dogs"
+        "Solid",
+        "Secure",
+        "Single",
+        "Subscriber"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the movie \"Cast Away\" the main protagonist's best friend while on the island is named",
+      "text": "How many federal states does Germany have?",
       "options": [
-        "Willy",
-        "Carson",
-        "Jackson",
-        "Wilson"
+        "25",
+        "13",
+        "32",
+        "16"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "Who invented Pastafarianism?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Zach Soldi",
-        "Bobby Henderson",
-        "Eric Tignor",
-        "Bill Nye"
+        "Physical Therapy",
+        "Philosophy",
+        "Psychology",
+        "Phrenology"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The letters in the name of the band \"TWRP\" stand for what?",
+      "text": "Who was the lead singer and frontman of rock band R.E.M?",
       "options": [
-        "Tupperware Remix Party",
-        "Totally Wicked Robot Performers",
-        "Taiwan Roleplay",
-        "Team Wild and the Radio Pirates"
+        "Michael Stipe",
+        "Chris Martin",
+        "George Michael",
+        "Thom Yorke"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Who played the sun baby in the original run of Teletubbies?",
+      "text": "Where was Nicki Minaj born?",
       "options": [
-        "Jessica Smith",
-        "Lisa Brockwell",
-        "Pui Fan Lee",
-        "Sue Monroe"
+        "Trinidad and Tobago",
+        "Grenada",
+        "Haiti",
+        "Saint Lucia"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     }
   ]
 }
