@@ -5,28 +5,28 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
+      "text": "What country does sushi & karaoke come from?",
       "options": [
-        "D. G. Yuengling and Son, Inc",
-        "Anheuser Busch",
-        "Boston Beer Company",
-        "Miller Coors"
+        "Japan",
+        "China",
+        "South Korea",
+        "Vietnam"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the only state in the United States that does not have a flag in a shape with 4 edges?",
+      "text": "Who plays Jack Burton in the movie \"Big Trouble in Little China?\"",
       "options": [
-        "New Mexico",
-        "Ohio",
-        "Idaho",
-        "Florida"
+        "Harrison Ford",
+        "Kurt Russell",
+        "John Cusack",
+        "Patrick Swayze"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
       "text": "What is the Swedish word for \"window\"?",
@@ -41,28 +41,28 @@
       "category": "General Knowledge"
     },
     {
-      "text": "Where are the Nazca Lines located?",
+      "text": "What genre of EDM is the Dutch DJ, musician, and remixer Armin van Buuren most well-known for?",
       "options": [
-        "Peru",
-        "Ecuador",
-        "Colombia",
-        "Brazil"
+        "Trance",
+        "Dubstep",
+        "Drum and Bass",
+        "House"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In what Disney movie can you spot the character \"Pac-Man\" in if you look closely enough in some scenes?",
+      "text": "What is the romanized Korean word for \"heart\"?",
       "options": [
-        "Fantasia",
-        "Big Hero 6",
-        "Monsters, Inc.",
-        "Tron"
+        "Jeongsin",
+        "Aejeong",
+        "Segseu",
+        "Simjang"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
