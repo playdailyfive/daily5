@@ -1,68 +1,68 @@
 {
-  "day": "20251211",
-  "dayIndex": 110,
+  "day": "20251212",
+  "dayIndex": 111,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is the youngest person to receive a Nobel Prize?",
+      "text": "What do sailors call the right side of a boat?",
       "options": [
-        "Lawrence Bragg",
-        "Werner Heisenberg",
-        "Malala Yousafzai",
-        "Yasser Arafat"
+        "Port",
+        "Starboard",
+        "Stern",
+        "Bow"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Green Eggs And Ham\" is a book by which author?",
+      "text": "What breed of dog was Marley in the film \"Marley & Me\" (2008)?",
       "options": [
-        "Dr. Seuss",
-        "Beatrix Potter",
-        "Roald Dahl",
-        "A.A. Milne"
+        "Dalmatian",
+        "Shiba Inu",
+        "Labrador Retriever",
+        "Golden Retriever"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "On average, Americans consume 100 pounds of what per second?",
+      "text": "In a standard set of playing cards, which is the only king without a moustache?",
       "options": [
-        "Chocolate",
-        "Donuts",
-        "Cocaine",
-        "Potatoes"
+        "Spades",
+        "Hearts",
+        "Diamonds",
+        "Clubs"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the most populous city in the Americas in 2015?",
+      "text": "In \"The Big Bang Theory\", what is Howard Wolowitz's nickname in World of Warcraft?",
       "options": [
-        "New York",
-        "Mexico City",
-        "Los Angeles",
-        "S&atilde;o Paulo"
+        "Rajesh",
+        "Sheldor",
+        "Wolowizard",
+        "Priya"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "Artis Leon Ivey Jr. is better known as which rap artist?",
+      "options": [
+        "Snoop Dogg",
+        "Ice T",
+        "Dr Dre",
+        "Coolio"
       ],
       "correct": 3,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "In the Magic: The Gathering universe, which plane does the Homelands expansion take place in?",
-      "options": [
-        "Tazeem",
-        "Bant",
-        "Ulgrotha",
-        "Llanowar"
-      ],
-      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     }
   ]
 }
