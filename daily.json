@@ -1,68 +1,68 @@
 {
-  "day": "20251212",
-  "dayIndex": 111,
+  "day": "20251213",
+  "dayIndex": 112,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
+      "text": "What style of beer will typically have a higher than average hop content?",
       "options": [
-        "Panama Canal",
-        "Suez Canal",
-        "Sinai Canal",
-        "Qaraqum Canal"
+        "India Pale Ale",
+        "Stout",
+        "Extra Special Bitter",
+        "Scotch Ale"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Disney character sings the song \"A Dream is a Wish Your Heart Makes\"?",
+      "text": "The Los Angeles Dodgers were originally from what U.S. city?",
       "options": [
-        "Snow White",
-        "Pocahontas",
-        "Cinderella",
-        "Belle"
+        "Brooklyn",
+        "Las Vegas",
+        "Boston",
+        "Seattle"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "Which country drives on the left side of the road?",
+      "text": "What is the currency of Poland?",
       "options": [
-        "Germany",
-        "Japan",
-        "Russia",
-        "China"
+        "Złoty",
+        "Krone",
+        "Ruble",
+        "Euro"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the largest lake in the African continent?",
+      "text": "The towns of Brugelette, Arlon and Ath are located in which country?",
       "options": [
-        "Lake Malawi",
-        "Lake Tanganyika",
-        "Lake Victoria",
-        "Lake Turkana"
+        "Belgium",
+        "Andorra",
+        "Luxembourg",
+        "France"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "Prior to working at Wizards of the Coast, \"Mark Rosewater\" was a writer for which show?",
+      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
       "options": [
-        "The X-Files",
-        "NYPD Blue",
-        "Boy Meets World",
-        "Roseanne"
+        "Thailand",
+        "India",
+        "Indonesia",
+        "Vietnam"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     }
   ]
 }
