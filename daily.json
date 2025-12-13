@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the right side of a boat?",
+      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
       "options": [
-        "Port",
-        "Starboard",
-        "Stern",
-        "Bow"
+        "Panama Canal",
+        "Suez Canal",
+        "Sinai Canal",
+        "Qaraqum Canal"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What breed of dog was Marley in the film \"Marley & Me\" (2008)?",
+      "text": "Which Disney character sings the song \"A Dream is a Wish Your Heart Makes\"?",
       "options": [
-        "Dalmatian",
-        "Shiba Inu",
-        "Labrador Retriever",
-        "Golden Retriever"
+        "Snow White",
+        "Pocahontas",
+        "Cinderella",
+        "Belle"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In a standard set of playing cards, which is the only king without a moustache?",
+      "text": "Which country drives on the left side of the road?",
       "options": [
-        "Spades",
-        "Hearts",
-        "Diamonds",
-        "Clubs"
+        "Germany",
+        "Japan",
+        "Russia",
+        "China"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"The Big Bang Theory\", what is Howard Wolowitz's nickname in World of Warcraft?",
+      "text": "What is the largest lake in the African continent?",
       "options": [
-        "Rajesh",
-        "Sheldor",
-        "Wolowizard",
-        "Priya"
+        "Lake Malawi",
+        "Lake Tanganyika",
+        "Lake Victoria",
+        "Lake Turkana"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "Artis Leon Ivey Jr. is better known as which rap artist?",
+      "text": "Prior to working at Wizards of the Coast, \"Mark Rosewater\" was a writer for which show?",
       "options": [
-        "Snoop Dogg",
-        "Ice T",
-        "Dr Dre",
-        "Coolio"
+        "The X-Files",
+        "NYPD Blue",
+        "Boy Meets World",
+        "Roseanne"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
