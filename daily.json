@@ -1,68 +1,68 @@
 {
-  "day": "20251213",
-  "dayIndex": 112,
+  "day": "20251214",
+  "dayIndex": 113,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How tall is the Burj Khalifa?",
+      "text": "In past times, what would a gentleman keep in his fob pocket?",
       "options": [
-        "2,722 ft",
-        "2,717 ft",
-        "2,546 ft",
-        "3,024 ft"
+        "Watch",
+        "Notebook",
+        "Keys",
+        "Money"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote \"The Scarlet Letter\", published in 1850?",
+      "text": "What was James Coburn's last film role before his death?",
       "options": [
-        "Nathaniel Hawthorne",
-        "Washington Irving",
-        "James Fenimore Cooper",
-        "Catherine Maria Sedgwick"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "What alcoholic drink is mainly made from juniper berries?",
-      "options": [
-        "Gin",
-        "Tequila",
-        "Vodka",
-        "Rum"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who was the star of the TV series \"24\"?",
-      "options": [
-        "Kiefer Sutherland",
-        "Kevin Bacon",
-        "Rob Lowe",
-        "Hugh Laurie"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "Who is a pioneer of \"Minimal Music\" in 1960s?",
-      "options": [
-        "Brian Eno",
-        "Steve Reich",
-        "Sigur R&oacute;s",
-        "Wolfgang Amadeus Mozart"
+        "Texas Rangers",
+        "American Gun",
+        "Snow Dogs",
+        "Monsters Inc"
       ],
       "correct": 1,
-      "difficulty": "hard",
+      "difficulty": "easy",
+      "category": "Celebrities"
+    },
+    {
+      "text": "What was the original name of the search engine \"Google\"?",
+      "options": [
+        "SearchPro",
+        "BackRub",
+        "Netscape Navigator",
+        "CatMassage"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What album did Gorillaz release in 2017?",
+      "options": [
+        "Plastic Beach",
+        "Demon Days",
+        "The Fall",
+        "Humanz"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
       "category": "Entertainment: Music"
+    },
+    {
+      "text": "What is Ron Weasley's middle name?",
+      "options": [
+        "John",
+        "Dominic",
+        "Bilius",
+        "Arthur"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Entertainment: Books"
     }
   ]
 }
