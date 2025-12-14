@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What style of beer will typically have a higher than average hop content?",
+      "text": "How tall is the Burj Khalifa?",
       "options": [
-        "India Pale Ale",
-        "Stout",
-        "Extra Special Bitter",
-        "Scotch Ale"
+        "2,722 ft",
+        "2,717 ft",
+        "2,546 ft",
+        "3,024 ft"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Los Angeles Dodgers were originally from what U.S. city?",
+      "text": "Who wrote \"The Scarlet Letter\", published in 1850?",
       "options": [
-        "Brooklyn",
-        "Las Vegas",
-        "Boston",
-        "Seattle"
+        "Nathaniel Hawthorne",
+        "Washington Irving",
+        "James Fenimore Cooper",
+        "Catherine Maria Sedgwick"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "What is the currency of Poland?",
+      "text": "What alcoholic drink is mainly made from juniper berries?",
       "options": [
-        "Złoty",
-        "Krone",
-        "Ruble",
-        "Euro"
+        "Gin",
+        "Tequila",
+        "Vodka",
+        "Rum"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The towns of Brugelette, Arlon and Ath are located in which country?",
+      "text": "Who was the star of the TV series \"24\"?",
       "options": [
-        "Belgium",
-        "Andorra",
-        "Luxembourg",
-        "France"
+        "Kiefer Sutherland",
+        "Kevin Bacon",
+        "Rob Lowe",
+        "Hugh Laurie"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "text": "Who is a pioneer of \"Minimal Music\" in 1960s?",
       "options": [
-        "Thailand",
-        "India",
-        "Indonesia",
-        "Vietnam"
+        "Brian Eno",
+        "Steve Reich",
+        "Sigur R&oacute;s",
+        "Wolfgang Amadeus Mozart"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
