@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In past times, what would a gentleman keep in his fob pocket?",
+      "text": "What is the official language of Brazil?",
       "options": [
-        "Watch",
-        "Notebook",
-        "Keys",
-        "Money"
+        "Portuguese",
+        "English",
+        "Spanish",
+        "Brazilian"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was James Coburn's last film role before his death?",
+      "text": "What was the cause of Marilyn Monroes suicide?",
       "options": [
-        "Texas Rangers",
-        "American Gun",
-        "Snow Dogs",
-        "Monsters Inc"
+        "House Fire",
+        "Drug Overdose",
+        "Gunshot",
+        "Knife Attack"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Celebrities"
     },
     {
-      "text": "What was the original name of the search engine \"Google\"?",
+      "text": "Where does water from Poland Spring water bottles come from?",
       "options": [
-        "SearchPro",
-        "BackRub",
-        "Netscape Navigator",
-        "CatMassage"
+        "Masovia, Poland",
+        "Maine, United States",
+        "Bavaria, Poland",
+        "Hesse, Germany"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What album did Gorillaz release in 2017?",
+      "text": "In which English county is Stonehenge?",
       "options": [
-        "Plastic Beach",
-        "Demon Days",
-        "The Fall",
-        "Humanz"
+        "Somerset",
+        "Herefordshire",
+        "Cumbria",
+        "Wiltshire"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What is Ron Weasley's middle name?",
+      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
       "options": [
-        "John",
-        "Dominic",
-        "Bilius",
-        "Arthur"
+        "Ashurism",
+        "Judaism",
+        "Zoroastrianism",
+        "Paganism"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Celebrities"
     }
   ]
 }
