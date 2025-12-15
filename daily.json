@@ -1,68 +1,68 @@
 {
-  "day": "20251214",
-  "dayIndex": 113,
+  "day": "20251215",
+  "dayIndex": 114,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the official language of Brazil?",
+      "text": "What is the name of Poland in Polish?",
       "options": [
-        "Portuguese",
-        "English",
-        "Spanish",
-        "Brazilian"
+        "Pupcia",
+        "Polszka",
+        "P&oacute;land",
+        "Polska"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the Capital of the United States?",
+      "options": [
+        "Washington, D.C.",
+        "New York City, NY",
+        "Houston, TX",
+        "Los Angelas, CA"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What was the cause of Marilyn Monroes suicide?",
-      "options": [
-        "House Fire",
-        "Drug Overdose",
-        "Gunshot",
-        "Knife Attack"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Celebrities"
-    },
-    {
-      "text": "Where does water from Poland Spring water bottles come from?",
-      "options": [
-        "Masovia, Poland",
-        "Maine, United States",
-        "Bavaria, Poland",
-        "Hesse, Germany"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which English county is Stonehenge?",
-      "options": [
-        "Somerset",
-        "Herefordshire",
-        "Cumbria",
-        "Wiltshire"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "What was the religion of famous singer \"Freddie Mercury\"?",
+      "text": "The phrase \"accident waiting to happen\" is an example of what type of figure of speech?",
       "options": [
-        "Ashurism",
-        "Judaism",
-        "Zoroastrianism",
-        "Paganism"
+        "Simile",
+        "Metaphor",
+        "Idiom",
+        "Analogy"
       ],
       "correct": 2,
-      "difficulty": "hard",
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What was the name of Marilyn Monroe's first husband?",
+      "options": [
+        "James Dougherty",
+        "Joe Dimaggio",
+        "Arthur Miller",
+        "Kirk Douglas"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Celebrities"
+    },
+    {
+      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "options": [
+        "India",
+        "Indonesia",
+        "Vietnam",
+        "Thailand"
+      ],
+      "correct": 0,
+      "difficulty": "hard",
+      "category": "Geography"
     }
   ]
 }
