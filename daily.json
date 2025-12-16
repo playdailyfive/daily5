@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of Poland in Polish?",
+      "text": "In the English language, what is the name of the \"&\" character?",
       "options": [
-        "Pupcia",
-        "Polszka",
-        "P&oacute;land",
-        "Polska"
+        "Eightslash",
+        "And Sign",
+        "Obelus ",
+        "Ampersand"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the Capital of the United States?",
+      "text": "Which US state has the highest population?",
       "options": [
-        "Washington, D.C.",
-        "New York City, NY",
-        "Houston, TX",
-        "Los Angelas, CA"
+        "California",
+        "Texas",
+        "Florida",
+        "New York"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "The phrase \"accident waiting to happen\" is an example of what type of figure of speech?",
+      "text": "Amsterdam Centraal station is twinned with what station?",
       "options": [
-        "Simile",
-        "Metaphor",
-        "Idiom",
-        "Analogy"
+        "Frankfurt (Main) Hauptbahnhof",
+        "Paris Gare du Nord",
+        "London Liverpool Street",
+        "Brussels Midi"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the name of Marilyn Monroe's first husband?",
+      "text": "Which one of these artists appears in the album Deltron 3030?",
       "options": [
-        "James Dougherty",
-        "Joe Dimaggio",
-        "Arthur Miller",
-        "Kirk Douglas"
+        "Dan the Automater",
+        "Lamarr Kendrick",
+        "CeeLo Green",
+        "Danger Mouse"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+      "text": "Into which basin does the Jordan River flow into?",
       "options": [
-        "India",
-        "Indonesia",
-        "Vietnam",
-        "Thailand"
+        "Dead Sea",
+        "Salton Sea",
+        "Aral Sea",
+        "Caspian Sea"
       ],
       "correct": 0,
       "difficulty": "hard",
