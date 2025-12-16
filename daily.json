@@ -1,68 +1,68 @@
 {
-  "day": "20251215",
-  "dayIndex": 114,
+  "day": "20251216",
+  "dayIndex": 115,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the English language, what is the name of the \"&\" character?",
+      "text": "How many furlongs are there in a mile?",
       "options": [
-        "Eightslash",
-        "And Sign",
-        "Obelus ",
-        "Ampersand"
+        "Six",
+        "Two",
+        "Four",
+        "Eight"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which US state has the highest population?",
+      "text": "Who directed the Kill Bill movies?",
       "options": [
-        "California",
-        "Texas",
-        "Florida",
-        "New York"
+        "Stanley Kubrick",
+        "Quentin Tarantino",
+        "Arnold Schwarzenegger",
+        "David Lean"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Amsterdam Centraal station is twinned with what station?",
+      "text": "A doctor with a PhD is a doctor of what?",
       "options": [
-        "Frankfurt (Main) Hauptbahnhof",
-        "Paris Gare du Nord",
-        "London Liverpool Street",
-        "Brussels Midi"
+        "Philosophy",
+        "Psychology",
+        "Physical Therapy",
+        "Phrenology"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which one of these artists appears in the album Deltron 3030?",
+      "text": "Josh Mansour is part of what NRL team?",
       "options": [
-        "Dan the Automater",
-        "Lamarr Kendrick",
-        "CeeLo Green",
-        "Danger Mouse"
+        "Penrith Panthers",
+        "North Queensland Cowboys",
+        "Melbourne Storm",
+        "Sydney Roosters"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "Into which basin does the Jordan River flow into?",
+      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
       "options": [
-        "Dead Sea",
-        "Salton Sea",
-        "Aral Sea",
-        "Caspian Sea"
+        "The British Grenadiers",
+        "Colonel Bogey March",
+        "Men of Harlech",
+        "Scotland the Brave"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
