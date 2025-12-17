@@ -1,64 +1,64 @@
 {
-  "day": "20251216",
-  "dayIndex": 115,
+  "day": "20251217",
+  "dayIndex": 116,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is on display in the Madame Tussaud's museum in London?",
+      "text": "In which fast food chain can you order a Jamocha Shake?",
       "options": [
-        "Vintage cars",
-        "Designer clothing",
-        "Unreleased film reels",
-        "Wax sculptures"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In the 1986 film \"The Wraith\", what concept car is used for the Turbo Interceptor?",
-      "options": [
-        "Dodge Copperhead",
-        "Dodge M4S",
-        "Pontiac Banshee",
-        "General Motors Firebird"
+        "Wendy's",
+        "Arby's",
+        "Burger King",
+        "McDonald's"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "What is the German word for \"spoon\"?",
+      "text": "What was the year of estabilishment of the Bari Italian Football Club?",
       "options": [
-        "L&ouml;ffel",
-        "Gabel",
-        "Essst&auml;bchen",
-        "Messer"
+        "1945",
+        "2014",
+        "1895",
+        "1908"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
+      "options": [
+        "Board Games",
+        "Films",
+        "Video Games",
+        "Television Shows"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the name of Ross' pet monkey on \"Friends\"?",
+      "text": "In Back to the Future Part II, Marty and Dr. Emmett Brown go to which future date?",
       "options": [
-        "Marcel",
-        "Champ",
-        "Jojo",
-        "George"
+        "July 20, 2015",
+        "August 28, 2015",
+        "January 25, 2015",
+        "October 21, 2015"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
+      "text": "Originally another word for poppy, coquelicot is a shade of what?",
       "options": [
-        "Villa Plus",
-        "Keycamp",
-        "Center Parcs",
-        "Yelloh Village"
+        "Pink",
+        "Blue",
+        "Red",
+        "Green"
       ],
       "correct": 2,
       "difficulty": "hard",
