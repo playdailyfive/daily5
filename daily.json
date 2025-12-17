@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many furlongs are there in a mile?",
+      "text": "What is on display in the Madame Tussaud's museum in London?",
       "options": [
-        "Six",
-        "Two",
-        "Four",
-        "Eight"
+        "Vintage cars",
+        "Designer clothing",
+        "Unreleased film reels",
+        "Wax sculptures"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the Kill Bill movies?",
+      "text": "In the 1986 film \"The Wraith\", what concept car is used for the Turbo Interceptor?",
       "options": [
-        "Stanley Kubrick",
-        "Quentin Tarantino",
-        "Arnold Schwarzenegger",
-        "David Lean"
+        "Dodge Copperhead",
+        "Dodge M4S",
+        "Pontiac Banshee",
+        "General Motors Firebird"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "What is the German word for \"spoon\"?",
       "options": [
-        "Philosophy",
-        "Psychology",
-        "Physical Therapy",
-        "Phrenology"
+        "L&ouml;ffel",
+        "Gabel",
+        "Essst&auml;bchen",
+        "Messer"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Josh Mansour is part of what NRL team?",
+      "text": "What was the name of Ross' pet monkey on \"Friends\"?",
       "options": [
-        "Penrith Panthers",
-        "North Queensland Cowboys",
-        "Melbourne Storm",
-        "Sydney Roosters"
+        "Marcel",
+        "Champ",
+        "Jojo",
+        "George"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
+      "text": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
       "options": [
-        "The British Grenadiers",
-        "Colonel Bogey March",
-        "Men of Harlech",
-        "Scotland the Brave"
+        "Villa Plus",
+        "Keycamp",
+        "Center Parcs",
+        "Yelloh Village"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
