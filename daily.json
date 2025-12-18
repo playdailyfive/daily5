@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which fast food chain can you order a Jamocha Shake?",
+      "text": "The Flag of the European Union has how many stars on it?",
       "options": [
-        "Wendy's",
-        "Arby's",
-        "Burger King",
-        "McDonald's"
+        "16",
+        "12",
+        "14",
+        "10"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the year of estabilishment of the Bari Italian Football Club?",
+      "text": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
       "options": [
-        "1945",
-        "2014",
-        "1895",
-        "1908"
+        "Fletcher Christian",
+        "Jay Gatsby",
+        "Randall Flagg",
+        "Holden Caulfield"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
+      "text": "Bob and Mike Bryan were well known brothers in which sport?",
       "options": [
-        "Board Games",
-        "Films",
-        "Video Games",
-        "Television Shows"
+        "Tennis",
+        "Baseball",
+        "Football",
+        "Basketball"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In Back to the Future Part II, Marty and Dr. Emmett Brown go to which future date?",
+      "text": "Scotch whisky and Drambuie make up which cocktail?",
       "options": [
-        "July 20, 2015",
-        "August 28, 2015",
-        "January 25, 2015",
-        "October 21, 2015"
+        "Sex on the Beach",
+        "Screwdriver",
+        "Manhattan",
+        "Rusty Nail"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "Originally another word for poppy, coquelicot is a shade of what?",
+      "text": "In \"Resident Evil 3\", how many inventory slots does Jill have at the start of the game?",
       "options": [
-        "Pink",
-        "Blue",
-        "Red",
-        "Green"
+        "12",
+        "10",
+        "8",
+        "6"
       ],
       "correct": 2,
       "difficulty": "hard",
