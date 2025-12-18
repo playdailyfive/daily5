@@ -1,66 +1,66 @@
 {
-  "day": "20251217",
-  "dayIndex": 116,
+  "day": "20251218",
+  "dayIndex": 117,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Flag of the European Union has how many stars on it?",
+      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
       "options": [
-        "16",
-        "12",
-        "14",
-        "10"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
-      "options": [
-        "Fletcher Christian",
-        "Jay Gatsby",
-        "Randall Flagg",
-        "Holden Caulfield"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "Bob and Mike Bryan were well known brothers in which sport?",
-      "options": [
-        "Tennis",
-        "Baseball",
-        "Football",
-        "Basketball"
+        "Key",
+        "Sword",
+        "Pen",
+        "Cellphone"
       ],
       "correct": 0,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Scotch whisky and Drambuie make up which cocktail?",
+      "text": "The Alps are a mountain range on which continent?",
       "options": [
-        "Sex on the Beach",
-        "Screwdriver",
-        "Manhattan",
-        "Rusty Nail"
+        "Europe",
+        "Asia",
+        "Africa",
+        "North America"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geography"
+    },
+    {
+      "text": "Rolex is a company that specializes in what type of product?",
+      "options": [
+        "Cars",
+        "Computers",
+        "Sports equipment",
+        "Watches"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"Resident Evil 3\", how many inventory slots does Jill have at the start of the game?",
+      "text": "What is the nickname of Northampton town's rugby union club?",
       "options": [
-        "12",
-        "10",
-        "8",
-        "6"
+        "Wasps",
+        "Harlequins",
+        "Saints",
+        "Saracens"
       ],
       "correct": 2,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "What is the airspeed velocity of an unladen swallow?",
+      "options": [
+        "20 MPH",
+        "15 MPH",
+        "200 MPH",
+        "24 MPH"
+      ],
+      "correct": 3,
       "difficulty": "hard",
       "category": "General Knowledge"
     }
