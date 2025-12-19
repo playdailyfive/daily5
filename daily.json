@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+      "text": "According to the Book of Genesis in the Old Testament, how many days did it take God to create the world?",
       "options": [
-        "Key",
-        "Sword",
-        "Pen",
-        "Cellphone"
+        "Six",
+        "Seven",
+        "One",
+        "Twelve"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Alps are a mountain range on which continent?",
+      "text": "What is the nickname for the US state Delaware?",
       "options": [
-        "Europe",
-        "Asia",
-        "Africa",
-        "North America"
+        "The First State",
+        "The Second State",
+        "The Sixteenth State",
+        "The Fiftieth State"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "Rolex is a company that specializes in what type of product?",
+      "text": "Earl Grey tea is black tea flavoured with what?",
       "options": [
-        "Cars",
-        "Computers",
-        "Sports equipment",
-        "Watches"
+        "Lavender",
+        "Vanilla",
+        "Honey",
+        "Bergamot oil"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the nickname of Northampton town's rugby union club?",
+      "text": "Which artist curated the official soundtrack for \"The Hunger Games: Mockingjay - Part 1\"?",
       "options": [
-        "Wasps",
-        "Harlequins",
-        "Saints",
-        "Saracens"
+        "Charli XCX",
+        "Kanye West",
+        "Lorde",
+        "Tove Lo"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the airspeed velocity of an unladen swallow?",
+      "text": "What is Ron Weasley's middle name?",
       "options": [
-        "20 MPH",
-        "15 MPH",
-        "200 MPH",
-        "24 MPH"
+        "John",
+        "Arthur",
+        "Dominic",
+        "Bilius"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Books"
     }
   ]
 }
