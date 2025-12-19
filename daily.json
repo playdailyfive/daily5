@@ -1,68 +1,68 @@
 {
-  "day": "20251218",
-  "dayIndex": 117,
+  "day": "20251219",
+  "dayIndex": 118,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "According to the Book of Genesis in the Old Testament, how many days did it take God to create the world?",
+      "text": "Which language is most widely spoken in Switzerland?",
       "options": [
-        "Six",
-        "Seven",
-        "One",
-        "Twelve"
+        "Italian",
+        "Swiss",
+        "German",
+        "French"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the nickname for the US state Delaware?",
+      "text": "What was the name of the the first episode of Doctor Who to air in 1963?",
       "options": [
-        "The First State",
-        "The Second State",
-        "The Sixteenth State",
-        "The Fiftieth State"
+        "The Daleks",
+        "An Unearthly Child",
+        "The Aztecs",
+        "The Edge of Destruction"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Earl Grey tea is black tea flavoured with what?",
+      "text": "What is the star sign of someone born on Valentines day?",
       "options": [
-        "Lavender",
-        "Vanilla",
-        "Honey",
-        "Bergamot oil"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which artist curated the official soundtrack for \"The Hunger Games: Mockingjay - Part 1\"?",
-      "options": [
-        "Charli XCX",
-        "Kanye West",
-        "Lorde",
-        "Tove Lo"
+        "Capricorn",
+        "Pisces",
+        "Aquarius",
+        "Scorpio"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     },
     {
-      "text": "What is Ron Weasley's middle name?",
+      "text": "Which radio personality calls himself \"The King of All Media\"?",
       "options": [
-        "John",
-        "Arthur",
-        "Dominic",
-        "Bilius"
+        "Pete Tong",
+        "Ryan Seacrest",
+        "Rush Limbaugh",
+        "Howard Stern"
       ],
       "correct": 3,
+      "difficulty": "medium",
+      "category": "Celebrities"
+    },
+    {
+      "text": "Originally another word for poppy, coquelicot is a shade of what?",
+      "options": [
+        "Blue",
+        "Pink",
+        "Red",
+        "Green"
+      ],
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     }
   ]
 }
