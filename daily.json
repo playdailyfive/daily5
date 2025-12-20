@@ -1,66 +1,66 @@
 {
-  "day": "20251219",
-  "dayIndex": 118,
+  "day": "20251220",
+  "dayIndex": 119,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Red Vines is a brand of what type of candy?",
+      "text": "What does VR stand for?",
       "options": [
-        "Chocolate",
-        "Bubblegum",
-        "Licorice",
-        "Lollipop"
+        "Virtual Reality",
+        "Very Real",
+        "Visual Recognition",
+        "Voice Recognition"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who won the 10th season of Big Brother in the United States?",
+      "text": "Who is frozen at the end of the movie \"Goldeneye\"?",
       "options": [
-        "Adam Jasinski",
-        "Dan Gheesling",
-        "Hayden Moss",
-        "Dick Donato"
+        "Boris Grishenko",
+        "Alec Travelyan",
+        "James Bond",
+        "Natalya Simonova"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "options": [
+        "July 4, 1776",
+        "May 4, 1776",
+        "July 2, 1776",
+        "June 4, 1776"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In which city did American rap producer DJ Khaled originate from?",
+      "options": [
+        "Detroit",
+        "Miami",
+        "Atlanta",
+        "New York"
       ],
       "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "Amsterdam Centraal station is twinned with what station?",
-      "options": [
-        "Paris Gare du Nord",
-        "Frankfurt (Main) Hauptbahnhof",
-        "London Liverpool Street",
-        "Brussels Midi"
-      ],
-      "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the oldest team in Major League Baseball?",
+      "text": "In Canadian football, scoring a rouge is worth how many points?",
       "options": [
-        "Cincinnati Reds",
-        "St. Louis Cardinals",
-        "Chicago Cubs",
-        "Atlanta Braves"
+        "3",
+        "1",
+        "4",
+        "2"
       ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Sports"
-    },
-    {
-      "text": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
-      "options": [
-        "Ai FUKUHARA (Japan)",
-        "Song KIM (North Korea)",
-        "DING Ning (China)",
-        "LI Xiaoxia (China)"
-      ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "hard",
       "category": "Sports"
     }
