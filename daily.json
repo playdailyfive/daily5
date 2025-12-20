@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which language is most widely spoken in Switzerland?",
+      "text": "Red Vines is a brand of what type of candy?",
       "options": [
-        "Italian",
-        "Swiss",
-        "German",
-        "French"
+        "Chocolate",
+        "Bubblegum",
+        "Licorice",
+        "Lollipop"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the name of the the first episode of Doctor Who to air in 1963?",
+      "text": "Who won the 10th season of Big Brother in the United States?",
       "options": [
-        "The Daleks",
-        "An Unearthly Child",
-        "The Aztecs",
-        "The Edge of Destruction"
+        "Adam Jasinski",
+        "Dan Gheesling",
+        "Hayden Moss",
+        "Dick Donato"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Television"
     },
     {
-      "text": "What is the star sign of someone born on Valentines day?",
+      "text": "Amsterdam Centraal station is twinned with what station?",
       "options": [
-        "Capricorn",
-        "Pisces",
-        "Aquarius",
-        "Scorpio"
+        "Paris Gare du Nord",
+        "Frankfurt (Main) Hauptbahnhof",
+        "London Liverpool Street",
+        "Brussels Midi"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which radio personality calls himself \"The King of All Media\"?",
+      "text": "What is the oldest team in Major League Baseball?",
       "options": [
-        "Pete Tong",
-        "Ryan Seacrest",
-        "Rush Limbaugh",
-        "Howard Stern"
+        "Cincinnati Reds",
+        "St. Louis Cardinals",
+        "Chicago Cubs",
+        "Atlanta Braves"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Sports"
     },
     {
-      "text": "Originally another word for poppy, coquelicot is a shade of what?",
+      "text": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
       "options": [
-        "Blue",
-        "Pink",
-        "Red",
-        "Green"
+        "Ai FUKUHARA (Japan)",
+        "Song KIM (North Korea)",
+        "DING Ning (China)",
+        "LI Xiaoxia (China)"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Sports"
     }
   ]
 }
