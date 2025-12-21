@@ -1,64 +1,64 @@
 {
-  "day": "20251220",
-  "dayIndex": 119,
+  "day": "20251221",
+  "dayIndex": 120,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"hat\"?",
+      "text": "What step in cellular respiration forms ATP?",
       "options": [
-        "Chapeau",
-        "Bonnet",
-        " &Eacute;charpe",
-        " Casque"
+        "Pyruvate Oxidation",
+        "Oxidative Phosphorylation",
+        "Calvin Cycle",
+        "Glycolysis"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which country is the city of Rio de Janeiro?",
+      "text": "Who directed the Kill Bill movies?",
       "options": [
-        "Brazil",
-        "Venezuela",
-        "Peru",
-        "Chile"
+        "David Lean",
+        "Quentin Tarantino",
+        "Stanley Kubrick",
+        "Arnold Schwarzenegger"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What fast food chain has the most locations globally? ",
+      "text": "What is the currency of Poland?",
       "options": [
-        "Subway",
-        "Starbucks",
-        "KFC",
-        "McDonalds"
+        "Ruble",
+        "Krone",
+        "Euro",
+        "Złoty"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "May 16th of every year is known as __________ Day, named after a punk band prominent in the 1990s.",
+      "text": "What was Bon Iver's debut album released in 2007?",
       "options": [
-        "Less Than Jake",
-        "Lagwagon",
-        "Lit",
-        "Goldfinger"
+        "22, A Million",
+        "Blood Bank EP",
+        "For Emma, Forever Ago",
+        "Bon Iver, Bon Iver"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "A Caixa Malacacheta is what kind of musical instrument which is commonly used in Latin American music?",
+      "text": "Which album was released by Kanye West in 2013?",
       "options": [
-        "Bass Drum",
-        "Snare Drum",
-        "Maraca",
-        "Cow Bell"
+        "The Life of Pablo",
+        "Yeezus",
+        "Watch the Throne",
+        "My Beautiful Dark Twisted Fantasy"
       ],
       "correct": 1,
       "difficulty": "hard",
