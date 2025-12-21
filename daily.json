@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does VR stand for?",
+      "text": "What is the French word for \"hat\"?",
       "options": [
-        "Virtual Reality",
-        "Very Real",
-        "Visual Recognition",
-        "Voice Recognition"
+        "Chapeau",
+        "Bonnet",
+        " &Eacute;charpe",
+        " Casque"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is frozen at the end of the movie \"Goldeneye\"?",
+      "text": "In which country is the city of Rio de Janeiro?",
       "options": [
-        "Boris Grishenko",
-        "Alec Travelyan",
-        "James Bond",
-        "Natalya Simonova"
+        "Brazil",
+        "Venezuela",
+        "Peru",
+        "Chile"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "text": "What fast food chain has the most locations globally? ",
       "options": [
-        "July 4, 1776",
-        "May 4, 1776",
-        "July 2, 1776",
-        "June 4, 1776"
+        "Subway",
+        "Starbucks",
+        "KFC",
+        "McDonalds"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In which city did American rap producer DJ Khaled originate from?",
+      "text": "May 16th of every year is known as __________ Day, named after a punk band prominent in the 1990s.",
       "options": [
-        "Detroit",
-        "Miami",
-        "Atlanta",
-        "New York"
+        "Less Than Jake",
+        "Lagwagon",
+        "Lit",
+        "Goldfinger"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "In Canadian football, scoring a rouge is worth how many points?",
+      "text": "A Caixa Malacacheta is what kind of musical instrument which is commonly used in Latin American music?",
       "options": [
-        "3",
-        "1",
-        "4",
-        "2"
+        "Bass Drum",
+        "Snare Drum",
+        "Maraca",
+        "Cow Bell"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     }
   ]
 }
