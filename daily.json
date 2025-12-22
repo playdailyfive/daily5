@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What step in cellular respiration forms ATP?",
+      "text": "What does VR stand for?",
       "options": [
-        "Pyruvate Oxidation",
-        "Oxidative Phosphorylation",
-        "Calvin Cycle",
-        "Glycolysis"
+        "Visual Recognition",
+        "Virtual Reality",
+        "Voice Recognition",
+        "Very Real"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the Kill Bill movies?",
+      "text": "What is the name of the fictional retro-mod band starring Austin Powers as the lead vocalist?",
       "options": [
-        "David Lean",
-        "Quentin Tarantino",
-        "Stanley Kubrick",
-        "Arnold Schwarzenegger"
+        "Spear Mint",
+        "Ming Tea",
+        "Mister E",
+        "Cough Fi"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is the currency of Poland?",
+      "text": "Apple co-founder Steve Jobs died from complications of which form of cancer?",
       "options": [
-        "Ruble",
-        "Krone",
-        "Euro",
-        "Złoty"
+        "Bone",
+        "Stomach",
+        "Liver",
+        "Pancreatic"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was Bon Iver's debut album released in 2007?",
+      "text": "Which famous 90's rap album is commonly referred to as \"The Bible of Hip Hop\"?",
       "options": [
-        "22, A Million",
-        "Blood Bank EP",
-        "For Emma, Forever Ago",
-        "Bon Iver, Bon Iver"
+        "The Chronic",
+        "Enter The Wu-Tang (36 Chambers)",
+        "Illmatic",
+        "The Low End Theory"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which album was released by Kanye West in 2013?",
+      "text": "Which English football team is nicknamed 'The Tigers'?",
       "options": [
-        "The Life of Pablo",
-        "Yeezus",
-        "Watch the Throne",
-        "My Beautiful Dark Twisted Fantasy"
+        "Bristol City",
+        "Hull City",
+        "Manchester City",
+        "Cardiff City"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     }
   ]
 }
