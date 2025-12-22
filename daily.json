@@ -1,68 +1,68 @@
 {
-  "day": "20251221",
-  "dayIndex": 120,
+  "day": "20251222",
+  "dayIndex": 121,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What does VR stand for?",
+      "text": "In which fast food chain can you order a Jamocha Shake?",
       "options": [
-        "Visual Recognition",
-        "Virtual Reality",
-        "Voice Recognition",
-        "Very Real"
+        "Arby's",
+        "Burger King",
+        "Wendy's",
+        "McDonald's"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the fictional retro-mod band starring Austin Powers as the lead vocalist?",
+      "text": "Gwyneth Paltrow has a daughter named...?",
       "options": [
-        "Spear Mint",
-        "Ming Tea",
-        "Mister E",
-        "Cough Fi"
+        "Lily",
+        "French",
+        "Apple",
+        "Dakota"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Celebrities"
     },
     {
       "text": "Apple co-founder Steve Jobs died from complications of which form of cancer?",
       "options": [
+        "Pancreatic",
         "Bone",
         "Stomach",
-        "Liver",
-        "Pancreatic"
+        "Liver"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which famous 90's rap album is commonly referred to as \"The Bible of Hip Hop\"?",
+      "text": "What is the fourth book of the Old Testament?",
       "options": [
-        "The Chronic",
-        "Enter The Wu-Tang (36 Chambers)",
-        "Illmatic",
-        "The Low End Theory"
+        "Numbers",
+        "Leviticus",
+        "Genesis",
+        "Exodus"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Which English football team is nicknamed 'The Tigers'?",
+      "text": "What is Hermione Granger's middle name?",
       "options": [
-        "Bristol City",
-        "Hull City",
-        "Manchester City",
-        "Cardiff City"
+        "Jean",
+        "Jo",
+        "Jane",
+        "Emma"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Books"
     }
   ]
 }
