@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which fast food chain can you order a Jamocha Shake?",
+      "text": "How many fingers does a single human hand have?",
       "options": [
-        "Arby's",
-        "Burger King",
-        "Wendy's",
-        "McDonald's"
+        "Four",
+        "Ten",
+        "Eight",
+        "Five"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Gwyneth Paltrow has a daughter named...?",
+      "text": "Kanye West's \"Gold Digger\" featured which Oscar-winning actor?",
       "options": [
-        "Lily",
-        "French",
-        "Apple",
-        "Dakota"
+        "Alec Baldwin",
+        "Dwayne Johnson",
+        "Jamie Foxx",
+        " Bruce Willis"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Apple co-founder Steve Jobs died from complications of which form of cancer?",
+      "text": "When was Nintendo founded?",
       "options": [
-        "Pancreatic",
-        "Bone",
-        "Stomach",
-        "Liver"
+        "September 23rd, 1889",
+        "October 19th, 1891",
+        "December 27th, 1894",
+        "March 4th, 1887"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the fourth book of the Old Testament?",
+      "text": "Who was walking like an Egyptian in 1981?",
       "options": [
-        "Numbers",
-        "Leviticus",
-        "Genesis",
-        "Exodus"
+        "The Bangles",
+        "The Connells",
+        "R.E.M.",
+        "The Ocean Blue"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is Hermione Granger's middle name?",
+      "text": "What is the romanized Korean word for \"heart\"?",
       "options": [
-        "Jean",
-        "Jo",
-        "Jane",
-        "Emma"
+        "Simjang",
+        "Segseu",
+        "Aejeong",
+        "Jeongsin"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     }
   ]
 }
