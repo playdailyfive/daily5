@@ -1,68 +1,68 @@
 {
-  "day": "20251222",
-  "dayIndex": 121,
+  "day": "20251223",
+  "dayIndex": 122,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many fingers does a single human hand have?",
+      "text": "Which restaurant's mascot is a clown?",
       "options": [
-        "Four",
-        "Ten",
-        "Eight",
-        "Five"
+        "Sonic",
+        "McDonald's",
+        "Whataburger",
+        "Burger King"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Kanye West's \"Gold Digger\" featured which Oscar-winning actor?",
+      "text": "What NBC sitcom once saw two of its characters try to pitch NBC on a sitcom about nothing?",
       "options": [
-        "Alec Baldwin",
-        "Dwayne Johnson",
-        "Jamie Foxx",
-        " Bruce Willis"
+        "Seinfeld",
+        "Frasier",
+        "Friends",
+        "Becker"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "Who invented Pastafarianism?",
+      "options": [
+        "Bobby Henderson",
+        "Zach Soldi",
+        "Eric Tignor",
+        "Bill Nye"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What national team won the 2016 edition of UEFA European Championship?",
+      "options": [
+        "England",
+        "Germany",
+        "Portugal",
+        "France"
       ],
       "correct": 2,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "When was Nintendo founded?",
-      "options": [
-        "September 23rd, 1889",
-        "October 19th, 1891",
-        "December 27th, 1894",
-        "March 4th, 1887"
-      ],
-      "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Sports"
     },
     {
-      "text": "Who was walking like an Egyptian in 1981?",
+      "text": "Which author co-wrote \"The Communist Manifesto\" alongside Karl Marx?",
       "options": [
-        "The Bangles",
-        "The Connells",
-        "R.E.M.",
-        "The Ocean Blue"
+        "Robert Owen",
+        "Alexander Kerensky",
+        "Friedrich Engels",
+        "Paul Lafargue"
       ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What is the romanized Korean word for \"heart\"?",
-      "options": [
-        "Simjang",
-        "Segseu",
-        "Aejeong",
-        "Jeongsin"
-      ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Books"
     }
   ]
 }
