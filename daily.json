@@ -1,68 +1,68 @@
 {
-  "day": "20251223",
-  "dayIndex": 122,
+  "day": "20251224",
+  "dayIndex": 123,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The file hosting service, \"Google Drive\" was launched on what day?",
+      "text": "What was the first ever London Underground line to be built?",
       "options": [
-        "January 20, 2010",
-        "April 24, 2012",
-        "January 12, 2014",
-        "November 14, 2008"
+        "Circle Line",
+        "Bakerloo Line",
+        "Victoria Line",
+        "Metropolitan Line"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
+      "text": "Which Nirvana album had a naked baby on the cover?",
       "options": [
-        "Figaro",
-        "Angelo",
-        "Dave",
-        "Fernando"
+        "Nevermind",
+        "Incesticide",
+        "In Utero",
+        "Bleach"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What English word means to \"think deeply\"?",
+      "text": "A statue of Charles Darwin sits in what London museum?",
       "options": [
-        "Contemplate",
-        "Condensate",
-        "Confiscate",
-        "Constipate"
+        "British Museum",
+        "Tate",
+        "Science Museum",
+        "Natural History Museum"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In which English county is the city of Portsmouth?",
+      "text": "In the Mad Max franchise, what type of car is the Pursuit Special driven by Max?",
       "options": [
-        "Surrey",
-        "Buckinghamshire",
-        "Hampshire",
-        "Oxfordshire"
+        "Pontiac Firebird",
+        "Chrysler Valiant Charger",
+        "Ford Falcon",
+        "Holden Monaro"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which country is completely landlocked by South Africa?",
+      "text": "Named after the mallow flower, mauve is a shade of what?",
       "options": [
-        "Swaziland",
-        "Botswana",
-        "Lesotho",
-        "Zimbabwe"
+        "Purple",
+        "Pink",
+        "Red",
+        "Brown"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
