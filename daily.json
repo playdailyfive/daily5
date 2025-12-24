@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which restaurant's mascot is a clown?",
+      "text": "The file hosting service, \"Google Drive\" was launched on what day?",
       "options": [
-        "Sonic",
-        "McDonald's",
-        "Whataburger",
-        "Burger King"
+        "January 20, 2010",
+        "April 24, 2012",
+        "January 12, 2014",
+        "November 14, 2008"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What NBC sitcom once saw two of its characters try to pitch NBC on a sitcom about nothing?",
+      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
       "options": [
-        "Seinfeld",
-        "Frasier",
-        "Friends",
-        "Becker"
+        "Figaro",
+        "Angelo",
+        "Dave",
+        "Fernando"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Who invented Pastafarianism?",
+      "text": "What English word means to \"think deeply\"?",
       "options": [
-        "Bobby Henderson",
-        "Zach Soldi",
-        "Eric Tignor",
-        "Bill Nye"
+        "Contemplate",
+        "Condensate",
+        "Confiscate",
+        "Constipate"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What national team won the 2016 edition of UEFA European Championship?",
+      "text": "In which English county is the city of Portsmouth?",
       "options": [
-        "England",
-        "Germany",
-        "Portugal",
-        "France"
+        "Surrey",
+        "Buckinghamshire",
+        "Hampshire",
+        "Oxfordshire"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Geography"
     },
     {
-      "text": "Which author co-wrote \"The Communist Manifesto\" alongside Karl Marx?",
+      "text": "Which country is completely landlocked by South Africa?",
       "options": [
-        "Robert Owen",
-        "Alexander Kerensky",
-        "Friedrich Engels",
-        "Paul Lafargue"
+        "Swaziland",
+        "Botswana",
+        "Lesotho",
+        "Zimbabwe"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Geography"
     }
   ]
 }
