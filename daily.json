@@ -1,64 +1,64 @@
 {
-  "day": "20251224",
-  "dayIndex": 123,
+  "day": "20251225",
+  "dayIndex": 124,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+      "text": "In past times, what would a gentleman keep in his fob pocket?",
       "options": [
-        "Sword",
-        "Pen",
-        "Cellphone",
-        "Key"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which country hosted the 2020 Summer Olympics?",
-      "options": [
-        "Japan",
-        "Germany",
-        "Australia",
-        "China"
+        "Watch",
+        "Keys",
+        "Notebook",
+        "Money"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "General Knowledge"
     },
     {
-      "text": "What direction does the Statue of Liberty face?",
+      "text": "Who directed the 2015 movie \"The Revenant\"?",
       "options": [
-        "Northwest",
-        "Southwest",
-        "Northeast",
-        "Southeast"
+        "Christopher Nolan",
+        "David Fincher",
+        "Wes Anderson",
+        "Alejandro G. I&ntilde;&aacute;rritu"
       ],
       "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "The phrase \"accident waiting to happen\" is an example of what type of figure of speech?",
+      "options": [
+        "Analogy",
+        "Simile",
+        "Idiom",
+        "Metaphor"
+      ],
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which poet wrote \"The Ballad of Reading Gaol\" whilst imprisoned for being gay?",
+      "text": "Saul Hudson (Slash) of the band Guns N' Roses is known for playing what type of guitar?",
       "options": [
-        "Wilfred Owen",
-        "William Blake",
-        "Oscar Wilde",
-        "Lord Byron"
+        "LsL Mongrel",
+        "Fender Stratocaster",
+        "Gretsch Falcon",
+        "Les Paul Standard"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the capital of Mauritius?",
+      "text": "In which city is the Big Nickel located in Canada?",
       "options": [
-        "Port Louis",
-        "Port-au-Prince",
-        "Port Moresby",
-        "Port Vila"
+        "Sudbury, Ontario",
+        "Victoria, British Columbia",
+        "Halifax, Nova Scotia ",
+        "Calgary, Alberta"
       ],
       "correct": 0,
       "difficulty": "hard",
