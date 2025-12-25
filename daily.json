@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What was the first ever London Underground line to be built?",
+      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
       "options": [
-        "Circle Line",
-        "Bakerloo Line",
-        "Victoria Line",
-        "Metropolitan Line"
+        "Sword",
+        "Pen",
+        "Cellphone",
+        "Key"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Nirvana album had a naked baby on the cover?",
+      "text": "Which country hosted the 2020 Summer Olympics?",
       "options": [
-        "Nevermind",
-        "Incesticide",
-        "In Utero",
-        "Bleach"
+        "Japan",
+        "Germany",
+        "Australia",
+        "China"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "A statue of Charles Darwin sits in what London museum?",
+      "text": "What direction does the Statue of Liberty face?",
       "options": [
-        "British Museum",
-        "Tate",
-        "Science Museum",
-        "Natural History Museum"
+        "Northwest",
+        "Southwest",
+        "Northeast",
+        "Southeast"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Mad Max franchise, what type of car is the Pursuit Special driven by Max?",
+      "text": "Which poet wrote \"The Ballad of Reading Gaol\" whilst imprisoned for being gay?",
       "options": [
-        "Pontiac Firebird",
-        "Chrysler Valiant Charger",
-        "Ford Falcon",
-        "Holden Monaro"
+        "Wilfred Owen",
+        "William Blake",
+        "Oscar Wilde",
+        "Lord Byron"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Named after the mallow flower, mauve is a shade of what?",
+      "text": "What is the capital of Mauritius?",
       "options": [
-        "Purple",
-        "Pink",
-        "Red",
-        "Brown"
+        "Port Louis",
+        "Port-au-Prince",
+        "Port Moresby",
+        "Port Vila"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
