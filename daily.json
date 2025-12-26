@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In past times, what would a gentleman keep in his fob pocket?",
+      "text": "What is the official language of Brazil?",
       "options": [
-        "Watch",
-        "Keys",
-        "Notebook",
-        "Money"
+        "Portuguese",
+        "Spanish",
+        "English",
+        "Brazilian"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the 2015 movie \"The Revenant\"?",
+      "text": "Which former boy-band star released hit solo single \"Angels\" in 1997?",
       "options": [
-        "Christopher Nolan",
-        "David Fincher",
-        "Wes Anderson",
-        "Alejandro G. I&ntilde;&aacute;rritu"
+        "Justin Timberlake",
+        "Harry Styles",
+        "Gary Barlow",
+        "Robbie Williams"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The phrase \"accident waiting to happen\" is an example of what type of figure of speech?",
+      "text": "What English word means to \"think deeply\"?",
       "options": [
-        "Analogy",
-        "Simile",
-        "Idiom",
-        "Metaphor"
+        "Condensate",
+        "Confiscate",
+        "Contemplate",
+        "Constipate"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Saul Hudson (Slash) of the band Guns N' Roses is known for playing what type of guitar?",
+      "text": "Ellie Goulding's earliest album was named?",
       "options": [
-        "LsL Mongrel",
-        "Fender Stratocaster",
-        "Gretsch Falcon",
-        "Les Paul Standard"
+        "Bright Lights",
+        "Halcyon",
+        "Halcyon Days",
+        "Lights"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "In which city is the Big Nickel located in Canada?",
+      "text": "Which is the largest freshwater lake in the world?",
       "options": [
-        "Sudbury, Ontario",
-        "Victoria, British Columbia",
-        "Halifax, Nova Scotia ",
-        "Calgary, Alberta"
+        "Lake Superior ",
+        "Lake Huron",
+        "Lake Michigan",
+        "Caspian Sea"
       ],
       "correct": 0,
       "difficulty": "hard",
