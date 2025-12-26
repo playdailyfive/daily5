@@ -1,68 +1,68 @@
 {
-  "day": "20251225",
-  "dayIndex": 124,
+  "day": "20251226",
+  "dayIndex": 125,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the official language of Brazil?",
+      "text": "What is on display in the Madame Tussaud's museum in London?",
       "options": [
-        "Portuguese",
-        "Spanish",
-        "English",
-        "Brazilian"
+        "Designer clothing",
+        "Wax sculptures",
+        "Unreleased film reels",
+        "Vintage cars"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which former boy-band star released hit solo single \"Angels\" in 1997?",
+      "text": "Who plays Alice in the Resident Evil movies?",
       "options": [
-        "Justin Timberlake",
-        "Harry Styles",
-        "Gary Barlow",
-        "Robbie Williams"
+        "Milla Johnson",
+        "Madison Derpe",
+        "Milla Jovovich",
+        "Kim Demp"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What English word means to \"think deeply\"?",
+      "text": "When was WhatsApp founded?",
       "options": [
-        "Condensate",
-        "Confiscate",
-        "Contemplate",
-        "Constipate"
+        "2012",
+        "2010",
+        "2007",
+        "2009"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who released the 1991 album \"Out of Time\"?",
+      "options": [
+        "Coldplay",
+        "The Rolling Stones",
+        "R.E.M.",
+        "U2"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Ellie Goulding's earliest album was named?",
-      "options": [
-        "Bright Lights",
-        "Halcyon",
-        "Halcyon Days",
-        "Lights"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which is the largest freshwater lake in the world?",
+      "text": "In The Lies Of Locke Lamora, what does \"Lamora\" mean in Throne Therin?",
       "options": [
-        "Lake Superior ",
-        "Lake Huron",
-        "Lake Michigan",
-        "Caspian Sea"
+        "Chaos",
+        "Shadow",
+        "Thievery",
+        "Justice"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
