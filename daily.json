@@ -1,68 +1,68 @@
 {
-  "day": "20251226",
-  "dayIndex": 125,
+  "day": "20251227",
+  "dayIndex": 126,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the shape of the toy invented by Hungarian professor Ernő Rubik?",
+      "text": "In which fast food chain can you order a Jamocha Shake?",
       "options": [
-        "Sphere",
-        "Cube",
-        "Cylinder",
-        "Pyramid"
+        "Arby's",
+        "Wendy's",
+        "McDonald's",
+        "Burger King"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
+      "text": "\"Doctor Jones\", \"Turn Back Time\" and \"Barbie Girl\" were UK number ones for which Eurodance group?",
       "options": [
-        "Bournemouth",
-        "Blackpool",
-        "Torquay",
-        "Great Yarmouth"
+        "Aqua",
+        "Vengaboys",
+        "Sash!",
+        "Eiffel 65"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What is the world's most expensive spice by weight?",
-      "options": [
-        "Cardamom",
-        "Vanilla",
-        "Cinnamon",
-        "Saffron"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who is the Pink Floyd song \"Shine On You Crazy Diamond\" written about?",
-      "options": [
-        "David Gilmour",
-        "Floyd",
-        "Syd Barrett",
-        "John Lennon"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "In the \"Jurassic Park\" universe, when did \"Jurassic Park: San Diego\" begin construction?",
+      "text": "What is the German word for \"spoon\"?",
       "options": [
-        "1993",
-        "1985",
-        "1988",
-        "1986"
+        "Messer",
+        "L&ouml;ffel",
+        "Essst&auml;bchen",
+        "Gabel"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "How many states are in Australia?",
+      "options": [
+        "8",
+        "6",
+        "5",
+        "7"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "options": [
+        "GZA",
+        "Masta Killa",
+        "Inspectah Deck",
+        "Method Man"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
