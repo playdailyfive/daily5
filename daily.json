@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is on display in the Madame Tussaud's museum in London?",
+      "text": "What is the shape of the toy invented by Hungarian professor Ernő Rubik?",
       "options": [
-        "Designer clothing",
-        "Wax sculptures",
-        "Unreleased film reels",
-        "Vintage cars"
+        "Sphere",
+        "Cube",
+        "Cylinder",
+        "Pyramid"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays Alice in the Resident Evil movies?",
+      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
       "options": [
-        "Milla Johnson",
-        "Madison Derpe",
-        "Milla Jovovich",
-        "Kim Demp"
+        "Bournemouth",
+        "Blackpool",
+        "Torquay",
+        "Great Yarmouth"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "When was WhatsApp founded?",
+      "text": "What is the world's most expensive spice by weight?",
       "options": [
-        "2012",
-        "2010",
-        "2007",
-        "2009"
+        "Cardamom",
+        "Vanilla",
+        "Cinnamon",
+        "Saffron"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who released the 1991 album \"Out of Time\"?",
+      "text": "Who is the Pink Floyd song \"Shine On You Crazy Diamond\" written about?",
       "options": [
-        "Coldplay",
-        "The Rolling Stones",
-        "R.E.M.",
-        "U2"
+        "David Gilmour",
+        "Floyd",
+        "Syd Barrett",
+        "John Lennon"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "In The Lies Of Locke Lamora, what does \"Lamora\" mean in Throne Therin?",
+      "text": "In the \"Jurassic Park\" universe, when did \"Jurassic Park: San Diego\" begin construction?",
       "options": [
-        "Chaos",
-        "Shadow",
-        "Thievery",
-        "Justice"
+        "1993",
+        "1985",
+        "1988",
+        "1986"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     }
   ]
 }
