@@ -1,68 +1,68 @@
 {
-  "day": "20251227",
-  "dayIndex": 126,
+  "day": "20251228",
+  "dayIndex": 127,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which is the second largest native language spoken in Spain by numbers of speakers?",
+      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
       "options": [
-        "Catalan",
-        "French",
-        "Portuguese",
-        "Spanish"
+        "Boston Beer Company",
+        "D. G. Yuengling and Son, Inc",
+        "Miller Coors",
+        "Anheuser Busch"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Laos?",
+      "text": "Which singer was featured in Jack &Uuml; (Skrillex & Diplo)'s 2015 song 'Where Are &Uuml; Now'?",
       "options": [
-        "Country",
-        "Region",
-        "City",
-        "River"
+        "Selena Gomez",
+        "The Weeknd",
+        "Ellie Goulding",
+        "Justin Bieber"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "According to the BBPA, what is the most common pub name in the UK?",
+      "text": "What does the \"G\" mean in \"G-Man\"?",
       "options": [
-        "White Hart",
-        "Red Lion",
-        "King's Head",
-        "Royal Oak"
+        "Ghost",
+        "Geronimo",
+        "Government",
+        "Going"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
+      "text": "Who was the star of the TV series \"24\"?",
       "options": [
-        "Pauly Shore",
-        "Gilbert Gottfried",
-        "Jonathan Freeman",
-        "Robin Williams"
+        "Hugh Laurie",
+        "Kiefer Sutherland",
+        "Rob Lowe",
+        "Kevin Bacon"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "According to \"Star Wars\" lore, which planet does Obi-Wan Kenobi come from?",
+      "text": "At which race was the 2018 F1 Drivers Championship won?",
       "options": [
-        "Naboo",
-        "Stewjon",
-        "Tatooine",
-        "Alderaan"
+        "Abu Dhabi",
+        "Mexico",
+        "United States",
+        "Belgium"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     }
   ]
 }
