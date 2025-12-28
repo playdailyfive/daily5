@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which fast food chain can you order a Jamocha Shake?",
+      "text": "Which is the second largest native language spoken in Spain by numbers of speakers?",
       "options": [
-        "Arby's",
-        "Wendy's",
-        "McDonald's",
-        "Burger King"
+        "Catalan",
+        "French",
+        "Portuguese",
+        "Spanish"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Doctor Jones\", \"Turn Back Time\" and \"Barbie Girl\" were UK number ones for which Eurodance group?",
+      "text": "What is Laos?",
       "options": [
-        "Aqua",
-        "Vengaboys",
-        "Sash!",
-        "Eiffel 65"
+        "Country",
+        "Region",
+        "City",
+        "River"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What is the German word for \"spoon\"?",
-      "options": [
-        "Messer",
-        "L&ouml;ffel",
-        "Essst&auml;bchen",
-        "Gabel"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many states are in Australia?",
-      "options": [
-        "8",
-        "6",
-        "5",
-        "7"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "text": "According to the BBPA, what is the most common pub name in the UK?",
       "options": [
-        "GZA",
-        "Masta Killa",
-        "Inspectah Deck",
-        "Method Man"
+        "White Hart",
+        "Red Lion",
+        "King's Head",
+        "Royal Oak"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
+      "options": [
+        "Pauly Shore",
+        "Gilbert Gottfried",
+        "Jonathan Freeman",
+        "Robin Williams"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "According to \"Star Wars\" lore, which planet does Obi-Wan Kenobi come from?",
+      "options": [
+        "Naboo",
+        "Stewjon",
+        "Tatooine",
+        "Alderaan"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
