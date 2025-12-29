@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
+      "text": "The file hosting service, \"Google Drive\" was launched on what day?",
       "options": [
-        "Boston Beer Company",
-        "D. G. Yuengling and Son, Inc",
-        "Miller Coors",
-        "Anheuser Busch"
+        "November 14, 2008",
+        "April 24, 2012",
+        "January 20, 2010",
+        "January 12, 2014"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which singer was featured in Jack &Uuml; (Skrillex & Diplo)'s 2015 song 'Where Are &Uuml; Now'?",
+      "text": "In the 1986 film \"The Wraith\", what concept car is used for the Turbo Interceptor?",
       "options": [
-        "Selena Gomez",
-        "The Weeknd",
-        "Ellie Goulding",
-        "Justin Bieber"
+        "Pontiac Banshee",
+        "Dodge Copperhead",
+        "General Motors Firebird",
+        "Dodge M4S"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What does the \"G\" mean in \"G-Man\"?",
+      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
       "options": [
-        "Ghost",
-        "Geronimo",
-        "Government",
-        "Going"
+        "Video Games",
+        "Films",
+        "Board Games",
+        "Television Shows"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the star of the TV series \"24\"?",
+      "text": "Who directed the 1973 film \"American Graffiti\"?",
       "options": [
-        "Hugh Laurie",
-        "Kiefer Sutherland",
-        "Rob Lowe",
-        "Kevin Bacon"
+        "Francis Ford Coppola",
+        "George Lucas",
+        "Steven Spielberg",
+        "Ron Howard"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "At which race was the 2018 F1 Drivers Championship won?",
+      "text": "What album is the song 'New Slang' by The Shins found on?",
       "options": [
-        "Abu Dhabi",
-        "Mexico",
-        "United States",
-        "Belgium"
+        "Port Of Morrow",
+        "Oh, Inverted World",
+        "Wincing The Night Away",
+        "Chutes Too Narrow"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     }
   ]
 }
