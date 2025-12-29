@@ -1,68 +1,68 @@
 {
-  "day": "20251228",
-  "dayIndex": 127,
+  "day": "20251229",
+  "dayIndex": 128,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The file hosting service, \"Google Drive\" was launched on what day?",
+      "text": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
       "options": [
-        "November 14, 2008",
-        "April 24, 2012",
-        "January 20, 2010",
-        "January 12, 2014"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In the 1986 film \"The Wraith\", what concept car is used for the Turbo Interceptor?",
-      "options": [
-        "Pontiac Banshee",
-        "Dodge Copperhead",
-        "General Motors Firebird",
-        "Dodge M4S"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
-      "options": [
-        "Video Games",
-        "Films",
-        "Board Games",
-        "Television Shows"
+        "The Dream Team",
+        "The Bushwhackers",
+        "Demolition",
+        "The British Bulldogs"
       ],
       "correct": 2,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In which state of America was the Fresh Prince of Bel-Air born and raised in?",
+      "options": [
+        "Pennsylvania",
+        "Florida",
+        "New Jersey",
+        "California"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "After how many years would you celebrate your crystal anniversary?",
+      "options": [
+        "15",
+        "25",
+        "20",
+        "10"
+      ],
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the 1973 film \"American Graffiti\"?",
+      "text": "What African country has Portuguese as its official language?",
       "options": [
-        "Francis Ford Coppola",
-        "George Lucas",
-        "Steven Spielberg",
-        "Ron Howard"
+        "Mozambique",
+        "Togo",
+        "Botswana",
+        "Gabon"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "What album is the song 'New Slang' by The Shins found on?",
+      "text": "Which classic horror character killed Elizabeth Lavenza?",
       "options": [
-        "Port Of Morrow",
-        "Oh, Inverted World",
-        "Wincing The Night Away",
-        "Chutes Too Narrow"
+        "The Creature from the Black Lagoon",
+        "Werewolf",
+        "Count Dracula",
+        "Frankenstein's Monster"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     }
   ]
 }
