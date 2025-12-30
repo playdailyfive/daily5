@@ -1,68 +1,68 @@
 {
-  "day": "20251229",
-  "dayIndex": 128,
+  "day": "20251230",
+  "dayIndex": 129,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
+      "text": "What is the closest planet to our solar system's sun?",
       "options": [
-        "Anheuser Busch",
-        "Boston Beer Company",
-        "D. G. Yuengling and Son, Inc",
-        "Miller Coors"
+        "Mercury",
+        "Mars",
+        "Earth",
+        "Jupiter"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Queen song `A Kind Of Magic` is featured in which 1986 film?",
+      "text": "At the end of the 2001 film \"Rat Race\", whose concert do the contestants crash?",
       "options": [
-        "Highlander",
-        "Flash Gordon",
-        "Howard the Duck",
-        "Labyrinth"
+        "Smash Mouth",
+        "Linkin Park",
+        "Bowling for Soup",
+        "Sum 41"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is the German word for \"spoon\"?",
+      "text": "What fast food chain has the most locations globally? ",
       "options": [
-        "L&ouml;ffel",
-        "Essst&auml;bchen",
-        "Gabel",
-        "Messer"
+        "KFC",
+        "McDonalds",
+        "Subway",
+        "Starbucks"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "When did The Beatles release the LP \"Please Please Me\"?",
+      "text": "Which German city is located on the River Isar?",
       "options": [
-        "1963",
-        "1969",
-        "1970",
-        "1960"
+        "Berlin",
+        "Hamburg",
+        "Munich",
+        "Dortmund"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Which song in rapper Kanye West's album \"The Life of Pablo\" features Rihanna?",
+      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
       "options": [
-        "Highlights",
-        "Ultralight Beam",
-        "Wolves",
-        "Famous"
+        "16",
+        "18",
+        "20",
+        "14"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
