@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
+      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
       "options": [
-        "The Dream Team",
-        "The Bushwhackers",
-        "Demolition",
-        "The British Bulldogs"
+        "Anheuser Busch",
+        "Boston Beer Company",
+        "D. G. Yuengling and Son, Inc",
+        "Miller Coors"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which state of America was the Fresh Prince of Bel-Air born and raised in?",
+      "text": "The Queen song `A Kind Of Magic` is featured in which 1986 film?",
       "options": [
-        "Pennsylvania",
-        "Florida",
-        "New Jersey",
-        "California"
+        "Highlander",
+        "Flash Gordon",
+        "Howard the Duck",
+        "Labyrinth"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "After how many years would you celebrate your crystal anniversary?",
+      "text": "What is the German word for \"spoon\"?",
       "options": [
-        "15",
-        "25",
-        "20",
-        "10"
+        "L&ouml;ffel",
+        "Essst&auml;bchen",
+        "Gabel",
+        "Messer"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What African country has Portuguese as its official language?",
+      "text": "When did The Beatles release the LP \"Please Please Me\"?",
       "options": [
-        "Mozambique",
-        "Togo",
-        "Botswana",
-        "Gabon"
+        "1963",
+        "1969",
+        "1970",
+        "1960"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which classic horror character killed Elizabeth Lavenza?",
+      "text": "Which song in rapper Kanye West's album \"The Life of Pablo\" features Rihanna?",
       "options": [
-        "The Creature from the Black Lagoon",
-        "Werewolf",
-        "Count Dracula",
-        "Frankenstein's Monster"
+        "Highlights",
+        "Ultralight Beam",
+        "Wolves",
+        "Famous"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     }
   ]
 }
