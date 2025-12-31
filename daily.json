@@ -1,68 +1,68 @@
 {
-  "day": "20251230",
-  "dayIndex": 129,
+  "day": "20251231",
+  "dayIndex": 130,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What zodiac sign is represented by a pair of scales?",
+      "text": "What do sailors call the left side of a boat?",
       "options": [
-        "Libra",
-        "Aries",
-        "Sagittarius",
-        "Capricorn"
+        "Port",
+        "Stern",
+        "Bow",
+        "Starboard"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays the character of Po in the Kung Fu Panda movies?",
+      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
       "options": [
-        "Jack Black",
-        "Jim Petersson",
-        "Mirana Jonnes",
-        "McConahey Ramses"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "What was the original name of the search engine \"Google\"?",
-      "options": [
-        "Netscape Navigator",
-        "SearchPro",
-        "BackRub",
-        "CatMassage"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In the original Doctor Who series (1963), fourth doctor Tom Baker's scarf was how long?",
-      "options": [
-        "10 Meters",
-        "2 Meters",
-        "7 Meters",
-        "5 Meters"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "In The Lies Of Locke Lamora, what does \"Lamora\" mean in Throne Therin?",
-      "options": [
-        "Thievery",
-        "Justice",
-        "Chaos",
-        "Shadow"
+        "Fernando",
+        "Angelo",
+        "Dave",
+        "Figaro"
       ],
       "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "options": [
+        "One hundred",
+        "Ten",
+        "Five",
+        "Twenty"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the defining characteristic of someone who is described as hirsute?",
+      "options": [
+        "Hairy",
+        "Tall",
+        "Rude",
+        "Funny"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
+      "options": [
+        "Center Parcs",
+        "Keycamp",
+        "Villa Plus",
+        "Yelloh Village"
+      ],
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     }
   ]
 }
