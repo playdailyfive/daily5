@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the closest planet to our solar system's sun?",
+      "text": "What zodiac sign is represented by a pair of scales?",
       "options": [
-        "Mercury",
-        "Mars",
-        "Earth",
-        "Jupiter"
+        "Libra",
+        "Aries",
+        "Sagittarius",
+        "Capricorn"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "At the end of the 2001 film \"Rat Race\", whose concert do the contestants crash?",
+      "text": "Who plays the character of Po in the Kung Fu Panda movies?",
       "options": [
-        "Smash Mouth",
-        "Linkin Park",
-        "Bowling for Soup",
-        "Sum 41"
+        "Jack Black",
+        "Jim Petersson",
+        "Mirana Jonnes",
+        "McConahey Ramses"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What fast food chain has the most locations globally? ",
+      "text": "What was the original name of the search engine \"Google\"?",
       "options": [
-        "KFC",
-        "McDonalds",
-        "Subway",
-        "Starbucks"
+        "Netscape Navigator",
+        "SearchPro",
+        "BackRub",
+        "CatMassage"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which German city is located on the River Isar?",
+      "text": "In the original Doctor Who series (1963), fourth doctor Tom Baker's scarf was how long?",
       "options": [
-        "Berlin",
-        "Hamburg",
-        "Munich",
-        "Dortmund"
+        "10 Meters",
+        "2 Meters",
+        "7 Meters",
+        "5 Meters"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
+      "text": "In The Lies Of Locke Lamora, what does \"Lamora\" mean in Throne Therin?",
       "options": [
-        "16",
-        "18",
-        "20",
-        "14"
+        "Thievery",
+        "Justice",
+        "Chaos",
+        "Shadow"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Books"
     }
   ]
 }
