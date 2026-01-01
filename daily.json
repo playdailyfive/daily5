@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the left side of a boat?",
+      "text": "Waluigi's first appearance was in what game?",
       "options": [
-        "Port",
-        "Stern",
-        "Bow",
-        "Starboard"
+        "Mario Tennis 64 (N64)",
+        "Super Smash Bros. Ultimate",
+        "Mario Party (N64)",
+        "Wario Land: Super Mario Land 3"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
+      "text": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
       "options": [
-        "Fernando",
-        "Angelo",
-        "Dave",
-        "Figaro"
+        "F. Scott Fitzgerald",
+        "Stephen King",
+        "Hunter Fox",
+        "William Golding"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "text": "When was WhatsApp founded?",
       "options": [
-        "One hundred",
-        "Ten",
-        "Five",
-        "Twenty"
+        "2010",
+        "2012",
+        "2009",
+        "2007"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the defining characteristic of someone who is described as hirsute?",
+      "text": "What was the name of Marilyn Monroe's first husband?",
       "options": [
-        "Hairy",
-        "Tall",
-        "Rude",
-        "Funny"
+        "James Dougherty",
+        "Arthur Miller",
+        "Joe Dimaggio",
+        "Kirk Douglas"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Celebrities"
     },
     {
-      "text": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
+      "text": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
       "options": [
-        "Center Parcs",
-        "Keycamp",
-        "Villa Plus",
-        "Yelloh Village"
+        "Chinese",
+        "Russian",
+        "Indian",
+        "Japanese"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
