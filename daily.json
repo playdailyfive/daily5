@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which cardinal direction does the Sun rise from?",
+      "text": "What technology is named after a tenth-century ruler of Denmark and Norway?",
       "options": [
-        "East",
-        "North",
-        "South",
-        "West"
+        "Bluetooth",
+        "GPS",
+        "Internet",
+        "Wi-Fi"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who starred in the film 1973 movie \"Enter The Dragon\"?",
+      "text": "Which player holds the NHL record of 2,857 points?",
       "options": [
-        "Jet Li",
-        " Yun-Fat Chow",
-        "Jackie Chan",
-        "Bruce Lee"
+        "Sidney Crosby",
+        "Gordie Howe",
+        "Mario Lemieux ",
+        "Wayne Gretzky"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "text": "Rolex is a company that specializes in what type of product?",
       "options": [
-        "Baltic Porter",
-        "Pale Lager",
-        "Pilfsner",
-        "India Pale Ale"
+        "Sports equipment",
+        "Watches",
+        "Computers",
+        "Cars"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was walking like an Egyptian in 1981?",
+      "text": "What is the capital city of Slovenia?",
       "options": [
-        "The Ocean Blue",
-        "The Connells",
-        "The Bangles",
-        "R.E.M."
+        "Velenje",
+        "Trbovlje",
+        "Ljubljana",
+        "Maribor"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Where is the fast food chain \"Panda Express\" headquartered?",
+      "text": "Which race enjoys a glass of warm baghol in \"Star Trek\"?",
       "options": [
-        "Rosemead, California",
-        "San Diego, California",
-        "Sacramento, California",
-        "Fresno, California"
+        "Klingon",
+        "Botha",
+        "Vulcan",
+        "Human"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     }
   ]
 }
