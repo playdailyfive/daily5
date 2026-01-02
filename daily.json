@@ -1,68 +1,68 @@
 {
-  "day": "20260101",
-  "dayIndex": 131,
+  "day": "20260102",
+  "dayIndex": 132,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What technology is named after a tenth-century ruler of Denmark and Norway?",
+      "text": "The American company \"Campbell's\" is most well known for making what food product?",
       "options": [
-        "Bluetooth",
-        "GPS",
-        "Internet",
-        "Wi-Fi"
+        "Chocolate",
+        "Sausages",
+        "Soft drinks",
+        "Canned soups"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which player holds the NHL record of 2,857 points?",
+      "text": "Which country hosted the 2022 FIFA World Cup?",
       "options": [
-        "Sidney Crosby",
-        "Gordie Howe",
-        "Mario Lemieux ",
-        "Wayne Gretzky"
+        "Switzerland",
+        "USA",
+        "Qatar",
+        "Japan"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "Sports"
     },
     {
-      "text": "Rolex is a company that specializes in what type of product?",
+      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
       "options": [
-        "Sports equipment",
-        "Watches",
-        "Computers",
-        "Cars"
+        "One hundred",
+        "Ten",
+        "Five",
+        "Twenty"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital city of Slovenia?",
+      "text": "Who voiced Metalbeard in \"The Lego Movie\"?",
       "options": [
-        "Velenje",
-        "Trbovlje",
-        "Ljubljana",
-        "Maribor"
+        "Morgan Freeman",
+        "Liam Neeson",
+        "Nick Offerman",
+        "Will Arnet"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which race enjoys a glass of warm baghol in \"Star Trek\"?",
+      "text": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
       "options": [
-        "Klingon",
-        "Botha",
-        "Vulcan",
-        "Human"
+        "Chinese",
+        "Russian",
+        "Indian",
+        "Japanese"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     }
   ]
 }
