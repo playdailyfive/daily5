@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The American company \"Campbell's\" is most well known for making what food product?",
+      "text": "What is the famous Papa John's last name?",
       "options": [
-        "Chocolate",
-        "Sausages",
-        "Soft drinks",
-        "Canned soups"
+        "Chowder",
+        "ANDERSON",
+        "Williams",
+        "Schnatter"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country hosted the 2022 FIFA World Cup?",
+      "text": "Which UK country features a dragon on their flag?",
       "options": [
-        "Switzerland",
-        "USA",
-        "Qatar",
-        "Japan"
+        "Scotland",
+        "England",
+        "Wales",
+        "North Ireland"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Geography"
     },
     {
-      "text": "According to the United States' CDC, one in how many Americans die annually due to smoking?",
+      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
       "options": [
-        "One hundred",
-        "Ten",
-        "Five",
-        "Twenty"
+        "Tiki masala",
+        "Pani puri",
+        "Tandoori",
+        "Biryani"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who voiced Metalbeard in \"The Lego Movie\"?",
+      "text": "Which is the largest of these 4 islands?",
       "options": [
-        "Morgan Freeman",
-        "Liam Neeson",
-        "Nick Offerman",
-        "Will Arnet"
+        "Cuba",
+        "Great Britain",
+        "Borneo",
+        "Madagascar"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
+      "text": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
       "options": [
-        "Chinese",
-        "Russian",
-        "Indian",
-        "Japanese"
+        "The Shatter's",
+        "The Tomb of the Acient's",
+        "The Puppet Master's Theater",
+        "Snake Pit"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
