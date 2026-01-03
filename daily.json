@@ -1,68 +1,68 @@
 {
-  "day": "20260102",
-  "dayIndex": 132,
+  "day": "20260103",
+  "dayIndex": 133,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the famous Papa John's last name?",
+      "text": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
       "options": [
-        "Chowder",
-        "ANDERSON",
-        "Williams",
-        "Schnatter"
+        "Richard Branson",
+        "Donald Trump",
+        "Alan Sugar",
+        "Bill Gates"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which player holds the NHL record of 2,857 points?",
+      "options": [
+        "Mario Lemieux ",
+        "Sidney Crosby",
+        "Wayne Gretzky",
+        "Gordie Howe"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "A doctor with a PhD is a doctor of what?",
+      "options": [
+        "Philosophy",
+        "Psychology",
+        "Phrenology",
+        "Physical Therapy"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "The 1985 Toyota Corolla \"AE86\" was the hero car for what anime? ",
+      "options": [
+        "Wangan Midnight",
+        "Ex Driver",
+        "Ghost MF",
+        "Initial D"
       ],
       "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which UK country features a dragon on their flag?",
-      "options": [
-        "Scotland",
-        "England",
-        "Wales",
-        "North Ireland"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "Geography"
-    },
-    {
-      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
-      "options": [
-        "Tiki masala",
-        "Pani puri",
-        "Tandoori",
-        "Biryani"
-      ],
-      "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Which is the largest of these 4 islands?",
+      "text": "How many stations does the Central Line have on the London Underground?",
       "options": [
-        "Cuba",
-        "Great Britain",
-        "Borneo",
-        "Madagascar"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
-      "options": [
-        "The Shatter's",
-        "The Tomb of the Acient's",
-        "The Puppet Master's Theater",
-        "Snake Pit"
+        "49",
+        "43",
+        "47",
+        "51"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
