@@ -1,68 +1,68 @@
 {
-  "day": "20260103",
-  "dayIndex": 133,
+  "day": "20260104",
+  "dayIndex": 134,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What zodiac sign is represented by a pair of scales?",
+      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
       "options": [
-        "Libra",
-        "Capricorn",
-        "Aries",
-        "Sagittarius"
+        "Slacking",
+        "Cheating",
+        "Stealing",
+        "Smoking"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the main character in \"The Flash\" TV series?",
+      "text": "Which movie contains the quote, \"Say hello to my little friend!\"?",
       "options": [
-        "Oliver Queen",
-        "Bart Allen",
-        "Barry Allen",
-        "Bruce Wayne"
+        "Heat",
+        "Scarface",
+        "Goodfellas",
+        "Reservoir Dogs"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What is the world's most expensive spice by weight?",
-      "options": [
-        "Saffron",
-        "Cinnamon",
-        "Cardamom",
-        "Vanilla"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who performed the opening theme song for the James Bond 007 movie \"Goldfinger\"?",
-      "options": [
-        "Tom Jones",
-        "Sheena Easton",
-        "John Barry",
-        "Shirley Basey"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
       "options": [
-        "Rudyard Kipling",
-        "William Shakespeare",
-        "William Wordsworth",
-        "Edgar Allan Poe"
+        "July 2, 1776",
+        "May 4, 1776",
+        "July 4, 1776",
+        "June 4, 1776"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the name of the capital of Turkey?",
+      "options": [
+        "Ankara",
+        "Istanbul",
+        "Izmir",
+        "Bursa"
       ],
       "correct": 0,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
+      "options": [
+        "18",
+        "14",
+        "16",
+        "20"
+      ],
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     }
   ]
 }
