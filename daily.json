@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+      "text": "What zodiac sign is represented by a pair of scales?",
       "options": [
-        "Richard Branson",
-        "Donald Trump",
-        "Alan Sugar",
-        "Bill Gates"
+        "Libra",
+        "Capricorn",
+        "Aries",
+        "Sagittarius"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which player holds the NHL record of 2,857 points?",
+      "text": "What is the name of the main character in \"The Flash\" TV series?",
       "options": [
-        "Mario Lemieux ",
-        "Sidney Crosby",
-        "Wayne Gretzky",
-        "Gordie Howe"
+        "Oliver Queen",
+        "Bart Allen",
+        "Barry Allen",
+        "Bruce Wayne"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "A doctor with a PhD is a doctor of what?",
+      "text": "What is the world's most expensive spice by weight?",
       "options": [
-        "Philosophy",
-        "Psychology",
-        "Phrenology",
-        "Physical Therapy"
+        "Saffron",
+        "Cinnamon",
+        "Cardamom",
+        "Vanilla"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The 1985 Toyota Corolla \"AE86\" was the hero car for what anime? ",
+      "text": "Who performed the opening theme song for the James Bond 007 movie \"Goldfinger\"?",
       "options": [
-        "Wangan Midnight",
-        "Ex Driver",
-        "Ghost MF",
-        "Initial D"
+        "Tom Jones",
+        "Sheena Easton",
+        "John Barry",
+        "Shirley Basey"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "How many stations does the Central Line have on the London Underground?",
+      "text": "Which author and poet famously wrote the line, \"The female of the species is more deadly than the male\"?",
       "options": [
-        "49",
-        "43",
-        "47",
-        "51"
+        "Rudyard Kipling",
+        "William Shakespeare",
+        "William Wordsworth",
+        "Edgar Allan Poe"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
