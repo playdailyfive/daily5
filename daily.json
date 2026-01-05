@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many syllables make up a haiku?",
+      "text": "What country has had prime ministers named Eden, Major, Peel, Law, Brown and Heath?",
       "options": [
-        "21",
-        "10",
-        "17",
-        "15"
+        "Canada",
+        "New Zealand",
+        "United Kingdom",
+        "Australia"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which NFL team plays for New England?",
+      "text": "On the show \"Rick and Morty\", in episode \"Total Rickall\", who was a parasite?",
       "options": [
-        "Patriots",
-        "Chiefs",
-        "Dolphins",
-        "49ers"
+        "Pencilvester",
+        "Beth Smith",
+        "Summer Smith",
+        "Mr. Poopy Butthole"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the world's most expensive spice by weight?",
+      "text": "What is the highest number of Michelin stars a restaurant can receive?",
       "options": [
-        "Vanilla",
-        "Cardamom",
-        "Cinnamon",
-        "Saffron"
+        "Six",
+        "Five",
+        "Four",
+        "Three"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Actress Susan Sarandon caught pneumonia during filming of which movie?",
+      "text": "What song by Tina Turner is the theme for Mad Max Beyond Thunderdome?",
       "options": [
-        "Dead Man Walking",
-        "Thelma and Louise",
-        "Enchanted",
-        "The Rocky Horror Picture Show"
+        "What's Love Got To Do With It",
+        "Let's Stay Together",
+        "I Don't Wanna Lose You",
+        "We Don't Need Another Hero"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the name of the assassin in the first \"Hellboy\" movie?",
+      "text": "What was the name of the actor who played Leatherface in the 1974 horror film, The Texas Chainsaw Massacre?",
       "options": [
-        "Ilsa Haupstein",
-        "Grigori Efimovich Rasputin",
-        "Karl Ruprecht Kroenen",
-        "Klaus Werner von Krupt"
+        "Joe Bill Hogan",
+        "John Dugan",
+        "Gunnar Hansen",
+        "Edwin Neal"
       ],
       "correct": 2,
       "difficulty": "hard",
