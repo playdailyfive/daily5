@@ -1,66 +1,66 @@
 {
-  "day": "20260104",
-  "dayIndex": 134,
+  "day": "20260105",
+  "dayIndex": 135,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are caught \"Goldbricking\", what are you doing wrong?",
+      "text": "How many syllables make up a haiku?",
       "options": [
-        "Slacking",
-        "Cheating",
-        "Stealing",
-        "Smoking"
+        "21",
+        "10",
+        "17",
+        "15"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which movie contains the quote, \"Say hello to my little friend!\"?",
+      "text": "Which NFL team plays for New England?",
       "options": [
-        "Heat",
-        "Scarface",
-        "Goodfellas",
-        "Reservoir Dogs"
+        "Patriots",
+        "Chiefs",
+        "Dolphins",
+        "49ers"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "What is the world's most expensive spice by weight?",
+      "options": [
+        "Vanilla",
+        "Cardamom",
+        "Cinnamon",
+        "Saffron"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Actress Susan Sarandon caught pneumonia during filming of which movie?",
+      "options": [
+        "Dead Man Walking",
+        "Thelma and Louise",
+        "Enchanted",
+        "The Rocky Horror Picture Show"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "text": "What is the name of the assassin in the first \"Hellboy\" movie?",
       "options": [
-        "July 2, 1776",
-        "May 4, 1776",
-        "July 4, 1776",
-        "June 4, 1776"
+        "Ilsa Haupstein",
+        "Grigori Efimovich Rasputin",
+        "Karl Ruprecht Kroenen",
+        "Klaus Werner von Krupt"
       ],
       "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the name of the capital of Turkey?",
-      "options": [
-        "Ankara",
-        "Istanbul",
-        "Izmir",
-        "Bursa"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "How old was Laurence Fishburne when Francis Ford Coppola cast him in Apocalypse Now (1979)? ",
-      "options": [
-        "18",
-        "14",
-        "16",
-        "20"
-      ],
-      "correct": 1,
       "difficulty": "hard",
       "category": "Entertainment: Film"
     }
