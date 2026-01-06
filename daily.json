@@ -1,66 +1,66 @@
 {
-  "day": "20260105",
-  "dayIndex": 135,
+  "day": "20260106",
+  "dayIndex": 136,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What was the first ever London Underground line to be built?",
+      "text": "What country has had prime ministers named Eden, Major, Peel, Law, Brown and Heath?",
       "options": [
-        "Victoria Line",
-        "Bakerloo Line",
-        "Metropolitan Line",
-        "Circle Line"
+        "Canada",
+        "Australia",
+        "New Zealand",
+        "United Kingdom"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who played Deputy Marshal Samuel Gerard in the 1993 film \"The Fugitive\"?",
+      "text": "Which player holds the NHL record of 2,857 points?",
       "options": [
-        "Tommy Lee Jones",
-        "Harrison Ford",
-        "Harvey Keitel",
-        "Martin Landau"
+        "Gordie Howe",
+        "Wayne Gretzky",
+        "Mario Lemieux ",
+        "Sidney Crosby"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "What is the average life span of a garden ant?",
+      "options": [
+        "24 hours",
+        "3 years",
+        "1 week",
+        "15 years"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who plays \"Bruce Wayne\" in the 2008 movie \"The Dark Knight\"?",
+      "options": [
+        "Michael Caine",
+        "Heath Ledger",
+        "Ron Dean",
+        "Christian Bale"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Who is a co-founder of music streaming service Spotify?",
+      "text": "What is the name of the Canadian national anthem?",
       "options": [
-        "Michael Breidenbruecker",
-        "Felix Miller",
-        "Sean Parker",
-        "Daniel Ek"
+        "March of the Puck Drop",
+        "O Canada",
+        "Leaf-Spangled Banner",
+        "O Red Maple"
       ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which genre of Hip Hop does MC Frontalot rap?",
-      "options": [
-        "Christian",
-        "Horrorcore",
-        "Crunk",
-        "Nerdcore"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What is the county seat of King County, Washington?",
-      "options": [
-        "Skykomish",
-        "Enumclaw",
-        "Seattle",
-        "Bellevue"
-      ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "hard",
       "category": "Geography"
     }
