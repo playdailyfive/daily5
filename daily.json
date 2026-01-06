@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What country has had prime ministers named Eden, Major, Peel, Law, Brown and Heath?",
+      "text": "What was the first ever London Underground line to be built?",
       "options": [
-        "Canada",
-        "New Zealand",
-        "United Kingdom",
-        "Australia"
+        "Victoria Line",
+        "Bakerloo Line",
+        "Metropolitan Line",
+        "Circle Line"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "On the show \"Rick and Morty\", in episode \"Total Rickall\", who was a parasite?",
+      "text": "Who played Deputy Marshal Samuel Gerard in the 1993 film \"The Fugitive\"?",
       "options": [
-        "Pencilvester",
-        "Beth Smith",
-        "Summer Smith",
-        "Mr. Poopy Butthole"
+        "Tommy Lee Jones",
+        "Harrison Ford",
+        "Harvey Keitel",
+        "Martin Landau"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the highest number of Michelin stars a restaurant can receive?",
+      "text": "Who is a co-founder of music streaming service Spotify?",
       "options": [
-        "Six",
-        "Five",
-        "Four",
-        "Three"
+        "Michael Breidenbruecker",
+        "Felix Miller",
+        "Sean Parker",
+        "Daniel Ek"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What song by Tina Turner is the theme for Mad Max Beyond Thunderdome?",
+      "text": "Which genre of Hip Hop does MC Frontalot rap?",
       "options": [
-        "What's Love Got To Do With It",
-        "Let's Stay Together",
-        "I Don't Wanna Lose You",
-        "We Don't Need Another Hero"
+        "Christian",
+        "Horrorcore",
+        "Crunk",
+        "Nerdcore"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What was the name of the actor who played Leatherface in the 1974 horror film, The Texas Chainsaw Massacre?",
+      "text": "What is the county seat of King County, Washington?",
       "options": [
-        "Joe Bill Hogan",
-        "John Dugan",
-        "Gunnar Hansen",
-        "Edwin Neal"
+        "Skykomish",
+        "Enumclaw",
+        "Seattle",
+        "Bellevue"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
