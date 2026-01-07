@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What country has had prime ministers named Eden, Major, Peel, Law, Brown and Heath?",
+      "text": "What is the profession of Elon Musk's mom, Maye Musk?",
       "options": [
-        "Canada",
-        "Australia",
-        "New Zealand",
-        "United Kingdom"
+        "Musician",
+        "Professor",
+        "Biologist",
+        "Model"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which player holds the NHL record of 2,857 points?",
+      "text": "Who directed the 2015 movie \"The Revenant\"?",
       "options": [
-        "Gordie Howe",
-        "Wayne Gretzky",
-        "Mario Lemieux ",
-        "Sidney Crosby"
+        "Wes Anderson",
+        "Alejandro G. I&ntilde;&aacute;rritu",
+        "Christopher Nolan",
+        "David Fincher"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the average life span of a garden ant?",
+      "text": "What is the romanized Russian word for \"winter\"?",
       "options": [
-        "24 hours",
-        "3 years",
-        "1 week",
-        "15 years"
+        "Leto",
+        "Osen'",
+        "Vesna",
+        "Zima"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays \"Bruce Wayne\" in the 2008 movie \"The Dark Knight\"?",
+      "text": "Liam Howlett founded which electronic music group in 1990?",
       "options": [
-        "Michael Caine",
-        "Heath Ledger",
-        "Ron Dean",
-        "Christian Bale"
+        "The Chemical Brothers",
+        "Infected Mushroom",
+        "The Crystal Method",
+        "The Prodigy"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the name of the Canadian national anthem?",
+      "text": "What is the land connecting North America and South America?",
       "options": [
-        "March of the Puck Drop",
-        "O Canada",
-        "Leaf-Spangled Banner",
-        "O Red Maple"
+        "Australasia",
+        "Isthmus of Panama",
+        "Urals",
+        "Isthmus of Suez"
       ],
       "correct": 1,
       "difficulty": "hard",
