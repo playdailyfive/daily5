@@ -1,68 +1,68 @@
 {
-  "day": "20260106",
-  "dayIndex": 136,
+  "day": "20260107",
+  "dayIndex": 137,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the profession of Elon Musk's mom, Maye Musk?",
+      "text": "In the English language, what is the name of the \"&\" character?",
       "options": [
-        "Musician",
-        "Professor",
-        "Biologist",
-        "Model"
+        "Obelus ",
+        "Ampersand",
+        "Eightslash",
+        "And Sign"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the 2015 movie \"The Revenant\"?",
+      "text": "What nuts are used in the production of marzipan?",
       "options": [
-        "Wes Anderson",
-        "Alejandro G. I&ntilde;&aacute;rritu",
-        "Christopher Nolan",
-        "David Fincher"
+        "Almonds",
+        "Walnuts",
+        "Pistachios",
+        "Peanuts"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "What is the romanized Russian word for \"winter\"?",
+      "text": "When did the website \"Facebook\" launch?",
       "options": [
-        "Leto",
-        "Osen'",
-        "Vesna",
-        "Zima"
+        "2004",
+        "2003",
+        "2006",
+        "2005"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Liam Howlett founded which electronic music group in 1990?",
+      "text": "EDM producer Marshmello performs live wearing clothes and a marshmallow mask of what colour?",
       "options": [
-        "The Chemical Brothers",
-        "Infected Mushroom",
-        "The Crystal Method",
-        "The Prodigy"
+        "Black",
+        "White",
+        "Yellow",
+        "Blue"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the land connecting North America and South America?",
+      "text": "Named after the mallow flower, mauve is a shade of what?",
       "options": [
-        "Australasia",
-        "Isthmus of Panama",
-        "Urals",
-        "Isthmus of Suez"
+        "Purple",
+        "Red",
+        "Brown",
+        "Pink"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
