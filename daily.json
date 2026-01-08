@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the English language, what is the name of the \"&\" character?",
+      "text": "How many cards are there in a standard deck of playing cards?",
       "options": [
-        "Obelus ",
-        "Ampersand",
-        "Eightslash",
-        "And Sign"
+        "64",
+        "52",
+        "32",
+        "40"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What nuts are used in the production of marzipan?",
+      "text": "What was Rage Against the Machine's debut album?",
       "options": [
-        "Almonds",
-        "Walnuts",
-        "Pistachios",
-        "Peanuts"
+        "Rage Against the Machine",
+        "Bombtrack",
+        "The Battle Of Los Angeles",
+        "Evil Empire"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "When did the website \"Facebook\" launch?",
-      "options": [
-        "2004",
-        "2003",
-        "2006",
-        "2005"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "EDM producer Marshmello performs live wearing clothes and a marshmallow mask of what colour?",
-      "options": [
-        "Black",
-        "White",
-        "Yellow",
-        "Blue"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Named after the mallow flower, mauve is a shade of what?",
+      "text": "After how many years would you celebrate your crystal anniversary?",
       "options": [
-        "Purple",
-        "Red",
-        "Brown",
-        "Pink"
+        "15",
+        "10",
+        "25",
+        "20"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In Finding Nemo, what was the name of Nemo's mom?",
+      "options": [
+        "Sandy",
+        "Coral",
+        "Shelly",
+        "Pearl"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
+      "options": [
+        "Center Parcs",
+        "Yelloh Village",
+        "Keycamp",
+        "Villa Plus"
       ],
       "correct": 0,
       "difficulty": "hard",
