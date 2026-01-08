@@ -1,66 +1,66 @@
 {
-  "day": "20260107",
-  "dayIndex": 137,
+  "day": "20260108",
+  "dayIndex": 138,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many cards are there in a standard deck of playing cards?",
+      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
       "options": [
-        "64",
-        "52",
-        "32",
-        "40"
+        "Quito",
+        "Cali",
+        "Bogot&aacute;",
+        "Medell&iacute;n"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was Rage Against the Machine's debut album?",
+      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
       "options": [
-        "Rage Against the Machine",
-        "Bombtrack",
-        "The Battle Of Los Angeles",
-        "Evil Empire"
+        "Dave",
+        "Figaro",
+        "Fernando",
+        "Angelo"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "After how many years would you celebrate your crystal anniversary?",
+      "text": "What English word means to \"think deeply\"?",
       "options": [
-        "15",
-        "10",
-        "25",
-        "20"
+        "Constipate",
+        "Condensate",
+        "Contemplate",
+        "Confiscate"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In Finding Nemo, what was the name of Nemo's mom?",
+      "text": "Nikki Diamond portrayed which Gladiator in the 1992 TV show \"Gladiators\"?",
       "options": [
-        "Sandy",
-        "Coral",
-        "Shelly",
-        "Pearl"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "De Eemhof, Port Zelande and Het Heijderbos are holiday villas owned by what company?",
-      "options": [
-        "Center Parcs",
-        "Yelloh Village",
-        "Keycamp",
-        "Villa Plus"
+        "Scorpio",
+        "Falcon",
+        "Jet",
+        "Nightshade"
       ],
       "correct": 0,
+      "difficulty": "medium",
+      "category": "Celebrities"
+    },
+    {
+      "text": "Originally another word for poppy, coquelicot is a shade of what?",
+      "options": [
+        "Blue",
+        "Pink",
+        "Red",
+        "Green"
+      ],
+      "correct": 2,
       "difficulty": "hard",
       "category": "General Knowledge"
     }
