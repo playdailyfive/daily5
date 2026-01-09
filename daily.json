@@ -1,68 +1,68 @@
 {
-  "day": "20260108",
-  "dayIndex": 138,
+  "day": "20260109",
+  "dayIndex": 139,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the nickname of the US state of California?",
+      "text": "The Quran is the holy book of which Abrahamic religion?",
       "options": [
-        "Bay State",
-        "Treasure State",
-        "Sunshine State",
-        "Golden State"
+        "Rastafarianism",
+        "Christianity",
+        "Islam",
+        "Judaism"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
+      "text": "The \"K\" in \"K-Pop\" stands for which word?",
       "options": [
-        "Moria",
-        "Isengard",
-        "Mordor",
-        "Rivendell"
+        "Kuwaiti",
+        "Kazakhstan",
+        "Korean",
+        "Kenyan"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "Which is the most popular spoken language in the Southern Hemisphere?",
       "options": [
-        "Sheep's Liver, Kidneys and Eyes",
-        "Whole Sheep",
-        "Sheep's Heart, Liver and Lungs",
-        "Sheep's Heart, Kidneys and Lungs"
+        "Spanish",
+        "English ",
+        "Portuguese",
+        "French"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is rapper Drake's real name?",
+      "text": "What was David Bowie's real surname?",
       "options": [
-        "Aubrey Graham",
-        "Andre Young",
-        "Shaun Carter",
-        "Dwayne Carter"
+        "Jones",
+        "Edwards",
+        "Carter",
+        "Johnson"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
+      "text": "A Caixa Malacacheta is what kind of musical instrument which is commonly used in Latin American music?",
       "options": [
-        "20%",
-        "7%",
-        "28%",
-        "13%"
+        "Snare Drum",
+        "Maraca",
+        "Bass Drum",
+        "Cow Bell"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
