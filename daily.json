@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
+      "text": "What is the nickname of the US state of California?",
       "options": [
-        "Quito",
-        "Cali",
-        "Bogot&aacute;",
-        "Medell&iacute;n"
+        "Bay State",
+        "Treasure State",
+        "Sunshine State",
+        "Golden State"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the  Rossini opera, what was the name of 'The Barber of Seville'?",
+      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
       "options": [
-        "Dave",
-        "Figaro",
-        "Fernando",
-        "Angelo"
+        "Moria",
+        "Isengard",
+        "Mordor",
+        "Rivendell"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What English word means to \"think deeply\"?",
+      "text": "What is real haggis made of?",
       "options": [
-        "Constipate",
-        "Condensate",
-        "Contemplate",
-        "Confiscate"
+        "Sheep's Liver, Kidneys and Eyes",
+        "Whole Sheep",
+        "Sheep's Heart, Liver and Lungs",
+        "Sheep's Heart, Kidneys and Lungs"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Nikki Diamond portrayed which Gladiator in the 1992 TV show \"Gladiators\"?",
+      "text": "What is rapper Drake's real name?",
       "options": [
-        "Scorpio",
-        "Falcon",
-        "Jet",
-        "Nightshade"
+        "Aubrey Graham",
+        "Andre Young",
+        "Shaun Carter",
+        "Dwayne Carter"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Originally another word for poppy, coquelicot is a shade of what?",
+      "text": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
       "options": [
-        "Blue",
-        "Pink",
-        "Red",
-        "Green"
+        "20%",
+        "7%",
+        "28%",
+        "13%"
       ],
       "correct": 2,
       "difficulty": "hard",
