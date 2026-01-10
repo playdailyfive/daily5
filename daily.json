@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Quran is the holy book of which Abrahamic religion?",
+      "text": "Which is the second largest native language spoken in Spain by numbers of speakers?",
       "options": [
-        "Rastafarianism",
-        "Christianity",
-        "Islam",
-        "Judaism"
+        "French",
+        "Portuguese",
+        "Catalan",
+        "Spanish"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The \"K\" in \"K-Pop\" stands for which word?",
+      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
       "options": [
-        "Kuwaiti",
-        "Kazakhstan",
-        "Korean",
-        "Kenyan"
+        "Great Yarmouth",
+        "Bournemouth",
+        "Torquay",
+        "Blackpool"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Which is the most popular spoken language in the Southern Hemisphere?",
+      "text": "Amsterdam Centraal station is twinned with what station?",
       "options": [
-        "Spanish",
-        "English ",
-        "Portuguese",
-        "French"
+        "Paris Gare du Nord",
+        "Frankfurt (Main) Hauptbahnhof",
+        "London Liverpool Street",
+        "Brussels Midi"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was David Bowie's real surname?",
+      "text": "Which boxing personality was one of the presenters in the 1999 revival of It's a Knockout?",
       "options": [
-        "Jones",
-        "Edwards",
-        "Carter",
-        "Johnson"
+        "Frank Bruno",
+        "Muhammad Ali",
+        "Joe Fraiser",
+        "Henry Cooper"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "A Caixa Malacacheta is what kind of musical instrument which is commonly used in Latin American music?",
+      "text": "Virtual reality company Oculus VR lost which of it's co-founders in a freak car accident in 2013?",
       "options": [
-        "Snare Drum",
-        "Maraca",
-        "Bass Drum",
-        "Cow Bell"
+        "Andrew Scott Reisse",
+        "Palmer Luckey",
+        "Jack McCauley",
+        "Nate Mitchell"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
