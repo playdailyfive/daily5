@@ -1,64 +1,64 @@
 {
-  "day": "20260109",
-  "dayIndex": 139,
+  "day": "20260110",
+  "dayIndex": 140,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which is the second largest native language spoken in Spain by numbers of speakers?",
+      "text": "What is the official language of Brazil?",
       "options": [
-        "French",
+        "Brazilian",
+        "Spanish",
         "Portuguese",
-        "Catalan",
-        "Spanish"
+        "English"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
+      "text": "What was the title of the first Bond movie, released in 1962?",
       "options": [
-        "Great Yarmouth",
-        "Bournemouth",
-        "Torquay",
-        "Blackpool"
+        "Dr. No",
+        "From Russia with Love",
+        "Goldfinger",
+        "Thunderball"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Amsterdam Centraal station is twinned with what station?",
+      "text": "What does a milliner make and sell?",
       "options": [
-        "Paris Gare du Nord",
-        "Frankfurt (Main) Hauptbahnhof",
-        "London Liverpool Street",
-        "Brussels Midi"
+        "Shoes",
+        "Shirts",
+        "Belts",
+        "Hats"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which boxing personality was one of the presenters in the 1999 revival of It's a Knockout?",
+      "text": "Which Beatle led the way across the zebra crossing on the Abbey Road album cover?",
       "options": [
-        "Frank Bruno",
-        "Muhammad Ali",
-        "Joe Fraiser",
-        "Henry Cooper"
+        "John",
+        "George",
+        "Ringo",
+        "Paul"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Virtual reality company Oculus VR lost which of it's co-founders in a freak car accident in 2013?",
+      "text": "In \"Resident Evil 3\", how many inventory slots does Jill have at the start of the game?",
       "options": [
-        "Andrew Scott Reisse",
-        "Palmer Luckey",
-        "Jack McCauley",
-        "Nate Mitchell"
+        "8",
+        "10",
+        "6",
+        "12"
       ],
       "correct": 0,
       "difficulty": "hard",
