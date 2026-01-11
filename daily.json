@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the official language of Brazil?",
+      "text": "What alcoholic drink is made from molasses?",
       "options": [
-        "Brazilian",
-        "Spanish",
-        "Portuguese",
-        "English"
+        "Gin",
+        "Vodka",
+        "Rum",
+        "Whisky"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the title of the first Bond movie, released in 1962?",
+      "text": "What breed of dog was Marley in the film \"Marley & Me\" (2008)?",
       "options": [
-        "Dr. No",
-        "From Russia with Love",
-        "Goldfinger",
-        "Thunderball"
+        "Labrador Retriever",
+        "Golden Retriever",
+        "Dalmatian",
+        "Shiba Inu"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What does a milliner make and sell?",
+      "text": "In which country was the 1992 Summer Olympics Games held?",
       "options": [
-        "Shoes",
-        "Shirts",
-        "Belts",
-        "Hats"
+        "Russia",
+        "USA",
+        "Korea",
+        "Spain"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which Beatle led the way across the zebra crossing on the Abbey Road album cover?",
+      "text": "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie \"Hardcore Henry\"?",
       "options": [
-        "John",
-        "George",
-        "Ringo",
-        "Paul"
+        "Akan",
+        "Jimmy",
+        "Henry",
+        "Estelle"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In \"Resident Evil 3\", how many inventory slots does Jill have at the start of the game?",
+      "text": "How many members are there in the idol group \"&micro;'s\"?",
       "options": [
-        "8",
-        "10",
+        "9",
         "6",
-        "12"
+        "48",
+        "3"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
