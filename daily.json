@@ -1,68 +1,68 @@
 {
-  "day": "20260110",
-  "dayIndex": 140,
+  "day": "20260111",
+  "dayIndex": 141,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What alcoholic drink is made from molasses?",
+      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
       "options": [
-        "Gin",
-        "Vodka",
-        "Rum",
-        "Whisky"
+        "Gotham City",
+        "Star City",
+        "Metropolis",
+        "Central City"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which group performs the song \"Crash into Me\"?",
+      "options": [
+        "Destiny's Child",
+        "Phish",
+        "Dave Matthews Band",
+        "The Grateful Dead"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What breed of dog was Marley in the film \"Marley & Me\" (2008)?",
+      "text": "What is the Italian word for \"tomato\"?",
       "options": [
-        "Labrador Retriever",
-        "Golden Retriever",
-        "Dalmatian",
-        "Shiba Inu"
+        "Pomodoro",
+        "Aglio",
+        "Cipolla",
+        "Peperoncino"
       ],
       "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "In which country was the 1992 Summer Olympics Games held?",
-      "options": [
-        "Russia",
-        "USA",
-        "Korea",
-        "Spain"
-      ],
-      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie \"Hardcore Henry\"?",
+      "text": "In Mulan (1998), who is the leader of the Huns?",
       "options": [
-        "Akan",
-        "Jimmy",
-        "Henry",
-        "Estelle"
+        "Li Shang",
+        "Shan Yu",
+        "Chien-Po",
+        "Fa Zhou"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "How many members are there in the idol group \"&micro;'s\"?",
+      "text": "In the \"Jurassic Park\" universe, when did \"Jurassic Park: San Diego\" begin construction?",
       "options": [
-        "9",
-        "6",
-        "48",
-        "3"
+        "1985",
+        "1993",
+        "1988",
+        "1986"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
