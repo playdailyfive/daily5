@@ -1,68 +1,68 @@
 {
-  "day": "20260111",
-  "dayIndex": 141,
+  "day": "20260112",
+  "dayIndex": 142,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
+      "text": "Which language is most widely spoken in Switzerland?",
       "options": [
-        "Taurus",
-        "Libra",
-        "Capricorn",
-        "Gemini"
+        "German",
+        "French",
+        "Italian",
+        "Swiss"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the cause of Marilyn Monroes suicide?",
+      "text": "What is the name of the \"tool\" used to hit the white ball in snooker or billiards?",
       "options": [
-        "Gunshot",
-        "Knife Attack",
-        "Drug Overdose",
-        "House Fire"
+        "Mallet",
+        "Bat",
+        "Racquet",
+        "Cue"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "Scotch whisky and Drambuie make up which cocktail?",
+      "options": [
+        "Sex on the Beach",
+        "Screwdriver",
+        "Manhattan",
+        "Rusty Nail"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who co-founded the YouTube Let's Play channel \"Game Grumps\" alongside Newgrounds animator Egoraptor?",
+      "options": [
+        "Markiplier",
+        "Tobuscus",
+        "JonTron",
+        "Pewdiepie"
       ],
       "correct": 2,
-      "difficulty": "easy",
-      "category": "Celebrities"
-    },
-    {
-      "text": "Which essential condiment is also known as Japanese horseradish?",
-      "options": [
-        "Wasabi ",
-        "Mentsuyu",
-        "Karashi",
-        "Ponzu"
-      ],
-      "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What was Raekwon the Chefs debut solo album?",
+      "text": "In \"Star Trek\", who was the founder of the Klingon Empire and its philosophy?",
       "options": [
-        "The Wild",
-        "Only Built 4 Cuban Linx",
-        "Shaolin vs Wu-Tang",
-        "The Lex Diamond Story"
+        "Molor the Unforgiving",
+        "Dahar Master Kor",
+        "Lady Lukara of the Great Hall",
+        "Kahless the Unforgettable"
       ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "In which classic novel is there a character named Homer Simpson?",
-      "options": [
-        "The Day of the Locust",
-        "A Separate Peace",
-        "Catch-22",
-        "Of Mice and Men"
-      ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     }
   ]
 }
