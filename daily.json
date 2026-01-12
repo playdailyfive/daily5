@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
+      "text": "Which sign of the zodiac comes between Virgo and Scorpio?",
       "options": [
-        "Gotham City",
-        "Star City",
-        "Metropolis",
-        "Central City"
+        "Taurus",
+        "Libra",
+        "Capricorn",
+        "Gemini"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which group performs the song \"Crash into Me\"?",
+      "text": "What was the cause of Marilyn Monroes suicide?",
       "options": [
-        "Destiny's Child",
-        "Phish",
-        "Dave Matthews Band",
-        "The Grateful Dead"
+        "Gunshot",
+        "Knife Attack",
+        "Drug Overdose",
+        "House Fire"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Celebrities"
     },
     {
-      "text": "What is the Italian word for \"tomato\"?",
+      "text": "Which essential condiment is also known as Japanese horseradish?",
       "options": [
-        "Pomodoro",
-        "Aglio",
-        "Cipolla",
-        "Peperoncino"
+        "Wasabi ",
+        "Mentsuyu",
+        "Karashi",
+        "Ponzu"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In Mulan (1998), who is the leader of the Huns?",
+      "text": "What was Raekwon the Chefs debut solo album?",
       "options": [
-        "Li Shang",
-        "Shan Yu",
-        "Chien-Po",
-        "Fa Zhou"
+        "The Wild",
+        "Only Built 4 Cuban Linx",
+        "Shaolin vs Wu-Tang",
+        "The Lex Diamond Story"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In the \"Jurassic Park\" universe, when did \"Jurassic Park: San Diego\" begin construction?",
+      "text": "In which classic novel is there a character named Homer Simpson?",
       "options": [
-        "1985",
-        "1993",
-        "1988",
-        "1986"
+        "The Day of the Locust",
+        "A Separate Peace",
+        "Catch-22",
+        "Of Mice and Men"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Books"
     }
   ]
 }
