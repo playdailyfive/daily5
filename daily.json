@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which language is most widely spoken in Switzerland?",
+      "text": "What is the first book of the Old Testament?",
       "options": [
-        "German",
-        "French",
-        "Italian",
-        "Swiss"
+        "Genesis",
+        "Exodus",
+        "Leviticus",
+        "Numbers"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the \"tool\" used to hit the white ball in snooker or billiards?",
+      "text": "Vatican City, the smallest country in the world, is fully enclosed by which country?",
       "options": [
-        "Mallet",
-        "Bat",
-        "Racquet",
-        "Cue"
+        "Germany",
+        "Spain",
+        "France",
+        "Italy"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Geography"
     },
     {
-      "text": "Scotch whisky and Drambuie make up which cocktail?",
+      "text": "What was the original name of the search engine \"Google\"?",
       "options": [
-        "Sex on the Beach",
-        "Screwdriver",
-        "Manhattan",
-        "Rusty Nail"
+        "SearchPro",
+        "CatMassage",
+        "Netscape Navigator",
+        "BackRub"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who co-founded the YouTube Let's Play channel \"Game Grumps\" alongside Newgrounds animator Egoraptor?",
+      "text": "Who directed the 1973 film \"American Graffiti\"?",
       "options": [
-        "Markiplier",
-        "Tobuscus",
-        "JonTron",
-        "Pewdiepie"
+        "Steven Spielberg",
+        "Francis Ford Coppola",
+        "George Lucas",
+        "Ron Howard"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In \"Star Trek\", who was the founder of the Klingon Empire and its philosophy?",
+      "text": "Which one of these Swedish companies was founded in 1943?",
       "options": [
-        "Molor the Unforgiving",
-        "Dahar Master Kor",
-        "Lady Lukara of the Great Hall",
-        "Kahless the Unforgettable"
+        "Lindex",
+        "Clas Ohlson",
+        "H & M",
+        "IKEA"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     }
   ]
 }
