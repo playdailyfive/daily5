@@ -1,68 +1,68 @@
 {
-  "day": "20260112",
-  "dayIndex": 142,
+  "day": "20260113",
+  "dayIndex": 143,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the first book of the Old Testament?",
+      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
       "options": [
-        "Genesis",
-        "Exodus",
-        "Leviticus",
-        "Numbers"
+        "Dinar",
+        "Rupee",
+        "Riyal",
+        "Peso"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Vatican City, the smallest country in the world, is fully enclosed by which country?",
+      "text": "What was the year of estabilishment of the Bari Italian Football Club?",
       "options": [
-        "Germany",
-        "Spain",
-        "France",
-        "Italy"
+        "1945",
+        "1895",
+        "2014",
+        "1908"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Sports"
     },
     {
-      "text": "What was the original name of the search engine \"Google\"?",
+      "text": "Which river flows through the Scottish city of Glasgow?",
       "options": [
-        "SearchPro",
-        "CatMassage",
-        "Netscape Navigator",
-        "BackRub"
+        "Tay",
+        "Tweed",
+        "Dee",
+        "Clyde"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who directed the 1973 film \"American Graffiti\"?",
+      "text": "Leonardo Di Caprio won his first Best Actor Oscar for his performance in which film?",
       "options": [
-        "Steven Spielberg",
-        "Francis Ford Coppola",
-        "George Lucas",
-        "Ron Howard"
+        "Inception",
+        "The Revenant",
+        "Shutter Island",
+        "The Wolf Of Wall Street"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which one of these Swedish companies was founded in 1943?",
+      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
       "options": [
-        "Lindex",
-        "Clas Ohlson",
-        "H & M",
-        "IKEA"
+        "Rope",
+        "Psycho",
+        "Vertigo",
+        "Rebecca"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     }
   ]
 }
