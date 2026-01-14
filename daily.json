@@ -1,68 +1,68 @@
 {
-  "day": "20260113",
-  "dayIndex": 143,
+  "day": "20260114",
+  "dayIndex": 144,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
+      "text": "What is the famous Papa John's last name?",
       "options": [
-        "Blackmail",
-        "Accounting Fraud",
-        "Money Laundering",
-        "Extortion"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In Supernatural, what's is Sam's brothers name?",
-      "options": [
-        "Dave",
-        "Mike",
-        "Steve",
-        "Dean"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "A statue of Charles Darwin sits in what London museum?",
-      "options": [
-        "Tate",
-        "Science Museum",
-        "British Museum",
-        "Natural History Museum"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many games did Arsenal FC go unbeaten during the 2003-2004 season of the English Premier League",
-      "options": [
-        "22",
-        "38",
-        "49",
-        "51"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Sports"
-    },
-    {
-      "text": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie \"Avatar\"?",
-      "options": [
-        "Sigourney Weaver",
-        "Jessica Chastain",
-        "Melissa Beckett",
-        "Alyssa Monroe "
+        "Schnatter",
+        "Williams",
+        "ANDERSON",
+        "Chowder"
       ],
       "correct": 0,
-      "difficulty": "hard",
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What historical time period was the center of the Assassin's Creed movie (2016)?",
+      "options": [
+        "Spanish Inquisition",
+        "French Revolution",
+        "Colonial America",
+        "Victorian England"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "What is real haggis made of?",
+      "options": [
+        "Sheep's Heart, Kidneys and Lungs",
+        "Sheep's Heart, Liver and Lungs",
+        "Whole Sheep",
+        "Sheep's Liver, Kidneys and Eyes"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is rapper Drake's real name?",
+      "options": [
+        "Aubrey Graham",
+        "Shaun Carter",
+        "Dwayne Carter",
+        "Andre Young"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "options": [
+        "Fiji",
+        "Chile",
+        "Indonesia",
+        "New Zealand"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Geography"
     }
   ]
 }
