@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
+      "text": "A criminal who has \"cooked the books\" has engaged in what kind of illegal behavior?",
       "options": [
-        "Dinar",
-        "Rupee",
-        "Riyal",
-        "Peso"
+        "Blackmail",
+        "Accounting Fraud",
+        "Money Laundering",
+        "Extortion"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the year of estabilishment of the Bari Italian Football Club?",
+      "text": "In Supernatural, what's is Sam's brothers name?",
       "options": [
-        "1945",
-        "1895",
-        "2014",
-        "1908"
+        "Dave",
+        "Mike",
+        "Steve",
+        "Dean"
       ],
       "correct": 3,
       "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "A statue of Charles Darwin sits in what London museum?",
+      "options": [
+        "Tate",
+        "Science Museum",
+        "British Museum",
+        "Natural History Museum"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "How many games did Arsenal FC go unbeaten during the 2003-2004 season of the English Premier League",
+      "options": [
+        "22",
+        "38",
+        "49",
+        "51"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
       "category": "Sports"
     },
     {
-      "text": "Which river flows through the Scottish city of Glasgow?",
+      "text": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie \"Avatar\"?",
       "options": [
-        "Tay",
-        "Tweed",
-        "Dee",
-        "Clyde"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Leonardo Di Caprio won his first Best Actor Oscar for his performance in which film?",
-      "options": [
-        "Inception",
-        "The Revenant",
-        "Shutter Island",
-        "The Wolf Of Wall Street"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
-      "options": [
-        "Rope",
-        "Psycho",
-        "Vertigo",
-        "Rebecca"
+        "Sigourney Weaver",
+        "Jessica Chastain",
+        "Melissa Beckett",
+        "Alyssa Monroe "
       ],
       "correct": 0,
       "difficulty": "hard",
