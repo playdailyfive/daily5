@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the famous Papa John's last name?",
+      "text": "Which restaurant's mascot is a clown?",
       "options": [
-        "Schnatter",
-        "Williams",
-        "ANDERSON",
-        "Chowder"
+        "McDonald's",
+        "Burger King",
+        "Sonic",
+        "Whataburger"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What historical time period was the center of the Assassin's Creed movie (2016)?",
+      "text": "What was the name of the the first episode of Doctor Who to air in 1963?",
       "options": [
-        "Spanish Inquisition",
-        "French Revolution",
-        "Colonial America",
-        "Victorian England"
+        "An Unearthly Child",
+        "The Aztecs",
+        "The Edge of Destruction",
+        "The Daleks"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "When did the website \"Facebook\" launch?",
       "options": [
-        "Sheep's Heart, Kidneys and Lungs",
-        "Sheep's Heart, Liver and Lungs",
-        "Whole Sheep",
-        "Sheep's Liver, Kidneys and Eyes"
+        "2005",
+        "2004",
+        "2006",
+        "2003"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is rapper Drake's real name?",
+      "text": "Who is the lead singer of Silverchair?",
       "options": [
-        "Aubrey Graham",
-        "Shaun Carter",
-        "Dwayne Carter",
-        "Andre Young"
+        "Daniel Johns",
+        "Ben Gillies",
+        "Chris Joannou",
+        "George Costanza"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "text": "What is the official name of Prince's backing band?",
       "options": [
-        "Fiji",
-        "Chile",
-        "Indonesia",
-        "New Zealand"
+        "The Heartbreakers",
+        "The Paupers",
+        "The Revolution",
+        "The Wailers"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
