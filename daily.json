@@ -1,66 +1,66 @@
 {
-  "day": "20260114",
-  "dayIndex": 144,
+  "day": "20260115",
+  "dayIndex": 145,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which restaurant's mascot is a clown?",
+      "text": "What was the first ever London Underground line to be built?",
       "options": [
-        "McDonald's",
-        "Burger King",
-        "Sonic",
-        "Whataburger"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What was the name of the the first episode of Doctor Who to air in 1963?",
-      "options": [
-        "An Unearthly Child",
-        "The Aztecs",
-        "The Edge of Destruction",
-        "The Daleks"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "When did the website \"Facebook\" launch?",
-      "options": [
-        "2005",
-        "2004",
-        "2006",
-        "2003"
+        "Victoria Line",
+        "Metropolitan Line",
+        "Bakerloo Line",
+        "Circle Line"
       ],
       "correct": 1,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the lead singer of Silverchair?",
+      "text": "What collaborative album was released by Kanye West and Jay-Z in 2011?",
       "options": [
-        "Daniel Johns",
-        "Ben Gillies",
-        "Chris Joannou",
-        "George Costanza"
+        "What a Time to be Alive",
+        "Unfinished Business",
+        "Watch the Throne",
+        "Distant Relatives"
       ],
-      "correct": 0,
-      "difficulty": "medium",
+      "correct": 2,
+      "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the official name of Prince's backing band?",
+      "text": "In a standard set of playing cards, which is the only king without a moustache?",
       "options": [
-        "The Heartbreakers",
-        "The Paupers",
-        "The Revolution",
-        "The Wailers"
+        "Hearts",
+        "Clubs",
+        "Spades",
+        "Diamonds"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the fifth largest country by area?",
+      "options": [
+        "Australia",
+        "India",
+        "Brazil",
+        "United States"
       ],
       "correct": 2,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "The heavy metal band Black Sabbath hail from which English city?",
+      "options": [
+        "London",
+        "Birmingham",
+        "Newcastle-Upon-Tyne",
+        "Manchester"
+      ],
+      "correct": 1,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
