@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What was the first ever London Underground line to be built?",
+      "text": "Who is depicted on the US hundred dollar bill?",
       "options": [
-        "Victoria Line",
-        "Metropolitan Line",
-        "Bakerloo Line",
-        "Circle Line"
+        "Thomas Jefferson",
+        "Benjamin Franklin",
+        "Abraham Lincoln",
+        "George Washington"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What collaborative album was released by Kanye West and Jay-Z in 2011?",
+      "text": "What is the most common type of pitch thrown by pitchers in baseball?",
       "options": [
-        "What a Time to be Alive",
-        "Unfinished Business",
-        "Watch the Throne",
-        "Distant Relatives"
+        "Screwball",
+        "Palmball",
+        "Fastball",
+        "Slowball"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "In a standard set of playing cards, which is the only king without a moustache?",
+      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
       "options": [
-        "Hearts",
-        "Clubs",
-        "Spades",
-        "Diamonds"
+        "4",
+        "6",
+        "3",
+        "5"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the fifth largest country by area?",
+      "text": "From what show is the character \"James Doakes\"? ",
       "options": [
-        "Australia",
-        "India",
-        "Brazil",
-        "United States"
+        "Boardwalk Empire",
+        "The Walking Dead",
+        "Dexter",
+        "Marvel's Daredevil"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The heavy metal band Black Sabbath hail from which English city?",
+      "text": "Which Elton John hit starts with the line \"When are you gonna come down\"?",
       "options": [
-        "London",
-        "Birmingham",
-        "Newcastle-Upon-Tyne",
-        "Manchester"
+        "Bennie and the Jets",
+        "Goodbye Yellow Brick Road",
+        "Crocodile Rock",
+        "Rocket Man"
       ],
       "correct": 1,
       "difficulty": "hard",
