@@ -1,68 +1,68 @@
 {
-  "day": "20260115",
-  "dayIndex": 145,
+  "day": "20260116",
+  "dayIndex": 146,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is depicted on the US hundred dollar bill?",
+      "text": "Who played General Aladeen in The Dictator?",
       "options": [
-        "Thomas Jefferson",
-        "Benjamin Franklin",
-        "Abraham Lincoln",
-        "George Washington"
+        "Leonardo Dicaprio",
+        "James Franco",
+        "Sacha Baron Cohen",
+        "Johnny Depp"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the most common type of pitch thrown by pitchers in baseball?",
+      "text": "What is the Capital of the United States?",
       "options": [
-        "Screwball",
-        "Palmball",
-        "Fastball",
-        "Slowball"
+        "New York City, NY",
+        "Los Angelas, CA",
+        "Washington, D.C.",
+        "Houston, TX"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Geography"
     },
     {
-      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "text": "Frank Lloyd Wright was the architect behind what famous building?",
       "options": [
-        "4",
-        "6",
-        "3",
-        "5"
+        "The Guggenheim",
+        "Sydney Opera House",
+        "The Space Needle",
+        "Villa Savoye"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "From what show is the character \"James Doakes\"? ",
+      "text": "What is Lilo's last name from Lilo and Stitch?",
       "options": [
-        "Boardwalk Empire",
-        "The Walking Dead",
-        "Dexter",
-        "Marvel's Daredevil"
+        "Pelekai",
+        "Kuʻulei",
+        "Kealoha",
+        "Anoaʻi"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which Elton John hit starts with the line \"When are you gonna come down\"?",
+      "text": "What is the romanized Arabic word for \"moon\"?",
       "options": [
-        "Bennie and the Jets",
-        "Goodbye Yellow Brick Road",
-        "Crocodile Rock",
-        "Rocket Man"
+        "Najma",
+        "Qamar",
+        "Shams",
+        "Kawkab"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
