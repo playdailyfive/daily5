@@ -1,68 +1,68 @@
 {
-  "day": "20260116",
-  "dayIndex": 146,
+  "day": "20260117",
+  "dayIndex": 147,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many cards are there in a standard deck of playing cards?",
+      "text": "How many syllables make up a haiku?",
       "options": [
-        "64",
-        "40",
-        "52",
-        "32"
+        "17",
+        "15",
+        "10",
+        "21"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the fictional retro-mod band starring Austin Powers as the lead vocalist?",
+      "text": "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
       "options": [
-        "Spear Mint",
-        "Cough Fi",
-        "Ming Tea",
-        "Mister E"
+        "The Sign of the Four",
+        "The Doings of Raffles Haw",
+        "A Case of Identity",
+        "A Study in Scarlet"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "What is a Burgee?",
-      "options": [
-        "A flag",
-        "A window",
-        "A type of food",
-        "A rope"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which documentary film maker wrote and starred in the film \"My Scientology Movie\" which first debuted in 2015?",
-      "options": [
-        "Louis Theroux",
-        "Adam Curtis",
-        "Joe Berlinger",
-        "Errol Morris"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "In the Harry Potter universe, who does Draco Malfoy end up marrying?",
-      "options": [
-        "Pansy Parkinson",
-        "Astoria Greengrass",
-        "Hermione Granger",
-        "Millicent Bulstrode"
-      ],
-      "correct": 1,
-      "difficulty": "hard",
       "category": "Entertainment: Books"
+    },
+    {
+      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
+      "options": [
+        "Modernism",
+        "Baroque",
+        "Gothic Revival",
+        "Neoclassical"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What was the African nation of Zimbabwe formerly known as?",
+      "options": [
+        "Rhodesia",
+        "Mozambique",
+        "Zambia",
+        " Bulawayo"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie \"Avatar\"?",
+      "options": [
+        "Jessica Chastain",
+        "Alyssa Monroe ",
+        "Sigourney Weaver",
+        "Melissa Beckett"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Entertainment: Film"
     }
   ]
 }
