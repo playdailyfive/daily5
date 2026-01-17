@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who played General Aladeen in The Dictator?",
+      "text": "How many cards are there in a standard deck of playing cards?",
       "options": [
-        "Leonardo Dicaprio",
-        "James Franco",
-        "Sacha Baron Cohen",
-        "Johnny Depp"
+        "64",
+        "40",
+        "52",
+        "32"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the Capital of the United States?",
+      "text": "What is the name of the fictional retro-mod band starring Austin Powers as the lead vocalist?",
       "options": [
-        "New York City, NY",
-        "Los Angelas, CA",
-        "Washington, D.C.",
-        "Houston, TX"
+        "Spear Mint",
+        "Cough Fi",
+        "Ming Tea",
+        "Mister E"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Frank Lloyd Wright was the architect behind what famous building?",
+      "text": "What is a Burgee?",
       "options": [
-        "The Guggenheim",
-        "Sydney Opera House",
-        "The Space Needle",
-        "Villa Savoye"
+        "A flag",
+        "A window",
+        "A type of food",
+        "A rope"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Lilo's last name from Lilo and Stitch?",
+      "text": "Which documentary film maker wrote and starred in the film \"My Scientology Movie\" which first debuted in 2015?",
       "options": [
-        "Pelekai",
-        "Kuʻulei",
-        "Kealoha",
-        "Anoaʻi"
+        "Louis Theroux",
+        "Adam Curtis",
+        "Joe Berlinger",
+        "Errol Morris"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "What is the romanized Arabic word for \"moon\"?",
+      "text": "In the Harry Potter universe, who does Draco Malfoy end up marrying?",
       "options": [
-        "Najma",
-        "Qamar",
-        "Shams",
-        "Kawkab"
+        "Pansy Parkinson",
+        "Astoria Greengrass",
+        "Hermione Granger",
+        "Millicent Bulstrode"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Books"
     }
   ]
 }
