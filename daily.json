@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many syllables make up a haiku?",
+      "text": "The Canadian $1 coin is colloquially known as a what?",
       "options": [
-        "17",
-        "15",
-        "10",
-        "21"
+        "Loonie",
+        "Boolie",
+        "Foolie",
+        "Moodie"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
+      "text": "What is the name of the three headed dog in Harry Potter and the Sorcerer's Stone?",
       "options": [
-        "The Sign of the Four",
-        "The Doings of Raffles Haw",
-        "A Case of Identity",
-        "A Study in Scarlet"
+        "Spike",
+        "Spot",
+        "Poofy",
+        "Fluffy"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Entertainment: Books"
     },
     {
-      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
+      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
       "options": [
-        "Modernism",
-        "Baroque",
-        "Gothic Revival",
-        "Neoclassical"
+        "World War II",
+        "American Civil War",
+        "American Revolutionary War",
+        "Vietnam War"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the African nation of Zimbabwe formerly known as?",
+      "text": "Which actor auditioned for the role of Luke Skywalker?",
       "options": [
-        "Rhodesia",
-        "Mozambique",
-        "Zambia",
-        " Bulawayo"
+        "Kurt Russell",
+        "Laurence Fishburne",
+        "Christopher Lambert",
+        "James Remar"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie \"Avatar\"?",
+      "text": "Which 1994 film did Roger Ebert famously despise, saying \"I hated hated hated hated hated this movie\".",
       "options": [
-        "Jessica Chastain",
-        "Alyssa Monroe ",
-        "Sigourney Weaver",
-        "Melissa Beckett"
+        "3 Ninjas Kick Back",
+        "Richie Rich",
+        "North",
+        "The Santa Clause"
       ],
       "correct": 2,
       "difficulty": "hard",
