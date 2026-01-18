@@ -1,68 +1,68 @@
 {
-  "day": "20260117",
-  "dayIndex": 147,
+  "day": "20260118",
+  "dayIndex": 148,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Canadian $1 coin is colloquially known as a what?",
+      "text": "What geometric shape is generally used for stop signs?",
       "options": [
-        "Loonie",
-        "Boolie",
-        "Foolie",
-        "Moodie"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the name of the three headed dog in Harry Potter and the Sorcerer's Stone?",
-      "options": [
-        "Spike",
-        "Spot",
-        "Poofy",
-        "Fluffy"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
-      "options": [
-        "World War II",
-        "American Civil War",
-        "American Revolutionary War",
-        "Vietnam War"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which actor auditioned for the role of Luke Skywalker?",
-      "options": [
-        "Kurt Russell",
-        "Laurence Fishburne",
-        "Christopher Lambert",
-        "James Remar"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "Which 1994 film did Roger Ebert famously despise, saying \"I hated hated hated hated hated this movie\".",
-      "options": [
-        "3 Ninjas Kick Back",
-        "Richie Rich",
-        "North",
-        "The Santa Clause"
+        "Triangle",
+        "Hexagon",
+        "Octagon",
+        "Circle"
       ],
       "correct": 2,
-      "difficulty": "hard",
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the name of the \"tool\" used to hit the white ball in snooker or billiards?",
+      "options": [
+        "Cue",
+        "Racquet",
+        "Bat",
+        "Mallet"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "Earl Grey tea is black tea flavoured with what?",
+      "options": [
+        "Vanilla",
+        "Bergamot oil",
+        "Lavender",
+        "Honey"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie \"Hardcore Henry\"?",
+      "options": [
+        "Akan",
+        "Henry",
+        "Estelle",
+        "Jimmy"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "Which album was released by Kanye West in 2013?",
+      "options": [
+        "My Beautiful Dark Twisted Fantasy",
+        "Yeezus",
+        "The Life of Pablo",
+        "Watch the Throne"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Entertainment: Music"
     }
   ]
 }
