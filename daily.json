@@ -1,6 +1,6 @@
 {
-  "day": "20260118",
-  "dayIndex": 148,
+  "day": "20260119",
+  "dayIndex": 149,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
@@ -8,61 +8,61 @@
       "text": "When was the Playstation 3 released?",
       "options": [
         "July 16, 2006",
+        "December 25, 2007",
         "January 8, 2007",
-        "November 11, 2006",
-        "December 25, 2007"
+        "November 11, 2006"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who won the UEFA Champions League in 2017?",
+      "options": [
+        "AS Monaco FC",
+        "Atletico Madrid",
+        "Juventus F.C.",
+        "Real Madrid C.F."
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "Which country has the most Trappist breweries?",
+      "options": [
+        "USA",
+        "France",
+        "Belgium",
+        "Netherlands"
       ],
       "correct": 2,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Brian May was the guitarist for which band?",
-      "options": [
-        "Queen",
-        "Pink Floyd",
-        "Rolling Stones",
-        "The Doors"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "This field is sometimes known as \"The Dismal Science.\"",
-      "options": [
-        "Politics",
-        "Economics",
-        "Philosophy",
-        "Physics"
-      ],
-      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the lead singer of the Smashing Pumpkins?",
+      "text": "What is the real name of \"moot\", founder of the imageboard 4chan?",
       "options": [
-        "Billy Corgan",
-        "Chino Moreno",
-        "Brett Scallions",
-        "Eddie Vedder"
+        "Allison Harvard",
+        "Catie Wayne",
+        "Mark Zuckerberg",
+        "Christopher Poole"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Celebrities"
     },
     {
-      "text": "If someone said \"you are olid\", what would they mean?",
+      "text": "Which company did the animation for Peter Gabriel's Video Sledgehammer (1986)?",
       "options": [
-        "You are out of shape/weak.",
-        "You smell extremely unpleasant.",
-        "Your appearance is repulsive.",
-        "You are incomprehensible/an idiot."
+        "HIT Entertainment",
+        "VIZ Media",
+        "Aardman Animations",
+        "Illumination Entertainment"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
