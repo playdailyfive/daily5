@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What geometric shape is generally used for stop signs?",
+      "text": "When was the Playstation 3 released?",
       "options": [
-        "Triangle",
-        "Hexagon",
-        "Octagon",
-        "Circle"
+        "July 16, 2006",
+        "January 8, 2007",
+        "November 11, 2006",
+        "December 25, 2007"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the \"tool\" used to hit the white ball in snooker or billiards?",
+      "text": "Brian May was the guitarist for which band?",
       "options": [
-        "Cue",
-        "Racquet",
-        "Bat",
-        "Mallet"
+        "Queen",
+        "Pink Floyd",
+        "Rolling Stones",
+        "The Doors"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Earl Grey tea is black tea flavoured with what?",
+      "text": "This field is sometimes known as \"The Dismal Science.\"",
       "options": [
-        "Vanilla",
-        "Bergamot oil",
-        "Lavender",
-        "Honey"
+        "Politics",
+        "Economics",
+        "Philosophy",
+        "Physics"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie \"Hardcore Henry\"?",
+      "text": "Who is the lead singer of the Smashing Pumpkins?",
       "options": [
-        "Akan",
-        "Henry",
-        "Estelle",
-        "Jimmy"
+        "Billy Corgan",
+        "Chino Moreno",
+        "Brett Scallions",
+        "Eddie Vedder"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which album was released by Kanye West in 2013?",
+      "text": "If someone said \"you are olid\", what would they mean?",
       "options": [
-        "My Beautiful Dark Twisted Fantasy",
-        "Yeezus",
-        "The Life of Pablo",
-        "Watch the Throne"
+        "You are out of shape/weak.",
+        "You smell extremely unpleasant.",
+        "Your appearance is repulsive.",
+        "You are incomprehensible/an idiot."
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
