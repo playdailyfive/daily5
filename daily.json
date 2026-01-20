@@ -1,68 +1,68 @@
 {
-  "day": "20260119",
-  "dayIndex": 149,
+  "day": "20260120",
+  "dayIndex": 150,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "On a dartboard, what number is directly opposite No. 1?",
+      "text": "In which cardinal direction does the Sun rise from?",
       "options": [
-        "15",
-        "12",
-        "20",
-        "19"
+        "West",
+        "South",
+        "North",
+        "East"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In baseball, how many fouls are an out?",
+      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
       "options": [
-        "3",
-        "5",
-        "2",
-        "0"
+        "Christine McVie",
+        "David Tennant",
+        "Mac McAnally",
+        "John McVie"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "What is the Swedish word for \"window\"?",
       "options": [
-        "1970s",
-        "2000s",
-        "1980s",
-        "1990s"
+        "Ruta",
+        "F&ouml;nster",
+        "Sk&auml;rm",
+        "H&aring;l"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which NBA player won Most Valuable Player for the 1999-2000 season?",
+      "text": "In \"The Big Bang Theory\", what is Howard Wolowitz's nickname in World of Warcraft?",
       "options": [
-        "Kobe Bryant",
-        "Paul Pierce",
-        "Allen Iverson",
-        "Shaquille O'Neal"
+        "Wolowizard",
+        "Sheldor",
+        "Rajesh",
+        "Priya"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Which sci-fi cult films plot concerns aliens attempting to prevent humans from creating a doomsday weapon?",
+      "text": "Where is the fast food chain \"Panda Express\" headquartered?",
       "options": [
-        "The Man from Planet X",
-        "The Day The Earth Stood Still",
-        "Plan 9 from Outer Space",
-        "It Came from Outer Space"
+        "Rosemead, California",
+        "San Diego, California",
+        "Fresno, California",
+        "Sacramento, California"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
