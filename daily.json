@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When was the Playstation 3 released?",
+      "text": "On a dartboard, what number is directly opposite No. 1?",
       "options": [
-        "July 16, 2006",
-        "December 25, 2007",
-        "January 8, 2007",
-        "November 11, 2006"
+        "15",
+        "12",
+        "20",
+        "19"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who won the UEFA Champions League in 2017?",
+      "text": "In baseball, how many fouls are an out?",
       "options": [
-        "AS Monaco FC",
-        "Atletico Madrid",
-        "Juventus F.C.",
-        "Real Madrid C.F."
+        "3",
+        "5",
+        "2",
+        "0"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Sports"
     },
     {
-      "text": "Which country has the most Trappist breweries?",
+      "text": "The early part of which decade, did the Goth Subculture begin?",
       "options": [
-        "USA",
-        "France",
-        "Belgium",
-        "Netherlands"
+        "1970s",
+        "2000s",
+        "1980s",
+        "1990s"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the real name of \"moot\", founder of the imageboard 4chan?",
+      "text": "Which NBA player won Most Valuable Player for the 1999-2000 season?",
       "options": [
-        "Allison Harvard",
-        "Catie Wayne",
-        "Mark Zuckerberg",
-        "Christopher Poole"
+        "Kobe Bryant",
+        "Paul Pierce",
+        "Allen Iverson",
+        "Shaquille O'Neal"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Sports"
     },
     {
-      "text": "Which company did the animation for Peter Gabriel's Video Sledgehammer (1986)?",
+      "text": "Which sci-fi cult films plot concerns aliens attempting to prevent humans from creating a doomsday weapon?",
       "options": [
-        "HIT Entertainment",
-        "VIZ Media",
-        "Aardman Animations",
-        "Illumination Entertainment"
+        "The Man from Planet X",
+        "The Day The Earth Stood Still",
+        "Plan 9 from Outer Space",
+        "It Came from Outer Space"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
