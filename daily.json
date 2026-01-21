@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which cardinal direction does the Sun rise from?",
+      "text": "What is the name of the company in Lethal Company?",
       "options": [
-        "West",
-        "South",
-        "North",
-        "East"
+        "Planet Scrap Co.",
+        "Gordian Shipping Co.",
+        "Lethal Robotics",
+        "The Company"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
+      "text": "What country is Cory in the House set in?",
       "options": [
-        "Christine McVie",
-        "David Tennant",
-        "Mac McAnally",
-        "John McVie"
+        "Canada",
+        "England",
+        "Venezuala",
+        "The United States of America"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the Swedish word for \"window\"?",
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
       "options": [
-        "Ruta",
-        "F&ouml;nster",
-        "Sk&auml;rm",
-        "H&aring;l"
+        "July 2, 1776",
+        "July 4, 1776",
+        "June 4, 1776",
+        "May 4, 1776"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"The Big Bang Theory\", what is Howard Wolowitz's nickname in World of Warcraft?",
+      "text": "What does Bart sell his soul for in The Simpsons episode 'Bart Sells His Soul'?",
       "options": [
-        "Wolowizard",
-        "Sheldor",
-        "Rajesh",
-        "Priya"
+        "$5",
+        "A Copy of Bonestorm 2",
+        "$100",
+        "A Giant Gobstopper"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "Where is the fast food chain \"Panda Express\" headquartered?",
+      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
       "options": [
-        "Rosemead, California",
-        "San Diego, California",
-        "Fresno, California",
-        "Sacramento, California"
+        "Wessex",
+        "Ambridge",
+        "Fulchester",
+        "Barsetshire"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
