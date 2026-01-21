@@ -1,68 +1,68 @@
 {
-  "day": "20260120",
-  "dayIndex": 150,
+  "day": "20260121",
+  "dayIndex": 151,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of the company in Lethal Company?",
+      "text": "Who is depicted on the US hundred dollar bill?",
       "options": [
-        "Planet Scrap Co.",
-        "Gordian Shipping Co.",
-        "Lethal Robotics",
-        "The Company"
+        "Benjamin Franklin",
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "George Washington"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What country is Cory in the House set in?",
+      "text": "Which company has exclusive rights to air episodes of the \"The Grand Tour\"?",
       "options": [
-        "Canada",
-        "England",
-        "Venezuala",
-        "The United States of America"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
-      "options": [
-        "July 2, 1776",
-        "July 4, 1776",
-        "June 4, 1776",
-        "May 4, 1776"
+        "Netflix",
+        "Amazon",
+        "CCTV",
+        "BBC"
       ],
       "correct": 1,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "What is the highest number of Michelin stars a restaurant can receive?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What does Bart sell his soul for in The Simpsons episode 'Bart Sells His Soul'?",
+      "text": "Nikki Diamond portrayed which Gladiator in the 1992 TV show \"Gladiators\"?",
       "options": [
-        "$5",
-        "A Copy of Bonestorm 2",
-        "$100",
-        "A Giant Gobstopper"
+        "Falcon",
+        "Jet",
+        "Scorpio",
+        "Nightshade"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Celebrities"
     },
     {
-      "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
+      "text": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song \"Shelter\"?",
       "options": [
-        "Wessex",
-        "Ambridge",
-        "Fulchester",
-        "Barsetshire"
+        "deadmau5",
+        "Madeon",
+        "Zedd",
+        "Mat Zo"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     }
   ]
 }
