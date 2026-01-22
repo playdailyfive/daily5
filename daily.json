@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is depicted on the US hundred dollar bill?",
+      "text": "What technology is named after a tenth-century ruler of Denmark and Norway?",
       "options": [
-        "Benjamin Franklin",
-        "Abraham Lincoln",
-        "Thomas Jefferson",
-        "George Washington"
+        "Bluetooth",
+        "GPS",
+        "Internet",
+        "Wi-Fi"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which company has exclusive rights to air episodes of the \"The Grand Tour\"?",
+      "text": "British actor David Morrissey stars as which role in \"The Walking Dead\"?",
       "options": [
-        "Netflix",
-        "Amazon",
-        "CCTV",
-        "BBC"
+        "Negan",
+        "The Governor",
+        "Daryl Dixon",
+        "Rick Grimes"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Television"
     },
     {
-      "text": "What is the highest number of Michelin stars a restaurant can receive?",
+      "text": "Whose greyscale face is on the kappa emoticon on Twitch?",
       "options": [
-        "Three",
-        "Four",
-        "Five",
-        "Six"
+        "Josh DeSeno",
+        "Justin DeSeno",
+        "John DeSeno",
+        "Jimmy DeSeno"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Nikki Diamond portrayed which Gladiator in the 1992 TV show \"Gladiators\"?",
+      "text": "Who co-founded the YouTube Let's Play channel \"Game Grumps\" alongside Newgrounds animator Egoraptor?",
       "options": [
-        "Falcon",
-        "Jet",
-        "Scorpio",
-        "Nightshade"
+        "Markiplier",
+        "Pewdiepie",
+        "JonTron",
+        "Tobuscus"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Which musician has collaborated with American producer Porter Robinson and released the 2016 song \"Shelter\"?",
+      "text": "What is the romanized Chinese word for \"airplane\"?",
       "options": [
-        "deadmau5",
-        "Madeon",
-        "Zedd",
-        "Mat Zo"
+        "Zongxian",
+        "Feiji",
+        "Huojian",
+        "Qiche"
       ],
       "correct": 1,
       "difficulty": "hard",
