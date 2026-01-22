@@ -1,68 +1,68 @@
 {
-  "day": "20260121",
-  "dayIndex": 151,
+  "day": "20260122",
+  "dayIndex": 152,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What technology is named after a tenth-century ruler of Denmark and Norway?",
+      "text": "Who is the author of Jurassic Park?",
       "options": [
-        "Bluetooth",
-        "GPS",
-        "Internet",
-        "Wi-Fi"
+        "Chuck Paluhniuk",
+        "Irvine Welsh",
+        "Michael Crichton",
+        "Peter Benchley"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "British actor David Morrissey stars as which role in \"The Walking Dead\"?",
+      "text": "Which artist released the 2012 single \"Harlem Shake\", which was used in numerous YouTube videos in 2013?",
       "options": [
-        "Negan",
-        "The Governor",
-        "Daryl Dixon",
-        "Rick Grimes"
+        "Baauer",
+        "Flosstradamus",
+        "RL Grime",
+        "NGHTMRE"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
       "text": "Whose greyscale face is on the kappa emoticon on Twitch?",
       "options": [
-        "Josh DeSeno",
-        "Justin DeSeno",
         "John DeSeno",
-        "Jimmy DeSeno"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who co-founded the YouTube Let's Play channel \"Game Grumps\" alongside Newgrounds animator Egoraptor?",
-      "options": [
-        "Markiplier",
-        "Pewdiepie",
-        "JonTron",
-        "Tobuscus"
+        "Jimmy DeSeno",
+        "Josh DeSeno",
+        "Justin DeSeno"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     },
     {
-      "text": "What is the romanized Chinese word for \"airplane\"?",
+      "text": "On a London Underground map, what colour is the Circle Line?",
       "options": [
-        "Zongxian",
-        "Feiji",
-        "Huojian",
-        "Qiche"
+        "Blue",
+        "Yellow",
+        "Green",
+        "Red"
       ],
       "correct": 1,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "Artis Leon Ivey Jr. is better known as which rap artist?",
+      "options": [
+        "Coolio",
+        "Ice T",
+        "Snoop Dogg",
+        "Dr Dre"
+      ],
+      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
