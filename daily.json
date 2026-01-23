@@ -1,68 +1,68 @@
 {
-  "day": "20260122",
-  "dayIndex": 152,
+  "day": "20260123",
+  "dayIndex": 153,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Flag of the European Union has how many stars on it?",
+      "text": "Which one of these is not a typical European sword design?",
       "options": [
-        "14",
-        "16",
-        "12",
-        "10"
+        "Ulfberht",
+        "Falchion",
+        "Scimitar",
+        "Flamberge"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the movie Gremlins, after what time of day should you not feed Mogwai?",
+      "text": "In the Super Mario Bros. Movie (2023), who plays Toad?",
       "options": [
-        "Midnight",
-        "Afternoon",
-        "Evening",
-        "Morning"
+        "Keegan-Michael Key",
+        "Charlie Day",
+        "Jack Black",
+        "Seth Rogan"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "In 2013 how much money was lost by Nigerian scams?",
+      "text": "What is a Burgee?",
       "options": [
-        "$956 Million",
-        "$2.7 Billion",
-        "$12.7 Billion",
-        "$95 Million"
+        "A flag",
+        "A type of food",
+        "A window",
+        "A rope"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Baron Silas Greenback is the arch nemesis of which cartoon hero?",
+      "text": "Where does \"Gasolina\" rapper Daddy Yankee originate from?",
       "options": [
-        "SuperTed",
-        "Danger Mouse",
-        "Captain Star",
-        "Bananaman"
+        "Cuba",
+        "Puerto Rico",
+        "Spain",
+        "Mexico"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the second-largest city in Lithuania?",
+      "text": "Located in Chile, El Teniente is the world's largest underground mine for what metal?",
       "options": [
-        "Kaunas",
-        "Klaipėda",
-        "Vilnius",
-        "Panevėžys"
+        "Silver",
+        "Iron",
+        "Nickel",
+        "Copper"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
