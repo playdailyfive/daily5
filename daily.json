@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is the author of Jurassic Park?",
+      "text": "The Flag of the European Union has how many stars on it?",
       "options": [
-        "Chuck Paluhniuk",
-        "Irvine Welsh",
-        "Michael Crichton",
-        "Peter Benchley"
+        "14",
+        "16",
+        "12",
+        "10"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which artist released the 2012 single \"Harlem Shake\", which was used in numerous YouTube videos in 2013?",
+      "text": "In the movie Gremlins, after what time of day should you not feed Mogwai?",
       "options": [
-        "Baauer",
-        "Flosstradamus",
-        "RL Grime",
-        "NGHTMRE"
+        "Midnight",
+        "Afternoon",
+        "Evening",
+        "Morning"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Whose greyscale face is on the kappa emoticon on Twitch?",
+      "text": "In 2013 how much money was lost by Nigerian scams?",
       "options": [
-        "John DeSeno",
-        "Jimmy DeSeno",
-        "Josh DeSeno",
-        "Justin DeSeno"
+        "$956 Million",
+        "$2.7 Billion",
+        "$12.7 Billion",
+        "$95 Million"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "On a London Underground map, what colour is the Circle Line?",
+      "text": "Baron Silas Greenback is the arch nemesis of which cartoon hero?",
       "options": [
-        "Blue",
-        "Yellow",
-        "Green",
-        "Red"
+        "SuperTed",
+        "Danger Mouse",
+        "Captain Star",
+        "Bananaman"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Artis Leon Ivey Jr. is better known as which rap artist?",
+      "text": "What is the second-largest city in Lithuania?",
       "options": [
-        "Coolio",
-        "Ice T",
-        "Snoop Dogg",
-        "Dr Dre"
+        "Kaunas",
+        "Klaipėda",
+        "Vilnius",
+        "Panevėžys"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
