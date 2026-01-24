@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which one of these is not a typical European sword design?",
+      "text": "What is the largest organ of the human body?",
       "options": [
-        "Ulfberht",
-        "Falchion",
-        "Scimitar",
-        "Flamberge"
+        "large Intestine",
+        "Heart",
+        "Skin",
+        "Liver"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Super Mario Bros. Movie (2023), who plays Toad?",
+      "text": "In which state of America was the Fresh Prince of Bel-Air born and raised in?",
       "options": [
-        "Keegan-Michael Key",
-        "Charlie Day",
-        "Jack Black",
-        "Seth Rogan"
+        "Pennsylvania",
+        "California",
+        "New Jersey",
+        "Florida"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is a Burgee?",
+      "text": "What is the Italian word for \"tomato\"?",
       "options": [
-        "A flag",
-        "A type of food",
-        "A window",
-        "A rope"
+        "Pomodoro",
+        "Peperoncino",
+        "Cipolla",
+        "Aglio"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Where does \"Gasolina\" rapper Daddy Yankee originate from?",
+      "text": "Who sang the theme song for the TV show 'Rawhide'?",
       "options": [
-        "Cuba",
-        "Puerto Rico",
-        "Spain",
-        "Mexico"
+        "Guy Mitchell",
+        "Frankie Laine",
+        "Slim Whitman",
+        " Tennessee Ernie Ford"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Located in Chile, El Teniente is the world's largest underground mine for what metal?",
+      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
       "options": [
-        "Silver",
-        "Iron",
-        "Nickel",
-        "Copper"
+        "Chakra",
+        "Peace",
+        "Ancient",
+        "Shambala"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     }
   ]
 }
