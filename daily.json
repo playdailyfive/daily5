@@ -1,68 +1,68 @@
 {
-  "day": "20260123",
-  "dayIndex": 153,
+  "day": "20260124",
+  "dayIndex": 154,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the largest organ of the human body?",
+      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
       "options": [
-        "large Intestine",
-        "Heart",
-        "Skin",
-        "Liver"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which state of America was the Fresh Prince of Bel-Air born and raised in?",
-      "options": [
-        "Pennsylvania",
-        "California",
-        "New Jersey",
-        "Florida"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What is the Italian word for \"tomato\"?",
-      "options": [
-        "Pomodoro",
-        "Peperoncino",
-        "Cipolla",
-        "Aglio"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who sang the theme song for the TV show 'Rawhide'?",
-      "options": [
-        "Guy Mitchell",
-        "Frankie Laine",
-        "Slim Whitman",
-        " Tennessee Ernie Ford"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
-      "options": [
-        "Chakra",
-        "Peace",
-        "Ancient",
-        "Shambala"
+        "Bogot&aacute;",
+        "Cali",
+        "Quito",
+        "Medell&iacute;n"
       ],
       "correct": 3,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is Canada's smallest province?",
+      "options": [
+        "Prince Edward Island",
+        "Nova Scotia",
+        "Yukon",
+        "New Brunswick"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Geography"
+    },
+    {
+      "text": "What is the Swedish word for \"window\"?",
+      "options": [
+        "F&ouml;nster",
+        "Sk&auml;rm",
+        "H&aring;l",
+        "Ruta"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What caused Jake Lloyd who played Anakin Skywalker in The Phantom Menace to quit acting?",
+      "options": [
+        "Criminal Record",
+        "Racism",
+        "Bullying",
+        "Nomination for Worst Actor"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Celebrities"
+    },
+    {
+      "text": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "options": [
+        "New Zealand",
+        "Fiji",
+        "Indonesia",
+        "Chile"
+      ],
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
