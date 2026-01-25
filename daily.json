@@ -1,68 +1,68 @@
 {
-  "day": "20260124",
-  "dayIndex": 154,
+  "day": "20260125",
+  "dayIndex": 155,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When someone is inexperienced they are said to be what color?",
+      "text": "What is the nickname of the US state of California?",
       "options": [
-        "Red",
-        "Yellow",
-        "Blue",
-        "Green"
+        "Golden State",
+        "Sunshine State",
+        "Bay State",
+        "Treasure State"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which film does Humphrey Bogart say the famous line, \"Here's looking at you, kid\"?",
+      "text": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
       "options": [
-        "Casablanca",
-        "The Treasure of the Sierra Madre",
-        "Citizen Kane",
-        "The Maltese Falcon"
+        "A Storm of Swords",
+        "A Clash of Kings",
+        "A Dance with Dragons",
+        "A Feast for Crows"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "When was WhatsApp founded?",
+      "text": "What is real haggis made of?",
       "options": [
-        "2009",
-        "2012",
-        "2007",
-        "2010"
+        "Sheep's Heart, Liver and Lungs",
+        "Whole Sheep",
+        "Sheep's Heart, Kidneys and Lungs",
+        "Sheep's Liver, Kidneys and Eyes"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What date is referenced in the 1971 song \"September\" by Earth, Wind & Fire?",
+      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
       "options": [
-        "26th of September",
-        "24th of September",
-        "21st of September",
-        "23rd of September"
+        "Why Pay More!?",
+        "We Love to See You Smile",
+        "Have It Your Way",
+        "Making People Happy Through Food"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     },
     {
-      "text": "When was \"YouTube\" founded?",
+      "text": "Which city features all of their professional sports teams' jersey's with the same color scheme?",
       "options": [
-        "September 12, 2005",
-        "July 19, 2009",
-        "February 14, 2005",
-        "May 22, 2004"
+        "Tampa Bay",
+        "Pittsburgh",
+        "Seattle",
+        "New York"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Sports"
     }
   ]
 }
