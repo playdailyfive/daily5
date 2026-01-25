@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The drug cartel run by Pablo Escobar originated in which South American city?",
+      "text": "When someone is inexperienced they are said to be what color?",
       "options": [
-        "Bogot&aacute;",
-        "Cali",
-        "Quito",
-        "Medell&iacute;n"
+        "Red",
+        "Yellow",
+        "Blue",
+        "Green"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Canada's smallest province?",
+      "text": "In which film does Humphrey Bogart say the famous line, \"Here's looking at you, kid\"?",
       "options": [
-        "Prince Edward Island",
-        "Nova Scotia",
-        "Yukon",
-        "New Brunswick"
+        "Casablanca",
+        "The Treasure of the Sierra Madre",
+        "Citizen Kane",
+        "The Maltese Falcon"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the Swedish word for \"window\"?",
+      "text": "When was WhatsApp founded?",
       "options": [
-        "F&ouml;nster",
-        "Sk&auml;rm",
-        "H&aring;l",
-        "Ruta"
+        "2009",
+        "2012",
+        "2007",
+        "2010"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What caused Jake Lloyd who played Anakin Skywalker in The Phantom Menace to quit acting?",
+      "text": "What date is referenced in the 1971 song \"September\" by Earth, Wind & Fire?",
       "options": [
-        "Criminal Record",
-        "Racism",
-        "Bullying",
-        "Nomination for Worst Actor"
+        "26th of September",
+        "24th of September",
+        "21st of September",
+        "23rd of September"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "text": "When was \"YouTube\" founded?",
       "options": [
-        "New Zealand",
-        "Fiji",
-        "Indonesia",
-        "Chile"
+        "September 12, 2005",
+        "July 19, 2009",
+        "February 14, 2005",
+        "May 22, 2004"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
