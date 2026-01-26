@@ -1,68 +1,68 @@
 {
-  "day": "20260125",
-  "dayIndex": 155,
+  "day": "20260126",
+  "dayIndex": 156,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cuba's official, most widely spoken language?",
+      "text": "What machine element is located in the center of fidget spinners?",
       "options": [
-        "Spanish",
-        "Portuguese",
-        "French",
-        "Italian"
+        "Gears",
+        "Axles",
+        "Belts",
+        "Bearings"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the main character in the show \"Burn Notice\"?",
+      "text": "What Led Zeppelin album contains \"Stairway to Heaven\"?",
       "options": [
-        "Fiona Glenanne",
-        "Michael Westen",
-        "Sam Axe",
-        "Madeline Westen"
+        "Led Zeppelin III",
+        "Physical Graffiti",
+        "Led Zeppelin IV",
+        "Houses of the Holy"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "In a standard set of playing cards, which is the only king without a moustache?",
-      "options": [
-        "Hearts",
-        "Clubs",
-        "Spades",
-        "Diamonds"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which English county is the city of Portsmouth?",
-      "options": [
-        "Oxfordshire",
-        "Hampshire",
-        "Buckinghamshire",
-        "Surrey"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "When did the rapper Eazy-E die?",
-      "options": [
-        "October 21, 1994",
-        "March 26, 1995",
-        "February 14, 1993",
-        "July 11, 1992"
-      ],
-      "correct": 1,
-      "difficulty": "hard",
       "category": "Entertainment: Music"
+    },
+    {
+      "text": "Which country drives on the left side of the road?",
+      "options": [
+        "Russia",
+        "China",
+        "Germany",
+        "Japan"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which band released songs such as \"Electric Feel\", \"Kids\", and \"Time to Pretend\"?",
+      "options": [
+        "Passion Pit",
+        "Franz Ferdinand",
+        "MGMT",
+        "Phoenix"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "In \"Star Trek\", who was the founder of the Klingon Empire and its philosophy?",
+      "options": [
+        "Lady Lukara of the Great Hall",
+        "Molor the Unforgiving",
+        "Dahar Master Kor",
+        "Kahless the Unforgettable"
+      ],
+      "correct": 3,
+      "difficulty": "hard",
+      "category": "Entertainment: Television"
     }
   ]
 }
