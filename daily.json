@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the nickname of the US state of California?",
+      "text": "What is Cuba's official, most widely spoken language?",
       "options": [
-        "Golden State",
-        "Sunshine State",
-        "Bay State",
-        "Treasure State"
+        "Spanish",
+        "Portuguese",
+        "French",
+        "Italian"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
+      "text": "Who is the main character in the show \"Burn Notice\"?",
       "options": [
-        "A Storm of Swords",
-        "A Clash of Kings",
-        "A Dance with Dragons",
-        "A Feast for Crows"
+        "Fiona Glenanne",
+        "Michael Westen",
+        "Sam Axe",
+        "Madeline Westen"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "In a standard set of playing cards, which is the only king without a moustache?",
       "options": [
-        "Sheep's Heart, Liver and Lungs",
-        "Whole Sheep",
-        "Sheep's Heart, Kidneys and Lungs",
-        "Sheep's Liver, Kidneys and Eyes"
+        "Hearts",
+        "Clubs",
+        "Spades",
+        "Diamonds"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
+      "text": "In which English county is the city of Portsmouth?",
       "options": [
-        "Why Pay More!?",
-        "We Love to See You Smile",
-        "Have It Your Way",
-        "Making People Happy Through Food"
+        "Oxfordshire",
+        "Hampshire",
+        "Buckinghamshire",
+        "Surrey"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Geography"
     },
     {
-      "text": "Which city features all of their professional sports teams' jersey's with the same color scheme?",
+      "text": "When did the rapper Eazy-E die?",
       "options": [
-        "Tampa Bay",
-        "Pittsburgh",
-        "Seattle",
-        "New York"
+        "October 21, 1994",
+        "March 26, 1995",
+        "February 14, 1993",
+        "July 11, 1992"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     }
   ]
 }
