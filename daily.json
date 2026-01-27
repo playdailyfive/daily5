@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What machine element is located in the center of fidget spinners?",
+      "text": "What do sailors call the left side of a boat?",
       "options": [
-        "Gears",
-        "Axles",
-        "Belts",
-        "Bearings"
+        "Bow",
+        "Starboard",
+        "Stern",
+        "Port"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What Led Zeppelin album contains \"Stairway to Heaven\"?",
+      "text": "The 2016 song \"Starboy\" by Canadian singer The Weeknd features which prominent electronic artist?",
       "options": [
-        "Led Zeppelin III",
-        "Physical Graffiti",
-        "Led Zeppelin IV",
-        "Houses of the Holy"
+        "DJ Shadow",
+        "Disclosure",
+        "Daft Punk",
+        "deadmau5"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which country drives on the left side of the road?",
+      "text": "\"Gum arabic\" is a natural gum consisting of the hardened sap of which tree species?",
       "options": [
-        "Russia",
-        "China",
-        "Germany",
-        "Japan"
+        "Ficus",
+        "Eucalyptus",
+        "Palm",
+        "Acacia"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which band released songs such as \"Electric Feel\", \"Kids\", and \"Time to Pretend\"?",
+      "text": "What's the first National Park designated in the United States?",
       "options": [
-        "Passion Pit",
-        "Franz Ferdinand",
-        "MGMT",
-        "Phoenix"
+        "Sequoia ",
+        "Rocky Mountain",
+        "Yellowstone",
+        "Yosemite"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "In \"Star Trek\", who was the founder of the Klingon Empire and its philosophy?",
+      "text": "At which race was the 2018 F1 Drivers Championship won?",
       "options": [
-        "Lady Lukara of the Great Hall",
-        "Molor the Unforgiving",
-        "Dahar Master Kor",
-        "Kahless the Unforgettable"
+        "United States",
+        "Belgium",
+        "Abu Dhabi",
+        "Mexico"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Sports"
     }
   ]
 }
