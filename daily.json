@@ -1,68 +1,68 @@
 {
-  "day": "20260126",
-  "dayIndex": 156,
+  "day": "20260127",
+  "dayIndex": 157,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the left side of a boat?",
+      "text": "What country does sushi & karaoke come from?",
       "options": [
-        "Bow",
-        "Starboard",
-        "Stern",
-        "Port"
+        "China",
+        "Vietnam",
+        "South Korea",
+        "Japan"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The 2016 song \"Starboy\" by Canadian singer The Weeknd features which prominent electronic artist?",
+      "text": "What is the best selling album of all time from 1976 to 2018?",
       "options": [
-        "DJ Shadow",
-        "Disclosure",
-        "Daft Punk",
-        "deadmau5"
+        "The Dark Side of the Moon",
+        "Thriller",
+        "Abbey Road",
+        "Back in Black"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "\"Gum arabic\" is a natural gum consisting of the hardened sap of which tree species?",
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
       "options": [
-        "Ficus",
-        "Eucalyptus",
-        "Palm",
-        "Acacia"
+        "July 4, 1776",
+        "May 4, 1776",
+        "June 4, 1776",
+        "July 2, 1776"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What's the first National Park designated in the United States?",
+      "text": "According to the RIAA: Which artist has sold the most albums by the million?",
       "options": [
-        "Sequoia ",
-        "Rocky Mountain",
-        "Yellowstone",
-        "Yosemite"
+        "The Beatles",
+        "Pink Floyd",
+        "Michael Jackson",
+        "Elvis Presley"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "At which race was the 2018 F1 Drivers Championship won?",
+      "text": "Which band is the longest active band in the world with no breaks or line-up changes?",
       "options": [
-        "United States",
-        "Belgium",
-        "Abu Dhabi",
-        "Mexico"
+        "U2",
+        "Rolling Stones",
+        "Radiohead",
+        "Rush"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     }
   ]
 }
