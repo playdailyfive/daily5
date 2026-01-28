@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What country does sushi & karaoke come from?",
+      "text": "Which one of these is not a typical European sword design?",
       "options": [
-        "China",
-        "Vietnam",
-        "South Korea",
-        "Japan"
+        "Falchion",
+        "Flamberge",
+        "Ulfberht",
+        "Scimitar"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the best selling album of all time from 1976 to 2018?",
+      "text": "In \"ALF\", what was ALF's real name?",
       "options": [
-        "The Dark Side of the Moon",
-        "Thriller",
-        "Abbey Road",
-        "Back in Black"
+        "Gordon von Gam",
+        "Gordon Shumway",
+        "Gordon Foster",
+        "Gordon Milipp"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "text": "When was Nintendo founded?",
       "options": [
-        "July 4, 1776",
-        "May 4, 1776",
-        "June 4, 1776",
-        "July 2, 1776"
+        "September 23rd, 1889",
+        "October 19th, 1891",
+        "March 4th, 1887",
+        "December 27th, 1894"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "According to the RIAA: Which artist has sold the most albums by the million?",
+      "text": "What is Doug Walker's YouTube name?",
       "options": [
-        "The Beatles",
-        "Pink Floyd",
-        "Michael Jackson",
-        "Elvis Presley"
+        "The Nostalgia Critic",
+        "The Cinema Snob",
+        "AngryJoeShow",
+        "The Angry Video Game Nerd"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Celebrities"
     },
     {
-      "text": "Which band is the longest active band in the world with no breaks or line-up changes?",
+      "text": "What is the first track on the Dave Matthews Band album \"Before These Crowded Streets\"?",
       "options": [
-        "U2",
-        "Rolling Stones",
-        "Radiohead",
-        "Rush"
+        "Pantala Naga Pampa",
+        "Don't Drink The Water",
+        "Stay (Wasting Time)",
+        "Rapunzel"
       ],
       "correct": 0,
       "difficulty": "hard",
