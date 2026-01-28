@@ -1,64 +1,64 @@
 {
-  "day": "20260127",
-  "dayIndex": 157,
+  "day": "20260128",
+  "dayIndex": 158,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which one of these is not a typical European sword design?",
+      "text": "Which language is most widely spoken in Switzerland?",
       "options": [
-        "Falchion",
-        "Flamberge",
-        "Ulfberht",
-        "Scimitar"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In \"ALF\", what was ALF's real name?",
-      "options": [
-        "Gordon von Gam",
-        "Gordon Shumway",
-        "Gordon Foster",
-        "Gordon Milipp"
+        "French",
+        "German",
+        "Swiss",
+        "Italian"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     },
     {
-      "text": "When was Nintendo founded?",
+      "text": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
       "options": [
-        "September 23rd, 1889",
-        "October 19th, 1891",
-        "March 4th, 1887",
-        "December 27th, 1894"
+        "Ian Fleming",
+        "Joseph Conrad",
+        "John Buchan",
+        "Graham Greene"
       ],
       "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "What is the world's most expensive spice by weight?",
+      "options": [
+        "Vanilla",
+        "Cinnamon",
+        "Saffron",
+        "Cardamom"
+      ],
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Doug Walker's YouTube name?",
+      "text": "Which team was the 2015-2016 NBA Champions?",
       "options": [
-        "The Nostalgia Critic",
-        "The Cinema Snob",
-        "AngryJoeShow",
-        "The Angry Video Game Nerd"
+        "Toronto Raptors",
+        "Cleveland Cavaliers",
+        "Oklahoma City Thunders",
+        "Golden State Warriors"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Sports"
     },
     {
-      "text": "What is the first track on the Dave Matthews Band album \"Before These Crowded Streets\"?",
+      "text": "The key of sharps does the key of G# minor contain?",
       "options": [
-        "Pantala Naga Pampa",
-        "Don't Drink The Water",
-        "Stay (Wasting Time)",
-        "Rapunzel"
+        "5",
+        "7",
+        "0",
+        "3"
       ],
       "correct": 0,
       "difficulty": "hard",
