@@ -1,64 +1,64 @@
 {
-  "day": "20260128",
-  "dayIndex": 158,
+  "day": "20260129",
+  "dayIndex": 159,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which language is most widely spoken in Switzerland?",
+      "text": "What country does sushi & karaoke come from?",
       "options": [
-        "French",
-        "German",
-        "Swiss",
-        "Italian"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
-      "options": [
-        "Ian Fleming",
-        "Joseph Conrad",
-        "John Buchan",
-        "Graham Greene"
+        "Japan",
+        "Vietnam",
+        "China",
+        "South Korea"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     },
     {
-      "text": "What is the world's most expensive spice by weight?",
+      "text": "In Game of Thrones, what is Littlefinger's real name?",
       "options": [
-        "Vanilla",
-        "Cinnamon",
-        "Saffron",
-        "Cardamom"
+        "Lancel Lannister",
+        "Torrhen Karstark",
+        "Petyr Baelish",
+        "Podrick Payne"
       ],
       "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Television"
+    },
+    {
+      "text": "Which famed architect, who died in 2019 aged 102, designed the glass pyramid at the Louvre museum in Paris?",
+      "options": [
+        "Frank Gehry",
+        "I. M. Pei",
+        "Wang Shu",
+        "Pascale Guédot"
+      ],
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which team was the 2015-2016 NBA Champions?",
+      "text": "The 1985 Toyota Corolla \"AE86\" was the hero car for what anime? ",
       "options": [
-        "Toronto Raptors",
-        "Cleveland Cavaliers",
-        "Oklahoma City Thunders",
-        "Golden State Warriors"
+        "Initial D",
+        "Ex Driver",
+        "Ghost MF",
+        "Wangan Midnight"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The key of sharps does the key of G# minor contain?",
+      "text": "Which album was released by Kanye West in 2013?",
       "options": [
-        "5",
-        "7",
-        "0",
-        "3"
+        "Yeezus",
+        "The Life of Pablo",
+        "My Beautiful Dark Twisted Fantasy",
+        "Watch the Throne"
       ],
       "correct": 0,
       "difficulty": "hard",
