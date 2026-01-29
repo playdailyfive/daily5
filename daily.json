@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What country does sushi & karaoke come from?",
+      "text": "Area 51 is located in which US state?",
       "options": [
-        "Japan",
-        "Vietnam",
-        "China",
-        "South Korea"
+        "Nevada",
+        "Utah",
+        "Arizona",
+        "New Mexico"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In Game of Thrones, what is Littlefinger's real name?",
+      "text": "The Rush song \"YYZ\" derives its name from the IATA aiport identification code for which city?",
       "options": [
-        "Lancel Lannister",
-        "Torrhen Karstark",
-        "Petyr Baelish",
-        "Podrick Payne"
+        "Ottawa",
+        "Calgary",
+        "Toronto",
+        "Vancouver"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which famed architect, who died in 2019 aged 102, designed the glass pyramid at the Louvre museum in Paris?",
+      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
       "options": [
-        "Frank Gehry",
-        "I. M. Pei",
-        "Wang Shu",
-        "Pascale Guédot"
+        "Asus",
+        "Hewlett-Packard",
+        "Dell",
+        "Toshiba"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The 1985 Toyota Corolla \"AE86\" was the hero car for what anime? ",
+      "text": "This movie contains the quote, \"I love the smell of napalm in the morning!\"",
       "options": [
-        "Initial D",
-        "Ex Driver",
-        "Ghost MF",
-        "Wangan Midnight"
+        "Apocalypse Now",
+        "Full Metal Jacket",
+        "The Deer Hunter",
+        "Platoon"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which album was released by Kanye West in 2013?",
+      "text": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
       "options": [
-        "Yeezus",
-        "The Life of Pablo",
-        "My Beautiful Dark Twisted Fantasy",
-        "Watch the Throne"
+        "Husker",
+        "Apollo",
+        "Starbuck",
+        "Crashdown"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
