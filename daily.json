@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Red Vines is a brand of what type of candy?",
+      "text": "Who played General Aladeen in The Dictator?",
       "options": [
-        "Licorice",
-        "Chocolate",
-        "Bubblegum",
-        "Lollipop"
+        "Sacha Baron Cohen",
+        "James Franco",
+        "Leonardo Dicaprio",
+        "Johnny Depp"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the frontman's name of the metal band Megadeth?",
+      "text": "Who is the lead singer of the band Coldplay?",
       "options": [
-        "Dave Mustaine",
-        "James Hetfield",
-        "Vince Neil",
-        "Rob Halford"
+        "Chris Martin",
+        "Chris Connelly",
+        "Chris Wallace",
+        "Chris Isaak"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "text": "What was the original name of the search engine \"Google\"?",
       "options": [
-        "India Pale Ale",
-        "Pale Lager",
-        "Baltic Porter",
-        "Pilfsner"
+        "CatMassage",
+        "BackRub",
+        "Netscape Navigator",
+        "SearchPro"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What mountain range lines the border between Spain and France?",
+      "text": "What was Nickelodeon's original name?",
       "options": [
-        "Urals",
-        "Alps",
-        "Carpathians",
-        "Pyrenees"
+        "Splat!",
+        "MTVKids",
+        "KidsTV",
+        "Pinwheel"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "According to \"Star Wars\" lore, which planet does Obi-Wan Kenobi come from?",
+      "text": "Who was not in the band \"The Smiths\"?",
       "options": [
-        "Tatooine",
-        "Alderaan",
-        "Stewjon",
-        "Naboo"
+        "Andy Rourke",
+        "Morrissey",
+        "Martin Chambers",
+        "Mike Joyce"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     }
   ]
 }
