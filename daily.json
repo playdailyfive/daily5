@@ -1,68 +1,68 @@
 {
-  "day": "20260129",
-  "dayIndex": 159,
+  "day": "20260130",
+  "dayIndex": 160,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Area 51 is located in which US state?",
+      "text": "Red Vines is a brand of what type of candy?",
       "options": [
-        "Nevada",
-        "Utah",
-        "Arizona",
-        "New Mexico"
+        "Licorice",
+        "Chocolate",
+        "Bubblegum",
+        "Lollipop"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Rush song \"YYZ\" derives its name from the IATA aiport identification code for which city?",
+      "text": "What is the frontman's name of the metal band Megadeth?",
       "options": [
-        "Ottawa",
-        "Calgary",
-        "Toronto",
-        "Vancouver"
+        "Dave Mustaine",
+        "James Hetfield",
+        "Vince Neil",
+        "Rob Halford"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
+      "text": "The Mexican Beer \"Corona\" is what type of beer?",
       "options": [
-        "Asus",
-        "Hewlett-Packard",
-        "Dell",
-        "Toshiba"
+        "India Pale Ale",
+        "Pale Lager",
+        "Baltic Porter",
+        "Pilfsner"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "This movie contains the quote, \"I love the smell of napalm in the morning!\"",
+      "text": "What mountain range lines the border between Spain and France?",
       "options": [
-        "Apocalypse Now",
-        "Full Metal Jacket",
-        "The Deer Hunter",
-        "Platoon"
+        "Urals",
+        "Alps",
+        "Carpathians",
+        "Pyrenees"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
+      "text": "According to \"Star Wars\" lore, which planet does Obi-Wan Kenobi come from?",
       "options": [
-        "Husker",
-        "Apollo",
-        "Starbuck",
-        "Crashdown"
+        "Tatooine",
+        "Alderaan",
+        "Stewjon",
+        "Naboo"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     }
   ]
 }
