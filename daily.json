@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Terry Gilliam was an animator that worked with which British comedy group?",
+      "text": "\"A3\", \"B1\", and \"Legal\" are typical names of sizes for what object?",
       "options": [
-        "Monty Python",
-        "The League of Gentlemen&lrm;",
-        "The Penny Dreadfuls",
-        "The Goodies&lrm;"
+        "Paper",
+        "Law books",
+        "Phone screens",
+        "Airplanes"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Sting, the lead vocalist of The Police, primarily plays what instrument?",
+      "text": "What was the first James Bond film?",
       "options": [
-        "Bass Guitar",
-        "Guitar",
-        "Drums",
-        "Keyboards"
+        "Dr. No",
+        "From Russia With Love",
+        "Goldfinger",
+        "Thunderball"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the currency of Poland?",
+      "text": "What is the average life span of a garden ant?",
       "options": [
-        "Ruble",
-        "Krone",
-        "Złoty",
-        "Euro"
+        "24 hours",
+        "3 years",
+        "15 years",
+        "1 week"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Cryoshell, known for \"Creeping in My Soul\" did the advertising music for what Lego Theme?",
+      "text": "Which American author was also a budding travel writer and wrote of his adventures with his dog Charley?",
       "options": [
-        "Ben 10 Alien Force",
-        "Star Wars",
-        "Bionicle",
-        "Hero Factory"
+        "Ernest Hemingway",
+        "William Faulkner",
+        "John Steinbeck",
+        "F. Scott Fitzgerald"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "The heavy metal band Black Sabbath hail from which English city?",
+      "text": "If someone said \"you are olid\", what would they mean?",
       "options": [
-        "Birmingham",
-        "Newcastle-Upon-Tyne",
-        "London",
-        "Manchester"
+        "You smell extremely unpleasant.",
+        "You are incomprehensible/an idiot.",
+        "Your appearance is repulsive.",
+        "You are out of shape/weak."
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
