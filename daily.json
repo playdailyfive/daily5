@@ -1,66 +1,66 @@
 {
-  "day": "20260130",
-  "dayIndex": 160,
+  "day": "20260131",
+  "dayIndex": 161,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who played General Aladeen in The Dictator?",
+      "text": "Terry Gilliam was an animator that worked with which British comedy group?",
       "options": [
-        "Sacha Baron Cohen",
-        "James Franco",
-        "Leonardo Dicaprio",
-        "Johnny Depp"
+        "Monty Python",
+        "The League of Gentlemen&lrm;",
+        "The Penny Dreadfuls",
+        "The Goodies&lrm;"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the lead singer of the band Coldplay?",
+      "text": "Sting, the lead vocalist of The Police, primarily plays what instrument?",
       "options": [
-        "Chris Martin",
-        "Chris Connelly",
-        "Chris Wallace",
-        "Chris Isaak"
+        "Bass Guitar",
+        "Guitar",
+        "Drums",
+        "Keyboards"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What was the original name of the search engine \"Google\"?",
+      "text": "What is the currency of Poland?",
       "options": [
-        "CatMassage",
-        "BackRub",
-        "Netscape Navigator",
-        "SearchPro"
+        "Ruble",
+        "Krone",
+        "Złoty",
+        "Euro"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was Nickelodeon's original name?",
+      "text": "Cryoshell, known for \"Creeping in My Soul\" did the advertising music for what Lego Theme?",
       "options": [
-        "Splat!",
-        "MTVKids",
-        "KidsTV",
-        "Pinwheel"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "Who was not in the band \"The Smiths\"?",
-      "options": [
-        "Andy Rourke",
-        "Morrissey",
-        "Martin Chambers",
-        "Mike Joyce"
+        "Ben 10 Alien Force",
+        "Star Wars",
+        "Bionicle",
+        "Hero Factory"
       ],
       "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "The heavy metal band Black Sabbath hail from which English city?",
+      "options": [
+        "Birmingham",
+        "Newcastle-Upon-Tyne",
+        "London",
+        "Manchester"
+      ],
+      "correct": 0,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
