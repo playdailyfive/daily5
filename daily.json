@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of the poker hand containing three of a kind and a pair?",
+      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
       "options": [
-        "High card",
-        "Flush",
-        "Straight",
-        "Full House"
+        "Dinar",
+        "Riyal",
+        "Peso",
+        "Rupee"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Alps are a mountain range on which continent?",
+      "text": "What is the only state in the United States that does not have a flag in a shape with 4 edges?",
       "options": [
-        "Asia",
-        "North America",
-        "Africa",
-        "Europe"
+        "Idaho",
+        "Florida",
+        "New Mexico",
+        "Ohio"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+      "text": "What is the Italian word for \"tomato\"?",
       "options": [
-        "Tiki masala",
-        "Biryani",
-        "Tandoori",
-        "Pani puri"
+        "Peperoncino",
+        "Aglio",
+        "Pomodoro",
+        "Cipolla"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the oldest team in the NFL?",
+      "text": "Who is the Pink Floyd song \"Shine On You Crazy Diamond\" written about?",
       "options": [
-        "New York Giants",
-        "Arizona Cardinals",
-        "Green Bay Packers",
-        "Chicago Bears"
+        "Floyd",
+        "Syd Barrett",
+        "David Gilmour",
+        "John Lennon"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "How many members are there in the idol group \"&micro;'s\"?",
+      "text": "With which doubles partner did John McEnroe have most success?",
       "options": [
-        "6",
-        "48",
-        "3",
-        "9"
+        "Michael Stich",
+        "Mark Woodforde",
+        "Mary Carillo",
+        "Peter Fleming"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     }
   ]
 }
