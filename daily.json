@@ -1,68 +1,68 @@
 {
-  "day": "20260131",
-  "dayIndex": 161,
+  "day": "20260201",
+  "dayIndex": 162,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "\"A3\", \"B1\", and \"Legal\" are typical names of sizes for what object?",
+      "text": "What is the name of the poker hand containing three of a kind and a pair?",
       "options": [
-        "Paper",
-        "Law books",
-        "Phone screens",
-        "Airplanes"
+        "High card",
+        "Flush",
+        "Straight",
+        "Full House"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the first James Bond film?",
+      "text": "The Alps are a mountain range on which continent?",
       "options": [
-        "Dr. No",
-        "From Russia With Love",
-        "Goldfinger",
-        "Thunderball"
+        "Asia",
+        "North America",
+        "Africa",
+        "Europe"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "What is the average life span of a garden ant?",
+      "text": "What is the name given to Indian food cooked over charcoal in a clay oven?",
       "options": [
-        "24 hours",
-        "3 years",
-        "15 years",
-        "1 week"
+        "Tiki masala",
+        "Biryani",
+        "Tandoori",
+        "Pani puri"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which American author was also a budding travel writer and wrote of his adventures with his dog Charley?",
+      "text": "What is the oldest team in the NFL?",
       "options": [
-        "Ernest Hemingway",
-        "William Faulkner",
-        "John Steinbeck",
-        "F. Scott Fitzgerald"
+        "New York Giants",
+        "Arizona Cardinals",
+        "Green Bay Packers",
+        "Chicago Bears"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Sports"
     },
     {
-      "text": "If someone said \"you are olid\", what would they mean?",
+      "text": "How many members are there in the idol group \"&micro;'s\"?",
       "options": [
-        "You smell extremely unpleasant.",
-        "You are incomprehensible/an idiot.",
-        "Your appearance is repulsive.",
-        "You are out of shape/weak."
+        "6",
+        "48",
+        "3",
+        "9"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
