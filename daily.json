@@ -1,68 +1,68 @@
 {
-  "day": "20260201",
-  "dayIndex": 162,
+  "day": "20260202",
+  "dayIndex": 163,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
+      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
       "options": [
-        "Dinar",
-        "Riyal",
-        "Peso",
-        "Rupee"
+        "Miller Coors",
+        "Anheuser Busch",
+        "D. G. Yuengling and Son, Inc",
+        "Boston Beer Company"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the only state in the United States that does not have a flag in a shape with 4 edges?",
+      "text": "What is Canada's smallest province?",
       "options": [
-        "Idaho",
-        "Florida",
-        "New Mexico",
-        "Ohio"
+        "Prince Edward Island",
+        "Nova Scotia",
+        "New Brunswick",
+        "Yukon"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "What is the Italian word for \"tomato\"?",
+      "text": "Earl Grey tea is black tea flavoured with what?",
       "options": [
-        "Peperoncino",
-        "Aglio",
-        "Pomodoro",
-        "Cipolla"
+        "Vanilla",
+        "Bergamot oil",
+        "Lavender",
+        "Honey"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the Pink Floyd song \"Shine On You Crazy Diamond\" written about?",
+      "text": "The Who's eponymous line, \"Teenage Wasteland\", appears in which of their songs?",
       "options": [
-        "Floyd",
-        "Syd Barrett",
-        "David Gilmour",
-        "John Lennon"
+        "The Seeker",
+        "Pinball Wizard",
+        "Baba O' Riley",
+        "Won't Get Fooled Again"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "With which doubles partner did John McEnroe have most success?",
+      "text": "What is the name of the 2016 mixtape released by Venezuelan electronic producer Arca?",
       "options": [
-        "Michael Stich",
-        "Mark Woodforde",
-        "Mary Carillo",
-        "Peter Fleming"
+        "Entra&ntilde;as",
+        "Sheep",
+        "&&&&&&",
+        "Xen"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     }
   ]
 }
