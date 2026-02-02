@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
+      "text": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
       "options": [
-        "Miller Coors",
-        "Anheuser Busch",
-        "D. G. Yuengling and Son, Inc",
-        "Boston Beer Company"
+        "Rubik's Cube",
+        "Transformers",
+        "Cabbage Patch Kids",
+        "Care Bears"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is Canada's smallest province?",
+      "text": "In \"ALF\", what was ALF's real name?",
       "options": [
-        "Prince Edward Island",
-        "Nova Scotia",
-        "New Brunswick",
-        "Yukon"
+        "Gordon Shumway",
+        "Gordon Foster",
+        "Gordon Milipp",
+        "Gordon von Gam"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Earl Grey tea is black tea flavoured with what?",
+      "text": "What was the destination of the missing flight MH370?",
       "options": [
-        "Vanilla",
-        "Bergamot oil",
-        "Lavender",
-        "Honey"
+        "Singapore",
+        "Beijing",
+        "Kuala Lumpur",
+        "Tokyo"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The Who's eponymous line, \"Teenage Wasteland\", appears in which of their songs?",
+      "text": "Who voiced the character Draco in the 1996 movie 'DragonHeart'?",
       "options": [
-        "The Seeker",
-        "Pinball Wizard",
-        "Baba O' Riley",
-        "Won't Get Fooled Again"
+        "Dennis Quaid",
+        "Brian Thompson",
+        "Sean Connery",
+        "Pete Postlethwaite"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the name of the 2016 mixtape released by Venezuelan electronic producer Arca?",
+      "text": "Which film star has his statue in Leicester Square?",
       "options": [
-        "Entra&ntilde;as",
-        "Sheep",
-        "&&&&&&",
-        "Xen"
+        "Charlie Chaplin",
+        "Rowan Atkinson ",
+        "Paul Newman",
+        "Alfred Hitchcock"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
