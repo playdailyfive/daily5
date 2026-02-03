@@ -1,68 +1,68 @@
 {
-  "day": "20260202",
-  "dayIndex": 163,
+  "day": "20260203",
+  "dayIndex": 164,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+      "text": "What is the French word for \"fish\"?",
       "options": [
-        "Rubik's Cube",
-        "Transformers",
-        "Cabbage Patch Kids",
-        "Care Bears"
+        "fiche",
+        "mer",
+        "poisson",
+        "escargot"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"ALF\", what was ALF's real name?",
+      "text": "In golf, what name is given to a hole score of two under par?",
       "options": [
-        "Gordon Shumway",
-        "Gordon Foster",
-        "Gordon Milipp",
-        "Gordon von Gam"
+        "Bogey",
+        "Birdie",
+        "Albatross",
+        "Eagle"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "What was the destination of the missing flight MH370?",
+      "text": "What is the full title of the Prime Minister of the UK?",
       "options": [
-        "Singapore",
-        "Beijing",
-        "Kuala Lumpur",
-        "Tokyo"
+        "First Lord of the Treasury",
+        "Manager of the Crown Estate",
+        "Duke of Cambridge",
+        "Her Majesty's Loyal Opposition"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the capital city of the U.S. state of Texas?",
+      "options": [
+        "San Antonio",
+        "Dallas",
+        "Houston",
+        "Austin"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Geography"
+    },
+    {
+      "text": "What was the date of original airing of the pilot episode of My Little Pony: Friendship is Magic?",
+      "options": [
+        "May 18th, 2015",
+        "October 10th, 2010",
+        "April 14th, 1984",
+        "November 6th, 2010"
       ],
       "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who voiced the character Draco in the 1996 movie 'DragonHeart'?",
-      "options": [
-        "Dennis Quaid",
-        "Brian Thompson",
-        "Sean Connery",
-        "Pete Postlethwaite"
-      ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "Which film star has his statue in Leicester Square?",
-      "options": [
-        "Charlie Chaplin",
-        "Rowan Atkinson ",
-        "Paul Newman",
-        "Alfred Hitchcock"
-      ],
-      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Television"
     }
   ]
 }
