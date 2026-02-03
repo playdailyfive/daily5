@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"fish\"?",
+      "text": "Which type of cutlery is most suited for eating soup?",
       "options": [
-        "fiche",
-        "mer",
-        "poisson",
-        "escargot"
+        "Fork",
+        "Chopsticks",
+        "Spoon",
+        "Knife"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In golf, what name is given to a hole score of two under par?",
+      "text": "Which actor portrays \"Walter White\" in the series \"Breaking Bad\"?",
       "options": [
-        "Bogey",
-        "Birdie",
-        "Albatross",
-        "Eagle"
+        "Aaron Paul",
+        "Andrew Lincoln",
+        "RJ Mitte",
+        " Bryan Cranston"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the full title of the Prime Minister of the UK?",
+      "text": "A statue of Charles Darwin sits in what London museum?",
       "options": [
-        "First Lord of the Treasury",
-        "Manager of the Crown Estate",
-        "Duke of Cambridge",
-        "Her Majesty's Loyal Opposition"
+        "Natural History Museum",
+        "Science Museum",
+        "Tate",
+        "British Museum"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital city of the U.S. state of Texas?",
+      "text": "Which television show has Dan Gheesling been on?",
       "options": [
-        "San Antonio",
-        "Dallas",
-        "Houston",
-        "Austin"
+        "The Bachelor",
+        "Jeopardy",
+        "Survivor",
+        "Big Brother"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Celebrities"
     },
     {
-      "text": "What was the date of original airing of the pilot episode of My Little Pony: Friendship is Magic?",
+      "text": "In the \"Jurassic Park\" universe, what was the first dinosaur cloned by InGen in 1986?",
       "options": [
-        "May 18th, 2015",
-        "October 10th, 2010",
-        "April 14th, 1984",
-        "November 6th, 2010"
+        "Brachiosaurus",
+        "Velociraptor",
+        "Troodon",
+        "Triceratops"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     }
   ]
 }
