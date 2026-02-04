@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Waluigi's first appearance was in what game?",
+      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
       "options": [
-        "Wario Land: Super Mario Land 3",
-        "Mario Tennis 64 (N64)",
-        "Mario Party (N64)",
-        "Super Smash Bros. Ultimate"
+        "Riyal",
+        "Rupee",
+        "Peso",
+        "Dinar"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Kanye West's \"Gold Digger\" featured which Oscar-winning actor?",
+      "text": "British actor David Morrissey stars as which role in \"The Walking Dead\"?",
       "options": [
-        " Bruce Willis",
-        "Dwayne Johnson",
-        "Alec Baldwin",
-        "Jamie Foxx"
+        "Daryl Dixon",
+        "Rick Grimes",
+        "Negan",
+        "The Governor"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "This field is sometimes known as \"The Dismal Science.\"",
+      "text": "What is the average life span of a garden ant?",
       "options": [
-        "Philosophy",
-        "Economics",
-        "Politics",
-        "Physics"
+        "24 hours",
+        "15 years",
+        "1 week",
+        "3 years"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+      "text": "In the 1994 movie \"Speed\", what is the minimum speed the bus must go to prevent to bomb from exploding?",
       "options": [
-        "Closer",
-        "A Warm Place",
-        "Hurt",
-        "Big Man with a Gun"
+        "60 mph",
+        "40 mph",
+        "50 mph",
+        "70 mph"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the area of Vatican City?",
+      "text": "What city is known as the Rose Capital of the World?",
       "options": [
-        "0.86km^2",
-        "0.10km^2",
-        "0.44km^2",
-        "12.00km^2"
+        "Miami, Florida",
+        "San Diego, California",
+        "Tyler, Texas",
+        "Anaheim, California"
       ],
       "correct": 2,
       "difficulty": "hard",
