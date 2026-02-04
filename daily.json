@@ -1,68 +1,68 @@
 {
-  "day": "20260203",
-  "dayIndex": 164,
+  "day": "20260204",
+  "dayIndex": 165,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which type of cutlery is most suited for eating soup?",
+      "text": "Waluigi's first appearance was in what game?",
       "options": [
-        "Fork",
-        "Chopsticks",
-        "Spoon",
-        "Knife"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which actor portrays \"Walter White\" in the series \"Breaking Bad\"?",
-      "options": [
-        "Aaron Paul",
-        "Andrew Lincoln",
-        "RJ Mitte",
-        " Bryan Cranston"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "A statue of Charles Darwin sits in what London museum?",
-      "options": [
-        "Natural History Museum",
-        "Science Museum",
-        "Tate",
-        "British Museum"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which television show has Dan Gheesling been on?",
-      "options": [
-        "The Bachelor",
-        "Jeopardy",
-        "Survivor",
-        "Big Brother"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Celebrities"
-    },
-    {
-      "text": "In the \"Jurassic Park\" universe, what was the first dinosaur cloned by InGen in 1986?",
-      "options": [
-        "Brachiosaurus",
-        "Velociraptor",
-        "Troodon",
-        "Triceratops"
+        "Wario Land: Super Mario Land 3",
+        "Mario Tennis 64 (N64)",
+        "Mario Party (N64)",
+        "Super Smash Bros. Ultimate"
       ],
       "correct": 1,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Kanye West's \"Gold Digger\" featured which Oscar-winning actor?",
+      "options": [
+        " Bruce Willis",
+        "Dwayne Johnson",
+        "Alec Baldwin",
+        "Jamie Foxx"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "This field is sometimes known as \"The Dismal Science.\"",
+      "options": [
+        "Philosophy",
+        "Economics",
+        "Politics",
+        "Physics"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+      "options": [
+        "Closer",
+        "A Warm Place",
+        "Hurt",
+        "Big Man with a Gun"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "What is the area of Vatican City?",
+      "options": [
+        "0.86km^2",
+        "0.10km^2",
+        "0.44km^2",
+        "12.00km^2"
+      ],
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
