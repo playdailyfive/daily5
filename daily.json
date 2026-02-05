@@ -1,68 +1,68 @@
 {
-  "day": "20260204",
-  "dayIndex": 165,
+  "day": "20260205",
+  "dayIndex": 166,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
+      "text": "What is the famous Papa John's last name?",
       "options": [
-        "Riyal",
-        "Rupee",
-        "Peso",
-        "Dinar"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "British actor David Morrissey stars as which role in \"The Walking Dead\"?",
-      "options": [
-        "Daryl Dixon",
-        "Rick Grimes",
-        "Negan",
-        "The Governor"
+        "Williams",
+        "ANDERSON",
+        "Chowder",
+        "Schnatter"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "General Knowledge"
     },
     {
-      "text": "What is the average life span of a garden ant?",
+      "text": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
       "options": [
-        "24 hours",
-        "15 years",
-        "1 week",
-        "3 years"
+        "Stephen King",
+        "Hunter Fox",
+        "William Golding",
+        "F. Scott Fitzgerald"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "What is the full title of the Prime Minister of the UK?",
+      "options": [
+        "Her Majesty's Loyal Opposition",
+        "First Lord of the Treasury",
+        "Manager of the Crown Estate",
+        "Duke of Cambridge"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 1994 movie \"Speed\", what is the minimum speed the bus must go to prevent to bomb from exploding?",
+      "text": "Who was the guitarist in the band \"The Doors\"?",
       "options": [
-        "60 mph",
-        "40 mph",
-        "50 mph",
-        "70 mph"
+        "Jimi Hendrix",
+        "Eric Clapton",
+        "John Densmore",
+        "Robby Krieger"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What city is known as the Rose Capital of the World?",
+      "text": "Pete Townshend collaborated with which famous guitarist for an event at Brixton Academy in 1985?",
       "options": [
-        "Miami, Florida",
-        "San Diego, California",
-        "Tyler, Texas",
-        "Anaheim, California"
+        "Jimmy Page",
+        "Mark Knopfler",
+        "Eric Clapton",
+        "David Gilmour"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
