@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the famous Papa John's last name?",
+      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
       "options": [
-        "Williams",
-        "ANDERSON",
-        "Chowder",
-        "Schnatter"
+        "Peso",
+        "Dinar",
+        "Riyal",
+        "Rupee"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
+      "text": "George Orwell wrote this book, which is often considered a statement on government oversight.",
       "options": [
-        "Stephen King",
-        "Hunter Fox",
-        "William Golding",
-        "F. Scott Fitzgerald"
+        "The Old Man and the Sea",
+        "To Kill a Mockingbird",
+        "1984",
+        "Catcher and the Rye"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Books"
     },
     {
-      "text": "What is the full title of the Prime Minister of the UK?",
+      "text": "Where did the pineapple plant originate?",
       "options": [
-        "Her Majesty's Loyal Opposition",
-        "First Lord of the Treasury",
-        "Manager of the Crown Estate",
-        "Duke of Cambridge"
+        "Europe",
+        "South America",
+        "Asia",
+        "Hawaii"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the guitarist in the band \"The Doors\"?",
+      "text": "The formerly East-Prussian city of K&ouml;nigsberg is known as which Russian City today?",
       "options": [
-        "Jimi Hendrix",
-        "Eric Clapton",
-        "John Densmore",
-        "Robby Krieger"
+        "Krasnodar",
+        "Kazan",
+        "Kursk",
+        "Kaliningrad"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Pete Townshend collaborated with which famous guitarist for an event at Brixton Academy in 1985?",
+      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
       "options": [
-        "Jimmy Page",
-        "Mark Knopfler",
-        "Eric Clapton",
-        "David Gilmour"
+        "Scotland the Brave",
+        "Colonel Bogey March",
+        "The British Grenadiers",
+        "Men of Harlech"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
