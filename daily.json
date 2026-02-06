@@ -1,68 +1,68 @@
 {
-  "day": "20260205",
-  "dayIndex": 166,
+  "day": "20260206",
+  "dayIndex": 167,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
+      "text": "In which fast food chain can you order a Jamocha Shake?",
       "options": [
-        "Peso",
-        "Dinar",
-        "Riyal",
-        "Rupee"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "George Orwell wrote this book, which is often considered a statement on government oversight.",
-      "options": [
-        "The Old Man and the Sea",
-        "To Kill a Mockingbird",
-        "1984",
-        "Catcher and the Rye"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "Where did the pineapple plant originate?",
-      "options": [
-        "Europe",
-        "South America",
-        "Asia",
-        "Hawaii"
+        "Burger King",
+        "Arby's",
+        "McDonald's",
+        "Wendy's"
       ],
       "correct": 1,
-      "difficulty": "medium",
+      "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The formerly East-Prussian city of K&ouml;nigsberg is known as which Russian City today?",
+      "text": "Which small country is located between the borders of France and Spain?",
       "options": [
-        "Krasnodar",
-        "Kazan",
-        "Kursk",
-        "Kaliningrad"
+        "Andorra",
+        "Lichtenstein",
+        "San Marino",
+        "Vatican City"
       ],
-      "correct": 3,
-      "difficulty": "medium",
+      "correct": 0,
+      "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "In the 1964 film \"Zulu\", what song does the British Army company sing before the final battle?",
+      "text": "The Mexican Beer \"Corona\" is what type of beer?",
       "options": [
-        "Scotland the Brave",
-        "Colonel Bogey March",
-        "The British Grenadiers",
-        "Men of Harlech"
+        "Pale Lager",
+        "Pilfsner",
+        "India Pale Ale",
+        "Baltic Porter"
       ],
-      "correct": 3,
-      "difficulty": "hard",
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What was another suggested name for, the 1985 film, Back to the Future?",
+      "options": [
+        "Hill Valley Time Travelers",
+        "Spaceman From Pluto",
+        "The Lucky Man",
+        "The Time Travelers"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "Pete Townshend collaborated with which famous guitarist for an event at Brixton Academy in 1985?",
+      "options": [
+        "Jimmy Page",
+        "David Gilmour",
+        "Eric Clapton",
+        "Mark Knopfler"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Entertainment: Music"
     }
   ]
 }
