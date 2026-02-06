@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which fast food chain can you order a Jamocha Shake?",
+      "text": "In aerodynamics, which force pushes an object upwards?",
       "options": [
-        "Burger King",
-        "Arby's",
-        "McDonald's",
-        "Wendy's"
+        "Weight",
+        "Lift",
+        "Drag",
+        "Thrust"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which small country is located between the borders of France and Spain?",
+      "text": "In the show \"Futurama\" what is Fry's full name?",
       "options": [
-        "Andorra",
-        "Lichtenstein",
-        "San Marino",
-        "Vatican City"
+        "Philip J. Fry",
+        "Fry Philip",
+        "Fry J. Philip",
+        "Fry Rodr&iacute;guez"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
+      "text": "What direction does the Statue of Liberty face?",
       "options": [
-        "Pale Lager",
-        "Pilfsner",
-        "India Pale Ale",
-        "Baltic Porter"
+        "Southeast",
+        "Northwest",
+        "Southwest",
+        "Northeast"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was another suggested name for, the 1985 film, Back to the Future?",
+      "text": "Who won the \"Champions League\" in 1999?",
       "options": [
-        "Hill Valley Time Travelers",
-        "Spaceman From Pluto",
-        "The Lucky Man",
-        "The Time Travelers"
+        "Barcelona",
+        "Manchester United",
+        "Liverpool",
+        "Bayern Munich"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "Pete Townshend collaborated with which famous guitarist for an event at Brixton Academy in 1985?",
+      "text": "In the 1976 film 'Taxi Driver', how many guns did Travis buy from the salesman?",
       "options": [
-        "Jimmy Page",
-        "David Gilmour",
-        "Eric Clapton",
-        "Mark Knopfler"
+        "2",
+        "4",
+        "1",
+        "6"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
