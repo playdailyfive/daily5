@@ -1,68 +1,68 @@
 {
-  "day": "20260206",
-  "dayIndex": 167,
+  "day": "20260207",
+  "dayIndex": 168,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In aerodynamics, which force pushes an object upwards?",
+      "text": "What is the famous Papa John's last name?",
       "options": [
-        "Weight",
-        "Lift",
-        "Drag",
-        "Thrust"
+        "Williams",
+        "Chowder",
+        "Schnatter",
+        "ANDERSON"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the show \"Futurama\" what is Fry's full name?",
+      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
       "options": [
-        "Philip J. Fry",
-        "Fry Philip",
-        "Fry J. Philip",
-        "Fry Rodr&iacute;guez"
+        "Isengard",
+        "Moria",
+        "Mordor",
+        "Rivendell"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What direction does the Statue of Liberty face?",
-      "options": [
-        "Southeast",
-        "Northwest",
-        "Southwest",
-        "Northeast"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who won the \"Champions League\" in 1999?",
-      "options": [
-        "Barcelona",
-        "Manchester United",
-        "Liverpool",
-        "Bayern Munich"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Sports"
-    },
-    {
-      "text": "In the 1976 film 'Taxi Driver', how many guns did Travis buy from the salesman?",
-      "options": [
-        "2",
-        "4",
-        "1",
-        "6"
-      ],
-      "correct": 1,
-      "difficulty": "hard",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "Which month is Black History Month in the US?",
+      "options": [
+        "February",
+        "November",
+        "August",
+        "May"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
+      "options": [
+        "Robin Williams",
+        "Pauly Shore",
+        "Jonathan Freeman",
+        "Gilbert Gottfried"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "What is the British term for a 64th note?",
+      "options": [
+        "Semiquaver",
+        "Semihemidemisemiquaver",
+        "Hemidemisemiquaver",
+        "Demisemiquaver"
+      ],
+      "correct": 2,
+      "difficulty": "hard",
+      "category": "Entertainment: Music"
     }
   ]
 }
