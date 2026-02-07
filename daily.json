@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the famous Papa John's last name?",
+      "text": "What was the first ever London Underground line to be built?",
       "options": [
-        "Williams",
-        "Chowder",
-        "Schnatter",
-        "ANDERSON"
+        "Bakerloo Line",
+        "Circle Line",
+        "Metropolitan Line",
+        "Victoria Line"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
+      "text": "In bowling, what is the term used for getting three consecutive strikes?",
       "options": [
-        "Isengard",
-        "Moria",
-        "Mordor",
-        "Rivendell"
+        "Turkey",
+        "Eagle",
+        "Birdie",
+        "Flamingo"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "Which month is Black History Month in the US?",
+      "text": "What is a Burgee?",
       "options": [
-        "February",
-        "November",
-        "August",
-        "May"
+        "A flag",
+        "A window",
+        "A type of food",
+        "A rope"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which stand-up comedian voiced the talking parrot \"Iago\" in Disney's 1992 adaptation of Aladdin?",
+      "text": "What is the highest mountain in the world?",
       "options": [
-        "Robin Williams",
-        "Pauly Shore",
-        "Jonathan Freeman",
-        "Gilbert Gottfried"
+        "Mount Godwin Austen",
+        "Kangchenjunga",
+        "Annapurna",
+        "Mt. Everest"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "What is the British term for a 64th note?",
+      "text": "What is the name of rocky region that spans most of eastern Canada?",
       "options": [
-        "Semiquaver",
-        "Semihemidemisemiquaver",
-        "Hemidemisemiquaver",
-        "Demisemiquaver"
+        "Appalachian Mountains",
+        "Rocky Mountains",
+        "Canadian Shield",
+        "Himalayas"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
