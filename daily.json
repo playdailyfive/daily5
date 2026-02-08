@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cuba's official, most widely spoken language?",
+      "text": "In \"Katamari Damacy\", you control a character known as:",
       "options": [
-        "French",
-        "Portuguese",
-        "Italian",
-        "Spanish"
+        "Ichigo ",
+        "Fujio",
+        "Foomin",
+        "The Prince"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the best selling album of 2015?",
+      "text": "What is the name of the peninsula containing Spain and Portugal?",
       "options": [
-        "Justin Bieber, Purpose",
-        "Fetty Wap, Fetty Wap",
-        "Adele, 25",
-        "Taylor Swift, 1989"
+        "Scandinavian Peninsula",
+        "European Peninsula",
+        "Iberian Peninsula",
+        "Peloponnesian Peninsula"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Which country has the most Trappist breweries?",
+      "text": "What direction does the Statue of Liberty face?",
       "options": [
-        "USA",
-        "Belgium",
-        "France",
-        "Netherlands"
+        "Northeast",
+        "Southeast",
+        "Northwest",
+        "Southwest"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the fourth book of the Old Testament?",
+      "text": "Which movie served as the KTMA pilot episode for the show \"Mystery Science Theater 3000\"?",
       "options": [
-        "Exodus",
-        "Genesis",
-        "Leviticus",
-        "Numbers"
+        "The Crawling Eye",
+        "The Robot Vs. The Aztec Mummy",
+        "Plan 9 From Outer Space",
+        "The Green Slime"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "In the MMO RPG \"Realm of the Mad God\", what dungeon is widely considered to be the most difficult?",
+      "text": "Who was not in the band \"The Smiths\"?",
       "options": [
-        "Snake Pit",
-        "The Puppet Master's Theater",
-        "The Tomb of the Acient's",
-        "The Shatter's"
+        "Morrissey",
+        "Mike Joyce",
+        "Andy Rourke",
+        "Martin Chambers"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
