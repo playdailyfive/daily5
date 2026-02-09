@@ -1,68 +1,68 @@
 {
-  "day": "20260208",
-  "dayIndex": 169,
+  "day": "20260209",
+  "dayIndex": 170,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In \"Katamari Damacy\", you control a character known as:",
+      "text": "What do the letters in the GMT time zone stand for?",
       "options": [
-        "Ichigo ",
-        "Fujio",
-        "Foomin",
-        "The Prince"
+        "Greenwich Mean Time",
+        "General Median Time",
+        "Global Meridian Time",
+        "Glasgow Man Time"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the peninsula containing Spain and Portugal?",
+      "text": "What does film maker Dan Bell typically focus his films on?",
       "options": [
-        "Scandinavian Peninsula",
-        "European Peninsula",
-        "Iberian Peninsula",
-        "Peloponnesian Peninsula"
+        "Action Films",
+        "Abandoned Buildings and Dead Malls",
+        "Historic Landmarks",
+        "Documentaries "
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Celebrities"
+    },
+    {
+      "text": "The phrase \"accident waiting to happen\" is an example of what type of figure of speech?",
+      "options": [
+        "Simile",
+        "Analogy",
+        "Idiom",
+        "Metaphor"
       ],
       "correct": 2,
-      "difficulty": "easy",
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Lake Titicaca is located between which two nations?",
+      "options": [
+        "Peru and Bolivia",
+        "Mexico and the United States",
+        "Kenya and Uganda",
+        "India and Bangladesh"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "What direction does the Statue of Liberty face?",
+      "text": "What was Humphrey Bogart's middle name?",
       "options": [
-        "Northeast",
-        "Southeast",
-        "Northwest",
-        "Southwest"
+        "Steven",
+        "Bryce",
+        "DeForest",
+        "DeWinter"
       ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which movie served as the KTMA pilot episode for the show \"Mystery Science Theater 3000\"?",
-      "options": [
-        "The Crawling Eye",
-        "The Robot Vs. The Aztec Mummy",
-        "Plan 9 From Outer Space",
-        "The Green Slime"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "Who was not in the band \"The Smiths\"?",
-      "options": [
-        "Morrissey",
-        "Mike Joyce",
-        "Andy Rourke",
-        "Martin Chambers"
-      ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
