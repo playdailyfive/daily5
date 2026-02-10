@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How many syllables make up a haiku?",
+      "text": "In which fast food chain can you order a Jamocha Shake?",
       "options": [
-        "10",
-        "15",
-        "21",
-        "17"
+        "Burger King",
+        "McDonald's",
+        "Wendy's",
+        "Arby's"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of the island that \"Jurassic Park\" is built on?",
+      "text": "Who is often called \"the Maestro\" in the men's tennis circuit?",
       "options": [
-        "Isla Nublar",
-        "Isla Pena",
-        "Isla Sorna",
-        "Isla Muerta"
+        "Roger Federer",
+        "Pete Sampras",
+        "Bill Tilden",
+        "Boris Becker"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Sports"
     },
     {
-      "text": "What fast food chain has the most locations globally? ",
+      "text": "What English word means to \"think deeply\"?",
       "options": [
-        "KFC",
-        "Starbucks",
-        "McDonalds",
-        "Subway"
+        "Condensate",
+        "Confiscate",
+        "Constipate",
+        "Contemplate"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which is the largest of these 4 islands?",
+      "text": "What is the real name of Canadian electronic music producer deadmau5?",
       "options": [
-        "Madagascar",
-        "Borneo",
-        "Cuba",
-        "Great Britain"
+        "Thomas Wesley Pentz",
+        "Joel Zimmerman",
+        "Adam Richard Wiles",
+        "Sonny Moore"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which author co-wrote \"The Communist Manifesto\" alongside Karl Marx?",
+      "text": "\"Nephelococcygia\" is the practice of doing what? ",
       "options": [
-        "Robert Owen",
-        "Alexander Kerensky",
-        "Friedrich Engels",
-        "Paul Lafargue"
+        "Sleeping with your eyes open",
+        "Breaking glass with your voice",
+        "Finding shapes in clouds",
+        "Swimming in freezing water"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     }
   ]
 }
