@@ -1,68 +1,68 @@
 {
-  "day": "20260209",
-  "dayIndex": 170,
+  "day": "20260210",
+  "dayIndex": 171,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In Half-Life, what is the name of the alien that attaches to heads?",
+      "text": "How many syllables make up a haiku?",
       "options": [
-        "Headcrab",
-        "Vortigaunt",
-        "Bullsquid",
-        "Facehugger"
+        "10",
+        "15",
+        "21",
+        "17"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Aubrey Graham is better known as",
+      "text": "What is the name of the island that \"Jurassic Park\" is built on?",
       "options": [
-        "Lil Wayne",
-        "Drake",
-        "Travis Scott",
-        "2 Chainz"
+        "Isla Nublar",
+        "Isla Pena",
+        "Isla Sorna",
+        "Isla Muerta"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "What fast food chain has the most locations globally? ",
+      "options": [
+        "KFC",
+        "Starbucks",
+        "McDonalds",
+        "Subway"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Which is the largest of these 4 islands?",
+      "options": [
+        "Madagascar",
+        "Borneo",
+        "Cuba",
+        "Great Britain"
       ],
       "correct": 1,
-      "difficulty": "easy",
-      "category": "Celebrities"
-    },
-    {
-      "text": "When was Nintendo founded?",
-      "options": [
-        "October 19th, 1891",
-        "December 27th, 1894",
-        "September 23rd, 1889",
-        "March 4th, 1887"
-      ],
-      "correct": 2,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Geography"
     },
     {
-      "text": "The letters in the name of the band \"TWRP\" stand for what?",
+      "text": "Which author co-wrote \"The Communist Manifesto\" alongside Karl Marx?",
       "options": [
-        "Tupperware Remix Party",
-        "Team Wild and the Radio Pirates",
-        "Totally Wicked Robot Performers",
-        "Taiwan Roleplay"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "What is the area of Vatican City?",
-      "options": [
-        "0.86km^2",
-        "12.00km^2",
-        "0.44km^2",
-        "0.10km^2"
+        "Robert Owen",
+        "Alexander Kerensky",
+        "Friedrich Engels",
+        "Paul Lafargue"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Books"
     }
   ]
 }
