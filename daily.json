@@ -1,68 +1,68 @@
 {
-  "day": "20260210",
-  "dayIndex": 171,
+  "day": "20260211",
+  "dayIndex": 172,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In which fast food chain can you order a Jamocha Shake?",
+      "text": "What is the shape of the toy invented by Hungarian professor Ernő Rubik?",
       "options": [
-        "Burger King",
-        "McDonald's",
-        "Wendy's",
-        "Arby's"
+        "Pyramid",
+        "Cylinder",
+        "Sphere",
+        "Cube"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is often called \"the Maestro\" in the men's tennis circuit?",
+      "text": "Who plays the character of Po in the Kung Fu Panda movies?",
       "options": [
-        "Roger Federer",
-        "Pete Sampras",
-        "Bill Tilden",
-        "Boris Becker"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Sports"
-    },
-    {
-      "text": "What English word means to \"think deeply\"?",
-      "options": [
-        "Condensate",
-        "Confiscate",
-        "Constipate",
-        "Contemplate"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What is the real name of Canadian electronic music producer deadmau5?",
-      "options": [
-        "Thomas Wesley Pentz",
-        "Joel Zimmerman",
-        "Adam Richard Wiles",
-        "Sonny Moore"
+        "Mirana Jonnes",
+        "Jack Black",
+        "McConahey Ramses",
+        "Jim Petersson"
       ],
       "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
     },
     {
-      "text": "\"Nephelococcygia\" is the practice of doing what? ",
+      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
       "options": [
-        "Sleeping with your eyes open",
-        "Breaking glass with your voice",
-        "Finding shapes in clouds",
-        "Swimming in freezing water"
+        "Vietnam War",
+        "American Civil War",
+        "World War II",
+        "American Revolutionary War"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is Lilo's last name from Lilo and Stitch?",
+      "options": [
+        "Kealoha",
+        "Anoaʻi",
+        "Pelekai",
+        "Kuʻulei"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "Billy Herrington is from which US state?",
+      "options": [
+        "California",
+        "Arizona",
+        "New York",
+        "Georgia"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Celebrities"
     }
   ]
 }
