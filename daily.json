@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which language is most widely spoken in Switzerland?",
+      "text": "Which type of cutlery is most suited for eating soup?",
       "options": [
-        "French",
-        "Swiss",
-        "German",
-        "Italian"
+        "Fork",
+        "Chopsticks",
+        "Spoon",
+        "Knife"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is not a wind instrument?",
+      "text": "What is the name of the album released in 2014 by American band Maroon 5?",
       "options": [
-        "Trombone",
-        "Viola",
-        "Duduk",
-        "Oboe"
+        "III",
+        "V",
+        "IV",
+        "X"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
+      "text": "What is the German word for \"spoon\"?",
       "options": [
-        "Dell",
-        "Toshiba",
-        "Asus",
-        "Hewlett-Packard"
+        "Essst&auml;bchen",
+        "Gabel",
+        "Messer",
+        "L&ouml;ffel"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the show \"The Office\" who does Michael Scott eventually end up with?",
+      "text": "Kuala Lumpur is the capital of which country?",
       "options": [
-        "Angela Martin",
-        "Jan Levinson",
-        "Pam Beesly",
-        "Holly Flax"
+        "Indonesia",
+        "Singapore",
+        "Thailand",
+        "Malaysia"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "What is the name of the 2016 mixtape released by Venezuelan electronic producer Arca?",
+      "text": "In which city is the Big Nickel located in Canada?",
       "options": [
-        "Entra&ntilde;as",
-        "Sheep",
-        "Xen",
-        "&&&&&&"
+        "Sudbury, Ontario",
+        "Halifax, Nova Scotia ",
+        "Victoria, British Columbia",
+        "Calgary, Alberta"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
