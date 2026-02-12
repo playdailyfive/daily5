@@ -1,66 +1,66 @@
 {
-  "day": "20260211",
-  "dayIndex": 172,
+  "day": "20260212",
+  "dayIndex": 173,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American president appears on a one dollar bill?",
+      "text": "Which language is most widely spoken in Switzerland?",
       "options": [
-        "Benjamin Franklin",
-        "Abraham Lincoln",
-        "Thomas Jefferson",
-        "George Washington"
+        "French",
+        "Swiss",
+        "German",
+        "Italian"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which singer was featured in Jack &Uuml; (Skrillex & Diplo)'s 2015 song 'Where Are &Uuml; Now'?",
+      "text": "What is not a wind instrument?",
       "options": [
-        "Selena Gomez",
-        "Justin Bieber",
-        "Ellie Goulding",
-        "The Weeknd"
+        "Trombone",
+        "Viola",
+        "Duduk",
+        "Oboe"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "When did the website \"Facebook\" launch?",
+      "text": "Computer manufacturer Compaq was acquired for $25 billion dollars in 2002 by which company?",
       "options": [
-        "2005",
-        "2003",
-        "2004",
-        "2006"
+        "Dell",
+        "Toshiba",
+        "Asus",
+        "Hewlett-Packard"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Drink the Sea\" is an album by which electronic music artist?",
+      "text": "In the show \"The Office\" who does Michael Scott eventually end up with?",
       "options": [
-        "XXYYXX",
-        "Avicii",
-        "The Glitch Mob",
-        "Flux Pavilion"
+        "Angela Martin",
+        "Jan Levinson",
+        "Pam Beesly",
+        "Holly Flax"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "\"All the Boys\" by Panic! At the Disco was released as a bonus track on what album?",
+      "text": "What is the name of the 2016 mixtape released by Venezuelan electronic producer Arca?",
       "options": [
-        "Death Of A Bachelor",
-        "A Fever You Can't Sweat Out",
-        "Too Weird To Live, Too Rare To Die!",
-        "Vices & Virtues"
+        "Entra&ntilde;as",
+        "Sheep",
+        "Xen",
+        "&&&&&&"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
