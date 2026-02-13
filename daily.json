@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is considered the \"Father of Modern Philosophy\"?",
+      "text": "The word \"dozen\" usually refers to a group of how many objects?",
       "options": [
-        "René Descartes",
-        "Antoine Lavoiser",
-        "Plato",
-        "Albert Einstein"
+        "12",
+        "10",
+        "6",
+        "20"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
+      "text": "What does the F stand for in the FBI?",
       "options": [
-        "Ian Fleming",
-        "John Buchan",
-        "Joseph Conrad",
-        "Graham Greene"
+        "Federal",
+        "Formal",
+        "Foreign",
+        "First"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     },
     {
-      "text": "Who is the founder of \"The Lego Group\"?",
+      "text": "Frank Lloyd Wright was the architect behind what famous building?",
       "options": [
-        " Jens Niels Christiansen",
-        "Ole Kirk Christiansen",
-        " Gerhardt Kirk Christiansen",
-        "Kirstine Christiansen"
+        "Villa Savoye",
+        "The Guggenheim",
+        "The Space Needle",
+        "Sydney Opera House"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which television show has Dan Gheesling been on?",
+      "text": "Who directed the 1973 film \"American Graffiti\"?",
       "options": [
-        "Jeopardy",
-        "Big Brother",
-        "The Bachelor",
-        "Survivor"
+        "Ron Howard",
+        "George Lucas",
+        "Steven Spielberg",
+        "Francis Ford Coppola"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Celebrities"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What's Dr. Doofenshmirtz first name?",
+      "text": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
       "options": [
-        "Heinz",
-        "Hans",
-        "Heidi",
-        "Hank"
+        "Moose",
+        "Dog",
+        "Goat",
+        "Bear"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Celebrities"
     }
   ]
 }
