@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What zodiac sign is represented by a pair of scales?",
+      "text": "What is the French word for \"fish\"?",
       "options": [
-        "Libra",
-        "Sagittarius",
-        "Capricorn",
-        "Aries"
+        "poisson",
+        "mer",
+        "escargot",
+        "fiche"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Super Mario Bros. Movie (2023), who plays Toad?",
+      "text": "Which actress married Michael Douglas in 2000?",
       "options": [
-        "Keegan-Michael Key",
-        "Charlie Day",
-        "Jack Black",
-        "Seth Rogan"
+        "Catherine Zeta-Jones",
+        "Pam Ferris",
+        "Sara Sugarman",
+        "Ruth Jones"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Celebrities"
     },
     {
-      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
+      "text": "Frank Lloyd Wright was the architect behind what famous building?",
       "options": [
-        "May 4, 1776",
-        "June 4, 1776",
-        "July 2, 1776",
-        "July 4, 1776"
+        "Villa Savoye",
+        "Sydney Opera House",
+        "The Space Needle",
+        "The Guggenheim"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "From which country does the piano originate?",
+      "text": "How tall is One World Trade Center in New York City?",
       "options": [
-        "Austria",
-        "Germany",
-        "Italy",
-        "France"
+        "1,225 ft",
+        "1,888 ft",
+        "1,776 ft",
+        "1,960 ft"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
+      "text": "What is the most populous Muslim-majority nation in 2010?",
       "options": [
-        "Psycho",
-        "Vertigo",
-        "Rope",
-        "Rebecca"
+        "Saudi Arabia",
+        "Iran",
+        "Indonesia",
+        "Sudan"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
