@@ -1,68 +1,68 @@
 {
-  "day": "20260213",
-  "dayIndex": 174,
+  "day": "20260214",
+  "dayIndex": 175,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The word \"dozen\" usually refers to a group of how many objects?",
+      "text": "What zodiac sign is represented by a pair of scales?",
       "options": [
-        "12",
-        "10",
-        "6",
-        "20"
+        "Libra",
+        "Sagittarius",
+        "Capricorn",
+        "Aries"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What does the F stand for in the FBI?",
+      "text": "In the Super Mario Bros. Movie (2023), who plays Toad?",
       "options": [
-        "Federal",
-        "Formal",
-        "Foreign",
-        "First"
+        "Keegan-Michael Key",
+        "Charlie Day",
+        "Jack Black",
+        "Seth Rogan"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Frank Lloyd Wright was the architect behind what famous building?",
-      "options": [
-        "Villa Savoye",
-        "The Guggenheim",
-        "The Space Needle",
-        "Sydney Opera House"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who directed the 1973 film \"American Graffiti\"?",
-      "options": [
-        "Ron Howard",
-        "George Lucas",
-        "Steven Spielberg",
-        "Francis Ford Coppola"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
+      "text": "When was the Declaration of Independence approved by the Second Continental Congress?",
       "options": [
-        "Moose",
-        "Dog",
-        "Goat",
-        "Bear"
+        "May 4, 1776",
+        "June 4, 1776",
+        "July 2, 1776",
+        "July 4, 1776"
       ],
-      "correct": 0,
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "From which country does the piano originate?",
+      "options": [
+        "Austria",
+        "Germany",
+        "Italy",
+        "France"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "Which was the first of Alfred Hitchcock's movies to be filmed in colour?",
+      "options": [
+        "Psycho",
+        "Vertigo",
+        "Rope",
+        "Rebecca"
+      ],
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "Entertainment: Film"
     }
   ]
 }
