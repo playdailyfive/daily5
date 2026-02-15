@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In past times, what would a gentleman keep in his fob pocket?",
+      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
       "options": [
-        "Notebook",
-        "Money",
-        "Watch",
-        "Keys"
+        "Dinar",
+        "Riyal",
+        "Rupee",
+        "Peso"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In 2006, which band released their debut album \"A Fever You Can't Sweat Out\"?",
+      "text": "What name did Tom Hanks give to his volleyball companion in the film `Cast Away`?",
       "options": [
-        "Fall Out Boy",
-        "Panic! At the Disco",
-        "My Chemical Romance",
-        "Twenty One Pilots"
+        "Billy",
+        "Wilson",
+        "Jones",
+        "Friday"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "This field is sometimes known as \"The Dismal Science.\"",
+      "text": "Which mountain has the highest peak in Australia?",
       "options": [
-        "Politics",
-        "Philosophy",
-        "Physics",
-        "Economics"
+        "Mount Bartle Frere, Queensland",
+        "Mount Ossa, Tasmania",
+        "Mount Zeil, Northern Territory",
+        "Mount Kosciuszko, New South Wales"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which is the largest of these 4 islands?",
+      "text": "Which track by \"Massive Attack\" is used for the theme of \"House\"? ",
       "options": [
-        "Great Britain",
-        "Madagascar",
-        "Cuba",
-        "Borneo"
+        "Protection",
+        "Black Milk",
+        "Angel",
+        "Teardrop"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
+      "text": "What is the largest city and commercial capital of Sri Lanka?",
       "options": [
-        "Peace",
-        "Ancient",
-        "Shambala",
-        "Chakra"
+        "Moratuwa",
+        "Negombo",
+        "Colombo",
+        "Kandy"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     }
   ]
 }
