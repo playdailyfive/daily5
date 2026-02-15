@@ -1,68 +1,68 @@
 {
-  "day": "20260214",
-  "dayIndex": 175,
+  "day": "20260215",
+  "dayIndex": 176,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the French word for \"fish\"?",
+      "text": "In past times, what would a gentleman keep in his fob pocket?",
       "options": [
-        "poisson",
-        "mer",
-        "escargot",
-        "fiche"
+        "Notebook",
+        "Money",
+        "Watch",
+        "Keys"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which actress married Michael Douglas in 2000?",
+      "text": "In 2006, which band released their debut album \"A Fever You Can't Sweat Out\"?",
       "options": [
-        "Catherine Zeta-Jones",
-        "Pam Ferris",
-        "Sara Sugarman",
-        "Ruth Jones"
+        "Fall Out Boy",
+        "Panic! At the Disco",
+        "My Chemical Romance",
+        "Twenty One Pilots"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Celebrities"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Frank Lloyd Wright was the architect behind what famous building?",
+      "text": "This field is sometimes known as \"The Dismal Science.\"",
       "options": [
-        "Villa Savoye",
-        "Sydney Opera House",
-        "The Space Needle",
-        "The Guggenheim"
+        "Politics",
+        "Philosophy",
+        "Physics",
+        "Economics"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "How tall is One World Trade Center in New York City?",
+      "text": "Which is the largest of these 4 islands?",
       "options": [
-        "1,225 ft",
-        "1,888 ft",
-        "1,776 ft",
-        "1,960 ft"
+        "Great Britain",
+        "Madagascar",
+        "Cuba",
+        "Borneo"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
       "category": "Geography"
     },
     {
-      "text": "What is the most populous Muslim-majority nation in 2010?",
+      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
       "options": [
-        "Saudi Arabia",
-        "Iran",
-        "Indonesia",
-        "Sudan"
+        "Peace",
+        "Ancient",
+        "Shambala",
+        "Chakra"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
