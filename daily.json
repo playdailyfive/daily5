@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the largest organ of the human body?",
+      "text": "Five dollars is worth how many nickels?",
       "options": [
-        "large Intestine",
-        "Skin",
-        "Heart",
-        "Liver"
+        "25",
+        "100",
+        "50",
+        "69"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Aubrey Graham is better known as",
+      "text": "In the Star Trek universe, what color is Vulcan blood?",
       "options": [
-        "Travis Scott",
-        "2 Chainz",
-        "Drake",
-        "Lil Wayne"
+        "Blue",
+        "Purple",
+        "Green",
+        "Red"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Celebrities"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "On average, Americans consume 100 pounds of what per second?",
+      "text": "The Mexican Beer \"Corona\" is what type of beer?",
       "options": [
-        "Chocolate",
-        "Donuts",
-        "Potatoes",
-        "Cocaine"
+        "Pale Lager",
+        "Pilfsner",
+        "India Pale Ale",
+        "Baltic Porter"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What Queen song plays during the final fight scene of the film \"Hardcore Henry\"?",
+      "text": "In the Netflix show, Stranger Things, what song would Will sing to himself as he was missing?",
       "options": [
-        "Another Bites the Dust",
-        "We Will Rock You",
-        "Don't Stop Me Now",
-        "Brighton Rock"
+        "This Charming Man",
+        "Africa",
+        "Should I Stay or Should I Go?",
+        "Love Will Tear Us Apart"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Who was Donald Trump's first wife?",
+      "text": "What is the second-largest city in Lithuania?",
       "options": [
-        "Marla Maples",
-        "Melania Knauss",
-        "Nancy Davis",
-        "Ivana Zeln&iacute;čkov&aacute;"
+        "Vilnius",
+        "Panevėžys",
+        "Klaipėda",
+        "Kaunas"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Celebrities"
+      "category": "Geography"
     }
   ]
 }
