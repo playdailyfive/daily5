@@ -1,68 +1,68 @@
 {
-  "day": "20260216",
-  "dayIndex": 177,
+  "day": "20260217",
+  "dayIndex": 178,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Five dollars is worth how many nickels?",
+      "text": "The Canadian $1 coin is colloquially known as a what?",
       "options": [
-        "25",
-        "100",
-        "50",
-        "69"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In the Star Trek universe, what color is Vulcan blood?",
-      "options": [
-        "Blue",
-        "Purple",
-        "Green",
-        "Red"
-      ],
-      "correct": 2,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "The Mexican Beer \"Corona\" is what type of beer?",
-      "options": [
-        "Pale Lager",
-        "Pilfsner",
-        "India Pale Ale",
-        "Baltic Porter"
+        "Loonie",
+        "Moodie",
+        "Boolie",
+        "Foolie"
       ],
       "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "How many players are there in an association football/soccer team?",
+      "options": [
+        "8",
+        "10",
+        "9",
+        "11"
+      ],
+      "correct": 3,
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
+      "options": [
+        "American Revolutionary War",
+        "World War II",
+        "American Civil War",
+        "Vietnam War"
+      ],
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Netflix show, Stranger Things, what song would Will sing to himself as he was missing?",
+      "text": "What is the capital of Chile?",
       "options": [
-        "This Charming Man",
-        "Africa",
-        "Should I Stay or Should I Go?",
-        "Love Will Tear Us Apart"
+        "Valpara&iacute;so",
+        "Copiap&oacute;",
+        "Santiago",
+        "Antofagasta"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "What is the second-largest city in Lithuania?",
+      "text": "What is the first track on the Dave Matthews Band album \"Before These Crowded Streets\"?",
       "options": [
-        "Vilnius",
-        "Panevėžys",
-        "Klaipėda",
-        "Kaunas"
+        "Pantala Naga Pampa",
+        "Don't Drink The Water",
+        "Stay (Wasting Time)",
+        "Rapunzel"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
