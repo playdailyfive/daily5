@@ -5,12 +5,12 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Canadian $1 coin is colloquially known as a what?",
+      "text": "What is Cuba's official, most widely spoken language?",
       "options": [
-        "Loonie",
-        "Moodie",
-        "Boolie",
-        "Foolie"
+        "Spanish",
+        "Italian",
+        "Portuguese",
+        "French"
       ],
       "correct": 0,
       "difficulty": "easy",
@@ -29,28 +29,28 @@
       "category": "Sports"
     },
     {
-      "text": "Directly between the Washington Monument and the Reflecting Pool is a memorial to which war?",
+      "text": "When did the website \"Facebook\" launch?",
       "options": [
-        "American Revolutionary War",
-        "World War II",
-        "American Civil War",
-        "Vietnam War"
+        "2006",
+        "2004",
+        "2003",
+        "2005"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Chile?",
+      "text": "What song on ScHoolboy Q's album Black Face LP featured Kanye West?",
       "options": [
-        "Valpara&iacute;so",
-        "Copiap&oacute;",
-        "Santiago",
-        "Antofagasta"
+        "Neva CHange",
+        "Big Body",
+        "THat Part",
+        "Blank Face"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
       "text": "What is the first track on the Dave Matthews Band album \"Before These Crowded Streets\"?",
