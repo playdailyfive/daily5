@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
+      "text": "What technology is named after a tenth-century ruler of Denmark and Norway?",
       "options": [
-        "Panama Canal",
-        "Suez Canal",
-        "Sinai Canal",
-        "Qaraqum Canal"
+        "Wi-Fi",
+        "Bluetooth",
+        "GPS",
+        "Internet"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which wrestler won the 2019 Men's Royal Rumble?",
+      "text": "The body of the Egyptian Sphinx was based on which animal?",
       "options": [
-        "Braun Strowman",
-        "AJ Styles",
-        "Seth Rollins",
-        "Andrade"
+        "Bull",
+        "Horse",
+        "Lion",
+        "Dog"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Geography"
     },
     {
-      "text": "What is the currency of Poland?",
+      "text": "Who is the founder of \"The Lego Group\"?",
       "options": [
-        "Euro",
-        "Ruble",
-        "Złoty",
-        "Krone"
+        "Kirstine Christiansen",
+        " Jens Niels Christiansen",
+        "Ole Kirk Christiansen",
+        " Gerhardt Kirk Christiansen"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Estonia?",
+      "text": "What name represents the letter \"M\" in the NATO phonetic alphabet?",
       "options": [
-        "Tartu",
-        "Helsinki",
-        "Tallinn",
-        "Riga"
+        "Mark",
+        "Matthew",
+        "Mike",
+        "Max"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "General Knowledge"
     },
     {
-      "text": "In the film \"Interstellar\", how long did they spend on Miller's planet?",
+      "text": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
       "options": [
-        "15 years, 2 months, and 15 days",
-        "26 years, 4 months, and 10 days",
-        "23 years, 4 months, and 8 days",
-        "10 months and 6 days"
+        "Yorkshire Terrier",
+        "Pug",
+        "Bulldog",
+        "Boxer"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "General Knowledge"
     }
   ]
 }
