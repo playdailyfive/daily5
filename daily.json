@@ -1,68 +1,68 @@
 {
-  "day": "20260217",
-  "dayIndex": 178,
+  "day": "20260218",
+  "dayIndex": 179,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cuba's official, most widely spoken language?",
+      "text": "Which canal connects the Mediterranean Sea with the Red Sea?",
       "options": [
-        "Spanish",
-        "Italian",
-        "Portuguese",
-        "French"
+        "Panama Canal",
+        "Suez Canal",
+        "Sinai Canal",
+        "Qaraqum Canal"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "How many players are there in an association football/soccer team?",
+      "text": "Which wrestler won the 2019 Men's Royal Rumble?",
       "options": [
-        "8",
-        "10",
-        "9",
-        "11"
+        "Braun Strowman",
+        "AJ Styles",
+        "Seth Rollins",
+        "Andrade"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "Sports"
     },
     {
-      "text": "When did the website \"Facebook\" launch?",
+      "text": "What is the currency of Poland?",
       "options": [
-        "2006",
-        "2004",
-        "2003",
-        "2005"
+        "Euro",
+        "Ruble",
+        "Złoty",
+        "Krone"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What song on ScHoolboy Q's album Black Face LP featured Kanye West?",
+      "text": "What is the capital of Estonia?",
       "options": [
-        "Neva CHange",
-        "Big Body",
-        "THat Part",
-        "Blank Face"
+        "Tartu",
+        "Helsinki",
+        "Tallinn",
+        "Riga"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What is the first track on the Dave Matthews Band album \"Before These Crowded Streets\"?",
+      "text": "In the film \"Interstellar\", how long did they spend on Miller's planet?",
       "options": [
-        "Pantala Naga Pampa",
-        "Don't Drink The Water",
-        "Stay (Wasting Time)",
-        "Rapunzel"
+        "15 years, 2 months, and 15 days",
+        "26 years, 4 months, and 10 days",
+        "23 years, 4 months, and 8 days",
+        "10 months and 6 days"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
