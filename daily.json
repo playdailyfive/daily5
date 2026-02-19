@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the left side of a boat?",
+      "text": "Who played General Aladeen in The Dictator?",
       "options": [
-        "Bow",
-        "Port",
-        "Stern",
-        "Starboard"
+        "James Franco",
+        "Sacha Baron Cohen",
+        "Leonardo Dicaprio",
+        "Johnny Depp"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In Game of Thrones, what continent lies across the Narrow Sea from Westeros?",
+      "text": "Which NFL team plays for New England?",
       "options": [
-        "Esuntos",
-        "Easteros",
-        "Westereast",
-        "Essos"
+        "49ers",
+        "Chiefs",
+        "Dolphins",
+        "Patriots"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Sports"
     },
     {
-      "text": "What was the original name of the search engine \"Google\"?",
+      "text": "What is the romanized Russian word for \"winter\"?",
       "options": [
-        "CatMassage",
-        "SearchPro",
-        "Netscape Navigator",
-        "BackRub"
+        "Leto",
+        "Vesna",
+        "Osen'",
+        "Zima"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which band had hits in 1975 with the songs, 'One Of These Nights' & 'Lyin Eyes'?",
+      "text": "The 1985 Toyota Corolla \"AE86\" was the hero car for what anime? ",
       "options": [
-        "The Eagles",
-        "The Doobie Brothers",
-        "Fleetwood Mac",
-        "Fools Gold"
+        "Initial D",
+        "Ghost MF",
+        "Ex Driver",
+        "Wangan Midnight"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What was the UK \"Who Wants to be a Millionaire?\" cheating scandal known as?",
+      "text": "Which country does the YouTuber \"SinowBeats\" originate from?",
       "options": [
-        "Major Fraud",
-        "Coughing Major",
-        "Ingram Cheater",
-        "Millionaire Crime"
+        "Scotland",
+        "Sweden",
+        "England",
+        "Germany"
       ],
       "correct": 0,
       "difficulty": "hard",
