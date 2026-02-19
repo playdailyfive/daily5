@@ -1,68 +1,68 @@
 {
-  "day": "20260218",
-  "dayIndex": 179,
+  "day": "20260219",
+  "dayIndex": 180,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What technology is named after a tenth-century ruler of Denmark and Norway?",
+      "text": "What do sailors call the left side of a boat?",
       "options": [
-        "Wi-Fi",
-        "Bluetooth",
-        "GPS",
-        "Internet"
+        "Bow",
+        "Port",
+        "Stern",
+        "Starboard"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The body of the Egyptian Sphinx was based on which animal?",
+      "text": "In Game of Thrones, what continent lies across the Narrow Sea from Westeros?",
       "options": [
-        "Bull",
-        "Horse",
-        "Lion",
-        "Dog"
+        "Esuntos",
+        "Easteros",
+        "Westereast",
+        "Essos"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Who is the founder of \"The Lego Group\"?",
+      "text": "What was the original name of the search engine \"Google\"?",
       "options": [
-        "Kirstine Christiansen",
-        " Jens Niels Christiansen",
-        "Ole Kirk Christiansen",
-        " Gerhardt Kirk Christiansen"
+        "CatMassage",
+        "SearchPro",
+        "Netscape Navigator",
+        "BackRub"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What name represents the letter \"M\" in the NATO phonetic alphabet?",
+      "text": "Which band had hits in 1975 with the songs, 'One Of These Nights' & 'Lyin Eyes'?",
       "options": [
-        "Mark",
-        "Matthew",
-        "Mike",
-        "Max"
+        "The Eagles",
+        "The Doobie Brothers",
+        "Fleetwood Mac",
+        "Fools Gold"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
+      "text": "What was the UK \"Who Wants to be a Millionaire?\" cheating scandal known as?",
       "options": [
-        "Yorkshire Terrier",
-        "Pug",
-        "Bulldog",
-        "Boxer"
+        "Major Fraud",
+        "Coughing Major",
+        "Ingram Cheater",
+        "Millionaire Crime"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Television"
     }
   ]
 }
