@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
+      "text": "What do the letters of the fast food chain KFC stand for?",
       "options": [
-        "Star City",
-        "Gotham City",
-        "Central City",
-        "Metropolis"
+        "Kentucky Fried Chicken",
+        "Kibbled Freaky Cow",
+        "Kentucky Fresh Cheese",
+        "Kiwi Food Cut"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
+      "text": "Which 80s band is fronted by singer/guitarist Robert Smith?",
       "options": [
-        "Blackpool",
-        "Torquay",
-        "Great Yarmouth",
-        "Bournemouth"
+        "The Smiths",
+        "The Cure",
+        "New Order",
+        "Echo & the Bunnymen"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Where did the pineapple plant originate?",
+      "text": "When was Hubba Bubba first introduced?",
       "options": [
-        "Hawaii",
-        "South America",
-        "Asia",
-        "Europe"
+        "1984",
+        "1979",
+        "1980",
+        "1972"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote the 1967 horror novel \"Rosemary's Baby\"?",
+      "text": "Frank Lloyd Wright was the architect behind what famous building?",
       "options": [
-        "Ira Levin",
-        "Stephen King",
-        "Mary Shelley",
-        "Robert Bloch"
+        "The Guggenheim",
+        "Villa Savoye",
+        "The Space Needle",
+        "Sydney Opera House"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     },
     {
-      "text": "Who sings the rap song \"Secret Wars Part 1\"?",
+      "text": "In the show 'Doctor Who', what is the name of the time-capsule model stolen by 'the Doctor'?",
       "options": [
-        "Busdriver",
-        "Masta Killa",
-        "MC Frontalot",
-        "The Last Emperor"
+        "TT Type 40, Mark 5 (TARDIS)",
+        "TT Type 1, Mark 5 (TARDIS)",
+        "TT Type 1, Mark 3 (TARDIS)",
+        "TT Type 40, Mark 3 (TARDIS)"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     }
   ]
 }
