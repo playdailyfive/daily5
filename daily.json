@@ -1,68 +1,68 @@
 {
-  "day": "20260219",
-  "dayIndex": 180,
+  "day": "20260220",
+  "dayIndex": 181,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who played General Aladeen in The Dictator?",
+      "text": "In DC comics where does the Green Arrow (Oliver Queen) live?",
       "options": [
-        "James Franco",
-        "Sacha Baron Cohen",
-        "Leonardo Dicaprio",
-        "Johnny Depp"
+        "Star City",
+        "Gotham City",
+        "Central City",
+        "Metropolis"
+      ],
+      "correct": 0,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "In which British seaside town was the BBC sitcom \"Fawlty Towers\" set?",
+      "options": [
+        "Blackpool",
+        "Torquay",
+        "Great Yarmouth",
+        "Bournemouth"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which NFL team plays for New England?",
-      "options": [
-        "49ers",
-        "Chiefs",
-        "Dolphins",
-        "Patriots"
-      ],
-      "correct": 3,
-      "difficulty": "easy",
-      "category": "Sports"
-    },
-    {
-      "text": "What is the romanized Russian word for \"winter\"?",
-      "options": [
-        "Leto",
-        "Vesna",
-        "Osen'",
-        "Zima"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "The 1985 Toyota Corolla \"AE86\" was the hero car for what anime? ",
-      "options": [
-        "Initial D",
-        "Ghost MF",
-        "Ex Driver",
-        "Wangan Midnight"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "Which country does the YouTuber \"SinowBeats\" originate from?",
+      "text": "Where did the pineapple plant originate?",
       "options": [
-        "Scotland",
-        "Sweden",
-        "England",
-        "Germany"
+        "Hawaii",
+        "South America",
+        "Asia",
+        "Europe"
+      ],
+      "correct": 1,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who wrote the 1967 horror novel \"Rosemary's Baby\"?",
+      "options": [
+        "Ira Levin",
+        "Stephen King",
+        "Mary Shelley",
+        "Robert Bloch"
       ],
       "correct": 0,
+      "difficulty": "medium",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "Who sings the rap song \"Secret Wars Part 1\"?",
+      "options": [
+        "Busdriver",
+        "Masta Killa",
+        "MC Frontalot",
+        "The Last Emperor"
+      ],
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Music"
     }
   ]
 }
