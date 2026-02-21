@@ -1,68 +1,68 @@
 {
-  "day": "20260220",
-  "dayIndex": 181,
+  "day": "20260221",
+  "dayIndex": 182,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do the letters of the fast food chain KFC stand for?",
+      "text": "What is the name of the main Character from the Series: Dead Space?",
       "options": [
-        "Kentucky Fried Chicken",
-        "Kibbled Freaky Cow",
-        "Kentucky Fresh Cheese",
-        "Kiwi Food Cut"
+        "Isaac Clarke",
+        "Commander Shepard",
+        "Captain Kirk",
+        "Ellen Ripley"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which 80s band is fronted by singer/guitarist Robert Smith?",
+      "text": "What is the name of Manchester United's home stadium?",
       "options": [
-        "The Smiths",
-        "The Cure",
-        "New Order",
-        "Echo & the Bunnymen"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "When was Hubba Bubba first introduced?",
-      "options": [
-        "1984",
-        "1979",
-        "1980",
-        "1972"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Frank Lloyd Wright was the architect behind what famous building?",
-      "options": [
-        "The Guggenheim",
-        "Villa Savoye",
-        "The Space Needle",
-        "Sydney Opera House"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In the show 'Doctor Who', what is the name of the time-capsule model stolen by 'the Doctor'?",
-      "options": [
-        "TT Type 40, Mark 5 (TARDIS)",
-        "TT Type 1, Mark 5 (TARDIS)",
-        "TT Type 1, Mark 3 (TARDIS)",
-        "TT Type 40, Mark 3 (TARDIS)"
+        "Anfield",
+        "City of Manchester Stadium",
+        "St James Park",
+        "Old Trafford"
       ],
       "correct": 3,
-      "difficulty": "hard",
+      "difficulty": "easy",
+      "category": "Sports"
+    },
+    {
+      "text": "Whose greyscale face is on the kappa emoticon on Twitch?",
+      "options": [
+        "John DeSeno",
+        "Justin DeSeno",
+        "Josh DeSeno",
+        "Jimmy DeSeno"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who was the original voice actor of Shaggy Rogers in Scooby-Doo?",
+      "options": [
+        "Dante Basco",
+        "Billy West",
+        "Casey Kasem",
+        "Frank Welker"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
       "category": "Entertainment: Television"
+    },
+    {
+      "text": "What is the name of the Canadian national anthem?",
+      "options": [
+        "Leaf-Spangled Banner",
+        "O Canada",
+        "March of the Puck Drop",
+        "O Red Maple"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Geography"
     }
   ]
 }
