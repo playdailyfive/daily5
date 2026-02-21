@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the name of the main Character from the Series: Dead Space?",
+      "text": "In the English language, what is the name of the \"&\" character?",
       "options": [
-        "Isaac Clarke",
-        "Commander Shepard",
-        "Captain Kirk",
-        "Ellen Ripley"
+        "Ampersand",
+        "And Sign",
+        "Obelus ",
+        "Eightslash"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of Manchester United's home stadium?",
+      "text": "What is the name of Finnish DJ Darude's hit single released in October 1999?",
       "options": [
-        "Anfield",
-        "City of Manchester Stadium",
-        "St James Park",
-        "Old Trafford"
+        "Dust Devil",
+        "Sirocco",
+        "Khamsin",
+        "Sandstorm"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Whose greyscale face is on the kappa emoticon on Twitch?",
+      "text": "Which is the most popular spoken language in the Southern Hemisphere?",
       "options": [
-        "John DeSeno",
-        "Justin DeSeno",
-        "Josh DeSeno",
-        "Jimmy DeSeno"
+        "Spanish",
+        "English ",
+        "Portuguese",
+        "French"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who was the original voice actor of Shaggy Rogers in Scooby-Doo?",
+      "text": "What is the capital of Belarus?",
       "options": [
-        "Dante Basco",
-        "Billy West",
-        "Casey Kasem",
-        "Frank Welker"
+        "Warsaw",
+        "Kiev",
+        "Minsk",
+        "Vilnius"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Geography"
     },
     {
-      "text": "What is the name of the Canadian national anthem?",
+      "text": "The words \"bungalow\" and \"shampoo\" originate from the languages of which country?",
       "options": [
-        "Leaf-Spangled Banner",
-        "O Canada",
-        "March of the Puck Drop",
-        "O Red Maple"
+        "Ethiopia",
+        "India",
+        "China",
+        "Papua New Guinea"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "General Knowledge"
     }
   ]
 }
