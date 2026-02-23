@@ -1,68 +1,68 @@
 {
-  "day": "20260222",
-  "dayIndex": 183,
+  "day": "20260223",
+  "dayIndex": 184,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "\"A3\", \"B1\", and \"Legal\" are typical names of sizes for what object?",
+      "text": "What company developed the vocaloid Hatsune Miku?",
       "options": [
-        "Phone screens",
-        "Paper",
-        "Law books",
-        "Airplanes"
+        "Sega",
+        "Yamaha Corporation",
+        "Crypton Future Media",
+        "Sony"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays protagonist Ethan Hunt in the \"Mission: Impossible\" film-series?",
+      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
       "options": [
-        "Sean Connery",
-        "Johnny Depp",
-        "Pierce Brosnan",
-        "Tom Cruise"
+        "Fight Club",
+        "Unthinkable",
+        "The Island",
+        "American Pie"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "Where did the pineapple plant originate?",
       "options": [
-        "1990s",
-        "1970s",
-        "2000s",
-        "1980s"
+        "Europe",
+        "Asia",
+        "South America",
+        "Hawaii"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the fifth largest country by area?",
+      "text": "\"Lift Your Spirit\" is an album by which artist?",
       "options": [
-        "United States",
-        "Australia",
-        "Brazil",
-        "India"
+        "Stevie Wonder",
+        "Lena Meyer-Landrut",
+        "Taylor Swift",
+        "Aloe Blacc"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "How many stations does the Central Line have on the London Underground?",
+      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
       "options": [
-        "47",
-        "51",
-        "49",
-        "43"
+        "GZA",
+        "Masta Killa",
+        "Method Man",
+        "Inspectah Deck"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
