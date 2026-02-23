@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What company developed the vocaloid Hatsune Miku?",
+      "text": "What is Cynophobia the fear of?",
       "options": [
-        "Sega",
-        "Yamaha Corporation",
-        "Crypton Future Media",
-        "Sony"
+        "Birds",
+        "Germs",
+        "Dogs",
+        "Flying"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"The first rule is: you don't talk about it\" is a reference to which movie?",
+      "text": "What TV show featured older women named Blanche, Rose, Dorothy and Sophia?",
       "options": [
-        "Fight Club",
-        "Unthinkable",
-        "The Island",
-        "American Pie"
+        "The Golden Girls",
+        "The Wonder Years",
+        "Cheers",
+        "Family Ties"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Where did the pineapple plant originate?",
+      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
       "options": [
-        "Europe",
-        "Asia",
-        "South America",
-        "Hawaii"
+        "Have It Your Way",
+        "Making People Happy Through Food",
+        "We Love to See You Smile",
+        "Why Pay More!?"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Lift Your Spirit\" is an album by which artist?",
+      "text": "How many books are in the Chronicles of Narnia series?",
       "options": [
-        "Stevie Wonder",
-        "Lena Meyer-Landrut",
-        "Taylor Swift",
-        "Aloe Blacc"
+        "8",
+        "6",
+        "5",
+        "7"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+      "text": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
       "options": [
-        "GZA",
-        "Masta Killa",
-        "Method Man",
-        "Inspectah Deck"
+        "Hudson Bay",
+        "Grand Banks",
+        "Great Barrier Reef",
+        "Mariana Trench"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
