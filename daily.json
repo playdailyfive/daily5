@@ -1,68 +1,68 @@
 {
-  "day": "20260223",
-  "dayIndex": 184,
+  "day": "20260224",
+  "dayIndex": 185,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cynophobia the fear of?",
+      "text": "How would one say goodbye in Spanish?",
       "options": [
-        "Birds",
-        "Germs",
-        "Dogs",
-        "Flying"
+        "Salir",
+        " Hola",
+        "Au Revoir",
+        "Adi&oacute;s"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What TV show featured older women named Blanche, Rose, Dorothy and Sophia?",
+      "text": "Which James Bond film had the theme song written and performed by English singer-songwriter Adele?",
       "options": [
-        "The Golden Girls",
-        "The Wonder Years",
-        "Cheers",
-        "Family Ties"
+        "Spectre",
+        "Skyfall",
+        "Quantum Solace",
+        "Casino Royale"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "What is the full title of the Prime Minister of the UK?",
+      "options": [
+        "Duke of Cambridge",
+        "Her Majesty's Loyal Opposition",
+        "First Lord of the Treasury",
+        "Manager of the Crown Estate"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What episode of \"Mr. Bean\" saw him trying to prevent people from seeing him naked?",
+      "options": [
+        "Mr. Bean in Room 426",
+        "Back to School Mr. Bean",
+        "Mr. Bean Goes to Town",
+        "The Trouble with Mr. Bean"
       ],
       "correct": 0,
-      "difficulty": "easy",
+      "difficulty": "medium",
       "category": "Entertainment: Television"
     },
     {
-      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
+      "text": "Panic! At the Disco's sixth album \"Pray For The Wicked\" was released on which date?",
       "options": [
-        "Have It Your Way",
-        "Making People Happy Through Food",
-        "We Love to See You Smile",
-        "Why Pay More!?"
+        "June 22, 2018",
+        "February 21, 2018",
+        "May 9, 2018",
+        "March 13, 2018"
       ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "How many books are in the Chronicles of Narnia series?",
-      "options": [
-        "8",
-        "6",
-        "5",
-        "7"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Entertainment: Books"
-    },
-    {
-      "text": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
-      "options": [
-        "Hudson Bay",
-        "Grand Banks",
-        "Great Barrier Reef",
-        "Mariana Trench"
-      ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
