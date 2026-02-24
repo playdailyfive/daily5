@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "How would one say goodbye in Spanish?",
+      "text": "In Half-Life, what is the name of the alien that attaches to heads?",
       "options": [
-        "Salir",
-        " Hola",
-        "Au Revoir",
-        "Adi&oacute;s"
+        "Facehugger",
+        "Bullsquid",
+        "Vortigaunt",
+        "Headcrab"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which James Bond film had the theme song written and performed by English singer-songwriter Adele?",
+      "text": "\"Doctor Jones\", \"Turn Back Time\" and \"Barbie Girl\" were UK number ones for which Eurodance group?",
       "options": [
-        "Spectre",
-        "Skyfall",
-        "Quantum Solace",
-        "Casino Royale"
+        "Sash!",
+        "Aqua",
+        "Eiffel 65",
+        "Vengaboys"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the full title of the Prime Minister of the UK?",
+      "text": "When did the website \"Facebook\" launch?",
       "options": [
-        "Duke of Cambridge",
-        "Her Majesty's Loyal Opposition",
-        "First Lord of the Treasury",
-        "Manager of the Crown Estate"
+        "2005",
+        "2003",
+        "2004",
+        "2006"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What episode of \"Mr. Bean\" saw him trying to prevent people from seeing him naked?",
+      "text": "According to the Star Wars lore, what is Han Solo's home planet?",
       "options": [
-        "Mr. Bean in Room 426",
-        "Back to School Mr. Bean",
-        "Mr. Bean Goes to Town",
-        "The Trouble with Mr. Bean"
+        "Corellia",
+        "Coruscant",
+        "Tatooine",
+        "Naboo"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Panic! At the Disco's sixth album \"Pray For The Wicked\" was released on which date?",
+      "text": "If someone said \"you are olid\", what would they mean?",
       "options": [
-        "June 22, 2018",
-        "February 21, 2018",
-        "May 9, 2018",
-        "March 13, 2018"
+        "You smell extremely unpleasant.",
+        "You are incomprehensible/an idiot.",
+        "You are out of shape/weak.",
+        "Your appearance is repulsive."
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
