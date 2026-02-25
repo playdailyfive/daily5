@@ -1,68 +1,68 @@
 {
-  "day": "20260224",
-  "dayIndex": 185,
+  "day": "20260225",
+  "dayIndex": 186,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In Half-Life, what is the name of the alien that attaches to heads?",
+      "text": "What step in cellular respiration forms ATP?",
       "options": [
-        "Facehugger",
-        "Bullsquid",
-        "Vortigaunt",
-        "Headcrab"
+        "Glycolysis",
+        "Pyruvate Oxidation",
+        "Oxidative Phosphorylation",
+        "Calvin Cycle"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "\"Doctor Jones\", \"Turn Back Time\" and \"Barbie Girl\" were UK number ones for which Eurodance group?",
+      "text": "What genre of music did the band Type O Negative play?",
       "options": [
-        "Sash!",
-        "Aqua",
-        "Eiffel 65",
-        "Vengaboys"
+        "Hard Rock ",
+        "Thrash Metal",
+        "Gothic Metal",
+        "Pop Rock"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Music"
     },
     {
-      "text": "When did the website \"Facebook\" launch?",
+      "text": "What is the last letter of the Greek alphabet?",
       "options": [
-        "2005",
-        "2003",
-        "2004",
-        "2006"
+        "Epsilon",
+        "Mu",
+        "Omega",
+        "Kappa"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "According to the Star Wars lore, what is Han Solo's home planet?",
+      "text": "Which one of these action movies are shot entirely in one take?",
       "options": [
-        "Corellia",
-        "Coruscant",
-        "Tatooine",
-        "Naboo"
+        "Ip Man 2",
+        "Léon: The Professional",
+        "Victoria",
+        "The Bourne Legacy"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "If someone said \"you are olid\", what would they mean?",
+      "text": "Which Death Grips album is the only one to feature a band member?",
       "options": [
-        "You smell extremely unpleasant.",
-        "You are incomprehensible/an idiot.",
-        "You are out of shape/weak.",
-        "Your appearance is repulsive."
+        "The Powers That B",
+        "The Money Store",
+        "No Love Deep Web",
+        "Bottomless Pit"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
