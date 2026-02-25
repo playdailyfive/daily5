@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What step in cellular respiration forms ATP?",
+      "text": "\"A3\", \"B1\", and \"Legal\" are typical names of sizes for what object?",
       "options": [
-        "Glycolysis",
-        "Pyruvate Oxidation",
-        "Oxidative Phosphorylation",
-        "Calvin Cycle"
+        "Airplanes",
+        "Law books",
+        "Paper",
+        "Phone screens"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What genre of music did the band Type O Negative play?",
+      "text": "In bowling, what is the term used for getting three consecutive strikes?",
       "options": [
-        "Hard Rock ",
-        "Thrash Metal",
-        "Gothic Metal",
-        "Pop Rock"
+        "Birdie",
+        "Flamingo",
+        "Turkey",
+        "Eagle"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     },
     {
-      "text": "What is the last letter of the Greek alphabet?",
+      "text": "The architect known as Le Corbusier was an important figure in what style of architecture?",
       "options": [
-        "Epsilon",
-        "Mu",
-        "Omega",
-        "Kappa"
+        "Baroque",
+        "Neoclassical",
+        "Modernism",
+        "Gothic Revival"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which one of these action movies are shot entirely in one take?",
+      "text": "Who provided a majority of the songs and lyrics for \"Spirit: Stallion of the Cimarron\"?",
       "options": [
-        "Ip Man 2",
-        "Léon: The Professional",
-        "Victoria",
-        "The Bourne Legacy"
+        "Smash Mouth",
+        "Air Supply",
+        "Bryan Adams",
+        "Oasis"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "Entertainment: Film"
     },
     {
-      "text": "Which Death Grips album is the only one to feature a band member?",
+      "text": "What was the first movie to ever use a Wilhelm Scream?",
       "options": [
-        "The Powers That B",
-        "The Money Store",
-        "No Love Deep Web",
-        "Bottomless Pit"
+        "Indiana Jones",
+        "The Charge at Feather River",
+        "Distant Drums",
+        "Treasure of the Sierra Madre"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
