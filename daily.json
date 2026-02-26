@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What style of beer will typically have a higher than average hop content?",
+      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
       "options": [
-        "Scotch Ale",
-        "Stout",
-        "Extra Special Bitter",
-        "India Pale Ale"
+        "Miller Coors",
+        "Anheuser Busch",
+        "Boston Beer Company",
+        "D. G. Yuengling and Son, Inc"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Queen song `A Kind Of Magic` is featured in which 1986 film?",
+      "text": "Who played Agent Fox Mulder in the TV sci-fi drama \"The X-Files\"?",
       "options": [
-        "Flash Gordon",
-        "Labyrinth",
-        "Howard the Duck",
-        "Highlander"
+        "Gillian Anderson",
+        "Robert Patrick",
+        "Mitch Pileggi",
+        "David Duchovny"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the average life span of a garden ant?",
+      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
       "options": [
-        "15 years",
-        "1 week",
-        "3 years",
-        "24 hours"
+        "David Childs",
+        "Michael Arad",
+        "Fumihiko Maki",
+        "Bjarke Ingels"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country is singer Kyary Pamyu Pamyu from?",
+      "text": "Which artist curated the official soundtrack for \"The Hunger Games: Mockingjay - Part 1\"?",
       "options": [
-        "Japan",
-        "China",
-        "South Korea",
-        "Vietnam"
+        "Lorde",
+        "Tove Lo",
+        "Kanye West",
+        "Charli XCX"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "What is the capital of Mauritius?",
+      "text": "Which 1994 film did Roger Ebert famously despise, saying \"I hated hated hated hated hated this movie\".",
       "options": [
-        "Port Louis",
-        "Port Moresby",
-        "Port-au-Prince",
-        "Port Vila"
+        "North",
+        "3 Ninjas Kick Back",
+        "Richie Rich",
+        "The Santa Clause"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
