@@ -1,68 +1,68 @@
 {
-  "day": "20260226",
-  "dayIndex": 187,
+  "day": "20260227",
+  "dayIndex": 188,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which American-owned brewery led the country in sales by volume in 2015?",
+      "text": "What is the largest living species of penguin?",
       "options": [
-        "Miller Coors",
-        "Anheuser Busch",
-        "Boston Beer Company",
-        "D. G. Yuengling and Son, Inc"
+        "King",
+        "Emperor",
+        "Adele",
+        "Gentoo"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who played Agent Fox Mulder in the TV sci-fi drama \"The X-Files\"?",
+      "text": "In \"Mean Girls\", who has breasts that tell when it's raining?",
       "options": [
-        "Gillian Anderson",
-        "Robert Patrick",
-        "Mitch Pileggi",
-        "David Duchovny"
+        "Gretchen Weiners",
+        "Karen Smith",
+        "Cady Heron",
+        "Janice Ian"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
-      "options": [
-        "David Childs",
-        "Michael Arad",
-        "Fumihiko Maki",
-        "Bjarke Ingels"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Which artist curated the official soundtrack for \"The Hunger Games: Mockingjay - Part 1\"?",
-      "options": [
-        "Lorde",
-        "Tove Lo",
-        "Kanye West",
-        "Charli XCX"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "Which 1994 film did Roger Ebert famously despise, saying \"I hated hated hated hated hated this movie\".",
-      "options": [
-        "North",
-        "3 Ninjas Kick Back",
-        "Richie Rich",
-        "The Santa Clause"
-      ],
-      "correct": 0,
-      "difficulty": "hard",
       "category": "Entertainment: Film"
+    },
+    {
+      "text": "The website \"Shut Up & Sit Down\" reviews which form of media?",
+      "options": [
+        "Board Games",
+        "Television Shows",
+        "Films",
+        "Video Games"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What is the oldest team in Major League Baseball?",
+      "options": [
+        "Cincinnati Reds",
+        "St. Louis Cardinals",
+        "Chicago Cubs",
+        "Atlanta Braves"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "Sports"
+    },
+    {
+      "text": "Who is Manchester United's leading appearance maker?",
+      "options": [
+        "Eric Cantona",
+        "Ryan Giggs",
+        "David Beckham",
+        "Wayne Rooney"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Sports"
     }
   ]
 }
