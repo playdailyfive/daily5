@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which type of cutlery is most suited for eating soup?",
+      "text": "Who is the origin of the quote \"What doesn't kill you makes you stronger\"?",
       "options": [
-        "Fork",
-        "Spoon",
-        "Chopsticks",
-        "Knife"
+        " G. Gordon Liddy",
+        "Friedrich Nietzsche",
+        "Christopher Hitchens",
+        "Kelly Clarkson"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
+      "text": "Which country hosted the 2018 FIFA World Cup?",
       "options": [
-        "F. Scott Fitzgerald",
-        "Hunter S. Thompson",
-        "William S. Burroughs",
-        "Henry Miller"
+        "Germany",
+        "Russia",
+        "Saudi Arabia",
+        "United States"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Sports"
     },
     {
-      "text": "What character was once considered to be the 27th letter of the alphabet?",
+      "text": "Who invented Pastafarianism?",
       "options": [
-        "Ampersand",
-        "Interrobang",
-        "Pilcrow",
-        "Tilde"
+        "Bobby Henderson",
+        "Eric Tignor",
+        "Zach Soldi",
+        "Bill Nye"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country does the power metal band \"Sabaton\" originate from?",
+      "text": "In which English county is Stonehenge?",
       "options": [
-        "United States",
-        "Finland",
-        "Germany",
-        "Sweden"
+        "Cumbria",
+        "Herefordshire",
+        "Somerset",
+        "Wiltshire"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What was the first ever London Underground line to be built?",
+      "text": "How many members are there in the idol group \"&micro;'s\"?",
       "options": [
-        "Victoria Line",
-        "Metropolitan Line",
-        "Circle Line",
-        "Bakerloo Line"
+        "3",
+        "9",
+        "48",
+        "6"
       ],
       "correct": 1,
-      "difficulty": "easy",
-      "category": "General Knowledge"
+      "difficulty": "hard",
+      "category": "Entertainment: Music"
     }
   ]
 }
