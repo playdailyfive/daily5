@@ -1,68 +1,68 @@
 {
-  "day": "20260227",
-  "dayIndex": 188,
+  "day": "20260228",
+  "dayIndex": 189,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is the origin of the quote \"What doesn't kill you makes you stronger\"?",
+      "text": "Who is depicted on the US hundred dollar bill?",
       "options": [
-        " G. Gordon Liddy",
-        "Friedrich Nietzsche",
-        "Christopher Hitchens",
-        "Kelly Clarkson"
+        "George Washington",
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "Benjamin Franklin"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country hosted the 2018 FIFA World Cup?",
+      "text": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
       "options": [
-        "Germany",
-        "Russia",
-        "Saudi Arabia",
-        "United States"
+        "Henry Miller",
+        "F. Scott Fitzgerald",
+        "Hunter S. Thompson",
+        "William S. Burroughs"
+      ],
+      "correct": 2,
+      "difficulty": "easy",
+      "category": "Entertainment: Books"
+    },
+    {
+      "text": "Which mountain has the highest peak in Europe?",
+      "options": [
+        "Shkhara, Georgia",
+        "Mount Ararat, Turkey",
+        "Mount Elbrus, Russia",
+        "Mont Blanc, France"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "What was Sir Donald Bradman's batting average in test matches?",
+      "options": [
+        "69.51",
+        "99.94",
+        "44.78",
+        "100"
       ],
       "correct": 1,
-      "difficulty": "easy",
+      "difficulty": "medium",
       "category": "Sports"
     },
     {
-      "text": "Who invented Pastafarianism?",
+      "text": "What tool lends it's name to a last-stone advantage in an end in Curling?",
       "options": [
-        "Bobby Henderson",
-        "Eric Tignor",
-        "Zach Soldi",
-        "Bill Nye"
+        "Hammer",
+        "Screwdriver",
+        "Wrench",
+        "Drill"
       ],
       "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which English county is Stonehenge?",
-      "options": [
-        "Cumbria",
-        "Herefordshire",
-        "Somerset",
-        "Wiltshire"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "Geography"
-    },
-    {
-      "text": "How many members are there in the idol group \"&micro;'s\"?",
-      "options": [
-        "3",
-        "9",
-        "48",
-        "6"
-      ],
-      "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Sports"
     }
   ]
 }
