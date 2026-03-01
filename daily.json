@@ -1,68 +1,68 @@
 {
-  "day": "20260228",
-  "dayIndex": 189,
+  "day": "20260301",
+  "dayIndex": 190,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is depicted on the US hundred dollar bill?",
+      "text": "What is the shortest month of the year?",
       "options": [
-        "George Washington",
-        "Abraham Lincoln",
-        "Thomas Jefferson",
-        "Benjamin Franklin"
+        "February",
+        "December",
+        "September",
+        "April"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
+      "text": "What is the capital of Finland?",
       "options": [
-        "Henry Miller",
-        "F. Scott Fitzgerald",
-        "Hunter S. Thompson",
-        "William S. Burroughs"
+        "Helsinki",
+        "Jabraltar",
+        "Oslo",
+        "Macedonia"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
+      "category": "Geography"
+    },
+    {
+      "text": "All Souls and Merton are constituent colleges of what university?",
+      "options": [
+        "Cambridge",
+        "Manchester",
+        "Leeds",
+        "Oxford"
+      ],
+      "correct": 3,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "Who is the protagonist of the book: \"The Catcher in the Rye\" by J.D. Salinger",
+      "options": [
+        "Holden Caulfield",
+        "Holden David",
+        "Jerome Caulfield",
+        "Jerome David"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
       "category": "Entertainment: Books"
     },
     {
-      "text": "Which mountain has the highest peak in Europe?",
+      "text": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
       "options": [
-        "Shkhara, Georgia",
-        "Mount Ararat, Turkey",
-        "Mount Elbrus, Russia",
-        "Mont Blanc, France"
+        "Pug",
+        "Yorkshire Terrier",
+        "Boxer",
+        "Bulldog"
       ],
-      "correct": 2,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "What was Sir Donald Bradman's batting average in test matches?",
-      "options": [
-        "69.51",
-        "99.94",
-        "44.78",
-        "100"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Sports"
-    },
-    {
-      "text": "What tool lends it's name to a last-stone advantage in an end in Curling?",
-      "options": [
-        "Hammer",
-        "Screwdriver",
-        "Wrench",
-        "Drill"
-      ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "General Knowledge"
     }
   ]
 }
