@@ -5,52 +5,52 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the shortest month of the year?",
+      "text": "What company owns Outlook?",
       "options": [
-        "February",
-        "December",
-        "September",
-        "April"
+        "Microsoft",
+        "Google",
+        "Yahoo",
+        "Apple"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the capital of Finland?",
+      "text": "How many seasons did \"Stargate SG-1\" have?",
       "options": [
-        "Helsinki",
-        "Jabraltar",
-        "Oslo",
-        "Macedonia"
+        "10",
+        "3",
+        "12",
+        "7"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "All Souls and Merton are constituent colleges of what university?",
+      "text": "Which mountain has the highest peak in Europe?",
       "options": [
-        "Cambridge",
-        "Manchester",
-        "Leeds",
-        "Oxford"
+        "Shkhara, Georgia",
+        "Mount Ararat, Turkey",
+        "Mont Blanc, France",
+        "Mount Elbrus, Russia"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the protagonist of the book: \"The Catcher in the Rye\" by J.D. Salinger",
+      "text": "Which radio personality calls himself \"The King of All Media\"?",
       "options": [
-        "Holden Caulfield",
-        "Holden David",
-        "Jerome Caulfield",
-        "Jerome David"
+        "Howard Stern",
+        "Rush Limbaugh",
+        "Pete Tong",
+        "Ryan Seacrest"
       ],
       "correct": 0,
       "difficulty": "medium",
-      "category": "Entertainment: Books"
+      "category": "Celebrities"
     },
     {
       "text": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
