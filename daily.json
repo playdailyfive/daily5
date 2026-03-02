@@ -1,68 +1,68 @@
 {
-  "day": "20260301",
-  "dayIndex": 190,
+  "day": "20260302",
+  "dayIndex": 191,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What company owns Outlook?",
+      "text": "When one is \"envious\", they are said to be what color?",
       "options": [
-        "Microsoft",
-        "Google",
-        "Yahoo",
-        "Apple"
+        "Green",
+        "Blue",
+        "Red",
+        "Yellow"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "How many seasons did \"Stargate SG-1\" have?",
+      "text": "In the original Star Trek TV series, what was Captain James T. Kirk's middle name?",
       "options": [
-        "10",
-        "3",
-        "12",
-        "7"
+        "Travis",
+        "Tyrone",
+        "Tiberius",
+        "Trevor"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Television"
     },
     {
-      "text": "Which mountain has the highest peak in Europe?",
+      "text": "What is the Portuguese word for \"Brazil\"?",
       "options": [
-        "Shkhara, Georgia",
-        "Mount Ararat, Turkey",
-        "Mont Blanc, France",
-        "Mount Elbrus, Russia"
+        "Brazil",
+        "Brasil",
+        "Bras&iacute;l",
+        "Brasilia"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which radio personality calls himself \"The King of All Media\"?",
+      "text": "'74–'75 is a 1993 single from the album Ring by what American band?",
       "options": [
-        "Howard Stern",
-        "Rush Limbaugh",
-        "Pete Tong",
-        "Ryan Seacrest"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Celebrities"
-    },
-    {
-      "text": "What type of dog is 'Handsome Dan', the mascot of Yale University?",
-      "options": [
-        "Pug",
-        "Yorkshire Terrier",
-        "Boxer",
-        "Bulldog"
+        "The Bangles",
+        "R.E.M.",
+        "The Ocean Blue",
+        "The Connells"
       ],
       "correct": 3,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "Which song in rapper Kanye West's album \"The Life of Pablo\" features Rihanna?",
+      "options": [
+        "Highlights",
+        "Famous",
+        "Wolves",
+        "Ultralight Beam"
+      ],
+      "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Entertainment: Music"
     }
   ]
 }
