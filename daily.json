@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "When one is \"envious\", they are said to be what color?",
+      "text": "What is on display in the Madame Tussaud's museum in London?",
       "options": [
-        "Green",
-        "Blue",
-        "Red",
-        "Yellow"
+        "Wax sculptures",
+        "Unreleased film reels",
+        "Designer clothing",
+        "Vintage cars"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the original Star Trek TV series, what was Captain James T. Kirk's middle name?",
+      "text": "When does \"Rogue One: A Star Wars Story\" take place chronologically in the series?",
       "options": [
-        "Travis",
-        "Tyrone",
-        "Tiberius",
-        "Trevor"
+        "Before Episode 1",
+        "Between Episode 4 and 5",
+        "Between Episode 3 and 4",
+        "After Episode 6"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the Portuguese word for \"Brazil\"?",
+      "text": "Which country has the most Trappist breweries?",
       "options": [
-        "Brazil",
-        "Brasil",
-        "Bras&iacute;l",
-        "Brasilia"
+        "Netherlands",
+        "Belgium",
+        "USA",
+        "France"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "'74–'75 is a 1993 single from the album Ring by what American band?",
+      "text": "After India, which country produces the second most movies per year?",
       "options": [
-        "The Bangles",
-        "R.E.M.",
-        "The Ocean Blue",
-        "The Connells"
+        "France",
+        "United States",
+        "China",
+        "Nigeria"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which song in rapper Kanye West's album \"The Life of Pablo\" features Rihanna?",
+      "text": "In \"Battle Cats\", what is Moneko / MISS Moneko's critical percentage rate?",
       "options": [
-        "Highlights",
-        "Famous",
-        "Wolves",
-        "Ultralight Beam"
+        "25%",
+        "15%",
+        "20%",
+        "10%"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
