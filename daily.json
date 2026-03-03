@@ -1,68 +1,68 @@
 {
-  "day": "20260302",
-  "dayIndex": 191,
+  "day": "20260303",
+  "dayIndex": 192,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is on display in the Madame Tussaud's museum in London?",
+      "text": "In a standard Gregorian calendar, how many months begin with the letter 'J'?",
       "options": [
-        "Wax sculptures",
-        "Unreleased film reels",
-        "Designer clothing",
-        "Vintage cars"
+        "Two",
+        "Three",
+        "Five",
+        "Four"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "When does \"Rogue One: A Star Wars Story\" take place chronologically in the series?",
+      "text": "In \"Breaking Bad\", Walter White is a high school teacher diagnosed with which form of cancer?",
       "options": [
-        "Before Episode 1",
-        "Between Episode 4 and 5",
-        "Between Episode 3 and 4",
-        "After Episode 6"
+        "Testicular Cancer",
+        "Prostate Cancer",
+        "Lung Cancer",
+        "Brain Cancer"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Which country has the most Trappist breweries?",
+      "text": "Which mountain has the highest peak in Africa?",
       "options": [
-        "Netherlands",
-        "Belgium",
-        "USA",
-        "France"
+        "Mount Speke, Uganda",
+        "Mount Stanley, DR Congo/Uganda",
+        "Mount Kilimanjaro, Tanzania",
+        "Mount Kenya, Kenya"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "After India, which country produces the second most movies per year?",
+      "text": "The 2010 song \"Eenie Meenie\" was a collaboration between which two popular artists?",
       "options": [
-        "France",
-        "United States",
-        "China",
-        "Nigeria"
+        "Usher & Pitbull",
+        "Eminem & Rihanna",
+        "Sean Kingston & Justin Bieber",
+        "Lady Gaga & Beyoncé"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In \"Battle Cats\", what is Moneko / MISS Moneko's critical percentage rate?",
+      "text": "Who did Drew Brees pass in all time NFL passing yards in 2018?",
       "options": [
-        "25%",
-        "15%",
-        "20%",
-        "10%"
+        "Peyton Manning",
+        "Dan Marino",
+        "Tom Brady",
+        "Joe Montana"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Sports"
     }
   ]
 }
