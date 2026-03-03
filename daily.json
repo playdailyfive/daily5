@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In a standard Gregorian calendar, how many months begin with the letter 'J'?",
+      "text": "What machine element is located in the center of fidget spinners?",
       "options": [
-        "Two",
-        "Three",
-        "Five",
-        "Four"
+        "Belts",
+        "Bearings",
+        "Gears",
+        "Axles"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"Breaking Bad\", Walter White is a high school teacher diagnosed with which form of cancer?",
+      "text": "Which actor plays Obi-Wan Kenobi in Star Wars Episodes I-III?",
       "options": [
-        "Testicular Cancer",
-        "Prostate Cancer",
-        "Lung Cancer",
-        "Brain Cancer"
+        "Liam Neeson",
+        "Alec Guinness",
+        "Ewan McGregor",
+        "Hayden Christensen"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Which mountain has the highest peak in Africa?",
+      "text": "What character was once considered to be the 27th letter of the alphabet?",
       "options": [
-        "Mount Speke, Uganda",
-        "Mount Stanley, DR Congo/Uganda",
-        "Mount Kilimanjaro, Tanzania",
-        "Mount Kenya, Kenya"
+        "Pilcrow",
+        "Tilde",
+        "Ampersand",
+        "Interrobang"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The 2010 song \"Eenie Meenie\" was a collaboration between which two popular artists?",
+      "text": "In which English county is Stonehenge?",
       "options": [
-        "Usher & Pitbull",
-        "Eminem & Rihanna",
-        "Sean Kingston & Justin Bieber",
-        "Lady Gaga & Beyoncé"
+        "Cumbria",
+        "Somerset",
+        "Wiltshire",
+        "Herefordshire"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "Who did Drew Brees pass in all time NFL passing yards in 2018?",
+      "text": "Which Elton John hit starts with the line \"When are you gonna come down\"?",
       "options": [
-        "Peyton Manning",
-        "Dan Marino",
-        "Tom Brady",
-        "Joe Montana"
+        "Goodbye Yellow Brick Road",
+        "Bennie and the Jets",
+        "Rocket Man",
+        "Crocodile Rock"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Sports"
+      "category": "Entertainment: Music"
     }
   ]
 }
