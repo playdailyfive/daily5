@@ -1,66 +1,66 @@
 {
-  "day": "20260303",
-  "dayIndex": 192,
+  "day": "20260304",
+  "dayIndex": 193,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What machine element is located in the center of fidget spinners?",
+      "text": "Who is the author of Jurassic Park?",
       "options": [
-        "Belts",
-        "Bearings",
-        "Gears",
-        "Axles"
+        "Irvine Welsh",
+        "Michael Crichton",
+        "Chuck Paluhniuk",
+        "Peter Benchley"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which actor plays Obi-Wan Kenobi in Star Wars Episodes I-III?",
+      "text": "In \"Breaking Bad\", Walter White is a high school teacher diagnosed with which form of cancer?",
       "options": [
-        "Liam Neeson",
-        "Alec Guinness",
-        "Ewan McGregor",
-        "Hayden Christensen"
+        "Brain Cancer",
+        "Lung Cancer",
+        "Testicular Cancer",
+        "Prostate Cancer"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What character was once considered to be the 27th letter of the alphabet?",
+      "text": "Coleslaw originated from which European country?",
       "options": [
-        "Pilcrow",
-        "Tilde",
-        "Ampersand",
-        "Interrobang"
+        "United Kingdom",
+        "Germany",
+        "The Netherlands",
+        "Denmark"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In which English county is Stonehenge?",
+      "text": "What is the name of French electronic music producer Madeon's 2015 debut studio album?",
       "options": [
-        "Cumbria",
-        "Somerset",
-        "Wiltshire",
-        "Herefordshire"
+        "Pop Culture",
+        "Icarus",
+        "Adventure",
+        "The City"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Which Elton John hit starts with the line \"When are you gonna come down\"?",
+      "text": "The heavy metal band Black Sabbath hail from which English city?",
       "options": [
-        "Goodbye Yellow Brick Road",
-        "Bennie and the Jets",
-        "Rocket Man",
-        "Crocodile Rock"
+        "London",
+        "Birmingham",
+        "Manchester",
+        "Newcastle-Upon-Tyne"
       ],
-      "correct": 0,
+      "correct": 1,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
