@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is the author of Jurassic Park?",
+      "text": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
       "options": [
-        "Irvine Welsh",
-        "Michael Crichton",
-        "Chuck Paluhniuk",
-        "Peter Benchley"
+        "Bill Gates",
+        "Richard Branson",
+        "Donald Trump",
+        "Alan Sugar"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In \"Breaking Bad\", Walter White is a high school teacher diagnosed with which form of cancer?",
+      "text": "In AMC's TV Series \"The Walking Dead\" what are \"Zombies\" referred to as?",
       "options": [
-        "Brain Cancer",
-        "Lung Cancer",
-        "Testicular Cancer",
-        "Prostate Cancer"
+        "Maggots",
+        "Walkers",
+        "Hell Pigs",
+        "Creepers"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "Entertainment: Television"
     },
     {
-      "text": "Coleslaw originated from which European country?",
+      "text": "Which mountain has the highest peak in Australia?",
       "options": [
-        "United Kingdom",
-        "Germany",
-        "The Netherlands",
-        "Denmark"
+        "Mount Ossa, Tasmania",
+        "Mount Zeil, Northern Territory",
+        "Mount Kosciuszko, New South Wales",
+        "Mount Bartle Frere, Queensland"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the name of French electronic music producer Madeon's 2015 debut studio album?",
+      "text": "Which state of the United States is the smallest?",
       "options": [
-        "Pop Culture",
-        "Icarus",
-        "Adventure",
-        "The City"
+        "Massachusetts",
+        "Vermont",
+        "Rhode Island ",
+        "Maine"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "The heavy metal band Black Sabbath hail from which English city?",
+      "text": "What did the first moving picture depict?",
       "options": [
-        "London",
-        "Birmingham",
-        "Manchester",
-        "Newcastle-Upon-Tyne"
+        "A man walking",
+        "A galloping horse",
+        "A woman in a dress",
+        "A crackling fire"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     }
   ]
 }
