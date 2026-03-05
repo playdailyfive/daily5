@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What fruit is a traditional ingredient of a Black Forest Gateau?",
+      "text": "What alcoholic drink is made from molasses?",
       "options": [
-        "Apples",
-        "Apricots",
-        "Cherries",
-        "Raisins"
+        "Whisky",
+        "Gin",
+        "Rum",
+        "Vodka"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the first feature-length computer-animated movie?",
+      "text": "How many seasons did \"Stargate SG-1\" have?",
       "options": [
-        "Toy Story",
-        "Tron",
-        "Lion king",
-        "101 Dalmatians"
+        "10",
+        "3",
+        "7",
+        "12"
       ],
       "correct": 0,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is real haggis made of?",
+      "text": "In 2013 how much money was lost by Nigerian scams?",
       "options": [
-        "Sheep's Heart, Liver and Lungs",
-        "Whole Sheep",
-        "Sheep's Liver, Kidneys and Eyes",
-        "Sheep's Heart, Kidneys and Lungs"
+        "$12.7 Billion",
+        "$2.7 Billion",
+        "$956 Million",
+        "$95 Million"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which one of these action movies are shot entirely in one take?",
+      "text": "Who is the lead singer of Silverchair?",
       "options": [
-        "The Bourne Legacy",
-        "Victoria",
-        "Ip Man 2",
-        "Léon: The Professional"
+        "Chris Joannou",
+        "Daniel Johns",
+        "Ben Gillies",
+        "George Costanza"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the first track on the Dave Matthews Band album \"Before These Crowded Streets\"?",
+      "text": "In which classic novel is there a character named Homer Simpson?",
       "options": [
-        "Pantala Naga Pampa",
-        "Rapunzel",
-        "Stay (Wasting Time)",
-        "Don't Drink The Water"
+        "The Day of the Locust",
+        "Of Mice and Men",
+        "Catch-22",
+        "A Separate Peace"
       ],
       "correct": 0,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Books"
     }
   ]
 }
