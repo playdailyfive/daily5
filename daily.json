@@ -1,68 +1,68 @@
 {
-  "day": "20260305",
-  "dayIndex": 194,
+  "day": "20260306",
+  "dayIndex": 195,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What alcoholic drink is made from molasses?",
+      "text": "Who played General Aladeen in The Dictator?",
       "options": [
-        "Whisky",
-        "Gin",
-        "Rum",
-        "Vodka"
+        "James Franco",
+        "Sacha Baron Cohen",
+        "Johnny Depp",
+        "Leonardo Dicaprio"
+      ],
+      "correct": 1,
+      "difficulty": "easy",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
+      "options": [
+        "Pretty in Pink",
+        "Ferris Bueller's Day Off",
+        "Dirty Dancing",
+        "Three Men and a Baby"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "General Knowledge"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "How many seasons did \"Stargate SG-1\" have?",
+      "text": "What is the official language in Barcelona beside Spanish?",
       "options": [
-        "10",
-        "3",
-        "7",
-        "12"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "In 2013 how much money was lost by Nigerian scams?",
-      "options": [
-        "$12.7 Billion",
-        "$2.7 Billion",
-        "$956 Million",
-        "$95 Million"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "Who is the lead singer of Silverchair?",
-      "options": [
-        "Chris Joannou",
-        "Daniel Johns",
-        "Ben Gillies",
-        "George Costanza"
+        " Galician",
+        "Catalan",
+        "French",
+        "Basque"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     },
     {
-      "text": "In which classic novel is there a character named Homer Simpson?",
+      "text": "Who plays the Nemesis in the Resident Evil movies?",
       "options": [
-        "The Day of the Locust",
-        "Of Mice and Men",
-        "Catch-22",
-        "A Separate Peace"
+        "Jason Dip",
+        "Eric Mabius",
+        "Matthew Taylor",
+        "Jimmy Matts"
       ],
-      "correct": 0,
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "Where is Apple Inc. headquartered?",
+      "options": [
+        "Santa Monica, CA",
+        "Redwood City, California",
+        "Cupertino, California",
+        "Redmond, Washington"
+      ],
+      "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "General Knowledge"
     }
   ]
 }
