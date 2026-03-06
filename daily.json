@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who played General Aladeen in The Dictator?",
+      "text": "What is the profession of Elon Musk's mom, Maye Musk?",
       "options": [
-        "James Franco",
-        "Sacha Baron Cohen",
-        "Johnny Depp",
-        "Leonardo Dicaprio"
+        "Biologist",
+        "Model",
+        "Professor",
+        "Musician"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
+      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
       "options": [
-        "Pretty in Pink",
-        "Ferris Bueller's Day Off",
-        "Dirty Dancing",
-        "Three Men and a Baby"
+        "David Tennant",
+        "Mac McAnally",
+        "John McVie",
+        "Christine McVie"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What is the official language in Barcelona beside Spanish?",
+      "text": "Which month is Black History Month in the US?",
       "options": [
-        " Galician",
-        "Catalan",
-        "French",
-        "Basque"
+        "May",
+        "February",
+        "November",
+        "August"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who plays the Nemesis in the Resident Evil movies?",
+      "text": "Who is the vocalist and frontman of rock band \"Guns N' Roses\"?",
       "options": [
-        "Jason Dip",
-        "Eric Mabius",
-        "Matthew Taylor",
-        "Jimmy Matts"
+        "Kurt Cobain",
+        "Slash",
+        "Axl Rose",
+        "Bono"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "Where is Apple Inc. headquartered?",
+      "text": "Who founded the Khan Academy?",
       "options": [
-        "Santa Monica, CA",
-        "Redwood City, California",
-        "Cupertino, California",
-        "Redmond, Washington"
+        "Adel Khan",
+        "Ben Khan",
+        "Sal Khan",
+        "Kitt Khan"
       ],
       "correct": 2,
       "difficulty": "hard",
