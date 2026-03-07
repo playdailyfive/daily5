@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "If you are traveling at a speed of 80 mph, how long will it take you to drive 80 miles?",
+      "text": "What is Cuba's official, most widely spoken language?",
       "options": [
-        "90 minutes",
-        "50 minutes",
-        "60 minutes",
-        "30 minutes"
+        "Portuguese",
+        "Italian",
+        "Spanish",
+        "French"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Who played Agent Fox Mulder in the TV sci-fi drama \"The X-Files\"?",
+      "text": "Which actress married Michael Douglas in 2000?",
       "options": [
-        "Mitch Pileggi",
-        "Gillian Anderson",
-        "Robert Patrick",
-        "David Duchovny"
+        "Sara Sugarman",
+        "Ruth Jones",
+        "Pam Ferris",
+        "Catherine Zeta-Jones"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Television"
+      "category": "Celebrities"
     },
     {
-      "text": "Death Valley's Badwater Basin is North America's point of lowest elevation at how many feet below sea level?",
+      "text": "The early part of which decade, did the Goth Subculture begin?",
       "options": [
-        "79 feet",
-        "1,640 feet",
-        "282 feet",
-        "12,092 feet"
+        "1990s",
+        "2000s",
+        "1980s",
+        "1970s"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the name of Pink Floyd's first studio album?",
+      "text": "On which continent is the country of Angola located?",
       "options": [
-        "Atom Heart Mother",
-        "The Piper at the Gates of Dawn",
-        "More",
-        "Ummagumma"
+        "Asia",
+        "Africa",
+        "Europe",
+        "South America"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What country is not a part of Scandinavia?",
+      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
       "options": [
-        "Norway",
-        "Finland",
-        "Denmark",
-        "Sweden"
+        "Peace",
+        "Shambala",
+        "Chakra",
+        "Ancient"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     }
   ]
 }
