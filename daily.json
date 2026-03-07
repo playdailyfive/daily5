@@ -1,68 +1,68 @@
 {
-  "day": "20260306",
-  "dayIndex": 195,
+  "day": "20260307",
+  "dayIndex": 196,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the profession of Elon Musk's mom, Maye Musk?",
+      "text": "If you are traveling at a speed of 80 mph, how long will it take you to drive 80 miles?",
       "options": [
-        "Biologist",
-        "Model",
-        "Professor",
-        "Musician"
+        "90 minutes",
+        "50 minutes",
+        "60 minutes",
+        "30 minutes"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Where does the Mac part of the name Fleetwood Mac come from?",
+      "text": "Who played Agent Fox Mulder in the TV sci-fi drama \"The X-Files\"?",
       "options": [
-        "David Tennant",
-        "Mac McAnally",
-        "John McVie",
-        "Christine McVie"
+        "Mitch Pileggi",
+        "Gillian Anderson",
+        "Robert Patrick",
+        "David Duchovny"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "Which month is Black History Month in the US?",
+      "text": "Death Valley's Badwater Basin is North America's point of lowest elevation at how many feet below sea level?",
       "options": [
-        "May",
-        "February",
-        "November",
-        "August"
+        "79 feet",
+        "1,640 feet",
+        "282 feet",
+        "12,092 feet"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who is the vocalist and frontman of rock band \"Guns N' Roses\"?",
+      "text": "What was the name of Pink Floyd's first studio album?",
       "options": [
-        "Kurt Cobain",
-        "Slash",
-        "Axl Rose",
-        "Bono"
+        "Atom Heart Mother",
+        "The Piper at the Gates of Dawn",
+        "More",
+        "Ummagumma"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Who founded the Khan Academy?",
+      "text": "What country is not a part of Scandinavia?",
       "options": [
-        "Adel Khan",
-        "Ben Khan",
-        "Sal Khan",
-        "Kitt Khan"
+        "Norway",
+        "Finland",
+        "Denmark",
+        "Sweden"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
