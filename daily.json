@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the most frequently used letter in the english alphabet?",
+      "text": "What do sailors call the left side of a boat?",
       "options": [
-        "E",
-        "A",
-        "O",
-        "I"
+        "Port",
+        "Starboard",
+        "Stern",
+        "Bow"
       ],
       "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What's Harry Potter's dad's name?",
+      "text": "What was the first monster to appear alongside Godzilla?",
       "options": [
-        "Joey Potter",
-        "Frank Potter",
-        "Hairy Potter Sr.",
-        "James Potter"
+        "King Kong",
+        "Mothra",
+        "King Ghidora",
+        "Anguirus"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What did the Spanish autonomous community of Catalonia ban in 2010, that took effect in 2012?",
+      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
       "options": [
-        "Bullfighting",
-        "Fiestas",
-        "Flamenco",
-        "Mariachi"
+        "David Childs",
+        "Bjarke Ingels",
+        "Michael Arad",
+        "Fumihiko Maki"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country does the power metal band \"Sabaton\" originate from?",
+      "text": "In the 1971 film \"Willy Wonka & the Chocolate Factory\", who played Willy Wonka?",
       "options": [
-        "Finland",
-        "Germany",
-        "United States",
-        "Sweden"
+        "Johnny Depp",
+        "Shia LeBouf",
+        "Peter Ostrum",
+        "Gene Wilder"
       ],
       "correct": 3,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "In the Beatrix Potter books, what type of animal is Tommy Brock?",
+      "text": "In Kendrick Lamar's 2012 album, \"Good Kid, M.A.A.D City\", the album's story takes place in which city?",
       "options": [
-        "Frog",
-        "Fox",
-        "Rabbit",
-        "Badger"
+        "New York",
+        "Detroit",
+        "Baltimore",
+        "Compton"
       ],
       "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Books"
+      "category": "Entertainment: Music"
     }
   ]
 }
