@@ -1,68 +1,68 @@
 {
-  "day": "20260307",
-  "dayIndex": 196,
+  "day": "20260308",
+  "dayIndex": 197,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is Cuba's official, most widely spoken language?",
+      "text": "What is the most frequently used letter in the english alphabet?",
       "options": [
-        "Portuguese",
-        "Italian",
-        "Spanish",
-        "French"
+        "E",
+        "A",
+        "O",
+        "I"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which actress married Michael Douglas in 2000?",
+      "text": "What's Harry Potter's dad's name?",
       "options": [
-        "Sara Sugarman",
-        "Ruth Jones",
-        "Pam Ferris",
-        "Catherine Zeta-Jones"
+        "Joey Potter",
+        "Frank Potter",
+        "Hairy Potter Sr.",
+        "James Potter"
       ],
       "correct": 3,
       "difficulty": "easy",
-      "category": "Celebrities"
+      "category": "Entertainment: Books"
     },
     {
-      "text": "The early part of which decade, did the Goth Subculture begin?",
+      "text": "What did the Spanish autonomous community of Catalonia ban in 2010, that took effect in 2012?",
       "options": [
-        "1990s",
-        "2000s",
-        "1980s",
-        "1970s"
+        "Bullfighting",
+        "Fiestas",
+        "Flamenco",
+        "Mariachi"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "On which continent is the country of Angola located?",
+      "text": "Which country does the power metal band \"Sabaton\" originate from?",
       "options": [
-        "Asia",
-        "Africa",
-        "Europe",
-        "South America"
+        "Finland",
+        "Germany",
+        "United States",
+        "Sweden"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
+      "text": "In the Beatrix Potter books, what type of animal is Tommy Brock?",
       "options": [
-        "Peace",
-        "Shambala",
-        "Chakra",
-        "Ancient"
+        "Frog",
+        "Fox",
+        "Rabbit",
+        "Badger"
       ],
-      "correct": 1,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Books"
     }
   ]
 }
