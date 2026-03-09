@@ -1,66 +1,66 @@
 {
-  "day": "20260308",
-  "dayIndex": 197,
+  "day": "20260309",
+  "dayIndex": 198,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What do sailors call the left side of a boat?",
+      "text": "What was the name of Sqiudward's bad painting in the Spongebob episode \"Artist Unknown?\"",
       "options": [
-        "Port",
-        "Starboard",
-        "Stern",
-        "Bow"
+        "Rippy Bits",
+        "Tilted Perspectives",
+        "Bold and Brash",
+        "Squidward en Repose"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the first monster to appear alongside Godzilla?",
+      "text": "Which country features a maple leaf on its flag?",
       "options": [
-        "King Kong",
-        "Mothra",
-        "King Ghidora",
-        "Anguirus"
+        "Mexico",
+        "Canada",
+        "India",
+        "Brazil"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "The new One World Trade Center in Manhattan, New York City was designed by which architect? ",
+      "text": "What is the highest number of Michelin stars a restaurant can receive?",
       "options": [
-        "David Childs",
-        "Bjarke Ingels",
-        "Michael Arad",
-        "Fumihiko Maki"
+        "Six",
+        "Four",
+        "Five",
+        "Three"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "In the 1971 film \"Willy Wonka & the Chocolate Factory\", who played Willy Wonka?",
+      "text": "Which actor was not a major character in TV Show Freaks and Geeks?",
       "options": [
-        "Johnny Depp",
-        "Shia LeBouf",
-        "Peter Ostrum",
-        "Gene Wilder"
+        "James Franco",
+        "Jonah Hill",
+        "Jason Segel",
+        "Seth Rogen"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "In Kendrick Lamar's 2012 album, \"Good Kid, M.A.A.D City\", the album's story takes place in which city?",
+      "text": "Who was the previous drummer of blink-182 before Travis Barker?",
       "options": [
-        "New York",
-        "Detroit",
-        "Baltimore",
-        "Compton"
+        "Derek Grant",
+        "Atom Willard",
+        "Scott Raynor",
+        "Ilan Rubin"
       ],
-      "correct": 3,
+      "correct": 2,
       "difficulty": "hard",
       "category": "Entertainment: Music"
     }
