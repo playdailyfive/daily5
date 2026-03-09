@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What was the name of Sqiudward's bad painting in the Spongebob episode \"Artist Unknown?\"",
+      "text": "The word \"dozen\" usually refers to a group of how many objects?",
       "options": [
-        "Rippy Bits",
-        "Tilted Perspectives",
-        "Bold and Brash",
-        "Squidward en Repose"
+        "20",
+        "10",
+        "12",
+        "6"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Which country features a maple leaf on its flag?",
+      "text": "In the show Stranger Things, what is Eleven's favorite breakfast food?",
       "options": [
-        "Mexico",
-        "Canada",
-        "India",
-        "Brazil"
+        "Toast",
+        "Eggo Waffles",
+        "Bacon and Eggs",
+        "Captain Crunch"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the highest number of Michelin stars a restaurant can receive?",
+      "text": "What nation produces roughly 40% of the world's vanilla?",
       "options": [
-        "Six",
-        "Four",
-        "Five",
-        "Three"
+        "Mexico",
+        "Indonesia",
+        "China",
+        "Madagascar"
       ],
       "correct": 3,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which actor was not a major character in TV Show Freaks and Geeks?",
+      "text": "In which movie does Robin Williams' character have to disguise themselves into a woman?",
       "options": [
-        "James Franco",
-        "Jonah Hill",
-        "Jason Segel",
-        "Seth Rogen"
+        "Awakenings",
+        "Mrs. Doubtfire",
+        "Old Dogs",
+        "Jumanji"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Television"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "Who was the previous drummer of blink-182 before Travis Barker?",
+      "text": "In what part of Wales will you find the village Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
       "options": [
-        "Derek Grant",
-        "Atom Willard",
-        "Scott Raynor",
-        "Ilan Rubin"
+        "Bridgend",
+        "Pembrokeshire",
+        "Anglesey",
+        "Wrexham"
       ],
       "correct": 2,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     }
   ]
 }
