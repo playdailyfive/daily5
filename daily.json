@@ -1,68 +1,68 @@
 {
-  "day": "20260309",
-  "dayIndex": 198,
+  "day": "20260310",
+  "dayIndex": 199,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The word \"dozen\" usually refers to a group of how many objects?",
+      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
       "options": [
-        "20",
-        "10",
-        "12",
-        "6"
+        "Cellphone",
+        "Sword",
+        "Key",
+        "Pen"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the show Stranger Things, what is Eleven's favorite breakfast food?",
+      "text": "The Alps are a mountain range on which continent?",
       "options": [
-        "Toast",
-        "Eggo Waffles",
-        "Bacon and Eggs",
-        "Captain Crunch"
-      ],
-      "correct": 1,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "What nation produces roughly 40% of the world's vanilla?",
-      "options": [
-        "Mexico",
-        "Indonesia",
-        "China",
-        "Madagascar"
-      ],
-      "correct": 3,
-      "difficulty": "medium",
-      "category": "General Knowledge"
-    },
-    {
-      "text": "In which movie does Robin Williams' character have to disguise themselves into a woman?",
-      "options": [
-        "Awakenings",
-        "Mrs. Doubtfire",
-        "Old Dogs",
-        "Jumanji"
-      ],
-      "correct": 1,
-      "difficulty": "medium",
-      "category": "Entertainment: Film"
-    },
-    {
-      "text": "In what part of Wales will you find the village Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
-      "options": [
-        "Bridgend",
-        "Pembrokeshire",
-        "Anglesey",
-        "Wrexham"
+        "Africa",
+        "Asia",
+        "Europe",
+        "North America"
       ],
       "correct": 2,
-      "difficulty": "hard",
+      "difficulty": "easy",
       "category": "Geography"
+    },
+    {
+      "text": "What do the Dutch call their language?",
+      "options": [
+        "Deutsch",
+        "Dansk",
+        "Nederlands",
+        "Hollander"
+      ],
+      "correct": 2,
+      "difficulty": "medium",
+      "category": "General Knowledge"
+    },
+    {
+      "text": "The 'In the Flesh' tour was used in support of what Pink Floyd album?",
+      "options": [
+        "Animals",
+        "Wish You Were Here",
+        "The Wall",
+        "The Final Cut"
+      ],
+      "correct": 0,
+      "difficulty": "medium",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "Which Elton John hit starts with the line \"When are you gonna come down\"?",
+      "options": [
+        "Rocket Man",
+        "Goodbye Yellow Brick Road",
+        "Bennie and the Jets",
+        "Crocodile Rock"
+      ],
+      "correct": 1,
+      "difficulty": "hard",
+      "category": "Entertainment: Music"
     }
   ]
 }
