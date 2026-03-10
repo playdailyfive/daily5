@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
+      "text": "The Hyundai Motor Company was founded in which country?",
       "options": [
-        "Cellphone",
-        "Sword",
-        "Key",
-        "Pen"
+        "China",
+        "Russia",
+        "South Korea",
+        "Japan"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The Alps are a mountain range on which continent?",
+      "text": "In the movie \"Cast Away\" the main protagonist's best friend while on the island is named",
       "options": [
-        "Africa",
-        "Asia",
-        "Europe",
-        "North America"
+        "Willy",
+        "Jackson",
+        "Wilson",
+        "Carson"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What do the Dutch call their language?",
+      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
       "options": [
-        "Deutsch",
-        "Dansk",
-        "Nederlands",
-        "Hollander"
+        "5",
+        "3",
+        "4",
+        "6"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "The 'In the Flesh' tour was used in support of what Pink Floyd album?",
+      "text": "Which one of these artists appears in the album Deltron 3030?",
       "options": [
-        "Animals",
-        "Wish You Were Here",
-        "The Wall",
-        "The Final Cut"
+        "Dan the Automater",
+        "Danger Mouse",
+        "Lamarr Kendrick",
+        "CeeLo Green"
       ],
       "correct": 0,
       "difficulty": "medium",
       "category": "Entertainment: Music"
     },
     {
-      "text": "Which Elton John hit starts with the line \"When are you gonna come down\"?",
+      "text": "This Ghanaian entrepreneur is a pioneer of microlending.",
       "options": [
-        "Rocket Man",
-        "Goodbye Yellow Brick Road",
-        "Bennie and the Jets",
-        "Crocodile Rock"
+        "Farida Bedwei",
+        "Esther Afua Ocloo",
+        "Ama Ata Aido",
+        "Sionne Neely"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Entertainment: Music"
+      "category": "General Knowledge"
     }
   ]
 }
