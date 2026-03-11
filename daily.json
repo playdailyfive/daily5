@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What alcoholic drink is made from molasses?",
+      "text": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
       "options": [
-        "Vodka",
-        "Rum",
-        "Whisky",
-        "Gin"
+        "Care Bears",
+        "Cabbage Patch Kids",
+        "Rubik's Cube",
+        "Transformers"
       ],
       "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
+      "text": "The body of the Egyptian Sphinx was based on which animal?",
       "options": [
-        "Rivendell",
-        "Moria",
-        "Isengard",
-        "Mordor"
+        "Bull",
+        "Dog",
+        "Lion",
+        "Horse"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "In a standard set of playing cards, which is the only king without a moustache?",
+      "text": "What is the romanized Russian word for \"winter\"?",
       "options": [
-        "Clubs",
-        "Diamonds",
-        "Hearts",
-        "Spades"
+        "Osen'",
+        "Vesna",
+        "Zima",
+        "Leto"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What was the name of the protagonist in the movie Commando (1985)?",
+      "text": "What is the highest mountain in the world?",
       "options": [
-        "Douglas Quaid",
-        "John Matrix",
-        "Ben Richards",
-        "Harry Tasker"
+        "Kangchenjunga",
+        "Mt. Everest",
+        "Mount Godwin Austen",
+        "Annapurna"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Geography"
     },
     {
-      "text": "In the fictional SCP universe what \"Object Class\" is given to SCP's that cannot be contained.",
+      "text": "Chartreuse is a color between yellow and what?",
       "options": [
-        "Keter-Thaumiel",
-        "Esoteric/Narrative Classes",
-        "Thaumiel",
-        "Apollyon"
+        "Black",
+        "Purple",
+        "Red",
+        "Green"
       ],
       "correct": 3,
       "difficulty": "hard",
