@@ -1,66 +1,66 @@
 {
-  "day": "20260310",
-  "dayIndex": 199,
+  "day": "20260311",
+  "dayIndex": 200,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "The Hyundai Motor Company was founded in which country?",
+      "text": "What alcoholic drink is made from molasses?",
       "options": [
-        "China",
-        "Russia",
-        "South Korea",
-        "Japan"
+        "Vodka",
+        "Rum",
+        "Whisky",
+        "Gin"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In the movie \"Cast Away\" the main protagonist's best friend while on the island is named",
+      "text": "In the Lord of the Rings: The Two Towers, where are the party of orcs taking the hobbits?",
       "options": [
-        "Willy",
-        "Jackson",
-        "Wilson",
-        "Carson"
+        "Rivendell",
+        "Moria",
+        "Isengard",
+        "Mordor"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "Entertainment: Film"
     },
     {
-      "text": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+      "text": "In a standard set of playing cards, which is the only king without a moustache?",
       "options": [
-        "5",
-        "3",
-        "4",
-        "6"
+        "Clubs",
+        "Diamonds",
+        "Hearts",
+        "Spades"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which one of these artists appears in the album Deltron 3030?",
+      "text": "What was the name of the protagonist in the movie Commando (1985)?",
       "options": [
-        "Dan the Automater",
-        "Danger Mouse",
-        "Lamarr Kendrick",
-        "CeeLo Green"
-      ],
-      "correct": 0,
-      "difficulty": "medium",
-      "category": "Entertainment: Music"
-    },
-    {
-      "text": "This Ghanaian entrepreneur is a pioneer of microlending.",
-      "options": [
-        "Farida Bedwei",
-        "Esther Afua Ocloo",
-        "Ama Ata Aido",
-        "Sionne Neely"
+        "Douglas Quaid",
+        "John Matrix",
+        "Ben Richards",
+        "Harry Tasker"
       ],
       "correct": 1,
+      "difficulty": "medium",
+      "category": "Entertainment: Film"
+    },
+    {
+      "text": "In the fictional SCP universe what \"Object Class\" is given to SCP's that cannot be contained.",
+      "options": [
+        "Keter-Thaumiel",
+        "Esoteric/Narrative Classes",
+        "Thaumiel",
+        "Apollyon"
+      ],
+      "correct": 3,
       "difficulty": "hard",
       "category": "General Knowledge"
     }
