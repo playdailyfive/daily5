@@ -1,66 +1,66 @@
 {
-  "day": "20260311",
-  "dayIndex": 200,
+  "day": "20260312",
+  "dayIndex": 201,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
       "options": [
-        "Care Bears",
-        "Cabbage Patch Kids",
-        "Rubik's Cube",
-        "Transformers"
+        "Rupee",
+        "Riyal",
+        "Peso",
+        "Dinar"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "The body of the Egyptian Sphinx was based on which animal?",
+      "text": "In Game of Thrones, what continent lies across the Narrow Sea from Westeros?",
       "options": [
-        "Bull",
-        "Dog",
-        "Lion",
-        "Horse"
+        "Essos",
+        "Esuntos",
+        "Westereast",
+        "Easteros"
       ],
-      "correct": 2,
+      "correct": 0,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Television"
     },
     {
-      "text": "What is the romanized Russian word for \"winter\"?",
+      "text": "When did the website \"Facebook\" launch?",
       "options": [
-        "Osen'",
-        "Vesna",
-        "Zima",
-        "Leto"
+        "2003",
+        "2004",
+        "2005",
+        "2006"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What is the highest mountain in the world?",
+      "text": "Which NBA player has the most games played over the course of their career?",
       "options": [
-        "Kangchenjunga",
-        "Mt. Everest",
-        "Mount Godwin Austen",
-        "Annapurna"
+        "Robert Parish",
+        "Kevin Garnett",
+        "Kareem Abdul-Jabbar",
+        "Kobe Bryant"
       ],
-      "correct": 1,
+      "correct": 0,
       "difficulty": "medium",
-      "category": "Geography"
+      "category": "Sports"
     },
     {
-      "text": "Chartreuse is a color between yellow and what?",
+      "text": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
       "options": [
-        "Black",
-        "Purple",
-        "Red",
-        "Green"
+        "28%",
+        "7%",
+        "13%",
+        "20%"
       ],
-      "correct": 3,
+      "correct": 0,
       "difficulty": "hard",
       "category": "General Knowledge"
     }
