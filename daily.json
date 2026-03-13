@@ -5,60 +5,60 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Who is depicted on the US hundred dollar bill?",
+      "text": "In \"Katamari Damacy\", you control a character known as:",
       "options": [
-        "Thomas Jefferson",
-        "Abraham Lincoln",
-        "Benjamin Franklin",
-        "George Washington"
+        "Foomin",
+        "Ichigo ",
+        "The Prince",
+        "Fujio"
       ],
       "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What collaborative album was released by Kanye West and Jay-Z in 2011?",
+      "text": "Vatican City, the smallest country in the world, is fully enclosed by which country?",
       "options": [
-        "Distant Relatives",
-        "Watch the Throne",
-        "What a Time to be Alive",
-        "Unfinished Business"
+        "France",
+        "Italy",
+        "Spain",
+        "Germany"
       ],
       "correct": 1,
       "difficulty": "easy",
-      "category": "Entertainment: Music"
+      "category": "Geography"
     },
     {
-      "text": "What alcoholic drink is mainly made from juniper berries?",
+      "text": "Which mountain has the highest peak in Africa?",
       "options": [
-        "Vodka",
-        "Rum",
-        "Gin",
-        "Tequila"
+        "Mount Kenya, Kenya",
+        "Mount Stanley, DR Congo/Uganda",
+        "Mount Kilimanjaro, Tanzania",
+        "Mount Speke, Uganda"
       ],
       "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Who won the 2015 College Football Playoff (CFP) National Championship? ",
+      "text": "What film did James Cameron's Avatar dethrone as the highest-grossing film ever?",
       "options": [
-        "Wisconsin Badgers",
-        "Alabama Crimson Tide",
-        "Ohio State Buckeyes",
-        "Clemson Tigers"
+        "Jaws",
+        "Star Wars",
+        "Titanic",
+        "Gone with the Wind"
       ],
       "correct": 2,
       "difficulty": "medium",
-      "category": "Sports"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "The Suez Canal is located in which African country?",
+      "text": "In what part of Wales will you find the village Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
       "options": [
-        "Nigeria",
-        "Libya",
-        "Ghana",
-        "Egypt"
+        "Bridgend",
+        "Pembrokeshire",
+        "Wrexham",
+        "Anglesey"
       ],
       "correct": 3,
       "difficulty": "hard",
