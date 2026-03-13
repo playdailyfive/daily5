@@ -1,68 +1,68 @@
 {
-  "day": "20260312",
-  "dayIndex": 201,
+  "day": "20260313",
+  "dayIndex": 202,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "What is the currency of India and Pakistan as well as a few other Asian countries?",
+      "text": "Who is depicted on the US hundred dollar bill?",
       "options": [
-        "Rupee",
-        "Riyal",
-        "Peso",
-        "Dinar"
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "Benjamin Franklin",
+        "George Washington"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "In Game of Thrones, what continent lies across the Narrow Sea from Westeros?",
+      "text": "What collaborative album was released by Kanye West and Jay-Z in 2011?",
       "options": [
-        "Essos",
-        "Esuntos",
-        "Westereast",
-        "Easteros"
-      ],
-      "correct": 0,
-      "difficulty": "easy",
-      "category": "Entertainment: Television"
-    },
-    {
-      "text": "When did the website \"Facebook\" launch?",
-      "options": [
-        "2003",
-        "2004",
-        "2005",
-        "2006"
+        "Distant Relatives",
+        "Watch the Throne",
+        "What a Time to be Alive",
+        "Unfinished Business"
       ],
       "correct": 1,
+      "difficulty": "easy",
+      "category": "Entertainment: Music"
+    },
+    {
+      "text": "What alcoholic drink is mainly made from juniper berries?",
+      "options": [
+        "Vodka",
+        "Rum",
+        "Gin",
+        "Tequila"
+      ],
+      "correct": 2,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Which NBA player has the most games played over the course of their career?",
+      "text": "Who won the 2015 College Football Playoff (CFP) National Championship? ",
       "options": [
-        "Robert Parish",
-        "Kevin Garnett",
-        "Kareem Abdul-Jabbar",
-        "Kobe Bryant"
+        "Wisconsin Badgers",
+        "Alabama Crimson Tide",
+        "Ohio State Buckeyes",
+        "Clemson Tigers"
       ],
-      "correct": 0,
+      "correct": 2,
       "difficulty": "medium",
       "category": "Sports"
     },
     {
-      "text": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
+      "text": "The Suez Canal is located in which African country?",
       "options": [
-        "28%",
-        "7%",
-        "13%",
-        "20%"
+        "Nigeria",
+        "Libya",
+        "Ghana",
+        "Egypt"
       ],
-      "correct": 0,
+      "correct": 3,
       "difficulty": "hard",
-      "category": "General Knowledge"
+      "category": "Geography"
     }
   ]
 }
