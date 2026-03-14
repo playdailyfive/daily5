@@ -5,64 +5,64 @@
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "Red Vines is a brand of what type of candy?",
+      "text": "What nuts are used in the production of marzipan?",
       "options": [
-        "Bubblegum",
-        "Lollipop",
-        "Chocolate",
-        "Licorice"
+        "Pistachios",
+        "Peanuts",
+        "Walnuts",
+        "Almonds"
       ],
       "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "What colour is the circle on the Japanese flag?",
+      "text": "In Big Hero 6, what fictional city is the Big Hero 6 from?",
       "options": [
-        "White",
-        "Yellow",
-        "Red",
-        "Black"
+        "San Tokyo",
+        "Tokysisco",
+        "San Fransokyo",
+        "Sankyo"
       ],
       "correct": 2,
       "difficulty": "easy",
-      "category": "Geography"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the romanized Japanese word for \"university\"?",
+      "text": "Which slogan did the fast food company, McDonald's, use before their \"I'm Lovin' It\" slogan?",
       "options": [
-        "Shokudou",
-        "Daigaku",
-        "Jimusho",
-        "Toshokan"
+        "Making People Happy Through Food",
+        "We Love to See You Smile",
+        "Have It Your Way",
+        "Why Pay More!?"
       ],
       "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "Pink Floyd made this song for their previous lead singer Syd Barrett.",
+      "text": "In the 1979 British film \"Quadrophenia\" what is the name of the main protagonist?",
       "options": [
-        "Wish You Were Here",
-        "Shine On You Crazy Diamond",
-        "Welcome to the Machine",
-        "Have A Cigar"
+        "Pete Townshend",
+        "Jimmy Cooper",
+        "Archie Bunker",
+        "Franc Roddam"
       ],
       "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Music"
+      "category": "Entertainment: Film"
     },
     {
-      "text": "What is the name of one of the Neo-Aramaic languages spoken by the Jewish population from Northwestern Iraq?",
+      "text": "What is the British term for a 64th note?",
       "options": [
-        "Lishan Didan",
-        "Lishana Deni",
-        "Chaldean Neo-Aramaic",
-        "Hulaul&aacute;"
+        "Semiquaver",
+        "Hemidemisemiquaver",
+        "Demisemiquaver",
+        "Semihemidemisemiquaver"
       ],
       "correct": 1,
       "difficulty": "hard",
-      "category": "Geography"
+      "category": "Entertainment: Music"
     }
   ]
 }
