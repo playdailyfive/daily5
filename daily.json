@@ -1,66 +1,66 @@
 {
-  "day": "20260313",
-  "dayIndex": 202,
+  "day": "20260314",
+  "dayIndex": 203,
   "reroll": false,
   "source": "OPENTDB",
   "questions": [
     {
-      "text": "In \"Katamari Damacy\", you control a character known as:",
+      "text": "Red Vines is a brand of what type of candy?",
       "options": [
-        "Foomin",
-        "Ichigo ",
-        "The Prince",
-        "Fujio"
+        "Bubblegum",
+        "Lollipop",
+        "Chocolate",
+        "Licorice"
       ],
-      "correct": 2,
+      "correct": 3,
       "difficulty": "easy",
       "category": "General Knowledge"
     },
     {
-      "text": "Vatican City, the smallest country in the world, is fully enclosed by which country?",
+      "text": "What colour is the circle on the Japanese flag?",
       "options": [
-        "France",
-        "Italy",
-        "Spain",
-        "Germany"
+        "White",
+        "Yellow",
+        "Red",
+        "Black"
       ],
-      "correct": 1,
+      "correct": 2,
       "difficulty": "easy",
       "category": "Geography"
     },
     {
-      "text": "Which mountain has the highest peak in Africa?",
+      "text": "What is the romanized Japanese word for \"university\"?",
       "options": [
-        "Mount Kenya, Kenya",
-        "Mount Stanley, DR Congo/Uganda",
-        "Mount Kilimanjaro, Tanzania",
-        "Mount Speke, Uganda"
+        "Shokudou",
+        "Daigaku",
+        "Jimusho",
+        "Toshokan"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
       "category": "General Knowledge"
     },
     {
-      "text": "What film did James Cameron's Avatar dethrone as the highest-grossing film ever?",
+      "text": "Pink Floyd made this song for their previous lead singer Syd Barrett.",
       "options": [
-        "Jaws",
-        "Star Wars",
-        "Titanic",
-        "Gone with the Wind"
+        "Wish You Were Here",
+        "Shine On You Crazy Diamond",
+        "Welcome to the Machine",
+        "Have A Cigar"
       ],
-      "correct": 2,
+      "correct": 1,
       "difficulty": "medium",
-      "category": "Entertainment: Film"
+      "category": "Entertainment: Music"
     },
     {
-      "text": "In what part of Wales will you find the village Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
+      "text": "What is the name of one of the Neo-Aramaic languages spoken by the Jewish population from Northwestern Iraq?",
       "options": [
-        "Bridgend",
-        "Pembrokeshire",
-        "Wrexham",
-        "Anglesey"
+        "Lishan Didan",
+        "Lishana Deni",
+        "Chaldean Neo-Aramaic",
+        "Hulaul&aacute;"
       ],
-      "correct": 3,
+      "correct": 1,
       "difficulty": "hard",
       "category": "Geography"
     }
