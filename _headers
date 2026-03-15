@@ -1,2 +1,11 @@
-/daily.json
-  Cache-Control: no-store
+/sw.js
+  Content-Type: application/javascript
+  Cache-Control: no-cache
+
+/site.webmanifest
+  Content-Type: application/manifest+json
+  Cache-Control: no-cache
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
