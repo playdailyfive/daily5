@@ -418,7 +418,7 @@ body {
 
   <div class="results-social">
     <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
-    <a class="feedback-btn" href="mailto:playdailyfive@gmail.com">
+    <a class="feedback-btn" href="/cdn-cgi/l/email-protection#e49488859d80858d889d828d9281a48389858d88ca878b89">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
         <path d="m22 8-10 6L2 8"/>
@@ -435,7 +435,7 @@ body {
 
 </div><!-- /app -->
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const $id = id => document.getElementById(id);
 
 /* ── Footer year ── */
@@ -671,6 +671,8 @@ function floatPoints(pts){
   badge.appendChild(el); setTimeout(()=>el.remove(),1000);
 }
 
+let currentBtns = [];
+
 function renderQuestion(){
   console.log('renderQuestion called, qIndex:', qIndex, 'BANK length:', BANK.length);
   const q=BANK[qIndex];
@@ -691,12 +693,14 @@ function renderQuestion(){
 
   const grid=$id('answersGrid');
   grid.innerHTML='';
+  currentBtns=[];
   q.options.forEach((opt,i)=>{
     const btn=document.createElement('button');
     btn.className='ans-btn';
     btn.innerHTML=`<div class="ans-letter">${LETTERS[i]}</div><div class="ans-text">${opt}</div>`;
     btn.addEventListener('click',()=>pickAnswer(i));
     grid.appendChild(btn);
+    currentBtns.push(btn);
   });
   console.log('buttons appended:', grid.children.length, 'grid visible:', grid.offsetParent !== null);
 
@@ -716,15 +720,14 @@ function pickAnswer(idx){
   stopTimers();
 
   const q=BANK[qIndex];
-  const btns=[...document.querySelectorAll('.ans-btn')];
-  btns.forEach(b=>b.disabled=true);
+  currentBtns.forEach(b=>b.disabled=true);
 
   const ok=idx===q.correct;
   if(ok){ score+=(100+remain*5); floatPoints(100+remain*5); picks.push('good'); }
   else  { picks.push('bad'); }
 
-  btns[idx].classList.add(ok?'correct':'wrong');
-  if(!ok&&btns[q.correct]) btns[q.correct].classList.add('reveal');
+  currentBtns[idx].classList.add(ok?'correct':'wrong');
+  if(!ok&&currentBtns[q.correct]) currentBtns[q.correct].classList.add('reveal');
 
   playSound(ok?'correct':'wrong');
   try{if(navigator.vibrate)navigator.vibrate(ok?[30]:[20,40]);}catch(e){}
@@ -734,17 +737,15 @@ function pickAnswer(idx){
 }
 
 function timeUp(){
-  console.log('timeUp called, answered:', answered, 'qIndex:', qIndex);
+  console.log('timeUp called, answered:', answered, 'qIndex:', qIndex, 'currentBtns:', currentBtns.length);
   if(answered) return;
   answered=true;
   stopTimers();
   picks.push('skip');
 
-  const btns=[...document.querySelectorAll('.ans-btn')];
-  console.log('btns found:', btns.length);
-  btns.forEach(b=>b.disabled=true);
+  currentBtns.forEach(b=>b.disabled=true);
   const ci=BANK[qIndex]?.correct;
-  if(ci!=null&&btns[ci]) btns[ci].classList.add('reveal');
+  if(ci!=null&&currentBtns[ci]) currentBtns[ci].classList.add('reveal');
   playSound('wrong');
 
   setTimeout(nextQuestion,1400);
@@ -873,9 +874,4 @@ $id('startBtn').addEventListener('click', async()=>{
 refreshHome();
 
 /* ── Service worker ── */
-if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}));
-}
-</script>
-</body>
-</html>
+if('
