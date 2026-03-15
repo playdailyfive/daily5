@@ -578,7 +578,7 @@ body {
 
   <div class="results-social">
     <a href="https://instagram.com/playdailyfive" target="_blank" rel="noopener">@playdailyfive</a>
-    <a class="feedback-btn" href="mailto:playdailyfive@gmail.com" aria-label="Send feedback">
+    <a class="feedback-btn" href="/cdn-cgi/l/email-protection#641408051d00050d081d020d1201240309050d084a070b09" aria-label="Send feedback">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
         <path d="m22 8-10 6L2 8"/>
@@ -595,7 +595,7 @@ body {
 
 </div><!-- /app -->
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ═══════════════════════════════════════════════════════
    YOUR ORIGINAL LOGIC — unchanged
 ═══════════════════════════════════════════════════════ */
@@ -682,8 +682,7 @@ async function loadQuestions(){
 
 let BANK=[], qIndex=0, score=0, picks=[], results=[];
 let gameTimer=null, tickInterval=null, remain=12;
-let answered=false, questionId=0;
-let soundOn=true, cdInterval=null;
+let answered=false, cdInterval=null;
 
 const LETTERS=['A','B','C','D'];
 
@@ -839,8 +838,6 @@ function floatPoints(pts){
 function loadQuestion(){
   answered=false; remain=12;
   clearTimeout(gameTimer); clearInterval(tickInterval);
-  questionId++;
-  const thisId=questionId;
   const q=BANK[qIndex];
 
   /* Update header */
@@ -868,26 +865,20 @@ function loadQuestion(){
   q.options.forEach((opt,i)=>{
     const btn=document.createElement('button');
     btn.className='ans-btn'; btn.disabled=false;
-    btn.style.opacity='0'; btn.style.transform='translateY(10px)';
     btn.innerHTML=`<div class="ans-letter">${LETTERS[i]}</div><div class="ans-text">${opt}</div>`;
     btn.onclick=()=>lock(i,btn);
     grid.appendChild(btn);
-    setTimeout(()=>{
-      if(questionId!==thisId) return;
-      btn.style.transition='opacity 0.25s ease, transform 0.25s ease, border-color 0.15s, background 0.15s, box-shadow 0.15s';
-      btn.style.opacity='1'; btn.style.transform='translateY(0)';
-    },i*60+50);
   });
 
-  /* Timer */
+  /* Timer — interval handles display, single setTimeout triggers timeUp */
   updateTimerUI();
   tickInterval=setInterval(()=>{
     remain--;
     updateTimerUI();
     if(remain<=3&&remain>0) playSound('tick');
-    if(remain<=0){ clearInterval(tickInterval); timeUp(); }
+    if(remain<=0){ clearInterval(tickInterval); }
   },1000);
-  gameTimer=setTimeout(()=>timeUp(),12000);
+  gameTimer=setTimeout(()=>timeUp(), 12000);
 }
 
 /* ── Lock answer (your original logic adapted) ── */
@@ -922,13 +913,14 @@ function lock(idx, btn){
 function timeUp(){
   if(answered) return;
   answered=true;
+  clearTimeout(gameTimer); clearInterval(tickInterval);
   picks.push('skip');
   const btns=[...document.querySelectorAll('.ans-btn')];
   btns.forEach(b=>b.disabled=true);
-  btns[BANK[qIndex].correct].classList.add('reveal');
+  if(btns[BANK[qIndex].correct]) btns[BANK[qIndex].correct].classList.add('reveal');
   playSound('wrong');
-  setTimeout(()=>{ $id('answersGrid').innerHTML=''; },1200);
-  setTimeout(()=>animateNext(),1200);
+  setTimeout(()=>{ $id('answersGrid').innerHTML=''; }, 900);
+  setTimeout(()=>animateNext(), 1100);
 }
 
 /* ── Animate to next question ── */
@@ -1069,9 +1061,4 @@ $id('startBtn').onclick=async()=>{
 refreshHome();
 
 /* ── Service worker ── */
-if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>{ navigator.serviceWorker.register('/sw.js').catch(()=>{}); });
-}
-</script>
-</body>
-</html>
+if('servi
