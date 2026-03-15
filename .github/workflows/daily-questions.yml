@@ -1,68 +1,47 @@
-name: Daily Questions
+name: Generate Daily Questions
 
 on:
+  # 05:05 UTC = 00:05 ET (EST) / 01:05 ET (EDT)
+  # Runs just after ET midnight so day counter is always correct.
+  # Note: during EDT (Mar–Nov) this is 01:05 ET, during EST (Nov–Mar) it's 00:05 ET.
+  # Both are well past ET midnight, so dayIndex will always be correct.
   schedule:
-    - cron: '1 4 * * *'   # ~00:01 EDT (summer)
-    - cron: '1 5 * * *'   # ~00:01 EST (winter)
+    - cron: '5 5 * * *'
+
+  # Allow manual trigger + optional reroll
   workflow_dispatch:
     inputs:
-      reroll_nonce:
-        description: 'Force a new set (any string to get a fresh set today)'
+      reroll:
+        description: 'Set a reroll nonce (any string) to force a fresh set'
         required: false
         default: ''
-
-permissions:
-  contents: write
-
-concurrency:
-  group: daily5
-  cancel-in-progress: false
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Setup Node (20)
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Install deps (no-op if none)
-        run: npm ci || npm install || true
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Generate today's questions (OpenTDB-first; fallback on failure)
+      - name: Generate daily questions
         env:
-          REROLL_NONCE: ${{ github.event.inputs.reroll_nonce }}
-        run: node scripts/generate-daily.cjs
-        shell: bash
+          REROLL_NONCE: ${{ github.event.inputs.reroll }}
+        run: node scripts/generate-daily.js
 
-      - name: Commit & push if changed (succeed if unchanged)
-        shell: bash
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push daily.json + used.json
         run: |
-          set -euo pipefail
-          git config user.name "daily5-bot"
-          git config user.email "daily5-bot@users.noreply.github.com"
-          if ! git diff --quiet --exit-code -- daily.json used.json; then
-            git add daily.json used.json
-            git commit -m "chore: update daily.json (+ ledger)"
-            git push
-            echo "Committed new daily + ledger."
-          else
-            echo "No changes to daily.json/used.json today. All good."
-          fi
-
-      - name: Upload artifacts (daily + used)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: daily-output-${{ github.run_id }}
-          path: |
-            daily.json
-            used.json
+          git config user.name  "Daily Five Bot"
+          git config user.email "bot@playdailyfive.com"
+          git add daily.json used.json
+          # Only commit if something actually changed
+          git diff --staged --quiet || git commit -m "Daily questions: $(date -u +'%Y-%m-%d')"
+          git push
