@@ -82,21 +82,19 @@ body {
 /* ── App shell ── */
 #app {
   width:100%; max-width:480px; min-height:100vh;
-  position:relative; overflow:hidden;
   background:var(--bg); transition:background var(--transition);
 }
 .screen {
-  position:absolute; inset:0;
-  display:flex; flex-direction:column;
-  opacity:0; pointer-events:none;
-  transform:translateX(60px);
-  transition:opacity 0.35s ease, transform 0.35s ease, background 0.35s ease, color 0.35s ease;
-  overflow-y:auto;
+  display:none;
+  flex-direction:column;
   background:var(--bg); color:var(--text);
+  min-height:100vh;
+  transition:background var(--transition), color var(--transition);
 }
-.screen.active  { opacity:1; pointer-events:all; transform:translateX(0); position:relative; }
-.screen.exit    { opacity:0; transform:translateX(-60px); pointer-events:none; }
-.hidden         { display:none !important; }
+.screen.active {
+  display:flex;
+}
+.hidden { display:none !important; }
 
 /* ── Toggles ── */
 .sound-toggle, .dark-toggle {
@@ -622,19 +620,27 @@ function refreshHome(){
 }
 
 /* ── Screen transitions ── */
-function showScreen(id){
-  const current=document.querySelector('.screen.active');
+function showScreen(id, instant){
+  document.querySelectorAll('.screen').forEach(s=>{
+    s.classList.remove('active','exit');
+  });
   const next=$id(id);
-  if(current&&current!==next){
-    current.classList.add('exit');
-    setTimeout(()=>current.classList.remove('active','exit'),360);
+  if(instant){
+    next.classList.add('active');
+  } else {
+    next.style.opacity='0';
+    next.classList.add('active');
+    requestAnimationFrame(()=>{
+      next.style.transition='opacity 0.3s ease';
+      next.style.opacity='1';
+      setTimeout(()=>next.style.transition='',300);
+    });
   }
-  setTimeout(()=>next.classList.add('active'),current?80:0);
 }
 function goHome(){
   if(cdInterval) clearInterval(cdInterval);
   refreshHome();
-  showScreen('home');
+  showScreen('home', true);
 }
 
 /* ════════════════════════════════
@@ -834,7 +840,7 @@ function showResults(){
   };
 
   startCountdown();
-  showScreen('results');
+  showScreen('results', true);
   if(correct>=4) setTimeout(launchConfetti,400);
   setTimeout(()=>{
     BADGE_DEFS.forEach(b=>{
@@ -850,8 +856,8 @@ $id('startBtn').addEventListener('click', async()=>{
   qIndex=0; score=0; picks=[];
   hideBanner();
   BANK=await loadQuestions();
-  showScreen('game');
-  setTimeout(renderQuestion,200);
+  showScreen('game', true);
+  renderQuestion();
 });
 
 /* ── Boot ── */
