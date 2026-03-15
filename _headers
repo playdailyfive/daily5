@@ -10,9 +10,3 @@
 /site.webmanifest
   Content-Type: application/manifest+json
   Cache-Control: no-cache
-
-/*.js
-  Cache-Control: no-cache
-
-/*.json
-  Cache-Control: no-cache
