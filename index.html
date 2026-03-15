@@ -89,7 +89,7 @@ body {
 .tagline { font-size:0.9rem; color:var(--text-soft); margin-bottom:2rem; }
 
 .card {
-  background:var(--card); border-radius:20px; padding:1.25rem 1.5rem; width:100%;
+  background:var(--card); border-radius:20px; padding:1.4rem 1.6rem; width:100%;
   box-shadow:var(--shadow); border:2px solid var(--border); margin-bottom:1rem;
 }
 .lbl { font-size:0.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--text-soft); margin-bottom:0.5rem; }
@@ -137,7 +137,7 @@ body {
 #pgGame { padding:0; }
 .ghdr {
   display:flex; align-items:center; justify-content:space-between;
-  padding:1.25rem 1.5rem 1rem; border-bottom:2px solid var(--border);
+  padding:1.4rem 1.6rem 1.1rem; border-bottom:2px solid var(--border);
   background:var(--card);
 }
 .glogo { font-family:'Nunito',sans-serif; font-weight:900; font-size:1.1rem; color:var(--text); }
@@ -150,7 +150,7 @@ body {
 .fpts { position:absolute; top:-2rem; right:0; font-family:'Nunito',sans-serif; font-size:1rem; font-weight:900; color:var(--green); pointer-events:none; animation:fup 0.9s ease forwards; }
 @keyframes fup{0%{opacity:1;transform:translateY(0);}100%{opacity:0;transform:translateY(-28px);}}
 
-.tsec { padding:1.25rem 1.5rem 0.75rem; background:var(--card); border-bottom:2px solid var(--border); }
+.tsec { padding:1.4rem 1.6rem 0.9rem; background:var(--card); border-bottom:2px solid var(--border); }
 .trow { display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; }
 .tdig { font-family:'Nunito',sans-serif; font-size:1.5rem; font-weight:900; color:var(--text); min-width:2rem; text-align:center; }
 .tdig.red { color:var(--red); }
@@ -159,14 +159,14 @@ body {
 .tfill.red { background:var(--red); }
 .qctr { font-size:0.75rem; font-weight:700; color:var(--text-soft); }
 
-.qsec { padding:1.75rem 1.5rem 1.25rem; background:var(--bg); }
+.qsec { padding:2rem 1.6rem 1.5rem; background:var(--bg); }
 .qtxt { font-family:'Nunito',sans-serif; font-size:clamp(1.1rem,4.5vw,1.4rem); font-weight:800; line-height:1.4; color:var(--text); }
 
-.agrid { padding:0 1.5rem 2rem; background:var(--bg); display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; }
+.agrid { padding:0 1.6rem 2.5rem; background:var(--bg); display:grid; grid-template-columns:1fr 1fr; gap:0.85rem; }
 .abtn {
   background:var(--card); border:2.5px solid var(--border); border-radius:16px;
-  padding:1rem 0.9rem; text-align:left; cursor:pointer;
-  font-family:'Nunito Sans',sans-serif; display:flex; flex-direction:column; gap:0.25rem;
+  padding:1.1rem 1rem; text-align:left; cursor:pointer;
+  font-family:'Nunito Sans',sans-serif; display:flex; flex-direction:column; gap:0.3rem;
   box-shadow:var(--shadow); transition:border-color 0.15s, background 0.15s;
 }
 .abtn:hover:not(:disabled) { border-color:var(--green); }
@@ -179,7 +179,7 @@ body {
 .abtn.reveal  { background:var(--green-light); border-color:var(--green); opacity:0.75; }
 
 /* ════ RESULTS ════ */
-#pgResults { align-items:center; padding:2rem 1.5rem 3rem; }
+#pgResults { align-items:center; padding:2.5rem 1.6rem 3rem; }
 .rh { text-align:center; margin-bottom:1.5rem; }
 .remoji { font-size:3.5rem; display:block; margin-bottom:0.5rem; }
 .rtitle { font-family:'Nunito',sans-serif; font-size:1.6rem; font-weight:900; color:var(--text); margin-bottom:0.25rem; }
