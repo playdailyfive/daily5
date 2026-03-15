@@ -672,7 +672,9 @@ function floatPoints(pts){
 }
 
 function renderQuestion(){
+  console.log('renderQuestion called, qIndex:', qIndex, 'BANK length:', BANK.length);
   const q=BANK[qIndex];
+  console.log('question:', q);
   answered=false; remain=12;
   stopTimers();
 
@@ -696,6 +698,7 @@ function renderQuestion(){
     btn.addEventListener('click',()=>pickAnswer(i));
     grid.appendChild(btn);
   });
+  console.log('buttons appended:', grid.children.length, 'grid visible:', grid.offsetParent !== null);
 
   updateTimerUI();
   tickInterval=setInterval(()=>{
@@ -704,6 +707,7 @@ function renderQuestion(){
     if(remain<=3&&remain>0) playSound('tick');
   },1000);
   gameTimer=setTimeout(timeUp,12000);
+  console.log('timer set, gameTimer:', gameTimer);
 }
 
 function pickAnswer(idx){
@@ -730,12 +734,14 @@ function pickAnswer(idx){
 }
 
 function timeUp(){
+  console.log('timeUp called, answered:', answered, 'qIndex:', qIndex);
   if(answered) return;
   answered=true;
   stopTimers();
   picks.push('skip');
 
   const btns=[...document.querySelectorAll('.ans-btn')];
+  console.log('btns found:', btns.length);
   btns.forEach(b=>b.disabled=true);
   const ci=BANK[qIndex]?.correct;
   if(ci!=null&&btns[ci]) btns[ci].classList.add('reveal');
@@ -856,8 +862,11 @@ $id('startBtn').addEventListener('click', async()=>{
   qIndex=0; score=0; picks=[];
   hideBanner();
   BANK=await loadQuestions();
+  console.log('BANK loaded:', JSON.stringify(BANK));
   showScreen('game', true);
+  console.log('game screen shown, calling renderQuestion');
   renderQuestion();
+  console.log('renderQuestion called, answersGrid innerHTML:', $id('answersGrid').innerHTML.length, 'chars');
 });
 
 /* ── Boot ── */
